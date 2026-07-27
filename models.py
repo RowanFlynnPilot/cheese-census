@@ -60,9 +60,15 @@ class Creamery(BaseModel):
     name: str
     aka: list[str] = []
     city: str
-    county: str
-    lat: float
-    lng: float
+    # County comes from DATCP, so it is unknown for a company DFW lists that holds no
+    # Wisconsin plant licence (Biery is Ohio, Cypress Grove California).
+    county: str | None = None
+    # SCHEMA.md requires lat/lng on an *exported* creamery — that is validation #5, and
+    # build.validate() enforces it there. They stay optional on the model because a
+    # creamery exists in the working dataset long before it is geocoded and pinned via
+    # an override, and only `creamery`-classified rows are ever exported.
+    lat: float | None = None
+    lng: float | None = None
     address: str
     website: str | None = None
     retail: Retail

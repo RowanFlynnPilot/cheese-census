@@ -1,0 +1,2263 @@
+[
+  {
+    "city": "Barronett",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "20-mile-organic",
+    "name": "20-Mile Organic",
+    "suggested": "processor"
+  },
+  {
+    "city": "Clear Lake",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Non-Dairy - Acidified Foods, Non-Dairy - Low Acid Canned Foods",
+    "id": "afp-advanced-food-products-llc",
+    "name": "AFP Advanced Food Products LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Appleton",
+    "evidence": "DFW lists it as a maker (7 cheese types: Cheddar, Feta, Mozzarella, Provolone), retail store; 4 DATCP plant(s)",
+    "id": "agropur-inc",
+    "name": "Agropur, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Richland Center",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Butter Processing",
+    "id": "alcam-creamery",
+    "name": "Alcam Creamery",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fond du Lac",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "all-star-ltd",
+    "name": "All Star, LTD",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Sturtevant",
+    "evidence": "DFW lists it as a maker (1 cheese types: Raclette); 1 DATCP plant(s)",
+    "id": "alpinage-cheese-llc",
+    "name": "Alpinage Cheese LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "alpine-slicing-cheese-conversion-company",
+    "name": "Alpine Slicing & Cheese Conversion Company",
+    "suggested": "processor"
+  },
+  {
+    "city": "Port Washington",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "amazing-ice-cream-llc",
+    "name": "Amazing Ice Cream LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Belleville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "amlat-llc",
+    "name": "Amlat, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Jersey City",
+    "evidence": "DFW lists it as a maker (2 cheese types: Cheddar, Monterey Jack); 0 DATCP plant(s)",
+    "id": "anderson-international-foods",
+    "name": "Anderson International Foods",
+    "suggested": "creamery"
+  },
+  {
+    "city": "New Berlin",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Other, Powder Mixing/Blending",
+    "id": "archer-daniels-midland-company",
+    "name": "Archer Daniels Midland Company",
+    "suggested": "processor"
+  },
+  {
+    "city": "Arena",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Colby, Colby-Monterey Jack, Gouda), retail store; 1 DATCP plant(s)",
+    "id": "arena-cheese",
+    "name": "Arena Cheese",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Kaukauna",
+    "evidence": "DFW lists it as a maker (5 cheese types: Edam, Fontina, Gouda, Havarti); 0 DATCP plant(s)",
+    "id": "arla-foods-inc",
+    "name": "Arla Foods, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Kaukauna",
+    "evidence": "1 DATCP plant(s) making Edam, Gouda, Muenster (Munster), Other; no DFW consumer listing",
+    "id": "arla-foods-production-llc-arla-foods-amba",
+    "name": "Arla Foods Production, LLC (Arla Foods Amba)",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Blair",
+    "evidence": "DFW lists it as a maker (9 cheese types: Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby, Colby-Monterey Jack), retail store; 3 DATCP plant(s)",
+    "id": "associated-milk-producers-inc",
+    "name": "Associated Milk Producers, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Madison",
+    "evidence": "1 DATCP plant(s) making Brick, Cheddar, Colby, Gouda, Monterey/Monterey Jack; no DFW consumer listing",
+    "id": "babcock-hall-dairy-plant",
+    "name": "Babcock Hall Dairy Plant",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Elroy",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Custom Processing, Powder Mixing/Blending",
+    "id": "bardo-custom-blending",
+    "name": "Bardo Custom Blending",
+    "suggested": "processor"
+  },
+  {
+    "city": "Hillpoint",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Affinage (Aging), Cut/Wrap/Shred, Sheep Milk",
+    "id": "bear-valley-affinage",
+    "name": "Bear Valley Affinage",
+    "suggested": "processor"
+  },
+  {
+    "city": "Little Chute",
+    "evidence": "DFW lists it as a maker (1 cheese types: Cold Pack); 1 DATCP plant(s)",
+    "id": "bel-brands-usa",
+    "name": "Bel Brands USA",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Menasha",
+    "evidence": "DFW lists it as a maker (21 cheese types: Asiago, Blue, Cheese Blends (excl. Colby-Monterey Jack), Fontina); 12 DATCP plant(s)",
+    "id": "belgioioso-cheese-inc",
+    "name": "BelGioioso Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Appleton",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Cut/Wrap/Shred, Powder Mixing/Blending",
+    "id": "bella-pak-llc",
+    "name": "Bella Pak LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Shawano",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred, Retail Store",
+    "id": "belle-plaine-cheese",
+    "name": "Belle Plaine Cheese",
+    "suggested": "processor"
+  },
+  {
+    "city": "Plover",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "biery-cheese-company",
+    "name": "Biery Cheese Company",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Port Washington",
+    "evidence": "1 DATCP plant(s) making Hard, Semisoft, Soft Ripened; no DFW consumer listing",
+    "id": "blakesville-creamery",
+    "name": "Blakesville Creamery",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Blue Mounds",
+    "evidence": "DFW lists it as a maker (5 cheese types: Cheddar, Havarti, Lil' Will's Big Cheese, Alpine Renegade); 1 DATCP plant(s)",
+    "id": "bleu-mont-dairy",
+    "name": "Bleu Mont Dairy",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Chilton",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Condensary/Evap, Powder Mixing/Blending",
+    "id": "briess-industries-inc",
+    "name": "Briess Industries, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Darlington",
+    "evidence": "DFW lists it as a maker (11 cheese types: Brick, Cheddar, Colby, Colby-Monterey Jack), retail store; 1 DATCP plant(s)",
+    "id": "brunkow-cheese-of-wisconsin-inc",
+    "name": "Brunkow Cheese of Wisconsin, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "bruno-beef-strips",
+    "name": "Bruno Beef Strips",
+    "suggested": "processor"
+  },
+  {
+    "city": "Grantsburg",
+    "evidence": "DFW lists it as a maker (14 cheese types: Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby, Colby-Monterey Jack), retail store; 2 DATCP plant(s)",
+    "id": "burnett-dairy-cooperative",
+    "name": "Burnett Dairy Cooperative",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Blue River",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Affinage (Aging), Cut/Wrap/Shred, Goat Milk, Sheep Milk",
+    "id": "capri-cheese",
+    "name": "Capri Cheese",
+    "suggested": "processor"
+  },
+  {
+    "city": "Black Creek",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cheese Processing, Custom Processing, Goat Milk, Pasteurizer - Batch",
+    "id": "caprine-supreme-llc",
+    "name": "Caprine Supreme, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Mauston",
+    "evidence": "DFW lists it as a maker (33 cheese types: Blue, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 8 DATCP plant(s)",
+    "id": "carr-valley-cheese-company-inc",
+    "name": "Carr Valley Cheese Company, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Cascade",
+    "evidence": "1 DATCP plant(s) making Mozzarella, Muenster (Munster), Provolone; no DFW consumer listing",
+    "id": "cascade-cheese-co",
+    "name": "Cascade Cheese Co",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Manitowoc",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Frozen Dairy Products, Goat Milk, Pasteurizer - Batch, Retail Store",
+    "id": "cedar-crest-ice-cream",
+    "name": "Cedar Crest Ice Cream",
+    "suggested": "processor"
+  },
+  {
+    "city": "Plain",
+    "evidence": "DFW lists it as a maker (18 cheese types: Butterkase, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 1 DATCP plant(s)",
+    "id": "cedar-grove-cheese-inc",
+    "name": "Cedar Grove Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Belgium",
+    "evidence": "DFW lists it as a maker (3 cheese types: Mozzarella, Provolone, String), retail store; 2 DATCP plant(s)",
+    "id": "cedar-valley-cheese-inc",
+    "name": "Cedar Valley Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Belgium",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "cedar-valley-cheese-store",
+    "name": "Cedar Valley Cheese Store",
+    "suggested": "processor"
+  },
+  {
+    "city": "Madison",
+    "evidence": "1 DATCP plant(s) making Asiago, Bleu, Brick, Caciocavallo Siciliano, Cheddar; no DFW consumer listing",
+    "id": "center-for-dairy-research",
+    "name": "Center For Dairy Research",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Sparta",
+    "evidence": "3 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "century-foods-international",
+    "name": "Century Foods International",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Milwaukee",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Mozzarella, Queso Fresco, Queso Quesadilla); 1 DATCP plant(s)",
+    "id": "cesar-s-cheese-llc",
+    "name": "Cesar's Cheese LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "DFW lists it as a maker (5 cheese types: Baby Swiss, Brick, Limburger, Swiss), retail store; 2 DATCP plant(s)",
+    "id": "chalet-cheese-cooperative",
+    "name": "Chalet Cheese Cooperative",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "cheese-louise-inc",
+    "name": "Cheese Louise Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Durand",
+    "evidence": "DFW lists it as a maker (3 cheese types: Asiago, Parmesan, Romano), retail store; 0 DATCP plant(s)",
+    "id": "cheese-merchants-of-america",
+    "name": "Cheese Merchants of America",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Blanchardville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "cheese-pirates-llc",
+    "name": "Cheese Pirates LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Bancroft",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "cheese-pleasers-inc",
+    "name": "Cheese Pleasers Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Cottage Grove",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "cheeses-of-wisconsin-the-big-moo",
+    "name": "Cheeses of Wisconsin (The Big Moo)",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Madison",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products, Pasteurizer - HTST",
+    "id": "chocolate-shoppe-ice-cream",
+    "name": "Chocolate Shoppe Ice Cream",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fond Du Lac",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Colby, Feta, Monterey Jack); 0 DATCP plant(s)",
+    "id": "clearview-dairy-atwo-cheese-llc",
+    "name": "Clearview Dairy aTwo Cheese LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Athens",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Pasteurizer - Batch, Single Service - Grade A, Yogurt",
+    "id": "clover-meadows-family-farm",
+    "name": "Clover Meadows Family Farm",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "1 DATCP plant(s) making Cold Pack Cheese/Cheese Food; no DFW consumer listing",
+    "id": "colony-brands-inc",
+    "name": "Colony Brands, Inc",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Menomonie",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Condensary/Evap, Powder Mixing/Blending",
+    "id": "conagra-grocery-products-co",
+    "name": "Conagra Grocery Products Co.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Clear Lake",
+    "evidence": "1 DATCP plant(s) making Asiago, Cheddar, Gouda, Gruyere, Monterey/Monterey Jack; no DFW consumer listing",
+    "id": "cosmic-wheel-creamery",
+    "name": "Cosmic Wheel Creamery",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Weston",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "country-fresh-products-llc",
+    "name": "Country Fresh Products, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Chippewa Fls",
+    "evidence": "1 DATCP plant(s) making Cold Pack Cheese/Cheese Food; no DFW consumer listing",
+    "id": "cow-caviar",
+    "name": "Cow Caviar",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Superior",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "crank-and-dasher",
+    "name": "Crank and Dasher",
+    "suggested": "processor"
+  },
+  {
+    "city": "Waterloo",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Mascarpone, Mozzarella, String); 1 DATCP plant(s)",
+    "id": "crave-brothers-farmstead-cheese-l-l-c",
+    "name": "Crave Brothers Farmstead Cheese, L.L.C.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Oconomowoc",
+    "evidence": "2 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "create-a-pack-foods-inc",
+    "name": "Create-A-Pack Foods, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "La Farge",
+    "evidence": "DFW lists it as a maker (12 cheese types: Blue, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 0 DATCP plant(s)",
+    "id": "cropp-cooperative-organic-valley",
+    "name": "CROPP Cooperative/Organic Valley",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Osceola",
+    "evidence": "DFW lists it as a maker (3 cheese types: Cheddar, Colby, Gouda), retail store; 1 DATCP plant(s)",
+    "id": "crystal-ball-farms",
+    "name": "Crystal Ball Farms",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Lake Mills",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "crystal-farms-dairy-co",
+    "name": "Crystal Farms Dairy Co.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Lake Mills",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "crystal-farms-michael-foods-inc",
+    "name": "Crystal Farms - Michael Foods, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Colfax",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Powder Mixing/Blending",
+    "id": "ctl-foods-inc",
+    "name": "CTL Foods, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Argyle",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "curran-s-foods",
+    "name": "Curran's Foods",
+    "suggested": "processor"
+  },
+  {
+    "city": "Chili",
+    "evidence": "1 DATCP plant(s) making Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "id": "dairiconcepts-lp",
+    "name": "DairiConcepts LP",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Bruce",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Drying Operation, Pasteurizer - HTST, Powder Mixing/Blending",
+    "id": "dairiconcepts-lp-bruce",
+    "name": "Dairiconcepts LP",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fond du Lac",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Frozen Dairy Products, Pasteurizer - HTST, Single Service - Grade A",
+    "id": "dairy-farmers-of-america-inc",
+    "name": "Dairy Farmers Of America Inc",
+    "suggested": "processor"
+  },
+  {
+    "city": "Rudolph",
+    "evidence": "1 DATCP plant(s) making Asiago, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "id": "dairy-state-cheese-llc",
+    "name": "Dairy State Cheese, LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Blue Mounds",
+    "evidence": "1 DATCP plant(s) making Pasteurized Blended Cheese, Pasteurized Cheese Spread, Pasteurized Neufchatel Cheese Spread, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "dairyfood-usa",
+    "name": "Dairyfood USA",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Brodhead",
+    "evidence": "DFW lists it as a maker (10 cheese types: Brick, Butterkase, Colby, Farmers), retail store; 1 DATCP plant(s)",
+    "id": "decatur-dairy-inc",
+    "name": "Decatur Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Sheboygan",
+    "evidence": "DFW lists it as a maker (6 cheese types: Blue, Cheddar, Colby, Aged Cheddar); 0 DATCP plant(s)",
+    "id": "deer-creek-cheese",
+    "name": "Deer Creek Cheese",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Green Bay",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cheese Processing, LACF, Non-Dairy - Acidified Foods, Non-Dairy - Low Acid Canned Foods, Process Cheese",
+    "id": "dfa-green-bay",
+    "name": "DFA Green Bay",
+    "suggested": "processor"
+  },
+  {
+    "city": "Milwaukee",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Custom Processing, Frozen Dairy Products, Retail Store",
+    "id": "don-chamoy-ice-cream-shop",
+    "name": "Don Chamoy Ice Cream Shop",
+    "suggested": "processor"
+  },
+  {
+    "city": "Sister Bay",
+    "evidence": "1 DATCP plant(s) making Brick; no DFW consumer listing",
+    "id": "door-county-creamery",
+    "name": "Door County Creamery",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Sister Bay",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "door-county-ice-cream-factory",
+    "name": "Door County Ice Cream Factory",
+    "suggested": "processor"
+  },
+  {
+    "city": "Cross Plains",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cheese Processing, Goat Milk",
+    "id": "dreamfarm-llc",
+    "name": "Dreamfarm, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Marion",
+    "evidence": "DFW lists it as a maker (7 cheese types: Cheddar, Colby, Colby-Monterey Jack, Farmers), retail store; 1 DATCP plant(s)",
+    "id": "dupont-cheese-inc",
+    "name": "Dupont Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Durand",
+    "evidence": "1 DATCP plant(s) making Asiago, Other, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "id": "eau-galle-cheese-factory-llc",
+    "name": "Eau Galle Cheese Factory, LLC.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Monticello",
+    "evidence": "DFW lists it as a maker (10 cheese types: Baby Swiss, Brick, Butterkase, Farmers), retail store; 0 DATCP plant(s)",
+    "id": "edelweiss-creamery",
+    "name": "Edelweiss Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "DeForest",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "ehlenbach-s-cheese-chalet",
+    "name": "Ehlenbach's Cheese Chalet",
+    "suggested": "processor"
+  },
+  {
+    "city": "Thorp",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "ej-dairy-marketing",
+    "name": "Ej Dairy Marketing",
+    "suggested": "processor"
+  },
+  {
+    "city": "Madison",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred, Frozen Dairy Products",
+    "id": "elegant-foods-llc",
+    "name": "Elegant Foods LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Ellsworth",
+    "evidence": "DFW lists it as a maker (13 cheese types: Brick, Cheddar, Colby, Colby-Monterey Jack), retail store; 1 DATCP plant(s)",
+    "id": "ellsworth-cooperative-creamery",
+    "name": "Ellsworth Cooperative Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "New London",
+    "evidence": "1 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "ellsworth-cooperative-creamery-new-london",
+    "name": "Ellsworth Cooperative Creamery - New London",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Menomonie",
+    "evidence": "1 DATCP plant(s) making Brick, Cheddar, Colby, Gouda, Granular and Stirred Curd; no DFW consumer listing",
+    "id": "ellsworth-menomonie-creamery-llc",
+    "name": "Ellsworth Menomonie Creamery LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Platteville",
+    "evidence": "DFW lists it as a maker (31 cheese types: Baby Swiss, Blue, Brie, Butterkase), retail store; 4 DATCP plant(s)",
+    "id": "emmi-roth-usa",
+    "name": "Emmi Roth USA",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Thorp",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Butter Processing, Cut/Wrap/Shred",
+    "id": "fairway-dairy-ingredients-llc-attn-controller",
+    "name": "Fairway Dairy & Ingredients, LLC ATTN: Controller",
+    "suggested": "processor"
+  },
+  {
+    "city": "River Falls",
+    "evidence": "1 DATCP plant(s) making Asiago, Bleu, Brick, Cheddar, Colby; no DFW consumer listing",
+    "id": "falcon-creamery",
+    "name": "Falcon Creamery",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Kewaskum",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "family-dairies-usa",
+    "name": "Family Dairies USA",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monticello",
+    "evidence": "DFW lists it as a maker (6 cheese types: Baby Swiss, Blue, Cheddar, Cold Pack); 2 DATCP plant(s)",
+    "id": "family-fresh-pack-llc",
+    "name": "Family Fresh Pack LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Cedar Grove",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Pasteurizer - Batch, Retail Store",
+    "id": "farm-stapels-llc",
+    "name": "Farm Stapels LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Dorchester",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Pasteurizer - Batch, Powder Mixing/Blending, Single Service - Grade A",
+    "id": "farmer-boy-creamery-llc",
+    "name": "Farmer Boy Creamery LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Hayward",
+    "evidence": "1 DATCP plant(s) making Other; no DFW consumer listing",
+    "id": "farmstead-creamery",
+    "name": "Farmstead Creamery",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Stevens Point",
+    "evidence": "1 DATCP plant(s) making Cheddar; no DFW consumer listing",
+    "id": "feltz-s-dairy-store",
+    "name": "Feltz's Dairy Store",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Germantown",
+    "evidence": "2 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "first-choice-ingredients-inc",
+    "name": "First Choice Ingredients, Inc",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Appleton",
+    "evidence": "DFW lists it as a maker (12 cheese types: Asadero, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby-Monterey Jack); 6 DATCP plant(s)",
+    "id": "foremost-farms-usa-cooperative",
+    "name": "Foremost Farms USA Cooperative",
+    "suggested": "creamery"
+  },
+  {
+    "city": "South Wayne",
+    "evidence": "1 DATCP plant(s) making Brick, Cheddar, Granular and Stirred Curd; no DFW consumer listing",
+    "id": "forgotten-valley-cheese",
+    "name": "Forgotten Valley Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Greenwood",
+    "evidence": "1 DATCP plant(s) making Cheddar, Colby, Monterey/Monterey Jack, Mozzarella, Muenster (Munster); no DFW consumer listing",
+    "id": "freedom-warehousing-inc",
+    "name": "Freedom Warehousing, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Green Bay",
+    "evidence": "3 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "fromage-spa-llc",
+    "name": "Fromage Spa, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Reedsburg",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "g-r-foods-inc",
+    "name": "G&R Foods, Inc",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Neenah",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Condensary/Evap, Frozen Dairy Products, Membrane Processing",
+    "id": "galloway-co",
+    "name": "Galloway Co",
+    "suggested": "processor"
+  },
+  {
+    "city": "Marshfield",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "gardner-s-wisconsin-cheese-llc",
+    "name": "Gardner's Wisconsin Cheese, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Germantown",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Aseptic or Canning, Bovine Milk, Non-Dairy - Low Acid Canned Foods",
+    "id": "gehl-foods",
+    "name": "Gehl Foods",
+    "suggested": "processor"
+  },
+  {
+    "city": "Sheboygan Falls",
+    "evidence": "DFW lists it as a maker (25 cheese types: Baby Swiss, Blue, Brick, Cheddar), retail store; 1 DATCP plant(s)",
+    "id": "gibbsville-cheese-company-inc",
+    "name": "Gibbsville Cheese Company, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Cuba City",
+    "evidence": "DFW lists it as a maker (19 cheese types: Baby Swiss, Brick, Cheddar, Cheese Blends (excl. Colby-Monterey Jack)), retail store; 1 DATCP plant(s)",
+    "id": "gile-cheese-llc",
+    "name": "Gile Cheese, LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Gilman",
+    "evidence": "1 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "gilman-cheese-corporation",
+    "name": "Gilman Cheese Corporation",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Linden",
+    "evidence": "1 DATCP plant(s) making Bleu, Gorgonzola; no DFW consumer listing",
+    "id": "glacier-point-cheese",
+    "name": "Glacier Point Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Burlington",
+    "evidence": "1 DATCP plant(s) making Cold Pack Cheese/Cheese Food; no DFW consumer listing",
+    "id": "glas-all-naturals",
+    "name": "Glas All Naturals",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Juda",
+    "evidence": "DFW lists it as a maker (8 cheese types: Asiago, Cheese Blends (excl. Colby-Monterey Jack), Mozzarella, Parmesan); 10 DATCP plant(s)",
+    "id": "grande-cheese-company",
+    "name": "Grande Cheese Company",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Greenwood",
+    "evidence": "DFW lists it as a maker (1 cheese types: Cheddar); 2 DATCP plant(s)",
+    "id": "grassland-dairy-products-inc",
+    "name": "Grassland Dairy Products, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Wausau",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Cut/Wrap/Shred",
+    "id": "great-lakes-cheese-company-inc",
+    "name": "Great Lakes Cheese Company, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "La Crosse",
+    "evidence": "1 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "great-lakes-cheese-of-la-crosse",
+    "name": "Great Lakes Cheese Of La Crosse",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Plymouth",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Cut/Wrap/Shred",
+    "id": "great-lakes-cheese-of-wisconsin-inc",
+    "name": "Great Lakes Cheese Of Wisconsin Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Edgar",
+    "evidence": "1 DATCP plant(s) making Cheddar, Monterey/Monterey Jack; no DFW consumer listing",
+    "id": "harmony-cheese",
+    "name": "Harmony Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "De Pere",
+    "evidence": "DFW lists it as a maker (10 cheese types: Cheddar, Havarti, Monterey Jack, Mozzarella); 0 DATCP plant(s)",
+    "id": "harmony-cheese-de-pere",
+    "name": "Harmony Cheese",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Athens",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "harmony-cheese-llc-athens-plant",
+    "name": "Harmony Cheese LLC - Athens Plant",
+    "suggested": "processor"
+  },
+  {
+    "city": "Barron",
+    "evidence": "DFW lists it under Sold By only, not Made By; 3 DATCP plant(s)",
+    "id": "heartisan-foods",
+    "name": "Heartisan Foods",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Kiel",
+    "evidence": "DFW lists it as a maker (18 cheese types: Baby Swiss, Brick, Cheddar, Colby), retail store; 1 DATCP plant(s)",
+    "id": "henning-cheese-inc",
+    "name": "Henning Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Westby",
+    "evidence": "1 DATCP plant(s) making Hard, Pasteurized Neufchatel Cheese Spread; no DFW consumer listing",
+    "id": "hidden-springs-creamery",
+    "name": "Hidden Springs Creamery",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Walworth",
+    "evidence": "DFW lists it as a maker (1 cheese types: Cheddar), retail store; 1 DATCP plant(s)",
+    "id": "highfield-farm-creamery",
+    "name": "Highfield Farm Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Milwaukee",
+    "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Alpine-Style, Cheese Curds, Luna); 2 DATCP plant(s)",
+    "id": "hill-valley-dairy",
+    "name": "Hill Valley Dairy",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Conover",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cheese Processing, Cut/Wrap/Shred, Frozen Dairy Products, Goat Milk, Pasteurizer - Batch",
+    "id": "hillbilly-hollow",
+    "name": "Hillbilly Hollow",
+    "suggested": "processor"
+  },
+  {
+    "city": "Woodville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Goat Milk",
+    "id": "hilltop-dairy",
+    "name": "Hilltop Dairy",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fort Atkinson",
+    "evidence": "DFW lists it as a maker (5 cheese types: Butterkase, Camembert, Gouda, Aged Cheddar); 0 DATCP plant(s)",
+    "id": "hoard-s-dairymen-farm-creamery",
+    "name": "Hoard's Dairymen Farm Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Thorp",
+    "evidence": "DFW lists it as a maker (3 cheese types: Gouda, Marieke® Golden, Fenugreek Gouda), retail store; 0 DATCP plant(s)",
+    "id": "hollands-family-cheese-marieke-gouda",
+    "name": "Hollands Family Cheese - Marieke Gouda",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Holmen",
+    "evidence": "1 DATCP plant(s) making Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "holmen-cheese-llc",
+    "name": "Holmen Cheese, LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Sheboygan Fls",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "homestead-cheese-processors-llc",
+    "name": "Homestead Cheese Processors, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "West Bend",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "honey-grove-ice-cream-co-llc",
+    "name": "Honey Grove Ice Cream Co., LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Mineral Point",
+    "evidence": "DFW lists it as a maker (17 cheese types: Baby Swiss, Blue, Brick, Cheddar), retail store; 1 DATCP plant(s)",
+    "id": "hook-s-cheese-company-inc",
+    "name": "Hook's Cheese Company, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Neenah",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: LACF, Non-Dairy - Low Acid Canned Foods",
+    "id": "horseshoe-beverage-company-llc",
+    "name": "Horseshoe Beverage Company LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fall Creek",
+    "evidence": "1 DATCP plant(s) making Asiago, Bleu, Brick, Caciocavallo Siciliano, Cheddar; no DFW consumer listing",
+    "id": "imperia-foods-fall-creek",
+    "name": "Imperia Foods - Fall Creek",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Kaukauna",
+    "evidence": "DFW lists it under Sold By only, not Made By; 1 DATCP plant(s)",
+    "id": "integrity-cheese-packaging-of-wi",
+    "name": "Integrity Cheese Packaging of WI",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Abbotsford",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "j-l-hawkeye-dairy-store",
+    "name": "J & L Hawkeye Dairy Store",
+    "suggested": "processor"
+  },
+  {
+    "city": "Saukville",
+    "evidence": "1 DATCP plant(s) making Other, Pasteurized Blended Cheese, Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "jeneil-biotech-inc",
+    "name": "JENEIL BIOTECH, INC.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Waterloo",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "jlm-manufacturing-llc",
+    "name": "JLM Manufacturing LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Marinette",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "joe-s-cheese-house-inc",
+    "name": "Joe's Cheese House, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Juda",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "juda-tank-wash-llc",
+    "name": "Juda Tank Wash LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fond du Lac",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "kelley-country-creamery-llc",
+    "name": "Kelley Country Creamery LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Rothschild",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Condensary/Evap, Drying Operation, Pasteurizer - HTST",
+    "id": "kerry",
+    "name": "Kerry",
+    "suggested": "processor"
+  },
+  {
+    "city": "Jackson",
+    "evidence": "3 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Drying Operation, Pasteurizer - HTST, Powder Mixing/Blending",
+    "id": "kerry-ingredients",
+    "name": "Kerry Ingredients",
+    "suggested": "processor"
+  },
+  {
+    "city": "Bethlehem",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "keystone-farms-cheese",
+    "name": "Keystone Farms Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Clintonville",
+    "evidence": "1 DATCP plant(s) making Mozzarella, Neufchatel, Soft Ripened; no DFW consumer listing",
+    "id": "kickaas-llc-or-the-cheese-people-or-stamper-cheese",
+    "name": "Kickaas LLC or The Cheese People or Stamper Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Plover",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "king-cone-llc",
+    "name": "King Cone LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Cambria",
+    "evidence": "DFW lists it as a maker (2 cheese types: Blue, Gorgonzola), retail store; 0 DATCP plant(s)",
+    "id": "kingston-cheese-co-op",
+    "name": "Kingston Cheese Co-op",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Cambria",
+    "evidence": "1 DATCP plant(s) making Bleu, Gorgonzola; no DFW consumer listing",
+    "id": "kingston-cheese-cooperative",
+    "name": "Kingston Cheese Cooperative",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Green Bay",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "kitchen-fresh-foods-llc",
+    "name": "Kitchen Fresh Foods LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "New Auburn",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products, Pasteurizer - Batch",
+    "id": "klemish-creamery-llc",
+    "name": "Klemish Creamery, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "DFW lists it as a maker (5 cheese types: Brick, Feta, Gouda, Havarti); 1 DATCP plant(s)",
+    "id": "klondike-cheese-company",
+    "name": "Klondike Cheese Company",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Oconomowoc",
+    "evidence": "DFW lists it as a maker (1 cheese types: LaBelle™); 0 DATCP plant(s)",
+    "id": "koepke-farms-inc",
+    "name": "Koepke Farms, Inc",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Watertown",
+    "evidence": "DFW lists it as a maker (1 cheese types: Cold Pack); 1 DATCP plant(s)",
+    "id": "kraemer-wisconsin-cheese-ltd",
+    "name": "Kraemer Wisconsin Cheese Ltd",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Beaver Dam",
+    "evidence": "1 DATCP plant(s) making Cream Cheese, Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "kraft-heinz-foods-company",
+    "name": "Kraft Heinz Foods Company",
+    "suggested": "commodity"
+  },
+  {
+    "city": "La Crosse",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred, Fluid Milk, Frozen Dairy Products, Single Service - Grade A",
+    "id": "kwik-trip-dairy",
+    "name": "Kwik Trip Dairy",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "1 DATCP plant(s) making Other; no DFW consumer listing",
+    "id": "la-vaquita-inc",
+    "name": "La Vaquita, Inc",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Greenleaf",
+    "evidence": "DFW lists it as a maker (43 cheese types: Asadero, Asiago, Baby Swiss, Blue), retail store; 1 DATCP plant(s)",
+    "id": "laack-brothers-cheese-company",
+    "name": "Laack Brothers Cheese Company",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Malone",
+    "evidence": "1 DATCP plant(s) making Cheddar, Gouda, Hard, Monterey/Monterey Jack, Muenster (Munster); no DFW consumer listing",
+    "id": "laclare-creamery-llc",
+    "name": "LaClare Creamery, LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Malone",
+    "evidence": "DFW lists it as a maker (3 cheese types: Chandoka®, Martone, Mixed-Milk Blue), retail store; 0 DATCP plant(s)",
+    "id": "laclare-family-creamery",
+    "name": "LaClare Family Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Wausau",
+    "evidence": "1 DATCP plant(s) making Asiago, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "id": "lactalis-heritage-dairy-inc",
+    "name": "Lactalis Heritage Dairy, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Buffalo",
+    "evidence": "DFW lists it as a maker (5 cheese types: Brie, Camembert, Cheddar, Feta); 0 DATCP plant(s)",
+    "id": "lactalis-usa-inc",
+    "name": "Lactalis USA, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Belmont",
+    "evidence": "1 DATCP plant(s) making Other; no DFW consumer listing",
+    "id": "lactalis-usa-inc-belmont",
+    "name": "Lactalis USA, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Merrill",
+    "evidence": "1 DATCP plant(s) making Cold Pack Cheese/Cheese Food, Cream Cheese, Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "lactalis-usa-inc-merrill",
+    "name": "Lactalis USA, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Stanley",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Colby, Colby-Monterey Jack, Monterey Jack), retail store; 1 DATCP plant(s)",
+    "id": "lagrander-s-hillside-dairy-inc",
+    "name": "LaGrander's Hillside Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Turtle Lake",
+    "evidence": "1 DATCP plant(s) making Asiago, Other, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "id": "lake-country-dairy-inc",
+    "name": "Lake Country Dairy, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Appleton",
+    "evidence": "DFW lists it under Sold By only, not Made By; 1 DATCP plant(s)",
+    "id": "lamers-dairy-inc",
+    "name": "Lamers Dairy, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Spencer",
+    "evidence": "3 DATCP plant(s) making Cheddar, Monterey/Monterey Jack, Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "land-o-lakes-cheese-division",
+    "name": "Land O Lakes - Cheese Division",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Belleville",
+    "evidence": "DFW lists it as a maker (2 cheese types: Tallgrass, Tallgrass Reserve); 1 DATCP plant(s)",
+    "id": "landmark-creamery-llc",
+    "name": "Landmark Creamery LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Waukesha",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Pasteurizer - HTST, Yogurt",
+    "id": "lifeway-foods-inc",
+    "name": "Lifeway Foods, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Stevens Point",
+    "evidence": "1 DATCP plant(s) making Mozzarella; no DFW consumer listing",
+    "id": "lineage-logistics",
+    "name": "Lineage Logistics",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Hudson",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Frozen Dairy Products",
+    "id": "lotus-creamery-llc",
+    "name": "Lotus Creamery LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Grantsburg",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Affinage (Aging), Bovine Milk, Goat Milk, Sheep Milk",
+    "id": "lovetree-farmstead-cheese",
+    "name": "LoveTree Farmstead Cheese",
+    "suggested": "processor"
+  },
+  {
+    "city": "New Glarus",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "lsi",
+    "name": "LSI",
+    "suggested": "processor"
+  },
+  {
+    "city": "Granton",
+    "evidence": "DFW lists it as a maker (24 cheese types: Baby Swiss, Blue, Brick, Cheddar), retail store; 2 DATCP plant(s)",
+    "id": "lynn-dairy-inc",
+    "name": "Lynn Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Granton",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Condensary/Evap, Membrane Processing, Powder Mixing/Blending, Whey/Whey By Products",
+    "id": "lynn-proteins-inc",
+    "name": "Lynn Proteins, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Jefferson",
+    "evidence": "1 DATCP plant(s) making Cheddar, Gouda, Other; no DFW consumer listing",
+    "id": "maggie-s-farm-llc",
+    "name": "Maggie's Farm LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Appleton",
+    "evidence": "DFW lists it as a maker (5 cheese types: Mozzarella, Pasteurized Processed Cheese Spread, Queso Fresco, String), retail store; 1 DATCP plant(s)",
+    "id": "malcore-foods",
+    "name": "Malcore Foods",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Milladore",
+    "evidence": "1 DATCP plant(s) making Cheddar, Gouda, Monterey/Monterey Jack; no DFW consumer listing",
+    "id": "maple-grove-cheese-inc",
+    "name": "Maple Grove Cheese, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Medford",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending",
+    "id": "maple-island-inc",
+    "name": "Maple Island, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "DFW lists it as a maker (7 cheese types: Cheddar, Colby, Edam, Fontina); 0 DATCP plant(s)",
+    "id": "maple-leaf-cheese-co",
+    "name": "Maple Leaf Cheese Co",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Juda",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "maple-leaf-cheese-store-llc",
+    "name": "Maple Leaf Cheese Store LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Affinage (Aging), Bovine Milk, Cut/Wrap/Shred",
+    "id": "maple-leaf-sales-inc",
+    "name": "Maple Leaf Sales, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Marathon",
+    "evidence": "3 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Cut/Wrap/Shred",
+    "id": "marathon-cheese-corporation",
+    "name": "Marathon Cheese Corporation",
+    "suggested": "processor"
+  },
+  {
+    "city": "Thorp",
+    "evidence": "1 DATCP plant(s) making Cheddar, Gouda; no DFW consumer listing",
+    "id": "marieke-gouda",
+    "name": "Marieke Gouda",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Durand",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Powder Mixing/Blending",
+    "id": "marron-foods",
+    "name": "Marron Foods",
+    "suggested": "processor"
+  },
+  {
+    "city": "Plymouth",
+    "evidence": "DFW lists it under Sold By only, not Made By; 2 DATCP plant(s)",
+    "id": "masters-gallery-foods-inc",
+    "name": "Masters Gallery Foods, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Owen",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "mauel-s-dairy-inc",
+    "name": "Mauel's Dairy Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Hill Point",
+    "evidence": "DFW lists it under Sold By only, not Made By; 1 DATCP plant(s)",
+    "id": "mccluskey-brothers",
+    "name": "McCluskey Brothers",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Green Bay",
+    "evidence": "DFW lists it as a maker (5 cheese types: Cheddar, Cream Cheese, Mozzarella, Parmesan); 0 DATCP plant(s)",
+    "id": "mct-dairies-inc",
+    "name": "MCT Dairies, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Muscoda",
+    "evidence": "DFW lists it as a maker (7 cheese types: Cheddar, Colby, Colby-Monterey Jack, Monterey Jack), retail store; 1 DATCP plant(s)",
+    "id": "meister-cheese-co-llc",
+    "name": "Meister Cheese Co LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Darlington",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cheese Processing, Cream, Cut/Wrap/Shred, Sour Cream",
+    "id": "mexican-cheese-producers",
+    "name": "Mexican Cheese Producers",
+    "suggested": "processor"
+  },
+  {
+    "city": "Tomah",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending",
+    "id": "mhf-opco-llc",
+    "name": "MHF Opco, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Sheboygan",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "miesfeld-s-triangle-market-llc",
+    "name": "Miesfeld's Triangle Market, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Mazomanie",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending, Whey/Whey By Products",
+    "id": "mike-s-mix-llc",
+    "name": "Mike's Mix, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fond du Lac",
+    "evidence": "3 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Condensary/Evap, Drying Operation, Membrane Processing",
+    "id": "milk-specialties-global-actus-nutrition",
+    "name": "Milk Specialties Global, Actus Nutrition",
+    "suggested": "processor"
+  },
+  {
+    "city": "De Pere",
+    "evidence": "1 DATCP plant(s) making Skim Milk for Mfg.; no DFW consumer listing",
+    "id": "morning-glory-de-pere-llc",
+    "name": "Morning Glory De Pere, LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Mosinee",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "mosinee-cold-storage-inc",
+    "name": "Mosinee Cold Storage, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Platteville",
+    "evidence": "1 DATCP plant(s) making Brick, Muenster (Munster), Other; no DFW consumer listing",
+    "id": "moundview-dairy",
+    "name": "Moundview Dairy",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Windsor",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred, Retail Store",
+    "id": "mousehouse-cheesehaus",
+    "name": "Mousehouse Cheesehaus",
+    "suggested": "processor"
+  },
+  {
+    "city": "Watertown",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "mullen-s-dairy-bar",
+    "name": "Mullen's Dairy Bar",
+    "suggested": "processor"
+  },
+  {
+    "city": "Mosinee",
+    "evidence": "DFW lists it as a maker (22 cheese types: Anejo Enchilado, Asadero, Asiago, Brick), retail store; 2 DATCP plant(s)",
+    "id": "mullins-cheese-inc",
+    "name": "Mullins Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Muscoda",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Condensary/Evap, Membrane Processing, Powder Mixing/Blending, Whey/Whey By Products",
+    "id": "muscoda-protein-products",
+    "name": "Muscoda Protein Products",
+    "suggested": "processor"
+  },
+  {
+    "city": "Fond du Lac",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "n-f-o-eastern-wis-dairy-office",
+    "name": "N F O Eastern Wis Dairy Office",
+    "suggested": "processor"
+  },
+  {
+    "city": "Marshfield",
+    "evidence": "DFW lists it as a maker (16 cheese types: Asiago, Brick, Cheddar, Colby), retail store; 1 DATCP plant(s)",
+    "id": "nasonville-dairy-inc",
+    "name": "Nasonville Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Curtiss",
+    "evidence": "1 DATCP plant(s) making Cheddar, Colby, Monterey/Monterey Jack; no DFW consumer listing",
+    "id": "nasonville-mail-order",
+    "name": "Nasonville Mail Order",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Waterford",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "noble-brothers-waterford-creamery",
+    "name": "Noble Brothers Waterford Creamery",
+    "suggested": "processor"
+  },
+  {
+    "city": "Westby",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Mozzarella, Parmesan, Cheese Curds), retail store; 1 DATCP plant(s)",
+    "id": "nordic-creamery",
+    "name": "Nordic Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Verona",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "northwoods-cheese-company-llc",
+    "name": "Northwoods Cheese Company, LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "DePere",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "novak-s-cheese-of-wisconsin-inc",
+    "name": "Novak's Cheese of Wisconsin, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Clintonville",
+    "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Colby, Colby-Monterey Jack, Monterey Jack); 1 DATCP plant(s)",
+    "id": "oak-grove-dairy-inc",
+    "name": "Oak Grove Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Boyceville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Drying Operation, Powder Mixing/Blending",
+    "id": "ohly-americas",
+    "name": "Ohly Americas",
+    "suggested": "processor"
+  },
+  {
+    "city": "Cashton",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred, Retail Store",
+    "id": "old-country-cheese",
+    "name": "Old Country Cheese",
+    "suggested": "processor"
+  },
+  {
+    "city": "Cashton",
+    "evidence": "1 DATCP plant(s) making Asiago, Brick, Cheddar, Colby, Gouda; no DFW consumer listing",
+    "id": "old-country-farms-co-op",
+    "name": "Old Country Farms Co-op",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Mayville",
+    "evidence": "2 DATCP plant(s) making Cold Pack Cheese/Cheese Food, Pasteurized Cheese Spread, Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
+    "id": "old-fashioned-cheese-mayville-cheese",
+    "name": "Old Fashioned Cheese, Mayville Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Sheboygan",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "old-wisconsin-sausage",
+    "name": "Old Wisconsin Sausage",
+    "suggested": "processor"
+  },
+  {
+    "city": "Sheboygan",
+    "evidence": "1 DATCP plant(s) making Cream Cheese; no DFW consumer listing",
+    "id": "old-world-creamery-llc",
+    "name": "Old World Creamery LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Chippewa Falls",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "olsons-ice-cream",
+    "name": "Olsons Ice Cream",
+    "suggested": "processor"
+  },
+  {
+    "city": "Chaseburg",
+    "evidence": "2 DATCP plant(s) making Other; no DFW consumer listing",
+    "id": "organic-valley-chaseburg",
+    "name": "Organic Valley Chaseburg",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Hilbert",
+    "evidence": "DFW lists it as a maker (3 cheese types: American (Pasteurized Processed), Pasteurized Processed Cheese Food, Pasteurized Processed Cheese Spread); 1 DATCP plant(s)",
+    "id": "ornua-ingredients-north-america",
+    "name": "Ornua Ingredients North America",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Whitehall",
+    "evidence": "3 DATCP plant(s) making Parmesan and Reggiano, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "ornua-ingredients-north-america-whitehall-east",
+    "name": "Ornua Ingredients North America - Whitehall East",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Oshkosh",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "oshkosh-cheese-sales",
+    "name": "Oshkosh Cheese Sales",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Oshkosh",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "oshkosh-storage-company",
+    "name": "Oshkosh Storage Company",
+    "suggested": "processor"
+  },
+  {
+    "city": "Campbellsport",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "ottery-brothers-llc",
+    "name": "Ottery Brothers, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Milwaukee",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred, Goat Milk, Sheep Milk",
+    "id": "outpost-natural-foods",
+    "name": "Outpost Natural Foods",
+    "suggested": "processor"
+  },
+  {
+    "city": "Hager City",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Frozen Dairy Products, Pasteurizer - Batch, Yogurt",
+    "id": "oxheart-farm-llc",
+    "name": "Oxheart Farm LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Pawleys Island",
+    "evidence": "DFW lists it as a maker (1 cheese types: Pimento Cheese); 0 DATCP plant(s)",
+    "id": "palmetto-cheese",
+    "name": "Palmetto Cheese",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Mechanicsburg",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "panos-brands",
+    "name": "PANOS Brands",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Cashton",
+    "evidence": "DFW lists it as a maker (10 cheese types: Asadero, Brick, Cheddar, Cheese Blends (excl. Colby-Monterey Jack)), retail store; 1 DATCP plant(s)",
+    "id": "pasture-pride-cheese-llc",
+    "name": "Pasture Pride Cheese, LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Blanchardville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "pecatonica-packaging-storage",
+    "name": "Pecatonica Packaging & Storage",
+    "suggested": "processor"
+  },
+  {
+    "city": "Crivitz",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "pelkin-s-smokey-meat-market-llc",
+    "name": "Pelkin's Smokey Meat Market, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Johnson Creek",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "pernat-s-premium-meats",
+    "name": "Pernat's Premium Meats",
+    "suggested": "processor"
+  },
+  {
+    "city": "Ixonia",
+    "evidence": "1 DATCP plant(s) making Cheddar; no DFW consumer listing",
+    "id": "pernats-of-ixonia",
+    "name": "Pernats of Ixonia",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Manitowoc",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Butter Processing, Cut/Wrap/Shred, Non-Dairy - Seafood, Pasteurizer - Batch",
+    "id": "pine-river-dairy-inc",
+    "name": "Pine River Dairy Inc",
+    "suggested": "processor"
+  },
+  {
+    "city": "Newton",
+    "evidence": "DFW lists it as a maker (3 cheese types: Cold Pack, Pasteurized Processed Cheese Spread, Spreadable Cheese); 1 DATCP plant(s)",
+    "id": "pine-river-pre-pack-inc",
+    "name": "Pine River Pre Pack, Inc",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Platteville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "pioneer-sweets",
+    "name": "Pioneer Sweets",
+    "suggested": "processor"
+  },
+  {
+    "city": "Stevens Point",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred, Other",
+    "id": "portesi-italian-food-inc",
+    "name": "Portesi Italian Food, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Davenport",
+    "evidence": "DFW lists it as a maker (6 cheese types: Baby Swiss, Blue, Cheddar, Gorgonzola); 0 DATCP plant(s)",
+    "id": "prairie-farms-dairy-inc",
+    "name": "Prairie Farms Dairy, Inc",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Mindoro",
+    "evidence": "2 DATCP plant(s) making Bleu, Brick, Cheddar, Colby, Gorgonzola; no DFW consumer listing",
+    "id": "prairie-farms-dairy-inc-mindoro",
+    "name": "Prairie Farms Dairy, Inc. - Mindoro",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Shullsburg",
+    "evidence": "1 DATCP plant(s) making Gouda, Swiss and Emmentaler; no DFW consumer listing",
+    "id": "prairie-farms-dairy-inc-shullsburg",
+    "name": "Prairie Farms Dairy, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Marshfield",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending",
+    "id": "prestige-proteins-and-falcon-ingredients",
+    "name": "Prestige Proteins and Falcon Ingredients",
+    "suggested": "processor"
+  },
+  {
+    "city": "Gillett",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "primal-eats",
+    "name": "Primal Eats",
+    "suggested": "processor"
+  },
+  {
+    "city": "Milwaukee",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "purple-door-ice-cream-shoppe-llc",
+    "name": "Purple Door Ice Cream Shoppe, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "La Crosse",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "ranison-candy-ice-cream",
+    "name": "Ranison Candy & Ice Cream",
+    "suggested": "processor"
+  },
+  {
+    "city": "Appleton",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Alpine-Style, Monterey Jack, Aged Cheddar); 0 DATCP plant(s)",
+    "id": "red-barn-family-farms",
+    "name": "Red Barn Family Farms",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Sturgeon Bay",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "renard-s-cheese",
+    "name": "Renard's Cheese",
+    "suggested": "processor"
+  },
+  {
+    "city": "Kaukauna",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "renew-it-cheese-ii",
+    "name": "Renew It Cheese II",
+    "suggested": "processor"
+  },
+  {
+    "city": "Colby",
+    "evidence": "1 DATCP plant(s) making Pasteurized Cheese Spread, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "revela-foods-colby-llc",
+    "name": "Revela Foods - Colby, LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "rfs-cheese-llc",
+    "name": "RFS Cheese, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Eau Claire",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "roadside-ice-cream-diner",
+    "name": "Roadside Ice Cream Diner",
+    "suggested": "processor"
+  },
+  {
+    "city": "Shullsburg",
+    "evidence": "DFW lists it as a maker (9 cheese types: Cheddar, Gouda, Cheese Curds, Cheshire), retail store; 2 DATCP plant(s)",
+    "id": "roelli-cheese-company-inc",
+    "name": "Roelli Cheese Company, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Shullsburg",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "rolling-hills-dairy-producers-cooperative",
+    "name": "Rolling Hills Dairy Producers Cooperative",
+    "suggested": "processor"
+  },
+  {
+    "city": "Luxemburg",
+    "evidence": "DFW lists it as a maker (30 cheese types: Baby Swiss, Blue, Brick, Brie), retail store; 2 DATCP plant(s)",
+    "id": "ron-s-wisconsin-cheese",
+    "name": "Ron's Wisconsin Cheese",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Algoma",
+    "evidence": "DFW lists it as a maker (13 cheese types: Brick, Cheddar, Colby, Colby-Monterey Jack), retail store; 2 DATCP plant(s)",
+    "id": "rosewood-dairy-inc",
+    "name": "Rosewood Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Columbus",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Butter Processing",
+    "id": "royal-guernsey-creamery-llc",
+    "name": "Royal Guernsey Creamery LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Middleton",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending",
+    "id": "saco-foods-and-hoosier-hill-farm",
+    "name": "Saco Foods and Hoosier Hill Farm",
+    "suggested": "processor"
+  },
+  {
+    "city": "Luxemburg",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: none listed",
+    "id": "salmon-s-meat-products",
+    "name": "Salmon's Meat Products",
+    "suggested": "processor"
+  },
+  {
+    "city": "Waupun",
+    "evidence": "DFW lists it as a maker (21 cheese types: Asiago, Baby Swiss, Blue, Cheddar); 7 DATCP plant(s)",
+    "id": "saputo-cheese-usa",
+    "name": "Saputo Cheese USA",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Hilbert",
+    "evidence": "5 DATCP plant(s) making Mozzarella; no DFW consumer listing",
+    "id": "sargento-cheese-inc",
+    "name": "Sargento Cheese Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Plymouth",
+    "evidence": "DFW lists it as a maker (28 cheese types: Asadero, Asiago, Baby Swiss, Blue); 0 DATCP plant(s)",
+    "id": "sargento-foods-inc",
+    "name": "Sargento Foods, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Plymouth",
+    "evidence": "DFW lists it as a maker (16 cheese types: Asadero, Asiago, Blue, Cheese Blends (excl. Colby-Monterey Jack)); 0 DATCP plant(s)",
+    "id": "sartori-cheese-company",
+    "name": "Sartori Cheese Company",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Plymouth",
+    "evidence": "4 DATCP plant(s) making Asiago, Cheddar, Other, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "id": "sartori-company",
+    "name": "Sartori Company",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Columbus",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cream, Fluid Milk, Frozen Dairy Products, Pasteurizer - HTST",
+    "id": "sassy-cow-creamery",
+    "name": "Sassy Cow Creamery",
+    "suggested": "processor"
+  },
+  {
+    "city": "Muscoda",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "scenic-central-milk-producers-coop",
+    "name": "Scenic Central Milk Producers Coop",
+    "suggested": "processor"
+  },
+  {
+    "city": "Madison",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "schoep-s-ice-cream",
+    "name": "Schoep's Ice Cream",
+    "suggested": "processor"
+  },
+  {
+    "city": "Richland Center",
+    "evidence": "DFW lists it as a maker (44 cheese types: Asadero, Asiago, Baby Swiss, Blue); 5 DATCP plant(s)",
+    "id": "schreiber-foods-inc",
+    "name": "Schreiber Foods, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Darlington",
+    "evidence": "1 DATCP plant(s) making Bleu, Cheddar, Colby, Gorgonzola, Monterey/Monterey Jack; no DFW consumer listing",
+    "id": "schroeder-kase",
+    "name": "Schroeder Kase",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Fairfield",
+    "evidence": "DFW lists it as a maker (7 cheese types: Asiago, Blue, Fontina, Gorgonzola); 0 DATCP plant(s)",
+    "id": "schuman-cheese-inc",
+    "name": "Schuman Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Chilton",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "scoops-ice-cream-house",
+    "name": "Scoops Ice Cream House",
+    "suggested": "processor"
+  },
+  {
+    "city": "Sun Prairie",
+    "evidence": "1 DATCP plant(s) making Cold Pack Cheese/Cheese Food, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "id": "scott-s-of-wisconsin",
+    "name": "Scott's Of Wisconsin",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Brookfield",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "scratch-ice-cream",
+    "name": "Scratch Ice Cream",
+    "suggested": "processor"
+  },
+  {
+    "city": "De Pere",
+    "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Edam, Fontina, Gouda), retail store; 0 DATCP plant(s)",
+    "id": "scray-cheese-company",
+    "name": "Scray Cheese Company",
+    "suggested": "creamery"
+  },
+  {
+    "city": "De Pere",
+    "evidence": "1 DATCP plant(s) making Cheddar, Edam, Gouda, Mozzarella; no DFW consumer listing",
+    "id": "scray-s-cheese-co",
+    "name": "Scray's Cheese Co",
+    "suggested": "commodity"
+  },
+  {
+    "city": "La Crosse",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending",
+    "id": "select-custom-solutions",
+    "name": "Select Custom Solutions",
+    "suggested": "processor"
+  },
+  {
+    "city": "Union Grove",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Pasteurizer - Batch",
+    "id": "silo-view-creamery-llc",
+    "name": "Silo View Creamery LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monticello",
+    "evidence": "DFW lists it as a maker (4 cheese types: Brick, Farmers, Muenster, Cheese Curds), retail store; 1 DATCP plant(s)",
+    "id": "silver-lewis-cheese-factory-cooperative",
+    "name": "Silver Lewis Cheese Factory Cooperative",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Reeseville",
+    "evidence": "DFW lists it as a maker (33 cheese types: Ackawi, Anejo Enchilado, Asadero, Basket Cheese), retail store; 1 DATCP plant(s)",
+    "id": "specialty-cheese-company-inc",
+    "name": "Specialty Cheese Company, Inc",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Beloit",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Drying Operation, Goat Milk, Pasteurizer - Batch, Powder Mixing/Blending",
+    "id": "spray-tek-llc",
+    "name": "Spray - Tek, LLC.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Oconto Falls",
+    "evidence": "1 DATCP plant(s) making Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella; no DFW consumer listing",
+    "id": "springside-artisan-cheese-llc",
+    "name": "Springside Artisan Cheese LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Oconto Falls",
+    "evidence": "DFW lists it as a maker (8 cheese types: Cheddar, Colby, Colby-Monterey Jack, Farmers), retail store; 0 DATCP plant(s)",
+    "id": "springside-cheese-corporation",
+    "name": "Springside Cheese Corporation",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Osseo",
+    "evidence": "1 DATCP plant(s) making Cheddar; no DFW consumer listing",
+    "id": "st-isidore-s-dairy",
+    "name": "St. Isidore's Dairy",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Coloma",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "stoneridge-meat-country-market",
+    "name": "StoneRidge Meat & Country Market",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Coloma",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "stoneridge-wholesale-division-llc",
+    "name": "StoneRidge Wholesale Division, LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Plain",
+    "evidence": "1 DATCP plant(s) making Cheddar, Colby, Monterey/Monterey Jack, Mozzarella, Muenster (Munster); no DFW consumer listing",
+    "id": "straka-meats-inc",
+    "name": "Straka Meats, Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Manawa",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Powder Mixing/Blending",
+    "id": "sturm-foods",
+    "name": "Sturm Foods",
+    "suggested": "processor"
+  },
+  {
+    "city": "Gays Mills",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: none listed",
+    "id": "sunny-ridge-creamery",
+    "name": "Sunny Ridge Creamery",
+    "suggested": "processor"
+  },
+  {
+    "city": "Evansville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Custom Processing, Cut/Wrap/Shred",
+    "id": "swiss-family-smokehouse",
+    "name": "Swiss Family Smokehouse",
+    "suggested": "processor"
+  },
+  {
+    "city": "Boyceville",
+    "evidence": "1 DATCP plant(s) making Cheddar, Other; no DFW consumer listing",
+    "id": "taste-see-creamery-llc",
+    "name": "Taste & See Creamery LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Washburn",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Frozen Dairy Products, Pasteurizer - HTST, Single Service - Grade A",
+    "id": "tetzner-dairy",
+    "name": "Tetzner Dairy",
+    "suggested": "processor"
+  },
+  {
+    "city": "Kohler",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "the-american-club",
+    "name": "The American Club",
+    "suggested": "processor"
+  },
+  {
+    "city": "Waterloo",
+    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "the-deli-source",
+    "name": "The Deli Source",
+    "suggested": "processor"
+  },
+  {
+    "city": "La Crosse",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "the-pearl-ice-cream-parlor",
+    "name": "The Pearl Ice Cream Parlor",
+    "suggested": "processor"
+  },
+  {
+    "city": "Kiel",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Cut/Wrap/Shred",
+    "id": "thiel-distribution-center-inc",
+    "name": "Thiel Distribution Center, Inc.",
+    "suggested": "processor"
+  },
+  {
+    "city": "Weyauwega",
+    "evidence": "1 DATCP plant(s) making Cheddar, Colby, Gouda, Gruyere, Mozzarella; no DFW consumer listing",
+    "id": "topp-cheese",
+    "name": "Topp Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Greenville",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Custom Processing, Drying Operation, Retail Store",
+    "id": "tria-frog-treats-llc",
+    "name": "Tria Frog Treats LLC",
+    "suggested": "processor"
+  },
+  {
+    "city": "Boscobel",
+    "evidence": "2 DATCP plant(s) making Asiago, Brick, Cheddar, Colby, Gouda; no DFW consumer listing",
+    "id": "truvant-north",
+    "name": "Truvant North",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Freedom",
+    "evidence": "2 DATCP plant(s) making Cheddar; no DFW consumer listing",
+    "id": "two-guernsey-girls-creamery-llc",
+    "name": "Two Guernsey Girls Creamery LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Fremont",
+    "evidence": "DFW lists it as a maker (23 cheese types: Baby Swiss, Blue, Brick, Cheddar), retail store; 2 DATCP plant(s)",
+    "id": "union-star-corp",
+    "name": "Union Star, Corp.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Dodgeville",
+    "evidence": "DFW lists it as a maker (2 cheese types: Pleasant Ridge Reserve, Rush Creek Reserve); 1 DATCP plant(s)",
+    "id": "uplands-cheese-company",
+    "name": "Uplands Cheese Company",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Browntown",
+    "evidence": "DFW lists it as a maker (2 cheese types: Queso Quesadilla, Oaxaca); 2 DATCP plant(s)",
+    "id": "v-v-supremo-foods-inc",
+    "name": "V & V Supremo Foods, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "South Wayne",
+    "evidence": "DFW lists it as a maker (6 cheese types: Butterkase, Farmers, Havarti, Muenster); 0 DATCP plant(s)",
+    "id": "valley-view-cheese-cooperative",
+    "name": "Valley View Cheese Cooperative",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Lancaster",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "vesperman-farms",
+    "name": "Vesperman Farms",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "DFW lists it as a maker (9 cheese types: Anejo Enchilado, Asadero, Cotija, Queso Blanco); 0 DATCP plant(s)",
+    "id": "w-w-dairy-llc",
+    "name": "W&W Dairy, LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Kewaunee",
+    "evidence": "DFW lists it as a maker (3 cheese types: Cheddar, Gouda, Cheese Curds); 1 DATCP plant(s)",
+    "id": "wakker-cheese-llc",
+    "name": "Wakker Cheese LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Waupun",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Fluid Milk, Frozen Dairy Products, Pasteurizer - HTST",
+    "id": "waupun-dairy",
+    "name": "Waupun Dairy",
+    "suggested": "processor"
+  },
+  {
+    "city": "Marshfield",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cream, Cut/Wrap/Shred, Fluid Milk, Other",
+    "id": "weber-farm-store",
+    "name": "Weber Farm Store",
+    "suggested": "processor"
+  },
+  {
+    "city": "Colby",
+    "evidence": "DFW lists it as a maker (3 cheese types: Pasteurized Processed Cheese Sauce, Pasteurized Processed Cheese Food, Pasteurized Processed Cheese Spread); 0 DATCP plant(s)",
+    "id": "welcome-dairy-llc",
+    "name": "Welcome Dairy LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Hayward",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
+    "id": "west-s-hayward-dairy",
+    "name": "West's Hayward Dairy",
+    "suggested": "processor"
+  },
+  {
+    "city": "Westby",
+    "evidence": "DFW lists it as a maker (6 cheese types: Cheddar, Colby, Colby-Monterey Jack, Monterey Jack), retail store; 1 DATCP plant(s)",
+    "id": "westby-cooperative-creamery",
+    "name": "Westby Cooperative Creamery",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Cazenovia",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Frozen Dairy Products, Pasteurizer - Batch, Sheep Milk",
+    "id": "weston-school-district",
+    "name": "Weston School District",
+    "suggested": "processor"
+  },
+  {
+    "city": "Sun Prairie",
+    "evidence": "DFW lists it under Sold By only, not Made By; 1 DATCP plant(s)",
+    "id": "weyauwega-cheese",
+    "name": "Weyauwega Cheese",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Rosendale",
+    "evidence": "DFW lists it as a maker (26 cheese types: Asiago, Baby Swiss, Blue, Brick), retail store; 2 DATCP plant(s)",
+    "id": "weyauwega-star-dairy-inc",
+    "name": "Weyauwega Star Dairy, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Mount Horeb",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "white-jasmine-llc",
+    "name": "White Jasmine LLC",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Theresa",
+    "evidence": "DFW lists it as a maker (33 cheese types: Asiago, Baby Swiss, Blue, Brick), retail store; 1 DATCP plant(s)",
+    "id": "widmer-s-cheese-cellars-inc",
+    "name": "Widmer's Cheese Cellars, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Howard",
+    "evidence": "DFW lists it as a maker (36 cheese types: Anejo Enchilado, Asadero, Asiago, Blue); 1 DATCP plant(s)",
+    "id": "winona-foods-inc",
+    "name": "Winona Foods, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Kaukauna",
+    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
+    "id": "wisconsin-aging-grading-cheese-inc",
+    "name": "Wisconsin Aging & Grading Cheese, Inc",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Oregon",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "wisconsin-cheese-company",
+    "name": "Wisconsin Cheese Company",
+    "suggested": "processor"
+  },
+  {
+    "city": "Monroe",
+    "evidence": "DFW lists it as a maker (20 cheese types: Ackawi, Asadero, Baby Swiss, Brick); 2 DATCP plant(s)",
+    "id": "wisconsin-cheese-group-llc",
+    "name": "Wisconsin Cheese Group, LLC",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Milwaukee",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "wisconsin-cheese-mart",
+    "name": "Wisconsin Cheese Mart",
+    "suggested": "processor"
+  },
+  {
+    "city": "Waupun",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "id": "wisconsin-dairy-distributing",
+    "name": "Wisconsin Dairy Distributing",
+    "suggested": "processor"
+  },
+  {
+    "city": "Rudolph",
+    "evidence": "DFW lists it as a maker (41 cheese types: Asiago, Blue, Brick, Brie), retail store; 0 DATCP plant(s)",
+    "id": "wisconsin-dairy-state-cheese-co-inc",
+    "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Mauston",
+    "evidence": "1 DATCP plant(s) making Cheddar, Gouda, Other, Parmesan and Reggiano, Swiss and Emmentaler; no DFW consumer listing",
+    "id": "wisconsin-pride-cheese-co-inc",
+    "name": "Wisconsin Pride Cheese Co. Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Plano",
+    "evidence": "DFW lists it as a maker (18 cheese types: Asadero, Baby Swiss, Cheddar, Cheese Blends (excl. Colby-Monterey Jack)); 0 DATCP plant(s)",
+    "id": "wisconsin-s-finest",
+    "name": "Wisconsin's Finest",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Darlington",
+    "evidence": "2 DATCP plant(s) making Cheddar, Monterey/Monterey Jack, Other, Skim Milk for Mfg.; no DFW consumer listing",
+    "id": "wisconsin-whey-protein-inc",
+    "name": "Wisconsin Whey Protein Inc.",
+    "suggested": "commodity"
+  },
+  {
+    "city": "Auburndale",
+    "evidence": "DFW lists it as a maker (3 cheese types: Blue, Feta, Gorgonzola); 1 DATCP plant(s)",
+    "id": "wiskerchen-cheese-inc",
+    "name": "Wiskerchen Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "Wisconsin Rapids",
+    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk",
+    "id": "wow-logistics-company",
+    "name": "Wow Logistics Company",
+    "suggested": "processor"
+  },
+  {
+    "city": "Cadott",
+    "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Colby, Colby-Monterey Jack, Monterey Jack), retail store; 1 DATCP plant(s)",
+    "id": "yellowstone-cheese-inc",
+    "name": "Yellowstone Cheese, Inc.",
+    "suggested": "creamery"
+  },
+  {
+    "city": "South Wayne",
+    "evidence": "DFW lists it as a maker (7 cheese types: Asadero, Baby Swiss, Brick, Farmers), retail store; 1 DATCP plant(s)",
+    "id": "zimmerman-cheese-company-inc",
+    "name": "Zimmerman Cheese Company, Inc.",
+    "suggested": "creamery"
+  }
+]

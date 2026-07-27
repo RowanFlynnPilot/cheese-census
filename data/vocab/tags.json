@@ -19,5 +19,15 @@
     "chipotle", "habanero", "horseradish", "caraway", "fenugreek", "cumin",
     "truffle", "bacon", "cranberry", "cherry"
   ],
-  "mc_certifications": []
+  "mc_certifications": [
+    "ALPINE STYLE", "ASIAGO", "BABY SWISS", "BEL PAESE", "BLUE", "BRICK",
+    "BUTTERKÄSE", "CHEDDAR", "CHEESE CURDS", "CHEVRE", "COLBY", "COLBY JACK",
+    "EMMENTAL", "FARMERS CHEESE", "FETA", "FONTINA", "FRESH MOZZARELLA",
+    "GORGONZOLA", "GOUDA", "GRAN CANARIA®", "GRUYÈRE",
+    "HARD SURFACE-RIPENED CHEESE", "HAVARTI", "LIMBURGER", "LOW FAT MOZZARELLA",
+    "MOBAY®", "MONTEREY JACK", "MOZZARELLA", "MUENSTER", "OAXACA",
+    "OPEN CLASS HARD CHEESE", "PARMESAN", "PARMESAN (GRANA)", "PROVOLONE",
+    "QUESO QUESADILLA", "RACLETTE", "RICOTTA", "ROMANO", "SPECIALTY SWISS",
+    "SWISS"
+  ]
 }

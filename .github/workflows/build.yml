@@ -2,7 +2,8 @@ name: build
 
 on:
   workflow_dispatch:
-  # Enable the schedule only after all four scrapers are implemented —
+  # All four scrapers now run; the build still stops at the manual review gate
+  # (classifications + crosswalk). Enable the schedule once that review has landed —
   # a scheduled run that can only fail is noise, not automation.
   # schedule:
   #   - cron: "0 11 * * 1"   # Mondays 11:00 UTC

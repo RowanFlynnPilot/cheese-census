@@ -1,0 +1,815 @@
+[
+  {
+    "description_raw": "Asiago is the sadly underappreciated Italian sibling of parmesan. Give it some love, people! From young and smooth to aged and crumbly, asiago is a fruity and slightly tart, savory cheese. We love to eat it fresh, but we enjoy cooking with it even more. Named for the small town in northern Italy where it was born, asiago is similar to other mountain cheeses in that it’s dense and firm, well-aged, and originally crafted to weather those long, tough winters in the Dolomites (the Italian corner of the Alps). We love our Wisconsin asiago unconditionally (and year-round!) on its own, on a cheese board or finely grated over nearly any pasta-based entree.",
+    "flavors": [
+      "Fruity",
+      "Salty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Hard",
+      "Semi-Hard"
+    ],
+    "id": 4,
+    "intensity": [
+      "Intense",
+      "Medium",
+      "Mild",
+      "Strong"
+    ],
+    "name": "Asiago"
+  },
+  {
+    "description_raw": "Take away some of the aging of swiss cheese and emmental and you get younger, milder and higher-moisture baby swiss. Nobody knows for sure the origin story of this buttery delightful, full-of-micro-holes cheese. It seems to be native to the American Midwest and it seems to have been created sometime in the middle of the last century. In the hands of our Master Cheesemakers, baby swiss from Wisconsin is less bold than its siblings but every bit as versatile as swiss and emmental. You have our permission to make it all you own.",
+    "flavors": [
+      "Buttery",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 5,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Baby Swiss"
+  },
+  {
+    "description_raw": "Not everyone loves a no-kidding-around blue, but we really value the strength and character of this Old World, blue-veined beauty. Wisconsin cheesemakers produce an impressive number of award-winning blues, and many are sharp, peppery and unforgettable. Words to the wise: Serious cheese deserves serious bread, so pair with some care.",
+    "flavors": [
+      "Earthy",
+      "Moldy-Blue",
+      "Salty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Hard",
+      "Semi-Soft"
+    ],
+    "id": 7,
+    "intensity": [
+      "Intense",
+      "Medium",
+      "Mild",
+      "Strong"
+    ],
+    "name": "Blue"
+  },
+  {
+    "description_raw": "Brick is a Wisconsin original from way back. Wisconsin cheesemakers first crafted brick cheese in the late 1800s and named it matter-of-factly after the bricks cheesemakers were using to press the curds. When young, brick cheese is deliciously mild with just a tiny bit of nuttiness. Give it some time to age, though, and it ambles into more complex, pungent, even tangy territory. Brick is a tamer, quieter version of that famously stinky German cheese, Limburger.",
+    "flavors": [],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 8,
+    "intensity": [
+      "Intense",
+      "Medium",
+      "Mild",
+      "Strong"
+    ],
+    "name": "Brick"
+  },
+  {
+    "description_raw": "Butterkäse is a decadently creamy cow’s milk cheese that’s incredibly popular in Germany and Austria where it originated. In Wisconsin, we also loudly sing its praises, and when we do, we pronounce it booter-keh-zuh. Butterkäse is short for “buttery cheese” because of its soft and silky, butter-like texture. It’s a cheese we’re always more than happy to hang out with in a corner at a party, whether it’s served straight-up or in a dish. If butterkäse in the room, you’ll always know where to find us.",
+    "flavors": [
+      "Buttery",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 10,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Butterkäse"
+  },
+  {
+    "description_raw": "Colby makes Wisconsin proud. Cheesemakers in the central Wisconsin town of Colby dreamed it into existence in the late 1800s, and if there were a state cheese colby would be a frontrunner. Many think of it as a milder form of cheddar, because the cheese making processes are similar. It’s tender, it’s lacy, it’s a perfect melter, and most importantly, it makes everything you put with it tastier.",
+    "flavors": [
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 15,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Colby"
+  },
+  {
+    "description_raw": "Colby isn’t something Wisconsinites are on the fence about. It was born in the Wisconsin town of Colby, and we love how lacy, tender and all-purpose it is. Colby-monterey jack, also known as colby-jack or even cojack, simply brings mild and white monterey jack into the colby fold. It’s a handsome, All-American cheese that’s marbled orange and white throughout. Both colby and jack rate high on the meltability scale. They’re also both beautifully mild and creamy. In other words, with so much in common, we had a hunch they’d get along. As we know all too well, cheeses that play together stay together!",
+    "flavors": [
+      "Milky-Creamy",
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 16,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Colby-Monterey Jack"
+  },
+  {
+    "description_raw": "Named after the town of Cotjia in the Mexican state of Michoacán, where it has been made for over 400 years. Cotija is a semi-hard, slightly aged, seriously tasty crumbler. If we had to compare it to another cheese, feta is the closest comparison. Both are salty and slightly acidic, yet flavorful cheeses that we love to eat cold or slightly warmed in or over soups, salads and other savory dishes. Another name for cotija is “queso anejado,” which means aged cheese, although it’s typically only aged for two months or less. We’re so happy this Mexican classic migrated north -- the universe of great cheese we’re blessed with in Wisconsin would never be complete without it.",
+    "flavors": [
+      "Milky-Creamy",
+      "Salty"
+    ],
+    "hardness": [
+      "Hard"
+    ],
+    "id": 18,
+    "intensity": [
+      "Strong"
+    ],
+    "name": "Cotija"
+  },
+  {
+    "description_raw": "For most Americans, cream cheese means cheese wrapped in foil or found in a plastic tub. We’re here to tell you that there’s a lot more to this soft, mild and infinitely spreadable cheese. Cream cheese became popular in the late 1800s, when production in the Northeast spread throughout the country thanks to the invention of the separator. The separator allowed cheesemakers to pack curd hot and double shelf life. We’re stumped as to why cream cheese is often marketed as neufchatel, since it bears no resemblance to that soft-ripened Normandy cheese. Whatever you call it, our bagels would go into mourning without it.",
+    "flavors": [
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 19,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Cream Cheese"
+  },
+  {
+    "description_raw": "For many Americans, feta is their first foray into unfamiliar international cheese territory, beyond the cheddars, mozzarellas and American cheeses of their youth. Whether whole or crumbled, plastic wrapped or in a tub, feta cheese is a tart, salty and super tasty fresh cheese. On the Balkan Peninsula, where feta was born, and in Greece in particular, feta is made from either sheep or goat milk, because the hilly terrain there is where those animals thrive. In Wisconsin, we use cow’s milk for our feta, so it’s a touch less assertive, tart or gamy and a bit lighter. It’s also a whole heck of a lot fresher, since it doesn’t have to cross the Atlantic from Greece.",
+    "flavors": [],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 22,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Feta"
+  },
+  {
+    "description_raw": "Lucky for us, this centuries-old cheese from Italy’s Alpine Aosta Valley came with cheesemakers that emigrated from northern Italy to Wisconsin at the end of the 19th century. Once here, they quickly began putting a Wisconsin spin on this Italian classic through trial and error and, in time, with creative rubs and flavor infusions. Wisconsin fontina has a full, yet gentle flavor, with a touch of tartness that ramps up with age. If you want a versatile cheese that performs as well cooked as it does on a cheeseboard, Wisconsin fontina will always do you right.",
+    "flavors": [],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 24,
+    "intensity": [
+      "Medium",
+      "Mild",
+      "Strong"
+    ],
+    "name": "Fontina"
+  },
+  {
+    "description_raw": "We happily reap what we sow when it comes to our state’s exceptional, award-winning gorgonzola. This rich and creamy Italian cheese, named for Italy’s Po Valley town near Milan, was first made in A.D. 879. Italian immigrants brought its recipes with them to Wisconsin, where our cheesemakers put their own spin on this timeless classic. Gorgonzola was one of our country’s first blue cheese loves, so it makes sense that we’d make ours so memorable. In every possible way.",
+    "flavors": [
+      "Milky-Creamy",
+      "Moldy-Blue",
+      "Salty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 25,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "Gorgonzola"
+  },
+  {
+    "description_raw": "In Wisconsin, we do the Dutch proud with our cultured, buttermilk-rich gouda. It’s sometimes young, sweet and springy, and other times aged, complex and slightly crystalline. Holland-born, creamy, washed-curd gouda is a slightly sweet and incredibly versatile cheese. Wisconsin-born-and-bred gouda is perfect for nearly any role you want it to play, whether it be a starring role on a cheese board or as a supporting character as, say, a casserole ingredient.",
+    "flavors": [
+      "Fruity",
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 26,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Gouda"
+  },
+  {
+    "description_raw": "The Alps have been home to gruyere and other alpine-style cheeses since the 11th century. These cooked and pressed, white-to-golden cheeses were handcrafted to weather the frequent snow-packed storms raging through the Alps. Lucky for us, immigrants from this region settled in Wisconsin and have passed down these traditions. Wisconsin cheesemakers continue to craft these classic alpine-style cheeses using old-world techniques including copper vats. With the addition of Wisconsin's innovation, we are just beginning to realize the sky’s-the-limit potential of these nutty, rich, full-bodied cheeses. Whether it’s blizzardy outside or not, anytime is the right time for these wonderful wonders from Wisconsin!",
+    "flavors": [
+      "Earthy",
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 27,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Alpine-Style"
+  },
+  {
+    "description_raw": "This soft, creamy and always-inviting Danish cheese was invented by Hanne Neilsen in the mid-1800s. She named her washed curd, slightly sweet cheese “Havarthi,” after her farm. In Wisconsin, we love this rindless melter, with its tiny pinprick holes or “eyes”, straight-up or studded with dill, caraway or other herbs. However you prefer it, we think versatile havarti is underrated. Not by us, mind you. In Wisconsin, havarti is a conversation stopper. When it’s in the house, Wisconsinites are concentrating on the task at hand: getting some havarti before it’s all gone.",
+    "flavors": [
+      "Buttery",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 28,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Havarti"
+  },
+  {
+    "description_raw": "Even though nose-kicking limburger got its start in the Belgium town of Limburg, we consider it a German cheese. Bavarians have been making it in great quantities since the 1800s and German immigrants brought this flavorful cheese to Wisconsin. These days, Wisconsin claims limburger as our own -- literally, since we are the only state in America still producing it thanks to our pals at Chalet Cheese Cooperative in Monroe. We recommend you get to know limburger, but definitely store it in very tightly-lidded glass containers. Contain the (wonderful) stink!",
+    "flavors": [
+      "Buttery",
+      "Earthy",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 33,
+    "intensity": [
+      "Intense",
+      "Strong"
+    ],
+    "name": "Limburger"
+  },
+  {
+    "description_raw": "Mascarpone is a sweet dream of spreadable cheese. Born and raised in the Lombardy region of Italy, Mascarpone is quite well-travelled these days. In Wisconsin, we can’t get enough of our state’s farm-fresh, rich, cultured-creamy mascarpone. We enjoy its subtly-sweet yumminess year-round in all sorts of desserts and baked goods, including its most famous Italian dessert partnership, tiramisu.",
+    "flavors": [
+      "Citric",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 35,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Mascarpone"
+  },
+  {
+    "description_raw": "After World War II, American soldiers returned home with a taste for a delicious new food that they discovered in Italy — pizza! — which featured a cheese they’d never tried before: mozzarella. Today, mozzarella is America’s most popular cheese, and Wisconsin makes more of it than anywhere else. Our cheesemakers produce nearly 1 billion pounds of this mild and melty, irresistible cheese each year. Creamy white, pliable and delicious, we’re proud to produce America’s number one cheese for America’s favorite food (pizza). Grazie, Italy!",
+    "flavors": [
+      "Milky-Creamy",
+      "Salty"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 37,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Mozzarella"
+  },
+  {
+    "description_raw": "Muenster is one of our country's first semi-soft cheeses, and it originated in ancient monastic Alsace, France. It made its way to Wisconsin’s no-shortcuts, no-nonsense cheese-makers in the late 1800s. In Europe, muenster is traditionally a soft, creamy white, washed-rind cheese. In Wisconsin, it's a bit firmer, ranging from mild-to-sharp, with a bright orange, natural annatto coating. We can’t get enough of this earthy, able-bodied cheese. We’ve tried and it’s just not possible.",
+    "flavors": [
+      "Buttery",
+      "Earthy",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 38,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Muenster"
+  },
+  {
+    "description_raw": "Born in the upper Po River Valley of Northern Italy in the Middle Ages, parmesan is a soulful and legendary cheese. It gained early popularity in the 14th century for the enormous size of its wheels, virtual indestructibility, long shelf life and incredible depth of flavor. Here in America, Wisconsin leads the pack in quantity and quality when it comes to this sweet and savory, nutty and complex cheese. Our cheesemakers have really embraced this cheese’s proud tradition in mastering that classic flavor profile of butterscotch plus salt plus that signature parmtastic tang.",
+    "flavors": [
+      "Fruity",
+      "Nutty",
+      "Salty"
+    ],
+    "hardness": [
+      "Hard"
+    ],
+    "id": 42,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Parmesan"
+  },
+  {
+    "description_raw": "Provolone is our empress of antipasto. She’s clean and buttery with a just a hint of sharpness, widely varied in shape and size and, whether young or old, she’s ever-approachable. She gets along with everything from cured meats to olives, and she always makes everyone in her presence feel great. Provolone got its start in southern Italy. It was traditionally a toothsome, cow’s milk cheese hand-formed, tied in rope and hung to age. Many Wisconsin provolones continue those straight-from-the-boot-of-Italy traditions. Regardless, with provolone it’s just as people say: you may forget what a cheese said, and even what a cheese did, but you’ll never forget how that cheese made you feel.",
+    "flavors": [
+      "Buttery",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 48,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "Provolone"
+  },
+  {
+    "description_raw": "In Mexico, queso fresco, which literally translates to “fresh cheese,” is often wrapped in leaves or corn husks. You’ll find Wisconsin’s fresh-as-a-new-day queso fresco most commonly on American grocery store shelves wrapped in plastic wheels. Our favorite thing about this popular Mexican-style cheese is that it’s so fresh and moist, and yet it always pulls on our pants’ legs to be cooked in a variety of amazing dishes. With heat, queso fresco softens into creamy goodness, but it never melts or gets stringy. If you love ricotta or other farmers cheese, we think you’ll soon be smitten with this easy to crumble, super tasty, fresh wonder.",
+    "flavors": [
+      "Salty"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 51,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Queso Fresco"
+  },
+  {
+    "description_raw": "If this northern Mexican cheese was a superhero it would be Supermelter! It’s known far and wide across the land as the cheese that makes quesadillas happiest. Sure, they might survive without it. There are other melty cheeses, after all, but those others are just going through the motions. Queso quesadilla is a sturdy yet creamy, mild and versatile cheese that we love to melt in-between tortillas, on top of tortilla chips and into beans and queso dips. Kids love it, adults love it, and yes, it’s true that tortillas never met a queso quesadilla they didn’t fall head over heels for.",
+    "flavors": [
+      "Buttery",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 52,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Queso Quesadilla"
+  },
+  {
+    "description_raw": "Ricotta is a go-to fresh cheese. It’s light and fluffy, creamy and slightly sweet, and it’s so go-with-the-flow that it can go in any savory or sweet direction you point it in. And it’s resourceful! Italians first crafted ricotta to make use of their romano’s leftover whey. They cooked the whey until the curds rose, then skimmed and drained them, and voila: ricotta! We make our ricotta with fresh cow’s milk and whey, and the end result is a pure and simple, satisfying fresh cheese that’s always easy peasy, light and breezy.",
+    "flavors": [
+      "Citric",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 54,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Ricotta"
+  },
+  {
+    "description_raw": "Italians adore their hard and full-bodied cheeses, and romano, born in the countryside outside of Rome, is a very special case in point. It’s a bolder, tangier, saltier, always-gets-its-way relative to parmesan. In Wisconsin, we make ours with cow’s milk, while Italy uses sheep milk. The end result: ours is a bit lighter, milder and less fatty. In other words, guilt be gone when heaping on the romano!",
+    "flavors": [
+      "Nutty",
+      "Salty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 55,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "Romano"
+  },
+  {
+    "description_raw": "There are a vast array of beautiful cheeses packing Swiss passports, and Wisconsin’s versions of pale, hole-ly Swiss cheese is our ode to the lot of them. Our Swiss cheese is a kissing cousin to Switzerland’s emmental, and both cheeses are full of those naturally occurring and iconic holes. Wisconsin Swiss is rindless and locked and loaded with buttery, nutty and slightly sweet flavor. Whether you stick your fingers through it and nibble away, or serve it in a deli spread, this full-flavored cheese isn’t about to judge you. Its wants are simple and its motivations are pure. Just slice it, eat it and come back for more.",
+    "flavors": [
+      "Buttery",
+      "Milky-Creamy",
+      "Nutty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 58,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Swiss"
+  },
+  {
+    "description_raw": "Sid Cook, owner and Master Cheesemaker at Carr Valley Cheese Company, lovingly created this deliciously intense, nutty and robust olive-oil-cured cheese. Named after the Spanish Canary Island that inspired it, Gran Canaria is crafted with a blend of sheep, cow and goat milk, then aged for at least two years. It has won heaps of prestigious awards, including Best of Show at the 2014 American Cheese Society Competition. Here’s to Cook, a fourth generation Wisconsin cheesemaking master. And here’s to Canaria, a true masterpiece! Cook breaks new creamy and crumbly ground in our fair state year after year, and Gran Canaria is one of the all-time greats, in our humble opinion.",
+    "flavors": [
+      "Nutty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Hard",
+      "Semi-Hard"
+    ],
+    "id": 72,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Canaria™"
+  },
+  {
+    "description_raw": "First things first: this wildly original cheese that you most likely haven’t heard of is actually called juustoleipa and is pronounced hoo-stah-lee-pah in its native Scandinavia. It’s also commonly referred to as “bread cheese,” because of its light crust that’s, well, similar to toasted bread. Bread cheese was originally made from reindeer milk in northern Finland and Sweden. For real! Cows are slightly more common in Wisconsin, so we make this squeaky, buttery, slightly caramelized cheese from cow’s milk. Because juustoleipa has such low acidity, it doesn’t melt when heated. It just beautifully softens, so we love to bake or fry this conversation starter on a griddle, and serve it soft and slightly browned with honey, fruit and tasty brown breads.",
+    "flavors": [
+      "Buttery",
+      "Salty"
+    ],
+    "hardness": [
+      "Semi-Soft",
+      "Soft"
+    ],
+    "id": 75,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Bread Cheese (Juustoleipa)"
+  },
+  {
+    "description_raw": "There is nothing more satisfying than a generous serving of farm-fresh cottage cheese. We know people tend think of cottage cheese as old folks’ food. We think those people are in need of an attitude adjustment. These days, cottage cheese is all about young, slightly tangy flavor, whether it’s flying solo or with fresh fruits and vegetables by its side. In Wisconsin, we don’t discriminate. Wholesome and versatile cottage cheese is for anyone and everyone!",
+    "flavors": [],
+    "hardness": [],
+    "id": 76,
+    "intensity": [],
+    "name": "Cottage Cheese"
+  },
+  {
+    "description_raw": "Freshly pulled, water-packed, smooth and fresh mozzarella is a dream of a cheese with a delicate, milky flavor and slightly elastic texture. It’s called mozzarella fresca in Italy where it, of course, originated, and there it’s often made with water buffalo milk. We don’t have many water buffalo in Wisconsin, so we make ours from cow’s milk. Ours is lush and juicy, and we can never get enough of its bright, fresh and uplifting flavor.",
+    "flavors": [],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 77,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Fresh Mozzarella"
+  },
+  {
+    "description_raw": "Sicilian-born ricotta salata is a clean, white ricotta cheese that’s simply been pressed, salted and aged. In other words, it’s ricotta, just with a stronger spine. Ricotta salata adds bright and moist, milky flavor to all sorts of dishes, and we love it for its just right, not-too-salty burst of flavor. In Wisconsin, we press and age ours for one to two months, and the end result is a smooth and firm, fresh and nutty, bright white superstar that pairs well with countless foods and drinks.",
+    "flavors": [
+      "Milky-Creamy",
+      "Nutty",
+      "Salty"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 114,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Ricotta Salata"
+  },
+  {
+    "description_raw": "Named for the southern Mexican state of Oaxaca from where it hails, high-moisture Oaxaca cheese employs the same string cheese process as mozzarella. This makes perfect sense, because it was brought to Mexico by Italy’s Dominican monks. If you’ve never had a quesadilla with this gorgeously melty cheese, then we urge you to warm up your skillet and grab the tortillas. We love it and so do kids. Their favorite part is that it pulls apart and ribbons just like their beloved string cheese. Added bonus: it’s delicious and has a well-travelled tale to tell.",
+    "flavors": [
+      "Milky-Creamy",
+      "Salty"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 119,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Oaxaca"
+  },
+  {
+    "description_raw": "For seven years in a row, Roth Cheese’s Canela (formerly GranQueso®) has been a big winner on the national and international award show circuit. Seven! There is so much going on with this orangey-red on the outside, amber on the inside cheese that is inspired by Spanish manchego. Canela wheels are hand-rubbed in a blend of cinnamon and paprika, and textured in a beautiful basket-weave rind, making them a real eye-catcher on a board or spread. If the question is, would we like another serving of lively and bright, manchego-style Canela, our answer will always be yes, please!",
+    "flavors": [
+      "Nutty",
+      "Salty"
+    ],
+    "hardness": [
+      "Hard"
+    ],
+    "id": 123,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "Canela"
+  },
+  {
+    "description_raw": "Wisconsin cheese curds never met a frown they couldn’t turn upside-down. Springy and fresh and famous for that adorable squeak, cheese curds are just flat-out fun! For one, they give you an eye into the magic of cheesemaking, since all cheese starts by separating the curds from the whey. They are also tiny and funny looking with no two alike. Batter and fry the curds, throw them on top of fries and smother them in gravy, like our neighbors to the north do. Or, just enjoy them fresh, as is. You can’t go wrong with this irresistible Wisconsin original.",
+    "flavors": [
+      "Salty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 135,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Cheese Curds"
+  },
+  {
+    "description_raw": "Burrata bursts with cream and fresh strands of mozzarella when you slice into it. Its delicate interior is as fresh as a cold, straight-from-the-farm glass of milk. We like to think of burrata as mozzarella with a special surprise inside! It’s one of the world’s most perishable cheeses, so it’s not exactly the best to import. That’s why we decided to take our farm-fresh cow’s milk and craft it for you in Wisconsin, situated as we are in the middle of everything. If you get your hands on a ball of this straightforward, honest Wisconsin-Italian burrata, well, you’re living your life the right way.",
+    "flavors": [
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 136,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Burrata"
+  },
+  {
+    "description_raw": "As legend has it, this fresh and rindless cheese got its start during autumn in the Lombardy and Romagna regions of northern Italy. Most cheeses are historically made in the spring and summer, when the pastures are lush and green, the days are long and the milk is as fresh as can be. Stracchino was supposedly made after the cows descended from their rugged, Alpine pastures in chillier months, and was crafted with their ultra-rich, pasture-infused milk. In Wisconsin, we make our soft and creamy, award-winning stracchino year-round. It’s lovely to cook and bake with: It spreads, melts and layers beautifully, and you’ll want it on hand at all times throughout the year.",
+    "flavors": [
+      "Citric",
+      "Milky-Creamy",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 138,
+    "intensity": [
+      "Mild"
+    ],
+    "name": "Stracchino (Crescenza)"
+  },
+  {
+    "description_raw": "This Wisconsin original has won a trophy case full of national and international awards. It’s all nutty, fruity, cow's milk goodness up front. When it comes to texture, think young, creamy cheddar with the crystalline crunch of a premium farmstead parmesan. It’s often hand-rubbed or soaked with an array of flavors like Black Pepper, Espresso, Chai, Merlot, Citrus Ginger and many more. If you’re lucky enough to enjoy BellaVitano at your table, you’ve just corralled yourself a unique piece of time-honored Wisconsin culture. Savor it.",
+    "flavors": [
+      "Fruity",
+      "Nutty"
+    ],
+    "hardness": [
+      "Hard"
+    ],
+    "id": 146,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "BellaVitano®"
+  },
+  {
+    "description_raw": "If we had to put a crown on world’s most recognizable cheese, salty-sweet emmental would probably be our queen, with its golden hue and holey-er-than-thou holes. This gloriously melty Swiss-born cheese impressively never separates under heat. It’s nutty and fruity and loved all over the planet. Maybe we’re biased, but we think it’s especially amazing in the hands of Wisconsin Master Cheesemakers. We can’t get enough of emmental’s roasty, toasty, nut flavor and melty goodness. Whenever we throw a fondue party, you can be sure that emmental is the first to get the invitation. Lucky for us, it always responds with a ja (or yes, if you don’t speak Swiss)!",
+    "flavors": [
+      "Fruity",
+      "Grassy-Herbal",
+      "Nutty"
+    ],
+    "hardness": [
+      "Hard",
+      "Semi-Hard"
+    ],
+    "id": 151,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "Emmental"
+  },
+  {
+    "description_raw": "Sartori Company founder Paolo Sartori, and his quintessentially Italian ethic of living life to the fullest, is the primary inspiration behind this exceptional cheese. Pastorale Blend® is a creamy, earthy and paprika-dusted mixed-milk cheese. It was inspired by the wide world of Italian farmstead sheep’s milk cheeses, and is also Sartori’s first foray into mixed milk cheesemaking. First time’s a charm, it seems, because Pastorale Blend® took home a coveted first place ribbon from the American Cheese Society Competition in 2016.",
+    "flavors": [
+      "Earthy",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 181,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Pastorale Blend®"
+  },
+  {
+    "description_raw": "Roth’s cheesemaking history began in Switzerland in the mid-1800s, before it hopped across the pond to our fair southern Wisconsin. All of that expertise informs this rare, small-batch, award-winning Wisconsin raw-milk treasure. In terms of the cheesemaking process for this beauty, the curds are cooked in copper vats, and the wheels are cellar-aged and regularly washed, turned and flipped for six months or more. No amount of praise can overstate our love of this rich and savory, no-shortcuts alpine cheese Wisconsin classic.",
+    "flavors": [
+      "Earthy",
+      "Fruity",
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 188,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Roth Private Reserve"
+  },
+  {
+    "description_raw": "An American cousin to German limburger, Liederkranz® has a similar texture and aroma, but is distinctly robust and buttery. This pale ivory original was brought to life in upstate New York in the late 1800s as a stand-in for the traditional, smelly cheese from Germany called Bismarck Schlosskase that German immigrants missed dearly. In 1926, Liederkranz® packed its New York bags for Ohio, before eventually finding a home in Wisconsin. We’re ecstatic Liederkranz® found a home in our fair state, and we proudly sing (or yodel!) its praises.",
+    "flavors": [
+      "Buttery",
+      "Earthy",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 190,
+    "intensity": [
+      "Intense",
+      "Strong"
+    ],
+    "name": "Liederkranz®"
+  },
+  {
+    "description_raw": "Cheddar technique meets roquefort culture in this quest for the very best and most balanced hybrid of two classic styles and flavors. Mellower than most blues and with more personality than most cheddars, these Wisconsin originals are impossible to classify. These incredible cheeses are proof of Wisconsin cheesemakers’ commitment to blazing new paths. More cheddar blue, please, and more blue cheddar while you’re at it!",
+    "flavors": [],
+    "hardness": [
+      "Hard",
+      "Semi-Hard",
+      "Semi-Soft"
+    ],
+    "id": 203,
+    "intensity": [
+      "Intense",
+      "Medium",
+      "Strong"
+    ],
+    "name": "Cheddar Blue"
+  },
+  {
+    "description_raw": "Quark is German for “fresh curd” and Germany is, of course, to thank for first inventing this slightly tart and milky fresh, young thing. In Wisconsin, we value quark for its simplicity and versatility. We like to think of it as a spoon-soft, light and spreadable cross between ricotta and sour cream. Germans and Austrians bake quark into all sorts of desserts and sweet and savory pastries, and we get it. It adds moistness, protein and creamy flavor to whatever you add it to. At heart, quark is a team player – more than happy to go sweet or savory and versatile enough to play either a starring or supporting role.",
+    "flavors": [
+      "Buttery",
+      "Milky-Creamy"
+    ],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 213,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Quark"
+  },
+  {
+    "description_raw": "Everyone’s drawn to this sublime looking -- and tasting -- cheese when it covers a hamburger. Its distinctive bold marbling makes even the most well-mannered turn their heads and rubberneck. Think of everything that you love about creamy, delicious, highly meltable jack cheese, and combine that with all that you appreciate in the wide world of blues, and you’ve got yourself Wisconsin’s flavorful, but never overbearing, marbled blue jack. It slices rather than crumbles and has a lovely mild blue flavor. Marbled blue jack is like a microcosm of the entire cheese universe all in one cheese.",
+    "flavors": [],
+    "hardness": [
+      "Semi-Soft"
+    ],
+    "id": 220,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Marbled Blue-Jack"
+  },
+  {
+    "description_raw": "Blends of natural cheese and other ingredients into flavorful spreads for use on crackers, sandwiches, and in recipes.",
+    "flavors": [],
+    "hardness": [
+      "Soft"
+    ],
+    "id": 229,
+    "intensity": [
+      "Medium",
+      "Mild",
+      "Strong"
+    ],
+    "name": "Cheese Spreads"
+  },
+  {
+    "description_raw": "LaClare Family Creamery’s head cheesemaker, Katie Furhmann, had her heart set on crafting a new, one-of-a-kind cheese. For inspiration, she looked to New Zealand’s impressive cheddars and settled on the winning combination of goat and cow’s milk. It wasn’t until the cheese was cave-aging that she came up with the name. Fuhrmann’s great-grandparents originally named their Wisconsin farm, now home to LaClare Family Creamery, “chandoka,” after their children Charmaine, Ann, Donna and Kathy. You may never have the pleasure of meeting Katie’s now-grown kids, but don’t let that stop you from seeking out this this fantastic, mixed-milk Wisconsin original!",
+    "flavors": [
+      "Earthy",
+      "Fruity",
+      "Nutty",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 257,
+    "intensity": [
+      "Intense",
+      "Medium"
+    ],
+    "name": "Chandoka®"
+  },
+  {
+    "description_raw": "We don’t shy away from sharpness, so we adore this been-around-the-block cheese for its full-flavor cheekiness. You see the life experience in its beautiful crystalline cracks and you taste it in its always complex and sometimes tangy flavor. This lower-moisture, often flaky cheddar is sometimes but not always clothbound. Any way you slice it (or not), live free, aged cheddar -- you’ve certainly done your time!",
+    "flavors": [],
+    "hardness": [],
+    "id": 264,
+    "intensity": [],
+    "name": "Aged Cheddar"
+  },
+  {
+    "description_raw": "Gruyère is one of Switzerland’s most prized cheeses. Over there, they have all sorts of rules and regulations to follow when it comes to this centuries-old golden melter. In Wisconsin, our only gruyère rule: make it delicious. We love this semi-hard, winter warmer for everything from classic melty dishes like French onion soup and fondue to straight-up snacking in any form your little heart desires.",
+    "flavors": [
+      "Grassy-Herbal",
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 268,
+    "intensity": [
+      "Medium",
+      "Strong"
+    ],
+    "name": "Gruyère"
+  },
+  {
+    "description_raw": "Cupola is an award-winning, semi-hard cheese handcrafted for Red Barn Family Farms. Cupola gets its name from the small wooden pinnacles that top, traditional Wisconsin barns. We like to think of this high-quality, small batch, artisan cheese as a thing of simple, pastoral beauty, just like its namesake. Red Barn is known for its strong relationships with neighboring family farms, and you can taste that community appreciation in Cupola.",
+    "flavors": [
+      "Fruity",
+      "Nutty"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 278,
+    "intensity": [
+      "Medium"
+    ],
+    "name": "Cupola"
+  },
+  {
+    "description_raw": "Many of Cedar Grove Cheese’s wheels and blocks are named after Shakespearean characters, thanks to the company’s proximity to American Players Theater in Spring Green, Wisconsin. This is certainly true of Montague, a surprisingly mild, washed-rind mixed-milk cheese. Its name comes from Romeo Montague in Shakespeare’s star-crossed tragedy, Romeo and Juliet. Luckily for us, this cheese has a much brighter(and happier) future than its namesake. It took home a first-place ribbon at the American Cheese Society Competition in 2017. Our only question: Wherefore art thou, Montague, you most divine and inspired creation?",
+    "flavors": [
+      "Citric",
+      "Earthy",
+      "Sharp-Pungent"
+    ],
+    "hardness": [
+      "Semi-Hard"
+    ],
+    "id": 296,
+    "intensity": [
+      "Medium",
+      "Mild"
+    ],
+    "name": "Montague"
+  },
+  {
+    "description_raw": "The Blue Jay by Deer Creek is a quintuple cream blue cheese. Yes, you read that right. And you thought triple cream was rich! Meet The Blue Jay. We know and love many cheeses that incorporate fresh green herbs like dill and chives, of course, but rich and creamy Blue Jay prefers to fly among the juniper trees. This beautiful blue’s piney notes all derive from those strong-willed blue berries, which are crushed and infused into it. We adore this bold, botanical Wisconsin blue, especially when we’re sipping on chilled juniper-kissed gin.",
+    "flavors": [],
+    "hardness": [],
+    "id": 318,
+    "intensity": [],
+    "name": "The Blue Jay"
+  },
+  {
+    "description_raw": "Several years ago, Rolf Penterman packed up their Dutch dairying ways and moved to Thorp, Wisconsin to open their farmstead operation. Later, Marieke joined and started to craft their mind-blowing goudas. A mere four months after completing their first batch of goudas, they took home a gold from the U.S. Champion Cheese Contest, the first of over 100 awards for one of America’s most decorated cheesemakers. Ultra-melty Fenugreek Gouda has hints of maple-syrup, thanks to the infusion of fenugreek, and we always say, More cheese, please! when this one Wisconsin original is close at hand.",
+    "flavors": [],
+    "hardness": [],
+    "id": 319,
+    "intensity": [],
+    "name": "Fenugreek Gouda"
+  },
+  {
+    "description_raw": "Young cheddar is a mild cheese we all know and love. It’s as familiar to us as baseball and apple pie. In fact, some people even like to top their apple pie with a slice of it while watching the Brewers game. Younger cheeses are typically milder cheeses with higher moisture and that certainly rings true here. Creamy and pleasantly sweet, young cheddar is always friendly and approachable. You can take it to any party and know that you don’t have to stand by its side all night. It’s sure to make fast friends and probably won’t need a ride home.",
+    "flavors": [],
+    "hardness": [],
+    "id": 320,
+    "intensity": [],
+    "name": "Young Cheddar"
+  },
+  {
+    "description_raw": "This bright and flavorful, award-winning triple-milk cheese from Hook’s Cheese in Mineral Point is as fun as its name implies. Made with milk from sheep (ewe), cow (calf), and goat (kid), it’s a complex, veiny blue cheese crafted by high school sweethearts and Hook’s Cheese owners, Tony and Julie Hook. One of the many reasons to celebrate this cheese: it’s the first triple-milk blue produced in the U.S. We love how each milk shines in this mouthwatering Wisconsin original -- creamy cow, earthy sheep and zippy goat -- all in one.",
+    "flavors": [],
+    "hardness": [],
+    "id": 321,
+    "intensity": [],
+    "name": "EWE CALF to be KIDding"
+  },
+  {
+    "description_raw": "Fourth-generation Wisconsin cheesemaker Chris Roelli is the man behind this potent yet approachable blue that eats like a brilliant aged-cheddar. Dunbarton wheels are pierced with blue mold and immediately pressed. The end result is a cheese with the bite and flavor of a patiently-aged cheddar and teases of delicious blue veins. In other words, it’s a blue you can safely sneak onto a blue cheese hater’s plate. Trust us: even the most hardcore blue skeptic in your life will love the earthy, slightly sharp Dunbarton Blue.",
+    "flavors": [],
+    "hardness": [],
+    "id": 322,
+    "intensity": [],
+    "name": "Dunbarton Blue"
+  }
+]

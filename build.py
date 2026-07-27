@@ -6,20 +6,33 @@ no fallbacks. If this script exits 0, build/ is complete and correct.
 from __future__ import annotations
 
 import json
+import re
 import sys
+import unicodedata
 from collections import Counter
+from difflib import SequenceMatcher
 from pathlib import Path
 
 from models import (
     CLASSIFICATIONS,
     Award,
+    AwardEntry,
+    Certification,
     Cheese,
     Creamery,
     CrosswalkEntry,
     Highlight,
     Person,
+    Plant,
+    Retail,
 )
 from similarity import attach_similar
+
+# Messages here are prose, em dashes and all, and dev is a Windows console whose
+# default code page cannot encode them. Without this a fatal renders as mojibake and
+# a plain print() raises UnicodeEncodeError over a character in its own error text.
+for _stream in (sys.stdout, sys.stderr):
+    _stream.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent
 RAW = ROOT / "data" / "raw"
@@ -52,15 +65,474 @@ def load_raw() -> dict[str, list[dict]]:
 
 # ── Stage 2: entity resolution ───────────────────────────────────────────────
 
+# Legal-form noise that carries no identity. Stripped before any name comparison.
+# "and" is here because DATCP licenses "Alpine Slicing & Cheese Conversion Company"
+# and "Alpine Slicing and Cheese Conversion Company" as two plants of one business.
+LEGAL_NOISE = re.compile(
+    r"\b(inc|llc|l\.l\.c|ltd|co|company|companies|cooperative|co-?op|corp|corporation"
+    r"|usa|the|llp|lp|incorporated|and)\b"
+)
+# An exact normalized-name hit is the only thing trusted enough to become a crosswalk
+# entry unattended. Fuzzy scoring is advisory only and lands in queue/proposed_crosswalk
+# — measured against the real data, name similarity alone is actively dangerous:
+# "Sartori Cheese Company" scores 0.83 against "Sargento Cheese", and both are in
+# Plymouth, so neither name nor city rescues it. A human resolves those.
+PROPOSAL_FLOOR = 0.72
+CITY_ASSISTED_FLOOR = 0.50   # a weaker name is still worth showing if the city agrees
+CITY_BONUS = 0.15
+PROPOSALS_PER_RECORD = 3
+
+
+def _normalize_name(value: str | None) -> str:
+    text = re.sub(r"[^a-z0-9 ]", " ", (value or "").lower())
+    return " ".join(LEGAL_NOISE.sub(" ", text).split())
+
+
+def _slugify(value: str) -> str:
+    ascii_value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode()
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", ascii_value.lower())).strip("-")
+
+
+def _ratio(a: str, b: str) -> float:
+    return SequenceMatcher(None, a, b).ratio()
+
+
+class Resolver:
+    """Normalized-name index over canonical companies. Exact hits auto-resolve;
+    everything else comes back as scored candidates for human review."""
+
+    def __init__(self) -> None:
+        self._by_name: dict[str, set[str]] = {}
+        self._cities: dict[str, set[str]] = {}
+
+    def add(self, company_key: str, *names: str | None) -> None:
+        for name in names:
+            normalized = _normalize_name(name)
+            if normalized:
+                self._by_name.setdefault(normalized, set()).add(company_key)
+
+    def add_cities(self, company_key: str, cities) -> None:
+        self._cities.setdefault(company_key, set()).update(
+            c.strip().lower() for c in cities if c and c.strip()
+        )
+
+    def resolve(
+        self, name: str | None, city: str | None = None
+    ) -> tuple[str | None, list[dict]]:
+        """Returns (auto-matched company key or None, ranked candidates).
+
+        Only a unique exact normalized-name hit auto-matches. Candidates are ranked
+        by city agreement first, then name similarity — a shared city is the strongest
+        evidence available to the reviewer, and ordering by similarity alone buries the
+        right answer (Steve Bechel's "Eau Galle Cheese" in Durand ties at 0.80 with
+        "Cedar Valley Cheese" in Belgium, and only the city tells them apart).
+        """
+        normalized = _normalize_name(name)
+        exact = self._by_name.get(normalized, set())
+        if len(exact) == 1:
+            return next(iter(exact)), []
+
+        town = (city or "").strip().lower()
+        best: dict[str, float] = {}
+        for known, keys in self._by_name.items():
+            score = round(_ratio(normalized, known), 3)
+            for key in keys:
+                if score > best.get(key, 0.0):
+                    best[key] = score
+        ranked = sorted(
+            (
+                {
+                    "company_key": key,
+                    "name_similarity": score,
+                    "city_match": bool(town and town in self._cities.get(key, set())),
+                }
+                for key, score in best.items()
+                if score >= PROPOSAL_FLOOR
+                or (score >= CITY_ASSISTED_FLOOR and town and town in self._cities.get(key, set()))
+            ),
+            # Blend rather than hard-prioritise: a shared city is worth roughly the gap
+            # between a good and an excellent name match, not an override of it.
+            key=lambda c: (
+                -(c["name_similarity"] + (CITY_BONUS if c["city_match"] else 0.0)),
+                c["company_key"],
+            ),
+        )
+        return None, ranked[:PROPOSALS_PER_RECORD]
+
+
+def _datcp_companies(records: list[dict]) -> dict[str, list[dict]]:
+    """Group licensed plants into companies. BelGioioso alone holds 12 plant numbers."""
+    companies: dict[str, list[dict]] = {}
+    for record in records:
+        key = _normalize_name(record["business_name"])
+        if not key:
+            fatal(f"datcp plant {record['source_key']} has an unusable business name")
+        companies.setdefault(key, []).append(record)
+    return companies
+
+
+def _assign_ids(companies: dict[str, dict]) -> None:
+    """Stable, collision-free creamery slugs. Ids are forever — Supabase hearts key
+    on them — so collisions are broken by city, then by a DATCP plant number, never
+    by an ordinal that would shift when the directory changes."""
+    taken: dict[str, str] = {}
+    for key in sorted(companies):
+        company = companies[key]
+        base = _slugify(company["name"])
+        candidate = base
+        if candidate in taken:
+            candidate = f"{base}-{_slugify(company['city'])}"
+        if candidate in taken and company["plants"]:
+            candidate = f"{base}-{company['plants'][0]['datcp_id'].lower()}"
+        if candidate in taken:
+            fatal(
+                f"cannot assign a unique creamery id: '{company['name']}' and "
+                f"'{companies[taken[candidate]]['name']}' both reduce to '{candidate}'"
+            )
+        taken[candidate] = key
+        company["id"] = candidate
+
+
 def merge(raw: dict[str, list[dict]]) -> dict:
     """Resolve source records into canonical creameries/cheeses/people/awards
     plus auto crosswalk entries (normalized name + address matching).
 
+    DATCP is the spine: its plants group into companies keyed by normalized business
+    name, and the plant number stays the canonical government key. DFW companies,
+    master cheesemakers and contest entries resolve onto those companies by exact
+    normalized name (against both the licensed name and the DBA); a DFW company that
+    matches nothing becomes a creamery in its own right, since DFW lists real
+    businesses that hold no Wisconsin plant licence.
+
     Returns {"creameries": [Creamery], "cheeses": [Cheese], "people": [Person],
              "awards": [Award], "crosswalk": [CrosswalkEntry]}.
     """
-    raise NotImplementedError(
-        "merge() is the next build step once scrapers emit raw JSON — see CLAUDE.md"
+    companies: dict[str, dict] = {}
+    crosswalk: list[dict] = []
+    proposals: list[dict] = []
+
+    # ── DATCP: the spine ─────────────────────────────────────────────────────
+    for key, plants in _datcp_companies(raw["datcp"]).items():
+        first = plants[0]
+        companies[key] = {
+            "key": key,
+            "name": first["trade_name"],
+            "aka": {p["business_name"] for p in plants} | {p["dba"] for p in plants if p["dba"]},
+            "city": first["city"],
+            "county": first["county"],
+            "address": first["address"],
+            "plants": [
+                {
+                    "datcp_id": p["source_key"],
+                    "address": p["address"],
+                    "city": p["city"],
+                    "county": p["county"],
+                    "operations": p["operations"],
+                }
+                for p in plants
+            ],
+            # Kept apart from the flattened operations list so the classification pass
+            # can tell a cheese type ("Limburger") from a capability ("Retail Store").
+            "cheeses_made": sorted({c for p in plants for c in p["cheese_manufactured"]}),
+            "operations": sorted({o for p in plants for o in p["operations"]}),
+            "dfw": None,
+        }
+
+    resolver = Resolver()
+    for key, company in companies.items():
+        resolver.add(key, key, *company["aka"])
+        resolver.add_cities(key, [company["city"], *(p["city"] for p in company["plants"])])
+
+    # ── DFW: the consumer layer ──────────────────────────────────────────────
+    for record in sorted(raw["dfw"], key=lambda r: int(r["source_key"])):
+        matched, candidates = resolver.resolve(record["name"], record["city"])
+        if matched is None:
+            matched = f"dfw:{record['source_key']}"
+            companies[matched] = {
+                "key": matched,
+                "name": record["name"],
+                "aka": set(),
+                "city": record["city"] or "",
+                "county": None,
+                "address": "",
+                "plants": [],
+                "dfw": None,
+            }
+            if candidates:
+                proposals.append({
+                    "source": "dfw",
+                    "source_key": record["source_key"],
+                    "name": record["name"],
+                    "city": record["city"],
+                    "resolved_to": "a new standalone creamery",
+                    "candidates": [
+                        {**c,
+                         "company": companies[c["company_key"]]["name"],
+                         "city": companies[c["company_key"]]["city"],
+                         "plants": len(companies[c["company_key"]]["plants"])}
+                        for c in candidates
+                    ],
+                })
+        # One company can carry two DFW listings — Union Star Cheese Factory is also
+        # listed as its Willow Creek Cheese brand. Keep the lowest DFW id as the
+        # primary so the creamery's identity does not depend on iteration order; the
+        # other name lands in aka and both ids still resolve to this creamery.
+        if companies[matched]["dfw"] is None:
+            companies[matched]["dfw"] = record
+        headquarters = next(
+            (l for l in record["locations"] if l["kind"] == "Headquarters"),
+            record["locations"][0] if record["locations"] else None,
+        )
+        if headquarters:
+            companies[matched].setdefault("coords", (headquarters["lat"], headquarters["lng"]))
+            if not companies[matched]["address"]:
+                companies[matched]["address"] = headquarters["street"] or ""
+            if not companies[matched]["city"]:
+                companies[matched]["city"] = headquarters["city"]
+        companies[matched]["aka"].add(record["name"])
+        crosswalk.append({"source": "dfw", "source_key": record["source_key"], "company": matched})
+
+    for key, company in companies.items():
+        if company["name"] and company["dfw"]:
+            company["name"] = company["dfw"]["name"]
+
+    _assign_ids(companies)
+    company_id = {key: company["id"] for key, company in companies.items()}
+
+    for record in raw["datcp"]:
+        crosswalk.append({
+            "source": "datcp",
+            "source_key": record["source_key"],
+            "company": _normalize_name(record["business_name"]),
+        })
+
+    # Manual crosswalk entries win over name matching, and they have to be read HERE
+    # rather than left to apply_overrides(): a master cheesemaker or award that does
+    # not resolve is skipped or left creamery-less by this function, so patching the
+    # crosswalk afterwards would satisfy validation #6 while the Person record stayed
+    # silently missing from the export.
+    by_creamery_id = {company["id"]: key for key, company in companies.items()}
+    manual: dict[tuple[str, str], str] = {}
+    for entry in _read_json(OVERRIDES / "crosswalk.json"):
+        target = entry["creamery_id"]
+        if target not in by_creamery_id:
+            fatal(
+                f"crosswalk override {entry['source']}:{entry['source_key']} targets unknown "
+                f"creamery '{target}' — check queue/proposed_crosswalk.json for valid ids"
+            )
+        manual[(entry["source"], entry["source_key"])] = by_creamery_id[target]
+
+    # Everything resolves against the full canonical set, DFW-only companies included.
+    full = Resolver()
+    for key, company in companies.items():
+        full.add(key, key, company["name"], *company["aka"])
+        full.add_cities(key, [company["city"], *(p["city"] for p in company["plants"])])
+
+    def _candidates(found: list[dict]) -> list[dict]:
+        return [
+            {**c, "company": companies[c["company_key"]]["name"],
+             "city": companies[c["company_key"]]["city"]}
+            for c in found
+        ]
+
+    # ── Masters and contests ─────────────────────────────────────────────────
+    people: list[Person] = []
+    for record in sorted(raw["masters"], key=lambda r: r["source_key"]):
+        matched, candidates = full.resolve(record["company"], record["city"])
+        matched = manual.get(("masters", record["source_key"]), matched)
+        if matched is None:
+            proposals.append({
+                "source": "masters",
+                "source_key": record["source_key"],
+                "name": record["company"],
+                "city": record["city"],
+                "resolved_to": None,
+                "candidates": _candidates(candidates),
+            })
+            continue
+        crosswalk.append({"source": "masters", "source_key": record["source_key"], "company": matched})
+        display = record["name"]
+        for maker in (companies[matched]["dfw"] or {}).get("master_cheesemakers", []):
+            if _normalize_name(maker["name"]) == _normalize_name(record["name"]):
+                display = maker["name"]  # DFW prints proper case; the PDF sets names in caps
+        people.append(Person(
+            id=record["source_key"],
+            name=display,
+            creamery_ids=[company_id[matched]],
+            certifications=[Certification(**c) for c in record["certifications"]],
+            active=True,
+        ))
+
+    awards: list[Award] = []
+    for record in sorted(raw["contests"], key=lambda r: r["source_key"]):
+        matched, candidates = full.resolve(record["company"], record["city"])
+        matched = manual.get(("contests", record["source_key"]), matched)
+        if matched is None:
+            proposals.append({
+                "source": "contests",
+                "source_key": record["source_key"],
+                "name": record["company"],
+                "city": record["city"],
+                "resolved_to": None,
+                "candidates": _candidates(candidates),
+            })
+        if matched is not None:
+            crosswalk.append({
+                "source": "contests", "source_key": record["source_key"], "company": matched,
+            })
+        awards.append(Award(
+            id=record["source_key"],
+            contest=record["contest"],
+            year=record["year"],
+            class_number=record["class_number"],
+            class_name=record["class_name"],
+            placement=record["placement"],
+            finalist=record["finalist"],
+            champion=record["champion"],
+            score=record["score"],
+            entry=AwardEntry(
+                cheese_name=record["cheese_name"],
+                maker=record["maker"],
+                company=record["company"],
+                city=record["city"],
+            ),
+            creamery_id=company_id[matched] if matched else None,
+            cheese_id=None,   # no cheese catalog yet — see the flavor tagging pass
+        ))
+
+    creameries = [
+        Creamery(
+            id=company["id"],
+            name=company["name"],
+            aka=sorted(n for n in company["aka"] if n and n != company["name"]),
+            city=company["city"],
+            county=company["county"],
+            lat=company.get("coords", (None, None))[0],
+            lng=company.get("coords", (None, None))[1],
+            address=company["address"],
+            website=(company["dfw"] or {}).get("website"),
+            retail=Retail(
+                store=bool((company["dfw"] or {}).get("retail", {}).get("store")),
+                # DFW advertises mail-order and online filters but publishes neither
+                # value; false here means "not advertised", and overrides carry truth.
+                mail_order=False,
+                online=False,
+            ),
+            plants=[Plant(**p) for p in company["plants"]],
+            dfw_company_id=int(company["dfw"]["source_key"]) if company["dfw"] else None,
+        )
+        for company in sorted(companies.values(), key=lambda c: c["id"])
+    ]
+
+    proposals.extend(_duplicate_companies(companies))
+    write_proposals(companies, proposals)
+
+    return {
+        "creameries": creameries,
+        # The cheese catalog needs family/texture/age/rind and 2-6 flavor tags per
+        # record. DFW publishes cheese *types* per company, never named products, so
+        # there is nothing here to build a cheese from without inventing it. The
+        # catalog arrives with the assisted flavor tagging pass.
+        "cheeses": [],
+        "people": people,
+        "awards": awards,
+        "crosswalk": [
+            CrosswalkEntry(
+                source=entry["source"],
+                source_key=entry["source_key"],
+                creamery_id=company_id[entry["company"]],
+                method="auto",
+            )
+            for entry in sorted(crosswalk, key=lambda e: (e["source"], e["source_key"]))
+        ],
+    }
+
+
+# ── Review proposals (written every run, before the build's own gates) ───────
+
+DUPLICATE_FLOOR = 0.85
+
+
+def _duplicate_companies(companies: dict[str, dict]) -> list[dict]:
+    """Two DATCP licences for one business look like two creameries. Surface the
+    near-identical pairs that share a city — merging them is a manual crosswalk entry."""
+    ordered = sorted(companies.values(), key=lambda c: c["id"])
+    cities = {
+        c["id"]: {t.lower() for t in [c["city"], *(p["city"] for p in c["plants"])] if t}
+        for c in ordered
+    }
+    found = []
+    for i, a in enumerate(ordered):
+        for b in ordered[i + 1:]:
+            if not cities[a["id"]] & cities[b["id"]]:
+                continue
+            score = round(_ratio(_normalize_name(a["name"]), _normalize_name(b["name"])), 3)
+            if score < DUPLICATE_FLOOR:
+                continue
+            found.append({
+                "source": "duplicate-company",
+                "source_key": f"{a['id']}|{b['id']}",
+                "name": a["name"],
+                "city": a["city"],
+                "resolved_to": None,
+                "candidates": [{
+                    "company": b["name"],
+                    "company_key": b["id"],
+                    "name_similarity": score,
+                    "city": b["city"],
+                    "shared_cities": sorted(cities[a["id"]] & cities[b["id"]]),
+                    "plants": [p["datcp_id"] for p in a["plants"]] + [p["datcp_id"] for p in b["plants"]],
+                }],
+            })
+    return found
+
+def _suggest(company: dict) -> tuple[str, str]:
+    dfw = company["dfw"]
+    cheeses = company.get("cheeses_made", [])
+    if dfw and "maker" in dfw["roles"]:
+        types = ", ".join(t["name"] for t in dfw["cheese_types"][:4]) or "none listed"
+        return "creamery", (
+            f"DFW lists it as a maker ({len(dfw['cheese_types'])} cheese types: {types})"
+            f"{', retail store' if dfw['retail']['store'] else ''}; "
+            f"{len(company['plants'])} DATCP plant(s)"
+        )
+    if dfw:
+        return "commodity", (
+            f"DFW lists it under Sold By only, not Made By; {len(company['plants'])} DATCP plant(s)"
+        )
+    if cheeses:
+        return "commodity", (
+            f"{len(company['plants'])} DATCP plant(s) making {', '.join(cheeses[:5])}; "
+            f"no DFW consumer listing"
+        )
+    return "processor", (
+        f"{len(company['plants'])} DATCP plant(s), no cheese manufactured; "
+        f"operations: {', '.join(company.get('operations', [])[:5]) or 'none listed'}"
+    )
+
+
+def write_proposals(companies: dict[str, dict], proposals: list[dict]) -> None:
+    QUEUE.mkdir(exist_ok=True)
+    suggested = []
+    for company in sorted(companies.values(), key=lambda c: c["id"]):
+        classification, evidence = _suggest(company)
+        suggested.append({
+            "id": company["id"],
+            "name": company["name"],
+            "city": company["city"],
+            "suggested": classification,
+            "evidence": evidence,
+        })
+    (QUEUE / "proposed_classifications.json").write_text(
+        json.dumps(suggested, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+        encoding="utf-8", newline="\n",
+    )
+    (QUEUE / "proposed_crosswalk.json").write_text(
+        json.dumps(
+            sorted(proposals, key=lambda p: (p["source"], p["source_key"])),
+            indent=2, sort_keys=True, ensure_ascii=False,
+        ) + "\n",
+        encoding="utf-8", newline="\n",
     )
 
 
@@ -124,6 +596,17 @@ def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
     }
     all_creameries = {c.id for c in ds["creameries"]}
     cheese_ids = {c.id for c in ds["cheeses"]}
+
+    ungeocoded = sorted(
+        c.id for c in ds["creameries"]
+        if c.id in exported_creameries and (c.lat is None or c.lng is None)
+    )
+    if ungeocoded:
+        fatal(
+            f"{len(ungeocoded)} exported creamery(ies) have no lat/lng — the map cannot "
+            f"render a null. Geocode and pin them in data/overrides/creameries.json, or "
+            f"reclassify: {ungeocoded[:10]}{' …' if len(ungeocoded) > 10 else ''}"
+        )
 
     for cheese in ds["cheeses"]:
         if cheese.creamery_id not in exported_creameries:
@@ -195,7 +678,7 @@ def _write_table(name: str, records: list) -> None:
     payload = [r.model_dump(mode="json") for r in sorted(records, key=lambda r: r.id)]
     (BUILD / f"{name}.json").write_text(
         json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
-        encoding="utf-8",
+        encoding="utf-8", newline="\n",
     )
 
 
@@ -212,7 +695,7 @@ def export(ds: dict, classifications: dict[str, str]) -> dict[str, int]:
     (BUILD / "highlights.json").write_text(
         json.dumps([h.model_dump(mode="json") for h in highlights],
                    indent=2, sort_keys=True, ensure_ascii=False) + "\n",
-        encoding="utf-8",
+        encoding="utf-8", newline="\n",
     )
     return {name: len(records) for name, records in exported.items()}
 
@@ -233,7 +716,7 @@ def main() -> None:
     print(
         "OK: "
         + ", ".join(f"{count} {name}" for name, count in counts.items())
-        + f", {len(ds['highlights'])} highlights → build/"
+        + f", {len(ds['highlights'])} highlights -> build/"
     )
 
 
