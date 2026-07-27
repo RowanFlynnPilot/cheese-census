@@ -296,6 +296,27 @@ def merge(raw: dict[str, list[dict]]) -> dict:
         if company["name"] and company["dfw"]:
             company["name"] = company["dfw"]["name"]
 
+        # city/county/address must describe the same place the pin does. Taking them
+        # from plants[0] while lat/lng came from the DFW headquarters put Grande Cheese
+        # (8 plants) in Green County with a pin 100km north in Fond du Lac. Prefer the
+        # plant in the headquarters' city; fall back to the lowest-numbered plant.
+        if company["plants"]:
+            home = company["plants"][0]
+            headquarters = next(
+                (l for l in (company["dfw"] or {}).get("locations", [])
+                 if l["kind"] == "Headquarters"),
+                None,
+            )
+            if headquarters:
+                home = next(
+                    (p for p in company["plants"]
+                     if p["city"].strip().lower() == (headquarters["city"] or "").strip().lower()),
+                    home,
+                )
+            company["city"] = home["city"]
+            company["county"] = home["county"]
+            company["address"] = home["address"]
+
     _assign_ids(companies)
     company_id = {key: company["id"] for key, company in companies.items()}
 

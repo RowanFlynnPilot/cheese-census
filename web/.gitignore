@@ -1,0 +1,5 @@
+node_modules/
+dist/
+*.tsbuildinfo
+# Mirrored from build/ by scripts/sync-data.mjs — build/ is the source of truth.
+public/data/

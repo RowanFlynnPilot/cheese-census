@@ -133,7 +133,7 @@
     "suggested": "creamery"
   },
   {
-    "city": "Menasha",
+    "city": "Green Bay",
     "evidence": "DFW lists it as a maker (21 cheese types: Asiago, Blue, Cheese Blends (excl. Colby-Monterey Jack), Fontina); 12 DATCP plant(s)",
     "id": "belgioioso-cheese-inc",
     "name": "BelGioioso Cheese, Inc.",
@@ -217,7 +217,7 @@
     "suggested": "processor"
   },
   {
-    "city": "Mauston",
+    "city": "La Valle",
     "evidence": "DFW lists it as a maker (33 cheese types: Blue, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 8 DATCP plant(s)",
     "id": "carr-valley-cheese-company-inc",
     "name": "Carr Valley Cheese Company, Inc.",
@@ -749,7 +749,7 @@
     "suggested": "commodity"
   },
   {
-    "city": "Juda",
+    "city": "Fond du Lac",
     "evidence": "DFW lists it as a maker (8 cheese types: Asiago, Cheese Blends (excl. Colby-Monterey Jack), Mozzarella, Parmesan); 10 DATCP plant(s)",
     "id": "grande-cheese-company",
     "name": "Grande Cheese Company",
@@ -833,7 +833,7 @@
     "suggested": "creamery"
   },
   {
-    "city": "Milwaukee",
+    "city": "East Troy",
     "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Alpine-Style, Cheese Curds, Luna); 2 DATCP plant(s)",
     "id": "hill-valley-dairy",
     "name": "Hill Valley Dairy",
@@ -1729,7 +1729,7 @@
     "suggested": "processor"
   },
   {
-    "city": "Luxemburg",
+    "city": "Kewaunee",
     "evidence": "DFW lists it as a maker (30 cheese types: Baby Swiss, Blue, Brick, Brie), retail store; 2 DATCP plant(s)",
     "id": "ron-s-wisconsin-cheese",
     "name": "Ron's Wisconsin Cheese",
@@ -1820,7 +1820,7 @@
     "suggested": "processor"
   },
   {
-    "city": "Richland Center",
+    "city": "Green Bay",
     "evidence": "DFW lists it as a maker (44 cheese types: Asadero, Asiago, Baby Swiss, Blue); 5 DATCP plant(s)",
     "id": "schreiber-foods-inc",
     "name": "Schreiber Foods, Inc.",
@@ -2142,7 +2142,7 @@
     "suggested": "commodity"
   },
   {
-    "city": "Rosendale",
+    "city": "Weyauwega",
     "evidence": "DFW lists it as a maker (26 cheese types: Asiago, Baby Swiss, Blue, Brick), retail store; 2 DATCP plant(s)",
     "id": "weyauwega-star-dairy-inc",
     "name": "Weyauwega Star Dairy, Inc.",

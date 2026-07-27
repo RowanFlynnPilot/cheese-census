@@ -48,6 +48,8 @@ queue/report.json          generated review reports (non-fatal work: coverage, u
 queue/proposed_*.json      merge()'s review proposals — classifications and fuzzy
                            crosswalk candidates; written every run, before the build's
                            own gates, so they exist even when the build stops
+web/                       React/Vite front end (see web/README.md); renders build/*.json,
+                           holds no data and computes nothing the pipeline should have
 build/                     final static JSON the frontend consumes (committed)
 ```
 
@@ -164,6 +166,9 @@ Next steps, in order:
    `cheese_types`, DATCP `cheese_manufactured`, and contest cheese names; tag with
    `data/raw/dfw_varieties.json` as a starting signal, human approves in batches.
    `flavor` needs 2–6 tags per record, so this is what unblocks `build/cheeses.json`
-   and lights up the similarity engine.
+   and lights up the similarity engine — and with it the whole reader layer of the
+   front end (browse, hearts, similar-cheese, highlights), which is stubbed out.
 3. `scripts/describe.py` — generation with the WPR voice prompt
-4. Frontend
+4. Front end, continued. `web/` renders the creamery map and directory today; it
+   cannot render a cheese until step 2 lands. No deploy workflow yet — GitHub Pages
+   publishing waits until `build/` is real.
