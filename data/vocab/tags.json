@@ -1,0 +1,23 @@
+{
+  "milk": ["cow", "goat", "sheep", "mixed"],
+  "texture": ["fresh", "soft", "semi_soft", "semi_hard", "hard"],
+  "age_band": ["fresh", "young", "medium", "aged", "extra_aged"],
+  "rind": ["none", "natural", "bloomy", "washed", "wax"],
+  "family": [
+    "cheddar", "colby_jack", "alpine", "gouda_edam", "blue", "bloomy",
+    "washed_rind", "fresh", "pasta_filata", "italian_hard", "hispanic",
+    "brined", "semi_soft_table", "curds", "spreads_processed", "other"
+  ],
+  "flavor": [
+    "buttery", "creamy", "milky", "mild", "sweet", "caramel", "nutty",
+    "toasty", "fruity", "grassy", "earthy", "mushroomy", "tangy", "sharp",
+    "salty", "briny", "savory", "smoky", "peppery", "pungent", "funky",
+    "crystalline"
+  ],
+  "add_ins": [
+    "dill", "garlic", "onion", "chive", "basil", "tomato", "jalapeno",
+    "chipotle", "habanero", "horseradish", "caraway", "fenugreek", "cumin",
+    "truffle", "bacon", "cranberry", "cherry"
+  ],
+  "mc_certifications": []
+}
