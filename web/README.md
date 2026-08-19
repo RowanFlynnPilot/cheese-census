@@ -24,10 +24,20 @@ npm run typecheck
 
 Creameries, their licensed plants and operations, master cheesemakers and contest
 awards — filterable by county, retail store and award record, sortable by name,
-award count or county, with a map pin per creamery (retail stores render as a
-donut; the legend on the map explains the pins). Awards group by contest edition
-with 1st/2nd/3rd medal chips and champion / top-20 treatment. A stats strip under
-the masthead carries the census-wide numbers.
+award count or county (with sticky county section heads), with a map pin per
+creamery (retail stores render as a donut; the legend on the map explains the
+pins). Awards group by contest edition with 1st/2nd/3rd medal chips and champion /
+top-20 treatment. A stats strip under the masthead carries the census-wide
+numbers, and an "About this census" panel in the colophon explains sources,
+methodology and the provisional-data notice.
+
+Search answers the census's home question — *who makes X?* It matches names,
+cities, counties and trade names, and reaches into each creamery's licensed
+cheese types (diacritic-insensitive), labelling rows that matched that way with
+"makes …". The "Licensed to make" chips in the detail panel are buttons: click
+one to see every maker of that cheese. The panel also carries prev/next
+navigation through the filtered list (← / → keys work too, with a position
+indicator) and a copy-link button for the creamery's deep link.
 
 Plant operations are split into cheese types and plant capabilities using DATCP's
 own closed vocabularies (the 7 GeneralProcessing and 29 SpecificProcessing values,

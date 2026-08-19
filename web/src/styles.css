@@ -234,6 +234,30 @@ input:focus-visible {
   flex-wrap: wrap;
 }
 
+/* Why a row matched when its name didn't — "makes Limburger". */
+.op-hint {
+  color: var(--teal-dark);
+  font-weight: 500;
+}
+
+/* Sticky county section heads when the list is sorted by county. */
+.county-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.32rem 1rem;
+  background: var(--cream-deep);
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
 /* Static placeholder rows while the tables load — no shimmer, nothing to reduce. */
 .skel {
   padding: 0.75rem 1rem;
@@ -252,6 +276,20 @@ input:focus-visible {
   color: var(--ink-soft);
   font-size: 0.9rem;
   text-align: center;
+}
+
+.empty p {
+  margin: 0 0 0.5rem;
+}
+
+.linkish {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--teal-dark);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* ── Map ────────────────────────────────────────────────────────────────── */
@@ -368,13 +406,52 @@ input:focus-visible {
   font-family: var(--display);
   font-size: 1.3rem;
   font-weight: 600;
-  margin: 0 2rem 0.2rem 0;
+  margin: 0 0 0.2rem;
   line-height: 1.2;
 }
 
 .detail-head .where {
   font-size: 0.85rem;
   color: var(--ink-soft);
+}
+
+/* Panel toolbar: position indicator, prev/next, copy link, close. */
+.head-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.pos {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  margin-right: 0.3rem;
+}
+
+.hbtn {
+  border: 1px solid var(--rule);
+  background: #fff;
+  border-radius: 4px;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  padding: 0;
+}
+
+.hbtn:hover {
+  background: var(--teal-tint);
+  color: var(--ink);
+}
+
+.hbtn.copy {
+  font-size: 0.72rem;
+  padding: 0 0.5rem;
 }
 
 .close {
@@ -479,6 +556,19 @@ input:focus-visible {
   background: var(--teal-tint);
   color: var(--teal-dark);
   font-weight: 500;
+}
+
+/* "Licensed to make" chips are buttons — click one to see every maker of that
+ *  cheese. Only <button>-rendered chips pick these rules up. */
+button.tag {
+  border: 0;
+  font-family: var(--body);
+  cursor: pointer;
+}
+
+button.tag:hover {
+  background: var(--teal);
+  color: var(--cream);
 }
 
 .pill {
@@ -647,9 +737,87 @@ input:focus-visible {
   flex-wrap: wrap;
 }
 
+.colophon button {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.colophon .about-link {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
+
 .colophon .provisional {
   color: var(--sponsored);
   font-weight: 600;
+  text-decoration: underline dotted;
+}
+
+/* ── About this census ──────────────────────────────────────────────────── */
+
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  background: rgba(29, 35, 33, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.about-card {
+  position: relative;
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  max-width: 560px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.3rem 1.5rem;
+  outline: none;
+}
+
+.about-card h2 {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 2rem 0.6rem 0;
+}
+
+.about-card h3 {
+  font-family: var(--body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin: 1rem 0 0.35rem;
+}
+
+.about-card p,
+.about-card li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 0.5rem;
+}
+
+.about-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.about-card a {
+  color: var(--teal-dark);
+}
+
+.about-card .aka {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
 }
 
 /* ── Motion (opt-in only) ───────────────────────────────────────────────── */

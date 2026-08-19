@@ -75,6 +75,11 @@ export function isCapability(operation: string): boolean {
   return CAPABILITY_VOCAB.has(operation);
 }
 
+/** Case- and diacritic-insensitive folding, so "butterkase" finds Butterkäse. */
+export function fold(value: string): string {
+  return value.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
+}
+
 export function cheeseOperations(creamery: Creamery): string[] {
   const all = creamery.plants.flatMap((p) => p.operations);
   return [...new Set(all.filter((o) => !isCapability(o)))].sort();

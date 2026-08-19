@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Award, Creamery, Person } from "../types";
 import {
   CONTEST,
@@ -13,18 +13,47 @@ interface Props {
   creamery: Creamery;
   people: Person[];
   awards: Award[];
+  /** "12 / 93" within the filtered list, or null when filtered out mid-view. */
+  position: string | null;
   onClose: () => void;
+  onPrev: () => void;
+  onNext: () => void;
+  onFilterCheese: (operation: string) => void;
 }
 
-export default function CreameryDetail({ creamery, people, awards, onClose }: Props) {
+export default function CreameryDetail({
+  creamery,
+  people,
+  awards,
+  position,
+  onClose,
+  onPrev,
+  onNext,
+  onFilterCheese,
+}: Props) {
   const panel = useRef<HTMLElement>(null);
+  const [copied, setCopied] = useState(false);
 
   // Move focus into the panel so Esc and screen readers land where the reader is
   // looking; App returns focus to the list row on close.
   useEffect(() => {
     panel.current?.focus({ preventScroll: true });
     panel.current?.scrollTo(0, 0);
+    setCopied(false);
   }, [creamery.id]);
+
+  // The URL-mirror effect keeps the address bar carrying this creamery's deep
+  // link, so sharing is just copying the current URL.
+  async function copyLink() {
+    try {
+      await navigator.clipboard.writeText(location.href);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1600);
+    } catch {
+      // Clipboard unavailable (permissions, insecure context) — the address bar
+      // still carries the same link.
+    }
+  }
 
   const cheeses = cheeseOperations(creamery);
   const abilities = capabilities(creamery);
@@ -39,9 +68,25 @@ export default function CreameryDetail({ creamery, people, awards, onClose }: Pr
       aria-labelledby="detail-title"
     >
       <div className="detail-head">
-        <button className="close" onClick={onClose} aria-label="Close detail">
-          ×
-        </button>
+        <div className="head-actions">
+          {position && <span className="pos">{position}</span>}
+          <button className="hbtn" onClick={onPrev} aria-label="Previous creamery" title="Previous (←)">
+            ‹
+          </button>
+          <button className="hbtn" onClick={onNext} aria-label="Next creamery" title="Next (→)">
+            ›
+          </button>
+          <button
+            className="hbtn copy"
+            onClick={copyLink}
+            aria-label="Copy a link to this creamery"
+          >
+            {copied ? "Copied ✓" : "Copy link"}
+          </button>
+          <button className="hbtn" onClick={onClose} aria-label="Close detail">
+            ×
+          </button>
+        </div>
         <h2 id="detail-title">{creamery.name}</h2>
         <div className="where">
           {creamery.city}
@@ -96,9 +141,14 @@ export default function CreameryDetail({ creamery, people, awards, onClose }: Pr
           <h3>Licensed to make</h3>
           <div className="tags">
             {cheeses.map((c) => (
-              <span className="tag cheese" key={c}>
+              <button
+                className="tag cheese"
+                key={c}
+                onClick={() => onFilterCheese(c)}
+                title={`Every creamery licensed to make ${c}`}
+              >
                 {c}
-              </span>
+              </button>
             ))}
           </div>
         </section>
