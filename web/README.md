@@ -23,8 +23,32 @@ npm run typecheck
 ## What it renders today
 
 Creameries, their licensed plants and operations, master cheesemakers and contest
-awards — filterable by county, retail store and award record, with a map pin per
-creamery.
+awards — filterable by county, retail store and award record, sortable by name,
+award count or county, with a map pin per creamery (retail stores render as a
+donut; the legend on the map explains the pins). Awards group by contest edition
+with 1st/2nd/3rd medal chips and champion / top-20 treatment. A stats strip under
+the masthead carries the census-wide numbers.
+
+Plant operations are split into cheese types and plant capabilities using DATCP's
+own closed vocabularies (the 7 GeneralProcessing and 29 SpecificProcessing values,
+pinned in `src/data.ts`) — membership, not pattern-matching.
+
+## Shareable views
+
+The whole view lives in the URL, so a story or embed can link straight to it:
+
+| Parameter | Meaning | Example |
+|---|---|---|
+| `?county=` | County filter | `?county=Green` |
+| `?q=` | Search text | `?q=gouda` |
+| `?store=1` | Retail-store filter on | |
+| `?awards=1` | Award-winners filter on | |
+| `?sort=` | `awards` or `county` (default name) | `?sort=awards` |
+| `#creamery-id` | Opens that creamery's detail panel | `#hooks-cheese-company-inc` |
+
+They compose: `/?county=Green&sort=awards#klondike-cheese-company` opens the Green
+County view sorted by award count with Klondike's panel up. Esc closes the panel
+and returns focus to the list.
 
 `build/cheeses.json` is still empty, so the reader-facing cheese layer (browse,
 hearts, similar-cheese, highlights) is not built yet. `src/types.ts` already mirrors

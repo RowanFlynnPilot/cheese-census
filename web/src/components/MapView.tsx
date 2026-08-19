@@ -26,10 +26,27 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
   const map = useRef<L.Map | null>(null);
   const layer = useRef<L.LayerGroup | null>(null);
   const markers = useRef<Map<string, L.Marker>>(new Map());
+  const storeIds = useRef<Set<string>>(new Set());
   const select = useRef(onSelect);
   select.current = onSelect;
   const selection = useRef(selectedId);
   selection.current = selectedId;
+
+  /** One source of truth for pin appearance: retail stores read as a donut,
+   *  the selected creamery as a larger gold pin. Classes live in styles.css
+   *  next to the legend that explains them. */
+  function icon(id: string, selected: boolean): L.DivIcon {
+    const size = selected ? 18 : 12;
+    const classes = ["marker"];
+    if (storeIds.current.has(id)) classes.push("has-store");
+    if (selected) classes.push("is-selected");
+    return L.divIcon({
+      className: "",
+      html: `<div class="${classes.join(" ")}" style="width:${size}px;height:${size}px"></div>`,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
 
   /** Frame the visible set: fit the in-state pins, or fall back to the whole state. */
   function frame() {
@@ -70,18 +87,19 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
     if (!layer.current) return;
     layer.current.clearLayers();
     markers.current.clear();
+    storeIds.current = new Set(
+      creameries.filter((c) => c.retail.store).map((c) => c.id),
+    );
     for (const creamery of creameries) {
       if (creamery.lat === null || creamery.lng === null) continue;
       const marker = L.marker([creamery.lat, creamery.lng], {
         title: creamery.name,
-        icon: L.divIcon({
-          className: "",
-          html: `<div class="marker" style="width:12px;height:12px"></div>`,
-          iconSize: [12, 12],
-          iconAnchor: [6, 6],
-        }),
+        icon: icon(creamery.id, creamery.id === selection.current),
       })
-        .bindTooltip(`${creamery.name} — ${creamery.city}`, { direction: "top" })
+        .bindTooltip(`${creamery.name} — ${creamery.city}`, {
+          direction: "top",
+          offset: [0, -8],
+        })
         .on("click", () => select.current(creamery.id));
       marker.addTo(layer.current!);
       markers.current.set(creamery.id, marker);
@@ -94,17 +112,8 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
   // Re-style the selected pin and bring it into view.
   useEffect(() => {
     for (const [id, marker] of markers.current) {
-      const size = id === selectedId ? 18 : 12;
-      marker.setIcon(
-        L.divIcon({
-          className: "",
-          html: `<div class="marker${id === selectedId ? " is-selected" : ""}" style="width:${size}px;height:${size}px"></div>`,
-          iconSize: [size, size],
-          iconAnchor: [size / 2, size / 2],
-        }),
-      );
-      if (id === selectedId) marker.setZIndexOffset(1000);
-      else marker.setZIndexOffset(0);
+      marker.setIcon(icon(id, id === selectedId));
+      marker.setZIndexOffset(id === selectedId ? 1000 : 0);
     }
     if (!selectedId) {
       // Closing the panel after viewing an out-of-state company would otherwise
