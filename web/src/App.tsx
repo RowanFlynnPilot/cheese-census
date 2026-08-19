@@ -120,12 +120,19 @@ export default function App() {
     if (data && county && !counties.includes(county)) setCounty("");
   }, [data, county, counties]);
 
-  // Deep link: #creamery-id opens that creamery once the data is in.
+  // Deep link: #creamery-id opens that creamery once the data is in. The captured
+  // deepLink covers the cold load; the hashchange listener covers hash-only
+  // navigation, which the browser treats as an anchor jump — no reload, no remount.
+  // (Our own history.replaceState never fires hashchange, so there is no loop.)
   useEffect(() => {
     if (!data) return;
-    if (deepLink && data.creameries.some((c) => c.id === deepLink)) {
-      setSelectedId(deepLink);
-    }
+    const apply = (slug: string) => {
+      if (slug && data.creameries.some((c) => c.id === slug)) setSelectedId(slug);
+    };
+    apply(deepLink);
+    const onHashChange = () => apply(decodeURIComponent(location.hash.slice(1)));
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
   }, [data, deepLink]);
 
   // Mirror the whole view into the URL (replaceState — no history spam).

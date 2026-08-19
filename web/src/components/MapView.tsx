@@ -69,6 +69,10 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
       center: CENTER,
       zoom: ZOOM,
       scrollWheelZoom: false, // an embedded iframe must not hijack page scroll
+      // fitBounds snaps to whole zoom levels by default, and Wisconsin misses
+      // fitting at 7 by a hair — so the overview collapsed to a whole-Midwest 6.
+      // Half-steps let the fit land where the state actually is.
+      zoomSnap: 0.5,
     });
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       attribution:
