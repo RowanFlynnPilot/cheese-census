@@ -19,9 +19,11 @@ interface Props {
   creameries: Creamery[];
   selectedId: string | null;
   onSelect: (id: string) => void;
+  /** Prepared, escaped HTML hover cards, keyed by creamery id (built in App). */
+  tooltips: Map<string, string>;
 }
 
-export default function MapView({ creameries, selectedId, onSelect }: Props) {
+export default function MapView({ creameries, selectedId, onSelect, tooltips }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<L.Map | null>(null);
   const layer = useRef<L.LayerGroup | null>(null);
@@ -86,7 +88,8 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
     };
   }, []);
 
-  // Redraw pins whenever the filtered set changes.
+  // Redraw pins whenever the filtered set changes (or the hover cards do —
+  // the draft logo overlay arrives just after the dataset).
   useEffect(() => {
     if (!layer.current) return;
     layer.current.clearLayers();
@@ -100,10 +103,10 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
         title: creamery.name,
         icon: icon(creamery.id, creamery.id === selection.current),
       })
-        .bindTooltip(`${creamery.name} — ${creamery.city}`, {
-          direction: "top",
-          offset: [0, -8],
-        })
+        .bindTooltip(
+          tooltips.get(creamery.id) ?? `${creamery.name} — ${creamery.city}`,
+          { direction: "top", offset: [0, -10], opacity: 1, className: "map-card-tip" },
+        )
         .on("click", () => select.current(creamery.id));
       marker.addTo(layer.current!);
       markers.current.set(creamery.id, marker);
@@ -111,7 +114,7 @@ export default function MapView({ creameries, selectedId, onSelect }: Props) {
     // Refit as filters narrow the set, but never yank the map while the reader is
     // looking at a particular creamery.
     if (!selection.current) frame();
-  }, [creameries]);
+  }, [creameries, tooltips]);
 
   // Re-style the selected pin and bring it into view.
   useEffect(() => {

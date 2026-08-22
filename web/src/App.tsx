@@ -333,6 +333,62 @@ export default function App() {
   ]);
   const cheesesShown = cheeseFiltered.list;
 
+  const catalogCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const cheese of activeCheeses) {
+      counts.set(cheese.creamery_id, (counts.get(cheese.creamery_id) ?? 0) + 1);
+    }
+    return counts;
+  }, [activeCheeses]);
+
+  // Rich hover cards for the map pins. Leaflet takes HTML strings, so this is
+  // the one place the app renders markup by hand — everything interpolated is
+  // escaped first.
+  const mapTips = useMemo(() => {
+    const esc = (value: string) =>
+      value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    const tips = new Map<string, string>();
+    for (const creamery of data?.creameries ?? []) {
+      if (creamery.status !== "active") continue;
+      const types = cheeseOperations(creamery);
+      const wins = awardCounts.get(creamery.id) ?? 0;
+      const inCatalog = catalogCounts.get(creamery.id) ?? 0;
+      const logo = draftLogos?.get(creamery.id);
+      const pills = [
+        creamery.retail.store ? '<span class="pill store">Store</span>' : "",
+        wins ? `<span class="pill award">${wins} award${wins === 1 ? "" : "s"}</span>` : "",
+        inCatalog ? `<span class="pill">${inCatalog} in the catalog</span>` : "",
+      ].join("");
+      const chips =
+        types
+          .slice(0, 5)
+          .map((t) => `<span class="tag cheese">${esc(t)}</span>`)
+          .join("") +
+        (types.length > 5 ? `<span class="tag">+${types.length - 5}</span>` : "");
+      tips.set(
+        creamery.id,
+        [
+          `<div class="mc-name">${
+            logo
+              ? `<img class="mc-logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">`
+              : ""
+          }${esc(creamery.name)}</div>`,
+          `<div class="mc-where">${esc(creamery.city)}${
+            creamery.county ? ` · ${esc(creamery.county)} County` : ""
+          }</div>`,
+          creamery.address ? `<div class="mc-addr">${esc(creamery.address)}</div>` : "",
+          pills ? `<div class="mc-pills">${pills}</div>` : "",
+          chips ? `<div class="mc-types">${chips}</div>` : "",
+        ].join(""),
+      );
+    }
+    return tips;
+  }, [data, awardCounts, catalogCounts, draftLogos]);
+
   const recommendations = useMemo(
     () =>
       recommend(hearts, cheesesById, (c) => {
@@ -875,7 +931,12 @@ export default function App() {
           </div>
 
           <div className="map-pane">
-            <MapView creameries={shown} selectedId={selectedId} onSelect={setSelectedId} />
+            <MapView
+              creameries={shown}
+              selectedId={selectedId}
+              onSelect={setSelectedId}
+              tooltips={mapTips}
+            />
             <div className="legend" aria-hidden="true">
               <span>
                 <i className="marker" style={{ width: 10, height: 10 }} /> Creamery
