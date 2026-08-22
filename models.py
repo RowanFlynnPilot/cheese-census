@@ -231,5 +231,16 @@ class CrosswalkEntry(BaseModel):
     model_config = ConfigDict(extra="forbid")
     source: Literal["datcp", "dfw", "masters", "contests"]
     source_key: str
-    creamery_id: str
+    # None is a reviewed exclusion — "this record resolves to no canonical company,
+    # deliberately" (a maple-syrup outfit entering a contest, a master's unlicensed
+    # retail brand, an out-of-state entrant). Only a human may say so, hence manual.
+    creamery_id: str | None
     method: Literal["auto", "manual"]
+
+    @model_validator(mode="after")
+    def _exclusion_is_manual(self) -> "CrosswalkEntry":
+        if self.creamery_id is None and self.method != "manual":
+            raise ValueError(
+                "crosswalk: a null creamery_id is a reviewed exclusion and must be method='manual'"
+            )
+        return self

@@ -1,1 +1,482 @@
-[]
+[
+  {
+    "creamery_id": "henning-cheese-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c07-2"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c106-1"
+  },
+  {
+    "creamery_id": "mexican-cheese-producers",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c106-3"
+  },
+  {
+    "creamery_id": "associated-milk-producers-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c110-3"
+  },
+  {
+    "creamery_id": "milk-specialties-global-actus-nutrition",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c114-3"
+  },
+  {
+    "creamery_id": "foremost-farms-usa-cooperative",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c116-1"
+  },
+  {
+    "creamery_id": "v-v-supremo-foods-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c22-3"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c23-1"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c23-2"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c23-3"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c24-1"
+  },
+  {
+    "creamery_id": "prairie-farms-dairy-inc-mindoro",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c31-3"
+  },
+  {
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c34-2"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c36-1"
+  },
+  {
+    "creamery_id": "mexican-cheese-producers",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c40-1"
+  },
+  {
+    "creamery_id": "wisconsin-cheese-group-llc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c40-3"
+  },
+  {
+    "creamery_id": "v-v-supremo-foods-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c41-1"
+  },
+  {
+    "creamery_id": "v-v-supremo-foods-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c41-2"
+  },
+  {
+    "creamery_id": "union-star-corp",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c43-3"
+  },
+  {
+    "creamery_id": "associated-milk-producers-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c49-1"
+  },
+  {
+    "creamery_id": "henning-cheese-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c52-1"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c52-2"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c54-3"
+  },
+  {
+    "creamery_id": "hoard-s-dairymen-farm-creamery",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c55-1"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c55-3"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c58-3"
+  },
+  {
+    "creamery_id": "associated-milk-producers-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c74-1"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c88-3"
+  },
+  {
+    "creamery_id": "mexican-cheese-producers",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "uscc-2025-c99-3"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c02-3"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c04-1"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c06-1"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c06-3"
+  },
+  {
+    "creamery_id": "associated-milk-producers-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c10-1"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c112-2"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c115-2"
+  },
+  {
+    "creamery_id": null,
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c121-3"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c135-3"
+  },
+  {
+    "creamery_id": "great-lakes-cheese-company-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c136-2"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c137-3"
+  },
+  {
+    "creamery_id": "la-vaquita-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c138-3"
+  },
+  {
+    "creamery_id": null,
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c139-1"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c15-2"
+  },
+  {
+    "creamery_id": "foremost-farms-usa-cooperative",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c15-3"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c19-3"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c21-1"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c22-3"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c23-1"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c23-2"
+  },
+  {
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c28-2"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c28-3"
+  },
+  {
+    "creamery_id": "v-v-supremo-foods-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c49-1"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c68-1"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c70-2"
+  },
+  {
+    "creamery_id": "deer-creek-cheese",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c74-1"
+  },
+  {
+    "creamery_id": "prairie-farms-dairy-inc-mindoro",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c74-3"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c83-2"
+  },
+  {
+    "creamery_id": "agropur-inc",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c84-3"
+  },
+  {
+    "creamery_id": "kraft-heinz-foods-company",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c87-1"
+  },
+  {
+    "creamery_id": "kraft-heinz-foods-company",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c88-3"
+  },
+  {
+    "creamery_id": "organic-valley-chaseburg",
+    "method": "manual",
+    "source": "contests",
+    "source_key": "wccc-2026-c90-2"
+  },
+  {
+    "creamery_id": "kingston-cheese-cooperative",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "1301"
+  },
+  {
+    "creamery_id": "revela-foods-colby-llc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "17"
+  },
+  {
+    "creamery_id": "marieke-gouda",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "193"
+  },
+  {
+    "creamery_id": "oshkosh-storage-company",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "206"
+  },
+  {
+    "creamery_id": "laclare-creamery-llc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "231"
+  },
+  {
+    "creamery_id": "harmony-cheese",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "269"
+  },
+  {
+    "creamery_id": "stoneridge-wholesale-division-llc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "272"
+  },
+  {
+    "creamery_id": "crystal-farms-dairy-co",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "38"
+  },
+  {
+    "creamery_id": "forgotten-valley-cheese",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "63"
+  },
+  {
+    "creamery_id": "eau-galle-cheese-factory-llc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "bechel-steve"
+  },
+  {
+    "creamery_id": "v-v-supremo-foods-inc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "dahmen-tom"
+  },
+  {
+    "creamery_id": null,
+    "method": "manual",
+    "source": "masters",
+    "source_key": "gustafson-mark"
+  },
+  {
+    "creamery_id": "henning-cheese-inc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "henning-kerry"
+  },
+  {
+    "creamery_id": null,
+    "method": "manual",
+    "source": "masters",
+    "source_key": "hurd-steve"
+  },
+  {
+    "creamery_id": "sargento-cheese-inc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "lebeau-jeff"
+  },
+  {
+    "creamery_id": "union-star-corp",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "metzig-jon"
+  },
+  {
+    "creamery_id": "v-v-supremo-foods-inc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "pehl-tim"
+  },
+  {
+    "creamery_id": "rosewood-dairy-inc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "renard-chris"
+  },
+  {
+    "creamery_id": "roelli-cheese-company-inc",
+    "method": "manual",
+    "source": "masters",
+    "source_key": "roelli-chris"
+  }
+]

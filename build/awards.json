@@ -1,0 +1,5683 @@
+[
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Mild (0 to 3 Months)",
+    "class_number": 1,
+    "contest": "uscc",
+    "creamery_id": "land-o-lakes-cheese-division",
+    "entry": {
+      "cheese_name": "Land O'Lakes Cheddar",
+      "city": "Kiel",
+      "company": "Land O'Lakes",
+      "maker": "Kiel cheesemakers"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c01-2",
+    "placement": 2,
+    "score": 99.185,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Sharp (6 months to 1 year)",
+    "class_number": 3,
+    "contest": "uscc",
+    "creamery_id": "associated-milk-producers-inc",
+    "entry": {
+      "cheese_name": "AMPI Sharp Cheddar",
+      "city": "Blair",
+      "company": "Associated Milk Producers Inc.",
+      "maker": "Blair Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c03-1",
+    "placement": 1,
+    "score": 99.225,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Aged One to Two Years",
+    "class_number": 4,
+    "contest": "uscc",
+    "creamery_id": "land-o-lakes-cheese-division",
+    "entry": {
+      "cheese_name": "Land O'Lakes Cheddar",
+      "city": "Kiel",
+      "company": "Land O'Lakes",
+      "maker": "Kiel cheesemakers"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c04-2",
+    "placement": 2,
+    "score": 99.15,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Aged Two Years or Longer",
+    "class_number": 5,
+    "contest": "uscc",
+    "creamery_id": "land-o-lakes-cheese-division",
+    "entry": {
+      "cheese_name": "Land O'Lakes Cheddar",
+      "city": "Kiel",
+      "company": "Land O'Lakes",
+      "maker": "Kiel production team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c05-2",
+    "placement": 2,
+    "score": 97.885,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Aged Two Years or Longer",
+    "class_number": 5,
+    "contest": "uscc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Cheddar Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur",
+      "maker": "Matthew Handrich"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c05-3",
+    "placement": 3,
+    "score": 97.815,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Traditional Waxed Cheddar, Mild to Medium",
+    "class_number": 6,
+    "contest": "uscc",
+    "creamery_id": "roelli-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Roelli Haus Select Cheddar",
+      "city": "Shullsburg",
+      "company": "Roelli Cheese Company",
+      "maker": "Team Roelli"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c06-3",
+    "placement": 3,
+    "score": 98.675,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Traditional Waxed Cheddar, Sharp to Aged",
+    "class_number": 7,
+    "contest": "uscc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Cheese Bandage Midget",
+      "city": "Kiel",
+      "company": "Henning Cheese",
+      "maker": "Henning Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c07-1",
+    "placement": 1,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Traditional Waxed Cheddar, Sharp to Aged",
+    "class_number": 7,
+    "contest": "uscc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Cheese 2 year old midget",
+      "city": "Kiel",
+      "company": "Henning's Cheese",
+      "maker": "Henning Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c07-2",
+    "placement": 2,
+    "score": 98.85,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Monterey Jack",
+    "class_number": 10,
+    "contest": "uscc",
+    "creamery_id": "nasonville-dairy-inc",
+    "entry": {
+      "cheese_name": "Monterey Jack",
+      "city": "Marshfield",
+      "company": "Nasonville Dairy, Inc.",
+      "maker": "Team Nasonville Dairy, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c10-2",
+    "placement": 2,
+    "score": 99.1,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cultured Dairy Dips",
+    "class_number": 101,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey French Onion Greek Yogurt Dip",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Matt Martin"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c101-1",
+    "placement": 1,
+    "score": 99.725,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Natural Snack Cheese",
+    "class_number": 102,
+    "contest": "uscc",
+    "creamery_id": "great-lakes-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Cracker Cut Pepper Jack",
+      "city": "Plymouth",
+      "company": "Great Lakes Cheese",
+      "maker": "Turophiles"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c102-1",
+    "placement": 1,
+    "score": 99.545,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Natural Snack Cheese",
+    "class_number": 102,
+    "contest": "uscc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Jalapeno Habanero Cheese Snack Sticks",
+      "city": "Plymouth",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c102-2",
+    "placement": 2,
+    "score": 99.46,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Natural Snack Cheese",
+    "class_number": 102,
+    "contest": "uscc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Havarti and Gouda Snack Mix Bag",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c102-3",
+    "placement": 3,
+    "score": 99.39,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheeses",
+    "class_number": 103,
+    "contest": "uscc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Colby Jack Cheese Shred",
+      "city": "Plymouth",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c103-1",
+    "placement": 1,
+    "score": 99.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheeses",
+    "class_number": 103,
+    "contest": "uscc",
+    "creamery_id": "cedar-valley-cheese-inc",
+    "entry": {
+      "cheese_name": "Provolone Mild Shred",
+      "city": "Belgium",
+      "company": "Cedar Valley Cheese, Inc.",
+      "maker": "C.V. 2nd shift shred team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c103-3",
+    "placement": 3,
+    "score": 99.05,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese Blends",
+    "class_number": 104,
+    "contest": "uscc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Pepper Blend Shred",
+      "city": "Plymouth",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c104-2",
+    "placement": 2,
+    "score": 98.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Crumbled Cheeses",
+    "class_number": 105,
+    "contest": "uscc",
+    "creamery_id": "kingston-cheese-cooperative",
+    "entry": {
+      "cheese_name": "Blue Cheese Salad Blend",
+      "city": "Cambria",
+      "company": "Kingston Cheese Cooperative",
+      "maker": "Team Kingston Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c105-1",
+    "placement": 1,
+    "score": 99.2,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Grated Cheeses",
+    "class_number": 106,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Grated Parmesan",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c106-1",
+    "placement": 1,
+    "score": 98.4,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Grated Cheeses",
+    "class_number": 106,
+    "contest": "uscc",
+    "creamery_id": "mexican-cheese-producers",
+    "entry": {
+      "cheese_name": "cotija grated",
+      "city": "Darlington",
+      "company": "Sigma Darlington Plant Mexican Cheese Producers",
+      "maker": "Brian Mundt & Victor Martinez"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c106-3",
+    "placement": 3,
+    "score": 97.425,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Prepared Cheese Foods",
+    "class_number": 107,
+    "contest": "uscc",
+    "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+    "entry": {
+      "cheese_name": "Brun-uusto - Brunkow's Baked Cheese with Garlic",
+      "city": "Darlington, WI, United States",
+      "company": "Brunkow Cheese of Wisconsin",
+      "maker": "Team Brunkow"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c107-1",
+    "placement": 1,
+    "score": 99.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Prepared Cheese Foods",
+    "class_number": 107,
+    "contest": "uscc",
+    "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+    "entry": {
+      "cheese_name": "Brun-uusto - Brunkow's Original Baked Cheese",
+      "city": "Darlington, WI, United States",
+      "company": "Brunkow Cheese of Wisconsin",
+      "maker": "Team Brunkow"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c107-2",
+    "placement": 2,
+    "score": 99.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Prepared Cheese Foods",
+    "class_number": 107,
+    "contest": "uscc",
+    "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+    "entry": {
+      "cheese_name": "Brun-uusto - Brunkow's Pizza Style Baked Cheese",
+      "city": "Darlington, WI, United States",
+      "company": "Brunkow Cheese of Wisconsin",
+      "maker": "Team Brunkow"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c107-3",
+    "placement": 3,
+    "score": 99.05,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Based Spreads",
+    "class_number": 109,
+    "contest": "uscc",
+    "creamery_id": "sartori-company",
+    "entry": {
+      "cheese_name": "Garlic and Herb BellaVitano Dip & Spread",
+      "city": "Plymouth",
+      "company": "Sartori Company",
+      "maker": "Team Sartori"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c109-1",
+    "placement": 1,
+    "score": 99.33,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Based Spreads",
+    "class_number": 109,
+    "contest": "uscc",
+    "creamery_id": "emmi-roth-usa",
+    "entry": {
+      "cheese_name": "Roth Jalapeño Havarti Cheese Dip & Spread",
+      "city": "Monticello",
+      "company": "Emmi Roth",
+      "maker": "Team Emmi Roth"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c109-2",
+    "placement": 2,
+    "score": 99.23,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Based Spreads",
+    "class_number": 109,
+    "contest": "uscc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Pimento Cold Pack Cheese Spread",
+      "city": "Newton",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c109-3",
+    "placement": 3,
+    "score": 99.04,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Marbled Curd Cheese",
+    "class_number": 11,
+    "contest": "uscc",
+    "creamery_id": "arena-cheese",
+    "entry": {
+      "cheese_name": "Original Recipe Colby Jack Deli",
+      "city": "Arena",
+      "company": "Arena Cheese",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c11-2",
+    "placement": 2,
+    "score": 99.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Dry Whey",
+    "class_number": 110,
+    "contest": "uscc",
+    "creamery_id": "associated-milk-producers-inc",
+    "entry": {
+      "cheese_name": "AMPI Dry Sweet Whey Powder",
+      "city": "Jim Falls",
+      "company": "AMPI - Jim Falls",
+      "maker": "AMPI Jim Falls Whey Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c110-3",
+    "placement": 3,
+    "score": 99.75,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Whey Protein Isolate 90, Instantized",
+    "class_number": 114,
+    "contest": "uscc",
+    "creamery_id": "milk-specialties-global-actus-nutrition",
+    "entry": {
+      "cheese_name": "Instant Whey Protein Isolate 90",
+      "city": "Fond Du Lac",
+      "company": "Actus Nutrition",
+      "maker": "Actus Nutrition- Fond Du Lac"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c114-3",
+    "placement": 3,
+    "score": 99.65,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Non-Fat Dry Milk & Skim Milk Powder",
+    "class_number": 116,
+    "contest": "uscc",
+    "creamery_id": "foremost-farms-usa-cooperative",
+    "entry": {
+      "cheese_name": "NFDM",
+      "city": "Sparta",
+      "company": "Foremost Farms USA - Sparta",
+      "maker": "Foremost Farms USA - Sparta"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c116-1",
+    "placement": 1,
+    "score": 99.695,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Mozzarella",
+    "class_number": 14,
+    "contest": "uscc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Patria Whole Milk Mozzarella",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Matt Hoefler & Burnett Dairy Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c14-3",
+    "placement": 3,
+    "score": 99.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Fresh Mozzarella",
+    "class_number": 16,
+    "contest": "uscc",
+    "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+    "entry": {
+      "cheese_name": "Crave Brothers Fresh Mozzarella Medallions",
+      "city": "Waterloo",
+      "company": "Crave Brothers Farmstead Cheese",
+      "maker": "Crave Brothers Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c16-2",
+    "placement": 2,
+    "score": 99.2,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Fresh Mozzarella",
+    "class_number": 16,
+    "contest": "uscc",
+    "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+    "entry": {
+      "cheese_name": "Crave Brothers Fresh Mozzarella Ciliegine",
+      "city": "Waterloo",
+      "company": "Crave Brothers Farmstead Cheese",
+      "maker": "Crave Brothers Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c16-3",
+    "placement": 3,
+    "score": 99.15,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Mild",
+    "class_number": 18,
+    "contest": "uscc",
+    "creamery_id": "cedar-valley-cheese-inc",
+    "entry": {
+      "cheese_name": "Provolone Cheese",
+      "city": "Belgium",
+      "company": "Cedar Valley Cheese, Inc.",
+      "maker": "2nd shift team Cedar Valley"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c18-3",
+    "placement": 3,
+    "score": 99.475,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Aged",
+    "class_number": 19,
+    "contest": "uscc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso Aged Provolone Mandarino",
+      "city": "Byron",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Kevin Benzel"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c19-1",
+    "placement": 1,
+    "score": 98.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Aged",
+    "class_number": 19,
+    "contest": "uscc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Fancy Brand Aged Provolone",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Matt Hoefler & Burnett Dairy Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c19-2",
+    "placement": 2,
+    "score": 98.575,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Smoked",
+    "class_number": 20,
+    "contest": "uscc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Smoked Provolone",
+      "city": "Luxemburg",
+      "company": "Agropur",
+      "maker": "Jeremy Robinson"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c20-2",
+    "placement": 2,
+    "score": 99.125,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Smoked",
+    "class_number": 20,
+    "contest": "uscc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Smoked Provolone",
+      "city": "Luxemburg",
+      "company": "Agropur",
+      "maker": "Team Luxemburg"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c20-3",
+    "placement": 3,
+    "score": 99.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Asiago",
+    "class_number": 21,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Asiago",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c21-1",
+    "placement": 1,
+    "score": 99.525,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Asiago",
+    "class_number": 21,
+    "contest": "uscc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso Asiago Fresco",
+      "city": "Chase",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Mitch Borzych"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c21-2",
+    "placement": 2,
+    "score": 99.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Asiago",
+    "class_number": 21,
+    "contest": "uscc",
+    "creamery_id": "saputo-cheese-usa",
+    "entry": {
+      "cheese_name": "Stella Aged Asiago",
+      "city": "Almena",
+      "company": "Saputo Cheese USA, Inc.",
+      "maker": "Almena Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c21-3",
+    "placement": 3,
+    "score": 98.2,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "String Cheese",
+    "class_number": 22,
+    "contest": "uscc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "String Cheese",
+      "city": "Browntown",
+      "company": "V&V Supremo - Browntown",
+      "maker": "Neal Schwartz"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c22-3",
+    "placement": 3,
+    "score": 99.15,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Parmesan",
+    "class_number": 23,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Organic Copper Kettle Parmesan",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c23-1",
+    "placement": 1,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Parmesan",
+    "class_number": 23,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Copper Kettle Parmesan",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c23-2",
+    "placement": 2,
+    "score": 99.25,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Parmesan",
+    "class_number": 23,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Parmesan",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c23-3",
+    "placement": 3,
+    "score": 99.225,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Ricotta",
+    "class_number": 24,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Organic Ricotta",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c24-1",
+    "placement": 1,
+    "score": 98.825,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta",
+    "class_number": 27,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Steve Webster"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c27-1",
+    "placement": 1,
+    "score": 99.525,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta",
+    "class_number": 27,
+    "contest": "uscc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Feta Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur",
+      "maker": "Ariel Graveen"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c27-2",
+    "placement": 2,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta",
+    "class_number": 27,
+    "contest": "uscc",
+    "creamery_id": "nasonville-dairy-inc",
+    "entry": {
+      "cheese_name": "Feta in Brine",
+      "city": "Marshfield",
+      "company": "Nasonville Dairy, Inc.",
+      "maker": "Team Nasonville Dairy, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c27-3",
+    "placement": 3,
+    "score": 99.4,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Brick & Muenster",
+    "class_number": 28,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Brick Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Ty Saglam"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c28-1",
+    "placement": 1,
+    "score": 99.675,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Brick & Muenster",
+    "class_number": 28,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Muenster Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Ty Saglam"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c28-2",
+    "placement": 2,
+    "score": 99.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Brick & Muenster",
+    "class_number": 28,
+    "contest": "uscc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Brick",
+      "city": "Brodhead",
+      "company": "Decatur Dairy Inc.",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c28-3",
+    "placement": 3,
+    "score": 99.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti",
+    "class_number": 29,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Havarti Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Steve Bechtolt"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c29-1",
+    "placement": 1,
+    "score": 99.8,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti",
+    "class_number": 29,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Havarti Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Ty Saglam"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c29-2",
+    "placement": 2,
+    "score": 99.775,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti",
+    "class_number": 29,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Havarti Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Ron Buholzer"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c29-3",
+    "placement": 3,
+    "score": 99.65,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti, Flavored",
+    "class_number": 30,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Dill Havarti Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Dave Buholzer"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c30-1",
+    "placement": 1,
+    "score": 99.745,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti, Flavored",
+    "class_number": 30,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Buholzer Brothers Dill Havarti Cheese",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Luke Buholzer"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c30-2",
+    "placement": 2,
+    "score": 99.6,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti, Flavored",
+    "class_number": 30,
+    "contest": "uscc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Havarti Dill",
+      "city": "Brodhead",
+      "company": "Decatur Dairy Inc.",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c30-3",
+    "placement": 3,
+    "score": 98.8,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gorgonzola",
+    "class_number": 31,
+    "contest": "uscc",
+    "creamery_id": "prairie-farms-dairy-inc-mindoro",
+    "entry": {
+      "cheese_name": "Prairie Farms Mindoro Collection Gorgonzola",
+      "city": "Mindoro",
+      "company": "Prairie Farms",
+      "maker": "Mindoro Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c31-3",
+    "placement": 3,
+    "score": 98.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Blue Veined Cheeses",
+    "class_number": 32,
+    "contest": "uscc",
+    "creamery_id": "kingston-cheese-cooperative",
+    "entry": {
+      "cheese_name": "Kingston Creamery Blue Cheese",
+      "city": "Cambria",
+      "company": "Kingston Cheese Cooperative",
+      "maker": "Team Kingston Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c32-3",
+    "placement": 3,
+    "score": 98.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Brie & Camembert",
+    "class_number": 34,
+    "contest": "uscc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "8oz Brie Triple cream Président",
+      "city": "Belmont",
+      "company": "Lactalis USA Belmont",
+      "maker": "lactalis USA - Belmont"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c34-2",
+    "placement": 2,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Edam & Gouda",
+    "class_number": 36,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Lake Country Dairy Gouda",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c36-1",
+    "placement": 1,
+    "score": 98.65,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Edam & Gouda",
+    "class_number": 36,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Belegen 4-6 months",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c36-2",
+    "placement": 2,
+    "score": 98.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Edam & Gouda",
+    "class_number": 36,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Young 2-4 months",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c36-3",
+    "placement": 3,
+    "score": 98.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Aged",
+    "class_number": 37,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Premium 12-18 months",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c37-2",
+    "placement": 2,
+    "score": 99.465,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Aged",
+    "class_number": 37,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Reserve 1000 days+",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c37-3",
+    "placement": 3,
+    "score": 99.37,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Flavored",
+    "class_number": 38,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Truffle",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c38-1",
+    "placement": 1,
+    "score": 99.15,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Flavored",
+    "class_number": 38,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Truffle",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c38-2",
+    "placement": 2,
+    "score": 98.65,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Smoked",
+    "class_number": 39,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Smoked",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c39-1",
+    "placement": 1,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Smoked",
+    "class_number": 39,
+    "contest": "uscc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Castello Smoked Cracked Pepper Gouda (mature)",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c39-2",
+    "placement": 2,
+    "score": 98.9,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Smoked",
+    "class_number": 39,
+    "contest": "uscc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Castello Smoked Gouda Black Pepper (young)",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c39-3",
+    "placement": 3,
+    "score": 98.85,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Fresh Cheeses",
+    "class_number": 40,
+    "contest": "uscc",
+    "creamery_id": "mexican-cheese-producers",
+    "entry": {
+      "cheese_name": "8-lb Fresco Wheel",
+      "city": "Darlington",
+      "company": "Sigma Darlington Plant Mexican Cheese Producers",
+      "maker": "Brian Mundt & Victor Martinez"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c40-1",
+    "placement": 1,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Fresh Cheeses",
+    "class_number": 40,
+    "contest": "uscc",
+    "creamery_id": "wisconsin-cheese-group-llc",
+    "entry": {
+      "cheese_name": "El Viajero Queso Panela",
+      "city": "Monticello",
+      "company": "Sabrosura Foods",
+      "maker": "Wisconsin Cheese Group"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c40-3",
+    "placement": 3,
+    "score": 99.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Melting Cheeses",
+    "class_number": 41,
+    "contest": "uscc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "Queso Oaxaca",
+      "city": "Browntown",
+      "company": "V&V Supremo Foods - Browntown",
+      "maker": "Nick Siedschlag"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c41-1",
+    "placement": 1,
+    "score": 98.725,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Melting Cheeses",
+    "class_number": 41,
+    "contest": "uscc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "Oaxaca Cheese",
+      "city": "Browntown",
+      "company": "V&V Supremo Foods - Browntown",
+      "maker": "Sam Sweeny"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c41-2",
+    "placement": 2,
+    "score": 98.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Melting Cheeses",
+    "class_number": 41,
+    "contest": "uscc",
+    "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+    "entry": {
+      "cheese_name": "Oaxaca Sticks",
+      "city": "Waterloo",
+      "company": "Crave Brothers Farmstead Cheese",
+      "maker": "Crave Brothers Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c41-3",
+    "placement": 3,
+    "score": 98.675,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Hard Cheeses",
+    "class_number": 42,
+    "contest": "uscc",
+    "creamery_id": "w-w-dairy-llc",
+    "entry": {
+      "cheese_name": "Cotija 1",
+      "city": "Monroe",
+      "company": "W&W Dairy, LLC",
+      "maker": "W&W Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c42-3",
+    "placement": 3,
+    "score": 98.65,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Washed Rind/Smear Ripened Soft Cheeses",
+    "class_number": 43,
+    "contest": "uscc",
+    "creamery_id": "union-star-corp",
+    "entry": {
+      "cheese_name": "Red Willow",
+      "city": "Fremont",
+      "company": "Union Star Cheese",
+      "maker": "Willow Creek Creamery"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c43-3",
+    "placement": 3,
+    "score": 98.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Washed Rind/Smear Ripened Hard Cheeses",
+    "class_number": 45,
+    "contest": "uscc",
+    "creamery_id": "emmi-roth-usa",
+    "entry": {
+      "cheese_name": "Roth Grand Cru Surchoix Wheel",
+      "city": "Monroe",
+      "company": "Emmi Roth",
+      "maker": "Emmi Roth - Monroe"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c45-1",
+    "placement": 1,
+    "score": 99.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Washed Rind/Smear Ripened Hard Cheeses",
+    "class_number": 45,
+    "contest": "uscc",
+    "creamery_id": "emmi-roth-usa",
+    "entry": {
+      "cheese_name": "Roth Grand Cru Reserve Wheel",
+      "city": "Monroe",
+      "company": "Emmi Roth",
+      "maker": "Emmi Roth - Monroe"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c45-2",
+    "placement": 2,
+    "score": 99.6,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Washed Rind/Smear Ripened Hard Cheeses",
+    "class_number": 45,
+    "contest": "uscc",
+    "creamery_id": "uplands-cheese-company",
+    "entry": {
+      "cheese_name": "Extra-Aged Pleasant Ridge Reserve",
+      "city": "Dodgeville",
+      "company": "Uplands Cheese",
+      "maker": "Uplands Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c45-3",
+    "placement": 3,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pepper Flavored Monterey Jack, Mild Heat",
+    "class_number": 47,
+    "contest": "uscc",
+    "creamery_id": "arena-cheese",
+    "entry": {
+      "cheese_name": "Pepper Jack Deli",
+      "city": "Arena",
+      "company": "Arena Cheese",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c47-1",
+    "placement": 1,
+    "score": 98.2,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pepper Flavored Monterey Jack, High Heat",
+    "class_number": 49,
+    "contest": "uscc",
+    "creamery_id": "associated-milk-producers-inc",
+    "entry": {
+      "cheese_name": "AMPI Carolina Reaper Jack",
+      "city": "Jim Falls",
+      "company": "AMPI - Jim Falls",
+      "maker": "AMPI Jim Falls Cheese Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c49-1",
+    "placement": 1,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
+    "class_number": 50,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Hatch Pepper",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c50-2",
+    "placement": 2,
+    "score": 99.725,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
+    "class_number": 50,
+    "contest": "uscc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Castello - Chipotle Gouda",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c50-3",
+    "placement": 3,
+    "score": 99.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, Medium Heat",
+    "class_number": 51,
+    "contest": "uscc",
+    "creamery_id": "arena-cheese",
+    "entry": {
+      "cheese_name": "Colby Caliente",
+      "city": "Arena",
+      "company": "Arena Cheese",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c51-2",
+    "placement": 2,
+    "score": 99.6,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, High Heat",
+    "class_number": 52,
+    "contest": "uscc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Cheese Dragons Breath",
+      "city": "Kiel",
+      "company": "Henning's Cheese",
+      "maker": "Henning Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c52-1",
+    "placement": 1,
+    "score": 99.675,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, High Heat",
+    "class_number": 52,
+    "contest": "uscc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Rattlesnake",
+      "city": "Kiel",
+      "company": "Deer Creek",
+      "maker": "Henning's Cheese for Deer Creek"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c52-2",
+    "placement": 2,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Soft Cheeses",
+    "class_number": 53,
+    "contest": "uscc",
+    "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+    "entry": {
+      "cheese_name": "Crave Brothers Plain Mascarpone",
+      "city": "Waterloo",
+      "company": "Crave Brothers Farmstead Cheese",
+      "maker": "Crave Brothers Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c53-3",
+    "placement": 3,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Soft Cheeses, Flavored",
+    "class_number": 54,
+    "contest": "uscc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso Fresh Mozzarella Fresh Basil & Garlic Marinated",
+      "city": "Denmark",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Trevor Tilot"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c54-1",
+    "placement": 1,
+    "score": 99.375,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Soft Cheeses, Flavored",
+    "class_number": 54,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Peppercorn Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Amanda Gutzmer"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c54-2",
+    "placement": 2,
+    "score": 99.25,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Soft Cheeses, Flavored",
+    "class_number": 54,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Maple Mascarpone",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c54-3",
+    "placement": 3,
+    "score": 99.21,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Semi-soft Cheeses",
+    "class_number": 55,
+    "contest": "uscc",
+    "creamery_id": "hoard-s-dairymen-farm-creamery",
+    "entry": {
+      "cheese_name": "Sark",
+      "city": "Monticello",
+      "company": "Hoards Dairyman Farm Creamery",
+      "maker": "Ricardo Gutierrez"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c55-1",
+    "placement": 1,
+    "score": 99.25,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Semi-soft Cheeses",
+    "class_number": 55,
+    "contest": "uscc",
+    "creamery_id": "edelweiss-creamery",
+    "entry": {
+      "cheese_name": "Butterkase",
+      "city": "Monticello",
+      "company": "Edelweiss Creamery LLC",
+      "maker": "Bruce Workman"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c55-2",
+    "placement": 2,
+    "score": 99.1,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Semi-soft Cheeses",
+    "class_number": 55,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Fontal Cheese",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c55-3",
+    "placement": 3,
+    "score": 98.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses",
+    "class_number": 57,
+    "contest": "uscc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Original Gouda Gruyere",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Rob Stellrecht & Burnett Dairy Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c57-1",
+    "placement": 1,
+    "score": 98.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses",
+    "class_number": 57,
+    "contest": "uscc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Original Gouda Gruyere",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Rob Stellrecht & Burnett Dairy Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c57-2",
+    "placement": 2,
+    "score": 98.2,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses",
+    "class_number": 57,
+    "contest": "uscc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Golden",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c57-3",
+    "placement": 3,
+    "score": 98.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses, Flavored",
+    "class_number": 58,
+    "contest": "uscc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Cheese Onion and Chive",
+      "city": "Kiel",
+      "company": "Henning Cheese",
+      "maker": "Henning Cheese"
+    },
+    "finalist": true,
+    "id": "uscc-2025-c58-1",
+    "placement": 1,
+    "score": 98.95,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses, Flavored",
+    "class_number": 58,
+    "contest": "uscc",
+    "creamery_id": "sartori-company",
+    "entry": {
+      "cheese_name": "Tomato Basil BellaVitano",
+      "city": "Plymouth",
+      "company": "Sartori Company",
+      "maker": "Team Sartori"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c58-2",
+    "placement": 2,
+    "score": 98.9,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses, Flavored",
+    "class_number": 58,
+    "contest": "uscc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Doe",
+      "city": "Kiel",
+      "company": "Deer Creek",
+      "maker": "Henning's Cheese for Deer Creek"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c58-3",
+    "placement": 3,
+    "score": 98.875,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheeses with Natural Rind",
+    "class_number": 59,
+    "contest": "uscc",
+    "creamery_id": "hill-valley-dairy",
+    "entry": {
+      "cheese_name": "Luna by Hill Valley Dairy",
+      "city": "Milwaukee",
+      "company": "Hill Valley Dairy",
+      "maker": "Ron Henningfeld"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c59-3",
+    "placement": 3,
+    "score": 98.75,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Smoked Soft & Semi-soft Cheeses",
+    "class_number": 60,
+    "contest": "uscc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Blue Spruce Blue",
+      "city": "Linden",
+      "company": "Carr Valley Cheese Company, Inc.",
+      "maker": "Carr Valley Cheese Company, Inc."
+    },
+    "finalist": true,
+    "id": "uscc-2025-c60-1",
+    "placement": 1,
+    "score": 98.85,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Smoked Soft & Semi-soft Cheeses",
+    "class_number": 60,
+    "contest": "uscc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Castello Smoked Edam",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c60-2",
+    "placement": 2,
+    "score": 98.8,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Curds",
+    "class_number": 62,
+    "contest": "uscc",
+    "creamery_id": "cedar-grove-cheese-inc",
+    "entry": {
+      "cheese_name": "Cheddar Cheese Curds",
+      "city": "Plain",
+      "company": "Cedar Grove Cheese Inc.",
+      "maker": "Robert Wills"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c62-1",
+    "placement": 1,
+    "score": 99.175,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Curds",
+    "class_number": 62,
+    "contest": "uscc",
+    "creamery_id": "lynn-dairy-inc",
+    "entry": {
+      "cheese_name": "Regular Cheese Curds",
+      "city": "Granton",
+      "company": "Lynn Dairy Inc",
+      "maker": "Dennis Trachte"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c62-2",
+    "placement": 2,
+    "score": 99.05,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Curds",
+    "class_number": 62,
+    "contest": "uscc",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "entry": {
+      "cheese_name": "LaGrander's Yellow Cheese Curds",
+      "city": "Stanley",
+      "company": "LaGrander's Hillside Dairy, Inc.",
+      "maker": "LaGrander's Team #2"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c62-3",
+    "placement": 3,
+    "score": 98.9,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Curds, Flavored",
+    "class_number": 63,
+    "contest": "uscc",
+    "creamery_id": "cedar-grove-cheese-inc",
+    "entry": {
+      "cheese_name": "Flavored Cheddar Cheese Curds/ Cedar Grove Cheese",
+      "city": "Plain",
+      "company": "Cedar Grove Cheese Inc.",
+      "maker": "Robert Wills"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c63-1",
+    "placement": 1,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Curds, Flavored",
+    "class_number": 63,
+    "contest": "uscc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Tomato Bacon Basil Curds",
+      "city": "Brodhead",
+      "company": "Decatur Dairy Inc.",
+      "maker": "Decatur Cheesemakers"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c63-2",
+    "placement": 2,
+    "score": 99.495,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Curds, Flavored",
+    "class_number": 63,
+    "contest": "uscc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Herb and Garlic White Curds",
+      "city": "Brodhead",
+      "company": "Decatur Dairy Inc.",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c63-3",
+    "placement": 3,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Fat Cheeses",
+    "class_number": 64,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Reduced Fat Mediterranean Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Steve Webster"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c64-1",
+    "placement": 1,
+    "score": 99.35,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Fat Cheeses",
+    "class_number": 64,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Reduced Fat Peppercorn Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Carrie Purcella"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c64-2",
+    "placement": 2,
+    "score": 98.8,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Fat Cheeses",
+    "class_number": 64,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Reduced Fat Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Kristi Wuthrich"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c64-3",
+    "placement": 3,
+    "score": 98.725,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Cheeses",
+    "class_number": 65,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Low Fat Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Steve Webster"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c65-1",
+    "placement": 1,
+    "score": 98.9,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Cheeses",
+    "class_number": 65,
+    "contest": "uscc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Low Fat Jack",
+      "city": "Muscoda",
+      "company": "Meister Cheese",
+      "maker": "Meister Team 2"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c65-2",
+    "placement": 2,
+    "score": 98.25,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Cheeses",
+    "class_number": 65,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Fat Free Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Dave Buholzer"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c65-3",
+    "placement": 3,
+    "score": 98.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Sodium Cheeses",
+    "class_number": 66,
+    "contest": "uscc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Reduced Sodium Provolone",
+      "city": "Luxemburg",
+      "company": "Agropur",
+      "maker": "Jeremy Robinson"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c66-2",
+    "placement": 2,
+    "score": 98.475,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Sodium Cheeses",
+    "class_number": 66,
+    "contest": "uscc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Reduced Sodium Provolone",
+      "city": "Luxemburg",
+      "company": "Agropur",
+      "maker": "Pat Doell"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c66-3",
+    "placement": 3,
+    "score": 98.275,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cream Cheese, Flavored",
+    "class_number": 68,
+    "contest": "uscc",
+    "creamery_id": "schreiber-foods-inc",
+    "entry": {
+      "cheese_name": "Harris Teeter's Whipped Chive Cream Cheese Spread",
+      "city": "Green Bay",
+      "company": "Schreiber Foods",
+      "maker": "Schreiber Foods"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c68-3",
+    "placement": 3,
+    "score": 99.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Spreadable Natural Cheeses",
+    "class_number": 69,
+    "contest": "uscc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Rondele Mango Habanero",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Brian Storm"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c69-1",
+    "placement": 1,
+    "score": 99.4,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese",
+    "class_number": 70,
+    "contest": "uscc",
+    "creamery_id": "widmer-s-cheese-cellars-inc",
+    "entry": {
+      "cheese_name": "Aged Brick Spread",
+      "city": "Theresa",
+      "company": "Widmer's Cheese Cellars, Inc.",
+      "maker": "Widmer's Cheese Cellars Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c70-1",
+    "placement": 1,
+    "score": 99.625,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese",
+    "class_number": 70,
+    "contest": "uscc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Aged Asiago Cold Pack Cheese Food",
+      "city": "Newton",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c70-2",
+    "placement": 2,
+    "score": 99.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese",
+    "class_number": 70,
+    "contest": "uscc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Original Cheddar Gruyere Cheese Spread",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Swati Verma, Burnett Dairy Team, & Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c70-3",
+    "placement": 3,
+    "score": 99.475,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese, Flavored",
+    "class_number": 71,
+    "contest": "uscc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Bruschetta Jack Spread",
+      "city": "Muscoda",
+      "company": "Meister Cheese",
+      "maker": "Meister Team 3"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c71-1",
+    "placement": 1,
+    "score": 99.1,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese, Flavored",
+    "class_number": 71,
+    "contest": "uscc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Jalapeno Cold Pack Cheese Food",
+      "city": "Newton",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c71-2",
+    "placement": 2,
+    "score": 98.875,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese, Flavored",
+    "class_number": 71,
+    "contest": "uscc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Triple Pepper Cheddar Gruyere Cheese Spread",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Swati Verma, Burnett Dairy Team, & Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c71-3",
+    "placement": 3,
+    "score": 98.75,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses",
+    "class_number": 72,
+    "contest": "uscc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Wee Brie",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Courtney Schreiner"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c72-1",
+    "placement": 1,
+    "score": 99.45,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses",
+    "class_number": 72,
+    "contest": "uscc",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Ellsworth White EZ Melt",
+      "city": "New London",
+      "company": "Ellsworth Creamery",
+      "maker": "Team New London"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c72-2",
+    "placement": 2,
+    "score": 98.8,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses",
+    "class_number": 72,
+    "contest": "uscc",
+    "creamery_id": "cropp-cooperative-organic-valley",
+    "entry": {
+      "cheese_name": "Organic White American Cheese - Premium Pasteurized Prepared Cheese",
+      "city": "Colby",
+      "company": "CROPP Cooperative/Organic Valley",
+      "maker": "Team Revela Foods"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c72-3",
+    "placement": 3,
+    "score": 98.575,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses, Flavored",
+    "class_number": 73,
+    "contest": "uscc",
+    "creamery_id": "gilman-cheese-corporation",
+    "entry": {
+      "cheese_name": "Shelf Stable Onion",
+      "city": "Gilman",
+      "company": "Gilman Cheese Corporation",
+      "maker": "Gilman Cheese Corporation"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c73-1",
+    "placement": 1,
+    "score": 98.95,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Slices",
+    "class_number": 74,
+    "contest": "uscc",
+    "creamery_id": "associated-milk-producers-inc",
+    "entry": {
+      "cheese_name": "Dinner Bell Pasteurized Processed American Cheese White (Slice-on-Slice)",
+      "city": "Portage",
+      "company": "Associated Milk Producers Inc. - Portage",
+      "maker": "AMPI's Dinner Bell Creamery"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c74-1",
+    "placement": 1,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Spread",
+    "class_number": 75,
+    "contest": "uscc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Garlic & Herb Gourmet Cheese Snack Spread",
+      "city": "Newton",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c75-1",
+    "placement": 1,
+    "score": 98.515,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Spread",
+    "class_number": 75,
+    "contest": "uscc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Sharp Cheddar Gourmet Cheese Snack Spread",
+      "city": "Newton",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c75-3",
+    "placement": 3,
+    "score": 98.415,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Product",
+    "class_number": 76,
+    "contest": "uscc",
+    "creamery_id": "land-o-lakes-cheese-division",
+    "entry": {
+      "cheese_name": "48227 LOL Yellow Sharp Cheddar American Cheese Product",
+      "city": "Spencer",
+      "company": "Land O'Lakes, Inc.",
+      "maker": "Team Loaf"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c76-1",
+    "placement": 1,
+    "score": 99.05,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Product",
+    "class_number": 76,
+    "contest": "uscc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Creamy Brie",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Shawn Schult"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c76-2",
+    "placement": 2,
+    "score": 98.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft Goat's Milk Cheeses",
+    "class_number": 77,
+    "contest": "uscc",
+    "creamery_id": "laclare-creamery-llc",
+    "entry": {
+      "cheese_name": "LaClare Creamery Original Goat Cheese",
+      "city": "Malone",
+      "company": "LaClare Creamery",
+      "maker": "Robert Garves"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c77-1",
+    "placement": 1,
+    "score": 99.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft Goat's Milk Cheeses, Flavored with Sweet Condiments",
+    "class_number": 79,
+    "contest": "uscc",
+    "creamery_id": "saputo-cheese-usa",
+    "entry": {
+      "cheese_name": "Montchevre Blueberry Vanilla Goat Cheese",
+      "city": "Franklin",
+      "company": "Saputo Cheese USA, Inc.",
+      "maker": "Franklin Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c79-2",
+    "placement": 2,
+    "score": 99.3,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft Goat's Milk Cheeses",
+    "class_number": 80,
+    "contest": "uscc",
+    "creamery_id": "hook-s-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Hook's Barneveld Blue",
+      "city": "Mineral Point",
+      "company": "Hook's Cheese Company, Inc.",
+      "maker": "Team Hook"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c80-2",
+    "placement": 2,
+    "score": 99.05,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft Goat's Milk Cheeses",
+    "class_number": 80,
+    "contest": "uscc",
+    "creamery_id": "kingston-cheese-cooperative",
+    "entry": {
+      "cheese_name": "Goat Blue",
+      "city": "Cambria",
+      "company": "Kingston Cheese Cooperative",
+      "maker": "Team Kingston Cheese"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c80-3",
+    "placement": 3,
+    "score": 98.925,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Goat's Milk Cheeses",
+    "class_number": 81,
+    "contest": "uscc",
+    "creamery_id": "saputo-cheese-usa",
+    "entry": {
+      "cheese_name": "Montchevre Goat Milk Cheddar",
+      "city": "black creek",
+      "company": "Saputo Cheese USA, Inc.",
+      "maker": "Black Creek Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c81-1",
+    "placement": 1,
+    "score": 99.1,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Sheep's Milk Cheeses",
+    "class_number": 83,
+    "contest": "uscc",
+    "creamery_id": "hook-s-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Hook's Little Boy Blue",
+      "city": "Mineral Point",
+      "company": "Hook's Cheese Company, Inc.",
+      "maker": "Team Hook"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c83-1",
+    "placement": 1,
+    "score": 99.75,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Sheep's Milk Cheeses",
+    "class_number": 83,
+    "contest": "uscc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Marisa",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company, Inc.",
+      "maker": "Carr Valley Cheese Company, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c83-2",
+    "placement": 2,
+    "score": 99.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Sheep's Milk Cheeses",
+    "class_number": 83,
+    "contest": "uscc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Sante",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company, Inc.",
+      "maker": "Carr Valley Cheese Company, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c83-3",
+    "placement": 3,
+    "score": 99.4,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Sheep's Milk Cheeses",
+    "class_number": 84,
+    "contest": "uscc",
+    "creamery_id": "cedar-grove-cheese-inc",
+    "entry": {
+      "cheese_name": "Donatello",
+      "city": "Plain",
+      "company": "Cedar Grove Cheese Inc.",
+      "maker": "Cedar Grove Cheese Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c84-1",
+    "placement": 1,
+    "score": 98.6,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Sheep's Milk Cheeses",
+    "class_number": 84,
+    "contest": "uscc",
+    "creamery_id": "hidden-springs-creamery",
+    "entry": {
+      "cheese_name": "Hidden Springs Creamery, Wischego",
+      "city": "Westby",
+      "company": "Hidden Springs Creamery LLC",
+      "maker": "Team Hidden Springs"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c84-2",
+    "placement": 2,
+    "score": 98.45,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Sheep's Milk Cheeses",
+    "class_number": 84,
+    "contest": "uscc",
+    "creamery_id": "cedar-grove-cheese-inc",
+    "entry": {
+      "cheese_name": "Donatello",
+      "city": "Plain",
+      "company": "Cedar Grove Cheese Inc.",
+      "maker": "Cedar Grove Cheese Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c84-3",
+    "placement": 3,
+    "score": 98.4,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Surface Ripened Sheep’s Milk Cheeses",
+    "class_number": 85,
+    "contest": "uscc",
+    "creamery_id": "landmark-creamery-llc",
+    "entry": {
+      "cheese_name": "Anabasque",
+      "city": "Monroe",
+      "company": "Landmark Creamery",
+      "maker": "Anna Landmark"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c85-3",
+    "placement": 3,
+    "score": 98.05,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sheep's Milk Cheeses, Flavored",
+    "class_number": 86,
+    "contest": "uscc",
+    "creamery_id": "hidden-springs-creamery",
+    "entry": {
+      "cheese_name": "Hidden Springs Creamery, Driftless Habanero Honey",
+      "city": "Westby",
+      "company": "Hidden Springs Creamery LLC",
+      "maker": "Team Hidden Springs"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c86-1",
+    "placement": 1,
+    "score": 99.1,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sheep's Milk Cheeses, Flavored",
+    "class_number": 86,
+    "contest": "uscc",
+    "creamery_id": "hidden-springs-creamery",
+    "entry": {
+      "cheese_name": "Hidden Springs Creamery, Driftless Cranberry and Cinnamon",
+      "city": "Westby",
+      "company": "Hidden Springs Creamery LLC",
+      "maker": "Team Hidden Springs"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c86-2",
+    "placement": 2,
+    "score": 98.8,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sheep's Milk Cheeses, Flavored",
+    "class_number": 86,
+    "contest": "uscc",
+    "creamery_id": "hidden-springs-creamery",
+    "entry": {
+      "cheese_name": "Hidden Springs Creamery, Driftless Garlic and Herb",
+      "city": "Westby",
+      "company": "Hidden Springs Creamery LLC",
+      "maker": "Team Hidden Springs"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c86-3",
+    "placement": 3,
+    "score": 98.675,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Mixed Milk Cheeses",
+    "class_number": 87,
+    "contest": "uscc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Mobay",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company, Inc.",
+      "maker": "Carr Valley Cheese Company, Inc."
+    },
+    "finalist": true,
+    "id": "uscc-2025-c87-1",
+    "placement": 1,
+    "score": 99.45,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Mixed Milk Cheeses",
+    "class_number": 87,
+    "contest": "uscc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Gran Canaria",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company, Inc.",
+      "maker": "Carr Valley Cheese Company, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c87-3",
+    "placement": 3,
+    "score": 99.1,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Mixed Milk Cheeses",
+    "class_number": 88,
+    "contest": "uscc",
+    "creamery_id": "cedar-grove-cheese-inc",
+    "entry": {
+      "cheese_name": "Faarko",
+      "city": "Plain",
+      "company": "Cedar Grove Cheese Inc.",
+      "maker": "Cedar Grove Cheese Team"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c88-1",
+    "placement": 1,
+    "score": 99.35,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Mixed Milk Cheeses",
+    "class_number": 88,
+    "contest": "uscc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Romano",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c88-3",
+    "placement": 3,
+    "score": 98.95,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Surface Ripened Mixed Milk Cheeses",
+    "class_number": 89,
+    "contest": "uscc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Cave Aged Mellage",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company, Inc.",
+      "maker": "Carr Valley Cheese Company, Inc."
+    },
+    "finalist": false,
+    "id": "uscc-2025-c89-2",
+    "placement": 2,
+    "score": 98.75,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Unsalted",
+    "class_number": 90,
+    "contest": "uscc",
+    "creamery_id": "nordic-creamery",
+    "entry": {
+      "cheese_name": "Nordic Creamery Unsalted Butter",
+      "city": "westby",
+      "company": "Nordic Creamery",
+      "maker": "Al Bekkum"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c90-1",
+    "placement": 1,
+    "score": 99.0,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Salted",
+    "class_number": 91,
+    "contest": "uscc",
+    "creamery_id": "foremost-farms-usa-cooperative",
+    "entry": {
+      "cheese_name": "Foremost Farms USA",
+      "city": "Reedsburg",
+      "company": "Foremost Farms USA",
+      "maker": "Foremost Farms USA- 3rd Shift"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c91-1",
+    "placement": 1,
+    "score": 99.7,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Flavored",
+    "class_number": 92,
+    "contest": "uscc",
+    "creamery_id": "landmark-creamery-llc",
+    "entry": {
+      "cheese_name": "Cinnamon Maple Butter",
+      "city": "Belleville",
+      "company": "Landmark Creamery",
+      "maker": "Anna Landmark"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c92-1",
+    "placement": 1,
+    "score": 98.91,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Flavored",
+    "class_number": 92,
+    "contest": "uscc",
+    "creamery_id": "royal-guernsey-creamery-llc",
+    "entry": {
+      "cheese_name": "Royal Guernsey Creamery Signature Butter",
+      "city": "Columbus",
+      "company": "Royal Guernsey Creamery",
+      "maker": "Jennifer Orchard"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c92-2",
+    "placement": 2,
+    "score": 98.75,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Flavored",
+    "class_number": 92,
+    "contest": "uscc",
+    "creamery_id": "pine-river-dairy-inc",
+    "entry": {
+      "cheese_name": "Caramel Apple Butter",
+      "city": "Manitowoc",
+      "company": "Pine River Dairy, Inc.",
+      "maker": "Team Pine River Dairy"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c92-3",
+    "placement": 3,
+    "score": 98.63,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Yogurt, Cow's Milk",
+    "class_number": 93,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Lowfat 1% Vanilla Yogurt",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Ron Buholzer"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c93-3",
+    "placement": 3,
+    "score": 98.55,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "High Protein Yogurt, Cow's Milk",
+    "class_number": 96,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Labne",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Matt Martin"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c96-2",
+    "placement": 2,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "High Protein Yogurt, Cow's Milk, Flavored",
+    "class_number": 97,
+    "contest": "uscc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Vanilla Greek Yogurt",
+      "city": "Monroe",
+      "company": "Klondike Cheese Co.",
+      "maker": "Danielle Sofran"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c97-1",
+    "placement": 1,
+    "score": 99.45,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sour Cream",
+    "class_number": 99,
+    "contest": "uscc",
+    "creamery_id": "mexican-cheese-producers",
+    "entry": {
+      "cheese_name": "24-oz cultured Cream",
+      "city": "Darlington",
+      "company": "Sigma Darlington Plant Mexican Cheese Producers",
+      "maker": "Jose Aragon and Joel Ortega"
+    },
+    "finalist": false,
+    "id": "uscc-2025-c99-3",
+    "placement": 3,
+    "score": 99.5,
+    "year": 2025
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Medium (3 to 6 months)",
+    "class_number": 2,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Cheddar Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur Weyauwega",
+      "maker": "Michael Schroeder"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c02-3",
+    "placement": 3,
+    "score": 98.045,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Aged One to Two Years",
+    "class_number": 4,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Cheddar Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur Weyauwega",
+      "maker": "Charles Henn"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c04-1",
+    "placement": 1,
+    "score": 99.125,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Aged Two Years or Longer",
+    "class_number": 5,
+    "contest": "wccc",
+    "creamery_id": "land-o-lakes-cheese-division",
+    "entry": {
+      "cheese_name": "Land O'Lakes Aged Cheddar",
+      "city": "Kiel",
+      "company": "Land O'Lakes",
+      "maker": "Kiel cheesemakers"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c05-1",
+    "placement": 1,
+    "score": 98.55,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheddar, Aged Two Years or Longer",
+    "class_number": 5,
+    "contest": "wccc",
+    "creamery_id": "land-o-lakes-cheese-division",
+    "entry": {
+      "cheese_name": "Land O'Lakes Aged Cheddar",
+      "city": "Kiel",
+      "company": "Land O'Lakes",
+      "maker": "Kiel production team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c05-3",
+    "placement": 3,
+    "score": 98.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Traditional Waxed Cheddar",
+    "class_number": 6,
+    "contest": "wccc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Imperial Buck",
+      "city": "Kiel",
+      "company": "Deer Creek",
+      "maker": "Team Deer Creek"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c06-1",
+    "placement": 1,
+    "score": 97.85,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Traditional Waxed Cheddar",
+    "class_number": 6,
+    "contest": "wccc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Aged Cheddar",
+      "city": "Kiel",
+      "company": "Henning Cheese",
+      "maker": "Sam Barbercheck - Team Henning"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c06-2",
+    "placement": 2,
+    "score": 97.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Traditional Waxed Cheddar",
+    "class_number": 6,
+    "contest": "wccc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Wild Stag",
+      "city": "Kiel",
+      "company": "Deer Creek",
+      "maker": "Team Deer Creek"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c06-3",
+    "placement": 3,
+    "score": 97.15,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Colby",
+    "class_number": 9,
+    "contest": "wccc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Colby",
+      "city": "Muscoda",
+      "company": "Meister Cheese Company",
+      "maker": "Meister Team 2"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c09-1",
+    "placement": 1,
+    "score": 99.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Colby",
+    "class_number": 9,
+    "contest": "wccc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Colby",
+      "city": "Muscoda",
+      "company": "Meister Cheese Company",
+      "maker": "Meister Team 1"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c09-2",
+    "placement": 2,
+    "score": 99.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Monterey Jack",
+    "class_number": 10,
+    "contest": "wccc",
+    "creamery_id": "associated-milk-producers-inc",
+    "entry": {
+      "cheese_name": "AMPI Monterey Jack",
+      "city": "Jim Falls",
+      "company": "AMPI Jim Falls",
+      "maker": "AMPI Jim Falls Cheese Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c10-1",
+    "placement": 1,
+    "score": 99.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Monterey Jack",
+    "class_number": 10,
+    "contest": "wccc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Monterey Jack",
+      "city": "Muscoda",
+      "company": "Meister Cheese Company",
+      "maker": "Meister Team 1"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c10-3",
+    "placement": 3,
+    "score": 99.1,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft-Ripened Goat's Milk Cheeses",
+    "class_number": 102,
+    "contest": "wccc",
+    "creamery_id": "blakesville-creamery",
+    "entry": {
+      "cheese_name": "Blakesville Creamery Truffle Shuffle",
+      "city": "Port Washington",
+      "company": "Blakesville Creamery",
+      "maker": "Maritza Purcell & Dennis Belen"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c102-2",
+    "placement": 2,
+    "score": 98.85,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft Sheep's Milk Cheeses",
+    "class_number": 104,
+    "contest": "wccc",
+    "creamery_id": "hidden-springs-creamery",
+    "entry": {
+      "cheese_name": "Hidden Springs Creamery Driftless Maple Cream",
+      "city": "Westby",
+      "company": "Hidden Springs Creamery LLC",
+      "maker": "Travis Forgues"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c104-2",
+    "placement": 2,
+    "score": 99.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft (Semi-hard) Sheep’s Milk Cheeses",
+    "class_number": 105,
+    "contest": "wccc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Sante",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company",
+      "maker": "Carr Valley Cheese Company"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c105-1",
+    "placement": 1,
+    "score": 98.8,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft (Semi-hard) Sheep’s Milk Cheeses",
+    "class_number": 105,
+    "contest": "wccc",
+    "creamery_id": "hook-s-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Hook's Sheep Milk Butterkase",
+      "city": "Mineral Point",
+      "company": "Hook's Cheese Company, Inc.",
+      "maker": "Team Hook"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c105-2",
+    "placement": 2,
+    "score": 98.35,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Sheep’s Milk Cheeses, Extra Aged (over 6 months)",
+    "class_number": 107,
+    "contest": "wccc",
+    "creamery_id": "blakesville-creamery",
+    "entry": {
+      "cheese_name": "Blakesville Creamery Mariana",
+      "city": "Port Washington",
+      "company": "Blakesville Creamery",
+      "maker": "Veronica Pedraza & Lily Orr"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c107-2",
+    "placement": 2,
+    "score": 99.85,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sheep’s Milk Cheeses with Blue Mold",
+    "class_number": 108,
+    "contest": "wccc",
+    "creamery_id": "maple-leaf-cheese-co",
+    "entry": {
+      "cheese_name": "Ewe're My Boy, Blue",
+      "city": "Cambria",
+      "company": "Maple Leaf Cheese",
+      "maker": "William Knox, Ben Ullerup Mathers (CDR), Kingston Cheese Making Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c108-1",
+    "placement": 1,
+    "score": 99.15,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sheep’s Milk Cheeses with Blue Mold",
+    "class_number": 108,
+    "contest": "wccc",
+    "creamery_id": "maple-leaf-cheese-co",
+    "entry": {
+      "cheese_name": "Ewe're My Boy, Blue",
+      "city": "Cambria",
+      "company": "Maple Leaf Cheese",
+      "maker": "William Knox, Ben Ullerup Mathers (CDR), Kingston Cheese Making Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c108-2",
+    "placement": 2,
+    "score": 98.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Sheep’s Milk Cheeses with Blue Mold",
+    "class_number": 108,
+    "contest": "wccc",
+    "creamery_id": "hook-s-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Hook's Little Boy Blue",
+      "city": "Mineral Point",
+      "company": "Hook's Cheese Company, Inc.",
+      "maker": "Team Hook"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c108-3",
+    "placement": 3,
+    "score": 98.25,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Surface Ripened Sheep’s Milk Cheeses",
+    "class_number": 109,
+    "contest": "wccc",
+    "creamery_id": "blakesville-creamery",
+    "entry": {
+      "cheese_name": "Blakesville Creamery Artze",
+      "city": "Port Washington",
+      "company": "Blakesville Creamery",
+      "maker": "Veronica Pedraza & Lily Orr"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c109-1",
+    "placement": 1,
+    "score": 99.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Marbled Curd Cheese",
+    "class_number": 11,
+    "contest": "wccc",
+    "creamery_id": "nasonville-dairy-inc",
+    "entry": {
+      "cheese_name": "Marbled Colby Jack",
+      "city": "Marshfield",
+      "company": "Nasonville Dairy, Inc.",
+      "maker": "Team Nasonville Dairy, Inc."
+    },
+    "finalist": false,
+    "id": "wccc-2026-c11-1",
+    "placement": 1,
+    "score": 98.755,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft and Hard Sheep's Milk Cheeses, Flavored",
+    "class_number": 111,
+    "contest": "wccc",
+    "creamery_id": "maple-leaf-cheese-co",
+    "entry": {
+      "cheese_name": "A Blue Named Sue",
+      "city": "Cambria",
+      "company": "Maple Leaf Cheese",
+      "maker": "William Knox, Ben Ullerup Mathers (CDR), Kingston Cheese Making Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c111-2",
+    "placement": 2,
+    "score": 98.75,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft and Hard Sheep's Milk Cheeses, Flavored",
+    "class_number": 111,
+    "contest": "wccc",
+    "creamery_id": "maple-leaf-cheese-co",
+    "entry": {
+      "cheese_name": "A Blue Named Sue",
+      "city": "Cambria",
+      "company": "Maple Leaf Cheese",
+      "maker": "William Knox, Ben Ullerup Mathers (CDR), Kingston Cheese Making Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c111-3",
+    "placement": 3,
+    "score": 98.745,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Mixed Milk Cheeses",
+    "class_number": 112,
+    "contest": "wccc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Indigo Bunting",
+      "city": "Linden",
+      "company": "Deer Creek",
+      "maker": "Team Deer Creek"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c112-2",
+    "placement": 2,
+    "score": 99.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft & Semi-soft Mixed Milk Cheeses",
+    "class_number": 112,
+    "contest": "wccc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Caso Bolo Mellage",
+      "city": "Mauston",
+      "company": "Carr Valley Cheese Company",
+      "maker": "Carr Valley Cheese Company"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c112-3",
+    "placement": 3,
+    "score": 99.25,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Hard Mixed Milk Cheeses (over 6 months)",
+    "class_number": 114,
+    "contest": "wccc",
+    "creamery_id": "cedar-grove-cheese-inc",
+    "entry": {
+      "cheese_name": "Montague",
+      "city": "Plain",
+      "company": "Cedar Grove Cheese",
+      "maker": "Cedar Grove Cheese Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c114-3",
+    "placement": 3,
+    "score": 98.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Mixed Milk Cheeses, Flavored",
+    "class_number": 115,
+    "contest": "wccc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Swan",
+      "city": "Plain",
+      "company": "Deer Creek",
+      "maker": "Team Deer Creek"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c115-2",
+    "placement": 2,
+    "score": 98.6,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Salted",
+    "class_number": 119,
+    "contest": "wccc",
+    "creamery_id": "royal-guernsey-creamery-llc",
+    "entry": {
+      "cheese_name": "Salted Butter",
+      "city": "Columbus",
+      "company": "Royal Guernsey Creamery",
+      "maker": "Jennifer Orchard"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c119-1",
+    "placement": 1,
+    "score": 98.9,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Flavored",
+    "class_number": 121,
+    "contest": "wccc",
+    "creamery_id": "landmark-creamery-llc",
+    "entry": {
+      "cheese_name": "Cinnamon Maple Butter",
+      "city": "Belleville",
+      "company": "Landmark Creamery",
+      "maker": "Anna Landmark"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c121-1",
+    "placement": 1,
+    "score": 99.2,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Flavored",
+    "class_number": 121,
+    "contest": "wccc",
+    "creamery_id": "royal-guernsey-creamery-llc",
+    "entry": {
+      "cheese_name": "Signature Butter",
+      "city": "Columbus",
+      "company": "Royal Guernsey Creamery",
+      "maker": "Jennifer Orchard"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c121-2",
+    "placement": 2,
+    "score": 98.95,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Butter, Flavored",
+    "class_number": 121,
+    "contest": "wccc",
+    "creamery_id": null,
+    "entry": {
+      "cheese_name": "Hansen's Sugar Shack",
+      "city": "Westby",
+      "company": "Hansen's Sugar Shack, llC",
+      "maker": "Hansen's Sugar Shack with Bekkum Family Farms (Nordic Creamery)"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c121-3",
+    "placement": 3,
+    "score": 98.9,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cultured Dairy Dips",
+    "class_number": 124,
+    "contest": "wccc",
+    "creamery_id": "westby-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Westby French Onion Dip",
+      "city": "Westby",
+      "company": "Westby Creamery",
+      "maker": "Westby Cooperative Creamery"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c124-2",
+    "placement": 2,
+    "score": 99.55,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cultured Dairy Dips",
+    "class_number": 124,
+    "contest": "wccc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Street Corn Dip",
+      "city": "NEWTON, WI",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c124-3",
+    "placement": 3,
+    "score": 99.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Yogurt",
+    "class_number": 127,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Plain Yogurt",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Matt Martin"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c127-3",
+    "placement": 3,
+    "score": 98.95,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Snack Cheese",
+    "class_number": 133,
+    "contest": "wccc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Jalapeno Habanero Snack Sticks",
+      "city": "Plymouth",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc. - Plymouth, WI"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c133-1",
+    "placement": 1,
+    "score": 98.745,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Snack Cheese",
+    "class_number": 133,
+    "contest": "wccc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso Fresh Mozzarella Snacking Cheese",
+      "city": "Denmark",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Jose Marin"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c133-3",
+    "placement": 3,
+    "score": 98.625,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese",
+    "class_number": 134,
+    "contest": "wccc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "Shredded Chihuahua",
+      "city": "Arena",
+      "company": "V&V Supremo Foods - Arena",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c134-1",
+    "placement": 1,
+    "score": 99.715,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese",
+    "class_number": 134,
+    "contest": "wccc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Colby Jack Shredded Cheese",
+      "city": "Oostburg",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc. - Oostburg, WI"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c134-2",
+    "placement": 2,
+    "score": 99.675,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese",
+    "class_number": 134,
+    "contest": "wccc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "Shredded Chihuahua",
+      "city": "Arena",
+      "company": "V&V Supremo Foods - Arena",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c134-3",
+    "placement": 3,
+    "score": 99.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Italian Style Cheese",
+    "class_number": 135,
+    "contest": "wccc",
+    "creamery_id": "cedar-valley-cheese-inc",
+    "entry": {
+      "cheese_name": "Low Moisture Mozzarella shred",
+      "city": "Belgium",
+      "company": "Cedar Valley Cheese, Inc.",
+      "maker": "C.V. 2nd shift shred team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c135-1",
+    "placement": 1,
+    "score": 99.78,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Italian Style Cheese",
+    "class_number": 135,
+    "contest": "wccc",
+    "creamery_id": "cedar-valley-cheese-inc",
+    "entry": {
+      "cheese_name": "Low Moisture Mozzarella shred",
+      "city": "Belgium",
+      "company": "Cedar Valley Cheese, Inc.",
+      "maker": "C.V. 1st shift Shred Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c135-2",
+    "placement": 2,
+    "score": 99.345,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Italian Style Cheese",
+    "class_number": 135,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Low Moisture Mozzarella Shredded",
+      "city": "Weyauwega",
+      "company": "Agropur Weyauwega",
+      "maker": "Drew Simonson"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c135-3",
+    "placement": 3,
+    "score": 99.28,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese Blends",
+    "class_number": 136,
+    "contest": "wccc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "3 State Sharp Cheddar Shred Blend",
+      "city": "Oostburg",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc. - Oostburg, WI"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c136-1",
+    "placement": 1,
+    "score": 98.55,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese Blends",
+    "class_number": 136,
+    "contest": "wccc",
+    "creamery_id": "great-lakes-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Alpine Blend (Grand Cru, Havarti and Swiss) - Great Lakes Cheese",
+      "city": "Plymouth",
+      "company": "Great Lakes Cheese Plymouth",
+      "maker": "Slice Samurai"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c136-2",
+    "placement": 2,
+    "score": 98.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Shredded Cheese Blends",
+    "class_number": 136,
+    "contest": "wccc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Ultimate Pizza Shred Blend",
+      "city": "Plymouth",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Masters Gallery Foods, Inc. - Plymouth, WI"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c136-3",
+    "placement": 3,
+    "score": 98.425,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Crumbled Cheese",
+    "class_number": 137,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Crumbled Feta Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur Weyauwega",
+      "maker": "Ariel Graveen"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c137-3",
+    "placement": 3,
+    "score": 99.115,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Grated Cheese",
+    "class_number": 138,
+    "contest": "wccc",
+    "creamery_id": "lactalis-heritage-dairy-inc",
+    "entry": {
+      "cheese_name": "Kraft Grated Parmesan",
+      "city": "Wausau",
+      "company": "Lactalis Heritage Dairy",
+      "maker": "Lactalis Heritage Dairy"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c138-1",
+    "placement": 1,
+    "score": 97.2,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Grated Cheese",
+    "class_number": 138,
+    "contest": "wccc",
+    "creamery_id": "la-vaquita-inc",
+    "entry": {
+      "cheese_name": "Cotija Powder",
+      "city": "Monroe",
+      "company": "La Vaquita, Monroe",
+      "maker": "W&W Dairy"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c138-3",
+    "placement": 3,
+    "score": 96.25,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Natural Sliced Cheese",
+    "class_number": 139,
+    "contest": "wccc",
+    "creamery_id": null,
+    "entry": {
+      "cheese_name": "Tillamook Spicy Colby Jack Slices",
+      "city": "Muscoda",
+      "company": "Tillamook",
+      "maker": "Tillamook"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c139-1",
+    "placement": 1,
+    "score": 99.0,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Prepared Cheese Foods",
+    "class_number": 140,
+    "contest": "wccc",
+    "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+    "entry": {
+      "cheese_name": "Brun-Uusto - Brunkow's Baked Cheese with Garlic",
+      "city": "Darlington",
+      "company": "Brunkow Cheese of Wisconsin",
+      "maker": "Team Brunkow"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c140-1",
+    "placement": 1,
+    "score": 97.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Prepared Cheese Foods",
+    "class_number": 140,
+    "contest": "wccc",
+    "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+    "entry": {
+      "cheese_name": "Brun-Uusto - Brunkow's Baked Cheese with Smoked Bacon",
+      "city": "Darlington",
+      "company": "Brunkow Cheese of Wisconsin",
+      "maker": "Team Brunkow"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c140-2",
+    "placement": 2,
+    "score": 97.495,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Prepared Cheese Foods",
+    "class_number": 140,
+    "contest": "wccc",
+    "creamery_id": "carr-valley-cheese-company-inc",
+    "entry": {
+      "cheese_name": "Garlic Bread Cheese",
+      "city": "La Valle",
+      "company": "Carr Valley Cheese Company",
+      "maker": "Carr Valley Cheese Company"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c140-3",
+    "placement": 3,
+    "score": 97.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Based Spreads",
+    "class_number": 141,
+    "contest": "wccc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Dill Pickle Cheese Spread",
+      "city": "NEWTON, WI",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c141-1",
+    "placement": 1,
+    "score": 98.0,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Based Spreads",
+    "class_number": 141,
+    "contest": "wccc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "Black Diamond Extra Sharp Cheddar Spreadable Cheese",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Emily Betts"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c141-2",
+    "placement": 2,
+    "score": 97.65,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cheese Based Spreads",
+    "class_number": 141,
+    "contest": "wccc",
+    "creamery_id": "pine-river-pre-pack-inc",
+    "entry": {
+      "cheese_name": "Spicy Pickle Cheese Spread",
+      "city": "NEWTON, WI",
+      "company": "Pine River Pre-Pack, Inc",
+      "maker": "Team Pine River"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c141-3",
+    "placement": 3,
+    "score": 97.6,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Mozzarella",
+    "class_number": 15,
+    "contest": "wccc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso Low Moisture Whole Milk Mozzarella",
+      "city": "Denmark",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Jared Post"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c15-1",
+    "placement": 1,
+    "score": 98.99,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Mozzarella",
+    "class_number": 15,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Low Moisture Whole Milk Cheese",
+      "city": "Luxemburg",
+      "company": "Agropur Luxemburg",
+      "maker": "Jeremy Robinson"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c15-2",
+    "placement": 2,
+    "score": 98.515,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Mozzarella",
+    "class_number": 15,
+    "contest": "wccc",
+    "creamery_id": "foremost-farms-usa-cooperative",
+    "entry": {
+      "cheese_name": "Mozzarella LMWM",
+      "city": "Appelton",
+      "company": "Foremost Farms Appleton",
+      "maker": "Appleton Team (Pat White)"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c15-3",
+    "placement": 3,
+    "score": 98.35,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Burrata",
+    "class_number": 18,
+    "contest": "wccc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso Burrata",
+      "city": "Denmark",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Robert Wheeler"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c18-3",
+    "placement": 3,
+    "score": 99.35,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Mild",
+    "class_number": 19,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Fancy Brand Mild Provolone",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c19-1",
+    "placement": 1,
+    "score": 99.335,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Mild",
+    "class_number": 19,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Fancy Brand Mild Provolone",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c19-2",
+    "placement": 2,
+    "score": 99.295,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Mild",
+    "class_number": 19,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Provolone Cheese",
+      "city": "Luxemburg",
+      "company": "Agropur Luxemburg",
+      "maker": "Pat Doell"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c19-3",
+    "placement": 3,
+    "score": 99.245,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Aged",
+    "class_number": 20,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Fancy Brand Aged Provolone",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c20-1",
+    "placement": 1,
+    "score": 99.175,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Aged",
+    "class_number": 20,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Fancy Brand Aged Provolone",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c20-3",
+    "placement": 3,
+    "score": 98.75,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Provolone, Smoked",
+    "class_number": 21,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Smoked Provolone Cheese",
+      "city": "Luxemburg",
+      "company": "Agropur Luxemburg",
+      "maker": "Pat Doell"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c21-1",
+    "placement": 1,
+    "score": 97.75,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "String Cheese",
+    "class_number": 22,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Low Moisture Mozzarella, String Cheese",
+      "city": "Little Chute",
+      "company": "Agropur Little Chute",
+      "maker": "Adam Kleuskens"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c22-3",
+    "placement": 3,
+    "score": 99.35,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Asiago",
+    "class_number": 23,
+    "contest": "wccc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Extra Aged Asiago",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c23-1",
+    "placement": 1,
+    "score": 98.1,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Asiago",
+    "class_number": 23,
+    "contest": "wccc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Asiago",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c23-2",
+    "placement": 2,
+    "score": 97.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Parmesan",
+    "class_number": 24,
+    "contest": "wccc",
+    "creamery_id": "belgioioso-cheese-inc",
+    "entry": {
+      "cheese_name": "BelGioioso American Grana",
+      "city": "Denmark",
+      "company": "BelGioioso Cheese Inc.",
+      "maker": "Joel Bretl"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c24-2",
+    "placement": 2,
+    "score": 98.15,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cottage Cheese, Reduced or Low Fat",
+    "class_number": 27,
+    "contest": "wccc",
+    "creamery_id": "westby-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Westby 2% Small Curd Cottage Cheese",
+      "city": "Westby",
+      "company": "Westby Creamery",
+      "maker": "Westby Cooperative Creamery"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c27-3",
+    "placement": 3,
+    "score": 97.65,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta",
+    "class_number": 28,
+    "contest": "wccc",
+    "creamery_id": "nasonville-dairy-inc",
+    "entry": {
+      "cheese_name": "Feta in Brine",
+      "city": "Marshfield",
+      "company": "Nasonville Dairy, Inc.",
+      "maker": "Team Nasonville Dairy, Inc."
+    },
+    "finalist": false,
+    "id": "wccc-2026-c28-1",
+    "placement": 1,
+    "score": 97.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta",
+    "class_number": 28,
+    "contest": "wccc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "Président Feta",
+      "city": "Belmont",
+      "company": "Lactalis USA Belmont",
+      "maker": "Lactalis Belmont"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c28-2",
+    "placement": 2,
+    "score": 96.7,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta",
+    "class_number": 28,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Feta Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur Weyauwega",
+      "maker": "Steve Monacelli"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c28-3",
+    "placement": 3,
+    "score": 96.55,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta, Flavored",
+    "class_number": 29,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Mediterranean Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Tom Salzwedel"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c29-1",
+    "placement": 1,
+    "score": 99.05,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta, Flavored",
+    "class_number": 29,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Peppercorn Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Steve Webster"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c29-2",
+    "placement": 2,
+    "score": 98.75,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Feta, Flavored",
+    "class_number": 29,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Tomato & Basil Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Matt Erdley"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c29-3",
+    "placement": 3,
+    "score": 98.65,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Brick & Muenster",
+    "class_number": 30,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Muenster",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Matt Henze"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c30-1",
+    "placement": 1,
+    "score": 99.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Brick & Muenster",
+    "class_number": 30,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Muenster",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c30-3",
+    "placement": 3,
+    "score": 99.255,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti",
+    "class_number": 31,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Havarti",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c31-1",
+    "placement": 1,
+    "score": 99.325,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti",
+    "class_number": 31,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Havarti",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Decatur Cheesemakers"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c31-2",
+    "placement": 2,
+    "score": 99.25,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti",
+    "class_number": 31,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Havarti",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Matt Henze"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c31-3",
+    "placement": 3,
+    "score": 99.15,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti, Flavored",
+    "class_number": 32,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Dill Havarti Cheese",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Decatur Cheesemakers"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c32-1",
+    "placement": 1,
+    "score": 99.05,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti, Flavored",
+    "class_number": 32,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Dill Havarti Cheese",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Matt Henze"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c32-2",
+    "placement": 2,
+    "score": 98.8,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Havarti, Flavored",
+    "class_number": 32,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Decatur Dairy Dill Havarti Cheese",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c32-3",
+    "placement": 3,
+    "score": 98.65,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Edam",
+    "class_number": 41,
+    "contest": "wccc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Edam",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c41-1",
+    "placement": 1,
+    "score": 98.38,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Flavored",
+    "class_number": 46,
+    "contest": "wccc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Honey Clover",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c46-1",
+    "placement": 1,
+    "score": 98.6,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Flavored",
+    "class_number": 46,
+    "contest": "wccc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Cumin",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c46-2",
+    "placement": 2,
+    "score": 98.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Gouda, Smoked",
+    "class_number": 47,
+    "contest": "wccc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Smoked",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c47-2",
+    "placement": 2,
+    "score": 97.7,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Melting Cheeses",
+    "class_number": 49,
+    "contest": "wccc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "Queso Chihuahua",
+      "city": "Browntown",
+      "company": "V&V Supremo Foods - Browntown",
+      "maker": "Zack Hagen"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c49-1",
+    "placement": 1,
+    "score": 99.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Latin American Style Melting Cheeses",
+    "class_number": 49,
+    "contest": "wccc",
+    "creamery_id": "v-v-supremo-foods-inc",
+    "entry": {
+      "cheese_name": "Queso Chihuahua",
+      "city": "Browntown",
+      "company": "V&V Supremo Foods - Arena",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c49-2",
+    "placement": 2,
+    "score": 99.315,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pepper Flavored Monterey Jack, High Heat",
+    "class_number": 65,
+    "contest": "wccc",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Ellsworth Habanero Ghost Jack",
+      "city": "Menomonie",
+      "company": "Ellsworth Cooperative Creamery",
+      "maker": "Team Menomonie 1"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c65-2",
+    "placement": 2,
+    "score": 99.205,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
+    "class_number": 66,
+    "contest": "wccc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Castello - Chipotle Gouda",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c66-2",
+    "placement": 2,
+    "score": 99.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
+    "class_number": 66,
+    "contest": "wccc",
+    "creamery_id": "arla-foods-inc",
+    "entry": {
+      "cheese_name": "Castello - Chipotle Gouda",
+      "city": "Kaukauna",
+      "company": "Arla Foods",
+      "maker": "ARLA- USA TEAM"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c66-3",
+    "placement": 3,
+    "score": 99.395,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, High Heat",
+    "class_number": 68,
+    "contest": "wccc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Rattlesnake",
+      "city": "Kiel",
+      "company": "Deer Creek",
+      "maker": "Team Deer Creek"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c68-1",
+    "placement": 1,
+    "score": 99.175,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, High Heat",
+    "class_number": 68,
+    "contest": "wccc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Dragons Breath Cheddar",
+      "city": "Kiel",
+      "company": "Henning Cheese",
+      "maker": "Zach Henning - Team Henning"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c68-2",
+    "placement": 2,
+    "score": 98.95,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Pepper Flavored Cheese, High Heat",
+    "class_number": 68,
+    "contest": "wccc",
+    "creamery_id": "henning-cheese-inc",
+    "entry": {
+      "cheese_name": "Henning's Mango Fire Cheddar",
+      "city": "Kiel",
+      "company": "Henning Cheese",
+      "maker": "Sam Barbercheck - Team Henning"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c68-3",
+    "placement": 3,
+    "score": 98.75,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Soft Cheeses, Flavored",
+    "class_number": 70,
+    "contest": "wccc",
+    "creamery_id": "lake-country-dairy-inc",
+    "entry": {
+      "cheese_name": "Cello Madagascar Vanilla Mascarpone",
+      "city": "Turtle Lake",
+      "company": "Lake Country Dairy/Schuman Cheese",
+      "maker": "Lake Country Dairy"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c70-2",
+    "placement": 2,
+    "score": 99.6,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Semi-soft Cheeses",
+    "class_number": 71,
+    "contest": "wccc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Golden Young",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c71-1",
+    "placement": 1,
+    "score": 99.475,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Semi-soft Cheeses",
+    "class_number": 71,
+    "contest": "wccc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Golden Mature",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c71-3",
+    "placement": 3,
+    "score": 99.1,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Semi-soft Cheeses, Flavored",
+    "class_number": 72,
+    "contest": "wccc",
+    "creamery_id": "arena-cheese",
+    "entry": {
+      "cheese_name": "Toasted Onion Jack",
+      "city": "Arena",
+      "company": "Arena Cheese",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c72-1",
+    "placement": 1,
+    "score": 98.975,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses, Flavored",
+    "class_number": 74,
+    "contest": "wccc",
+    "creamery_id": "deer-creek-cheese",
+    "entry": {
+      "cheese_name": "Deer Creek The Carawaybou",
+      "city": "Kiel",
+      "company": "Deer Creek",
+      "maker": "Team Deer Creek"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c74-1",
+    "placement": 1,
+    "score": 99.05,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses, Flavored",
+    "class_number": 74,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Black Truffle Cheddar Gruyere",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c74-2",
+    "placement": 2,
+    "score": 98.7,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Hard Cheeses, Flavored",
+    "class_number": 74,
+    "contest": "wccc",
+    "creamery_id": "prairie-farms-dairy-inc-mindoro",
+    "entry": {
+      "cheese_name": "Bourbon Barrel Cracked Black Pepper Cheddar",
+      "city": "Shullsburg",
+      "company": "Prairie Farms",
+      "maker": "Shullsburg Creamery Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c74-3",
+    "placement": 3,
+    "score": 98.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Smoked Hard Cheeses",
+    "class_number": 78,
+    "contest": "wccc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Beechwood Smoked Cheddar",
+      "city": "Muscoda",
+      "company": "Meister Cheese Company",
+      "maker": "Meister Team 2"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c78-3",
+    "placement": 3,
+    "score": 98.77,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheese Curds",
+    "class_number": 79,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Oaxaca Cheese Curd",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Matt Henze"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c79-1",
+    "placement": 1,
+    "score": 99.6,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheese Curds",
+    "class_number": 79,
+    "contest": "wccc",
+    "creamery_id": "lynn-dairy-inc",
+    "entry": {
+      "cheese_name": "Regular Cheese Curds",
+      "city": "GRANTON",
+      "company": "Lynn Dairy Inc",
+      "maker": "Dennis Trachte"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c79-2",
+    "placement": 2,
+    "score": 99.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheese Curds",
+    "class_number": 79,
+    "contest": "wccc",
+    "creamery_id": "decatur-dairy-inc",
+    "entry": {
+      "cheese_name": "Muenster Cheese Curd",
+      "city": "Brodhead",
+      "company": "Decatur Dairy inc",
+      "maker": "Steve Stettler"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c79-3",
+    "placement": 3,
+    "score": 99.25,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheese Curds, Flavored",
+    "class_number": 80,
+    "contest": "wccc",
+    "creamery_id": "nasonville-dairy-inc",
+    "entry": {
+      "cheese_name": "Garlic and Dill Cheese Curds",
+      "city": "Curtiss",
+      "company": "Nasonville Dairy, Inc.",
+      "maker": "Team Nasonville Dairy North"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c80-1",
+    "placement": 1,
+    "score": 99.515,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheese Curds, Flavored",
+    "class_number": 80,
+    "contest": "wccc",
+    "creamery_id": "arena-cheese",
+    "entry": {
+      "cheese_name": "Buffalo Curd",
+      "city": "Arena",
+      "company": "Arena Cheese",
+      "maker": "Team Arena"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c80-2",
+    "placement": 2,
+    "score": 99.33,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Open Class: Cheese Curds, Flavored",
+    "class_number": 80,
+    "contest": "wccc",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "entry": {
+      "cheese_name": "LaGrander's Garlic and Herb Cheese Curds",
+      "city": "Stanley",
+      "company": "LaGrander's Hillside Dairy, Inc.",
+      "maker": "LaGrander's Team #1"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c80-3",
+    "placement": 3,
+    "score": 99.315,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Fat Soft & Semi-soft Cheeses",
+    "class_number": 81,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Reduced Fat Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Kristi Wuthrich"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c81-3",
+    "placement": 3,
+    "score": 98.645,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Cheeses",
+    "class_number": 83,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Fat Free Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Dave Buholzer"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c83-1",
+    "placement": 1,
+    "score": 99.0,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Cheeses",
+    "class_number": 83,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Fat Free Feta Cheese",
+      "city": "Weyauwega",
+      "company": "Agropur Weyauwega",
+      "maker": "Ariel Graveen"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c83-2",
+    "placement": 2,
+    "score": 98.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Lowfat Cheeses",
+    "class_number": 83,
+    "contest": "wccc",
+    "creamery_id": "klondike-cheese-company",
+    "entry": {
+      "cheese_name": "Odyssey Lowfat Feta in Brine",
+      "city": "Monroe",
+      "company": "Klondike Cheese",
+      "maker": "Steve Webster"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c83-3",
+    "placement": 3,
+    "score": 97.85,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Reduced Sodium Cheeses",
+    "class_number": 84,
+    "contest": "wccc",
+    "creamery_id": "agropur-inc",
+    "entry": {
+      "cheese_name": "Reduced Sodium Provolone Cheese",
+      "city": "Luxemburg",
+      "company": "Agropur Luxemburg",
+      "maker": "Pat Doell"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c84-3",
+    "placement": 3,
+    "score": 98.35,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese",
+    "class_number": 85,
+    "contest": "wccc",
+    "creamery_id": "widmer-s-cheese-cellars-inc",
+    "entry": {
+      "cheese_name": "Brick Spread",
+      "city": "Theresa",
+      "company": "Widmer's Cheese Cellars, Inc.",
+      "maker": "Widmer's Cheese Cellars Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c85-1",
+    "placement": 1,
+    "score": 98.7,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese",
+    "class_number": 85,
+    "contest": "wccc",
+    "creamery_id": "marieke-gouda",
+    "entry": {
+      "cheese_name": "Marieke Gouda Original Cheese Spread",
+      "city": "Thorp",
+      "company": "Marieke Gouda",
+      "maker": "Marieke Gouda & Pine River Teams"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c85-2",
+    "placement": 2,
+    "score": 98.5,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese",
+    "class_number": 85,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Original Cheddar Gruyere Spreadable Cheese",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team & Pine River"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c85-3",
+    "placement": 3,
+    "score": 98.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese, Flavored",
+    "class_number": 86,
+    "contest": "wccc",
+    "creamery_id": "masters-gallery-foods-inc",
+    "entry": {
+      "cheese_name": "Rebel Kent Amber Ale Beer Cheese Spread",
+      "city": "Newton",
+      "company": "Masters Gallery Foods, Inc.",
+      "maker": "Pine River Pre-Pack"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c86-1",
+    "placement": 1,
+    "score": 99.6,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese, Flavored",
+    "class_number": 86,
+    "contest": "wccc",
+    "creamery_id": "burnett-dairy-cooperative",
+    "entry": {
+      "cheese_name": "Wood River Creamery Black Truffle Cheddar Gruyere Spreadable Cheese",
+      "city": "Grantsburg",
+      "company": "Burnett Dairy Cooperative",
+      "maker": "Burnett Dairy Grantsburg Team & Pine River"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c86-2",
+    "placement": 2,
+    "score": 99.15,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cold Pack Cheese, Flavored",
+    "class_number": 86,
+    "contest": "wccc",
+    "creamery_id": "meister-cheese-co-llc",
+    "entry": {
+      "cheese_name": "Bruschetta Jack Cheese Spread",
+      "city": "Muscoda",
+      "company": "Meister Cheese Company",
+      "maker": "Meister Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c86-3",
+    "placement": 3,
+    "score": 99.145,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cream Cheese",
+    "class_number": 87,
+    "contest": "wccc",
+    "creamery_id": "kraft-heinz-foods-company",
+    "entry": {
+      "cheese_name": "Philadelphia Original Cream Cheese",
+      "city": "BEAVER DAM",
+      "company": "Kraft Heinz Beaver Dam",
+      "maker": "Kraft Heinz Beaver Dam"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c87-1",
+    "placement": 1,
+    "score": 99.2,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Cream Cheese Spreads",
+    "class_number": 88,
+    "contest": "wccc",
+    "creamery_id": "kraft-heinz-foods-company",
+    "entry": {
+      "cheese_name": "Philadelphia Reduced Fat Garden Vegetable Cream Cheese Spread",
+      "city": "BEAVER DAM",
+      "company": "Kraft Heinz Beaver Dam",
+      "maker": "Kraft Heinz Beaver Dam"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c88-3",
+    "placement": 3,
+    "score": 99.045,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Spreadable Natural Cheeses",
+    "class_number": 89,
+    "contest": "wccc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Rondele Mango Habanero Spreadable Cheese",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Brian Storm"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c89-1",
+    "placement": 1,
+    "score": 98.95,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Spreadable Natural Cheeses",
+    "class_number": 89,
+    "contest": "wccc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Rondele Garden Vegetable Spreadable Cheese",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Tony Gessler"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c89-2",
+    "placement": 2,
+    "score": 98.45,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Spreadable Natural Cheeses",
+    "class_number": 89,
+    "contest": "wccc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Rondele Garlic & Herbs Spreadable Cheese",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Susan Gasper"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c89-3",
+    "placement": 3,
+    "score": 98.1,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses",
+    "class_number": 90,
+    "contest": "wccc",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Ellsworth White EZ Melt",
+      "city": "New London",
+      "company": "Ellsworth Cooperative Creamery",
+      "maker": "Team New London"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c90-1",
+    "placement": 1,
+    "score": 98.845,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses",
+    "class_number": 90,
+    "contest": "wccc",
+    "creamery_id": "organic-valley-chaseburg",
+    "entry": {
+      "cheese_name": "Processed American Cheese - White",
+      "city": "Colby",
+      "company": "Organic Valley/CROPP Cooperative",
+      "maker": "Team Revela"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c90-2",
+    "placement": 2,
+    "score": 98.805,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheeses, Flavored",
+    "class_number": 91,
+    "contest": "wccc",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Ellsworth Pasteurized Process Pizza Cheese",
+      "city": "New London",
+      "company": "Ellsworth Cooperative Creamery",
+      "maker": "Team New London"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c91-2",
+    "placement": 2,
+    "score": 99.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Slices",
+    "class_number": 92,
+    "contest": "wccc",
+    "creamery_id": "associated-milk-producers-inc",
+    "entry": {
+      "cheese_name": "Dinner Bell's Pasteurized Processed American Cheese Slices - Colored",
+      "city": "Portage",
+      "company": "Associated Milk Producers",
+      "maker": "AMPI's Dinner Bell Creamery - Portage"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c92-1",
+    "placement": 1,
+    "score": 99.55,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Slices",
+    "class_number": 92,
+    "contest": "wccc",
+    "creamery_id": "schreiber-foods-inc",
+    "entry": {
+      "cheese_name": "Sharp American Process Cheese Slices- Schreiber Foods",
+      "city": "Green Bay",
+      "company": "Schreiber Foods",
+      "maker": "Schreiber Foods"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c92-3",
+    "placement": 3,
+    "score": 99.25,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Spread",
+    "class_number": 93,
+    "contest": "wccc",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "entry": {
+      "cheese_name": "Ellsworth Sharp Cheddar Cheese Dip",
+      "city": "New London",
+      "company": "Ellsworth Cooperative Creamery",
+      "maker": "Team New London"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c93-2",
+    "placement": 2,
+    "score": 99.4,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Pasteurized Process Cheese Product",
+    "class_number": 94,
+    "contest": "wccc",
+    "creamery_id": "lactalis-usa-inc-belmont",
+    "entry": {
+      "cheese_name": "President Wee-Brie Cheese Wedges",
+      "city": "Merrill",
+      "company": "Lactalis American Group",
+      "maker": "Courtney Schreiner"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c94-3",
+    "placement": 3,
+    "score": 98.94,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft Goat's Milk Cheeses",
+    "class_number": 95,
+    "contest": "wccc",
+    "creamery_id": "laclare-creamery-llc",
+    "entry": {
+      "cheese_name": "LaClare Creamery Original Goat Cheese",
+      "city": "Malone",
+      "company": "LaClare Creamery",
+      "maker": "LaClare Creamery Chèvre Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c95-3",
+    "placement": 3,
+    "score": 98.75,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Soft Goat's Milk Cheeses, Flavored with Sweet Condiments",
+    "class_number": 97,
+    "contest": "wccc",
+    "creamery_id": "laclare-creamery-llc",
+    "entry": {
+      "cheese_name": "LaClare Creamery Fig & Honey Goat Cheese",
+      "city": "Malone",
+      "company": "LaClare Creamery",
+      "maker": "LaClare Creamery Chèvre Team"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c97-3",
+    "placement": 3,
+    "score": 99.3,
+    "year": 2026
+  },
+  {
+    "champion": false,
+    "cheese_id": null,
+    "class_name": "Semi-soft (Semi-hard) Goat's Milk Cheeses",
+    "class_number": 98,
+    "contest": "wccc",
+    "creamery_id": "kingston-cheese-cooperative",
+    "entry": {
+      "cheese_name": "Goat Blue",
+      "city": "Cambria",
+      "company": "Kingston Cheese Cooperative",
+      "maker": "Team Kingston Cheese"
+    },
+    "finalist": false,
+    "id": "wccc-2026-c98-2",
+    "placement": 2,
+    "score": 99.45,
+    "year": 2026
+  }
+]

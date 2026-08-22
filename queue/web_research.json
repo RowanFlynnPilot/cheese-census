@@ -1,0 +1,814 @@
+[
+  {
+    "confidence": "medium",
+    "finding": "Primarily a private-label/co-pack and foodservice cheese converter (acquired by Wiskerchen Cheese in 2020, now operating as All Star LLC), but its own site advertises a branded retail product, All Star 10 Year Aged Cheddar, carried at Pick 'n Save and Heinen's.",
+    "id": "all-star-ltd",
+    "url": "https://allstarcheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Arla's Kaukauna/Hollandtown plant makes havarti, gouda, edam and muenster that Arla sells at US retail under its Castello and Arla consumer brands, including award-winning named products like Castello Smoked Cracked Pepper Gouda.",
+    "id": "arla-foods-production-llc-arla-foods-amba",
+    "url": "https://www.arlausa.com/about-us/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "UW-Madison's dairy plant sells Babcock-branded cheddar, gouda, jack and other cheeses to the public at the Babcock Dairy Store, at local retailers, and via shipped gift sets.",
+    "id": "babcock-hall-dairy-plant",
+    "url": "https://babcockhalldairyplant.wisc.edu/products/cheese/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Ohio-based Biery Cheese positions itself as a private-label cheese processor and packager supplying national and regional grocers under the retailers' own brands, with no evidence of a Biery-branded consumer line.",
+    "id": "biery-cheese-company",
+    "url": "https://bierycheese.com/capabilities/private-label-cheese-manufacturing-packaging/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Farmstead goat creamery selling named cheeses such as Afterglow and fresh chevre under the Blakesville brand through its own online shop and specialty retailers nationwide (Murray's, Saxelby).",
+    "id": "blakesville-creamery",
+    "url": "https://www.blakesvillecreamery.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Family-run plant producing conventional and organic mozzarella and provolone from local farm milk, with no branded retail packages, factory store, or online shop found in coverage or directories.",
+    "id": "cascade-cheese-co",
+    "url": "https://perishablenews.com/deli/business-booming-at-cascade-cheese-co/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "A UW-Madison research center and pilot plant serving the dairy industry (short courses, product development for companies); it does not market cheese to shoppers under its own brand.",
+    "id": "center-for-dairy-research",
+    "url": "https://cdr.wisc.edu/about",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Hormel-owned contract manufacturer in Sparta making nutritional powders, dairy protein blends, RTD beverages and processed cheese as ingredients for other companies, not branded consumer cheese.",
+    "id": "century-foods-international",
+    "url": "https://www.centuryfoods.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Cheeses of Wisconsin, LLC (founded 2021) markets The Big Moo, a branded heat-and-eat baked cheese sold through its own online shop and grocery stores via a store locator.",
+    "id": "cheeses-of-wisconsin-the-big-moo",
+    "url": "https://thebigmoocheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Colony Brands (formerly The Swiss Colony) sells cheese, including cold pack made at its Monroe operations, direct to consumers under its own Swiss Colony and Wisconsin Cheeseman brands via catalog and online.",
+    "id": "colony-brands-inc",
+    "url": "https://en.wikipedia.org/wiki/Colony_Brands",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Actus Nutrition is the 2024 rebrand of Milk Specialties Global, whose licensed legal name is Milk Specialties Company - the DATCP pull lists Milk Specialties Company dba 'Milk Specialties Global, Actus Nutrition' for its Wisconsin whey plants, including the recently expanded Fond du Lac facility.",
+    "id": "contest:Actus Nutrition",
+    "url": "https://www.foodbusinessnews.net/articles/27066-milk-specialties-global-rebrands-as-actus-nutrition",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Hansen's Sugar Shack, LLC is Kirk and Brenda Hansen's Westby-area maple syrup operation (~500 taps) with a Dairy Business Innovation Alliance grant to develop maple-dairy collaboration products, but it processes sap rather than milk, names no dairy plant of its own, and appears nowhere in the DATCP licence pull - its contest entries would come from an unnamed licensed dairy partner.",
+    "id": "contest:Hansen's Sugar Shack",
+    "url": "https://dbia.wisc.edu/grant-project/hansens-sugar-shack-llc/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Hoard's Dairyman Farm Creamery is the cheese brand of the Hoard's Dairyman farm/publisher in Fort Atkinson (W.D. Hoard & Sons Company), with no plant of its own: per the UW Center for Dairy Research its Guernsey-milk cheeses were custom made by Edelweiss Creamery LLC in Monticello (explaining the Monticello contest entries), with other milk shipped to Torkelson Cheese in Lena, IL.",
+    "id": "contest:Hoards Dairyman Farm Creamery",
+    "url": "https://cdr.wisc.edu/cheese-success-story-hoards-dairyman",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Sabrosura Foods is the trade name of Wisconsin Cheese Group, LLC (the name on its DATCP licences and in its 2025 Clean Water Act plea), a Hispanic-cheese maker that bought the Monticello plant in 2019 and moved its cheesemaking there from Monroe in 2022.",
+    "id": "contest:Sabrosura Foods",
+    "url": "https://themonroetimes.com/local-news/cheese-group-fined-for-pollution/",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Tillamook County Creamery Association is an Oregon brand with no Wisconsin plant licence of its own; Muscoda's only licensed cheese plant is Meister Cheese Company, LLC, but no partnership is publicly confirmed, and the championship entry belongs to the brand, not the host licensee. (Checked against the DATCP licence file and web search; supervised note, not agent research.)",
+    "id": "contest:Tillamook",
+    "url": null,
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Farmstead creamery on Turnip Rock Farm selling its own named raw-milk and fresh cheeses (tomme, alpine styles, quark, camembert) at farmers markets, co-ops and through a CSA.",
+    "id": "cosmic-wheel-creamery",
+    "url": "http://www.cosmicwheelcreamery.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "low",
+    "finding": "A tiny Chippewa Falls cold-pack cheese operation with a consumer-facing name and past home-delivery listings, but Yelp marks the location closed and no website, product line, or brand evidence could be found.",
+    "id": "cow-caviar",
+    "url": "https://www.yelp.com/biz/cow-caviar-chippewa-falls",
+    "verdict": "unclear"
+  },
+  {
+    "confidence": "high",
+    "finding": "Contract manufacturer and co-packer in Ixonia/Oconomowoc producing liquid and dry foods (including process cheese) exclusively for other companies' labels.",
+    "id": "create-a-pack-foods-inc",
+    "url": "https://www.capfoodinc.com/about-us/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Crystal Farms (a Michael Foods/Post Holdings business) sells shredded, sliced, chunk and specialty cheese under the Crystal Farms brand in grocery dairy cases nationwide, processed at its Lake Mills plant.",
+    "id": "crystal-farms-michael-foods-inc",
+    "url": "https://www.dairyfoods.com/articles/97077-crystal-farms-aiming-to-be-the-midwests-no-1-dairy-brand",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "DFA-owned ingredient supplier making cheese powders, pastes, flavor systems and bulk hard Italian cheese for food manufacturers, foodservice and private label, with no consumer brand.",
+    "id": "dairiconcepts-lp",
+    "url": "https://www.ingredientsnetwork.com/dairiconcepts-l-p-comp250451.html",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Operates a cheesemaker-and-retail-outlet in Rudolph where shoppers buy its fresh cheese curds and other cheeses made on site, sold daily at the factory store.",
+    "id": "dairy-state-cheese-llc",
+    "url": "https://dairystatecheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Specialty processor billed as the country's largest smoked gouda supplier, but its spreads, wedges and smoked cheeses are produced under customers' labels (Swiss Colony, Figi's, foodservice chains) rather than its own consumer brand.",
+    "id": "dairyfood-usa",
+    "url": "https://madison.com/business/a-well-kept-secret-dairyfood-usa-has-huge-market-in-u-s/article_bd121af6-de3f-11e1-822d-0019bb2963f4.html",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Biery Cheese Co. of Louisville, Ohio bought Kickapoo Valley Cheese (a slicing/packaging operation in Sherry, WI) in 2013 and consolidated it into its Plover cut-and-wrap facility in 2015; it is a packaging converter, not any of the Gile/Meister/RFS candidates, and no Biery or Plover packaging plant appears in the current DATCP dairy plant licence pull (Plover's only licensed plant is an ice cream shop).",
+    "id": "dfw:10",
+    "url": "https://www.farmanddairy.com/news/ohio-based-biery-cheese-buys-kickapoo-valley-cheese-wisconsin/163554.html",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Schuman Cheese (legal parent Arthur Schuman, Inc., Fairfield NJ) makes its Wisconsin cheese at the Turtle Lake plant it bought from the Ludy family in 2007, which is licensed under the name Lake Country Dairy, Inc. (present in the DATCP pull) - not Chalet, Gilman, or Holmen.",
+    "id": "dfw:125",
+    "url": "https://www.dairyfoods.com/articles/92430-schuman-cheeses-lake-country-dairy-plant-makes-italian-style-alpine-cheeses",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Palmetto Cheese is a pimento cheese brand of Pawleys Island Specialty Foods (South Carolina), produced at South Carolina co-packers (originally Duke Sandwich Productions in Easley, later a Simpsonville SC plant); its only Wisconsin tie is buying Wisconsin cheddar as an ingredient, so it holds no Wisconsin plant licence.",
+    "id": "dfw:1305",
+    "url": "https://en.wikipedia.org/wiki/Palmetto_Cheese",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "The legal entity is Cooperative Regions of Organic Producer Pools (CROPP Cooperative), dba Organic Valley, headquartered in La Farge; the licensed candidate 'Organic Valley Chaseburg' is its own Chaseburg creamery (butter plant operating since 1999), so the two records are the same cooperative.",
+    "id": "dfw:16",
+    "url": "https://www.organicvalley.coop/blog/the-not-so-secret-ingredient-to-organic-valley-butter",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Edelweiss Creamery, LLC was Master Cheesemaker Bruce Workman's own Monticello plant (bought 2003), unrelated to Westby Cooperative Creamery, but production has ended: its complete cheesemaking equipment was auctioned by Harry Davis & Company on Feb 3-5, 2026 and the plant no longer appears in the current DATCP licence pull.",
+    "id": "dfw:171",
+    "url": "https://www.harrydavis.com/auctions/edelweiss-creamery/",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Northwoods Cheese Company, LLC is a gift-basket supplier/distributor (now at 2518 Advance Rd, Madison) that assembles boxes of cheese and sausage made by other producers (Deer Creek, Marieke, Miesfeld's, etc.) plus co-packed own-brand shelf-stable spreads; it claims no plant of its own and none appears in the DATCP licence pull.",
+    "id": "dfw:189",
+    "url": "https://northwoodscheese.com/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Novak's Cheese of Wisconsin, Inc. (De Pere, formed 2006) is a small cheese distributor and retail shop run by licensed grader Bill Novak II, handling and reselling cheese made by other producers; it is unrelated to Brunkow or Great Lakes Cheese and no plant at its 1200 N Enterprise Dr address appears in the DATCP licence pull.",
+    "id": "dfw:195",
+    "url": "https://www.wisconsincheese.com/wi-cheese-companies/195/novaks-cheese-of-wisconsin,-inc",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Red Barn Family Farms is an Appleton-based farm-standards brand whose cheeses are made under contract at licensed partner plants - Springside Cheese (Oconto Falls), Willow Creek Creamery (Berlin), and LaClare (Pipe) - so it holds no plant licence itself and is not Foremost Farms.",
+    "id": "dfw:212",
+    "url": "https://www.redbarnfamilyfarms.com/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Wisconsin Aging & Grading Cheese, Inc. (WAG, Kaukauna) is a wholesale cheddar sourcing, grading, and aging-program specialist founded in 2000 by licensed grader Ken Neumeier (grader #724, hence the '724 WI Select' retail brand); it selects and markets cheddar made by other plants, is unrelated to Wisconsin Pride, and appears nowhere in the DATCP plant licence pull.",
+    "id": "dfw:222",
+    "url": "https://wagcheese.com/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Deer Creek Cheese is the house brand of The Artisan Cheese Exchange (Sheboygan), which designs cheeses and has partner Master Cheesemakers vat them at other licensed Wisconsin plants; it is not Union Star and holds no plant licence of its own.",
+    "id": "dfw:243",
+    "url": "https://deercreekcheese.com/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "The DFW listing 'Sartori Cheese Company' is simply Sartori Company (a Wisconsin corporation dating to 1947, dba Sartori Cheese, founded 1939 as S&R Cheese), the same entity as the licensed candidate Sartori Company of Plymouth - not Sargento or Saputo.",
+    "id": "dfw:25",
+    "url": "https://www.sartoricheese.com/",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "medium",
+    "finding": "G&R Foods, Inc. (Reedsburg, founded 1995) is a family-owned dairy trading house - import/export, risk management, inventory and aging programs for cheese, butter, and powders, plus canned cheese/butter brands - selling product made by other plants; no G&R plant appears in the DATCP licence pull and it is unrelated to Gehl Foods.",
+    "id": "dfw:253",
+    "url": "https://bestfoodimporters.com/company/gr-foods-inc/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "MCT Dairies, Inc. is a Chatham, NJ dairy trader/importer with Wisconsin offices, and its processing arm IS licensed in Wisconsin: the DATCP pull lists MCT Manufacturing LLC dba Bella Pak LLC at 2358 W Packard St, Appleton (licence 279532, cut/wrap/shred and powder blending) - the same address as MCT Dairies' Appleton office; it is unrelated to Family Dairies USA.",
+    "id": "dfw:298",
+    "url": "https://www.mctdairies.com/",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "The DFW record is the US arm of France's Lactalis group (US headquarters in Buffalo, NY), and both licensed candidates are its plants: the DATCP pull carries Lactalis American Group, Inc. dba Lactalis USA, Inc. and Lactalis USA, Inc. for the Merrill and Belmont facilities (Belmont makes President feta), so this is one corporate family, not two separate matches.",
+    "id": "dfw:45",
+    "url": "https://www.dairyfoods.com/directories/7376-dairy-plants-usa/listing/9338-lactalis-usa-inc-belmont-wi",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Prairie Farms Dairy, Inc. (cheese division office in Davenport, IA) is the legal entity behind both licensed candidates - the Mindoro plant and the Shullsburg operations (Shullsburg Creamery and White Hill Cheese, fully acquired 2020) - though it announced in July 2026 it is permanently closing the two Shullsburg cheese plants; Crystal Farms is unrelated.",
+    "id": "dfw:69",
+    "url": "https://prairiefarmscheese.com/manufacturing-facilities",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Arla Foods' US cheese plant is the historic Hollandtown dairy in Kaukauna (havarti, gouda, edam; owned by the Danish cooperative since 2006), licensed in the DATCP pull under business name Arla Foods Amba dba Arla Foods Production, LLC - the first candidate; CTL Foods and Century Foods are unrelated.",
+    "id": "dfw:96",
+    "url": "https://www.dairyfoods.com/directories/7376-dairy-plants-usa/listing/8705-arla-foods-inc-kaukauna-wi",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "Sister Bay farmstead creamery selling its own goat cheeses (fresh chevre in seasonal flavors and more) through its retail shop and cafe with nationwide shipping.",
+    "id": "door-county-creamery",
+    "url": "https://doorcountycreamery.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Sells most of its award-winning asiago and parmesan in bulk for others to package, but also retails under the Eau Galle name through its factory store and online shop, including a store-only Eau Galle Italian variety, and is expanding retail production.",
+    "id": "eau-galle-cheese-factory-llc",
+    "url": "https://www.eaugallecheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The New London plant (former Wohlt Creamery, acquired 2017-18) itself makes process cheese loaves mainly for foodservice, but it belongs to Ellsworth Cooperative Creamery, which sells branded curds and cheeses at retail and through its own online store.",
+    "id": "ellsworth-cooperative-creamery-new-london",
+    "url": "https://www.ellsworthcheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Ellsworth Cooperative Creamery's Menomonie specialty-cheese plant (opened 2022, replacing Comstock) makes artisan cheeses sold under the co-op's Ellsworth brand and has its own attached retail store.",
+    "id": "ellsworth-menomonie-creamery-llc",
+    "url": "https://www.ellsworthcheese.com/visit/menomonie/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "UW-River Falls' teaching dairy plant sells its Falcon Foods/Falcon Creamery cheddar, colby, jack, curds and ice cream to the public at Freddy's Dairy Bar, the campus retail store.",
+    "id": "falcon-creamery",
+    "url": "https://uwrf.edu/ANFS/FalconFoods/Cheese.cfm",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "North Star Homestead Farms' on-farm dairy near Hayward sells named sheep-milk cheeses (Muffet's Magic and Tuffet's Temptation spreadable cheeses) and gelato at its own Farmstead Creamery & Cafe shop and online store.",
+    "id": "farmstead-creamery",
+    "url": "https://northstarhomestead.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Fifth-generation Feltz family farm runs an on-site creamery (Jake Feltz licensed as a cheesemaker in 2021) whose fresh cheese curds are sold retail at their own Feltz's Dairy Store in Stevens Point.",
+    "id": "feltz-s-dairy-store",
+    "url": "https://www.cheeseprofessor.com/blog/feltzs-dairy-store-wisconsin",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "B2B maker of concentrated dairy flavor pastes and powders for food manufacturers, acquired by Royal DSM (now dsm-firmenich) in 2021 for about $453M; no retail cheese products.",
+    "id": "first-choice-ingredients-inc",
+    "url": "https://firstchoiceingredients.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Third-generation South Wayne cheesemaker selling its own named varieties (Butterkase, Havarti flavors, Brick, cheddars) retail, at the Dane County Farmers Market, and through a published list of stores.",
+    "id": "forgotten-valley-cheese",
+    "url": "https://www.forgottenvalleycheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Temperature-controlled warehousing and logistics firm for the dairy industry offering cheese reclamation and 640-lb block cutting services, which explains its DATCP cheese licences; no brand or retail products.",
+    "id": "freedom-warehousing-inc",
+    "url": "https://freedom-warehousing.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Reedsburg family wholesaler/importer-exporter of cheese, butter, dairy powders and canned dairy serving retailers, foodservice and manufacturers; its only registered brand found, Touch of Country, is a butter line with no consumer cheese products or shop.",
+    "id": "g-r-foods-inc",
+    "url": "https://www.realseal.com/brands/touch-of-country-g-r-foods/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Shelf-stable/processed cheese specialist that is largely private-label but, after acquiring Dairyfood USA in 2022 under Borgman Capital, sells retail house brands Glacier Ridge Farms, Queso de Casa and Sonoma Jacks.",
+    "id": "gilman-cheese-corporation",
+    "url": "https://www.privatelabelcheesesnacks.com/cheese-snack-products/Glacier-Ridge-Farms-Gourmet-Spreadable-Cheese",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Linden plant bought by Carr Valley owner Sid Cook in 2012 to make all of Carr Valley's blue cheeses; its named cheeses (Glacier Point Blue, Glacier Gorgonzola, Glacier Penta Creme) are sold retail through cheese shops.",
+    "id": "glacier-point-cheese",
+    "url": "https://www.wisconsincheesemart.com/products/glacier-point-blue",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Family company founded by spreadmaker Gene Glas selling its own branded all-natural refrigerated cheese spreads (cheddar, bacon, wine, Swiss-almond) with online ordering and listed retail locations/events.",
+    "id": "glas-all-naturals",
+    "url": "https://www.glasallnaturals.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The La Crosse site is a process-cheese plant of Great Lakes Cheese Co., a packer that is mostly private-label but owns retail brands including Adams Reserve, Great Lakes, American Accent, Rico Mia and Thoughtful Organics.",
+    "id": "great-lakes-cheese-of-la-crosse",
+    "url": "https://www.greatlakescheese.com/channels/retail/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Specialty cheesemaker with an online shop and named products (Merlot Cheddar, Abergele, sharp cheddar) plus kosher Cholov Yisroel lines, operating store locations in Edgar and Athens.",
+    "id": "harmony-cheese",
+    "url": "https://harmonycheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Barron-based maker/marketer selling under its own retail brands Red Apple Cheese (in 10,000+ stores including Walmart and Costco), Cheese Brothers and Naturally Good Kosher; acquired by Gellert Global Group in 2025.",
+    "id": "heartisan-foods",
+    "url": "https://cheesereporter.com/news/2025/04/14/gellert-global-group-acquires-heartisan-foods-strengthening-specialty-cheese-platform/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Farmstead sheep creamery (recently sold by founder Brenda Jensen to Amy and Travis Forgues) whose named cheeses Driftless, Wischago, Ocooch and Bohemian Blue are sold through co-ops and cheese shops.",
+    "id": "hidden-springs-creamery",
+    "url": "https://dairylink.org/featured/hidden-springs-creamery",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Co-manufacturer (est. 2019, 100,000 sq ft plant) of custom processed, blended and plant-based cheeses for industrial, foodservice and retail private-label customers; no brand of its own.",
+    "id": "holmen-cheese-llc",
+    "url": "https://www.holmencheese.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Fall Creek cutting/wrapping/manufacturing plant is one of the Wisconsin facilities of Schuman Cheese (Arthur Schuman Inc., NJ), whose own retail brands Cello, Yellow Door Creamery and Montforte are sold in supermarkets and cheese shops.",
+    "id": "imperia-foods-fall-creek",
+    "url": "https://www.delimarketnews.com/cheese-dairy/schuman-cheese-expands-new-wisconsin-production-facility/laura-hillen/mon-02272017-1131/4239",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Kaukauna cut-and-wrap conversion facility (founded 2018, SQF certified) that converts 40-lb and 640-lb cheese blocks to client specifications; a packaging service, not a brand.",
+    "id": "integrity-cheese-packaging-of-wi",
+    "url": "https://integritycheese.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Family-owned fermentation/biotech company making natural dairy flavors (including enzyme-modified cheese flavor systems), cultures and biosurfactants for food manufacturers; no consumer cheese.",
+    "id": "jeneil-biotech-inc",
+    "url": "https://www.jeneilbiotech.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "JLM Manufacturing is Jim's Cheese of Waterloo (a cut/wrap, waxing and gift-box operation owned by Lipari Foods since 2018), whose Jim's Cheese-branded waxed cheddar novelties and gift items are sold by retail cheese shops.",
+    "id": "jlm-manufacturing-llc",
+    "url": "https://adamscheese.shop/brand/jims-cheese/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Bethlehem, PA marketer (founded 2014 by Nikole Raskovich) selling its own Keystone Farms brand of artisan cheeses, produced for it by a southern-Wisconsin co-op, through its own online shop; no Wisconsin plant of its own.",
+    "id": "keystone-farms-cheese",
+    "url": "https://www.keystonefarmscheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Kickaas Cheese, run by three Shawano friends with sister outfits The Cheese People and Stamper Cheese, makes its own named artisan cheeses (herbed jacks, sauced cheddars, hand-milled curds, a Camembert) and sells them at farmers-market tables.",
+    "id": "kickaas-llc-or-the-cheese-people-or-stamper-cheese",
+    "url": "https://www.kickaascheese.com/about",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Amish farmer cooperative marketing under the Kingston Creamery brand with named, award-winning blues (Heritage Blue, Gorgonzola, Organic Blue, Bountiful Blue) sold via its own online shop and retail.",
+    "id": "kingston-cheese-cooperative",
+    "url": "https://www.kingstoncoop.org/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The Beaver Dam plant has made Philadelphia brand cream cheese since 1928 (about five million lbs/week); Kraft Heinz sells it and other named consumer cheese brands nationwide.",
+    "id": "kraft-heinz-foods-company",
+    "url": "https://dailydodge.com/kraft-heinz-celebrates-95-years-in-beaver-dam-community/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The Monroe plant produces La Vaquita brand Hispanic cheeses (queso fresco, cotija, panela, etc.), a DFA-owned consumer brand sold at Walmart, Costco, Kroger and H-E-B.",
+    "id": "la-vaquita-inc",
+    "url": "https://lavaquitacheese.com/products/quesos/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Hedrich family goat dairy in Malone selling award-winning named cheeses under the LaClare brand, led by flagship Evalon (2011 U.S. Championship winner), through its on-farm store and retail distribution.",
+    "id": "laclare-creamery-llc",
+    "url": "https://www.laclarefamilycreamery.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Lactalis Heritage Dairy is the Lactalis division built from the Kraft Heinz natural-cheese acquisition; the Wausau plant grates and packs retail Parmesan sold under the perpetually licensed Kraft label, and the division also owns retail brands such as Cracker Barrel and Black Diamond.",
+    "id": "lactalis-heritage-dairy-inc",
+    "url": "https://perishablenews.com/dairy/lactalis-closes-acquisition-of-kraft-heinz-natural-cheese-business-in-united-states/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The Belmont plant is one of the two Lactalis USA sites producing President-brand feta, a named retail product sold in grocery stores nationwide.",
+    "id": "lactalis-usa-inc-belmont",
+    "url": "https://www.globenewswire.com/news-release/2024/10/29/2970995/0/en/Lactalis-USA-Announces-55-Million-Expansion-to-Increase-Pr%C3%A9sident-Feta-Cheese-Production-in-Tulare-California-to-Meet-Growing-Demand.html",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Lactalis' Merrill plant makes the Rondele line of retail spreadable and cold-pack cheeses (garlic and herb, vegetable, and similar flavors), which matches its cold pack, cream cheese, and process cheese licence.",
+    "id": "lactalis-usa-inc-merrill",
+    "url": "https://lactalisamericangroup.com/ctl-stories/timeline-stories/page/2/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Lake Country Dairy is Schuman Cheese's Turtle Lake plant and produces the retail Cello brand of parmesan, asiago, and other Italian-style cheeses, repeat best-of-class winners at national contests.",
+    "id": "lake-country-dairy-inc",
+    "url": "https://www.dairyfoods.com/articles/92430-schuman-cheeses-lake-country-dairy-plant-makes-italian-style-alpine-cheeses",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Lamers is a fluid-milk bottler that makes no cheese itself, but its country store sells cheese carrying its own Lamers Dairy Dairyland's Best label, sourced from other Wisconsin cheese plants.",
+    "id": "lamers-dairy-inc",
+    "url": "https://lamersdairyinc.com/faqs/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Land O'Lakes sells a retail dairy-case cheese line of 30-plus shredded, chunk, and snack items plus deli American under the Land O Lakes brand; Spencer is one of its Wisconsin cheese plants.",
+    "id": "land-o-lakes-cheese-division",
+    "url": "https://www.prnewswire.com/news-releases/land-olakes-launches-cheese-line-in-wisconsin-301561857.html",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The Stevens Point site is a Lineage cold-storage warehouse (the former Service Cold Storage flagship) holding dairy and agricultural products; Lineage is a logistics company with no consumer cheese brand.",
+    "id": "lineage-logistics",
+    "url": "https://www.onelineage.com/facilities/stevens-point",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "low",
+    "finding": "Three searches surfaced no website, brand, or retail trace for Maggie's Farm LLC of Jefferson; its licence profile (affinage, brining, cut/wrap of cheddar and gouda) suggests a small behind-the-scenes operation, but consumer presence could not be established either way.",
+    "id": "maggie-s-farm-llc",
+    "url": null,
+    "verdict": "unclear"
+  },
+  {
+    "confidence": "high",
+    "finding": "Maple Grove Cheese is a family factory dating to 1923 that sells cheddar, colby, and jack varieties under its own name through an on-site retail store and the web shop at maplegrovecheese.com.",
+    "id": "maple-grove-cheese-inc",
+    "url": "https://maplegrovecheese.com/collections/all",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Holland's Family Cheese sells Marieke Gouda under its own registered brand through its farm store and cafe in Thorp and an online shop, with over 300 awards including the 2013 U.S. Championship.",
+    "id": "marieke-gouda",
+    "url": "https://www.mariekegouda.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Masters Gallery Foods is a private-label retail, foodservice, and industrial cheese packer and converter (plants in Plymouth and Oostburg) and markets no consumer brand of its own.",
+    "id": "masters-gallery-foods-inc",
+    "url": "https://www.mastersgalleryfoods.com/our-story/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Leon's Cheese, LLC (Two Rivers, started 2022) is the family retail brand of Master Cheesemaker Mark Gustafson (second-generation cheesemaker after his father Leon; his master certifications were earned at Sartori Company), but it is a shop/brand sold through ~30 Wisconsin grocery stores with no licensed plant - no dairy plant in Two Rivers appears in the DATCP pull and the LLC publishes no production site.",
+    "id": "masters:gustafson-mark",
+    "url": "https://www.seehafernews.com/2026/06/25/june-dairy-month-spotlight-leons-cheese-continues-to-grow-in-wisconsin/",
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Clock Shadow Creamery, LLC closed its Milwaukee plant in late 2023 and holds no active licence in the DATCP file; production folded into a Plain-based creamery. Whether his certification should attach to a successor plant is an editorial call. (Agent finding verified against the licence file; supervised note.)",
+    "id": "masters:hurd-steve",
+    "url": null,
+    "verdict": "no_wisconsin_licence"
+  },
+  {
+    "confidence": "high",
+    "finding": "TTLF Inc. — the licensee of Baker Cheese's St. Cloud plant since Sargento's 2022 acquisition; the DATCP licence file confirms TTLF Inc. dba Sargento Cheese Inc. at Saint Cloud (55-4288), the only TTLF plant making cheese. (Agent finding verified against the licence file; supervised note.)",
+    "id": "masters:lebeau-jeff",
+    "url": "https://www.sargento.com/newsroom",
+    "verdict": "identified"
+  },
+  {
+    "confidence": "high",
+    "finding": "McCluskey Brothers is a certified-organic Hillpoint farm that cuts and wraps its own grass-fed cheese line and direct-markets it under the family name at Madison farmers markets and an online store, while also cutting and wrapping for four other dairy plants.",
+    "id": "mccluskey-brothers",
+    "url": "https://www.mccluskeybros.com/store/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "The De Pere plant (a former Foremost Farms, then Dean Foods site) bottles fluid milk and makes sour cream historically sold under the Morning Glory dairy brand; it produces no cheese, so it has no consumer cheese line.",
+    "id": "morning-glory-de-pere-llc",
+    "url": "https://www.dairyfoods.com/directories/7376-dairy-plants-usa/listing/8992-dean-foods-of-wi-dba-morning-glory",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "low",
+    "finding": "Moundview is a family cheese plant (est. 2018) specializing in Hispanic-style queso blanco alongside its brick/muenster licence; its site states it does not sell direct to consumers and that its cheese reaches shoppers through retailers, but whether those retail packs carry a Moundview-owned brand could not be verified.",
+    "id": "moundview-dairy",
+    "url": "https://www.moundviewdairy.com/",
+    "verdict": "unclear"
+  },
+  {
+    "confidence": "high",
+    "finding": "Nasonville Mail Order in Curtiss is the mail-order and retail arm of Nasonville Dairy, which sells its 42 cheese varieties under its own brand through its stores and ships nationwide from nasonvilledairy.com.",
+    "id": "nasonville-mail-order",
+    "url": "https://nasonvilledairy.com/shop/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Northwoods Cheese is a Verona gift-basket marketer with no plant of its own that sells shelf-stable Wisconsin cheese and sausage gift sets under the Northwoods Cheese brand through its own web shop and the gift-basket trade.",
+    "id": "northwoods-cheese-company-llc",
+    "url": "https://northwoodscheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Novak's Cheese of Wisconsin, formed in 2006 by Bill Novak II after cutting/processing and Great Lakes Cheese procurement roles, operates as a wholesale cheese processor and distributor in De Pere, and no Novak's-branded retail cheese line was found.",
+    "id": "novak-s-cheese-of-wisconsin-inc",
+    "url": "https://www.wisconsincheese.com/wi-cheese-companies/195/novaks-cheese-of-wisconsin,-inc",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Old Country Farms Co-op runs Old Country Cheese in Cashton, making more than 20 varieties from roughly 230 Amish member farms and selling them under the Old Country Cheese name through its on-site store and online shop.",
+    "id": "old-country-farms-co-op",
+    "url": "https://www.oldcountrycheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Old Fashioned Foods in Mayville makes cheese spreads, squeeze cheese, and cheese snacks sold at retail under its own Old Fashioned Foods label, alongside private-label and foodservice production.",
+    "id": "old-fashioned-cheese-mayville-cheese",
+    "url": "https://www.oldfash.com/retail-products/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Old World Creamery's own retail brand is butter only (plus butter co-manufacturing for other brands); the cheese in its Sheboygan company store comes from affiliated family businesses, and no OWC-branded consumer cheese was found despite its cream cheese licence.",
+    "id": "old-world-creamery-llc",
+    "url": "https://www.owcreamery.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Chaseburg Creamery is Organic Valley's (CROPP Cooperative) award-winning butter plant; Organic Valley is a national retail brand whose lineup includes named consumer cheeses, though this particular plant churns butter rather than making cheese.",
+    "id": "organic-valley-chaseburg",
+    "url": "https://www.organicvalley.coop/blog/the-not-so-secret-ingredient-to-organic-valley-butter",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Ornua Ingredients North America, the renamed Whitehall Specialties, custom-formulates processed-cheese ingredient solutions strictly for food-manufacturing and foodservice customers; its Irish parent's Kerrygold retail products are not made at the Wisconsin plants.",
+    "id": "ornua-ingredients-north-america-whitehall-east",
+    "url": "https://www.dairyprocessing.com/articles/756-cheese-company-now-officially-renamed-ornua-ingredients-north-america",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Oshkosh Cheese Sales & Storage is the bulk-cheese arm of Oshkosh Cold Storage, aging and selling 40-pound cheddar blocks to cut-and-wrap, shredding, and processing customers, with no consumer retail line.",
+    "id": "oshkosh-cheese-sales",
+    "url": "https://www.delimarketnews.com/company/oshkosh-cheese-sales-storage",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "PANOS Brands is a New Jersey specialty-food brand owner that sells retail natural cheese nationally under its Andrew & Everett brand, acquired with Ry-Con Specialty Foods.",
+    "id": "panos-brands",
+    "url": "https://panosbrands.com/our-brands/andrew-everett/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Pernat's of Ixonia is a family butcher shop and small grocery focused on meat processing and sausage; its website markets no cheese under the Pernat's name despite the plant's cheddar/custom-processing licence.",
+    "id": "pernats-of-ixonia",
+    "url": "https://pernat-meats.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Prairie Farms' century-old Mindoro plant makes the co-op's Danish-style Blue and Gorgonzola, which are sold at grocery retail under the Prairie Farms brand (e.g. Prairie Farms Mindoro Blue at food co-ops).",
+    "id": "prairie-farms-dairy-inc-mindoro",
+    "url": "https://prairiefarmscheese.com/manufacturing-facilities/mindoro",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Prairie Farms Dairy sells retail cheese under the Prairie Farms and Shullsburg Creamery brands; its Shullsburg site (Shullsburg Creamery plus the White Hill Swiss plant, fully acquired 2020) was announced closed with roughly 97 layoffs, though the brand and the town's retail cheese store continue.",
+    "id": "prairie-farms-dairy-inc-shullsburg",
+    "url": "https://www.wpr.org/economy/prairie-farms-dairy-closing-2-southwest-wisconsin-plants-laying-off-nearly-100-workers",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Revela Foods (formed 2022 from Welcome, Gamay Food Ingredients and North Star Processing; acquired by ADM in late 2023) makes B2B dairy flavor ingredients, cheese sauces and snack seasonings for food manufacturers, with no retail brand.",
+    "id": "revela-foods-colby-llc",
+    "url": "https://www.adm.com/en-us/news/news-releases/2023/12/adm-adds-new-capabilities-to-its-industry-leading-flavor-business-with-agreement-to-acquire-revela-foods/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Sargento (Plymouth, founded 1953) is one of the largest national retail cheese brands, selling Sargento-branded shredded, sliced and snack natural cheese in every major grocery chain.",
+    "id": "sargento-cheese-inc",
+    "url": "https://www.sargento.com/our-cheese",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Sartori (Plymouth, family-owned since 1939) is a top-10 US specialty cheese brand selling named products like the BellaVitano line at retailers nationwide and through its own online shop.",
+    "id": "sartori-company",
+    "url": "https://www.sartoricheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Schroeder Kase is a small Darlington artisan cheesemaker whose branded cheeses, notably a Triple Creme Brie, are sold at Wisconsin cheese shops and through its Dane County Farmers' Market membership.",
+    "id": "schroeder-kase",
+    "url": "https://dcfm.org/members/1218",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Scott's of Wisconsin (Sun Prairie, est. 1979) sells cheese spreads, beer cheese, cold pack and fudge cheese under its own Scott's of Wisconsin label alongside a substantial private-label/co-pack business.",
+    "id": "scott-s-of-wisconsin",
+    "url": "https://www.scottsofwi.com/products.php",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Scray Cheese is a fourth-generation De Pere factory (since 1924) whose attached Scray Cheese Shoppe and online store sell its own curds, cheddar, edam, fontina and gouda.",
+    "id": "scray-s-cheese-co",
+    "url": "https://www.scraycheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Springside (Oconto Falls, making cheese since 1908, now branded Springside Artisan Cheese) sells its handcrafted cheddars and flavored cheeses through its factory store, a Pueblo, Colorado store, and its own online shop.",
+    "id": "springside-artisan-cheese-llc",
+    "url": "https://springsidecheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "St. Isidore's Dairy is a six-cow Osseo farmstead creamery selling its Good Food Award-winning clothbound raw-milk cheddar under its own name at the Eau Claire farmers market and Wisconsin cheese shops like Fromagination.",
+    "id": "st-isidore-s-dairy",
+    "url": "https://fromagination.com/product/saint-isidores-bandaged-cheddar-cheese/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "StoneRidge (Wautoma retail markets plus a wholesale division) sells named cheeses and curds under its own StoneRidge label in-store and online, but it states it re-distributes cheese made by other Wisconsin creameries rather than making any itself.",
+    "id": "stoneridge-meat-country-market",
+    "url": "https://www.stoneridgemarket.com/collections/cheese",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Straka Meats (Plain, since 1952) is a custom meat processor and retail butcher whose site markets only meat, with no cheese offered under the Straka name despite its dairy cut/wrap licence.",
+    "id": "straka-meats-inc",
+    "url": "https://strakameats.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Taste & See Creamery is a Boyceville farmstead operation making small-batch cheese on the farm, with its fresh cheese curds sold under its own name at local retailers such as the Grain Bin butcher shop.",
+    "id": "taste-see-creamery-llc",
+    "url": "https://business.wilocalfood.org/directory/Details/taste-see-creamery-3239670?rendermode=print",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "low",
+    "finding": "Topp Cheese Co. of Weyauwega surfaces only as a cheese cutting/wrapping/packaging supplier in an industrial directory; three searches found no website, retail listing, branded product or market presence of any kind.",
+    "id": "topp-cheese",
+    "url": "https://industrynet.com/listing/1200485/topp-cheese-co",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Truvant's Boscobel campus belongs to a global contract-packaging and co-manufacturing company that cuts, wraps and packages other brands' products and sells nothing under its own name.",
+    "id": "truvant-north",
+    "url": "https://www.truvant.com/",
+    "verdict": "no_consumer_presence"
+  },
+  {
+    "confidence": "high",
+    "finding": "Two Guernsey Girls Creamery (Freedom, launched 2021) bottles A2 Guernsey milk and sells its own flavored cheese curds directly to shoppers, including through a second retail store it opened.",
+    "id": "two-guernsey-girls-creamery-llc",
+    "url": "https://thebusinessnews.com/northeast/two-guernsey-girls-creamery-opens-second-retail-store/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Weyauwega Cheese (Sun Prairie) pitches itself as a wholesale supplier to retailers and foodservice, but Weyauwega-branded cheddar cheese curds are stocked as named retail products by grocers including Pick 'n Save, Sendik's, Hy-Vee and Harris Teeter.",
+    "id": "weyauwega-cheese",
+    "url": "https://www.picknsave.com/p/weyauwega-cheddar-cheese-curd/0002716415075",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "White Jasmine (Mount Horeb, est. 2003) markets its own named line of spice-infused Goudas such as Citrus Ember, Saji BBQ and Tandoori alongside its spice blends, sold as White Jasmine-branded consumer products.",
+    "id": "white-jasmine-llc",
+    "url": "https://culturecheesemag.com/blog/white-jasmine-huma-siddiqui-wisconsin-pakistan-gouda/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "WAG Cheese (Kaukauna) is chiefly a wholesale cheddar aging/grading/sourcing and private-label house, but it also markets its own retail line of hand-selected aged cheddars under the 724 / Wisconsin 724 Reserve brand named for the founder's grader number.",
+    "id": "wisconsin-aging-grading-cheese-inc",
+    "url": "https://wagcheese.com/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "medium",
+    "finding": "Wisconsin Pride Cheese Co. in Mauston appears to be the Mauston plant and highway retail store of Sid Cook's Carr Valley Cheese (which lists Mauston among its four plants and retail locations), with its output sold to shoppers under the Carr Valley consumer brand rather than a separate Wisconsin Pride label.",
+    "id": "wisconsin-pride-cheese-co-inc",
+    "url": "https://carrvalleycheese.com/about-us/",
+    "verdict": "consumer_brand"
+  },
+  {
+    "confidence": "high",
+    "finding": "Wisconsin Whey Protein (Darlington and Turtle Lake plants) makes barrel cheese, WPC-80, lactose and whey protein isolate as B2B ingredients for infant formula and sports nutrition, with no retail brand; FrieslandCampina announced plans to acquire it in December 2025.",
+    "id": "wisconsin-whey-protein-inc",
+    "url": "https://www.dairyprocessing.com/articles/3013-wisconsin-whey-protein-building-another-production-facility",
+    "verdict": "no_consumer_presence"
+  }
+]

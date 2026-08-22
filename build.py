@@ -333,15 +333,71 @@ def merge(raw: dict[str, list[dict]]) -> dict:
     # crosswalk afterwards would satisfy validation #6 while the Person record stayed
     # silently missing from the export.
     by_creamery_id = {company["id"]: key for key, company in companies.items()}
-    manual: dict[tuple[str, str], str] = {}
+    manual: dict[tuple[str, str], str | None] = {}
     for entry in _read_json(OVERRIDES / "crosswalk.json"):
         target = entry["creamery_id"]
+        if target is None:
+            # A reviewed exclusion: the record deliberately resolves to nothing.
+            manual[(entry["source"], entry["source_key"])] = None
+            continue
         if target not in by_creamery_id:
             fatal(
                 f"crosswalk override {entry['source']}:{entry['source_key']} targets unknown "
                 f"creamery '{target}' — check queue/proposed_crosswalk.json for valid ids"
             )
         manual[(entry["source"], entry["source_key"])] = by_creamery_id[target]
+
+    # A manual DFW entry must merge structurally, not just re-point a crosswalk row:
+    # the standalone company merge() invented for that listing has to dissolve into
+    # the licensed company, handing over its consumer layer (coordinates, retail,
+    # website, trade name). Otherwise the override fixes resolution while a ghost
+    # duplicate creamery stays in the export.
+    for (source, source_key), target_key in manual.items():
+        if source != "dfw":
+            continue
+        stray = companies.pop(f"dfw:{source_key}", None)
+        if stray is None:
+            continue  # the listing name-matched some company; apply_overrides re-points it
+        target = companies[target_key]
+        if target["dfw"] is None:
+            target["dfw"] = stray["dfw"]
+            target["name"] = stray["dfw"]["name"]
+        target["aka"] |= {stray["name"]} | stray["aka"]
+        if "coords" not in target and "coords" in stray:
+            target["coords"] = stray["coords"]
+        for entry in crosswalk:
+            if entry["company"] == f"dfw:{source_key}":
+                entry["company"] = target_key
+        company_id.pop(f"dfw:{source_key}")
+
+    # A manual DATCP entry re-homes the plant itself — that is how two licences that
+    # are really one business (a creamery and its separately licensed store) become
+    # one creamery. A company left with no plants and no DFW listing ceases to exist.
+    rehomed = False
+    for (source, source_key), target_key in manual.items():
+        if source != "datcp":
+            continue
+        owner_key = next(
+            (k for k, c in companies.items()
+             if any(p["datcp_id"] == source_key for p in c["plants"])),
+            None,
+        )
+        if owner_key is None or owner_key == target_key:
+            continue
+        owner = companies[owner_key]
+        plant = next(p for p in owner["plants"] if p["datcp_id"] == source_key)
+        owner["plants"].remove(plant)
+        companies[target_key]["plants"].append(plant)
+        rehomed = True
+        for entry in crosswalk:
+            if entry["source"] == "datcp" and entry["source_key"] == source_key:
+                entry["company"] = target_key
+        if not owner["plants"] and owner["dfw"] is None:
+            companies.pop(owner_key)
+            company_id.pop(owner_key)
+    if rehomed:
+        for company in companies.values():
+            company["plants"].sort(key=lambda p: int(p["datcp_id"].split("-")[1]))
 
     # Everything resolves against the full canonical set, DFW-only companies included.
     full = Resolver()
@@ -360,7 +416,11 @@ def merge(raw: dict[str, list[dict]]) -> dict:
     people: list[Person] = []
     for record in sorted(raw["masters"], key=lambda r: r["source_key"]):
         matched, candidates = full.resolve(record["company"], record["city"])
-        matched = manual.get(("masters", record["source_key"]), matched)
+        override_key = ("masters", record["source_key"])
+        if override_key in manual:
+            matched = manual[override_key]
+            if matched is None:
+                continue  # reviewed exclusion: no licensee behind this company name
         if matched is None:
             proposals.append({
                 "source": "masters",
@@ -387,8 +447,11 @@ def merge(raw: dict[str, list[dict]]) -> dict:
     awards: list[Award] = []
     for record in sorted(raw["contests"], key=lambda r: r["source_key"]):
         matched, candidates = full.resolve(record["company"], record["city"])
-        matched = manual.get(("contests", record["source_key"]), matched)
-        if matched is None:
+        override_key = ("contests", record["source_key"])
+        excluded = override_key in manual and manual[override_key] is None
+        if override_key in manual:
+            matched = manual[override_key]
+        if matched is None and not excluded:
             proposals.append({
                 "source": "contests",
                 "source_key": record["source_key"],
@@ -446,6 +509,10 @@ def merge(raw: dict[str, list[dict]]) -> dict:
     ]
 
     proposals.extend(_duplicate_companies(companies))
+    # A record a manual crosswalk entry already settled has nothing left to propose.
+    proposals = [
+        p for p in proposals if (p["source"], p["source_key"]) not in manual
+    ]
     write_proposals(companies, proposals)
 
     return {
@@ -650,6 +717,8 @@ def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
 
     resolved = {(e.source, e.source_key) for e in ds["crosswalk"]}
     for entry in ds["crosswalk"]:
+        if entry.creamery_id is None:
+            continue  # a reviewed exclusion resolves the record to nothing, deliberately
         if entry.creamery_id not in all_creameries:
             fatal(
                 f"crosswalk {entry.source}:{entry.source_key} targets unknown "
@@ -689,7 +758,8 @@ def write_queue_report(ds: dict, classifications: dict[str, str]) -> None:
         "descriptions": {k: descriptions.get(k, 0) for k in ("missing", "generated", "edited")},
     }
     (QUEUE / "report.json").write_text(
-        json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        json.dumps(report, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8", newline="\n",
     )
 
 

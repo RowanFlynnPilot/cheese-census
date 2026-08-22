@@ -1,0 +1,6044 @@
+[
+  {
+    "city": "Barronett",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "20-mile-organic",
+    "name": "20-Mile Organic",
+    "tier": "auto"
+  },
+  {
+    "city": "Clear Lake",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "afp-advanced-food-products-llc",
+    "name": "AFP Advanced Food Products LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Appleton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/116/agropur-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Mozzarella, Provolone, Semisoft, Washed Curd and Soaked Curd",
+        "signal": "licence"
+      },
+      {
+        "detail": "4 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "17 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "agropur-inc",
+    "name": "Agropur, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Richland Center",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "alcam-creamery",
+    "name": "Alcam Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Fond du Lac",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 52 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/131/all-star%2c-ltd"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Primarily a private-label/co-pack and foodservice cheese converter (acquired by Wiskerchen Cheese in 2020, now operating as All Star LLC), but its own site advertises a branded retail product, All Star 10 Year Aged Cheddar, carried at Pick 'n Save and Heinen's.",
+        "signal": "web-research",
+        "url": "https://allstarcheese.com/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "all-star-ltd",
+    "name": "All Star, LTD",
+    "tier": "review"
+  },
+  {
+    "city": "Sturtevant",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/1310/alpinage-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "alpinage-cheese-llc",
+    "name": "Alpinage Cheese LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "alpine-slicing-cheese-conversion-company",
+    "name": "Alpine Slicing & Cheese Conversion Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Port Washington",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "amazing-ice-cream-llc",
+    "name": "Amazing Ice Cream LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Belleville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "amlat-llc",
+    "name": "Amlat, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "New Berlin",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "archer-daniels-midland-company",
+    "name": "Archer Daniels Midland Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Arena",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/104/arena-cheese-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Edam, Gouda, Monterey/Monterey Jack, Provolone",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "5 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "arena-cheese",
+    "name": "Arena Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Kaukauna",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/96/arla-foods%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "8 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "arla-foods-inc",
+    "name": "Arla Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Kaukauna",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Edam, Gouda, Muenster (Munster), Other",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Arla's Kaukauna/Hollandtown plant makes havarti, gouda, edam and muenster that Arla sells at US retail under its Castello and Arla consumer brands, including award-winning named products like Castello Smoked Cracked Pepper Gouda.",
+        "signal": "web-research",
+        "url": "https://www.arlausa.com/about-us/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "arla-foods-production-llc-arla-foods-amba",
+    "name": "Arla Foods Production, LLC (Arla Foods Amba)",
+    "tier": "review"
+  },
+  {
+    "city": "Blair",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 9 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/230/associated-milk-producers-inc-(ampi)"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Gruyere, Monterey/Monterey Jack, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "6 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "associated-milk-producers-inc",
+    "name": "Associated Milk Producers, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Madison",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby, Gouda, Monterey/Monterey Jack, Muenster (Munster)",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "confidence": "high",
+        "detail": "UW-Madison's dairy plant sells Babcock-branded cheddar, gouda, jack and other cheeses to the public at the Babcock Dairy Store, at local retailers, and via shipped gift sets.",
+        "signal": "web-research",
+        "url": "https://babcockhalldairyplant.wisc.edu/products/cheese/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "babcock-hall-dairy-plant",
+    "name": "Babcock Hall Dairy Plant",
+    "tier": "review"
+  },
+  {
+    "city": "Elroy",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "bardo-custom-blending",
+    "name": "Bardo Custom Blending",
+    "tier": "auto"
+  },
+  {
+    "city": "Hillpoint",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "bear-valley-affinage",
+    "name": "Bear Valley Affinage",
+    "tier": "auto"
+  },
+  {
+    "city": "Little Chute",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/44/bel-brands-usa"
+      },
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food, Cream Cheese, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "bel-brands-usa",
+    "name": "Bel Brands USA",
+    "tier": "auto"
+  },
+  {
+    "city": "Green Bay",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 21 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/5/belgioioso-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Bleu, Gorgonzola, Mozzarella, Other, Parmesan and Reggiano",
+        "signal": "licence"
+      },
+      {
+        "detail": "7 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "7 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "belgioioso-cheese-inc",
+    "name": "BelGioioso Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Appleton",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "bella-pak-llc",
+    "name": "Bella Pak LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Shawano",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "belle-plaine-cheese",
+    "name": "Belle Plaine Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Plover",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 11 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/10/biery-cheese-company-kickapoo-valley-plant"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Ohio-based Biery Cheese positions itself as a private-label cheese processor and packager supplying national and regional grocers under the retailers' own brands, with no evidence of a Biery-branded consumer line.",
+        "signal": "web-research",
+        "url": "https://bierycheese.com/capabilities/private-label-cheese-manufacturing-packaging/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "biery-cheese-company",
+    "name": "Biery Cheese Company",
+    "tier": "review"
+  },
+  {
+    "city": "Port Washington",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Hard, Semisoft, Soft Ripened",
+        "signal": "licence"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Farmstead goat creamery selling named cheeses such as Afterglow and fresh chevre under the Blakesville brand through its own online shop and specialty retailers nationwide (Murray's, Saxelby).",
+        "signal": "web-research",
+        "url": "https://www.blakesvillecreamery.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "blakesville-creamery",
+    "name": "Blakesville Creamery",
+    "tier": "review"
+  },
+  {
+    "city": "Blue Mounds",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/52/bleu-mont-dairy"
+      },
+      {
+        "detail": "licensed to make Cheddar, Other",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "bleu-mont-dairy",
+    "name": "Bleu Mont Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Chilton",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "briess-industries-inc",
+    "name": "Briess Industries, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Darlington",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 11 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/80/brunkow-cheese-of-wisconsin"
+      },
+      {
+        "detail": "licensed to make Cheddar, Cold Pack Cheese/Cheese Food, Granular and Stirred Curd, Monterey/Monterey Jack, Pasteurized Cheese Spread, Semisoft",
+        "signal": "licence"
+      },
+      {
+        "detail": "5 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "brunkow-cheese-of-wisconsin-inc",
+    "name": "Brunkow Cheese of Wisconsin, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "bruno-beef-strips",
+    "name": "Bruno Beef Strips",
+    "tier": "auto"
+  },
+  {
+    "city": "Grantsburg",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 14 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/53/burnett-dairy-cheese"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "13 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "burnett-dairy-cooperative",
+    "name": "Burnett Dairy Cooperative",
+    "tier": "auto"
+  },
+  {
+    "city": "Blue River",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "capri-cheese",
+    "name": "Capri Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Black Creek",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "caprine-supreme-llc",
+    "name": "Caprine Supreme, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "La Valle",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 33 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/43/carr-valley-cheese-co%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack, Other, Washed Curd and Soaked Curd",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "9 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "carr-valley-cheese-company-inc",
+    "name": "Carr Valley Cheese Company, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Cascade",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Mozzarella, Muenster (Munster), Provolone",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Family-run plant producing conventional and organic mozzarella and provolone from local farm milk, with no branded retail packages, factory store, or online shop found in coverage or directories.",
+        "signal": "web-research",
+        "url": "https://perishablenews.com/deli/business-booming-at-cascade-cheese-co/"
+      }
+    ],
+    "flags": [],
+    "id": "cascade-cheese-co",
+    "name": "Cascade Cheese Co",
+    "tier": "auto"
+  },
+  {
+    "city": "Manitowoc",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cedar-crest-ice-cream",
+    "name": "Cedar Crest Ice Cream",
+    "tier": "auto"
+  },
+  {
+    "city": "Plain",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 18 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/23/cedar-grove-cheese"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Hard, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "6 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "cedar-grove-cheese-inc",
+    "name": "Cedar Grove Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Belgium",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/65/cedar-valley-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Mozzarella, Provolone",
+        "signal": "licence"
+      },
+      {
+        "detail": "4 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "cedar-valley-cheese-inc",
+    "name": "Cedar Valley Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Belgium",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cedar-valley-cheese-store",
+    "name": "Cedar Valley Cheese Store",
+    "tier": "auto"
+  },
+  {
+    "city": "Madison",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Bleu, Brick, Caciocavallo Siciliano, Cheddar, Colby",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "A UW-Madison research center and pilot plant serving the dairy industry (short courses, product development for companies); it does not market cheese to shoppers under its own brand.",
+        "signal": "web-research",
+        "url": "https://cdr.wisc.edu/about"
+      }
+    ],
+    "flags": [],
+    "id": "center-for-dairy-research",
+    "name": "Center For Dairy Research",
+    "tier": "auto"
+  },
+  {
+    "city": "Sparta",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Hormel-owned contract manufacturer in Sparta making nutritional powders, dairy protein blends, RTD beverages and processed cheese as ingredients for other companies, not branded consumer cheese.",
+        "signal": "web-research",
+        "url": "https://www.centuryfoods.com/"
+      }
+    ],
+    "flags": [],
+    "id": "century-foods-international",
+    "name": "Century Foods International",
+    "tier": "auto"
+  },
+  {
+    "city": "Milwaukee",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/218/cesars-cheese"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby, Gouda, Granular and Stirred Curd, Mozzarella",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cesar-s-cheese-llc",
+    "name": "Cesar's Cheese LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/27/chalet-cheese-cooperative"
+      },
+      {
+        "detail": "licensed to make Brick, Gouda, Limburger, Swiss and Emmentaler",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "chalet-cheese-cooperative",
+    "name": "Chalet Cheese Cooperative",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cheese-louise-inc",
+    "name": "Cheese Louise Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Durand",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/33/eau-galle-cheese-factory%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cheese-merchants-of-america",
+    "name": "Cheese Merchants of America",
+    "tier": "auto"
+  },
+  {
+    "city": "Blanchardville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cheese-pirates-llc",
+    "name": "Cheese Pirates LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Bancroft",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "cheese-pleasers-inc",
+    "name": "Cheese Pleasers Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Cottage Grove",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/1312/the-big-moo"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Cheeses of Wisconsin, LLC (founded 2021) markets The Big Moo, a branded heat-and-eat baked cheese sold through its own online shop and grocery stores via a store locator.",
+        "signal": "web-research",
+        "url": "https://thebigmoocheese.com/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "cheeses-of-wisconsin-the-big-moo",
+    "name": "Cheeses of Wisconsin (The Big Moo)",
+    "tier": "review"
+  },
+  {
+    "city": "Madison",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "chocolate-shoppe-ice-cream",
+    "name": "Chocolate Shoppe Ice Cream",
+    "tier": "auto"
+  },
+  {
+    "city": "Fond Du Lac",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/1304/clearview-dairy-atwo-cheese-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "clearview-dairy-atwo-cheese-llc",
+    "name": "Clearview Dairy aTwo Cheese LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Athens",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "clover-meadows-family-farm",
+    "name": "Clover Meadows Family Farm",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Colony Brands (formerly The Swiss Colony) sells cheese, including cold pack made at its Monroe operations, direct to consumers under its own Swiss Colony and Wisconsin Cheeseman brands via catalog and online.",
+        "signal": "web-research",
+        "url": "https://en.wikipedia.org/wiki/Colony_Brands"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "colony-brands-inc",
+    "name": "Colony Brands, Inc",
+    "tier": "review"
+  },
+  {
+    "city": "Menomonie",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "conagra-grocery-products-co",
+    "name": "Conagra Grocery Products Co.",
+    "tier": "auto"
+  },
+  {
+    "city": "Clear Lake",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Cheddar, Gouda, Gruyere, Monterey/Monterey Jack, Other",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Farmstead creamery on Turnip Rock Farm selling its own named raw-milk and fresh cheeses (tomme, alpine styles, quark, camembert) at farmers markets, co-ops and through a CSA.",
+        "signal": "web-research",
+        "url": "http://www.cosmicwheelcreamery.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "cosmic-wheel-creamery",
+    "name": "Cosmic Wheel Creamery",
+    "tier": "review"
+  },
+  {
+    "city": "Weston",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "country-fresh-products-llc",
+    "name": "Country Fresh Products, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Chippewa Fls",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "low",
+        "detail": "A tiny Chippewa Falls cold-pack cheese operation with a consumer-facing name and past home-delivery listings, but Yelp marks the location closed and no website, product line, or brand evidence could be found.",
+        "signal": "web-research",
+        "url": "https://www.yelp.com/biz/cow-caviar-chippewa-falls"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence"
+    ],
+    "id": "cow-caviar",
+    "name": "Cow Caviar",
+    "tier": "review"
+  },
+  {
+    "city": "Superior",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "crank-and-dasher",
+    "name": "Crank and Dasher",
+    "tier": "auto"
+  },
+  {
+    "city": "Waterloo",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/119/crave-brothers-farmstead-cheese%2c-llc"
+      },
+      {
+        "detail": "licensed to make Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "4 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "crave-brothers-farmstead-cheese-l-l-c",
+    "name": "Crave Brothers Farmstead Cheese, L.L.C.",
+    "tier": "auto"
+  },
+  {
+    "city": "Oconomowoc",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Contract manufacturer and co-packer in Ixonia/Oconomowoc producing liquid and dry foods (including process cheese) exclusively for other companies' labels.",
+        "signal": "web-research",
+        "url": "https://www.capfoodinc.com/about-us/"
+      }
+    ],
+    "flags": [],
+    "id": "create-a-pack-foods-inc",
+    "name": "Create-A-Pack Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "La Farge",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 12 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/16/organic-valley"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "cropp-cooperative-organic-valley",
+    "name": "CROPP Cooperative/Organic Valley",
+    "tier": "auto"
+  },
+  {
+    "city": "Osceola",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/143/crystal-ball-farms"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "crystal-ball-farms",
+    "name": "Crystal Ball Farms",
+    "tier": "auto"
+  },
+  {
+    "city": "Lake Mills",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 25 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/38/crystal-farms-rdc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "crystal-farms-dairy-co",
+    "name": "Crystal Farms - Michael Foods, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Colfax",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ctl-foods-inc",
+    "name": "CTL Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Argyle",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "curran-s-foods",
+    "name": "Curran's Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "Chili",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Parmesan and Reggiano, Romano",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "DFA-owned ingredient supplier making cheese powders, pastes, flavor systems and bulk hard Italian cheese for food manufacturers, foodservice and private label, with no consumer brand.",
+        "signal": "web-research",
+        "url": "https://www.ingredientsnetwork.com/dairiconcepts-l-p-comp250451.html"
+      }
+    ],
+    "flags": [],
+    "id": "dairiconcepts-lp",
+    "name": "DairiConcepts LP",
+    "tier": "auto"
+  },
+  {
+    "city": "Bruce",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "dairiconcepts-lp-bruce",
+    "name": "Dairiconcepts LP",
+    "tier": "auto"
+  },
+  {
+    "city": "Fond du Lac",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "dairy-farmers-of-america-inc",
+    "name": "Dairy Farmers Of America Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Rudolph",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Parmesan and Reggiano, Romano",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Operates a cheesemaker-and-retail-outlet in Rudolph where shoppers buy its fresh cheese curds and other cheeses made on site, sold daily at the factory store.",
+        "signal": "web-research",
+        "url": "https://dairystatecheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "dairy-state-cheese-llc",
+    "name": "Dairy State Cheese, LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Blue Mounds",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Blended Cheese, Pasteurized Cheese Spread, Pasteurized Neufchatel Cheese Spread, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Specialty processor billed as the country's largest smoked gouda supplier, but its spreads, wedges and smoked cheeses are produced under customers' labels (Swiss Colony, Figi's, foodservice chains) rather than its own consumer brand.",
+        "signal": "web-research",
+        "url": "https://madison.com/business/a-well-kept-secret-dairyfood-usa-has-huge-market-in-u-s/article_bd121af6-de3f-11e1-822d-0019bb2963f4.html"
+      }
+    ],
+    "flags": [],
+    "id": "dairyfood-usa",
+    "name": "Dairyfood USA",
+    "tier": "auto"
+  },
+  {
+    "city": "Brodhead",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 10 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/87/decatur-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Brick, Colby, Muenster (Munster)",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "14 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "decatur-dairy-inc",
+    "name": "Decatur Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Sheboygan",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/243/deer-creek-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "8 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "deer-creek-cheese",
+    "name": "Deer Creek Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Green Bay",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "dfa-green-bay",
+    "name": "DFA Green Bay",
+    "tier": "auto"
+  },
+  {
+    "city": "Milwaukee",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "don-chamoy-ice-cream-shop",
+    "name": "Don Chamoy Ice Cream Shop",
+    "tier": "auto"
+  },
+  {
+    "city": "Sister Bay",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Brick",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Sister Bay farmstead creamery selling its own goat cheeses (fresh chevre in seasonal flavors and more) through its retail shop and cafe with nationwide shipping.",
+        "signal": "web-research",
+        "url": "https://doorcountycreamery.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "door-county-creamery",
+    "name": "Door County Creamery",
+    "tier": "review"
+  },
+  {
+    "city": "Sister Bay",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "door-county-ice-cream-factory",
+    "name": "Door County Ice Cream Factory",
+    "tier": "auto"
+  },
+  {
+    "city": "Cross Plains",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "dreamfarm-llc",
+    "name": "Dreamfarm, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Marion",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/145/dupont-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Monterey/Monterey Jack",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "dupont-cheese-inc",
+    "name": "Dupont Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Durand",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Other, Parmesan and Reggiano, Romano",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "confidence": "high",
+        "detail": "Sells most of its award-winning asiago and parmesan in bulk for others to package, but also retails under the Eau Galle name through its factory store and online shop, including a store-only Eau Galle Italian variety, and is expanding retail production.",
+        "signal": "web-research",
+        "url": "https://www.eaugallecheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "eau-galle-cheese-factory-llc",
+    "name": "Eau Galle Cheese Factory, LLC.",
+    "tier": "review"
+  },
+  {
+    "city": "Monticello",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 10 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/171/edelweiss-creamery"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "edelweiss-creamery",
+    "name": "Edelweiss Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "DeForest",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ehlenbach-s-cheese-chalet",
+    "name": "Ehlenbach's Cheese Chalet",
+    "tier": "auto"
+  },
+  {
+    "city": "Thorp",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ej-dairy-marketing",
+    "name": "Ej Dairy Marketing",
+    "tier": "auto"
+  },
+  {
+    "city": "Madison",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "elegant-foods-llc",
+    "name": "Elegant Foods LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Ellsworth",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 13 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/15/ellsworth-cooperative-creamery"
+      },
+      {
+        "detail": "licensed to make Cheddar",
+        "signal": "licence"
+      },
+      {
+        "detail": "5 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "ellsworth-cooperative-creamery",
+    "name": "Ellsworth Cooperative Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "New London",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "The New London plant (former Wohlt Creamery, acquired 2017-18) itself makes process cheese loaves mainly for foodservice, but it belongs to Ellsworth Cooperative Creamery, which sells branded curds and cheeses at retail and through its own online store.",
+        "signal": "web-research",
+        "url": "https://www.ellsworthcheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "ellsworth-cooperative-creamery-new-london",
+    "name": "Ellsworth Cooperative Creamery - New London",
+    "tier": "review"
+  },
+  {
+    "city": "Menomonie",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby, Gouda, Granular and Stirred Curd, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Ellsworth Cooperative Creamery's Menomonie specialty-cheese plant (opened 2022, replacing Comstock) makes artisan cheeses sold under the co-op's Ellsworth brand and has its own attached retail store.",
+        "signal": "web-research",
+        "url": "https://www.ellsworthcheese.com/visit/menomonie/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "ellsworth-menomonie-creamery-llc",
+    "name": "Ellsworth Menomonie Creamery LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Platteville",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 31 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/88/roth-cheese"
+      },
+      {
+        "detail": "licensed to make Bleu, Cheddar, Gorgonzola, Gouda, Gruyere, Semisoft",
+        "signal": "licence"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "emmi-roth-usa",
+    "name": "Emmi Roth USA",
+    "tier": "auto"
+  },
+  {
+    "city": "Thorp",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "fairway-dairy-ingredients-llc-attn-controller",
+    "name": "Fairway Dairy & Ingredients, LLC ATTN: Controller",
+    "tier": "auto"
+  },
+  {
+    "city": "River Falls",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Bleu, Brick, Cheddar, Colby, Cold Pack Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "UW-River Falls' teaching dairy plant sells its Falcon Foods/Falcon Creamery cheddar, colby, jack, curds and ice cream to the public at Freddy's Dairy Bar, the campus retail store.",
+        "signal": "web-research",
+        "url": "https://uwrf.edu/ANFS/FalconFoods/Cheese.cfm"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "falcon-creamery",
+    "name": "Falcon Creamery",
+    "tier": "review"
+  },
+  {
+    "city": "Kewaskum",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "family-dairies-usa",
+    "name": "Family Dairies USA",
+    "tier": "auto"
+  },
+  {
+    "city": "Monticello",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/166/family-fresh-pack-llc"
+      },
+      {
+        "detail": "licensed to make Asiago, Bleu, Cheddar, Colby, Cold Pack Cheese/Cheese Food, Cream Cheese",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "family-fresh-pack-llc",
+    "name": "Family Fresh Pack LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Cedar Grove",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "farm-stapels-llc",
+    "name": "Farm Stapels LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Dorchester",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "farmer-boy-creamery-llc",
+    "name": "Farmer Boy Creamery LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Hayward",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "North Star Homestead Farms' on-farm dairy near Hayward sells named sheep-milk cheeses (Muffet's Magic and Tuffet's Temptation spreadable cheeses) and gelato at its own Farmstead Creamery & Cafe shop and online store.",
+        "signal": "web-research",
+        "url": "https://northstarhomestead.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "farmstead-creamery",
+    "name": "Farmstead Creamery",
+    "tier": "review"
+  },
+  {
+    "city": "Stevens Point",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Fifth-generation Feltz family farm runs an on-site creamery (Jake Feltz licensed as a cheesemaker in 2021) whose fresh cheese curds are sold retail at their own Feltz's Dairy Store in Stevens Point.",
+        "signal": "web-research",
+        "url": "https://www.cheeseprofessor.com/blog/feltzs-dairy-store-wisconsin"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "feltz-s-dairy-store",
+    "name": "Feltz's Dairy Store",
+    "tier": "review"
+  },
+  {
+    "city": "Germantown",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "B2B maker of concentrated dairy flavor pastes and powders for food manufacturers, acquired by Royal DSM (now dsm-firmenich) in 2021 for about $453M; no retail cheese products.",
+        "signal": "web-research",
+        "url": "https://firstchoiceingredients.com/"
+      }
+    ],
+    "flags": [],
+    "id": "first-choice-ingredients-inc",
+    "name": "First Choice Ingredients, Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Appleton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 12 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/41/foremost-farms-usa"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack, Mozzarella, Muenster (Munster), Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "foremost-farms-usa-cooperative",
+    "name": "Foremost Farms USA Cooperative",
+    "tier": "auto"
+  },
+  {
+    "city": "South Wayne",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/63/valley-view-cheese"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Granular and Stirred Curd",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Third-generation South Wayne cheesemaker selling its own named varieties (Butterkase, Havarti flavors, Brick, cheddars) retail, at the Dane County Farmers Market, and through a published list of stores.",
+        "signal": "web-research",
+        "url": "https://www.forgottenvalleycheese.com/"
+      }
+    ],
+    "flags": [],
+    "id": "forgotten-valley-cheese",
+    "name": "Valley View Cheese Cooperative",
+    "tier": "auto"
+  },
+  {
+    "city": "Greenwood",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack, Mozzarella, Muenster (Munster), Parmesan and Reggiano",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Temperature-controlled warehousing and logistics firm for the dairy industry offering cheese reclamation and 640-lb block cutting services, which explains its DATCP cheese licences; no brand or retail products.",
+        "signal": "web-research",
+        "url": "https://freedom-warehousing.com/"
+      }
+    ],
+    "flags": [],
+    "id": "freedom-warehousing-inc",
+    "name": "Freedom Warehousing, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Green Bay",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "fromage-spa-llc",
+    "name": "Fromage Spa, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Reedsburg",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 16 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/253/g-r-foods-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Reedsburg family wholesaler/importer-exporter of cheese, butter, dairy powders and canned dairy serving retailers, foodservice and manufacturers; its only registered brand found, Touch of Country, is a butter line with no consumer cheese products or shop.",
+        "signal": "web-research",
+        "url": "https://www.realseal.com/brands/touch-of-country-g-r-foods/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "g-r-foods-inc",
+    "name": "G&R Foods, Inc",
+    "tier": "review"
+  },
+  {
+    "city": "Neenah",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "galloway-co",
+    "name": "Galloway Co",
+    "tier": "auto"
+  },
+  {
+    "city": "Marshfield",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "gardner-s-wisconsin-cheese-llc",
+    "name": "Gardner's Wisconsin Cheese, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Germantown",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "gehl-foods",
+    "name": "Gehl Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "Sheboygan Falls",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 25 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/93/gibbsville-cheese-co%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Monterey/Monterey Jack, Washed Curd and Soaked Curd",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "gibbsville-cheese-company-inc",
+    "name": "Gibbsville Cheese Company, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Cuba City",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 19 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/62/gile-cheese%2c-llc--carr-cheese-factory"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "gile-cheese-llc",
+    "name": "Gile Cheese, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Gilman",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Shelf-stable/processed cheese specialist that is largely private-label but, after acquiring Dairyfood USA in 2022 under Borgman Capital, sells retail house brands Glacier Ridge Farms, Queso de Casa and Sonoma Jacks.",
+        "signal": "web-research",
+        "url": "https://www.privatelabelcheesesnacks.com/cheese-snack-products/Glacier-Ridge-Farms-Gourmet-Spreadable-Cheese"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "gilman-cheese-corporation",
+    "name": "Gilman Cheese Corporation",
+    "tier": "review"
+  },
+  {
+    "city": "Linden",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Bleu, Gorgonzola",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Linden plant bought by Carr Valley owner Sid Cook in 2012 to make all of Carr Valley's blue cheeses; its named cheeses (Glacier Point Blue, Glacier Gorgonzola, Glacier Penta Creme) are sold retail through cheese shops.",
+        "signal": "web-research",
+        "url": "https://www.wisconsincheesemart.com/products/glacier-point-blue"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "glacier-point-cheese",
+    "name": "Glacier Point Cheese",
+    "tier": "review"
+  },
+  {
+    "city": "Burlington",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Family company founded by spreadmaker Gene Glas selling its own branded all-natural refrigerated cheese spreads (cheddar, bacon, wine, Swiss-almond) with online ordering and listed retail locations/events.",
+        "signal": "web-research",
+        "url": "https://www.glasallnaturals.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "glas-all-naturals",
+    "name": "Glas All Naturals",
+    "tier": "review"
+  },
+  {
+    "city": "Fond du Lac",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 8 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/49/grande-cheese-company"
+      },
+      {
+        "detail": "licensed to make Asiago, Cheddar, Granular and Stirred Curd, Hard, Mozzarella, Parmesan and Reggiano",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "grande-cheese-company",
+    "name": "Grande Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Greenwood",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/48/grassland-dairy-products%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "grassland-dairy-products-inc",
+    "name": "Grassland Dairy Products, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Wausau",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "great-lakes-cheese-company-inc",
+    "name": "Great Lakes Cheese Company, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "La Crosse",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "The La Crosse site is a process-cheese plant of Great Lakes Cheese Co., a packer that is mostly private-label but owns retail brands including Adams Reserve, Great Lakes, American Accent, Rico Mia and Thoughtful Organics.",
+        "signal": "web-research",
+        "url": "https://www.greatlakescheese.com/channels/retail/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "great-lakes-cheese-of-la-crosse",
+    "name": "Great Lakes Cheese Of La Crosse",
+    "tier": "review"
+  },
+  {
+    "city": "Plymouth",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "great-lakes-cheese-of-wisconsin-inc",
+    "name": "Great Lakes Cheese Of Wisconsin Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Edgar",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/269/anderson-international-foods"
+      },
+      {
+        "detail": "licensed to make Cheddar, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Specialty cheesemaker with an online shop and named products (Merlot Cheddar, Abergele, sharp cheddar) plus kosher Cholov Yisroel lines, operating store locations in Edgar and Athens.",
+        "signal": "web-research",
+        "url": "https://harmonycheese.com/"
+      }
+    ],
+    "flags": [],
+    "id": "harmony-cheese",
+    "name": "Anderson International Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "De Pere",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 10 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/199/harmony-cheese-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "harmony-cheese-de-pere",
+    "name": "Harmony Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Athens",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "harmony-cheese-llc-athens-plant",
+    "name": "Harmony Cheese LLC - Athens Plant",
+    "tier": "auto"
+  },
+  {
+    "city": "Barron",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 11 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/226/barron-county-cheese-llc"
+      },
+      {
+        "detail": "licensed to make Pasteurized Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Barron-based maker/marketer selling under its own retail brands Red Apple Cheese (in 10,000+ stores including Walmart and Costco), Cheese Brothers and Naturally Good Kosher; acquired by Gellert Global Group in 2025.",
+        "signal": "web-research",
+        "url": "https://cheesereporter.com/news/2025/04/14/gellert-global-group-acquires-heartisan-foods-strengthening-specialty-cheese-platform/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "heartisan-foods",
+    "name": "Heartisan Foods",
+    "tier": "review"
+  },
+  {
+    "city": "Kiel",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 18 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/31/henning-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "7 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "henning-cheese-inc",
+    "name": "Henning Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Westby",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Hard, Pasteurized Neufchatel Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "detail": "5 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Farmstead sheep creamery (recently sold by founder Brenda Jensen to Amy and Travis Forgues) whose named cheeses Driftless, Wischago, Ocooch and Bohemian Blue are sold through co-ops and cheese shops.",
+        "signal": "web-research",
+        "url": "https://dairylink.org/featured/hidden-springs-creamery"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "hidden-springs-creamery",
+    "name": "Hidden Springs Creamery",
+    "tier": "review"
+  },
+  {
+    "city": "Walworth",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/275/highfield-farm-creamery"
+      },
+      {
+        "detail": "licensed to make Bleu, Cheddar, Colby, Cold Pack Cheese/Cheese Food, Semisoft, Soft Ripened",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "highfield-farm-creamery",
+    "name": "Highfield Farm Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "East Troy",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 4 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/281/hill-valley-dairy-llc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Gouda, Hard",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "hill-valley-dairy",
+    "name": "Hill Valley Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Conover",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "hillbilly-hollow",
+    "name": "Hillbilly Hollow",
+    "tier": "auto"
+  },
+  {
+    "city": "Woodville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "hilltop-dairy",
+    "name": "Hilltop Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Fort Atkinson",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/1306/hoard%e2%80%99s-dairyman-farm-creamery"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "hoard-s-dairymen-farm-creamery",
+    "name": "Hoard's Dairymen Farm Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Holmen",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Co-manufacturer (est. 2019, 100,000 sq ft plant) of custom processed, blended and plant-based cheeses for industrial, foodservice and retail private-label customers; no brand of its own.",
+        "signal": "web-research",
+        "url": "https://www.holmencheese.com/"
+      }
+    ],
+    "flags": [],
+    "id": "holmen-cheese-llc",
+    "name": "Holmen Cheese, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Sheboygan Fls",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "homestead-cheese-processors-llc",
+    "name": "Homestead Cheese Processors, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "West Bend",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "honey-grove-ice-cream-co-llc",
+    "name": "Honey Grove Ice Cream Co., LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Mineral Point",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 17 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/39/hooks-cheese-company%2c-inc"
+      },
+      {
+        "detail": "licensed to make Bleu, Cheddar, Colby, Gorgonzola, Gouda, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "4 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "hook-s-cheese-company-inc",
+    "name": "Hook's Cheese Company, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Neenah",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "horseshoe-beverage-company-llc",
+    "name": "Horseshoe Beverage Company LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Fall Creek",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Bleu, Brick, Caciocavallo Siciliano, Cheddar, Colby",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Fall Creek cutting/wrapping/manufacturing plant is one of the Wisconsin facilities of Schuman Cheese (Arthur Schuman Inc., NJ), whose own retail brands Cello, Yellow Door Creamery and Montforte are sold in supermarkets and cheese shops.",
+        "signal": "web-research",
+        "url": "https://www.delimarketnews.com/cheese-dairy/schuman-cheese-expands-new-wisconsin-production-facility/laura-hillen/mon-02272017-1131/4239"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "imperia-foods-fall-creek",
+    "name": "Imperia Foods - Fall Creek",
+    "tier": "review"
+  },
+  {
+    "city": "Kaukauna",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 10 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/297/integrity-cheese-packaging-of-wisconsin%2c-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Brick, Cheddar, Colby, Edam, Gouda",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Kaukauna cut-and-wrap conversion facility (founded 2018, SQF certified) that converts 40-lb and 640-lb cheese blocks to client specifications; a packaging service, not a brand.",
+        "signal": "web-research",
+        "url": "https://integritycheese.com/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "integrity-cheese-packaging-of-wi",
+    "name": "Integrity Cheese Packaging of WI",
+    "tier": "review"
+  },
+  {
+    "city": "Abbotsford",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "j-l-hawkeye-dairy-store",
+    "name": "J & L Hawkeye Dairy Store",
+    "tier": "auto"
+  },
+  {
+    "city": "Saukville",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Other, Pasteurized Blended Cheese, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Family-owned fermentation/biotech company making natural dairy flavors (including enzyme-modified cheese flavor systems), cultures and biosurfactants for food manufacturers; no consumer cheese.",
+        "signal": "web-research",
+        "url": "https://www.jeneilbiotech.com/"
+      }
+    ],
+    "flags": [],
+    "id": "jeneil-biotech-inc",
+    "name": "JENEIL BIOTECH, INC.",
+    "tier": "auto"
+  },
+  {
+    "city": "Waterloo",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 41 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/12/jims-cheese%2c-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "JLM Manufacturing is Jim's Cheese of Waterloo (a cut/wrap, waxing and gift-box operation owned by Lipari Foods since 2018), whose Jim's Cheese-branded waxed cheddar novelties and gift items are sold by retail cheese shops.",
+        "signal": "web-research",
+        "url": "https://adamscheese.shop/brand/jims-cheese/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "jlm-manufacturing-llc",
+    "name": "JLM Manufacturing LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Marinette",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "joe-s-cheese-house-inc",
+    "name": "Joe's Cheese House, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Juda",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "juda-tank-wash-llc",
+    "name": "Juda Tank Wash LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Fond du Lac",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "kelley-country-creamery-llc",
+    "name": "Kelley Country Creamery LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Rothschild",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "kerry",
+    "name": "Kerry",
+    "tier": "auto"
+  },
+  {
+    "city": "Jackson",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "kerry-ingredients",
+    "name": "Kerry Ingredients",
+    "tier": "auto"
+  },
+  {
+    "city": "Bethlehem",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 28 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/211/keystone-farms-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Bethlehem, PA marketer (founded 2014 by Nikole Raskovich) selling its own Keystone Farms brand of artisan cheeses, produced for it by a southern-Wisconsin co-op, through its own online shop; no Wisconsin plant of its own.",
+        "signal": "web-research",
+        "url": "https://www.keystonefarmscheese.com/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "keystone-farms-cheese",
+    "name": "Keystone Farms Cheese",
+    "tier": "review"
+  },
+  {
+    "city": "Clintonville",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Mozzarella, Neufchatel, Soft Ripened",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Kickaas Cheese, run by three Shawano friends with sister outfits The Cheese People and Stamper Cheese, makes its own named artisan cheeses (herbed jacks, sauced cheddars, hand-milled curds, a Camembert) and sells them at farmers-market tables.",
+        "signal": "web-research",
+        "url": "https://www.kickaascheese.com/about"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "kickaas-llc-or-the-cheese-people-or-stamper-cheese",
+    "name": "Kickaas LLC or The Cheese People or Stamper Cheese",
+    "tier": "review"
+  },
+  {
+    "city": "Plover",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "king-cone-llc",
+    "name": "King Cone LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Cambria",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/1301/kingston-cheese-cooperative"
+      },
+      {
+        "detail": "licensed to make Bleu, Gorgonzola",
+        "signal": "licence"
+      },
+      {
+        "detail": "4 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Amish farmer cooperative marketing under the Kingston Creamery brand with named, award-winning blues (Heritage Blue, Gorgonzola, Organic Blue, Bountiful Blue) sold via its own online shop and retail.",
+        "signal": "web-research",
+        "url": "https://www.kingstoncoop.org/"
+      }
+    ],
+    "flags": [],
+    "id": "kingston-cheese-cooperative",
+    "name": "Kingston Cheese Co-op",
+    "tier": "auto"
+  },
+  {
+    "city": "Green Bay",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "kitchen-fresh-foods-llc",
+    "name": "Kitchen Fresh Foods LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "New Auburn",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "klemish-creamery-llc",
+    "name": "Klemish Creamery, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/8/klondike-cheese-co"
+      },
+      {
+        "detail": "licensed to make Brick, Gouda, Muenster (Munster), Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "5 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "25 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "klondike-cheese-company",
+    "name": "Klondike Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Oconomowoc",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/255/koepke-family-farms"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "koepke-farms-inc",
+    "name": "Koepke Farms, Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Watertown",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/186/kraemer-wisconsin-cheese-ltd"
+      },
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "kraemer-wisconsin-cheese-ltd",
+    "name": "Kraemer Wisconsin Cheese Ltd",
+    "tier": "auto"
+  },
+  {
+    "city": "Beaver Dam",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cream Cheese, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "The Beaver Dam plant has made Philadelphia brand cream cheese since 1928 (about five million lbs/week); Kraft Heinz sells it and other named consumer cheese brands nationwide.",
+        "signal": "web-research",
+        "url": "https://dailydodge.com/kraft-heinz-celebrates-95-years-in-beaver-dam-community/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "kraft-heinz-foods-company",
+    "name": "Kraft Heinz Foods Company",
+    "tier": "review"
+  },
+  {
+    "city": "La Crosse",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "kwik-trip-dairy",
+    "name": "Kwik Trip Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "The Monroe plant produces La Vaquita brand Hispanic cheeses (queso fresco, cotija, panela, etc.), a DFA-owned consumer brand sold at Walmart, Costco, Kroger and H-E-B.",
+        "signal": "web-research",
+        "url": "https://lavaquitacheese.com/products/quesos/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "la-vaquita-inc",
+    "name": "La Vaquita, Inc",
+    "tier": "review"
+  },
+  {
+    "city": "Greenleaf",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 43 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/59/laack-bros-cheese-co%2c-inc"
+      },
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "laack-brothers-cheese-company",
+    "name": "Laack Brothers Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Malone",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/231/laclare-farms"
+      },
+      {
+        "detail": "licensed to make Cheddar, Gouda, Hard, Monterey/Monterey Jack, Muenster (Munster), Semisoft",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Hedrich family goat dairy in Malone selling award-winning named cheeses under the LaClare brand, led by flagship Evalon (2011 U.S. Championship winner), through its on-farm store and retail distribution.",
+        "signal": "web-research",
+        "url": "https://www.laclarefamilycreamery.com/"
+      }
+    ],
+    "flags": [],
+    "id": "laclare-creamery-llc",
+    "name": "LaClare Family Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Wausau",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Parmesan and Reggiano, Romano",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Lactalis Heritage Dairy is the Lactalis division built from the Kraft Heinz natural-cheese acquisition; the Wausau plant grates and packs retail Parmesan sold under the perpetually licensed Kraft label, and the division also owns retail brands such as Cracker Barrel and Black Diamond.",
+        "signal": "web-research",
+        "url": "https://perishablenews.com/dairy/lactalis-closes-acquisition-of-kraft-heinz-natural-cheese-business-in-united-states/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "lactalis-heritage-dairy-inc",
+    "name": "Lactalis Heritage Dairy, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Buffalo",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/45/lactalis-deli%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "lactalis-usa-inc",
+    "name": "Lactalis USA, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Belmont",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "10 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "The Belmont plant is one of the two Lactalis USA sites producing President-brand feta, a named retail product sold in grocery stores nationwide.",
+        "signal": "web-research",
+        "url": "https://www.globenewswire.com/news-release/2024/10/29/2970995/0/en/Lactalis-USA-Announces-55-Million-Expansion-to-Increase-Pr%C3%A9sident-Feta-Cheese-Production-in-Tulare-California-to-Meet-Growing-Demand.html"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "lactalis-usa-inc-belmont",
+    "name": "Lactalis USA, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Merrill",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food, Cream Cheese, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Lactalis' Merrill plant makes the Rondele line of retail spreadable and cold-pack cheeses (garlic and herb, vegetable, and similar flavors), which matches its cold pack, cream cheese, and process cheese licence.",
+        "signal": "web-research",
+        "url": "https://lactalisamericangroup.com/ctl-stories/timeline-stories/page/2/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "lactalis-usa-inc-merrill",
+    "name": "Lactalis USA, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Stanley",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/98/lagranders-hillside-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "lagrander-s-hillside-dairy-inc",
+    "name": "LaGrander's Hillside Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Turtle Lake",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Other, Parmesan and Reggiano, Romano",
+        "signal": "licence"
+      },
+      {
+        "detail": "13 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Lake Country Dairy is Schuman Cheese's Turtle Lake plant and produces the retail Cello brand of parmesan, asiago, and other Italian-style cheeses, repeat best-of-class winners at national contests.",
+        "signal": "web-research",
+        "url": "https://www.dairyfoods.com/articles/92430-schuman-cheeses-lake-country-dairy-plant-makes-italian-style-alpine-cheeses"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "lake-country-dairy-inc",
+    "name": "Lake Country Dairy, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Appleton",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/115/lamers-dairy-inc-dairylands-best"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Lamers is a fluid-milk bottler that makes no cheese itself, but its country store sells cheese carrying its own Lamers Dairy Dairyland's Best label, sourced from other Wisconsin cheese plants.",
+        "signal": "web-research",
+        "url": "https://lamersdairyinc.com/faqs/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "lamers-dairy-inc",
+    "name": "Lamers Dairy, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Spencer",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Monterey/Monterey Jack, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "6 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Land O'Lakes sells a retail dairy-case cheese line of 30-plus shredded, chunk, and snack items plus deli American under the Land O Lakes brand; Spencer is one of its Wisconsin cheese plants.",
+        "signal": "web-research",
+        "url": "https://www.prnewswire.com/news-releases/land-olakes-launches-cheese-line-in-wisconsin-301561857.html"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "land-o-lakes-cheese-division",
+    "name": "Land O Lakes - Cheese Division",
+    "tier": "review"
+  },
+  {
+    "city": "Belleville",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/268/landmark-creamery"
+      },
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "landmark-creamery-llc",
+    "name": "Landmark Creamery LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Waukesha",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "lifeway-foods-inc",
+    "name": "Lifeway Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Stevens Point",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "The Stevens Point site is a Lineage cold-storage warehouse (the former Service Cold Storage flagship) holding dairy and agricultural products; Lineage is a logistics company with no consumer cheese brand.",
+        "signal": "web-research",
+        "url": "https://www.onelineage.com/facilities/stevens-point"
+      }
+    ],
+    "flags": [],
+    "id": "lineage-logistics",
+    "name": "Lineage Logistics",
+    "tier": "auto"
+  },
+  {
+    "city": "Hudson",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "lotus-creamery-llc",
+    "name": "Lotus Creamery LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Grantsburg",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "lovetree-farmstead-cheese",
+    "name": "LoveTree Farmstead Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "New Glarus",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "lsi",
+    "name": "LSI",
+    "tier": "auto"
+  },
+  {
+    "city": "Granton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 24 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/30/lynn-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Granular and Stirred Curd, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "lynn-dairy-inc",
+    "name": "Lynn Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Granton",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "lynn-proteins-inc",
+    "name": "Lynn Proteins, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Jefferson",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Gouda, Other",
+        "signal": "licence"
+      },
+      {
+        "confidence": "low",
+        "detail": "Three searches surfaced no website, brand, or retail trace for Maggie's Farm LLC of Jefferson; its licence profile (affinage, brining, cut/wrap of cheddar and gouda) suggests a small behind-the-scenes operation, but consumer presence could not be established either way.",
+        "signal": "web-research",
+        "url": null
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence"
+    ],
+    "id": "maggie-s-farm-llc",
+    "name": "Maggie's Farm LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Appleton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/221/malcore-foods%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food, Cream Cheese",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "malcore-foods",
+    "name": "Malcore Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "Milladore",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Gouda, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "confidence": "high",
+        "detail": "Maple Grove Cheese is a family factory dating to 1923 that sells cheddar, colby, and jack varieties under its own name through an on-site retail store and the web shop at maplegrovecheese.com.",
+        "signal": "web-research",
+        "url": "https://maplegrovecheese.com/collections/all"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "maple-grove-cheese-inc",
+    "name": "Maple Grove Cheese, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Medford",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "maple-island-inc",
+    "name": "Maple Island, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/9/maple-leaf-cheesemakers%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "4 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "maple-leaf-cheese-co",
+    "name": "Maple Leaf Cheese Co",
+    "tier": "auto"
+  },
+  {
+    "city": "Juda",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "maple-leaf-cheese-store-llc",
+    "name": "Maple Leaf Cheese Store LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "maple-leaf-sales-inc",
+    "name": "Maple Leaf Sales, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Marathon",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "marathon-cheese-corporation",
+    "name": "Marathon Cheese Corporation",
+    "tier": "auto"
+  },
+  {
+    "city": "Thorp",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/193/marieke-gouda"
+      },
+      {
+        "detail": "licensed to make Cheddar, Gouda",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "15 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Holland's Family Cheese sells Marieke Gouda under its own registered brand through its farm store and cafe in Thorp and an online shop, with over 300 awards including the 2013 U.S. Championship.",
+        "signal": "web-research",
+        "url": "https://www.mariekegouda.com/"
+      }
+    ],
+    "flags": [],
+    "id": "marieke-gouda",
+    "name": "Hollands Family Cheese - Marieke Gouda",
+    "tier": "auto"
+  },
+  {
+    "city": "Durand",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "marron-foods",
+    "name": "Marron Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "Plymouth",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 21 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/40/masters-gallery-foods%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "8 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Masters Gallery Foods is a private-label retail, foodservice, and industrial cheese packer and converter (plants in Plymouth and Oostburg) and markets no consumer brand of its own.",
+        "signal": "web-research",
+        "url": "https://www.mastersgalleryfoods.com/our-story/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "masters-gallery-foods-inc",
+    "name": "Masters Gallery Foods, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Owen",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mauel-s-dairy-inc",
+    "name": "Mauel's Dairy Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Hill Point",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/250/mccluskey-brothers-organic-farms"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "McCluskey Brothers is a certified-organic Hillpoint farm that cuts and wraps its own grass-fed cheese line and direct-markets it under the family name at Madison farmers markets and an online store, while also cutting and wrapping for four other dairy plants.",
+        "signal": "web-research",
+        "url": "https://www.mccluskeybros.com/store/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "mccluskey-brothers",
+    "name": "McCluskey Brothers",
+    "tier": "review"
+  },
+  {
+    "city": "Green Bay",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/298/mct-dairies%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mct-dairies-inc",
+    "name": "MCT Dairies, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Muscoda",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/60/meister-cheese-co"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby, Gouda, Hard, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "7 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "meister-cheese-co-llc",
+    "name": "Meister Cheese Co LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Darlington",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "mexican-cheese-producers",
+    "name": "Mexican Cheese Producers",
+    "tier": "review"
+  },
+  {
+    "city": "Tomah",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mhf-opco-llc",
+    "name": "MHF Opco, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Sheboygan",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "miesfeld-s-triangle-market-llc",
+    "name": "Miesfeld's Triangle Market, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Mazomanie",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mike-s-mix-llc",
+    "name": "Mike's Mix, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Fond du Lac",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "milk-specialties-global-actus-nutrition",
+    "name": "Milk Specialties Global, Actus Nutrition",
+    "tier": "review"
+  },
+  {
+    "city": "De Pere",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Skim Milk for Mfg.",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "The De Pere plant (a former Foremost Farms, then Dean Foods site) bottles fluid milk and makes sour cream historically sold under the Morning Glory dairy brand; it produces no cheese, so it has no consumer cheese line.",
+        "signal": "web-research",
+        "url": "https://www.dairyfoods.com/directories/7376-dairy-plants-usa/listing/8992-dean-foods-of-wi-dba-morning-glory"
+      }
+    ],
+    "flags": [],
+    "id": "morning-glory-de-pere-llc",
+    "name": "Morning Glory De Pere, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Mosinee",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mosinee-cold-storage-inc",
+    "name": "Mosinee Cold Storage, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Platteville",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Brick, Muenster (Munster), Other",
+        "signal": "licence"
+      },
+      {
+        "confidence": "low",
+        "detail": "Moundview is a family cheese plant (est. 2018) specializing in Hispanic-style queso blanco alongside its brick/muenster licence; its site states it does not sell direct to consumers and that its cheese reaches shoppers through retailers, but whether those retail packs carry a Moundview-owned brand could not be verified.",
+        "signal": "web-research",
+        "url": "https://www.moundviewdairy.com/"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence"
+    ],
+    "id": "moundview-dairy",
+    "name": "Moundview Dairy",
+    "tier": "review"
+  },
+  {
+    "city": "Windsor",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mousehouse-cheesehaus",
+    "name": "Mousehouse Cheesehaus",
+    "tier": "auto"
+  },
+  {
+    "city": "Watertown",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mullen-s-dairy-bar",
+    "name": "Mullen's Dairy Bar",
+    "tier": "auto"
+  },
+  {
+    "city": "Mosinee",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 22 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/55/mullins-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Brick, Cheddar, Colby, Edam, Gouda",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "mullins-cheese-inc",
+    "name": "Mullins Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Muscoda",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "muscoda-protein-products",
+    "name": "Muscoda Protein Products",
+    "tier": "auto"
+  },
+  {
+    "city": "Fond du Lac",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "n-f-o-eastern-wis-dairy-office",
+    "name": "N F O Eastern Wis Dairy Office",
+    "tier": "auto"
+  },
+  {
+    "city": "Marshfield",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 16 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/76/nasonville-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Brick, Cheddar, Colby, Gouda, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "detail": "5 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "5 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "nasonville-dairy-inc",
+    "name": "Nasonville Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Curtiss",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Nasonville Mail Order in Curtiss is the mail-order and retail arm of Nasonville Dairy, which sells its 42 cheese varieties under its own brand through its stores and ships nationwide from nasonvilledairy.com.",
+        "signal": "web-research",
+        "url": "https://nasonvilledairy.com/shop/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "nasonville-mail-order",
+    "name": "Nasonville Mail Order",
+    "tier": "review"
+  },
+  {
+    "city": "Waterford",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "noble-brothers-waterford-creamery",
+    "name": "Noble Brothers Waterford Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Westby",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/208/nordic-creamery"
+      },
+      {
+        "detail": "licensed to make Cheddar",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "nordic-creamery",
+    "name": "Nordic Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Verona",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/189/northwoods-cheese-company-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Northwoods Cheese is a Verona gift-basket marketer with no plant of its own that sells shelf-stable Wisconsin cheese and sausage gift sets under the Northwoods Cheese brand through its own web shop and the gift-basket trade.",
+        "signal": "web-research",
+        "url": "https://northwoodscheese.com/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "northwoods-cheese-company-llc",
+    "name": "Northwoods Cheese Company, LLC",
+    "tier": "review"
+  },
+  {
+    "city": "DePere",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/195/novaks-cheese-of-wisconsin%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Novak's Cheese of Wisconsin, formed in 2006 by Bill Novak II after cutting/processing and Great Lakes Cheese procurement roles, operates as a wholesale cheese processor and distributor in De Pere, and no Novak's-branded retail cheese line was found.",
+        "signal": "web-research",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/195/novaks-cheese-of-wisconsin,-inc"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "novak-s-cheese-of-wisconsin-inc",
+    "name": "Novak's Cheese of Wisconsin, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Clintonville",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 4 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/91/oak-grove-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "oak-grove-dairy-inc",
+    "name": "Oak Grove Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Boyceville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ohly-americas",
+    "name": "Ohly Americas",
+    "tier": "auto"
+  },
+  {
+    "city": "Cashton",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "old-country-cheese",
+    "name": "Old Country Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Cashton",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Brick, Cheddar, Colby, Gouda, Granular and Stirred Curd",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Old Country Farms Co-op runs Old Country Cheese in Cashton, making more than 20 varieties from roughly 230 Amish member farms and selling them under the Old Country Cheese name through its on-site store and online shop.",
+        "signal": "web-research",
+        "url": "https://www.oldcountrycheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "old-country-farms-co-op",
+    "name": "Old Country Farms Co-op",
+    "tier": "review"
+  },
+  {
+    "city": "Mayville",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food, Pasteurized Cheese Spread, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Old Fashioned Foods in Mayville makes cheese spreads, squeeze cheese, and cheese snacks sold at retail under its own Old Fashioned Foods label, alongside private-label and foodservice production.",
+        "signal": "web-research",
+        "url": "https://www.oldfash.com/retail-products/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "old-fashioned-cheese-mayville-cheese",
+    "name": "Old Fashioned Cheese, Mayville Cheese",
+    "tier": "review"
+  },
+  {
+    "city": "Sheboygan",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "old-wisconsin-sausage",
+    "name": "Old Wisconsin Sausage",
+    "tier": "auto"
+  },
+  {
+    "city": "Sheboygan",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cream Cheese",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Old World Creamery's own retail brand is butter only (plus butter co-manufacturing for other brands); the cheese in its Sheboygan company store comes from affiliated family businesses, and no OWC-branded consumer cheese was found despite its cream cheese licence.",
+        "signal": "web-research",
+        "url": "https://www.owcreamery.com/"
+      }
+    ],
+    "flags": [],
+    "id": "old-world-creamery-llc",
+    "name": "Old World Creamery LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Chippewa Falls",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "olsons-ice-cream",
+    "name": "Olsons Ice Cream",
+    "tier": "auto"
+  },
+  {
+    "city": "Chaseburg",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Chaseburg Creamery is Organic Valley's (CROPP Cooperative) award-winning butter plant; Organic Valley is a national retail brand whose lineup includes named consumer cheeses, though this particular plant churns butter rather than making cheese.",
+        "signal": "web-research",
+        "url": "https://www.organicvalley.coop/blog/the-not-so-secret-ingredient-to-organic-valley-butter"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "organic-valley-chaseburg",
+    "name": "Organic Valley Chaseburg",
+    "tier": "review"
+  },
+  {
+    "city": "Hilbert",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/85/ornua-ingredients-north-america"
+      },
+      {
+        "detail": "licensed to make Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ornua-ingredients-north-america",
+    "name": "Ornua Ingredients North America",
+    "tier": "auto"
+  },
+  {
+    "city": "Whitehall",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Parmesan and Reggiano, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Ornua Ingredients North America, the renamed Whitehall Specialties, custom-formulates processed-cheese ingredient solutions strictly for food-manufacturing and foodservice customers; its Irish parent's Kerrygold retail products are not made at the Wisconsin plants.",
+        "signal": "web-research",
+        "url": "https://www.dairyprocessing.com/articles/756-cheese-company-now-officially-renamed-ornua-ingredients-north-america"
+      }
+    ],
+    "flags": [],
+    "id": "ornua-ingredients-north-america-whitehall-east",
+    "name": "Ornua Ingredients North America - Whitehall East",
+    "tier": "auto"
+  },
+  {
+    "city": "Oshkosh",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 13 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/206/oshkosh-cold-storage"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "oshkosh-storage-company",
+    "name": "Oshkosh Cheese Sales",
+    "tier": "review"
+  },
+  {
+    "city": "Campbellsport",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ottery-brothers-llc",
+    "name": "Ottery Brothers, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Milwaukee",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "outpost-natural-foods",
+    "name": "Outpost Natural Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "Hager City",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "oxheart-farm-llc",
+    "name": "Oxheart Farm LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Pawleys Island",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/1305/palmetto-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "palmetto-cheese",
+    "name": "Palmetto Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Mechanicsburg",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 10 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/245/panos-brandsandrew---everett"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "PANOS Brands is a New Jersey specialty-food brand owner that sells retail natural cheese nationally under its Andrew & Everett brand, acquired with Ry-Con Specialty Foods.",
+        "signal": "web-research",
+        "url": "https://panosbrands.com/our-brands/andrew-everett/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "panos-brands",
+    "name": "PANOS Brands",
+    "tier": "review"
+  },
+  {
+    "city": "Cashton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 10 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/94/pasture-pride-cheese-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "pasture-pride-cheese-llc",
+    "name": "Pasture Pride Cheese, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Blanchardville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "pecatonica-packaging-storage",
+    "name": "Pecatonica Packaging & Storage",
+    "tier": "auto"
+  },
+  {
+    "city": "Crivitz",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "pelkin-s-smokey-meat-market-llc",
+    "name": "Pelkin's Smokey Meat Market, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Johnson Creek",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "pernat-s-premium-meats",
+    "name": "Pernat's Premium Meats",
+    "tier": "auto"
+  },
+  {
+    "city": "Ixonia",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Pernat's of Ixonia is a family butcher shop and small grocery focused on meat processing and sausage; its website markets no cheese under the Pernat's name despite the plant's cheddar/custom-processing licence.",
+        "signal": "web-research",
+        "url": "https://pernat-meats.com/"
+      }
+    ],
+    "flags": [],
+    "id": "pernats-of-ixonia",
+    "name": "Pernats of Ixonia",
+    "tier": "auto"
+  },
+  {
+    "city": "Manitowoc",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "pine-river-dairy-inc",
+    "name": "Pine River Dairy Inc",
+    "tier": "review"
+  },
+  {
+    "city": "Newton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/176/pine-river-pre-pack"
+      },
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "detail": "8 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "pine-river-pre-pack-inc",
+    "name": "Pine River Pre Pack, Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Platteville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "pioneer-sweets",
+    "name": "Pioneer Sweets",
+    "tier": "auto"
+  },
+  {
+    "city": "Stevens Point",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "portesi-italian-food-inc",
+    "name": "Portesi Italian Food, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Davenport",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/69/prairie-farms-cheese-division"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "prairie-farms-dairy-inc",
+    "name": "Prairie Farms Dairy, Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Mindoro",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Bleu, Brick, Cheddar, Colby, Gorgonzola, Granular and Stirred Curd",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Prairie Farms' century-old Mindoro plant makes the co-op's Danish-style Blue and Gorgonzola, which are sold at grocery retail under the Prairie Farms brand (e.g. Prairie Farms Mindoro Blue at food co-ops).",
+        "signal": "web-research",
+        "url": "https://prairiefarmscheese.com/manufacturing-facilities/mindoro"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "prairie-farms-dairy-inc-mindoro",
+    "name": "Prairie Farms Dairy, Inc. - Mindoro",
+    "tier": "review"
+  },
+  {
+    "city": "Shullsburg",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Gouda, Swiss and Emmentaler",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Prairie Farms Dairy sells retail cheese under the Prairie Farms and Shullsburg Creamery brands; its Shullsburg site (Shullsburg Creamery plus the White Hill Swiss plant, fully acquired 2020) was announced closed with roughly 97 layoffs, though the brand and the town's retail cheese store continue.",
+        "signal": "web-research",
+        "url": "https://www.wpr.org/economy/prairie-farms-dairy-closing-2-southwest-wisconsin-plants-laying-off-nearly-100-workers"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "prairie-farms-dairy-inc-shullsburg",
+    "name": "Prairie Farms Dairy, Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Marshfield",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "prestige-proteins-and-falcon-ingredients",
+    "name": "Prestige Proteins and Falcon Ingredients",
+    "tier": "auto"
+  },
+  {
+    "city": "Gillett",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "primal-eats",
+    "name": "Primal Eats",
+    "tier": "auto"
+  },
+  {
+    "city": "Milwaukee",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "purple-door-ice-cream-shoppe-llc",
+    "name": "Purple Door Ice Cream Shoppe, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "La Crosse",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "ranison-candy-ice-cream",
+    "name": "Ranison Candy & Ice Cream",
+    "tier": "auto"
+  },
+  {
+    "city": "Appleton",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/212/red-barn-family-farms"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "red-barn-family-farms",
+    "name": "Red Barn Family Farms",
+    "tier": "auto"
+  },
+  {
+    "city": "Sturgeon Bay",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "renard-s-cheese",
+    "name": "Renard's Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Kaukauna",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "renew-it-cheese-ii",
+    "name": "Renew It Cheese II",
+    "tier": "auto"
+  },
+  {
+    "city": "Colby",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/17/welcome-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Pasteurized Cheese Spread, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Revela Foods (formed 2022 from Welcome, Gamay Food Ingredients and North Star Processing; acquired by ADM in late 2023) makes B2B dairy flavor ingredients, cheese sauces and snack seasonings for food manufacturers, with no retail brand.",
+        "signal": "web-research",
+        "url": "https://www.adm.com/en-us/news/news-releases/2023/12/adm-adds-new-capabilities-to-its-industry-leading-flavor-business-with-agreement-to-acquire-revela-foods/"
+      }
+    ],
+    "flags": [],
+    "id": "revela-foods-colby-llc",
+    "name": "Welcome Dairy LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "rfs-cheese-llc",
+    "name": "RFS Cheese, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Eau Claire",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "roadside-ice-cream-diner",
+    "name": "Roadside Ice Cream Diner",
+    "tier": "auto"
+  },
+  {
+    "city": "Shullsburg",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 9 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/201/roelli-cheese-haus"
+      },
+      {
+        "detail": "licensed to make Bleu, Cheddar, Colby, Gouda, Granular and Stirred Curd, Hard",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "roelli-cheese-company-inc",
+    "name": "Roelli Cheese Company, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Shullsburg",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "rolling-hills-dairy-producers-cooperative",
+    "name": "Rolling Hills Dairy Producers Cooperative",
+    "tier": "auto"
+  },
+  {
+    "city": "Kewaunee",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 30 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/3/ron%e2%80%99s-wisconsin-cheese%2c-llcponderosa-farmstead"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack, Mozzarella, Semisoft",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      }
+    ],
+    "flags": [],
+    "id": "ron-s-wisconsin-cheese",
+    "name": "Ron's Wisconsin Cheese",
+    "tier": "auto"
+  },
+  {
+    "city": "Algoma",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 13 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/58/renards-cheese-store-llc"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      }
+    ],
+    "flags": [],
+    "id": "rosewood-dairy-inc",
+    "name": "Rosewood Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Columbus",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "royal-guernsey-creamery-llc",
+    "name": "Royal Guernsey Creamery LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Middleton",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "saco-foods-and-hoosier-hill-farm",
+    "name": "Saco Foods and Hoosier Hill Farm",
+    "tier": "auto"
+  },
+  {
+    "city": "Luxemburg",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "salmon-s-meat-products",
+    "name": "Salmon's Meat Products",
+    "tier": "auto"
+  },
+  {
+    "city": "Waupun",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 21 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/61/saputo-cheese-usa-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Bleu, Brick, Cheddar, Colby, Gorgonzola",
+        "signal": "licence"
+      },
+      {
+        "detail": "4 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "3 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "saputo-cheese-usa",
+    "name": "Saputo Cheese USA",
+    "tier": "auto"
+  },
+  {
+    "city": "Hilbert",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "confidence": "high",
+        "detail": "Sargento (Plymouth, founded 1953) is one of the largest national retail cheese brands, selling Sargento-branded shredded, sliced and snack natural cheese in every major grocery chain.",
+        "signal": "web-research",
+        "url": "https://www.sargento.com/our-cheese"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "sargento-cheese-inc",
+    "name": "Sargento Cheese Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Plymouth",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 28 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/100/sargento-foods-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "sargento-foods-inc",
+    "name": "Sargento Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Plymouth",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 16 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/25/sartori-company"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "sartori-cheese-company",
+    "name": "Sartori Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Plymouth",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Cheddar, Other, Parmesan and Reggiano, Romano",
+        "signal": "licence"
+      },
+      {
+        "detail": "3 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      },
+      {
+        "confidence": "high",
+        "detail": "Sartori (Plymouth, family-owned since 1939) is a top-10 US specialty cheese brand selling named products like the BellaVitano line at retailers nationwide and through its own online shop.",
+        "signal": "web-research",
+        "url": "https://www.sartoricheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
+      "has master cheesemakers or championship awards — worth an editorial look"
+    ],
+    "id": "sartori-company",
+    "name": "Sartori Company",
+    "tier": "review"
+  },
+  {
+    "city": "Columbus",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "sassy-cow-creamery",
+    "name": "Sassy Cow Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Muscoda",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "scenic-central-milk-producers-coop",
+    "name": "Scenic Central Milk Producers Coop",
+    "tier": "auto"
+  },
+  {
+    "city": "Madison",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "schoep-s-ice-cream",
+    "name": "Schoep's Ice Cream",
+    "tier": "auto"
+  },
+  {
+    "city": "Green Bay",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 44 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/47/schreiber-foods%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cream Cheese, Pasteurized Process Cheese/Cheese Food",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "schreiber-foods-inc",
+    "name": "Schreiber Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Darlington",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Bleu, Cheddar, Colby, Gorgonzola, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Schroeder Kase is a small Darlington artisan cheesemaker whose branded cheeses, notably a Triple Creme Brie, are sold at Wisconsin cheese shops and through its Dane County Farmers' Market membership.",
+        "signal": "web-research",
+        "url": "https://dcfm.org/members/1218"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "schroeder-kase",
+    "name": "Schroeder Kase",
+    "tier": "review"
+  },
+  {
+    "city": "Fairfield",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/125/schuman-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "schuman-cheese-inc",
+    "name": "Schuman Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Chilton",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "scoops-ice-cream-house",
+    "name": "Scoops Ice Cream House",
+    "tier": "auto"
+  },
+  {
+    "city": "Sun Prairie",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cold Pack Cheese/Cheese Food, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Scott's of Wisconsin (Sun Prairie, est. 1979) sells cheese spreads, beer cheese, cold pack and fudge cheese under its own Scott's of Wisconsin label alongside a substantial private-label/co-pack business.",
+        "signal": "web-research",
+        "url": "https://www.scottsofwi.com/products.php"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "scott-s-of-wisconsin",
+    "name": "Scott's Of Wisconsin",
+    "tier": "review"
+  },
+  {
+    "city": "Brookfield",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "scratch-ice-cream",
+    "name": "Scratch Ice Cream",
+    "tier": "auto"
+  },
+  {
+    "city": "De Pere",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 4 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/54/scray-cheese-co-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "scray-cheese-company",
+    "name": "Scray Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "De Pere",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Edam, Gouda, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Scray Cheese is a fourth-generation De Pere factory (since 1924) whose attached Scray Cheese Shoppe and online store sell its own curds, cheddar, edam, fontina and gouda.",
+        "signal": "web-research",
+        "url": "https://www.scraycheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "scray-s-cheese-co",
+    "name": "Scray's Cheese Co",
+    "tier": "review"
+  },
+  {
+    "city": "La Crosse",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "select-custom-solutions",
+    "name": "Select Custom Solutions",
+    "tier": "auto"
+  },
+  {
+    "city": "Union Grove",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "silo-view-creamery-llc",
+    "name": "Silo View Creamery LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Monticello",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 4 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/103/silver-lewis-cheese-factory-cooperative"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Edam, Gouda, Mozzarella, Provolone",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "silver-lewis-cheese-factory-cooperative",
+    "name": "Silver Lewis Cheese Factory Cooperative",
+    "tier": "auto"
+  },
+  {
+    "city": "Reeseville",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 33 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/34/specialty-cheese-company%2c-inc"
+      },
+      {
+        "detail": "licensed to make Brick, Granular and Stirred Curd, Hard, Muenster (Munster), Other, Semisoft",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "specialty-cheese-company-inc",
+    "name": "Specialty Cheese Company, Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Beloit",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "spray-tek-llc",
+    "name": "Spray - Tek, LLC.",
+    "tier": "auto"
+  },
+  {
+    "city": "Oconto Falls",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella, Washed Curd and Soaked Curd",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Springside (Oconto Falls, making cheese since 1908, now branded Springside Artisan Cheese) sells its handcrafted cheddars and flavored cheeses through its factory store, a Pueblo, Colorado store, and its own online shop.",
+        "signal": "web-research",
+        "url": "https://springsidecheese.com/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "springside-artisan-cheese-llc",
+    "name": "Springside Artisan Cheese LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Oconto Falls",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 8 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/155/springside-cheese-corp"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "springside-cheese-corporation",
+    "name": "Springside Cheese Corporation",
+    "tier": "auto"
+  },
+  {
+    "city": "Osseo",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "St. Isidore's Dairy is a six-cow Osseo farmstead creamery selling its Good Food Award-winning clothbound raw-milk cheddar under its own name at the Eau Claire farmers market and Wisconsin cheese shops like Fromagination.",
+        "signal": "web-research",
+        "url": "https://fromagination.com/product/saint-isidores-bandaged-cheddar-cheese/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "st-isidore-s-dairy",
+    "name": "St. Isidore's Dairy",
+    "tier": "review"
+  },
+  {
+    "city": "Coloma",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 25 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/272/stoneridge-wholesale-division"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "stoneridge-wholesale-division-llc",
+    "name": "StoneRidge Meat & Country Market",
+    "tier": "review"
+  },
+  {
+    "city": "Plain",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack, Mozzarella, Muenster (Munster), Washed Curd and Soaked Curd",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Straka Meats (Plain, since 1952) is a custom meat processor and retail butcher whose site markets only meat, with no cheese offered under the Straka name despite its dairy cut/wrap licence.",
+        "signal": "web-research",
+        "url": "https://strakameats.com/"
+      }
+    ],
+    "flags": [],
+    "id": "straka-meats-inc",
+    "name": "Straka Meats, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Manawa",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "sturm-foods",
+    "name": "Sturm Foods",
+    "tier": "auto"
+  },
+  {
+    "city": "Gays Mills",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "sunny-ridge-creamery",
+    "name": "Sunny Ridge Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Evansville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "swiss-family-smokehouse",
+    "name": "Swiss Family Smokehouse",
+    "tier": "auto"
+  },
+  {
+    "city": "Boyceville",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Other",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Taste & See Creamery is a Boyceville farmstead operation making small-batch cheese on the farm, with its fresh cheese curds sold under its own name at local retailers such as the Grain Bin butcher shop.",
+        "signal": "web-research",
+        "url": "https://business.wilocalfood.org/directory/Details/taste-see-creamery-3239670?rendermode=print"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "taste-see-creamery-llc",
+    "name": "Taste & See Creamery LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Washburn",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "tetzner-dairy",
+    "name": "Tetzner Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Kohler",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "the-american-club",
+    "name": "The American Club",
+    "tier": "auto"
+  },
+  {
+    "city": "Waterloo",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "the-deli-source",
+    "name": "The Deli Source",
+    "tier": "auto"
+  },
+  {
+    "city": "La Crosse",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "the-pearl-ice-cream-parlor",
+    "name": "The Pearl Ice Cream Parlor",
+    "tier": "auto"
+  },
+  {
+    "city": "Kiel",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "thiel-distribution-center-inc",
+    "name": "Thiel Distribution Center, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Weyauwega",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Colby, Gouda, Gruyere, Mozzarella, Muenster (Munster)",
+        "signal": "licence"
+      },
+      {
+        "confidence": "low",
+        "detail": "Topp Cheese Co. of Weyauwega surfaces only as a cheese cutting/wrapping/packaging supplier in an industrial directory; three searches found no website, retail listing, branded product or market presence of any kind.",
+        "signal": "web-research",
+        "url": "https://industrynet.com/listing/1200485/topp-cheese-co"
+      }
+    ],
+    "flags": [
+      "no DFW listing and web research did not settle consumer presence"
+    ],
+    "id": "topp-cheese",
+    "name": "Topp Cheese",
+    "tier": "review"
+  },
+  {
+    "city": "Greenville",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "tria-frog-treats-llc",
+    "name": "Tria Frog Treats LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Boscobel",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Asiago, Brick, Cheddar, Colby, Gouda, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Truvant's Boscobel campus belongs to a global contract-packaging and co-manufacturing company that cuts, wraps and packages other brands' products and sells nothing under its own name.",
+        "signal": "web-research",
+        "url": "https://www.truvant.com/"
+      }
+    ],
+    "flags": [],
+    "id": "truvant-north",
+    "name": "Truvant North",
+    "tier": "auto"
+  },
+  {
+    "city": "Freedom",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Two Guernsey Girls Creamery (Freedom, launched 2021) bottles A2 Guernsey milk and sells its own flavored cheese curds directly to shoppers, including through a second retail store it opened.",
+        "signal": "web-research",
+        "url": "https://thebusinessnews.com/northeast/two-guernsey-girls-creamery-opens-second-retail-store/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "two-guernsey-girls-creamery-llc",
+    "name": "Two Guernsey Girls Creamery LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Fremont",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 23 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/57/union-star-corp"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby, Granular and Stirred Curd, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "union-star-corp",
+    "name": "Union Star, Corp.",
+    "tier": "auto"
+  },
+  {
+    "city": "Dodgeville",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/108/uplands-cheese"
+      },
+      {
+        "detail": "licensed to make Hard",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "uplands-cheese-company",
+    "name": "Uplands Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Browntown",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 2 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/28/v-v-supremo-foods%2c-inc"
+      },
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "7 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "v-v-supremo-foods-inc",
+    "name": "V & V Supremo Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Lancaster",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "vesperman-farms",
+    "name": "Vesperman Farms",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 9 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/213/w-w-dairy%2c-llc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "w-w-dairy-llc",
+    "name": "W&W Dairy, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Kewaunee",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/285/wakker-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wakker-cheese-llc",
+    "name": "Wakker Cheese LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Waupun",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "waupun-dairy",
+    "name": "Waupun Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Marshfield",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "weber-farm-store",
+    "name": "Weber Farm Store",
+    "tier": "auto"
+  },
+  {
+    "city": "Hayward",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "west-s-hayward-dairy",
+    "name": "West's Hayward Dairy",
+    "tier": "auto"
+  },
+  {
+    "city": "Westby",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 6 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/19/westby-cooperative-creamery"
+      },
+      {
+        "detail": "licensed to make Cream Cheese",
+        "signal": "licence"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "westby-cooperative-creamery",
+    "name": "Westby Cooperative Creamery",
+    "tier": "auto"
+  },
+  {
+    "city": "Cazenovia",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "weston-school-district",
+    "name": "Weston School District",
+    "tier": "auto"
+  },
+  {
+    "city": "Sun Prairie",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 19 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/263/weyauwega-cheese"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Weyauwega Cheese (Sun Prairie) pitches itself as a wholesale supplier to retailers and foodservice, but Weyauwega-branded cheddar cheese curds are stocked as named retail products by grocers including Pick 'n Save, Sendik's, Hy-Vee and Harris Teeter.",
+        "signal": "web-research",
+        "url": "https://www.picknsave.com/p/weyauwega-cheddar-cheese-curd/0002716415075"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "weyauwega-cheese",
+    "name": "Weyauwega Cheese",
+    "tier": "review"
+  },
+  {
+    "city": "Weyauwega",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 26 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/160/weyauwega-star-dairy%2c-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Brick, Cheddar, Colby, Gouda, Monterey/Monterey Jack",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      }
+    ],
+    "flags": [],
+    "id": "weyauwega-star-dairy-inc",
+    "name": "Weyauwega Star Dairy, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Mount Horeb",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 1 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/229/white-jasmine"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "White Jasmine (Mount Horeb, est. 2003) markets its own named line of spice-infused Goudas such as Citrus Ember, Saji BBQ and Tandoori alongside its spice blends, sold as White Jasmine-branded consumer products.",
+        "signal": "web-research",
+        "url": "https://culturecheesemag.com/blog/white-jasmine-huma-siddiqui-wisconsin-pakistan-gouda/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "white-jasmine-llc",
+    "name": "White Jasmine LLC",
+    "tier": "review"
+  },
+  {
+    "city": "Theresa",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 33 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/18/widmers-cheese-cellars%2c-inc"
+      },
+      {
+        "detail": "licensed to make Brick, Cheddar, Colby",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 master cheesemaker(s)",
+        "signal": "people"
+      },
+      {
+        "detail": "2 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "widmer-s-cheese-cellars-inc",
+    "name": "Widmer's Cheese Cellars, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Howard",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 36 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/135/winona-foods%2c-inc"
+      },
+      {
+        "detail": "licensed to make Asiago, Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "winona-foods-inc",
+    "name": "Winona Foods, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Kaukauna",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Sold By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/222/wisconsin-aging---grading-cheese--724-wi-select"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "WAG Cheese (Kaukauna) is chiefly a wholesale cheddar aging/grading/sourcing and private-label house, but it also markets its own retail line of hand-selected aged cheddars under the 724 / Wisconsin 724 Reserve brand named for the founder's grader number.",
+        "signal": "web-research",
+        "url": "https://wagcheese.com/"
+      }
+    ],
+    "flags": [
+      "seller-only DFW listing — commodity vs retail brand is a judgment call"
+    ],
+    "id": "wisconsin-aging-grading-cheese-inc",
+    "name": "Wisconsin Aging & Grading Cheese, Inc",
+    "tier": "review"
+  },
+  {
+    "city": "Oregon",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-cheese-company",
+    "name": "Wisconsin Cheese Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Monroe",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 20 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/32/wisconsin-cheese-group"
+      },
+      {
+        "detail": "licensed to make Other",
+        "signal": "licence"
+      },
+      {
+        "detail": "1 championship award(s)",
+        "signal": "awards"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-cheese-group-llc",
+    "name": "Wisconsin Cheese Group, LLC",
+    "tier": "auto"
+  },
+  {
+    "city": "Milwaukee",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-cheese-mart",
+    "name": "Wisconsin Cheese Mart",
+    "tier": "auto"
+  },
+  {
+    "city": "Waupun",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-dairy-distributing",
+    "name": "Wisconsin Dairy Distributing",
+    "tier": "auto"
+  },
+  {
+    "city": "Rudolph",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 41 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/50/wisconsin-dairy-state-cheese-co"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-dairy-state-cheese-co-inc",
+    "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "tier": "auto"
+  },
+  {
+    "city": "Mauston",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Gouda, Other, Parmesan and Reggiano, Swiss and Emmentaler",
+        "signal": "licence"
+      },
+      {
+        "confidence": "medium",
+        "detail": "Wisconsin Pride Cheese Co. in Mauston appears to be the Mauston plant and highway retail store of Sid Cook's Carr Valley Cheese (which lists Mauston among its four plants and retail locations), with its output sold to shoppers under the Carr Valley consumer brand rather than a separate Wisconsin Pride label.",
+        "signal": "web-research",
+        "url": "https://carrvalleycheese.com/about-us/"
+      }
+    ],
+    "flags": [
+      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
+    ],
+    "id": "wisconsin-pride-cheese-co-inc",
+    "name": "Wisconsin Pride Cheese Co. Inc.",
+    "tier": "review"
+  },
+  {
+    "city": "Plano",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 18 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/124/wisconsins-finest%2c-inc"
+      },
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-s-finest",
+    "name": "Wisconsin's Finest",
+    "tier": "auto"
+  },
+  {
+    "city": "Darlington",
+    "classification": "commodity",
+    "evidence": [
+      {
+        "detail": "licensed to make Cheddar, Monterey/Monterey Jack, Other, Skim Milk for Mfg.",
+        "signal": "licence"
+      },
+      {
+        "confidence": "high",
+        "detail": "Wisconsin Whey Protein (Darlington and Turtle Lake plants) makes barrel cheese, WPC-80, lactose and whey protein isolate as B2B ingredients for infant formula and sports nutrition, with no retail brand; FrieslandCampina announced plans to acquire it in December 2025.",
+        "signal": "web-research",
+        "url": "https://www.dairyprocessing.com/articles/3013-wisconsin-whey-protein-building-another-production-facility"
+      }
+    ],
+    "flags": [],
+    "id": "wisconsin-whey-protein-inc",
+    "name": "Wisconsin Whey Protein Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Auburndale",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 3 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/81/wiskerchen-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Bleu, Gorgonzola, Other",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wiskerchen-cheese-inc",
+    "name": "Wiskerchen Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "Wisconsin Rapids",
+    "classification": "processor",
+    "evidence": [
+      {
+        "detail": "no cheese manufactured on any licence",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "wow-logistics-company",
+    "name": "Wow Logistics Company",
+    "tier": "auto"
+  },
+  {
+    "city": "Cadott",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 4 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/202/yellowstone-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Cheddar, Colby, Monterey/Monterey Jack",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "yellowstone-cheese-inc",
+    "name": "Yellowstone Cheese, Inc.",
+    "tier": "auto"
+  },
+  {
+    "city": "South Wayne",
+    "classification": "creamery",
+    "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/36/zimmerman-cheese%2c-inc"
+      },
+      {
+        "detail": "licensed to make Brick, Muenster (Munster)",
+        "signal": "licence"
+      }
+    ],
+    "flags": [],
+    "id": "zimmerman-cheese-company-inc",
+    "name": "Zimmerman Cheese Company, Inc.",
+    "tier": "auto"
+  }
+]

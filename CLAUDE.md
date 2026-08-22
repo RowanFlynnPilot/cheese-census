@@ -114,10 +114,47 @@ manual dispatch only until all scrapers are implemented.
   gesturing at DFW's badge or trade dress); attorney review before the name
   appears on sponsor contracts.
 
-## Status (July 27, 2026) and next steps, in order
+## Status (August 22, 2026) and next steps, in order
 
-All four scrapers and `merge()` are implemented and deterministic. The pipeline runs
-end to end and stops exactly where it should: at the manual review gate.
+**The build is green**: 93 creameries, 61 people, 299 awards, deterministic and
+idempotent end to end. The review gate was cleared by an evidence pass, not by
+waving records through — see "How the review gate was cleared" below.
+
+### How the review gate was cleared
+
+`scripts/evidence.py` (curation tool, never in build) corroborates every proposal
+with signals already in the raw data — shared licence phone numbers, shared plant
+addresses, website domains, and a deterministic name-rule chain (legal-name-first
+exact/prefix/contains/acronym matching with city disambiguation) — plus supervised
+web research committed as `queue/web_research.json` (115 companies checked by
+research agents, findings verified against the licence file). It writes tiered
+review files to `queue/review_*.json`; `scripts/promote.py` promotes the auto tier
+into `data/overrides/` (human-entered values always win). Both scripts are
+re-runnable and idempotent.
+
+New mechanism: a crosswalk override with `creamery_id: null` is a **reviewed
+exclusion** — the record deliberately resolves to no canonical company (a maple
+syrup outfit entering a contest, a master's unlicensed retail brand, Tillamook
+entering from a partner plant). Four exist, each with evidence in the review file.
+`merge()` also honors manual dfw/datcp crosswalk entries *structurally*: a DFW
+listing merges into its licensed company (Marieke Gouda ↔ Holland's Family Cheese)
+and a re-homed plant moves between companies.
+
+### The editorial worklist (not build-blocking; the provisional banner stays up)
+
+- **73 flagged classifications** in `queue/review_classifications.json` — above
+  all ~60 upgrade candidates: commodity-classified companies where web research
+  found a consumer brand (Eau Galle, Maple Grove, Old Country, Weyauwega curds…).
+  Flipping one to `creamery` needs lat/lng in `data/overrides/creameries.json`.
+- **8 crosswalk rows** with a proposed target awaiting eyes in
+  `queue/review_crosswalk.json` (the Sargento standalone → TTLF Inc. among them;
+  the licence file shows TTLF dba "Sargento Cheese Inc.", so it's near-certain).
+- Cosmetic overrides worth making: the CROPP co-op displays as "Organic Valley
+  Chaseburg" (first plant's dba); Edelweiss Creamery liquidated Feb 2026 and
+  Prairie Farms closed both Shullsburg plants (status: closed candidates).
+- Known wrinkle: creamery ids are assigned before manual merges apply, so
+  promoting a merge for a company whose slug collided can shift another id.
+  None shifted this round; check `git diff build/` after future promotions.
 
 Current harvest — 388 DATCP plants → 323 companies; 114 DFW companies (1,346
 company↔cheese-type links) + 55 varieties; 63 master cheesemakers with 172
@@ -149,19 +186,14 @@ unimplemented **validation #5** now enforces lat/lng on *exported* creameries in
 
 Next steps, in order:
 
-1. **Manual review — the only thing between here and a green build.**
-   - `data/overrides/classifications.json` — all 323 companies need a classification.
-     `queue/proposed_classifications.json` suggests one per company with evidence
-     (93 creamery, 92 commodity, 138 processor). Every suggested `creamery` already
-     carries DFW coordinates, so accepting the suggestions needs no geocoding pass.
-   - `data/overrides/crosswalk.json` — 106 entries in `queue/proposed_crosswalk.json`:
-     71 unresolved source records (10 masters, 61 contests), 32 DFW companies that
-     became standalone creameries but may be duplicates of a licensed plant, and 3
-     near-identical company pairs sharing a city. Only 9 records have no candidate at
-     all and need hand research.
-   - Note: `retail.mail_order` and `retail.online` are false for every creamery. DFW
-     offers both as filters but publishes neither value, so they are not scraped;
-     correct them in `data/overrides/creameries.json` where they matter.
+1. **Editorial pass over the worklist above** — skim, not research: every row
+   carries its evidence and URL. Flips and corrections go in `data/overrides/`
+   (re-run `python scripts/promote.py` after editing review files, or edit the
+   override files directly — human values always win). When satisfied, build the
+   front end with `VITE_DATA_STATUS=reviewed` to drop the provisional banner.
+   - Note: `retail.mail_order` and `retail.online` are false for every creamery.
+     DFW offers both as filters but publishes neither value, so they are not
+     scraped; correct them in `data/overrides/creameries.json` where they matter.
 2. Flavor tagging pass → the cheese catalog. Seed candidate products from DFW
    `cheese_types`, DATCP `cheese_manufactured`, and contest cheese names; tag with
    `data/raw/dfw_varieties.json` as a starting signal, human approves in batches.
@@ -169,6 +201,5 @@ Next steps, in order:
    and lights up the similarity engine — and with it the whole reader layer of the
    front end (browse, hearts, similar-cheese, highlights), which is stubbed out.
 3. `scripts/describe.py` — generation with the WPR voice prompt
-4. Front end, continued. `web/` renders the creamery map and directory today; it
-   cannot render a cheese until step 2 lands. No deploy workflow yet — GitHub Pages
-   publishing waits until `build/` is real.
+4. Front end, continued: GitHub Pages deploy workflow (build/ is real now), then
+   the reader layer once step 2 lands.

@@ -1,0 +1,4679 @@
+[
+  {
+    "address": "3805 Freedom Rd",
+    "aka": [
+      "AGROPUR INC.",
+      "Agropur Inc."
+    ],
+    "city": "Appleton",
+    "county": "Outagamie",
+    "dfw_company_id": 116,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "agropur-inc",
+    "lat": 44.287526,
+    "lng": -88.309352,
+    "name": "Agropur, Inc.",
+    "plants": [
+      {
+        "address": "3805 Freedom Rd",
+        "city": "Appleton",
+        "county": "Outagamie",
+        "datcp_id": "55-322",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "W6470 Quality Dr",
+        "city": "Greenville",
+        "county": "Outagamie",
+        "datcp_id": "55-524",
+        "operations": [
+          "Bovine Milk",
+          "Other",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "N2915 County Road AB",
+        "city": "Luxemburg",
+        "county": "Kewaunee",
+        "datcp_id": "55-642",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "105 E Third Ave",
+        "city": "Weyauwega",
+        "county": "Waupaca",
+        "datcp_id": "55-1410",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cut/Wrap/Shred",
+          "Drying Operation",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Mozzarella",
+          "Semisoft",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://www.agropur.com/us/cheese"
+  },
+  {
+    "address": "1510 S Sylvania Ave Ste 205",
+    "aka": [
+      "Alpinage Cheese Co."
+    ],
+    "city": "Sturtevant",
+    "county": "Racine",
+    "dfw_company_id": 1310,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "alpinage-cheese-llc",
+    "lat": 42.88711,
+    "lng": -87.86334,
+    "name": "Alpinage Cheese LLC",
+    "plants": [
+      {
+        "address": "1510 S Sylvania Ave Ste 205",
+        "city": "Sturtevant",
+        "county": "Racine",
+        "datcp_id": "55-5931",
+        "operations": []
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.alpinagecheese.com/"
+  },
+  {
+    "address": "300 US Highway 14",
+    "aka": [
+      "Arena Cheese, Inc."
+    ],
+    "city": "Arena",
+    "county": "Iowa",
+    "dfw_company_id": 104,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "arena-cheese",
+    "lat": 43.161586,
+    "lng": -89.911089,
+    "name": "Arena Cheese",
+    "plants": [
+      {
+        "address": "300 US Highway 14",
+        "city": "Arena",
+        "county": "Iowa",
+        "datcp_id": "55-800",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Colby",
+          "Edam",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Provolone",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.arenacheese.com"
+  },
+  {
+    "address": "Arla Foods Production",
+    "aka": [],
+    "city": "Kaukauna",
+    "county": null,
+    "dfw_company_id": 96,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "arla-foods-inc",
+    "lat": 40.636265,
+    "lng": -74.574617,
+    "name": "Arla Foods, Inc.",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.arlausa.com/"
+  },
+  {
+    "address": "220 E Center St",
+    "aka": [
+      "Associated Milk Producers Inc"
+    ],
+    "city": "Blair",
+    "county": "Trempealeau",
+    "dfw_company_id": 230,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "associated-milk-producers-inc",
+    "lat": 44.315937,
+    "lng": -94.463756,
+    "name": "Associated Milk Producers, Inc.",
+    "plants": [
+      {
+        "address": "220 E Center St",
+        "city": "Blair",
+        "county": "Trempealeau",
+        "datcp_id": "55-226",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Whey/Whey By Products",
+          "Cheddar"
+        ]
+      },
+      {
+        "address": "14193 County Road S",
+        "city": "Jim Falls",
+        "county": "Chippewa",
+        "datcp_id": "55-301",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cheese Processing",
+          "Drying Operation",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Gruyere",
+          "Monterey/Monterey Jack"
+        ]
+      },
+      {
+        "address": "301 Brook St",
+        "city": "Portage",
+        "county": "Columbia",
+        "datcp_id": "55-425",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred",
+          "Pasteurized Process Cheese/Cheese Food"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.ampi.com"
+  },
+  {
+    "address": "1500 E North Ave",
+    "aka": [
+      "Bel Brands USA, Inc. *"
+    ],
+    "city": "Little Chute",
+    "county": "Outagamie",
+    "dfw_company_id": 44,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "bel-brands-usa",
+    "lat": 42.033084,
+    "lng": -87.983101,
+    "name": "Bel Brands USA",
+    "plants": [
+      {
+        "address": "1500 E North Ave",
+        "city": "Little Chute",
+        "county": "Outagamie",
+        "datcp_id": "55-826",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Process Cheese",
+          "Cold Pack Cheese/Cheese Food",
+          "Cream Cheese",
+          "Pasteurized Processed Cheese Spread"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.Merkts.com"
+  },
+  {
+    "address": "4200 Main St",
+    "aka": [
+      "BelGioioso Cheese Inc",
+      "BelGioioso Cheese Inc.",
+      "Belgioioso Cheese Inc",
+      "Belgioioso Cheese Inc.",
+      "Belgioioso Cheese, Inc",
+      "Belgioioso Cheese, Inc."
+    ],
+    "city": "Green Bay",
+    "county": "Brown",
+    "dfw_company_id": 5,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "belgioioso-cheese-inc",
+    "lat": 44.378543,
+    "lng": -87.887205,
+    "name": "BelGioioso Cheese, Inc.",
+    "plants": [
+      {
+        "address": "N8495 State Road 55",
+        "city": "Menasha",
+        "county": "Calumet",
+        "datcp_id": "55-130",
+        "operations": [
+          "Bovine Milk",
+          "Condensary/Evap",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products"
+        ]
+      },
+      {
+        "address": "W6521 County Road F",
+        "city": "Brownsville",
+        "county": "Fond du Lac",
+        "datcp_id": "55-153",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "7700 N Brown County Line Rd",
+        "city": "Pulaski",
+        "county": "Oconto",
+        "datcp_id": "55-308",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Raw Milk Cheese",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Other",
+          "Parmesan and Reggiano",
+          "Romano",
+          "Spiced"
+        ]
+      },
+      {
+        "address": "N4056 Vine Rd",
+        "city": "Appleton",
+        "county": "Outagamie",
+        "datcp_id": "55-323",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Other"
+        ]
+      },
+      {
+        "address": "5312 Steve's Cheese Rd",
+        "city": "Denmark",
+        "county": "Brown",
+        "datcp_id": "55-365",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "4200 Main St",
+        "city": "Green Bay",
+        "county": "Brown",
+        "datcp_id": "55-420",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "5911 County Road NN",
+        "city": "Denmark",
+        "county": "Brown",
+        "datcp_id": "55-421",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Other"
+        ]
+      },
+      {
+        "address": "W2400 County Road S",
+        "city": "Kaukauna",
+        "county": "Outagamie",
+        "datcp_id": "55-533",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Raw Milk Cheese",
+          "Whey/Whey By Products",
+          "Parmesan and Reggiano"
+        ]
+      },
+      {
+        "address": "5810 County Road NN",
+        "city": "Denmark",
+        "county": "Brown",
+        "datcp_id": "55-910",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "5900 County Road NN",
+        "city": "Denmark",
+        "county": "Brown",
+        "datcp_id": "55-911",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Other",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "5550 County Road R",
+        "city": "Denmark",
+        "county": "Brown",
+        "datcp_id": "55-1068",
+        "operations": [
+          "Bovine Milk",
+          "Sheep Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Bleu",
+          "Gorgonzola",
+          "Other"
+        ]
+      },
+      {
+        "address": "4348 Brookside Dr",
+        "city": "Pulaski",
+        "county": "Brown",
+        "datcp_id": "55-1639",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Raw Milk Cheese",
+          "Other",
+          "Parmesan and Reggiano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.belgioioso.com"
+  },
+  {
+    "address": "3480 County Road F",
+    "aka": [
+      "William Lehner"
+    ],
+    "city": "Blue Mounds",
+    "county": "Dane",
+    "dfw_company_id": 52,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "bleu-mont-dairy",
+    "lat": 43.020536,
+    "lng": -89.834277,
+    "name": "Bleu Mont Dairy",
+    "plants": [
+      {
+        "address": "3480 County Road F",
+        "city": "Blue Mounds",
+        "county": "Dane",
+        "datcp_id": "55-201",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred",
+          "Cheddar",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": ""
+  },
+  {
+    "address": "17975 County Road F",
+    "aka": [],
+    "city": "Darlington",
+    "county": "Lafayette",
+    "dfw_company_id": 80,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "brunkow-cheese-of-wisconsin-inc",
+    "lat": 42.687788,
+    "lng": -90.130401,
+    "name": "Brunkow Cheese of Wisconsin, Inc.",
+    "plants": [
+      {
+        "address": "17975 County Road F",
+        "city": "Darlington",
+        "county": "Lafayette",
+        "datcp_id": "55-523",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Cold Pack Cheese/Cheese Food",
+          "Granular and Stirred Curd",
+          "Monterey/Monterey Jack",
+          "Pasteurized Cheese Spread",
+          "Semisoft",
+          "Soft Ripened",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://brunkowcheeseofwi.com/"
+  },
+  {
+    "address": "11631 State Road 70",
+    "aka": [
+      "Burnett Dairy"
+    ],
+    "city": "Grantsburg",
+    "county": "Burnett",
+    "dfw_company_id": 53,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "burnett-dairy-cooperative",
+    "lat": 45.772158,
+    "lng": -92.581209,
+    "name": "Burnett Dairy Cooperative",
+    "plants": [
+      {
+        "address": "11631 State Road 70",
+        "city": "Grantsburg",
+        "county": "Burnett",
+        "datcp_id": "55-298",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "126 State Road 128",
+        "city": "Wilson",
+        "county": "Saint Croix",
+        "datcp_id": "55-1700",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Pasteurized Process Cheese/Cheese Food"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.burnettdairy.com"
+  },
+  {
+    "address": "S3797 County Road G",
+    "aka": [
+      "Carr Valley Cheese",
+      "Carr Valley Cheese - Mazomanie",
+      "Carr Valley Cheese - Sauk City",
+      "Carr Valley Cheese Co Inc",
+      "Carr Valley Cheese Co Inc. - La Valle",
+      "Carr Valley Fennimore",
+      "Carr Valley Portage"
+    ],
+    "city": "La Valle",
+    "county": "Sauk",
+    "dfw_company_id": 43,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "carr-valley-cheese-company-inc",
+    "lat": 43.507591,
+    "lng": -90.165539,
+    "name": "Carr Valley Cheese Company, Inc.",
+    "plants": [
+      {
+        "address": "1042 E State St",
+        "city": "Mauston",
+        "county": "Juneau",
+        "datcp_id": "55-23",
+        "operations": [
+          "Cut/Wrap/Shred",
+          "Other"
+        ]
+      },
+      {
+        "address": "1675 Lincoln Ave",
+        "city": "Fennimore",
+        "county": "Grant",
+        "datcp_id": "55-91",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "428 Wall St",
+        "city": "Mazomanie",
+        "county": "Dane",
+        "datcp_id": "55-181",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "420 Broadway",
+        "city": "Wisconsin Dells",
+        "county": "Columbia",
+        "datcp_id": "55-218",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "110 E Oneida St",
+        "city": "Portage",
+        "county": "Columbia",
+        "datcp_id": "55-379",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "1006 Gateway Ave",
+        "city": "Mauston",
+        "county": "Juneau",
+        "datcp_id": "55-1177",
+        "operations": [
+          "Retail Store",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "S3797 County Road G",
+        "city": "La Valle",
+        "county": "Sauk",
+        "datcp_id": "55-1710",
+        "operations": [
+          "Goat Milk",
+          "Sheep Milk",
+          "Cheese Processing",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack",
+          "Washed Curd and Soaked Curd"
+        ]
+      },
+      {
+        "address": "807 Phillips Blvd",
+        "city": "Sauk City",
+        "county": "Sauk",
+        "datcp_id": "55-8980",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://carrvalleycheese.com"
+  },
+  {
+    "address": "E5904 Mill Rd",
+    "aka": [
+      "Cedar Grove Cheese Inc"
+    ],
+    "city": "Plain",
+    "county": "Sauk",
+    "dfw_company_id": 23,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "cedar-grove-cheese-inc",
+    "lat": 43.281047,
+    "lng": -90.004232,
+    "name": "Cedar Grove Cheese, Inc.",
+    "plants": [
+      {
+        "address": "E5904 Mill Rd",
+        "city": "Plain",
+        "county": "Sauk",
+        "datcp_id": "55-671",
+        "operations": [
+          "Bovine Milk",
+          "Custom Processing",
+          "Goat Milk",
+          "Sheep Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Hard",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Muenster (Munster)",
+          "Other",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.cedargrovecheese.com"
+  },
+  {
+    "address": "N6977 State Hwy 57",
+    "aka": [
+      "Cedar Valley Cheese Inc"
+    ],
+    "city": "Belgium",
+    "county": "Ozaukee",
+    "dfw_company_id": 65,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "cedar-valley-cheese-inc",
+    "lat": 43.528715,
+    "lng": -87.890695,
+    "name": "Cedar Valley Cheese, Inc.",
+    "plants": [
+      {
+        "address": "N6977 State Hwy 57",
+        "city": "Belgium",
+        "county": "Ozaukee",
+        "datcp_id": "55-604",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "W3111 Jay Rd",
+        "city": "Belgium",
+        "county": "Ozaukee",
+        "datcp_id": "55-704",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cream",
+          "Cut/Wrap/Shred",
+          "Mozzarella",
+          "Provolone"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://cedarvalleycheese.com"
+  },
+  {
+    "address": "138 W Bruce St",
+    "aka": [
+      "Cesar's Cheese"
+    ],
+    "city": "Milwaukee",
+    "county": "Milwaukee",
+    "dfw_company_id": 218,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "cesar-s-cheese-llc",
+    "lat": 43.025392,
+    "lng": -87.912395,
+    "name": "Cesar's Cheese LLC",
+    "plants": [
+      {
+        "address": "138 W Bruce St",
+        "city": "Milwaukee",
+        "county": "Milwaukee",
+        "datcp_id": "55-1715",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Pasteurizer - HHST",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Granular and Stirred Curd",
+          "Mozzarella",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": ""
+  },
+  {
+    "address": "W6805 Deppler Rd",
+    "aka": [],
+    "city": "Monroe",
+    "county": "Green",
+    "dfw_company_id": 27,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "chalet-cheese-cooperative",
+    "lat": 42.661579,
+    "lng": -89.661398,
+    "name": "Chalet Cheese Cooperative",
+    "plants": [
+      {
+        "address": "W6805 Deppler Rd",
+        "city": "Monroe",
+        "county": "Green",
+        "datcp_id": "55-5",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cream",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Swiss and Emmentaler"
+        ]
+      },
+      {
+        "address": "N4858 County Road N",
+        "city": "Monroe",
+        "county": "Green",
+        "datcp_id": "55-160",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cream",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Brick",
+          "Gouda",
+          "Limburger",
+          "Swiss and Emmentaler"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://chaletcheesecoop.com/"
+  },
+  {
+    "address": "N6765 State Hwy 25",
+    "aka": [],
+    "city": "Durand",
+    "county": null,
+    "dfw_company_id": 33,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "cheese-merchants-of-america",
+    "lat": 44.653146,
+    "lng": -91.977882,
+    "name": "Cheese Merchants of America",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.eaugallecheese.com"
+  },
+  {
+    "address": "N8238 Townline Rd",
+    "aka": [],
+    "city": "Fond Du Lac",
+    "county": null,
+    "dfw_company_id": 1304,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "clearview-dairy-atwo-cheese-llc",
+    "lat": 43.841003,
+    "lng": -88.52566,
+    "name": "Clearview Dairy aTwo Cheese LLC",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.clearviewdairy.com"
+  },
+  {
+    "address": "W11555 Torpy Rd",
+    "aka": [
+      "Crave Brothers Farmstead Cheese, LLC"
+    ],
+    "city": "Waterloo",
+    "county": "Dodge",
+    "dfw_company_id": 119,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "crave-brothers-farmstead-cheese-l-l-c",
+    "lat": 43.234265,
+    "lng": -88.972557,
+    "name": "Crave Brothers Farmstead Cheese, L.L.C.",
+    "plants": [
+      {
+        "address": "W11555 Torpy Rd",
+        "city": "Waterloo",
+        "county": "Dodge",
+        "datcp_id": "55-22",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Mozzarella"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.cravecheese.com"
+  },
+  {
+    "address": "One Organic Way",
+    "aka": [],
+    "city": "La Farge",
+    "county": null,
+    "dfw_company_id": 16,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "cropp-cooperative-organic-valley",
+    "lat": 43.581795,
+    "lng": -90.637614,
+    "name": "CROPP Cooperative/Organic Valley",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.organicvalley.coop"
+  },
+  {
+    "address": "527 State Road 35",
+    "aka": [
+      "Troy Derosier"
+    ],
+    "city": "Osceola",
+    "county": "Polk",
+    "dfw_company_id": 143,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "crystal-ball-farms",
+    "lat": 45.285926,
+    "lng": -92.697488,
+    "name": "Crystal Ball Farms",
+    "plants": [
+      {
+        "address": "527 State Road 35",
+        "city": "Osceola",
+        "county": "Polk",
+        "datcp_id": "55-1899",
+        "operations": [
+          "Bovine Milk",
+          "Custom Processing",
+          "Butter Processing",
+          "Cheese Processing",
+          "Fluid Milk",
+          "Frozen Dairy Products",
+          "Cheddar",
+          "Colby"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.facebook.com/pages/Crystal-Ball-Farms-Organic-Dairy/123047694418683"
+  },
+  {
+    "address": "W1668 County Road F",
+    "aka": [
+      "Decatur Dairy"
+    ],
+    "city": "Brodhead",
+    "county": "Green",
+    "dfw_company_id": 87,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "decatur-dairy-inc",
+    "lat": 42.654476,
+    "lng": -89.446397,
+    "name": "Decatur Dairy, Inc.",
+    "plants": [
+      {
+        "address": "W1668 County Road F",
+        "city": "Brodhead",
+        "county": "Green",
+        "datcp_id": "55-522",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Brick",
+          "Colby",
+          "Muenster (Munster)"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.decaturdairy.com"
+  },
+  {
+    "address": "721 Riverfront Drive",
+    "aka": [],
+    "city": "Sheboygan",
+    "county": null,
+    "dfw_company_id": 243,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "deer-creek-cheese",
+    "lat": 43.752063,
+    "lng": -87.712951,
+    "name": "Deer Creek Cheese",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://deercreekcheese.com/"
+  },
+  {
+    "address": "N10140 State Road 110",
+    "aka": [],
+    "city": "Marion",
+    "county": "Waupaca",
+    "dfw_company_id": 145,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "dupont-cheese-inc",
+    "lat": 44.614285,
+    "lng": -88.900144,
+    "name": "Dupont Cheese, Inc.",
+    "plants": [
+      {
+        "address": "N10140 State Road 110",
+        "city": "Marion",
+        "county": "Waupaca",
+        "datcp_id": "55-1349",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.dupontcheeseinc.com"
+  },
+  {
+    "address": "W6117 County Highway C",
+    "aka": [],
+    "city": "Monticello",
+    "county": null,
+    "dfw_company_id": 171,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "edelweiss-creamery",
+    "lat": 42.516938,
+    "lng": -89.542899,
+    "name": "Edelweiss Creamery",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.edelweisscreamery.com/"
+  },
+  {
+    "address": "232 N Wallace St",
+    "aka": [
+      "Ellsworth Coop Creamery"
+    ],
+    "city": "Ellsworth",
+    "county": "Pierce",
+    "dfw_company_id": 15,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "ellsworth-cooperative-creamery",
+    "lat": 44.734427,
+    "lng": -92.462904,
+    "name": "Ellsworth Cooperative Creamery",
+    "plants": [
+      {
+        "address": "232 N Wallace St",
+        "city": "Ellsworth",
+        "county": "Pierce",
+        "datcp_id": "55-356",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cream",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Cheddar"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.ellsworthcheese.com/"
+  },
+  {
+    "address": "1525 Vision Dr",
+    "aka": [
+      "Emmi Roth",
+      "Emmi Roth USA, Inc."
+    ],
+    "city": "Platteville",
+    "county": "Grant",
+    "dfw_company_id": 88,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "emmi-roth-usa",
+    "lat": 42.610113,
+    "lng": -89.652641,
+    "name": "Emmi Roth USA",
+    "plants": [
+      {
+        "address": "1525 Vision Dr",
+        "city": "Platteville",
+        "county": "Grant",
+        "datcp_id": "55-14",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Gouda",
+          "Gruyere",
+          "Semisoft"
+        ]
+      },
+      {
+        "address": "657 2nd St",
+        "city": "Monroe",
+        "county": "Green",
+        "datcp_id": "55-95",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Gouda",
+          "Gruyere"
+        ]
+      },
+      {
+        "address": "1800 Williams Dr",
+        "city": "Stoughton",
+        "county": "Dane",
+        "datcp_id": "55-1050",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "124 E Bronson Rd",
+        "city": "Seymour",
+        "county": "Outagamie",
+        "datcp_id": "55-1801",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Bleu",
+          "Gorgonzola"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.rothcheese.com"
+  },
+  {
+    "address": "520 N Pratt Rd",
+    "aka": [
+      "Family Fresh Pack, Inc."
+    ],
+    "city": "Monticello",
+    "county": "Green",
+    "dfw_company_id": 166,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "family-fresh-pack-llc",
+    "lat": 42.859395,
+    "lng": -89.535755,
+    "name": "Family Fresh Pack LLC",
+    "plants": [
+      {
+        "address": "520 N Pratt Rd",
+        "city": "Monticello",
+        "county": "Green",
+        "datcp_id": "55-86",
+        "operations": [
+          "Other Type of Milk",
+          "Cut/Wrap/Shred",
+          "Asiago",
+          "Bleu",
+          "Cheddar",
+          "Colby",
+          "Edam",
+          "Gorgonzola",
+          "Gouda",
+          "Grated Cheese",
+          "Gruyere",
+          "Muenster (Munster)",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      },
+      {
+        "address": "110 112 Pratt Road",
+        "city": "Monticello",
+        "county": "Green",
+        "datcp_id": "55-825",
+        "operations": [
+          "Other Type of Milk",
+          "Cold Pack Cheese/Cheese Food",
+          "Cream Cheese",
+          "Pasteurized Process Cheese/Cheese Food",
+          "Pasteurized Processed Cheese Spread"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://freshpackwi.com/"
+  },
+  {
+    "address": "1815 W Spencer St",
+    "aka": [
+      "Foremost Farms USA, Cooperative"
+    ],
+    "city": "Appleton",
+    "county": "Outagamie",
+    "dfw_company_id": 41,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "foremost-farms-usa-cooperative",
+    "lat": 43.522647,
+    "lng": -89.778998,
+    "name": "Foremost Farms USA Cooperative",
+    "plants": [
+      {
+        "address": "1815 W Spencer St",
+        "city": "Appleton",
+        "county": "Outagamie",
+        "datcp_id": "55-2",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Muenster (Munster)",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "240 Prentice St N",
+        "city": "Clayton",
+        "county": "Polk",
+        "datcp_id": "55-45",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "684 S Church St",
+        "city": "Richland Center",
+        "county": "Richland",
+        "datcp_id": "55-107",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Other",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "501 S Pine St",
+        "city": "Reedsburg",
+        "county": "Sauk",
+        "datcp_id": "55-360",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Butter Processing",
+          "Condensary/Evap",
+          "Cream"
+        ]
+      },
+      {
+        "address": "932 N Madison St",
+        "city": "Lancaster",
+        "county": "Grant",
+        "datcp_id": "55-820",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack"
+        ]
+      },
+      {
+        "address": "1511 E 4th St",
+        "city": "Marshfield",
+        "county": "Wood",
+        "datcp_id": "55-1950",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.foremostfarms.com/"
+  },
+  {
+    "address": "6519 Larson Rd",
+    "aka": [
+      "Alpine Cheese Company",
+      "Forgotten Valley Cheese"
+    ],
+    "city": "South Wayne",
+    "county": "Lafayette",
+    "dfw_company_id": 63,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "forgotten-valley-cheese",
+    "lat": 42.587478,
+    "lng": -89.90387,
+    "name": "Valley View Cheese Cooperative",
+    "plants": [
+      {
+        "address": "6519 Larson Rd",
+        "city": "South Wayne",
+        "county": "Lafayette",
+        "datcp_id": "55-527",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Brick",
+          "Cheddar",
+          "Granular and Stirred Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.forgottenvalleycheese.com/"
+  },
+  {
+    "address": "W2663 County Road OO",
+    "aka": [
+      "Gibbsville Cheese Co., Inc"
+    ],
+    "city": "Sheboygan Falls",
+    "county": "Sheboygan",
+    "dfw_company_id": 93,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "gibbsville-cheese-company-inc",
+    "lat": 43.652204,
+    "lng": -87.841064,
+    "name": "Gibbsville Cheese Company, Inc.",
+    "plants": [
+      {
+        "address": "W2663 County Road OO",
+        "city": "Sheboygan Falls",
+        "county": "Sheboygan",
+        "datcp_id": "55-1099",
+        "operations": [
+          "Bovine Milk",
+          "Retail Store",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.gibbsvillecheese.com"
+  },
+  {
+    "address": "116 N Main St",
+    "aka": [],
+    "city": "Cuba City",
+    "county": "Grant",
+    "dfw_company_id": 62,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "gile-cheese-llc",
+    "lat": 42.606463,
+    "lng": -90.430842,
+    "name": "Gile Cheese, LLC",
+    "plants": [
+      {
+        "address": "116 N Main St",
+        "city": "Cuba City",
+        "county": "Grant",
+        "datcp_id": "55-116",
+        "operations": [
+          "Retail Store",
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.gilecheese.com"
+  },
+  {
+    "address": "420 Trowbridge Dr",
+    "aka": [
+      "GRANDE CHEESE COMPANY",
+      "Grande Cheese Custom Ingredients Group",
+      "Grande Custom Ingredients Group"
+    ],
+    "city": "Fond du Lac",
+    "county": "Fond du Lac",
+    "dfw_company_id": 49,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "grande-cheese-company",
+    "lat": 43.599258,
+    "lng": -88.541486,
+    "name": "Grande Cheese Company",
+    "plants": [
+      {
+        "address": "N2689 County Road S",
+        "city": "Juda",
+        "county": "Green",
+        "datcp_id": "55-66",
+        "operations": [
+          "Bovine Milk",
+          "Condensary/Evap",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products"
+        ]
+      },
+      {
+        "address": "W1234 Rome Rd",
+        "city": "Rubicon",
+        "county": "Dodge",
+        "datcp_id": "55-213",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Cheddar",
+          "Hard",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      },
+      {
+        "address": "N11689 Dairy Rd",
+        "city": "Brownsville",
+        "county": "Dodge",
+        "datcp_id": "55-267",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cream",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella"
+        ]
+      },
+      {
+        "address": "181 W Monroe St",
+        "city": "Wyocena",
+        "county": "Columbia",
+        "datcp_id": "55-270",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "W3240 County Road F",
+        "city": "Chilton",
+        "county": "Calumet",
+        "datcp_id": "55-340",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella"
+        ]
+      },
+      {
+        "address": "420 Trowbridge Dr",
+        "city": "Fond du Lac",
+        "county": "Fond du Lac",
+        "datcp_id": "55-347",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Romano"
+        ]
+      },
+      {
+        "address": "N2607 County Road S",
+        "city": "Juda",
+        "county": "Green",
+        "datcp_id": "55-519",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cream",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Mozzarella"
+        ]
+      },
+      {
+        "address": "246 Trowbridge Dr",
+        "city": "Fond du Lac",
+        "county": "Fond du Lac",
+        "datcp_id": "55-702",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Asiago",
+          "Cheddar",
+          "Granular and Stirred Curd",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      },
+      {
+        "address": "1007 W Lake St",
+        "city": "Friendship",
+        "county": "Adams",
+        "datcp_id": "55-2185",
+        "operations": [
+          "Bovine Milk",
+          "Condensary/Evap",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products"
+        ]
+      },
+      {
+        "address": "302 E Main St",
+        "city": "Lomira",
+        "county": "Dodge",
+        "datcp_id": "55-8995",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.grandecheese.com"
+  },
+  {
+    "address": "N8790 Fairground Ave",
+    "aka": [
+      "Grassland Dairy Products Inc",
+      "Grassland Dairy Products Inc."
+    ],
+    "city": "Greenwood",
+    "county": "Clark",
+    "dfw_company_id": 48,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "grassland-dairy-products-inc",
+    "lat": 44.736186,
+    "lng": -90.577846,
+    "name": "Grassland Dairy Products, Inc.",
+    "plants": [
+      {
+        "address": "N8790 Fairground Ave",
+        "city": "Greenwood",
+        "county": "Clark",
+        "datcp_id": "55-304",
+        "operations": [
+          "Bovine Milk",
+          "Butter Processing",
+          "Condensary/Evap",
+          "Cream",
+          "Drying Operation",
+          "Fluid Milk",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Powder Mixing/Blending"
+        ]
+      },
+      {
+        "address": "423 S Main St",
+        "city": "Greenwood",
+        "county": "Clark",
+        "datcp_id": "55-544",
+        "operations": [
+          "Bovine Milk",
+          "Butter Processing",
+          "Condensary/Evap",
+          "Cream",
+          "Fluid Milk",
+          "Membrane Processing",
+          "Pasteurizer - HTST"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.grassland.com"
+  },
+  {
+    "address": "230266 Red Cardinal Rd",
+    "aka": [
+      "Anderson International",
+      "Harmony Cheese"
+    ],
+    "city": "Edgar",
+    "county": "Marathon",
+    "dfw_company_id": 269,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "harmony-cheese",
+    "lat": 40.702469,
+    "lng": -74.064943,
+    "name": "Anderson International Foods",
+    "plants": [
+      {
+        "address": "230266 Red Cardinal Rd",
+        "city": "Edgar",
+        "county": "Marathon",
+        "datcp_id": "55-1477",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Monterey/Monterey Jack"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.sincerelybrigitte.com/"
+  },
+  {
+    "address": "2200 Dickinson Road",
+    "aka": [],
+    "city": "De Pere",
+    "county": null,
+    "dfw_company_id": 199,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "harmony-cheese-de-pere",
+    "lat": 44.810099,
+    "lng": -90.017025,
+    "name": "Harmony Cheese",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.harmonycheese.com"
+  },
+  {
+    "address": "20201 Point Creek Rd",
+    "aka": [],
+    "city": "Kiel",
+    "county": "Manitowoc",
+    "dfw_company_id": 31,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "henning-cheese-inc",
+    "lat": 43.964104,
+    "lng": -88.011547,
+    "name": "Henning Cheese, Inc.",
+    "plants": [
+      {
+        "address": "20201 Point Creek Rd",
+        "city": "Kiel",
+        "county": "Manitowoc",
+        "datcp_id": "55-635",
+        "operations": [
+          "Bovine Milk",
+          "Retail Store",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.henningscheese.com"
+  },
+  {
+    "address": "W4854 Stateline Rd",
+    "aka": [
+      "S. Terry Woods, Ltd."
+    ],
+    "city": "Walworth",
+    "county": "Walworth",
+    "dfw_company_id": 275,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "highfield-farm-creamery",
+    "lat": 42.49498,
+    "lng": -88.538724,
+    "name": "Highfield Farm Creamery",
+    "plants": [
+      {
+        "address": "W4854 Stateline Rd",
+        "city": "Walworth",
+        "county": "Walworth",
+        "datcp_id": "55-283",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - Batch",
+          "Bleu",
+          "Cheddar",
+          "Colby",
+          "Cold Pack Cheese/Cheese Food",
+          "Semisoft",
+          "Soft Ripened",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.highfieldfarm.com/"
+  },
+  {
+    "address": "N8207 Bell School Rd",
+    "aka": [
+      "Hill Valley Dairy, LLC"
+    ],
+    "city": "East Troy",
+    "county": "Walworth",
+    "dfw_company_id": 281,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "hill-valley-dairy",
+    "lat": 42.602078,
+    "lng": -88.434633,
+    "name": "Hill Valley Dairy",
+    "plants": [
+      {
+        "address": "138 W Bruce St",
+        "city": "Milwaukee",
+        "county": "Milwaukee",
+        "datcp_id": "55-419",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Gouda",
+          "Hard"
+        ]
+      },
+      {
+        "address": "N8207 Bell School Rd",
+        "city": "East Troy",
+        "county": "Walworth",
+        "datcp_id": "55-529",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://hillvalleydairy.com/"
+  },
+  {
+    "address": "28 Milwaukee Ave W",
+    "aka": [],
+    "city": "Fort Atkinson",
+    "county": null,
+    "dfw_company_id": 1306,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "hoard-s-dairymen-farm-creamery",
+    "lat": 42.926932,
+    "lng": -88.837484,
+    "name": "Hoard's Dairymen Farm Creamery",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.hoardscreamery.com/"
+  },
+  {
+    "address": "320 Commerce St",
+    "aka": [],
+    "city": "Mineral Point",
+    "county": "Iowa",
+    "dfw_company_id": 39,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "hook-s-cheese-company-inc",
+    "lat": 42.86281,
+    "lng": -90.177356,
+    "name": "Hook's Cheese Company, Inc.",
+    "plants": [
+      {
+        "address": "320 Commerce St",
+        "city": "Mineral Point",
+        "county": "Iowa",
+        "datcp_id": "55-1472",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Sheep Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Bleu",
+          "Cheddar",
+          "Colby",
+          "Gorgonzola",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Parmesan and Reggiano",
+          "Swiss and Emmentaler"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.hookscheese.com/"
+  },
+  {
+    "address": "W4481 County Road GG",
+    "aka": [
+      "Kingston Cheese Cooperative"
+    ],
+    "city": "Cambria",
+    "county": "Green Lake",
+    "dfw_company_id": 1301,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "kingston-cheese-cooperative",
+    "lat": 43.646393,
+    "lng": -89.106076,
+    "name": "Kingston Cheese Co-op",
+    "plants": [
+      {
+        "address": "W4481 County Road GG",
+        "city": "Cambria",
+        "county": "Green Lake",
+        "datcp_id": "55-127",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Bleu",
+          "Gorgonzola"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://www.kingstoncoop.org/"
+  },
+  {
+    "address": "W7839 State Road 81 W",
+    "aka": [
+      "Klondike Cheese Co",
+      "Klondike Cheese Co."
+    ],
+    "city": "Monroe",
+    "county": "Green",
+    "dfw_company_id": 8,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "klondike-cheese-company",
+    "lat": 42.589673,
+    "lng": -89.662811,
+    "name": "Klondike Cheese Company",
+    "plants": [
+      {
+        "address": "W7839 State Road 81 W",
+        "city": "Monroe",
+        "county": "Green",
+        "datcp_id": "55-48",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Yogurt",
+          "Brick",
+          "Gouda",
+          "Muenster (Munster)",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.klondikecheese.com/"
+  },
+  {
+    "address": "N92W37326 O’Neil Road",
+    "aka": [],
+    "city": "Oconomowoc",
+    "county": null,
+    "dfw_company_id": 255,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "koepke-farms-inc",
+    "lat": 43.186837,
+    "lng": -88.483519,
+    "name": "Koepke Farms, Inc",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.labellecheese.com/"
+  },
+  {
+    "address": "1173 N 4th St",
+    "aka": [
+      "Kraemer Wisconsin Cheese",
+      "Kraemer Wisconsin Cheese Ltd."
+    ],
+    "city": "Watertown",
+    "county": "Jefferson",
+    "dfw_company_id": 186,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "kraemer-wisconsin-cheese-ltd",
+    "lat": 43.206056,
+    "lng": -88.708445,
+    "name": "Kraemer Wisconsin Cheese Ltd",
+    "plants": [
+      {
+        "address": "1173 N 4th St",
+        "city": "Watertown",
+        "county": "Jefferson",
+        "datcp_id": "55-29",
+        "operations": [
+          "Bovine Milk",
+          "Retail Store",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Cold Pack Cheese/Cheese Food"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://kraemerwisconsincheese.com/"
+  },
+  {
+    "address": "7050 Morrison Rd",
+    "aka": [
+      "Laack Brothers Cheese",
+      "Laack Brothers Cheese Company, Inc."
+    ],
+    "city": "Greenleaf",
+    "county": "Brown",
+    "dfw_company_id": 59,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "laack-brothers-cheese-company",
+    "lat": 44.289072,
+    "lng": -88.260718,
+    "name": "Laack Brothers Cheese Company",
+    "plants": [
+      {
+        "address": "7050 Morrison Rd",
+        "city": "Greenleaf",
+        "county": "Brown",
+        "datcp_id": "55-266",
+        "operations": [
+          "Cut/Wrap/Shred",
+          "Pasteurized Process Cheese/Cheese Food"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": ""
+  },
+  {
+    "address": "W2994 County Road HH",
+    "aka": [
+      "LaClare Creamery, LLC"
+    ],
+    "city": "Malone",
+    "county": "Fond du Lac",
+    "dfw_company_id": 231,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "laclare-creamery-llc",
+    "lat": 44.013344,
+    "lng": -88.184288,
+    "name": "LaClare Family Creamery",
+    "plants": [
+      {
+        "address": "W2994 County Road HH",
+        "city": "Malone",
+        "county": "Fond du Lac",
+        "datcp_id": "55-90",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Whey/Whey By Products",
+          "Cheddar",
+          "Gouda",
+          "Hard",
+          "Monterey/Monterey Jack",
+          "Muenster (Munster)",
+          "Semisoft",
+          "Soft Ripened"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://www.laclarefamilycreamery.com/"
+  },
+  {
+    "address": "2376 South Park Avenue",
+    "aka": [],
+    "city": "Buffalo",
+    "county": null,
+    "dfw_company_id": 45,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "lactalis-usa-inc",
+    "lat": 40.760219,
+    "lng": -73.968095,
+    "name": "Lactalis USA, Inc.",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.presidentcheese.com"
+  },
+  {
+    "address": "W11299 Broek Rd",
+    "aka": [
+      "Lagranders Hillside Dairy Inc."
+    ],
+    "city": "Stanley",
+    "county": "Clark",
+    "dfw_company_id": 98,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "lagrander-s-hillside-dairy-inc",
+    "lat": 44.901025,
+    "lng": -90.892072,
+    "name": "LaGrander's Hillside Dairy, Inc.",
+    "plants": [
+      {
+        "address": "W11299 Broek Rd",
+        "city": "Stanley",
+        "county": "Clark",
+        "datcp_id": "55-706",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.lagranderscheese.com"
+  },
+  {
+    "address": "6858 Paoli Rd",
+    "aka": [],
+    "city": "Belleville",
+    "county": "Dane",
+    "dfw_company_id": 268,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "landmark-creamery-llc",
+    "lat": 42.769373,
+    "lng": -89.425537,
+    "name": "Landmark Creamery LLC",
+    "plants": [
+      {
+        "address": "6858 Paoli Rd",
+        "city": "Belleville",
+        "county": "Dane",
+        "datcp_id": "55-1352",
+        "operations": [
+          "Bovine Milk",
+          "Sheep Milk",
+          "Butter Processing",
+          "Cheese Processing",
+          "Cream",
+          "Cut/Wrap/Shred",
+          "Frozen Dairy Products",
+          "Pasteurizer - Batch",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.landmarkcreamery.com/"
+  },
+  {
+    "address": "W4510 Meridian Ave",
+    "aka": [
+      "Granton Cheese"
+    ],
+    "city": "Granton",
+    "county": "Clark",
+    "dfw_company_id": 30,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "lynn-dairy-inc",
+    "lat": 44.582765,
+    "lng": -90.409155,
+    "name": "Lynn Dairy, Inc.",
+    "plants": [
+      {
+        "address": "W4510 Meridian Ave",
+        "city": "Granton",
+        "county": "Clark",
+        "datcp_id": "55-60",
+        "operations": [
+          "Bovine Milk"
+        ]
+      },
+      {
+        "address": "W1929 US Highway 10",
+        "city": "Granton",
+        "county": "Clark",
+        "datcp_id": "55-1522",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Colby",
+          "Granular and Stirred Curd",
+          "Monterey/Monterey Jack",
+          "Mozzarella"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.lynndairy.com/"
+  },
+  {
+    "address": "237 E Calumet St",
+    "aka": [
+      "Malcore Foods Inc.",
+      "Malcore Foods, Inc."
+    ],
+    "city": "Appleton",
+    "county": "Calumet",
+    "dfw_company_id": 221,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "malcore-foods",
+    "lat": 44.244076,
+    "lng": -88.401762,
+    "name": "Malcore Foods",
+    "plants": [
+      {
+        "address": "237 E Calumet St",
+        "city": "Appleton",
+        "county": "Calumet",
+        "datcp_id": "55-100",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred",
+          "Cold Pack Cheese/Cheese Food",
+          "Cream Cheese"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://www.malcorefoods.com/"
+  },
+  {
+    "address": "704 30th Street",
+    "aka": [],
+    "city": "Monroe",
+    "county": null,
+    "dfw_company_id": 9,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "maple-leaf-cheese-co",
+    "lat": 42.516938,
+    "lng": -89.542899,
+    "name": "Maple Leaf Cheese Co",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.mapleleafcheese.com/"
+  },
+  {
+    "address": "200 W Liberty Dr",
+    "aka": [
+      "Holland's Family Cheese LLC",
+      "Marieke Gouda"
+    ],
+    "city": "Thorp",
+    "county": "Clark",
+    "dfw_company_id": 193,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "marieke-gouda",
+    "lat": 44.944694,
+    "lng": -90.760177,
+    "name": "Hollands Family Cheese - Marieke Gouda",
+    "plants": [
+      {
+        "address": "200 W Liberty Dr",
+        "city": "Thorp",
+        "county": "Clark",
+        "datcp_id": "55-128",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Cheddar",
+          "Gouda"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://www.mariekegouda.com/"
+  },
+  {
+    "address": "926 Willard Drive",
+    "aka": [],
+    "city": "Green Bay",
+    "county": null,
+    "dfw_company_id": 298,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "mct-dairies-inc",
+    "lat": 44.488411,
+    "lng": -88.06885,
+    "name": "MCT Dairies, Inc.",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://mctdairies.com/"
+  },
+  {
+    "address": "1160 Industrial Dr",
+    "aka": [
+      "Meister Cheese Company, LLC"
+    ],
+    "city": "Muscoda",
+    "county": "Iowa",
+    "dfw_company_id": 60,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "meister-cheese-co-llc",
+    "lat": 43.185116,
+    "lng": -90.416029,
+    "name": "Meister Cheese Co LLC",
+    "plants": [
+      {
+        "address": "1160 Industrial Dr",
+        "city": "Muscoda",
+        "county": "Iowa",
+        "datcp_id": "55-1457",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Hard",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Muenster (Munster)",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Semisoft",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.meistercheese.com"
+  },
+  {
+    "address": "204000 County Road DB",
+    "aka": [
+      "MULLINS' CHEESE, INC.",
+      "Mullins' Cheese, Inc.",
+      "Mullins' Cheese/Mullins' Whey"
+    ],
+    "city": "Mosinee",
+    "county": "Marathon",
+    "dfw_company_id": 55,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "mullins-cheese-inc",
+    "lat": 44.717459,
+    "lng": -89.685951,
+    "name": "Mullins Cheese, Inc.",
+    "plants": [
+      {
+        "address": "204000 County Road DB",
+        "city": "Mosinee",
+        "county": "Marathon",
+        "datcp_id": "55-1854",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      },
+      {
+        "address": "115454 County Road C",
+        "city": "Marshfield",
+        "county": "Marathon",
+        "datcp_id": "55-1855",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Edam",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.mullinscheese.com/"
+  },
+  {
+    "address": "10898 US Highway 10 W",
+    "aka": [],
+    "city": "Marshfield",
+    "county": "Wood",
+    "dfw_company_id": 76,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "nasonville-dairy-inc",
+    "lat": 44.599085,
+    "lng": -90.247107,
+    "name": "Nasonville Dairy, Inc.",
+    "plants": [
+      {
+        "address": "10898 US Highway 10 W",
+        "city": "Marshfield",
+        "county": "Wood",
+        "datcp_id": "55-1499",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://nasonvilledairy.com/"
+  },
+  {
+    "address": "S2244 Langaard Lane",
+    "aka": [
+      "Bekkum Family Farms, LLC"
+    ],
+    "city": "Westby",
+    "county": "Vernon",
+    "dfw_company_id": 208,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "nordic-creamery",
+    "lat": 43.650265,
+    "lng": -90.960105,
+    "name": "Nordic Creamery",
+    "plants": [
+      {
+        "address": "S2244 Langaard Lane",
+        "city": "Westby",
+        "county": "Vernon",
+        "datcp_id": "55-2244",
+        "operations": [
+          "Goat Milk",
+          "Sheep Milk",
+          "Butter Processing",
+          "Cut/Wrap/Shred",
+          "Frozen Dairy Products",
+          "Cheddar"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.nordiccreamery.com/"
+  },
+  {
+    "address": "W10198 Oak Grove Rd",
+    "aka": [],
+    "city": "Clintonville",
+    "county": "Shawano",
+    "dfw_company_id": 91,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "oak-grove-dairy-inc",
+    "lat": 44.719108,
+    "lng": -88.750102,
+    "name": "Oak Grove Dairy, Inc.",
+    "plants": [
+      {
+        "address": "W10198 Oak Grove Rd",
+        "city": "Clintonville",
+        "county": "Shawano",
+        "datcp_id": "55-939",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.oakgrovedairy.com/"
+  },
+  {
+    "address": "N7630 County Road Bb",
+    "aka": [
+      "Ornua (Wisconsin) Ingredients LLC"
+    ],
+    "city": "Hilbert",
+    "county": "Calumet",
+    "dfw_company_id": 85,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "ornua-ingredients-north-america",
+    "lat": 44.167286,
+    "lng": -88.20716,
+    "name": "Ornua Ingredients North America",
+    "plants": [
+      {
+        "address": "N7630 County Road Bb",
+        "city": "Hilbert",
+        "county": "Calumet",
+        "datcp_id": "55-272",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred",
+          "Pasteurized Process Cheese/Cheese Food"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.ornua.com/"
+  },
+  {
+    "address": "P.O. Box 1481",
+    "aka": [],
+    "city": "Pawleys Island",
+    "county": null,
+    "dfw_company_id": 1305,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "palmetto-cheese",
+    "lat": 33.4246,
+    "lng": -79.12951,
+    "name": "Palmetto Cheese",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://pimentocheese.com"
+  },
+  {
+    "address": "110 Eagle Dr",
+    "aka": [],
+    "city": "Cashton",
+    "county": "Monroe",
+    "dfw_company_id": 94,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "pasture-pride-cheese-llc",
+    "lat": 43.732881,
+    "lng": -90.758146,
+    "name": "Pasture Pride Cheese, LLC",
+    "plants": [
+      {
+        "address": "110 Eagle Dr",
+        "city": "Cashton",
+        "county": "Monroe",
+        "datcp_id": "55-1091",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.pasturepridecheese.com"
+  },
+  {
+    "address": "10134 Pine River Rd",
+    "aka": [
+      "Pine River Pre-Pack, Inc."
+    ],
+    "city": "Newton",
+    "county": "Manitowoc",
+    "dfw_company_id": 176,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "pine-river-pre-pack-inc",
+    "lat": 44.000284,
+    "lng": -87.80102,
+    "name": "Pine River Pre Pack, Inc",
+    "plants": [
+      {
+        "address": "10134 Pine River Rd",
+        "city": "Newton",
+        "county": "Manitowoc",
+        "datcp_id": "55-719",
+        "operations": [
+          "Bovine Milk",
+          "Cold Pack Cheese/Cheese Food",
+          "Pasteurized Processed Cheese Spread"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.pineriver.com/"
+  },
+  {
+    "address": "PO Box 4493",
+    "aka": [],
+    "city": "Davenport",
+    "county": null,
+    "dfw_company_id": 69,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "prairie-farms-dairy-inc",
+    "lat": 41.5236,
+    "lng": -90.5777,
+    "name": "Prairie Farms Dairy, Inc",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.prairiefarms.com"
+  },
+  {
+    "address": "W3933 Highview Dr.",
+    "aka": [],
+    "city": "Appleton",
+    "county": null,
+    "dfw_company_id": 212,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "red-barn-family-farms",
+    "lat": 44.267343,
+    "lng": -88.454053,
+    "name": "Red Barn Family Farms",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.redbarnfamilyfarms.com/"
+  },
+  {
+    "address": "225567 Silver Maple Ln",
+    "aka": [
+      "Revela Foods - Colby, LLC"
+    ],
+    "city": "Colby",
+    "county": "Marathon",
+    "dfw_company_id": 17,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "revela-foods-colby-llc",
+    "lat": 44.909354,
+    "lng": -90.278749,
+    "name": "Welcome Dairy LLC",
+    "plants": [
+      {
+        "address": "225567 Silver Maple Ln",
+        "city": "Colby",
+        "county": "Marathon",
+        "datcp_id": "55-276",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Aseptic or Canning",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Non-Dairy - Acidified Foods",
+          "Non-Dairy - Low Acid Canned Foods",
+          "Pasteurized Cheese Spread",
+          "Pasteurized Process Cheese/Cheese Food",
+          "Pasteurized Processed Cheese Spread"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.revelafoods.com/"
+  },
+  {
+    "address": "15982 State Road 11",
+    "aka": [
+      "Roelli Cheese Cellars",
+      "Roelli Cheese Co., Inc.",
+      "Roelli Cheese Factory"
+    ],
+    "city": "Shullsburg",
+    "county": "Lafayette",
+    "dfw_company_id": 201,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "roelli-cheese-company-inc",
+    "lat": 42.579763,
+    "lng": -90.030622,
+    "name": "Roelli Cheese Company, Inc.",
+    "plants": [
+      {
+        "address": "15982 State Road 11",
+        "city": "Shullsburg",
+        "county": "Lafayette",
+        "datcp_id": "55-314",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Bleu",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Granular and Stirred Curd",
+          "Hard",
+          "Monterey/Monterey Jack",
+          "Swiss and Emmentaler"
+        ]
+      },
+      {
+        "address": "15982 Highway 11",
+        "city": "Shullsburg",
+        "county": "Lafayette",
+        "datcp_id": "55-614",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Bleu",
+          "Cheddar",
+          "Swiss and Emmentaler"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.roellicheese.com/"
+  },
+  {
+    "address": "N4893 County Road C",
+    "aka": [
+      "Ron's Wisconsin Cheese LLC"
+    ],
+    "city": "Kewaunee",
+    "county": "Kewaunee",
+    "dfw_company_id": 3,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "ron-s-wisconsin-cheese",
+    "lat": 44.545016,
+    "lng": -87.70334,
+    "name": "Ron's Wisconsin Cheese",
+    "plants": [
+      {
+        "address": "124 Main St",
+        "city": "Luxemburg",
+        "county": "Kewaunee",
+        "datcp_id": "55-21",
+        "operations": [
+          "Bovine Milk",
+          "Retail Store",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "N4893 County Road C",
+        "city": "Kewaunee",
+        "county": "Kewaunee",
+        "datcp_id": "55-235",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Pasteurizer - Batch",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Semisoft"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "https://ronscheese.com/"
+  },
+  {
+    "address": "248 County Road S",
+    "aka": [
+      "Renard's Cheese"
+    ],
+    "city": "Algoma",
+    "county": "Door",
+    "dfw_company_id": 58,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "rosewood-dairy-inc",
+    "lat": 44.610285,
+    "lng": -87.438518,
+    "name": "Rosewood Dairy, Inc.",
+    "plants": [
+      {
+        "address": "248 County Road S",
+        "city": "Algoma",
+        "county": "Door",
+        "datcp_id": "55-1061",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Muenster (Munster)",
+          "Other"
+        ]
+      },
+      {
+        "address": "248 County Rd S",
+        "city": "Algoma",
+        "county": "Door",
+        "datcp_id": "55-1062",
+        "operations": [
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.renardscheese.com"
+  },
+  {
+    "address": "N3545 County Road EE",
+    "aka": [
+      "Saputo Cheese USA Inc",
+      "Saputo Cheese USA Inc.",
+      "Saputo Cheese Usa Inc."
+    ],
+    "city": "Waupun",
+    "county": "Fond du Lac",
+    "dfw_company_id": 61,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "saputo-cheese-usa",
+    "lat": 42.190025,
+    "lng": -87.908404,
+    "name": "Saputo Cheese USA",
+    "plants": [
+      {
+        "address": "N3545 County Road EE",
+        "city": "Waupun",
+        "county": "Fond du Lac",
+        "datcp_id": "55-112",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella",
+          "Provolone"
+        ]
+      },
+      {
+        "address": "317 N Rosera St",
+        "city": "Lena",
+        "county": "Oconto",
+        "datcp_id": "55-284",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Cream",
+          "Cut/Wrap/Shred",
+          "Fluid Milk",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella"
+        ]
+      },
+      {
+        "address": "522 Greenway Ct",
+        "city": "Reedsburg",
+        "county": "Sauk",
+        "datcp_id": "55-464",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Drying Operation",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products"
+        ]
+      },
+      {
+        "address": "1120 Commercial Ave",
+        "city": "Reedsburg",
+        "county": "Sauk",
+        "datcp_id": "55-475",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Semisoft",
+          "Soft Ripened"
+        ]
+      },
+      {
+        "address": "2895 W Oakwood Rd",
+        "city": "Franklin",
+        "county": "Milwaukee",
+        "datcp_id": "55-634",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Sheep Milk",
+          "Cut/Wrap/Shred",
+          "Asiago",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Grated Cheese",
+          "Gruyere",
+          "Hard",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      },
+      {
+        "address": "307 N Clark St",
+        "city": "Black Creek",
+        "county": "Outagamie",
+        "datcp_id": "55-863",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Cheese Processing",
+          "Fluid Milk",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Muenster (Munster)",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      },
+      {
+        "address": "1052 6th St",
+        "city": "Almena",
+        "county": "Barron",
+        "datcp_id": "55-1508",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Condensary/Evap",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Bleu",
+          "Gorgonzola",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "https://www.saputocheeseusa.com/"
+  },
+  {
+    "address": "One Persnickety Place",
+    "aka": [],
+    "city": "Plymouth",
+    "county": null,
+    "dfw_company_id": 100,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "sargento-foods-inc",
+    "lat": 43.925776,
+    "lng": -88.019373,
+    "name": "Sargento Foods, Inc.",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.sargento.com"
+  },
+  {
+    "address": "107 Pleasant View Road",
+    "aka": [],
+    "city": "Plymouth",
+    "county": null,
+    "dfw_company_id": 25,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "sartori-cheese-company",
+    "lat": 43.745728,
+    "lng": -87.951304,
+    "name": "Sartori Cheese Company",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.sartoricheese.com"
+  },
+  {
+    "address": "1695 Mills St",
+    "aka": [
+      "Schreiber Foods",
+      "Schreiber Foods Inc.",
+      "Schreiber Foods, Inc"
+    ],
+    "city": "Green Bay",
+    "county": "Brown",
+    "dfw_company_id": 47,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "schreiber-foods-inc",
+    "lat": 44.515048,
+    "lng": -88.011602,
+    "name": "Schreiber Foods, Inc.",
+    "plants": [
+      {
+        "address": "2101 Bohmann Dr",
+        "city": "Richland Center",
+        "county": "Richland",
+        "datcp_id": "55-53",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Pasteurizer - HTST",
+          "Yogurt"
+        ]
+      },
+      {
+        "address": "807 Pleasant Valley Rd",
+        "city": "West Bend",
+        "county": "Washington",
+        "datcp_id": "55-376",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cream Cheese"
+        ]
+      },
+      {
+        "address": "1695 Mills St",
+        "city": "Green Bay",
+        "county": "Brown",
+        "datcp_id": "55-443",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Pasteurized Process Cheese/Cheese Food"
+        ]
+      },
+      {
+        "address": "2924 Wyetta Dr",
+        "city": "Beloit",
+        "county": "Rock",
+        "datcp_id": "55-916",
+        "operations": [
+          "Bovine Milk",
+          "Aseptic or Canning",
+          "Non-Dairy - Low Acid Canned Foods"
+        ]
+      },
+      {
+        "address": "920 Sextonville Rd",
+        "city": "Richland Center",
+        "county": "Richland",
+        "datcp_id": "55-1224",
+        "operations": [
+          "Bovine Milk",
+          "Yogurt"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.schreiberfoods.com"
+  },
+  {
+    "address": "40 New Dutch Lane",
+    "aka": [],
+    "city": "Fairfield",
+    "county": null,
+    "dfw_company_id": 125,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "schuman-cheese-inc",
+    "lat": 45.390182,
+    "lng": -92.161305,
+    "name": "Schuman Cheese, Inc.",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://schumancheese.com/"
+  },
+  {
+    "address": "2082 Old Martin Rd",
+    "aka": [],
+    "city": "De Pere",
+    "county": null,
+    "dfw_company_id": 54,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "scray-cheese-company",
+    "lat": 44.401066,
+    "lng": -88.065534,
+    "name": "Scray Cheese Company",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://scraycheese.com/"
+  },
+  {
+    "address": "W3075 County Road EE",
+    "aka": [
+      "Silver & Lewis Cheese Factory Company, Cooperative"
+    ],
+    "city": "Monticello",
+    "county": "Green",
+    "dfw_company_id": 103,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "silver-lewis-cheese-factory-cooperative",
+    "lat": 42.741454,
+    "lng": -89.545193,
+    "name": "Silver Lewis Cheese Factory Cooperative",
+    "plants": [
+      {
+        "address": "W3075 County Road EE",
+        "city": "Monticello",
+        "county": "Green",
+        "datcp_id": "55-636",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Brick",
+          "Cheddar",
+          "Edam",
+          "Gouda",
+          "Mozzarella",
+          "Provolone",
+          "Swiss and Emmentaler"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": ""
+  },
+  {
+    "address": "430 N Main St",
+    "aka": [
+      "Specialty Cheese"
+    ],
+    "city": "Reeseville",
+    "county": "Dodge",
+    "dfw_company_id": 34,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "specialty-cheese-company-inc",
+    "lat": 43.311287,
+    "lng": -88.838263,
+    "name": "Specialty Cheese Company, Inc",
+    "plants": [
+      {
+        "address": "430 N Main St",
+        "city": "Reeseville",
+        "county": "Dodge",
+        "datcp_id": "55-417",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Brick",
+          "Granular and Stirred Curd",
+          "Hard",
+          "Muenster (Munster)",
+          "Other",
+          "Semisoft"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.specialcheese.com"
+  },
+  {
+    "address": "7989 Arndt Road",
+    "aka": [],
+    "city": "Oconto Falls",
+    "county": null,
+    "dfw_company_id": 155,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "springside-cheese-corporation",
+    "lat": 44.966475,
+    "lng": -88.159438,
+    "name": "Springside Cheese Corporation",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.springsidecheese.com"
+  },
+  {
+    "address": "7742 County Road II",
+    "aka": [
+      "Willow Creek Cheese"
+    ],
+    "city": "Fremont",
+    "county": "Winnebago",
+    "dfw_company_id": 57,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "union-star-corp",
+    "lat": 44.216823,
+    "lng": -88.78795,
+    "name": "Union Star, Corp.",
+    "plants": [
+      {
+        "address": "7742 County Road II",
+        "city": "Fremont",
+        "county": "Winnebago",
+        "datcp_id": "55-1113",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack",
+          "Mozzarella"
+        ]
+      },
+      {
+        "address": "W1965 State Road 21",
+        "city": "Berlin",
+        "county": "Waushara",
+        "datcp_id": "55-1432",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Granular and Stirred Curd",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Muenster (Munster)",
+          "Other",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.unionstarcheese.com"
+  },
+  {
+    "address": "5023 State Road 23",
+    "aka": [
+      "UC Cheese LLC",
+      "Uplands Cheese"
+    ],
+    "city": "Dodgeville",
+    "county": "Iowa",
+    "dfw_company_id": 108,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "uplands-cheese-company",
+    "lat": 43.058998,
+    "lng": -90.140873,
+    "name": "Uplands Cheese Company",
+    "plants": [
+      {
+        "address": "5023 State Road 23",
+        "city": "Dodgeville",
+        "county": "Iowa",
+        "datcp_id": "55-405",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Hard"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.uplandscheese.com"
+  },
+  {
+    "address": "2923 Mayer Rd",
+    "aka": [
+      "V & V Supremo Foods - Arena",
+      "V&V Supremo Foods, Inc"
+    ],
+    "city": "Browntown",
+    "county": "Lafayette",
+    "dfw_company_id": 28,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "v-v-supremo-foods-inc",
+    "lat": 41.853224,
+    "lng": -87.658601,
+    "name": "V & V Supremo Foods, Inc.",
+    "plants": [
+      {
+        "address": "2923 Mayer Rd",
+        "city": "Browntown",
+        "county": "Lafayette",
+        "datcp_id": "55-1124",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Other",
+          "Pasteurizer - HTST"
+        ]
+      },
+      {
+        "address": "6415 County Road H",
+        "city": "Arena",
+        "county": "Iowa",
+        "datcp_id": "55-1554",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://vvsupremo.com/"
+  },
+  {
+    "address": "2903 3rd Street North",
+    "aka": [],
+    "city": "Monroe",
+    "county": null,
+    "dfw_company_id": 213,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "w-w-dairy-llc",
+    "lat": 42.608468,
+    "lng": -89.636786,
+    "name": "W&W Dairy, LLC",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.wwdairy.com"
+  },
+  {
+    "address": "409 Milwaukee St",
+    "aka": [
+      "Wakker Cheese"
+    ],
+    "city": "Kewaunee",
+    "county": "Kewaunee",
+    "dfw_company_id": 285,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "wakker-cheese-llc",
+    "lat": 44.45894,
+    "lng": -87.50342,
+    "name": "Wakker Cheese LLC",
+    "plants": [
+      {
+        "address": "409 Milwaukee St",
+        "city": "Kewaunee",
+        "county": "Kewaunee",
+        "datcp_id": "55-253",
+        "operations": [
+          "Affinage (Aging)",
+          "Brine System",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - Batch"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.wakkercheese.com/"
+  },
+  {
+    "address": "615 N Main St",
+    "aka": [],
+    "city": "Westby",
+    "county": "Vernon",
+    "dfw_company_id": 19,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "westby-cooperative-creamery",
+    "lat": 43.647468,
+    "lng": -90.861263,
+    "name": "Westby Cooperative Creamery",
+    "plants": [
+      {
+        "address": "615 N Main St",
+        "city": "Westby",
+        "county": "Vernon",
+        "datcp_id": "55-372",
+        "operations": [
+          "Bovine Milk",
+          "Custom Processing",
+          "Retail Store",
+          "Cottage Cheese",
+          "Membrane Processing",
+          "Pasteurizer - Batch",
+          "Pasteurizer - HTST",
+          "Sour Cream",
+          "Whey/Whey By Products",
+          "Yogurt",
+          "Cream Cheese"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.westbycreamery.com"
+  },
+  {
+    "address": "113 W Wisconsin St",
+    "aka": [
+      "Knaus Cheese"
+    ],
+    "city": "Weyauwega",
+    "county": "Waupaca",
+    "dfw_company_id": 160,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "weyauwega-star-dairy-inc",
+    "lat": 44.322219,
+    "lng": -88.934321,
+    "name": "Weyauwega Star Dairy, Inc.",
+    "plants": [
+      {
+        "address": "N5722 County Road C",
+        "city": "Rosendale",
+        "county": "Fond du Lac",
+        "datcp_id": "55-56",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "113 W Wisconsin St",
+        "city": "Weyauwega",
+        "county": "Waupaca",
+        "datcp_id": "55-901",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Asiago",
+          "Brick",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.stardairy.com/"
+  },
+  {
+    "address": "214 W Henni St",
+    "aka": [
+      "Widmers Cheese Cellars Inc"
+    ],
+    "city": "Theresa",
+    "county": "Dodge",
+    "dfw_company_id": 18,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "widmer-s-cheese-cellars-inc",
+    "lat": 43.517314,
+    "lng": -88.453489,
+    "name": "Widmer's Cheese Cellars, Inc.",
+    "plants": [
+      {
+        "address": "214 W Henni St",
+        "city": "Theresa",
+        "county": "Dodge",
+        "datcp_id": "55-150",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Brick",
+          "Cheddar",
+          "Colby"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.widmerscheese.com"
+  },
+  {
+    "address": "1521 Brookfield Ave",
+    "aka": [],
+    "city": "Howard",
+    "county": "Brown",
+    "dfw_company_id": 135,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "winona-foods-inc",
+    "lat": 44.591367,
+    "lng": -88.043968,
+    "name": "Winona Foods, Inc.",
+    "plants": [
+      {
+        "address": "1521 Brookfield Ave",
+        "city": "Howard",
+        "county": "Brown",
+        "datcp_id": "55-444",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred",
+          "Asiago",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Parmesan and Reggiano",
+          "Provolone",
+          "Romano",
+          "Swiss and Emmentaler"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.winonafoods.com"
+  },
+  {
+    "address": "105 3rd St",
+    "aka": [],
+    "city": "Monroe",
+    "county": "Green",
+    "dfw_company_id": 32,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "wisconsin-cheese-group-llc",
+    "lat": 42.608118,
+    "lng": -89.657898,
+    "name": "Wisconsin Cheese Group, LLC",
+    "plants": [
+      {
+        "address": "105 3rd St",
+        "city": "Monroe",
+        "county": "Green",
+        "datcp_id": "55-11",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Process Cheese",
+          "Other"
+        ]
+      },
+      {
+        "address": "114 E Coates Ave",
+        "city": "Monticello",
+        "county": "Green",
+        "datcp_id": "55-215",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Cut/Wrap/Shred",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://sabrosurafoods.com/"
+  },
+  {
+    "address": "Box 215 Hwy 34/C",
+    "aka": [],
+    "city": "Rudolph",
+    "county": null,
+    "dfw_company_id": 50,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "wisconsin-dairy-state-cheese-co-inc",
+    "lat": 44.5,
+    "lng": -89.81,
+    "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://dairystatecheese.com/"
+  },
+  {
+    "address": "P.O. Box 940425",
+    "aka": [],
+    "city": "Plano",
+    "county": null,
+    "dfw_company_id": 124,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "wisconsin-s-finest",
+    "lat": 33.021845,
+    "lng": -96.615719,
+    "name": "Wisconsin's Finest",
+    "plants": [],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.wisconsinsfinest.com"
+  },
+  {
+    "address": "5710 County Road H",
+    "aka": [
+      "WISKERCHEN CHEESE LLC",
+      "Wiskerchen Cheese, LLC"
+    ],
+    "city": "Auburndale",
+    "county": "Wood",
+    "dfw_company_id": 81,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "wiskerchen-cheese-inc",
+    "lat": 44.655099,
+    "lng": -90.157951,
+    "name": "Wiskerchen Cheese, Inc.",
+    "plants": [
+      {
+        "address": "5710 County Road H",
+        "city": "Auburndale",
+        "county": "Wood",
+        "datcp_id": "55-1631",
+        "operations": [
+          "Bovine Milk",
+          "Goat Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HHST",
+          "Whey/Whey By Products",
+          "Bleu",
+          "Gorgonzola",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://www.wiskerchencheese.com/"
+  },
+  {
+    "address": "24105 County Highway MM",
+    "aka": [
+      "Yellowstone Cheese LLC",
+      "Yellowstone Cheese, LLC"
+    ],
+    "city": "Cadott",
+    "county": "Chippewa",
+    "dfw_company_id": 202,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "yellowstone-cheese-inc",
+    "lat": 44.929215,
+    "lng": -91.183782,
+    "name": "Yellowstone Cheese, Inc.",
+    "plants": [
+      {
+        "address": "24105 County Highway MM",
+        "city": "Cadott",
+        "county": "Chippewa",
+        "datcp_id": "55-174",
+        "operations": [
+          "Bovine Milk",
+          "Retail Store",
+          "Cheese Processing",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Colby",
+          "Monterey/Monterey Jack"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.yellowstonecheese.com/"
+  },
+  {
+    "address": "N6853 State Road 78",
+    "aka": [
+      "Zimmerman Cheese, Inc",
+      "Zimmerman Cheese, Inc."
+    ],
+    "city": "South Wayne",
+    "county": "Lafayette",
+    "dfw_company_id": 36,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "zimmerman-cheese-company-inc",
+    "lat": 42.641031,
+    "lng": -89.915714,
+    "name": "Zimmerman Cheese Company, Inc.",
+    "plants": [
+      {
+        "address": "N6853 State Road 78",
+        "city": "South Wayne",
+        "county": "Lafayette",
+        "datcp_id": "55-521",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Brick",
+          "Muenster (Munster)"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.zimmermancheese.com/"
+  }
+]

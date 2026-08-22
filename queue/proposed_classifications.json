@@ -63,13 +63,6 @@
     "suggested": "processor"
   },
   {
-    "city": "Jersey City",
-    "evidence": "DFW lists it as a maker (2 cheese types: Cheddar, Monterey Jack); 0 DATCP plant(s)",
-    "id": "anderson-international-foods",
-    "name": "Anderson International Foods",
-    "suggested": "creamery"
-  },
-  {
     "city": "New Berlin",
     "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Other, Powder Mixing/Blending",
     "id": "archer-daniels-midland-company",
@@ -414,15 +407,8 @@
   },
   {
     "city": "Lake Mills",
-    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
+    "evidence": "DFW lists it under Sold By only, not Made By; 1 DATCP plant(s)",
     "id": "crystal-farms-dairy-co",
-    "name": "Crystal Farms Dairy Co.",
-    "suggested": "processor"
-  },
-  {
-    "city": "Lake Mills",
-    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
-    "id": "crystal-farms-michael-foods-inc",
     "name": "Crystal Farms - Michael Foods, Inc.",
     "suggested": "commodity"
   },
@@ -666,10 +652,10 @@
   },
   {
     "city": "South Wayne",
-    "evidence": "1 DATCP plant(s) making Brick, Cheddar, Granular and Stirred Curd; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (6 cheese types: Butterkase, Farmers, Havarti, Muenster); 1 DATCP plant(s)",
     "id": "forgotten-valley-cheese",
-    "name": "Forgotten Valley Cheese",
-    "suggested": "commodity"
+    "name": "Valley View Cheese Cooperative",
+    "suggested": "creamery"
   },
   {
     "city": "Greenwood",
@@ -785,10 +771,10 @@
   },
   {
     "city": "Edgar",
-    "evidence": "1 DATCP plant(s) making Cheddar, Monterey/Monterey Jack; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (2 cheese types: Cheddar, Monterey Jack); 1 DATCP plant(s)",
     "id": "harmony-cheese",
-    "name": "Harmony Cheese",
-    "suggested": "commodity"
+    "name": "Anderson International Foods",
+    "suggested": "creamery"
   },
   {
     "city": "De Pere",
@@ -858,13 +844,6 @@
     "evidence": "DFW lists it as a maker (5 cheese types: Butterkase, Camembert, Gouda, Aged Cheddar); 0 DATCP plant(s)",
     "id": "hoard-s-dairymen-farm-creamery",
     "name": "Hoard's Dairymen Farm Creamery",
-    "suggested": "creamery"
-  },
-  {
-    "city": "Thorp",
-    "evidence": "DFW lists it as a maker (3 cheese types: Gouda, Marieke® Golden, Fenugreek Gouda), retail store; 0 DATCP plant(s)",
-    "id": "hollands-family-cheese-marieke-gouda",
-    "name": "Hollands Family Cheese - Marieke Gouda",
     "suggested": "creamery"
   },
   {
@@ -995,17 +974,10 @@
   },
   {
     "city": "Cambria",
-    "evidence": "DFW lists it as a maker (2 cheese types: Blue, Gorgonzola), retail store; 0 DATCP plant(s)",
-    "id": "kingston-cheese-co-op",
+    "evidence": "DFW lists it as a maker (2 cheese types: Blue, Gorgonzola), retail store; 1 DATCP plant(s)",
+    "id": "kingston-cheese-cooperative",
     "name": "Kingston Cheese Co-op",
     "suggested": "creamery"
-  },
-  {
-    "city": "Cambria",
-    "evidence": "1 DATCP plant(s) making Bleu, Gorgonzola; no DFW consumer listing",
-    "id": "kingston-cheese-cooperative",
-    "name": "Kingston Cheese Cooperative",
-    "suggested": "commodity"
   },
   {
     "city": "Green Bay",
@@ -1072,15 +1044,8 @@
   },
   {
     "city": "Malone",
-    "evidence": "1 DATCP plant(s) making Cheddar, Gouda, Hard, Monterey/Monterey Jack, Muenster (Munster); no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (3 cheese types: Chandoka®, Martone, Mixed-Milk Blue), retail store; 1 DATCP plant(s)",
     "id": "laclare-creamery-llc",
-    "name": "LaClare Creamery, LLC",
-    "suggested": "commodity"
-  },
-  {
-    "city": "Malone",
-    "evidence": "DFW lists it as a maker (3 cheese types: Chandoka®, Martone, Mixed-Milk Blue), retail store; 0 DATCP plant(s)",
-    "id": "laclare-family-creamery",
     "name": "LaClare Family Creamery",
     "suggested": "creamery"
   },
@@ -1254,10 +1219,10 @@
   },
   {
     "city": "Thorp",
-    "evidence": "1 DATCP plant(s) making Cheddar, Gouda; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (3 cheese types: Gouda, Marieke® Golden, Fenugreek Gouda), retail store; 1 DATCP plant(s)",
     "id": "marieke-gouda",
-    "name": "Marieke Gouda",
-    "suggested": "commodity"
+    "name": "Hollands Family Cheese - Marieke Gouda",
+    "suggested": "creamery"
   },
   {
     "city": "Durand",
@@ -1513,17 +1478,10 @@
   },
   {
     "city": "Oshkosh",
-    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
-    "id": "oshkosh-cheese-sales",
+    "evidence": "DFW lists it under Sold By only, not Made By; 1 DATCP plant(s)",
+    "id": "oshkosh-storage-company",
     "name": "Oshkosh Cheese Sales",
     "suggested": "commodity"
-  },
-  {
-    "city": "Oshkosh",
-    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
-    "id": "oshkosh-storage-company",
-    "name": "Oshkosh Storage Company",
-    "suggested": "processor"
   },
   {
     "city": "Campbellsport",
@@ -1695,10 +1653,10 @@
   },
   {
     "city": "Colby",
-    "evidence": "1 DATCP plant(s) making Pasteurized Cheese Spread, Pasteurized Process Cheese/Cheese Food, Pasteurized Processed Cheese Spread; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (3 cheese types: Pasteurized Processed Cheese Sauce, Pasteurized Processed Cheese Food, Pasteurized Processed Cheese Spread); 1 DATCP plant(s)",
     "id": "revela-foods-colby-llc",
-    "name": "Revela Foods - Colby, LLC",
-    "suggested": "commodity"
+    "name": "Welcome Dairy LLC",
+    "suggested": "creamery"
   },
   {
     "city": "Monroe",
@@ -1933,17 +1891,10 @@
   },
   {
     "city": "Coloma",
-    "evidence": "DFW lists it under Sold By only, not Made By; 0 DATCP plant(s)",
-    "id": "stoneridge-meat-country-market",
+    "evidence": "DFW lists it under Sold By only, not Made By; 2 DATCP plant(s)",
+    "id": "stoneridge-wholesale-division-llc",
     "name": "StoneRidge Meat & Country Market",
     "suggested": "commodity"
-  },
-  {
-    "city": "Coloma",
-    "evidence": "2 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
-    "id": "stoneridge-wholesale-division-llc",
-    "name": "StoneRidge Wholesale Division, LLC",
-    "suggested": "processor"
   },
   {
     "city": "Plain",
@@ -2065,13 +2016,6 @@
     "suggested": "creamery"
   },
   {
-    "city": "South Wayne",
-    "evidence": "DFW lists it as a maker (6 cheese types: Butterkase, Farmers, Havarti, Muenster); 0 DATCP plant(s)",
-    "id": "valley-view-cheese-cooperative",
-    "name": "Valley View Cheese Cooperative",
-    "suggested": "creamery"
-  },
-  {
     "city": "Lancaster",
     "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
     "id": "vesperman-farms",
@@ -2105,13 +2049,6 @@
     "id": "weber-farm-store",
     "name": "Weber Farm Store",
     "suggested": "processor"
-  },
-  {
-    "city": "Colby",
-    "evidence": "DFW lists it as a maker (3 cheese types: Pasteurized Processed Cheese Sauce, Pasteurized Processed Cheese Food, Pasteurized Processed Cheese Spread); 0 DATCP plant(s)",
-    "id": "welcome-dairy-llc",
-    "name": "Welcome Dairy LLC",
-    "suggested": "creamery"
   },
   {
     "city": "Hayward",
