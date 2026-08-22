@@ -83,6 +83,8 @@ export default function App() {
   const [awardedOnly, setAwardedOnly] = useState(() => initialParam("awards") === "1");
   const [sort, setSort] = useState<SortKey>(initialSort);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  // Phones show one pane at a time (the floating flip pill); desktop ignores this.
+  const [mobilePane, setMobilePane] = useState<"list" | "map">("list");
 
   // Cheese-view state.
   const [cheeseQuery, setCheeseQuery] = useState(() => initialParam("cq"));
@@ -847,7 +849,7 @@ export default function App() {
 
       <div className="viewport">
         <div className={`layout${view === "map" ? "" : " view-off"}`}>
-          <div className="sidebar">
+          <div className={`sidebar${mobilePane === "map" ? " pane-off" : ""}`}>
             <div className="filters">
               <input
                 type="search"
@@ -930,7 +932,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="map-pane">
+          <div className={`map-pane${mobilePane === "list" ? " pane-off" : ""}`}>
             <MapView
               creameries={shown}
               selectedId={selectedId}
@@ -967,6 +969,27 @@ export default function App() {
               />
             )}
           </div>
+
+          <button
+            className="mobile-flip"
+            onClick={() => setMobilePane((p) => (p === "list" ? "map" : "list"))}
+          >
+            {mobilePane === "list" ? (
+              <>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2.5a6.3 6.3 0 0 0-6.3 6.3c0 4.6 5 11.2 6.3 12.7 1.3-1.5 6.3-8.1 6.3-12.7A6.3 6.3 0 0 0 12 2.5zm0 8.9a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z" />
+                </svg>
+                Show map
+              </>
+            ) : (
+              <>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5.2h16v2.6H4zm0 5.5h16v2.6H4zm0 5.5h16v2.6H4z" />
+                </svg>
+                Show list
+              </>
+            )}
+          </button>
         </div>
 
         <div className={`cheese-pane${view === "cheeses" ? "" : " view-off"}`}>

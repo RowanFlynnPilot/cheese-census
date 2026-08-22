@@ -1728,19 +1728,82 @@ button.highlight {
   }
 }
 
+/* Mobile-only affordances, inert on desktop. */
+.mobile-flip,
+.sheet-back {
+  display: none;
+}
+
 /* ── Narrow / mobile ────────────────────────────────────────────────────── */
 
 @media (max-width: 760px) {
+  /* One pane at a time instead of a cramped split: list and map stack in the
+     same full-height cell, the floating pill flips between them, and the
+     hidden one keeps its size (visibility, not display) so Leaflet never
+     needs a resize. (.layout keeps its base absolute-inset sizing.) */
   .layout {
-    grid-template-columns: 1fr;
-    /* Give the list whatever the map does not need, rather than a fixed split —
-       the filter block alone was leaving room for two rows. */
-    grid-template-rows: 1fr 42vh;
+    display: block;
+  }
+
+  .sidebar,
+  .map-pane {
+    position: absolute;
+    inset: 0;
   }
 
   .sidebar {
     border-right: 0;
-    border-bottom: 1px solid var(--rule);
+  }
+
+  .pane-off {
+    visibility: hidden;
+  }
+
+  .mobile-flip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    position: absolute;
+    bottom: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border: 0;
+    border-radius: 999px;
+    background: var(--teal-dark);
+    color: var(--cream);
+    font-family: var(--body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 0.7rem 1.35rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(29, 35, 33, 0.25), 0 8px 24px rgba(29, 35, 33, 0.25);
+  }
+
+  .mobile-flip svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+  }
+
+  /* The full-screen sheet's way back: a thumb-sized bar pinned to the bottom. */
+  .sheet-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    border: 0;
+    background: var(--teal);
+    color: var(--cream);
+    font-family: var(--body);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.95rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 -2px 8px rgba(29, 35, 33, 0.12);
   }
 
   /* The map pane is only the bottom half here, so anchoring the panel inside it

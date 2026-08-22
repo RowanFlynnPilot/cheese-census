@@ -297,6 +297,12 @@ export default function CreameryDetail({
           </>
         )}
       </section>
+
+      {/* Phones show the panel as a full-screen sheet; this thumb-sized bar is
+          the way back (the corner × stays for desktop). */}
+      <button className="sheet-back" onClick={onClose}>
+        ← Back to the map
+      </button>
     </aside>
   );
 }

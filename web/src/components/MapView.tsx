@@ -82,7 +82,17 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       maxZoom: 18,
     }).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
+    // Leaflet only watches window resizes; the container itself changes size
+    // too (mobile pane flips, embed reflows, orientation changes). Re-measure,
+    // and re-frame the overview unless the reader is looking at a pin.
+    const observer = new ResizeObserver(() => {
+      if (!map.current) return;
+      map.current.invalidateSize({ animate: false });
+      if (!selection.current) frame();
+    });
+    observer.observe(host.current);
     return () => {
+      observer.disconnect();
       map.current?.remove();
       map.current = null;
     };
