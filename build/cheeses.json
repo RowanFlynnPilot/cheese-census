@@ -582,7 +582,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread-8oz",
+        "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread",
         "score": 100.0
       },
       {
@@ -632,7 +632,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "cedar-valley-cheese-inc--aged-provolone-16-oz",
+        "cheese_id": "cedar-valley-cheese-inc--aged-provolone",
         "score": 100.0
       },
       {
@@ -746,7 +746,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds",
         "score": 100.0
       },
       {
@@ -1105,11 +1105,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--cranberry-cheddar",
         "score": 100.0
       }
     ],
@@ -1465,7 +1465,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       },
       {
@@ -2897,7 +2897,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       },
       {
@@ -3194,7 +3194,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread",
         "score": 100.0
       },
       {
@@ -5871,7 +5871,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "cedar-valley-cheese-inc--aged-provolone-16-oz",
+        "cheese_id": "cedar-valley-cheese-inc--aged-provolone",
         "score": 100.0
       },
       {
@@ -7009,7 +7009,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--beer-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--beer-cheddar",
         "score": 100.0
       },
       {
@@ -8333,11 +8333,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 100.0
       },
       {
@@ -8480,7 +8480,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-aged-gouda",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--aged-gouda",
         "score": 100.0
       },
       {
@@ -8539,7 +8539,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -9448,11 +9448,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar",
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds-1-lb",
+        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds",
         "score": 100.0
       },
       {
@@ -10217,7 +10217,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       },
       {
@@ -10364,7 +10364,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -10495,12 +10495,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "cedar-valley-cheese-inc--aged-provolone-16-oz",
+    "id": "cedar-valley-cheese-inc--aged-provolone",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Aged Provolone 16 oz",
+    "name": "Aged Provolone",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -10627,7 +10627,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
         "score": 94.7
       },
       {
@@ -10635,7 +10635,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar",
         "score": 94.7
       }
     ],
@@ -10677,7 +10677,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-chipotle-colby-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--chipotle-colby-cheese",
         "score": 78.9
       },
       {
@@ -10843,7 +10843,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds",
         "score": 100.0
       },
       {
@@ -10942,7 +10942,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -11110,11 +11110,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--cranberry-cheddar",
         "score": 100.0
       }
     ],
@@ -11250,7 +11250,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-garlic-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--garlic-cheddar-cheese-curds",
         "score": 100.0
       },
       {
@@ -11319,7 +11319,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 100.0
       },
       {
@@ -11523,7 +11523,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       },
       {
@@ -11584,7 +11584,7 @@
         "score": 89.5
       },
       {
-        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
         "score": 89.5
       },
       {
@@ -11641,7 +11641,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       }
     ],
@@ -11899,7 +11899,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
         "score": 94.7
       },
       {
@@ -12271,7 +12271,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       },
       {
@@ -12781,7 +12781,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--beer-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--beer-cheddar",
         "score": 100.0
       },
       {
@@ -14484,7 +14484,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -14588,7 +14588,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--beer-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--beer-cheddar",
         "score": 100.0
       },
       {
@@ -15299,7 +15299,7 @@
         "score": 92.1
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-garlic-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--garlic-cheddar-cheese-curds",
         "score": 92.1
       },
       {
@@ -15603,7 +15603,7 @@
     "rind": "washed",
     "similar": [
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--jalapeno-brick-spread-8oz",
+        "cheese_id": "widmer-s-cheese-cellars-inc--jalapeno-brick-spread",
         "score": 100.0
       },
       {
@@ -15711,7 +15711,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--smoked-butterkase-7oz",
+        "cheese_id": "widmer-s-cheese-cellars-inc--smoked-butterkase",
         "score": 100.0
       },
       {
@@ -15770,7 +15770,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -15821,7 +15821,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -15917,7 +15917,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--smoked-butterkase-7oz",
+        "cheese_id": "widmer-s-cheese-cellars-inc--smoked-butterkase",
         "score": 100.0
       },
       {
@@ -16081,7 +16081,7 @@
         "score": 78.9
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-ranch-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--ranch-cheddar-cheese-curds",
         "score": 78.9
       },
       {
@@ -17055,319 +17055,6 @@
     "wisconsin_original": false
   },
   {
-    "add_ins": [
-      "chipotle"
-    ],
-    "age_band": "young",
-    "creamery_id": "ellsworth-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "colby_jack",
-    "flavor": [
-      "peppery",
-      "smoky",
-      "mild",
-      "milky",
-      "sweet"
-    ],
-    "id": "ellsworth-cooperative-creamery--15-5-oz-chipotle-colby-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "15.5 oz Chipotle Colby Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "springside-artisan-cheese-llc--chipotle-jack",
-        "score": 89.5
-      },
-      {
-        "cheese_id": "widmer-s-cheese-cellars-inc--jalapeno-pepper-colby-14oz",
-        "score": 83.2
-      },
-      {
-        "cheese_id": "carr-valley-cheese-company-inc--hot-pepper-jack-smoked",
-        "score": 78.9
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--bacon-colby",
-        "score": 78.9
-      },
-      {
-        "cheese_id": "sargento-cheese-inc--smoky-hot-colby-jack-sliced-cheese",
-        "score": 78.9
-      },
-      {
-        "cheese_id": "yellowstone-cheese-inc--bacon-colby",
-        "score": 78.9
-      }
-    ],
-    "texture": "semi_soft",
-    "trademarked": false,
-    "wisconsin_original": true
-  },
-  {
-    "add_ins": [
-      "ghost_pepper",
-      "habanero"
-    ],
-    "age_band": "young",
-    "creamery_id": "ellsworth-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "colby_jack",
-    "flavor": [
-      "peppery",
-      "mild",
-      "milky",
-      "buttery"
-    ],
-    "id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "15.5 oz Habanero Ghost Jack Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "cedar-valley-cheese-inc--ghost-chili-pepper-monterey-jack",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--habanero-jack",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "maple-leaf-cheese-co--habanero-jack",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "nasonville-dairy-inc--ghost-pepper-jack-cheese",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "nasonville-dairy-inc--habanero-jack-cheese",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "springside-artisan-cheese-llc--ghost-jack",
-        "score": 94.7
-      }
-    ],
-    "texture": "semi_soft",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "medium",
-    "creamery_id": "ellsworth-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "cheddar",
-    "flavor": [
-      "smoky",
-      "buttery",
-      "sharp",
-      "tangy"
-    ],
-    "id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "15.5 oz Smoky Cheddar Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "cedar-grove-cheese-inc--smoked-medium-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--cheddar-cheese-smoked-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "dairy-state-cheese-llc--smoked-natural-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "decatur-dairy-inc--smoked-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "hook-s-cheese-company-inc--smoked-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "kingston-cheese-cooperative--applewood-smoked-cheddar-cheese",
-        "score": 100.0
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [
-      "garlic"
-    ],
-    "age_band": "fresh",
-    "creamery_id": "ellsworth-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "curds",
-    "flavor": [
-      "milky",
-      "salty",
-      "mild"
-    ],
-    "id": "ellsworth-cooperative-creamery--16-oz-garlic-cheddar-cheese-curds",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "16 oz Garlic Cheddar Cheese Curds",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "cedar-valley-cheese-inc--garlic-cheddar-cheese-curds",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--garlic-dill-cheddar-cheese-curds",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "gibbsville-cheese-company-inc--garlic-and-dill-cheese-curds",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "nasonville-dairy-inc--garlic-and-dill-cheese-curds",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "ron-s-wisconsin-cheese--garlic-and-dill-cheddar-cheese-curds",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "rosewood-dairy-inc--garlic-and-dill-cheese-curds-sealed",
-        "score": 94.7
-      }
-    ],
-    "texture": "fresh",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "fresh",
-    "creamery_id": "ellsworth-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "curds",
-    "flavor": [
-      "savory",
-      "creamy",
-      "milky",
-      "salty",
-      "mild"
-    ],
-    "id": "ellsworth-cooperative-creamery--16-oz-ranch-cheddar-cheese-curds",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "16 oz Ranch Cheddar Cheese Curds",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "rosewood-dairy-inc--ranch-cheese-curds-sealed",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "scray-s-cheese-co--ranch-cheese-curds-14-oz",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "weyauwega-star-dairy-inc--cheddar-cheese-curd-ranch",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "arena-cheese--buffalo-curd",
-        "score": 89.5
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--cajun-cheddar-cheese-curds",
-        "score": 89.5
-      },
-      {
-        "cheese_id": "ellsworth-cooperative-creamery--taco-cheddar-cheese-curds",
-        "score": 89.5
-      }
-    ],
-    "texture": "fresh",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "medium",
-    "creamery_id": "ellsworth-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "cheddar",
-    "flavor": [
-      "sharp",
-      "buttery",
-      "tangy"
-    ],
-    "id": "ellsworth-cooperative-creamery--7-5-oz-sharp-cheddar-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "7.5 oz Sharp Cheddar Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "agropur-inc--cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "arena-cheese--cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "arena-cheese--sharp-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--ampi-sharp-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "bella-pak-llc--cheddar",
-        "score": 100.0
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
     "add_ins": [],
     "age_band": "fresh",
     "creamery_id": "ellsworth-cooperative-creamery",
@@ -17568,6 +17255,60 @@
     "wisconsin_original": false
   },
   {
+    "add_ins": [
+      "chipotle"
+    ],
+    "age_band": "young",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "colby_jack",
+    "flavor": [
+      "peppery",
+      "smoky",
+      "mild",
+      "milky",
+      "sweet"
+    ],
+    "id": "ellsworth-cooperative-creamery--chipotle-colby-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Chipotle Colby Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "springside-artisan-cheese-llc--chipotle-jack",
+        "score": 89.5
+      },
+      {
+        "cheese_id": "widmer-s-cheese-cellars-inc--jalapeno-pepper-colby",
+        "score": 83.2
+      },
+      {
+        "cheese_id": "carr-valley-cheese-company-inc--hot-pepper-jack-smoked",
+        "score": 78.9
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--bacon-colby",
+        "score": 78.9
+      },
+      {
+        "cheese_id": "sargento-cheese-inc--smoky-hot-colby-jack-sliced-cheese",
+        "score": 78.9
+      },
+      {
+        "cheese_id": "yellowstone-cheese-inc--bacon-colby",
+        "score": 78.9
+      }
+    ],
+    "texture": "semi_soft",
+    "trademarked": false,
+    "wisconsin_original": true
+  },
+  {
     "add_ins": [],
     "age_band": "young",
     "creamery_id": "ellsworth-cooperative-creamery",
@@ -17718,6 +17459,58 @@
     "wisconsin_original": false
   },
   {
+    "add_ins": [
+      "garlic"
+    ],
+    "age_band": "fresh",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "curds",
+    "flavor": [
+      "milky",
+      "salty",
+      "mild"
+    ],
+    "id": "ellsworth-cooperative-creamery--garlic-cheddar-cheese-curds",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Garlic Cheddar Cheese Curds",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "cedar-valley-cheese-inc--garlic-cheddar-cheese-curds",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--garlic-dill-cheddar-cheese-curds",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "gibbsville-cheese-company-inc--garlic-and-dill-cheese-curds",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "nasonville-dairy-inc--garlic-and-dill-cheese-curds",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "ron-s-wisconsin-cheese--garlic-and-dill-cheddar-cheese-curds",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "rosewood-dairy-inc--garlic-and-dill-cheese-curds-sealed",
+        "score": 94.7
+      }
+    ],
+    "texture": "fresh",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
     "add_ins": [],
     "age_band": "medium",
     "creamery_id": "ellsworth-cooperative-creamery",
@@ -17769,6 +17562,60 @@
   },
   {
     "add_ins": [
+      "ghost_pepper",
+      "habanero"
+    ],
+    "age_band": "young",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "colby_jack",
+    "flavor": [
+      "peppery",
+      "mild",
+      "milky",
+      "buttery"
+    ],
+    "id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Habanero Ghost Jack Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "cedar-valley-cheese-inc--ghost-chili-pepper-monterey-jack",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--habanero-jack",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "maple-leaf-cheese-co--habanero-jack",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "nasonville-dairy-inc--ghost-pepper-jack-cheese",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "nasonville-dairy-inc--habanero-jack-cheese",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "springside-artisan-cheese-llc--ghost-jack",
+        "score": 94.7
+      }
+    ],
+    "texture": "semi_soft",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [
       "jalapeno"
     ],
     "age_band": "fresh",
@@ -17804,7 +17651,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
         "score": 94.7
       },
       {
@@ -18028,6 +17875,159 @@
     "description_generated": true,
     "family": "curds",
     "flavor": [
+      "savory",
+      "creamy",
+      "milky",
+      "salty",
+      "mild"
+    ],
+    "id": "ellsworth-cooperative-creamery--ranch-cheddar-cheese-curds",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Ranch Cheddar Cheese Curds",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "rosewood-dairy-inc--ranch-cheese-curds-sealed",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "scray-s-cheese-co--ranch-cheese-curds",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "weyauwega-star-dairy-inc--cheddar-cheese-curd-ranch",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "arena-cheese--buffalo-curd",
+        "score": 89.5
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--cajun-cheddar-cheese-curds",
+        "score": 89.5
+      },
+      {
+        "cheese_id": "ellsworth-cooperative-creamery--taco-cheddar-cheese-curds",
+        "score": 89.5
+      }
+    ],
+    "texture": "fresh",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
+    "age_band": "medium",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "cheddar",
+    "flavor": [
+      "sharp",
+      "buttery",
+      "tangy"
+    ],
+    "id": "ellsworth-cooperative-creamery--sharp-cheddar-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Sharp Cheddar Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "agropur-inc--cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "arena-cheese--cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "arena-cheese--sharp-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--ampi-sharp-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "bella-pak-llc--cheddar",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
+    "age_band": "medium",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "cheddar",
+    "flavor": [
+      "smoky",
+      "buttery",
+      "sharp",
+      "tangy"
+    ],
+    "id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Smoky Cheddar Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "cedar-grove-cheese-inc--smoked-medium-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--cheddar-cheese-smoked-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "dairy-state-cheese-llc--smoked-natural-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "decatur-dairy-inc--smoked-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "hook-s-cheese-company-inc--smoked-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "kingston-cheese-cooperative--applewood-smoked-cheddar-cheese",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
+    "age_band": "fresh",
+    "creamery_id": "ellsworth-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "curds",
+    "flavor": [
       "peppery",
       "savory",
       "milky",
@@ -18060,7 +18060,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds",
         "score": 100.0
       },
       {
@@ -18098,7 +18098,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-aged-gouda",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--aged-gouda",
         "score": 100.0
       },
       {
@@ -18623,7 +18623,7 @@
         "score": 93.7
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 93.7
       }
     ],
@@ -19074,7 +19074,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -20285,7 +20285,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds",
         "score": 100.0
       },
       {
@@ -20588,7 +20588,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 100.0
       },
       {
@@ -20637,7 +20637,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
         "score": 94.7
       },
       {
@@ -20943,7 +20943,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--beer-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--beer-cheddar",
         "score": 100.0
       },
       {
@@ -21358,11 +21358,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--cranberry-cheddar",
         "score": 100.0
       }
     ],
@@ -21540,12 +21540,12 @@
       "tangy",
       "salty"
     ],
-    "id": "gile-cheese-llc--feta-with-tomato-and-basil-8-oz",
+    "id": "gile-cheese-llc--feta-with-tomato-and-basil",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Feta with Tomato and Basil 8 oz.",
+    "name": "Feta with Tomato and Basil",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -21819,7 +21819,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -21971,7 +21971,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "cedar-valley-cheese-inc--aged-provolone-16-oz",
+        "cheese_id": "cedar-valley-cheese-inc--aged-provolone",
         "score": 100.0
       },
       {
@@ -23640,7 +23640,7 @@
         "score": 83.2
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 83.2
       }
     ],
@@ -24239,7 +24239,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
         "score": 100.0
       },
       {
@@ -24247,7 +24247,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar",
         "score": 100.0
       },
       {
@@ -25114,7 +25114,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -25215,7 +25215,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -26137,7 +26137,7 @@
         "score": 81.6
       },
       {
-        "cheese_id": "gile-cheese-llc--feta-with-tomato-and-basil-8-oz",
+        "cheese_id": "gile-cheese-llc--feta-with-tomato-and-basil",
         "score": 81.6
       },
       {
@@ -26178,7 +26178,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "gile-cheese-llc--feta-with-tomato-and-basil-8-oz",
+        "cheese_id": "gile-cheese-llc--feta-with-tomato-and-basil",
         "score": 100.0
       },
       {
@@ -26337,7 +26337,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
         "score": 100.0
       },
       {
@@ -26345,7 +26345,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar",
         "score": 100.0
       },
       {
@@ -26561,7 +26561,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 94.7
       }
     ],
@@ -26606,7 +26606,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
         "score": 94.7
       },
       {
@@ -26715,7 +26715,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       },
       {
@@ -26772,7 +26772,7 @@
         "score": 89.5
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 89.5
       }
     ],
@@ -26821,11 +26821,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--cranberry-cheddar",
         "score": 100.0
       }
     ],
@@ -27017,11 +27017,11 @@
         "score": 92.1
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 92.1
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 92.1
       },
       {
@@ -27163,11 +27163,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 100.0
       },
       {
@@ -27255,11 +27255,11 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-monterey-jack-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-monterey-jack",
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-muenster-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-muenster",
         "score": 94.7
       },
       {
@@ -27305,7 +27305,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-mozzarella-8-oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-mozzarella",
         "score": 100.0
       },
       {
@@ -27471,11 +27471,11 @@
         "score": 92.1
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 92.1
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 92.1
       },
       {
@@ -27502,12 +27502,12 @@
       "sweet",
       "caramel"
     ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-3-pepper-gouda",
+    "id": "lagrander-s-hillside-dairy-inc--3-pepper-gouda",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "1lb 3 Pepper Gouda",
+    "name": "3 Pepper Gouda",
     "raw_milk": null,
     "rind": "wax",
     "similar": [
@@ -27520,7 +27520,7 @@
         "score": 83.2
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-mango-habanero-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-mango-habanero-deli-cheese",
         "score": 83.2
       },
       {
@@ -27552,12 +27552,12 @@
       "sweet",
       "caramel"
     ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-aged-gouda",
+    "id": "lagrander-s-hillside-dairy-inc--aged-gouda",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "1lb Aged Gouda",
+    "name": "Aged Gouda",
     "raw_milk": null,
     "rind": "wax",
     "similar": [
@@ -27587,323 +27587,6 @@
       }
     ],
     "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [
-      "bacon"
-    ],
-    "age_band": "medium",
-    "creamery_id": "lagrander-s-hillside-dairy-inc",
-    "description": null,
-    "description_generated": true,
-    "family": "cheddar",
-    "flavor": [
-      "smoky",
-      "savory",
-      "buttery",
-      "sharp",
-      "tangy"
-    ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "1lb Cheddar Bacon Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "hook-s-cheese-company-inc--bacon-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "kraemer-wisconsin-cheese-ltd--cheddar-w-bacon",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "nasonville-dairy-inc--bacon-cheddar-cheese",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--bacon-and-onion-yellow-cheddar",
-        "score": 94.7
-      },
-      {
-        "cheese_id": "springside-artisan-cheese-llc--bacon-onion-cheddar-vw",
-        "score": 94.7
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [
-      "jalapeno"
-    ],
-    "age_band": "young",
-    "creamery_id": "lagrander-s-hillside-dairy-inc",
-    "description": null,
-    "description_generated": true,
-    "family": "colby_jack",
-    "flavor": [
-      "peppery",
-      "mild",
-      "milky",
-      "creamy"
-    ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-colby-jack-pepper-jack",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "1lb Colby Jack – Pepper Jack",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "arena-cheese--pepper-jack",
-        "score": 87.4
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--pepper-jack",
-        "score": 87.4
-      },
-      {
-        "cheese_id": "cedar-grove-cheese-inc--pepper-jack",
-        "score": 87.4
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--pepper-jack",
-        "score": 87.4
-      },
-      {
-        "cheese_id": "kraemer-wisconsin-cheese-ltd--pepper-jack",
-        "score": 87.4
-      },
-      {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
-        "score": 87.4
-      }
-    ],
-    "texture": "semi_soft",
-    "trademarked": false,
-    "wisconsin_original": true
-  },
-  {
-    "add_ins": [
-      "habanero",
-      "mango"
-    ],
-    "age_band": "medium",
-    "creamery_id": "lagrander-s-hillside-dairy-inc",
-    "description": null,
-    "description_generated": true,
-    "family": "gouda_edam",
-    "flavor": [
-      "fruity",
-      "peppery",
-      "nutty",
-      "sweet",
-      "caramel"
-    ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-gouda-mango-habanero-deli-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "1lb Gouda Mango Habanero Deli Cheese",
-    "raw_milk": null,
-    "rind": "wax",
-    "similar": [
-      {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-3-pepper-gouda",
-        "score": 83.2
-      },
-      {
-        "cheese_id": "marieke-gouda--marieke-gouda-cranberry",
-        "score": 83.2
-      },
-      {
-        "cheese_id": "mullins-cheese-inc--ghost-chili-gouda",
-        "score": 83.2
-      },
-      {
-        "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-chipotle-gouda",
-        "score": 78.9
-      },
-      {
-        "cheese_id": "marieke-gouda--marieke-gouda-chipotle",
-        "score": 78.9
-      },
-      {
-        "cheese_id": "arena-cheese--gouda",
-        "score": 76.8
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "medium",
-    "creamery_id": "lagrander-s-hillside-dairy-inc",
-    "description": null,
-    "description_generated": true,
-    "family": "gouda_edam",
-    "flavor": [
-      "smoky",
-      "nutty",
-      "sweet",
-      "caramel"
-    ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "1lb Gouda Smoked Deli Cheese",
-    "raw_milk": null,
-    "rind": "wax",
-    "similar": [
-      {
-        "cheese_id": "carr-valley-cheese-company-inc--gouda-smoked",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "decatur-dairy-inc--smoked-gouda",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "emmi-roth-usa--natural-smoked-gouda",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "gile-cheese-llc--smoked-gouda-cheese",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "marieke-gouda--marieke-gouda-smoked",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "meister-cheese-co-llc--natural-smoked-gouda",
-        "score": 100.0
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "medium",
-    "creamery_id": "lagrander-s-hillside-dairy-inc",
-    "description": null,
-    "description_generated": true,
-    "family": "cheddar",
-    "flavor": [
-      "mild",
-      "buttery",
-      "sharp",
-      "tangy"
-    ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-mild-cheddar-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "1lb Mild Cheddar Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "arena-cheese--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "burnett-dairy-cooperative--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "carr-valley-cheese-company-inc--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "gile-cheese-llc--mild-cheddar",
-        "score": 100.0
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [
-      "jalapeno"
-    ],
-    "age_band": "young",
-    "creamery_id": "lagrander-s-hillside-dairy-inc",
-    "description": null,
-    "description_generated": true,
-    "family": "colby_jack",
-    "flavor": [
-      "peppery",
-      "mild",
-      "milky",
-      "buttery"
-    ],
-    "id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "1lb Pepper Jack Deli Cheese",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "arena-cheese--pepper-jack",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--pepper-jack",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-grove-cheese-inc--pepper-jack",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--pepper-jack",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "kraemer-wisconsin-cheese-ltd--pepper-jack",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "maple-leaf-cheese-co--jalapeno-jack",
-        "score": 100.0
-      }
-    ],
-    "texture": "semi_soft",
     "trademarked": false,
     "wisconsin_original": false
   },
@@ -27951,6 +27634,60 @@
       {
         "cheese_id": "bella-pak-llc--cheddar",
         "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [
+      "bacon"
+    ],
+    "age_band": "medium",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "description": null,
+    "description_generated": true,
+    "family": "cheddar",
+    "flavor": [
+      "smoky",
+      "savory",
+      "buttery",
+      "sharp",
+      "tangy"
+    ],
+    "id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Cheddar Bacon Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "hook-s-cheese-company-inc--bacon-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "kraemer-wisconsin-cheese-ltd--cheddar-w-bacon",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "nasonville-dairy-inc--bacon-cheddar-cheese",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--bacon-and-onion-yellow-cheddar",
+        "score": 94.7
+      },
+      {
+        "cheese_id": "springside-artisan-cheese-llc--bacon-onion-cheddar-vw",
+        "score": 94.7
       }
     ],
     "texture": "semi_hard",
@@ -28058,6 +27795,59 @@
     "wisconsin_original": true
   },
   {
+    "add_ins": [
+      "jalapeno"
+    ],
+    "age_band": "young",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "description": null,
+    "description_generated": true,
+    "family": "colby_jack",
+    "flavor": [
+      "peppery",
+      "mild",
+      "milky",
+      "creamy"
+    ],
+    "id": "lagrander-s-hillside-dairy-inc--colby-jack-pepper-jack",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Colby Jack – Pepper Jack",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "arena-cheese--pepper-jack",
+        "score": 87.4
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--pepper-jack",
+        "score": 87.4
+      },
+      {
+        "cheese_id": "cedar-grove-cheese-inc--pepper-jack",
+        "score": 87.4
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--pepper-jack",
+        "score": 87.4
+      },
+      {
+        "cheese_id": "kraemer-wisconsin-cheese-ltd--pepper-jack",
+        "score": 87.4
+      },
+      {
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
+        "score": 87.4
+      }
+    ],
+    "texture": "semi_soft",
+    "trademarked": false,
+    "wisconsin_original": true
+  },
+  {
     "add_ins": [],
     "age_band": "young",
     "creamery_id": "lagrander-s-hillside-dairy-inc",
@@ -28109,6 +27899,112 @@
   },
   {
     "add_ins": [
+      "habanero",
+      "mango"
+    ],
+    "age_band": "medium",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "description": null,
+    "description_generated": true,
+    "family": "gouda_edam",
+    "flavor": [
+      "fruity",
+      "peppery",
+      "nutty",
+      "sweet",
+      "caramel"
+    ],
+    "id": "lagrander-s-hillside-dairy-inc--gouda-mango-habanero-deli-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Gouda Mango Habanero Deli Cheese",
+    "raw_milk": null,
+    "rind": "wax",
+    "similar": [
+      {
+        "cheese_id": "lagrander-s-hillside-dairy-inc--3-pepper-gouda",
+        "score": 83.2
+      },
+      {
+        "cheese_id": "marieke-gouda--marieke-gouda-cranberry",
+        "score": 83.2
+      },
+      {
+        "cheese_id": "mullins-cheese-inc--ghost-chili-gouda",
+        "score": 83.2
+      },
+      {
+        "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-chipotle-gouda",
+        "score": 78.9
+      },
+      {
+        "cheese_id": "marieke-gouda--marieke-gouda-chipotle",
+        "score": 78.9
+      },
+      {
+        "cheese_id": "arena-cheese--gouda",
+        "score": 76.8
+      }
+    ],
+    "texture": "semi_hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
+    "age_band": "medium",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "description": null,
+    "description_generated": true,
+    "family": "gouda_edam",
+    "flavor": [
+      "smoky",
+      "nutty",
+      "sweet",
+      "caramel"
+    ],
+    "id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Gouda Smoked Deli Cheese",
+    "raw_milk": null,
+    "rind": "wax",
+    "similar": [
+      {
+        "cheese_id": "carr-valley-cheese-company-inc--gouda-smoked",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "decatur-dairy-inc--smoked-gouda",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "emmi-roth-usa--natural-smoked-gouda",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "gile-cheese-llc--smoked-gouda-cheese",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "marieke-gouda--marieke-gouda-smoked",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "meister-cheese-co-llc--natural-smoked-gouda",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [
       "garlic"
     ],
     "age_band": "fresh",
@@ -28140,7 +28036,7 @@
         "score": 92.1
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-garlic-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--garlic-cheddar-cheese-curds",
         "score": 92.1
       },
       {
@@ -28157,6 +28053,57 @@
       }
     ],
     "texture": "fresh",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
+    "age_band": "medium",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "description": null,
+    "description_generated": true,
+    "family": "cheddar",
+    "flavor": [
+      "mild",
+      "buttery",
+      "sharp",
+      "tangy"
+    ],
+    "id": "lagrander-s-hillside-dairy-inc--mild-cheddar-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Mild Cheddar Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "arena-cheese--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "burnett-dairy-cooperative--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "carr-valley-cheese-company-inc--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "gile-cheese-llc--mild-cheddar",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
     "trademarked": false,
     "wisconsin_original": false
   },
@@ -28203,6 +28150,59 @@
       },
       {
         "cheese_id": "cedar-grove-cheese-inc--monterey-jack",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_soft",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [
+      "jalapeno"
+    ],
+    "age_band": "young",
+    "creamery_id": "lagrander-s-hillside-dairy-inc",
+    "description": null,
+    "description_generated": true,
+    "family": "colby_jack",
+    "flavor": [
+      "peppery",
+      "mild",
+      "milky",
+      "buttery"
+    ],
+    "id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Pepper Jack Deli Cheese",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "arena-cheese--pepper-jack",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--pepper-jack",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-grove-cheese-inc--pepper-jack",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--pepper-jack",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "kraemer-wisconsin-cheese-ltd--pepper-jack",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "maple-leaf-cheese-co--jalapeno-jack",
         "score": 100.0
       }
     ],
@@ -29556,11 +29556,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--cranberry-cheddar",
         "score": 100.0
       }
     ],
@@ -29763,7 +29763,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       }
     ],
@@ -29816,7 +29816,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -30122,7 +30122,7 @@
         "score": 83.2
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 83.2
       }
     ],
@@ -30209,7 +30209,7 @@
     "rind": "wax",
     "similar": [
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-mango-habanero-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-mango-habanero-deli-cheese",
         "score": 83.2
       },
       {
@@ -30425,7 +30425,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-aged-gouda",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--aged-gouda",
         "score": 100.0
       },
       {
@@ -30534,7 +30534,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -30591,7 +30591,7 @@
         "score": 89.5
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 89.5
       }
     ],
@@ -31153,7 +31153,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -31257,7 +31257,7 @@
         "score": 93.7
       },
       {
-        "cheese_id": "scray-s-cheese-co--beer-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--beer-cheddar",
         "score": 93.7
       },
       {
@@ -31409,7 +31409,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -31466,7 +31466,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -32250,7 +32250,7 @@
     "rind": "wax",
     "similar": [
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-3-pepper-gouda",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--3-pepper-gouda",
         "score": 89.5
       },
       {
@@ -32258,7 +32258,7 @@
         "score": 83.2
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-mango-habanero-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-mango-habanero-deli-cheese",
         "score": 83.2
       },
       {
@@ -32624,7 +32624,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -32966,11 +32966,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar",
         "score": 100.0
       },
       {
@@ -33738,7 +33738,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 100.0
       },
       {
@@ -33836,7 +33836,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       },
       {
@@ -33951,7 +33951,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       }
     ],
@@ -34046,11 +34046,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar",
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds-1-lb",
+        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds",
         "score": 100.0
       },
       {
@@ -34549,11 +34549,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar",
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds-1-lb",
+        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds",
         "score": 100.0
       },
       {
@@ -34608,7 +34608,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -35105,11 +35105,11 @@
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 100.0
       },
       {
@@ -35301,7 +35301,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread-8oz",
+        "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread",
         "score": 100.0
       },
       {
@@ -35570,7 +35570,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -36705,12 +36705,12 @@
       "milky",
       "creamy"
     ],
-    "id": "pasture-pride-cheese-llc--goat-colby-jack-8oz",
+    "id": "pasture-pride-cheese-llc--goat-colby-jack",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Colby Jack 8oz",
+    "name": "Goat Colby Jack",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -36755,12 +36755,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+    "id": "pasture-pride-cheese-llc--goat-medium-cheddar",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Medium Cheddar 8oz",
+    "name": "Goat Medium Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -36777,7 +36777,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 100.0
       },
       {
@@ -36806,12 +36806,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "pasture-pride-cheese-llc--goat-mild-cheddar-8oz",
+    "id": "pasture-pride-cheese-llc--goat-mild-cheddar",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Mild Cheddar 8oz",
+    "name": "Goat Mild Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -36828,11 +36828,11 @@
         "score": 92.1
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 92.1
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
         "score": 92.1
       },
       {
@@ -36856,12 +36856,12 @@
       "milky",
       "buttery"
     ],
-    "id": "pasture-pride-cheese-llc--goat-monterey-jack-8oz",
+    "id": "pasture-pride-cheese-llc--goat-monterey-jack",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Monterey Jack 8oz",
+    "name": "Goat Monterey Jack",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -36870,7 +36870,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-muenster-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-muenster",
         "score": 94.7
       },
       {
@@ -36906,12 +36906,12 @@
       "mild",
       "creamy"
     ],
-    "id": "pasture-pride-cheese-llc--goat-mozzarella-8-oz",
+    "id": "pasture-pride-cheese-llc--goat-mozzarella",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Mozzarella 8 oz",
+    "name": "Goat Mozzarella",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -36956,12 +36956,12 @@
       "milky",
       "buttery"
     ],
-    "id": "pasture-pride-cheese-llc--goat-muenster-8oz",
+    "id": "pasture-pride-cheese-llc--goat-muenster",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Muenster 8oz",
+    "name": "Goat Muenster",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -36970,7 +36970,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-monterey-jack-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-monterey-jack",
         "score": 94.7
       },
       {
@@ -37059,12 +37059,12 @@
       "buttery",
       "tangy"
     ],
-    "id": "pasture-pride-cheese-llc--goat-sharp-cheddar-8oz",
+    "id": "pasture-pride-cheese-llc--goat-sharp-cheddar",
     "image": null,
     "milk": [
       "goat"
     ],
-    "name": "Goat Sharp Cheddar 8oz",
+    "name": "Goat Sharp Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -37081,7 +37081,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar-8oz",
+        "cheese_id": "pasture-pride-cheese-llc--goat-medium-cheddar",
         "score": 100.0
       },
       {
@@ -37347,7 +37347,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -37640,7 +37640,7 @@
         "score": 89.5
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread",
         "score": 89.5
       },
       {
@@ -37685,7 +37685,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-garlic-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-garlic-cheese-spread",
         "score": 92.1
       },
       {
@@ -37953,7 +37953,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-bacon-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-bacon-cheese-spread",
         "score": 89.5
       },
       {
@@ -38111,7 +38111,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread",
         "score": 100.0
       },
       {
@@ -39036,7 +39036,7 @@
         "score": 64.2
       },
       {
-        "cheese_id": "cedar-valley-cheese-inc--aged-provolone-16-oz",
+        "cheese_id": "cedar-valley-cheese-inc--aged-provolone",
         "score": 64.2
       }
     ],
@@ -39361,12 +39361,12 @@
       "salty",
       "mild"
     ],
-    "id": "ron-s-wisconsin-cheese--cheddar-bacon-cheese-spread-8oz",
+    "id": "ron-s-wisconsin-cheese--cheddar-bacon-cheese-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cheddar Bacon Cheese Spread 8oz",
+    "name": "Cheddar Bacon Cheese Spread",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39413,12 +39413,12 @@
       "salty",
       "mild"
     ],
-    "id": "ron-s-wisconsin-cheese--cheddar-garlic-cheese-spread-8oz",
+    "id": "ron-s-wisconsin-cheese--cheddar-garlic-cheese-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cheddar Garlic Cheese Spread 8oz",
+    "name": "Cheddar Garlic Cheese Spread",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39466,12 +39466,12 @@
       "salty",
       "mild"
     ],
-    "id": "ron-s-wisconsin-cheese--cheddar-horseradish-cheese-spread-8oz",
+    "id": "ron-s-wisconsin-cheese--cheddar-horseradish-cheese-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cheddar Horseradish Cheese Spread 8oz",
+    "name": "Cheddar Horseradish Cheese Spread",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39517,12 +39517,12 @@
       "salty",
       "mild"
     ],
-    "id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread-8oz",
+    "id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cheddar Wine Cheese Spread 8oz",
+    "name": "Cheddar Wine Cheese Spread",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39670,12 +39670,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+    "id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cranberry White Cheddar Cheese 8oz",
+    "name": "Cranberry White Cheddar Cheese",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39700,7 +39700,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--cranberry-cheddar",
         "score": 100.0
       }
     ],
@@ -39799,7 +39799,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 100.0
       },
       {
@@ -39824,12 +39824,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "ron-s-wisconsin-cheese--mild-cheddar-cheese-16oz",
+    "id": "ron-s-wisconsin-cheese--mild-cheddar-cheese",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Mild Cheddar Cheese 16oz",
+    "name": "Mild Cheddar Cheese",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39927,12 +39927,12 @@
       "milky",
       "buttery"
     ],
-    "id": "ron-s-wisconsin-cheese--pepper-jack-cheese-16oz",
+    "id": "ron-s-wisconsin-cheese--pepper-jack-cheese",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Pepper Jack Cheese 16oz",
+    "name": "Pepper Jack Cheese",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -39957,7 +39957,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -40206,7 +40206,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds",
         "score": 100.0
       },
       {
@@ -40509,7 +40509,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 100.0
       },
       {
@@ -40545,7 +40545,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-garlic-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-garlic-cheese-spread",
         "score": 100.0
       },
       {
@@ -40650,7 +40650,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-horseradish-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-horseradish-cheese-spread",
         "score": 100.0
       },
       {
@@ -40826,7 +40826,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -41123,7 +41123,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-wine-cheese-spread",
         "score": 100.0
       },
       {
@@ -41167,11 +41167,11 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-ranch-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--ranch-cheddar-cheese-curds",
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--ranch-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--ranch-cheese-curds",
         "score": 100.0
       },
       {
@@ -41285,7 +41285,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -41374,7 +41374,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cheddar-bacon-cheese-spread-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cheddar-bacon-cheese-spread",
         "score": 100.0
       },
       {
@@ -42717,7 +42717,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -43806,12 +43806,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "scray-s-cheese-co--4-year-aged-yellow-cheddar-1lb",
+    "id": "scray-s-cheese-co--4-year-aged-yellow-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "4 Year Aged Yellow Cheddar 1lb.",
+    "name": "4 Year Aged Yellow Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -43858,12 +43858,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "scray-s-cheese-co--beer-cheddar-1-lb",
+    "id": "scray-s-cheese-co--beer-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Beer Cheddar 1 lb.",
+    "name": "Beer Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -43910,12 +43910,12 @@
       "salty",
       "mild"
     ],
-    "id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+    "id": "scray-s-cheese-co--cajun-cheese-curds",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cajun Cheese Curds 14 oz.",
+    "name": "Cajun Cheese Curds",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44013,12 +44013,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "scray-s-cheese-co--cranberry-cheddar-1-lb",
+    "id": "scray-s-cheese-co--cranberry-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cranberry Cheddar 1 lb.",
+    "name": "Cranberry Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44043,7 +44043,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       }
     ],
@@ -44066,12 +44066,12 @@
       "salty",
       "mild"
     ],
-    "id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+    "id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Dill and Garlic Cheese Curds 14 oz",
+    "name": "Dill and Garlic Cheese Curds",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44220,12 +44220,12 @@
       "salty",
       "mild"
     ],
-    "id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+    "id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Garlic Pepper Cheese Curds 14 oz.",
+    "name": "Garlic Pepper Cheese Curds",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44323,12 +44323,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "scray-s-cheese-co--habanero-cheddar-1-lb",
+    "id": "scray-s-cheese-co--habanero-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Habanero Cheddar 1 lb.",
+    "name": "Habanero Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44376,12 +44376,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "scray-s-cheese-co--jalapeno-cheddar-1-lb",
+    "id": "scray-s-cheese-co--jalapeno-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Jalapeno Cheddar 1 lb.",
+    "name": "Jalapeno Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44398,7 +44398,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds-1-lb",
+        "cheese_id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds",
         "score": 100.0
       },
       {
@@ -44428,17 +44428,17 @@
       "salty",
       "mild"
     ],
-    "id": "scray-s-cheese-co--ranch-cheese-curds-14-oz",
+    "id": "scray-s-cheese-co--ranch-cheese-curds",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Ranch Cheese Curds 14 oz.",
+    "name": "Ranch Cheese Curds",
     "raw_milk": null,
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-ranch-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--ranch-cheddar-cheese-curds",
         "score": 100.0
       },
       {
@@ -44482,12 +44482,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
+    "id": "scray-s-cheese-co--smoked-bacon-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Smoked Bacon Cheddar 1 lb.",
+    "name": "Smoked Bacon Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -44500,7 +44500,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
         "score": 100.0
       },
       {
@@ -44533,12 +44533,12 @@
       "sweet",
       "caramel"
     ],
-    "id": "scray-s-cheese-co--smoked-gouda-1-lb",
+    "id": "scray-s-cheese-co--smoked-gouda",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Smoked Gouda 1 lb.",
+    "name": "Smoked Gouda",
     "raw_milk": null,
     "rind": "wax",
     "similar": [
@@ -44559,7 +44559,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -45964,7 +45964,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-cheddar-bacon-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--cheddar-bacon-cheese",
         "score": 94.7
       },
       {
@@ -45972,7 +45972,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--smoked-bacon-cheddar",
         "score": 94.7
       }
     ],
@@ -46020,7 +46020,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--beer-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--beer-cheddar",
         "score": 100.0
       },
       {
@@ -46319,7 +46319,7 @@
         "score": 89.5
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-chipotle-colby-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--chipotle-colby-cheese",
         "score": 89.5
       },
       {
@@ -46488,7 +46488,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese-8oz",
+        "cheese_id": "ron-s-wisconsin-cheese--cranberry-white-cheddar-cheese",
         "score": 100.0
       }
     ],
@@ -46737,7 +46737,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       },
       {
@@ -46802,7 +46802,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       }
     ],
@@ -46855,7 +46855,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -47271,7 +47271,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-smoky-cheddar-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--smoky-cheddar-cheese",
         "score": 100.0
       },
       {
@@ -48578,7 +48578,7 @@
         "score": 84.2
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-aged-gouda",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--aged-gouda",
         "score": 84.2
       },
       {
@@ -48726,7 +48726,7 @@
         "score": 87.4
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-aged-gouda",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--aged-gouda",
         "score": 87.4
       },
       {
@@ -48899,107 +48899,6 @@
       {
         "cheese_id": "carr-valley-cheese-company-inc--gouda-smoked",
         "score": 75.3
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "medium",
-    "creamery_id": "westby-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "cheddar",
-    "flavor": [
-      "mild",
-      "buttery",
-      "sharp",
-      "tangy"
-    ],
-    "id": "westby-cooperative-creamery--8-oz-mild-cheddar",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "8 oz. Mild Cheddar",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "arena-cheese--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "burnett-dairy-cooperative--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "carr-valley-cheese-company-inc--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "cedar-valley-cheese-inc--mild-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "gile-cheese-llc--mild-cheddar",
-        "score": 100.0
-      }
-    ],
-    "texture": "semi_hard",
-    "trademarked": false,
-    "wisconsin_original": false
-  },
-  {
-    "add_ins": [],
-    "age_band": "medium",
-    "creamery_id": "westby-cooperative-creamery",
-    "description": null,
-    "description_generated": true,
-    "family": "cheddar",
-    "flavor": [
-      "sharp",
-      "buttery",
-      "tangy"
-    ],
-    "id": "westby-cooperative-creamery--8-oz-sharp-cheddar",
-    "image": null,
-    "milk": [
-      "cow"
-    ],
-    "name": "8 oz. Sharp Cheddar",
-    "raw_milk": null,
-    "rind": "none",
-    "similar": [
-      {
-        "cheese_id": "agropur-inc--cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "arena-cheese--cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "arena-cheese--sharp-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--ampi-sharp-cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "associated-milk-producers-inc--cheddar",
-        "score": 100.0
-      },
-      {
-        "cheese_id": "bella-pak-llc--cheddar",
-        "score": 100.0
       }
     ],
     "texture": "semi_hard",
@@ -49208,6 +49107,57 @@
   },
   {
     "add_ins": [],
+    "age_band": "medium",
+    "creamery_id": "westby-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "cheddar",
+    "flavor": [
+      "mild",
+      "buttery",
+      "sharp",
+      "tangy"
+    ],
+    "id": "westby-cooperative-creamery--mild-cheddar",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Mild Cheddar",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "arena-cheese--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "burnett-dairy-cooperative--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "carr-valley-cheese-company-inc--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "cedar-valley-cheese-inc--mild-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "gile-cheese-llc--mild-cheddar",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
     "age_band": "young",
     "creamery_id": "westby-cooperative-creamery",
     "description": null,
@@ -49304,6 +49254,56 @@
       }
     ],
     "texture": "hard",
+    "trademarked": false,
+    "wisconsin_original": false
+  },
+  {
+    "add_ins": [],
+    "age_band": "medium",
+    "creamery_id": "westby-cooperative-creamery",
+    "description": null,
+    "description_generated": true,
+    "family": "cheddar",
+    "flavor": [
+      "sharp",
+      "buttery",
+      "tangy"
+    ],
+    "id": "westby-cooperative-creamery--sharp-cheddar",
+    "image": null,
+    "milk": [
+      "cow"
+    ],
+    "name": "Sharp Cheddar",
+    "raw_milk": null,
+    "rind": "none",
+    "similar": [
+      {
+        "cheese_id": "agropur-inc--cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "arena-cheese--cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "arena-cheese--sharp-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--ampi-sharp-cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "associated-milk-producers-inc--cheddar",
+        "score": 100.0
+      },
+      {
+        "cheese_id": "bella-pak-llc--cheddar",
+        "score": 100.0
+      }
+    ],
+    "texture": "semi_hard",
     "trademarked": false,
     "wisconsin_original": false
   },
@@ -49452,7 +49452,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--cajun-cheese-curds",
         "score": 100.0
       }
     ],
@@ -49505,7 +49505,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--dill-and-garlic-cheese-curds",
         "score": 100.0
       }
     ],
@@ -49560,7 +49560,7 @@
         "score": 83.2
       },
       {
-        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--garlic-pepper-cheese-curds",
         "score": 83.2
       }
     ],
@@ -49592,7 +49592,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "ellsworth-cooperative-creamery--16-oz-ranch-cheddar-cheese-curds",
+        "cheese_id": "ellsworth-cooperative-creamery--ranch-cheddar-cheese-curds",
         "score": 100.0
       },
       {
@@ -49600,7 +49600,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--ranch-cheese-curds-14-oz",
+        "cheese_id": "scray-s-cheese-co--ranch-cheese-curds",
         "score": 100.0
       },
       {
@@ -50221,7 +50221,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -50419,7 +50419,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-gouda-smoked-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--gouda-smoked-deli-cheese",
         "score": 100.0
       },
       {
@@ -50544,12 +50544,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--6-year-aged-white-cheddar-15oz",
+    "id": "widmer-s-cheese-cellars-inc--6-year-aged-white-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "6 Year Aged White Cheddar 15oz",
+    "name": "6 Year Aged White Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -50594,12 +50594,12 @@
       "buttery",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--aged-brick-spread-8oz",
+    "id": "widmer-s-cheese-cellars-inc--aged-brick-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Aged Brick Spread 8oz",
+    "name": "Aged Brick Spread",
     "raw_milk": null,
     "rind": "washed",
     "similar": [
@@ -50747,12 +50747,12 @@
       "milky",
       "mild"
     ],
-    "id": "widmer-s-cheese-cellars-inc--butterkase-with-chives-7oz",
+    "id": "widmer-s-cheese-cellars-inc--butterkase-with-chives",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Butterkäse with Chives 7oz",
+    "name": "Butterkäse with Chives",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -50799,12 +50799,12 @@
       "buttery",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--caraway-aged-brick-14oz",
+    "id": "widmer-s-cheese-cellars-inc--caraway-aged-brick",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Caraway Aged Brick 14oz",
+    "name": "Caraway Aged Brick",
     "raw_milk": null,
     "rind": "washed",
     "similar": [
@@ -50817,7 +50817,7 @@
         "score": 89.5
       },
       {
-        "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread-8oz",
+        "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread",
         "score": 89.5
       },
       {
@@ -50851,12 +50851,12 @@
       "milky",
       "sweet"
     ],
-    "id": "widmer-s-cheese-cellars-inc--caraway-colby-14oz",
+    "id": "widmer-s-cheese-cellars-inc--caraway-colby",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Caraway Colby 14oz",
+    "name": "Caraway Colby",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -51104,12 +51104,12 @@
       "buttery",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--cranberry-brick-spread-8oz",
+    "id": "widmer-s-cheese-cellars-inc--cranberry-brick-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Cranberry Brick Spread 8oz",
+    "name": "Cranberry Brick Spread",
     "raw_milk": null,
     "rind": "washed",
     "similar": [
@@ -51157,12 +51157,12 @@
       "buttery",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--jalapeno-brick-spread-8oz",
+    "id": "widmer-s-cheese-cellars-inc--jalapeno-brick-spread",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Jalapeno Brick Spread 8oz",
+    "name": "Jalapeno Brick Spread",
     "raw_milk": null,
     "rind": "washed",
     "similar": [
@@ -51210,12 +51210,12 @@
       "milky",
       "sweet"
     ],
-    "id": "widmer-s-cheese-cellars-inc--jalapeno-pepper-colby-14oz",
+    "id": "widmer-s-cheese-cellars-inc--jalapeno-pepper-colby",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Jalapeño Pepper Colby 14oz",
+    "name": "Jalapeño Pepper Colby",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -51240,7 +51240,7 @@
         "score": 87.4
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-colby-jack-pepper-jack",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--colby-jack-pepper-jack",
         "score": 87.4
       }
     ],
@@ -51261,12 +51261,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--mild-cheddar-15oz",
+    "id": "widmer-s-cheese-cellars-inc--mild-cheddar",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Mild Cheddar 15oz",
+    "name": "Mild Cheddar",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -51314,12 +51314,12 @@
       "sharp",
       "tangy"
     ],
-    "id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds-1-lb",
+    "id": "widmer-s-cheese-cellars-inc--pepper-cheddar-curds",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Pepper Cheddar Curds 1 LB.",
+    "name": "Pepper Cheddar Curds",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -51336,7 +51336,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--jalapeno-cheddar",
         "score": 100.0
       },
       {
@@ -51365,12 +51365,12 @@
       "milky",
       "mild"
     ],
-    "id": "widmer-s-cheese-cellars-inc--smoked-butterkase-7oz",
+    "id": "widmer-s-cheese-cellars-inc--smoked-butterkase",
     "image": null,
     "milk": [
       "cow"
     ],
-    "name": "Smoked Butterkäse 7oz",
+    "name": "Smoked Butterkäse",
     "raw_milk": null,
     "rind": "none",
     "similar": [
@@ -53143,7 +53143,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-chipotle-colby-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--chipotle-colby-cheese",
         "score": 78.9
       },
       {
@@ -53395,7 +53395,7 @@
     "rind": "none",
     "similar": [
       {
-        "cheese_id": "scray-s-cheese-co--habanero-cheddar-1-lb",
+        "cheese_id": "scray-s-cheese-co--habanero-cheddar",
         "score": 100.0
       },
       {
@@ -53716,7 +53716,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-chipotle-colby-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--chipotle-colby-cheese",
         "score": 78.9
       },
       {
@@ -54093,7 +54093,7 @@
         "score": 100.0
       },
       {
-        "cheese_id": "lagrander-s-hillside-dairy-inc--1lb-pepper-jack-deli-cheese",
+        "cheese_id": "lagrander-s-hillside-dairy-inc--pepper-jack-deli-cheese",
         "score": 100.0
       }
     ],
@@ -54199,7 +54199,7 @@
         "score": 94.7
       },
       {
-        "cheese_id": "ellsworth-cooperative-creamery--15-5-oz-habanero-ghost-jack-cheese",
+        "cheese_id": "ellsworth-cooperative-creamery--habanero-ghost-jack-cheese",
         "score": 94.7
       }
     ],

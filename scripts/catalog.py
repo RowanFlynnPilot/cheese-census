@@ -63,6 +63,12 @@ SIZE_TAIL = re.compile(
     r"\s*[-–—(]\s*(approx\.?\s*)?\d[\d.,/]*\s*(oz|ounce|ounces|lb|lbs|pound|pounds|#|ct|count|pack)\b.*$",
     re.IGNORECASE,
 )
+# Sizes some shops print without a separator: "15.5 oz Chipotle Colby",
+# "1lb 3 Pepper Gouda", "4 Year Aged Yellow Cheddar 1lb." — packaging, not name.
+# A digit is required before the unit, so "Party Pack" and "8 Year" survive.
+_SIZE_UNIT = r"(?:oz|ounce|ounces|lb|lbs|pound|pounds|ct|count|pack)"
+SIZE_HEAD = re.compile(rf"^\d[\d.,/]*\s*{_SIZE_UNIT}\b\.?\s*", re.IGNORECASE)
+SIZE_BARE_TAIL = re.compile(rf"\s+\d[\d.,/]*\s*{_SIZE_UNIT}\b\.?$", re.IGNORECASE)
 
 
 def _fold(value: str) -> str:
@@ -76,8 +82,11 @@ def _fold(value: str) -> str:
 
 
 def clean_title(raw: str) -> str:
-    """Strip the deli-scale tail; keep the name as the maker prints it."""
-    cleaned = SIZE_TAIL.sub("", raw).strip(" -–—,")
+    """Strip deli-scale sizes; keep the name as the maker prints it."""
+    cleaned = SIZE_TAIL.sub("", raw)
+    cleaned = SIZE_HEAD.sub("", cleaned)
+    cleaned = SIZE_BARE_TAIL.sub("", cleaned)
+    cleaned = cleaned.strip(" -–—,")
     return cleaned or raw.strip()
 
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { Award, Creamery, Person } from "../types";
+import type { Award, Cheese, Creamery, Person } from "../types";
 import {
   CONTEST,
   PLACEMENT,
@@ -9,27 +9,38 @@ import {
   isCapability,
 } from "../data";
 
+// Chips beyond this fold behind the "browse all" link to the catalog view —
+// Carr Valley alone has 50 records.
+const CHIP_LIMIT = 18;
+
 interface Props {
   creamery: Creamery;
   people: Person[];
   awards: Award[];
+  /** This creamery's records in the cheese catalog, name-sorted. */
+  cheeses: Cheese[];
   /** "12 / 93" within the filtered list, or null when filtered out mid-view. */
   position: string | null;
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
   onFilterCheese: (operation: string) => void;
+  onOpenCheese: (id: string) => void;
+  onBrowseCheeses: () => void;
 }
 
 export default function CreameryDetail({
   creamery,
   people,
   awards,
+  cheeses,
   position,
   onClose,
   onPrev,
   onNext,
   onFilterCheese,
+  onOpenCheese,
+  onBrowseCheeses,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
   const [copied, setCopied] = useState(false);
@@ -55,7 +66,7 @@ export default function CreameryDetail({
     }
   }
 
-  const cheeses = cheeseOperations(creamery);
+  const operations = cheeseOperations(creamery);
   const abilities = capabilities(creamery);
   const editions = groupAwards(awards);
   const firsts = awards.filter((a) => a.placement === 1).length;
@@ -138,9 +149,34 @@ export default function CreameryDetail({
 
       {cheeses.length > 0 && (
         <section>
+          <h3>In the cheese catalog ({cheeses.length})</h3>
+          <div className="tags">
+            {cheeses.slice(0, CHIP_LIMIT).map((cheese) => (
+              <button
+                className="tag product"
+                key={cheese.id}
+                onClick={() => onOpenCheese(cheese.id)}
+                title={`Open ${cheese.name} in the cheese catalog`}
+              >
+                {cheese.name}
+              </button>
+            ))}
+          </div>
+          {cheeses.length > CHIP_LIMIT && (
+            <p style={{ marginTop: "0.5rem", marginBottom: 0 }}>
+              <button className="linkish" onClick={onBrowseCheeses}>
+                Browse all {cheeses.length} in the catalog →
+              </button>
+            </p>
+          )}
+        </section>
+      )}
+
+      {operations.length > 0 && (
+        <section>
           <h3>Licensed to make</h3>
           <div className="tags">
-            {cheeses.map((c) => (
+            {operations.map((c) => (
               <button
                 className="tag cheese"
                 key={c}
@@ -189,7 +225,17 @@ export default function CreameryDetail({
                     {PLACEMENT[award.placement]}
                   </span>
                   <span className="what">
-                    {award.entry.cheese_name}
+                    {award.cheese_id ? (
+                      <button
+                        className="linkish"
+                        onClick={() => onOpenCheese(award.cheese_id!)}
+                        title="Open this cheese in the catalog"
+                      >
+                        {award.entry.cheese_name}
+                      </button>
+                    ) : (
+                      award.entry.cheese_name
+                    )}
                     {award.champion && <span className="pill champ">Champion</span>}
                     {award.finalist && !award.champion && (
                       <span className="pill top20">Top 20</span>

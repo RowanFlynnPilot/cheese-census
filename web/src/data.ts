@@ -140,3 +140,148 @@ export const CONTEST: Record<string, string> = {
   wccc: "World Championship",
   uscc: "U.S. Championship",
 };
+
+/* ── Cheese-side helpers (the reader layer) ────────────────────────────── */
+
+export const FAMILY_LABEL: Record<string, string> = {
+  cheddar: "Cheddar",
+  colby_jack: "Colby & Jack",
+  alpine: "Alpine",
+  gouda_edam: "Gouda & Edam",
+  blue: "Blue",
+  bloomy: "Bloomy rind",
+  washed_rind: "Washed rind",
+  fresh: "Fresh",
+  pasta_filata: "Pasta filata",
+  italian_hard: "Italian hard",
+  hispanic: "Hispanic",
+  brined: "Brined",
+  semi_soft_table: "Semi-soft table",
+  curds: "Curds",
+  spreads_processed: "Spreads & processed",
+  other: "Other",
+};
+
+export const TEXTURE_LABEL: Record<string, string> = {
+  fresh: "Fresh",
+  soft: "Soft",
+  semi_soft: "Semi-soft",
+  semi_hard: "Semi-hard",
+  hard: "Hard",
+};
+
+export const AGE_LABEL: Record<string, string> = {
+  fresh: "Fresh",
+  young: "Young",
+  medium: "Medium",
+  aged: "Aged",
+  extra_aged: "Extra-aged",
+};
+
+export const RIND_LABEL: Record<string, string> = {
+  none: "Rindless",
+  natural: "Natural rind",
+  bloomy: "Bloomy rind",
+  washed: "Washed rind",
+  wax: "Waxed",
+};
+
+export const MILK_LABEL: Record<string, string> = {
+  cow: "Cow",
+  goat: "Goat",
+  sheep: "Sheep",
+  mixed: "Mixed",
+};
+
+// Softest to hardest / lightest to strongest — the order the filters offer them.
+export const TEXTURE_ORDER = ["fresh", "soft", "semi_soft", "semi_hard", "hard"];
+export const MILK_ORDER = ["cow", "goat", "sheep", "mixed"];
+
+/** Vocabulary terms are lowercase words joined with underscores. */
+export function labelize(term: string): string {
+  return term.replace(/_/g, " ");
+}
+
+export function familyLabel(family: string): string {
+  return FAMILY_LABEL[family] ?? labelize(family);
+}
+
+export function awardsForCheese(awards: Award[], cheeseId: string): Award[] {
+  return awards
+    .filter((a) => a.cheese_id === cheeseId)
+    .sort(
+      (a, b) =>
+        b.year - a.year ||
+        a.placement - b.placement ||
+        a.class_number - b.class_number,
+    );
+}
+
+/** A highlight is live inside its [starts, ends] window; ISO dates compare as strings. */
+export function activeHighlights(
+  highlights: Highlight[],
+  cheesesById: Map<string, Cheese>,
+  today: string,
+): { highlight: Highlight; cheese: Cheese }[] {
+  return highlights
+    .filter((h) => h.starts <= today && today <= h.ends)
+    .map((h) => ({ highlight: h, cheese: cheesesById.get(h.cheese_id) }))
+    .filter((x): x is { highlight: Highlight; cheese: Cheese } => Boolean(x.cheese));
+}
+
+export interface Recommendation {
+  cheese: Cheese;
+  /** The saved cheese that contributed this candidate's strongest link. */
+  because: Cheese;
+}
+
+/** "To try next": pool the similar-lists of every saved cheese and sum the
+ *  match scores per candidate. Plain variants of one type mirror each other at
+ *  100.0 across creameries — a known dataset limit — so an undamped top list
+ *  is all mirrors: keep one candidate per folded name and at most two per
+ *  creamery. Ties break on id so the rail is stable across reloads. */
+export function recommend(
+  hearts: string[],
+  cheesesById: Map<string, Cheese>,
+  include: (cheese: Cheese) => boolean,
+  limit = 8,
+): Recommendation[] {
+  const saved = new Set(hearts);
+  const pool = new Map<string, { total: number; best: number; because: Cheese }>();
+  for (const id of hearts) {
+    const heart = cheesesById.get(id);
+    if (!heart) continue;
+    for (const ref of heart.similar) {
+      if (saved.has(ref.cheese_id)) continue;
+      const candidate = cheesesById.get(ref.cheese_id);
+      if (!candidate || !include(candidate)) continue;
+      const entry = pool.get(ref.cheese_id);
+      if (!entry) {
+        pool.set(ref.cheese_id, { total: ref.score, best: ref.score, because: heart });
+      } else {
+        entry.total += ref.score;
+        if (ref.score > entry.best) {
+          entry.best = ref.score;
+          entry.because = heart;
+        }
+      }
+    }
+  }
+  const ranked = [...pool.entries()].sort(
+    (a, b) => b[1].total - a[1].total || a[0].localeCompare(b[0]),
+  );
+  const seenNames = new Set<string>();
+  const perCreamery = new Map<string, number>();
+  const picks: Recommendation[] = [];
+  for (const [id, entry] of ranked) {
+    const cheese = cheesesById.get(id)!;
+    const nameKey = fold(cheese.name);
+    const fromSame = perCreamery.get(cheese.creamery_id) ?? 0;
+    if (seenNames.has(nameKey) || fromSame >= 2) continue;
+    seenNames.add(nameKey);
+    perCreamery.set(cheese.creamery_id, fromSame + 1);
+    picks.push({ cheese, because: entry.because });
+    if (picks.length >= limit) break;
+  }
+  return picks;
+}

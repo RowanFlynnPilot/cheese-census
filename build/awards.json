@@ -2262,7 +2262,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "widmer-s-cheese-cellars-inc--brick",
+    "cheese_id": "widmer-s-cheese-cellars-inc--aged-brick-spread",
     "class_name": "Cold Pack Cheese",
     "class_number": 70,
     "contest": "uscc",
@@ -5587,7 +5587,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "ellsworth-cooperative-creamery--cheddar",
+    "cheese_id": "ellsworth-cooperative-creamery--sharp-cheddar-cheese",
     "class_name": "Pasteurized Process Cheese Spread",
     "class_number": 93,
     "contest": "wccc",

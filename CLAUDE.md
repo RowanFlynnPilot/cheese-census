@@ -249,6 +249,31 @@ Next steps, in order:
    disagreements. Re-run `scripts/catalog.py` after edits.
 3. `scripts/describe.py` — generation with the WPR voice prompt (623 descriptions
    missing, per `queue/report.json`).
-4. Front end: the reader layer — cheese browse, cheese detail with similar-cheese
-   and award refs, highlights — plus the GitHub Pages deploy workflow. The data
-   is fully live in `build/`; only the UI is missing.
+4. GitHub Pages deploy workflow for `web/` (the reader layer itself is built —
+   see below), then the WordPress iframe embed.
+
+### The reader layer (built August 2026)
+
+`web/` now carries two views under one masthead: the creamery map, and the
+**cheese catalog** — card grid over `build/cheeses.json` with family/texture/milk
+facets, tag-aware search, four sorts (family sort groups under sticky heads),
+a detail panel with the facts, clickable flavor/add-in chips, the cheese's
+contest record, and the similar-cheeses list with match-strength bars. The views
+cross-navigate (creamery panel ↔ cheese panel, award rows → their cheese), and
+the hash self-discriminates: `#slug` is a creamery, `#slug--slug` a cheese.
+`web/README.md` documents every URL parameter.
+
+**Hearts** are personal state in `localStorage` (`cheese-census.hearts.v1`),
+keyed on cheese ids — the key Supabase aggregation will use when engagement
+counts go live; nothing leaves the browser and the About panel says so. The
+"My cheeses" shelf adds a **"To try next"** rail: `recommend()` pools the saved
+cheeses' similar-lists, sums scores per candidate, attributes each pick to its
+strongest contributor, and damps the plain-variant mirror limit (one candidate
+per folded name, two per creamery). Highlights render date-windowed, editorial
+and sponsored visibly distinct, in the browse band and the matching panel.
+
+Catalog names got one more cleaning rule while building this: `clean_title` now
+strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
+"…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That
+renamed ~40 cheese ids; hearts were not yet public, so the ids were still free
+to move. They are frozen now that hearts key on them.

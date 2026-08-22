@@ -1,7 +1,8 @@
 # The Cheese Census — web
 
-React + Vite front end for the creamery map and directory. Renders `build/*.json`;
-it holds no data of its own and computes nothing the pipeline should have computed.
+React + Vite front end: the creamery map and directory, and the reader-facing
+cheese catalog. Renders `build/*.json`; it holds no data of its own and computes
+nothing the pipeline should have computed.
 
 ## Running it
 
@@ -22,14 +23,16 @@ npm run typecheck
 
 ## What it renders today
 
-Creameries, their licensed plants and operations, master cheesemakers and contest
-awards — filterable by county, retail store and award record, sortable by name,
-award count or county (with sticky county section heads), with a map pin per
-creamery (retail stores render as a donut; the legend on the map explains the
-pins). Awards group by contest edition with 1st/2nd/3rd medal chips and champion /
-top-20 treatment. A stats strip under the masthead carries the census-wide
-numbers, and an "About this census" panel in the colophon explains sources,
-methodology and the provisional-data notice.
+Two views under one masthead, switched by the mode bar:
+
+**Creamery map** — creameries, their licensed plants and operations, master
+cheesemakers and contest awards — filterable by county, retail store and award
+record, sortable by name, award count or county (with sticky county section
+heads), with a map pin per creamery (retail stores render as a donut; the legend
+on the map explains the pins). Awards group by contest edition with 1st/2nd/3rd
+medal chips and champion / top-20 treatment. A stats strip under the masthead
+carries the census-wide numbers, and an "About this census" panel in the colophon
+explains sources, methodology and the provisional-data notice.
 
 Search answers the census's home question — *who makes X?* It matches names,
 cities, counties and trade names, and reaches into each creamery's licensed
@@ -43,9 +46,47 @@ Plant operations are split into cheese types and plant capabilities using DATCP'
 own closed vocabularies (the 7 GeneralProcessing and 29 SpecificProcessing values,
 pinned in `src/data.ts`) — membership, not pattern-matching.
 
+**Cheese catalog** — the product-level reader layer over `build/cheeses.json`:
+a card grid filterable by family, texture and milk (with counts), searchable
+across names, makers, families, flavor tags and add-ins (indirect matches carry
+a "matched: …" hint), sortable A–Z / by creamery / most awarded / by family
+(family sort groups under sticky heads). Cards carry family kicker, flavor tags,
+add-in chips, and award / Wisconsin-original / raw-milk / goat-sheep badges.
+The detail panel shows the facts (family, texture, age, rind, milk), clickable
+flavor and add-in chips ("what else tastes like this, statewide?"), the cheese's
+contest record, and the **similar-cheeses list** with match-strength bars —
+`similarity.py`'s scores, rendered as shipped. Closed-creamery records stay
+reachable by deep link and award reference but never appear in browse.
+
+The two views cross-navigate: a creamery panel lists its catalog records as
+chips ("In the cheese catalog") and links each pinned award to its cheese; a
+cheese panel links back to its creamery on the map and to a maker-filtered
+catalog view (removable "from …" chip).
+
+**Hearts** — the ♥ on any card or panel saves a cheese to "My cheeses". Hearts
+live in `localStorage` (`cheese-census.hearts.v1`), keyed on the stable cheese
+ids Supabase aggregation will later use; nothing leaves the browser, and the
+About panel says so. The mode bar shows a "♥ n saved" shortcut once anything is
+saved. The shelf view (My cheeses toggle) adds a **"To try next"** rail:
+`recommend()` in `src/data.ts` pools the similar-lists of every saved cheese,
+sums match scores per candidate, and labels each pick with the saved cheese that
+contributed its strongest link ("because you saved …"). Plain variants of one
+type mirror each other at 100.0 across creameries (a known dataset limit), so
+the rail keeps one candidate per folded name and at most two per creamery.
+
+Highlights from `build/highlights.json` render as a band above the grid and
+inside the matching cheese's panel, date-windowed by their `starts`/`ends`.
+Editorial and sponsored highlights render visibly differently (see Conventions).
+
 ## Shareable views
 
-The whole view lives in the URL, so a story or embed can link straight to it:
+The active view lives in the URL, so a story or embed can link straight to it.
+The hash discriminates itself: creamery ids are single-hyphen slugs, cheese ids
+carry the `--` separator, so `#hooks-cheese-company-inc` opens a map panel and
+`#cedar-valley-cheese-inc--habanero-muenster` opens a catalog panel — either one
+straight from a cold load.
+
+Creamery-map parameters:
 
 | Parameter | Meaning | Example |
 |---|---|---|
@@ -56,14 +97,19 @@ The whole view lives in the URL, so a story or embed can link straight to it:
 | `?sort=` | `awards` or `county` (default name) | `?sort=awards` |
 | `#creamery-id` | Opens that creamery's detail panel | `#hooks-cheese-company-inc` |
 
-They compose: `/?county=Green&sort=awards#klondike-cheese-company` opens the Green
-County view sorted by award count with Klondike's panel up. Esc closes the panel
-and returns focus to the list.
+Cheese-catalog parameters (all under `?view=cheeses`):
 
-`build/cheeses.json` is still empty, so the reader-facing cheese layer (browse,
-hearts, similar-cheese, highlights) is not built yet. `src/types.ts` already mirrors
-the full SCHEMA.md shape including `Cheese`, `SimilarRef` and `Highlight`, so that
-layer drops in without reshaping anything.
+| Parameter | Meaning | Example |
+|---|---|---|
+| `?cq=` | Search text | `?cq=habanero` |
+| `?family=` / `?texture=` / `?milk=` | Facet filters (vocabulary terms) | `?family=colby_jack` |
+| `?maker=` | One creamery's cheeses | `?maker=cedar-valley-cheese-inc` |
+| `?csort=` | `creamery`, `awards` or `family` (default name) | `?csort=awards` |
+| `?cawards=1` / `?wo=1` / `?mine=1` | Award winners / Wisconsin originals / saved only | |
+| `#creamery--cheese` | Opens that cheese's detail panel | `#klondike-cheese-company--feta` |
+
+They compose: `/?view=cheeses&family=curds&csort=awards` is the curd map's list
+form. Esc closes the open panel and returns focus to its card or row.
 
 ## Deployment
 
