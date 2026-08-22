@@ -256,8 +256,12 @@ Next steps, in order:
    disagreements. Re-run `scripts/catalog.py` after edits.
 3. `scripts/describe.py` — generation with the WPR voice prompt (623 descriptions
    missing, per `queue/report.json`).
-4. GitHub Pages deploy workflow for `web/` (the reader layer itself is built —
-   see below), then the WordPress iframe embed.
+4. The WordPress iframe embed on wausaupilotandreview.com — only after the
+   editorial review above. The GitHub Pages deploy is live:
+   `.github/workflows/deploy.yml` publishes the production build (draft
+   overlays scrubbed, provisional banner up) to
+   https://rowanflynnpilot.github.io/cheese-census/ on every push touching
+   `web/` or `build/`.
 
 ### The reader layer (built August 2026)
 

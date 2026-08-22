@@ -1,0 +1,49 @@
+# Deploys the web front end to GitHub Pages — the PRODUCTION build only.
+# sync-data.mjs runs without --draft, which DELETES every draft overlay
+# (hotlinked product photos, maker blurbs, facility logos), and
+# VITE_DATA_STATUS stays unset so the provisional-data banner remains until
+# editorial review is complete. The site reads the committed build/*.json;
+# no scraper runs here.
+name: deploy-pages
+
+on:
+  push:
+    branches: [main, scrapers-and-merge] # drop the feature branch after merge
+    paths:
+      - "web/**"
+      - "build/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - run: npm run build
+        working-directory: web
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

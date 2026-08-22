@@ -157,6 +157,12 @@ form. Esc closes the open panel and returns focus to its card or row.
 
 ## Deployment
 
+`.github/workflows/deploy.yml` publishes to GitHub Pages
+(https://rowanflynnpilot.github.io/cheese-census/) on every push that touches
+`web/` or `build/`. It is always the production build: sync-data runs without
+`--draft`, so the site carries no hotlinked photos, blurbs or logos, and the
+provisional banner stays until the build runs with `VITE_DATA_STATUS=reviewed`.
+
 Vite `base` defaults to `/cheese-census/` for GitHub Pages. Serving from a domain
 root instead:
 
