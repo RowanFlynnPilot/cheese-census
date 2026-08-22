@@ -461,18 +461,29 @@ def merge(raw: dict[str, list[dict]]) -> dict:
         cheeses_by_creamery.setdefault(cheese.creamery_id, []).append(cheese)
 
     def _award_cheese(creamery_key: str | None, cheese_name: str) -> str | None:
-        """Link an award to a cheese when exactly one of the creamery's cheeses
-        appears by name inside the published entry name — 'Odyssey Mediterranean
-        Feta in Brine' contains Feta. Anything ambiguous stays unlinked."""
+        """Link an award to a cheese: an exact name match first (the catalog's
+        named products come partly from these very entries), else exactly one of
+        the creamery's cheeses appearing by name inside the published entry —
+        'Odyssey Mediterranean Feta in Brine' contains Feta. Ambiguity stays
+        unlinked."""
         if creamery_key is None:
             return None
-        candidates = cheeses_by_creamery.get(company_id[creamery_key], [])
+        candidates = sorted(
+            cheeses_by_creamery.get(company_id[creamery_key], []), key=lambda c: c.id
+        )
         entry = f" {_normalize_name(cheese_name)} "
-        hits = [
-            c.id for c in sorted(candidates, key=lambda c: c.id)
-            if f" {_normalize_name(c.name)} " in entry
-        ]
-        return hits[0] if len(hits) == 1 else None
+        exact = [c.id for c in candidates if _normalize_name(c.name) == entry.strip()]
+        if len(exact) == 1:
+            return exact[0]
+        # Longest contained name wins: "Odyssey Mediterranean Feta in Brine"
+        # prefers the creamery's "Mediterranean Feta" over its plainer fetas.
+        # Never the reverse containment — an award for "Aged Gouda" must not
+        # attach to "Smoked Aged Gouda"; unlinked is the honest state.
+        hits = sorted(
+            (c for c in candidates if f" {_normalize_name(c.name)} " in entry),
+            key=lambda c: (-len(_normalize_name(c.name)), c.id),
+        )
+        return hits[0].id if hits else None
 
     awards: list[Award] = []
     for record in sorted(raw["contests"], key=lambda r: r["source_key"]):

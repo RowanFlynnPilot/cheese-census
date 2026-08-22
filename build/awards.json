@@ -20,7 +20,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "associated-milk-producers-inc--cheddar",
+    "cheese_id": "associated-milk-producers-inc--ampi-sharp-cheddar",
     "class_name": "Cheddar, Sharp (6 months to 1 year)",
     "class_number": 3,
     "contest": "uscc",
@@ -229,7 +229,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--havarti",
     "class_name": "Natural Snack Cheese",
     "class_number": 102,
     "contest": "uscc",
@@ -267,7 +267,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "cedar-valley-cheese-inc--provolone",
+    "cheese_id": "cedar-valley-cheese-inc--provolone-mild-shred",
     "class_name": "Open Class: Shredded Cheeses",
     "class_number": 103,
     "contest": "uscc",
@@ -438,7 +438,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "emmi-roth-usa--havarti",
+    "cheese_id": "emmi-roth-usa--jalapeno-havarti",
     "class_name": "Cheese Based Spreads",
     "class_number": 109,
     "contest": "uscc",
@@ -571,7 +571,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "crave-brothers-farmstead-cheese-l-l-c--fresh-mozzarella",
     "class_name": "Fresh Mozzarella",
     "class_number": 16,
     "contest": "uscc",
@@ -590,7 +590,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "crave-brothers-farmstead-cheese-l-l-c--fresh-mozzarella",
     "class_name": "Fresh Mozzarella",
     "class_number": 16,
     "contest": "uscc",
@@ -647,7 +647,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "burnett-dairy-cooperative--provolone",
+    "cheese_id": "burnett-dairy-cooperative--fancy-brand-aged-provolone",
     "class_name": "Provolone, Aged",
     "class_number": 19,
     "contest": "uscc",
@@ -666,7 +666,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "agropur-inc--provolone",
+    "cheese_id": "agropur-inc--smoked-provolone",
     "class_name": "Provolone, Smoked",
     "class_number": 20,
     "contest": "uscc",
@@ -685,7 +685,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "agropur-inc--provolone",
+    "cheese_id": "agropur-inc--smoked-provolone",
     "class_name": "Provolone, Smoked",
     "class_number": 20,
     "contest": "uscc",
@@ -856,7 +856,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--feta",
+    "cheese_id": "klondike-cheese-company--odyssey-feta-in-brine",
     "class_name": "Feta",
     "class_number": 27,
     "contest": "uscc",
@@ -894,7 +894,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "nasonville-dairy-inc--feta",
+    "cheese_id": "nasonville-dairy-inc--feta-in-brine",
     "class_name": "Feta",
     "class_number": 27,
     "contest": "uscc",
@@ -1027,7 +1027,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--havarti",
+    "cheese_id": "klondike-cheese-company--buholzer-brothers-dill-havarti",
     "class_name": "Havarti, Flavored",
     "class_number": 30,
     "contest": "uscc",
@@ -1046,7 +1046,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--havarti",
+    "cheese_id": "klondike-cheese-company--buholzer-brothers-dill-havarti",
     "class_name": "Havarti, Flavored",
     "class_number": 30,
     "contest": "uscc",
@@ -1236,7 +1236,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "marieke-gouda--gouda",
+    "cheese_id": "marieke-gouda--marieke-gouda-truffle",
     "class_name": "Gouda, Flavored",
     "class_number": 38,
     "contest": "uscc",
@@ -1255,7 +1255,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "marieke-gouda--gouda",
+    "cheese_id": "marieke-gouda--marieke-gouda-truffle",
     "class_name": "Gouda, Flavored",
     "class_number": 38,
     "contest": "uscc",
@@ -1274,7 +1274,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "marieke-gouda--gouda",
+    "cheese_id": "marieke-gouda--marieke-gouda-smoked",
     "class_name": "Gouda, Smoked",
     "class_number": 39,
     "contest": "uscc",
@@ -1293,7 +1293,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "arla-foods-production-llc-arla-foods-amba--gouda",
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-smoked-cracked-pepper-gouda-mature",
     "class_name": "Gouda, Smoked",
     "class_number": 39,
     "contest": "uscc",
@@ -1312,7 +1312,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "arla-foods-production-llc-arla-foods-amba--gouda",
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-smoked-gouda-black-pepper-young",
     "class_name": "Gouda, Smoked",
     "class_number": 39,
     "contest": "uscc",
@@ -1483,7 +1483,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "emmi-roth-usa--grand-cru",
+    "cheese_id": "emmi-roth-usa--roth-grand-cru-reserve-wheel",
     "class_name": "Washed Rind/Smear Ripened Hard Cheeses",
     "class_number": 45,
     "contest": "uscc",
@@ -1521,7 +1521,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "arena-cheese--pepper-jack",
     "class_name": "Pepper Flavored Monterey Jack, Mild Heat",
     "class_number": 47,
     "contest": "uscc",
@@ -1578,7 +1578,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "arla-foods-production-llc-arla-foods-amba--gouda",
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-chipotle-gouda",
     "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
     "class_number": 50,
     "contest": "uscc",
@@ -1692,7 +1692,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--feta",
+    "cheese_id": "klondike-cheese-company--odyssey-peppercorn-feta-in-brine",
     "class_name": "Open Class: Soft Cheeses, Flavored",
     "class_number": 54,
     "contest": "uscc",
@@ -1711,7 +1711,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "lake-country-dairy-inc--mascarpone",
+    "cheese_id": "lake-country-dairy-inc--maple-mascarpone",
     "class_name": "Open Class: Soft Cheeses, Flavored",
     "class_number": 54,
     "contest": "uscc",
@@ -1939,7 +1939,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "arla-foods-production-llc-arla-foods-amba--edam",
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-smoked-edam",
     "class_name": "Open Class: Smoked Soft & Semi-soft Cheeses",
     "class_number": 60,
     "contest": "uscc",
@@ -1958,7 +1958,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "cedar-grove-cheese-inc--cheese-curds",
     "class_name": "Cheese Curds",
     "class_number": 62,
     "contest": "uscc",
@@ -2015,7 +2015,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "cedar-grove-cheese-inc--cheese-curds",
     "class_name": "Cheese Curds, Flavored",
     "class_number": 63,
     "contest": "uscc",
@@ -2034,7 +2034,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "decatur-dairy-inc--tomato-bacon-basil-curds",
     "class_name": "Cheese Curds, Flavored",
     "class_number": 63,
     "contest": "uscc",
@@ -2053,7 +2053,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "decatur-dairy-inc--herb-and-garlic-white-curds",
     "class_name": "Cheese Curds, Flavored",
     "class_number": 63,
     "contest": "uscc",
@@ -2281,7 +2281,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "pine-river-pre-pack-inc--cold-pack",
+    "cheese_id": "pine-river-pre-pack-inc--aged-asiago-cold-pack-cheese-food",
     "class_name": "Cold Pack Cheese",
     "class_number": 70,
     "contest": "uscc",
@@ -2300,7 +2300,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "burnett-dairy-cooperative--cheddar-gruyere",
     "class_name": "Cold Pack Cheese",
     "class_number": 70,
     "contest": "uscc",
@@ -2338,7 +2338,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "pine-river-pre-pack-inc--cold-pack",
+    "cheese_id": "pine-river-pre-pack-inc--jalapeno-cold-pack-cheese-food",
     "class_name": "Cold Pack Cheese, Flavored",
     "class_number": 71,
     "contest": "uscc",
@@ -2357,7 +2357,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "burnett-dairy-cooperative--wood-river-creamery-triple-pepper-cheddar-gruyere-cheese-spread",
     "class_name": "Cold Pack Cheese, Flavored",
     "class_number": 71,
     "contest": "uscc",
@@ -2490,7 +2490,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "pine-river-pre-pack-inc--sharp-cheddar-gourmet-cheese-snack-spread",
     "class_name": "Pasteurized Process Cheese Spread",
     "class_number": 75,
     "contest": "uscc",
@@ -2851,7 +2851,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "carr-valley-cheese-company-inc--gran-canaria",
     "class_name": "Soft & Semi-soft Mixed Milk Cheeses",
     "class_number": 87,
     "contest": "uscc",
@@ -2908,7 +2908,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "carr-valley-cheese-company-inc--cave-aged-mellage",
     "class_name": "Surface Ripened Mixed Milk Cheeses",
     "class_number": 89,
     "contest": "uscc",
@@ -3193,7 +3193,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "henning-cheese-inc--aged-cheddar",
     "class_name": "Traditional Waxed Cheddar",
     "class_number": 6,
     "contest": "wccc",
@@ -3364,7 +3364,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "hook-s-cheese-company-inc--hook-s-sheep-milk-butterkase",
     "class_name": "Semi-soft (Semi-hard) Sheep’s Milk Cheeses",
     "class_number": 105,
     "contest": "wccc",
@@ -3554,7 +3554,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "carr-valley-cheese-company-inc--caso-bolo-mellage",
     "class_name": "Soft & Semi-soft Mixed Milk Cheeses",
     "class_number": 112,
     "contest": "wccc",
@@ -4219,7 +4219,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "burnett-dairy-cooperative--provolone",
+    "cheese_id": "burnett-dairy-cooperative--fancy-brand-mild-provolone",
     "class_name": "Provolone, Mild",
     "class_number": 19,
     "contest": "wccc",
@@ -4238,7 +4238,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "burnett-dairy-cooperative--provolone",
+    "cheese_id": "burnett-dairy-cooperative--fancy-brand-mild-provolone",
     "class_name": "Provolone, Mild",
     "class_number": 19,
     "contest": "wccc",
@@ -4276,7 +4276,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "burnett-dairy-cooperative--provolone",
+    "cheese_id": "burnett-dairy-cooperative--fancy-brand-aged-provolone",
     "class_name": "Provolone, Aged",
     "class_number": 20,
     "contest": "wccc",
@@ -4295,7 +4295,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "burnett-dairy-cooperative--provolone",
+    "cheese_id": "burnett-dairy-cooperative--fancy-brand-aged-provolone",
     "class_name": "Provolone, Aged",
     "class_number": 20,
     "contest": "wccc",
@@ -4314,7 +4314,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "agropur-inc--provolone",
+    "cheese_id": "agropur-inc--smoked-provolone",
     "class_name": "Provolone, Smoked",
     "class_number": 21,
     "contest": "wccc",
@@ -4352,7 +4352,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "lake-country-dairy-inc--asiago",
+    "cheese_id": "lake-country-dairy-inc--cello-extra-aged-asiago",
     "class_name": "Asiago",
     "class_number": 23,
     "contest": "wccc",
@@ -4428,7 +4428,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "nasonville-dairy-inc--feta",
+    "cheese_id": "nasonville-dairy-inc--feta-in-brine",
     "class_name": "Feta",
     "class_number": 28,
     "contest": "wccc",
@@ -4485,7 +4485,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--feta",
+    "cheese_id": "klondike-cheese-company--odyssey-mediterranean-feta-in-brine",
     "class_name": "Feta, Flavored",
     "class_number": 29,
     "contest": "wccc",
@@ -4504,7 +4504,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--feta",
+    "cheese_id": "klondike-cheese-company--odyssey-peppercorn-feta-in-brine",
     "class_name": "Feta, Flavored",
     "class_number": 29,
     "contest": "wccc",
@@ -4523,7 +4523,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "klondike-cheese-company--feta",
+    "cheese_id": "klondike-cheese-company--odyssey-tomato-basil-feta-in-brine",
     "class_name": "Feta, Flavored",
     "class_number": 29,
     "contest": "wccc",
@@ -4637,7 +4637,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "decatur-dairy-inc--havarti",
+    "cheese_id": "decatur-dairy-inc--dill-havarti",
     "class_name": "Havarti, Flavored",
     "class_number": 32,
     "contest": "wccc",
@@ -4656,7 +4656,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "decatur-dairy-inc--havarti",
+    "cheese_id": "decatur-dairy-inc--dill-havarti",
     "class_name": "Havarti, Flavored",
     "class_number": 32,
     "contest": "wccc",
@@ -4675,7 +4675,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "decatur-dairy-inc--havarti",
+    "cheese_id": "decatur-dairy-inc--dill-havarti",
     "class_name": "Havarti, Flavored",
     "class_number": 32,
     "contest": "wccc",
@@ -4732,7 +4732,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "marieke-gouda--gouda",
+    "cheese_id": "marieke-gouda--marieke-gouda-cumin",
     "class_name": "Gouda, Flavored",
     "class_number": 46,
     "contest": "wccc",
@@ -4751,7 +4751,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "marieke-gouda--gouda",
+    "cheese_id": "marieke-gouda--marieke-gouda-smoked",
     "class_name": "Gouda, Smoked",
     "class_number": 47,
     "contest": "wccc",
@@ -4827,7 +4827,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "arla-foods-production-llc-arla-foods-amba--gouda",
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-chipotle-gouda",
     "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
     "class_number": 66,
     "contest": "wccc",
@@ -4846,7 +4846,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "arla-foods-production-llc-arla-foods-amba--gouda",
+    "cheese_id": "arla-foods-production-llc-arla-foods-amba--castello-chipotle-gouda",
     "class_name": "Open Class: Pepper Flavored Cheese, Mild Heat",
     "class_number": 66,
     "contest": "wccc",
@@ -4979,7 +4979,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "arena-cheese--toasted-onion-jack",
     "class_name": "Open Class: Semi-soft Cheeses, Flavored",
     "class_number": 72,
     "contest": "wccc",
@@ -5017,7 +5017,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "burnett-dairy-cooperative--black-truffle-cheddar-gruyere",
     "class_name": "Open Class: Hard Cheeses, Flavored",
     "class_number": 74,
     "contest": "wccc",
@@ -5131,7 +5131,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "nasonville-dairy-inc--cheese-curds",
+    "cheese_id": "nasonville-dairy-inc--garlic-and-dill-cheese-curds",
     "class_name": "Open Class: Cheese Curds, Flavored",
     "class_number": 80,
     "contest": "wccc",
@@ -5150,7 +5150,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "arena-cheese--buffalo-curd",
     "class_name": "Open Class: Cheese Curds, Flavored",
     "class_number": 80,
     "contest": "wccc",
@@ -5169,7 +5169,7 @@
   },
   {
     "champion": false,
-    "cheese_id": "lagrander-s-hillside-dairy-inc--cheese-curds",
+    "cheese_id": "lagrander-s-hillside-dairy-inc--lagrander-s-garlic-and-herb-cheese-curds",
     "class_name": "Open Class: Cheese Curds, Flavored",
     "class_number": 80,
     "contest": "wccc",
@@ -5321,7 +5321,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "burnett-dairy-cooperative--cheddar-gruyere",
     "class_name": "Cold Pack Cheese",
     "class_number": 85,
     "contest": "wccc",
@@ -5359,7 +5359,7 @@
   },
   {
     "champion": false,
-    "cheese_id": null,
+    "cheese_id": "burnett-dairy-cooperative--wood-river-creamery-black-truffle-cheddar-gruyere-spreadable-cheese",
     "class_name": "Cold Pack Cheese, Flavored",
     "class_number": 86,
     "contest": "wccc",

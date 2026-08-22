@@ -37,6 +37,3254 @@
       "type_id": 181
     }
   ],
+  "unparsed_products": [
+    {
+      "creamery_id": "agropur-inc",
+      "name": "Low Moisture Whole Milk Cheese",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "10 yr Cheddar",
+      "reason": "unknown token(s): yr",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Baby Swiss Full Cream",
+      "reason": "unknown token(s): full",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Blueberry White Cheddar",
+      "reason": "unknown token(s): blueberry",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Colby Caliente",
+      "reason": "unknown token(s): caliente",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Colby Caliente",
+      "reason": "unknown token(s): caliente",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Imported Dill Havarti",
+      "reason": "unknown token(s): imported",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Pimento Colby",
+      "reason": "unknown token(s): pimento",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Salami Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Super Sharp Cheddar 2 yr",
+      "reason": "unknown token(s): yr",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arena-cheese",
+      "name": "Vegetable Jack",
+      "reason": "unknown token(s): vegetable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "arla-foods-production-llc-arla-foods-amba",
+      "name": "Havarti and Gouda Snack Mix Bag",
+      "reason": "unknown token(s): mix",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "AMPI Carolina Reaper Jack",
+      "reason": "unknown token(s): carolina, reaper",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "AMPI Dry Sweet Whey Powder",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "American",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "American Cheese Product",
+      "reason": "unknown token(s): product",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "EZ Melt",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "Smokey Cheddar",
+      "reason": "unknown token(s): smokey",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "associated-milk-producers-inc",
+      "name": "White Cheddar with Habaneros",
+      "reason": "unknown token(s): habaneros",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "bel-brands-usa",
+      "name": "MERKTS MAPLE BOURBON NATURALLY AND ARTIFICIALLY FLAVORED CHEESE SPREAD",
+      "reason": "unknown token(s): bourbon, naturally, artificially",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Auribella®",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Baking Fresh Mozzarella",
+      "reason": "unknown token(s): baking",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "BelGioioso Aged Provolone Mandarino",
+      "reason": "unknown token(s): mandarino",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "BelGioioso Fresh Mozzarella Fresh Basil & Garlic Marinated",
+      "reason": "unknown token(s): marinated",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Burrata Filling \"Stracciatella\"",
+      "reason": "unknown token(s): filling, stracciatella",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "CreamyGorg®",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Crescenza-Stracchino™",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Crumbly Gorgonzola",
+      "reason": "unknown token(s): crumbly",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Fresh Asiago with Calabrian Chili Peppers",
+      "reason": "unknown token(s): calabrian",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Fresh Mozzarella, Prosciutto and Basil Roll",
+      "reason": "unknown token(s): prosciutto, roll",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Gorgonzola with Cow and Sheep's Milk",
+      "reason": "unknown token(s): cow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Marinated Crumbles",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Marinated Fresh Mozzarella",
+      "reason": "unknown token(s): marinated",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Provolone Extra",
+      "reason": "unknown token(s): extra",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Ricotta Salata, The Italian Feta",
+      "reason": "unknown token(s): italian",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Ricotta con Latte®",
+      "reason": "unknown token(s): con, latte",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Snacking Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "belgioioso-cheese-inc",
+      "name": "Specialty Blends",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+      "name": "Baked Cheese Pizza Crust",
+      "reason": "unknown token(s): crust",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "brunkow-cheese-of-wisconsin-inc",
+      "name": "Brun-uusto Baked Cheese with Cranberries",
+      "reason": "unknown token(s): cranberries",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "burnett-dairy-cooperative",
+      "name": "Limited Chipotle Peppercorn Cheddar Gruyere",
+      "reason": "unknown token(s): limited",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "burnett-dairy-cooperative",
+      "name": "Northwoods Cheddar",
+      "reason": "unknown token(s): northwoods",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "burnett-dairy-cooperative",
+      "name": "Patria Whole Milk Mozzarella",
+      "reason": "unknown token(s): patria",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "burnett-dairy-cooperative",
+      "name": "Roasted Red Pepper & Cracked Peppercorn Cheddar Gruyere",
+      "reason": "unknown token(s): roasted, red, cracked",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Ba Ba Blue",
+      "reason": "unknown token(s): ba, ba",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Black Sheep Truffle Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Blue Spruce Blue",
+      "reason": "unknown token(s): spruce",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Boozin Ewe",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Cheddar Cheese Snow White 5oz",
+      "reason": "unknown token(s): snow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Cocoa Cardona",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Glacier Blue Cheese Blue Spruce Smoked",
+      "reason": "unknown token(s): glacier, spruce",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Glacier Blue Cheese Penta Créme",
+      "reason": "unknown token(s): glacier, penta, creme",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Glacier Gorgonzola",
+      "reason": "unknown token(s): glacier",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Marisa",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Marisa",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Mobay",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Mobay",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Sante",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Smoked Creamy Kasa",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "carr-valley-cheese-company-inc",
+      "name": "Sweet Vanilla Cardona",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Brat Flavored Chees-E-Que – grilling cheese 8 0z",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Cheddar with Vegetables and Herbs",
+      "reason": "unknown token(s): vegetables",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Chees-E-Que Grilling Cheese 8 0z",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Clock Shadow Creamery Cheese Curds",
+      "reason": "unknown token(s): clock, shadow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Donatello",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Donatello",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Fleance",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Milled Sheep Cheddar",
+      "reason": "unknown token(s): milled",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Organic Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Pecorino",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-grove-cheese-inc",
+      "name": "Prairie Premium cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "American Slices 120 ct.",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Baby Swiss Sandwich Cut",
+      "reason": "unknown token(s): sandwich",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "BelGioioso American Grana - 8oz",
+      "reason": "unknown token(s): belgioioso",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "BelGioioso Auribella - 8oz",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "BelGioioso Fontina Deli Cut",
+      "reason": "unknown token(s): belgioioso",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "BelGioioso Parmigiano Reggiano - 8oz",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "BelGioioso Pecorino Romano 8oz",
+      "reason": "unknown token(s): belgioioso, pecorino",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "BelGioioso Pepato - 8oz",
+      "reason": "unknown token(s): belgioioso",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Bloody Mary Cheddar Cheese Curds (12oz)",
+      "reason": "unknown token(s): bloody, mary",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "CHOCOLATE CHEESE FUDGE WITH WALNUTS",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Caraway Koch Cheese - 8 oz average",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Castello Gouda Plain Red Wax - 7 oz",
+      "reason": "unknown token(s): castello, red",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Castello Smoked Gouda Black Wax 7oz",
+      "reason": "unknown token(s): castello",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Cheddar Delihorn",
+      "reason": "unknown token(s): delihorn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Chicken Soup Monterey Jack - 16oz X",
+      "reason": "unknown token(s): chicken, soup",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Colby Delihorn",
+      "reason": "unknown token(s): delihorn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Colby Jack Delihorn",
+      "reason": "unknown token(s): delihorn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Colby Salami - 16oz 2K",
+      "reason": "unknown token(s): salami",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Country Castle German Brick 16oz",
+      "reason": "unknown token(s): country, castle, german",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Country Castle Limburger - 8oz",
+      "reason": "unknown token(s): country, castle",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Country Castle Smoked Baby Swiss",
+      "reason": "unknown token(s): country, castle",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Deppeler's Aged Swiss",
+      "reason": "unknown token(s): deppeler",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Deppeler's Swiss",
+      "reason": "unknown token(s): deppeler",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Depplers Baby Swiss",
+      "reason": "unknown token(s): depplers",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Door County Cherry White Cheddar - 16oz F",
+      "reason": "unknown token(s): door, county",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Garden Monterey Jack - 16oz CC",
+      "reason": "unknown token(s): garden",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Havarti Plain Roth- 6 oz",
+      "reason": "unknown token(s): roth",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Havarti With Dill - Roth 6oz",
+      "reason": "unknown token(s): roth",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Henning's Mango Fire Cheddar - 16oz 3E",
+      "reason": "unknown token(s): henning, fire",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Hickory Nut Muenster - 16 oz 2I",
+      "reason": "unknown token(s): hickory, nut",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Maple Leaf Blueberry White Cheddar",
+      "reason": "unknown token(s): leaf, blueberry",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Maple Leaf Cranberry White Cheddar",
+      "reason": "unknown token(s): leaf",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Merlot Wine Infused Cheddar Cheese - 8oz",
+      "reason": "unknown token(s): merlot, infused",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Non-Smoked Provolone",
+      "reason": "unknown token(s): non",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Nueskes Applewood Smoked Bacon - 12oz",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Nueskes Liver Pate - 10oz",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Orange Rind Muenster",
+      "reason": "unknown token(s): orange, rind",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Pepper Jack Delihorn",
+      "reason": "unknown token(s): delihorn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Roth Gouda Cheese",
+      "reason": "unknown token(s): roth",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Roth Smoked Gouda Horn 8oz",
+      "reason": "unknown token(s): roth, horn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "String Cheese Bulk 3lb Zipper Bag",
+      "reason": "unknown token(s): bulk, zipper",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Vegetable Muenster - 16 oz 2D",
+      "reason": "unknown token(s): vegetable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cedar-valley-cheese-inc",
+      "name": "Vern's 4 Cheese Variety Pack",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cheese-merchants-of-america",
+      "name": "Creamy Italian (Creamy Formaggio)",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cheese-merchants-of-america",
+      "name": "Eau Galle Italian",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cheese-merchants-of-america",
+      "name": "Private Reserve Asiago",
+      "reason": "unknown token(s): private",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cheese-merchants-of-america",
+      "name": "Private Reserve Parmesan",
+      "reason": "unknown token(s): private",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "cheese-merchants-of-america",
+      "name": "Private Reserve Romano",
+      "reason": "unknown token(s): private",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "clearview-dairy-atwo-cheese-llc",
+      "name": "Moo Time Mozzarella",
+      "reason": "unknown token(s): moo, time",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "8oz Fresh Mozzarella Ball",
+      "reason": "unknown token(s): ball",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Chocolate Mascarpone",
+      "reason": "unknown token(s): chocolate",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Crave Brothers Fresh Mozzarella Ciliegine",
+      "reason": "unknown token(s): ciliegine",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Crave Brothers Fresh Mozzarella Medallions",
+      "reason": "unknown token(s): medallions",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Farmers Rope",
+      "reason": "unknown token(s): rope",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Farmers Rope String Cheese Skinny Sticks",
+      "reason": "unknown token(s): rope, skinny",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella 1# Log",
+      "reason": "unknown token(s): log",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella Bocconcini",
+      "reason": "unknown token(s): bocconcini",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella Ciliegine",
+      "reason": "unknown token(s): ciliegine",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella Heart Shaped",
+      "reason": "unknown token(s): heart, shaped",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella Medallions",
+      "reason": "unknown token(s): medallions",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella Ovoline",
+      "reason": "unknown token(s): ovoline",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Fresh Mozzarella Perline",
+      "reason": "unknown token(s): perline",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "crave-brothers-farmstead-cheese-l-l-c",
+      "name": "Marinated Fresh Mozzarella Ciliegine",
+      "reason": "unknown token(s): marinated, ciliegine",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "decatur-dairy-inc",
+      "name": "Chedster (1 lb)",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "decatur-dairy-inc",
+      "name": "Master Brick (1 lb)",
+      "reason": "unknown token(s): master",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "decatur-dairy-inc",
+      "name": "Stettler Swiss (1 lb)",
+      "reason": "unknown token(s): stettler",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "decatur-dairy-inc",
+      "name": "Ukrainian (1 lb)",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "decatur-dairy-inc",
+      "name": "Veggie Farmers (1 lb)",
+      "reason": "unknown token(s): veggie",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Carawaybou",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Doe",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Imperial Buck",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Indigo Bunting",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Rattlesnake",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Swan",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Deer Creek The Wild Stag",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Blue Jay",
+      "reason": "unknown token(s): jay",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Carawaybou",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Doe",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Fawn",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Imperial Buck",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Indigo Bunting",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Luna Moth",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The MoonRabbit",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Night Walker",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Rattlesnake",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Robin",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Stag",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Swan",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "The Wild Boar",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Vat 17 World Cheddar",
+      "reason": "unknown token(s): vat, world",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Whole Foods Market Exclusive 18 Month Cheddar",
+      "reason": "unknown token(s): foods, market, exclusive",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "deer-creek-cheese",
+      "name": "Whole Foods Market Exclusive 36 Month Cheddar",
+      "reason": "unknown token(s): foods, market, exclusive",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "15.5 oz Salami Colby Cheese",
+      "reason": "unknown token(s): salami",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "15.5 oz Smoke & Bacon Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "5 oz Dill Pickle Cheddar Cheese Curds",
+      "reason": "unknown token(s): pickle",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "5 oz Hickory Bacon Cheddar Cheese Curds",
+      "reason": "unknown token(s): hickory",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "7.5 oz Buffalo Wing Jack Cheese",
+      "reason": "unknown token(s): wing",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "8 oz Garden Vegetable & Sweet Basil Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "8 oz Pepperoni & Marinara Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "8 oz Roasted Garlic & Tomato Basil Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "Ellsworth White EZ Melt",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "ellsworth-cooperative-creamery",
+      "name": "Sour Cream & Onion Cheddar Cheese Curds",
+      "reason": "unknown token(s): sour",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Blueberry Vanilla Chèvre",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Buttermilk Blue®",
+      "reason": "unknown token(s): buttermilk",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Buttermilk Blue® Affinée",
+      "reason": "unknown token(s): buttermilk, affinee",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Buttermilk Blue® Crumbles",
+      "reason": "unknown token(s): buttermilk",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Buttermilk Gorgonzola",
+      "reason": "unknown token(s): buttermilk",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Buttery Garlic & Herb Cheese Dip & Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Caramelized Onion Cheese Dip & Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Cranberry Cinnamon Chèvre",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Crumbled Chèvre",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "French Onion Havarti",
+      "reason": "unknown token(s): french",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Grand Cru® Surchoix",
+      "reason": "unknown token(s): surchoix",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Hot Honey Gouda",
+      "reason": "unknown token(s): honey",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Moody Blue®",
+      "reason": "unknown token(s): moody",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Plain Chèvre",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Roth Grand Cru Surchoix Wheel",
+      "reason": "unknown token(s): surchoix",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "emmi-roth-usa",
+      "name": "Spinach Artichoke Gouda",
+      "reason": "unknown token(s): spinach, artichoke",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "foremost-farms-usa-cooperative",
+      "name": "Foremost Farms USA",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "foremost-farms-usa-cooperative",
+      "name": "Mozzarella LMWM",
+      "reason": "unknown token(s): lmwm",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "foremost-farms-usa-cooperative",
+      "name": "NFDM",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "gibbsville-cheese-company-inc",
+      "name": "Original flavor cheese curds",
+      "reason": "unknown token(s): flavor",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "gile-cheese-llc",
+      "name": "Asiago - Rosemary and Olive Oil",
+      "reason": "unknown token(s): rosemary, oil",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "gile-cheese-llc",
+      "name": "Blueberry White Cheddar",
+      "reason": "unknown token(s): blueberry",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "gile-cheese-llc",
+      "name": "Carolina Reaper Cheddar",
+      "reason": "unknown token(s): carolina, reaper",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "gile-cheese-llc",
+      "name": "Cheese Fudge with Walnuts - Tastes Just Like Fudge",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "gile-cheese-llc",
+      "name": "Feta with Mediterranian Herb - 8 oz.",
+      "reason": "unknown token(s): mediterranian",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "grande-cheese-company",
+      "name": "Avorio® Fresh Mozzarella Loaf",
+      "reason": "unknown token(s): avorio",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "grande-cheese-company",
+      "name": "East Coast Blend",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "grande-cheese-company",
+      "name": "Fior·di·Latte Fresh Mozzarella",
+      "reason": "unknown token(s): fior, di, latte",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "grande-cheese-company",
+      "name": "Fumella® Smoked Mozzarella",
+      "reason": "unknown token(s): fumella",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese",
+      "name": "Wasabi-cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Abergele Cranberry and Orange: A Festive Fusion",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Abergele Portabella and Chive: A Savory Delight",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Abergele: A Taste Of Wales In Every Bite",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Caerphilly: A Welsh Delight",
+      "reason": "unknown token(s): welsh, delight",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Double Gloucester: A Delicate Touch Of Welsh Tradition",
+      "reason": "unknown token(s): delicate, touch, welsh, tradition",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Kidwelly Castle: A Taste Of Coastal Wales",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "harmony-cheese-llc-athens-plant",
+      "name": "Merlot Cheddar: A Sophisticated Indulgence",
+      "reason": "unknown token(s): merlot, sophisticated, indulgence",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Aleppo Cheddar Cheese",
+      "reason": "unknown token(s): aleppo",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Cheese 2 year old midget",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Cheese Bandage Midget",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Cheese Dragons Breath",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Cheese Onion and Chive",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Dragons Breath Cheddar",
+      "reason": "unknown token(s): dragons, breath",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Henning's Mango Fire Cheddar",
+      "reason": "unknown token(s): fire",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "June Daisies",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Mammoth Wheels",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "henning-cheese-inc",
+      "name": "Red Wax Hoop Cheddar",
+      "reason": "unknown token(s): red, hoop",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hill-valley-dairy",
+      "name": "Luna by Hill Valley Dairy",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "hill-valley-dairy",
+      "name": "Naked Alpine",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hill-valley-dairy",
+      "name": "Red Wine Alpine",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hill-valley-dairy",
+      "name": "Shallot and Herb Alpine",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hill-valley-dairy",
+      "name": "Whiskey Gouda",
+      "reason": "unknown token(s): whiskey",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "Belaire: Port Salut-Style",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "Governor's Select Cheddar",
+      "reason": "unknown token(s): governor",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "Havarti Fuego",
+      "reason": "unknown token(s): fuego",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "Mexican Manchego",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "Sark",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "Sark: Butterkase",
+      "reason": "unknown token(s): sark",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hoard-s-dairymen-farm-creamery",
+      "name": "St Saviour: Camembert-Style",
+      "reason": "unknown token(s): st, saviour",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Bang Bang Triple Play",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Barneveld Blue",
+      "reason": "unknown token(s): barneveld",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Blue Paradise",
+      "reason": "unknown token(s): paradise",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Eight Year Cheddar",
+      "reason": "unknown token(s): eight",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Fifteen Year Cheddar",
+      "reason": "unknown token(s): fifteen",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Five Year Cheddar",
+      "reason": "unknown token(s): five",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Five Year Swiss",
+      "reason": "unknown token(s): five",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Four Year Cheddar",
+      "reason": "unknown token(s): four",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Four Year Swiss",
+      "reason": "unknown token(s): four",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Galway Bay",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Hook's Barneveld Blue",
+      "reason": "unknown token(s): barneveld",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Hook's Little Boy Blue",
+      "reason": "unknown token(s): boy",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Hurdy Gurdy",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Little Boy Blue",
+      "reason": "unknown token(s): boy",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Maaaahnterey Jack",
+      "reason": "unknown token(s): maaaahnterey",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "One Year Cheddar",
+      "reason": "unknown token(s): one",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "One Year Swiss",
+      "reason": "unknown token(s): one",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Red Errigal",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Seven Year Cheddar",
+      "reason": "unknown token(s): seven",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Sheep Milk Truffle",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Six Year Cheddar",
+      "reason": "unknown token(s): six",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Ten Year Cheddar",
+      "reason": "unknown token(s): ten",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Three Year Cheddar",
+      "reason": "unknown token(s): three",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Three Year Swiss",
+      "reason": "unknown token(s): three",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Tomato Basil",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Triple Play",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Triple Play Extra Innings",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "hook-s-cheese-company-inc",
+      "name": "Twelve Year Cheddar",
+      "reason": "unknown token(s): twelve",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Blooming Clover Camembert",
+      "reason": "unknown token(s): blooming, clover",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Blue Cheese Salad Blend",
+      "reason": "unknown token(s): salad",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Blue Cheese Salad Blend",
+      "reason": "unknown token(s): salad",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Bountiful Blue Sheep's Milk Blue Cheese",
+      "reason": "unknown token(s): bountiful",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Breezy Blue® Cheese",
+      "reason": "unknown token(s): breezy",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Farmer's Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Prairie Breeze",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Sheep Dreams Camembert",
+      "reason": "unknown token(s): dreams",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kingston-cheese-cooperative",
+      "name": "Smoked Bountiful Blue Sheep's Milk Blue Cheese",
+      "reason": "unknown token(s): bountiful",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "klondike-cheese-company",
+      "name": "Odyssey French Onion Greek Yogurt Dip",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "klondike-cheese-company",
+      "name": "Odyssey Labne",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "klondike-cheese-company",
+      "name": "Odyssey Lowfat 1% Vanilla Yogurt",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "klondike-cheese-company",
+      "name": "Odyssey Lowfat Feta in Brine",
+      "reason": "unknown token(s): lowfat",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "klondike-cheese-company",
+      "name": "Odyssey Plain Yogurt",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "klondike-cheese-company",
+      "name": "Odyssey Vanilla Greek Yogurt",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "koepke-farms-inc",
+      "name": "LaBelle Cracked Black Pepper-1 lb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "koepke-farms-inc",
+      "name": "LaBelle Fenugreek-1 lb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "koepke-farms-inc",
+      "name": "LaBelle Green Olives-1 lb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "koepke-farms-inc",
+      "name": "LaBelle Hickory Smoked Bacon-1 lb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "koepke-farms-inc",
+      "name": "LaBelle Hickory Smoked Plain-1 lb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "koepke-farms-inc",
+      "name": "LaBelle Original Plain-1 lb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "American w/ Bacon",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "American w/ Hot Pepper",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "American w/ Onion",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "American w/ Salami",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "Cheddar Apple Harvest",
+      "reason": "unknown token(s): harvest",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "Cheddar w/French Onion",
+      "reason": "unknown token(s): french",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "Pepperoni Colby Jack",
+      "reason": "unknown token(s): pepperoni",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "Scorpion Cheddar",
+      "reason": "unknown token(s): scorpion",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "Taco Seasoned Curds",
+      "reason": "unknown token(s): seasoned",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "kraemer-wisconsin-cheese-ltd",
+      "name": "White Cheddar w/ Blueberry",
+      "reason": "unknown token(s): blueberry",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Blueberry Vanilla",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Chipotle Honey",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Cranberry Cinnamon",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Cranberry Orange",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Fig & Honey",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Garlic & Herb",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Honey",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "LaClare Creamery Fig & Honey Goat Cheese",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "LaClare Creamery Original Goat Cheese",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Lemon Bar",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Maple Bourbon",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Mediterranean",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Original Goat Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Pumpkin",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Rolled Blueberry Vanilla Goat Cheese Log",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Snacking Chèvre",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Truffle",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "laclare-creamery-llc",
+      "name": "Ube",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb Cheddar Salami Cheese",
+      "reason": "unknown token(s): salami",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb Garlic & Herb Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb Horseradish Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb North Country Dill Havarti Cheese",
+      "reason": "unknown token(s): north, country",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb North Country Havarti Cheese",
+      "reason": "unknown token(s): north, country",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb Parmasio Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb Savory Onion Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb. Habanero Deli Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb. Honey Sriracha Deli Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "1lb. Scorpion Pepper Deli Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lagrander-s-hillside-dairy-inc",
+      "name": "2lb 3-Cheese Shredded Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Copper Kettle Parmesan",
+      "reason": "unknown token(s): copper, kettle",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Copper Kettle Parmesan",
+      "reason": "unknown token(s): copper, kettle",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Fontal Cheese",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Hand-Rubbed Fontina",
+      "reason": "unknown token(s): hand, rubbed",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Italian-Style Fontina",
+      "reason": "unknown token(s): italian",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Madagascar Vanilla Mascarpone",
+      "reason": "unknown token(s): madagascar, vanilla",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Cello Organic Copper Kettle Parmesan",
+      "reason": "unknown token(s): copper, kettle",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Delve Basil Pesto Parm",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Delve Garlic Herb Asiago",
+      "reason": "unknown token(s): delve",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lake-country-dairy-inc",
+      "name": "Delve Whipped Feta",
+      "reason": "unknown token(s): delve, whipped",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "landmark-creamery-llc",
+      "name": "Anabasque",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "landmark-creamery-llc",
+      "name": "Cinnamon Maple Butter",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "landmark-creamery-llc",
+      "name": "Landmark Creamery Fontina, savory and creamy cow milk cheese",
+      "reason": "unknown token(s): savory, cow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "landmark-creamery-llc",
+      "name": "Landmark Creamery Traditional Greek-style Sheep Feta",
+      "reason": "unknown token(s): greek",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "landmark-creamery-llc",
+      "name": "Landmark Creamery Zentner Alpine, made from Brown Swiss cow milk",
+      "reason": "unknown token(s): zentner, made, from, brown, cow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "lynn-dairy-inc",
+      "name": "Regular Cheese Curds",
+      "reason": "unknown token(s): regular",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "maple-leaf-cheese-co",
+      "name": "A Blue Named Sue",
+      "reason": "unknown token(s): named, sue",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "maple-leaf-cheese-co",
+      "name": "English Hollow Cheddar",
+      "reason": "unknown token(s): english, hollow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "maple-leaf-cheese-co",
+      "name": "Ewe're My Boy, Blue",
+      "reason": "unknown token(s): re, my, boy",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Golden Mature",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Golden Young",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke Gouda Belegen 4-6 months",
+      "reason": "unknown token(s): belegen",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke Gouda Hatch Pepper",
+      "reason": "unknown token(s): hatch",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke Gouda Honey Clover",
+      "reason": "unknown token(s): honey, clover",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke Gouda Reserve 1000 days+",
+      "reason": "unknown token(s): days",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Black Mustard",
+      "reason": "unknown token(s): mustard",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Black Pepper Mix",
+      "reason": "unknown token(s): mix",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Burning Mélange",
+      "reason": "unknown token(s): burning, melange",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Cores",
+      "reason": "unknown token(s): cores",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Foenegreek",
+      "reason": "unknown token(s): foenegreek",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Hatch Pepper Cheese Spread",
+      "reason": "unknown token(s): hatch",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Holy Trinity Mélange",
+      "reason": "unknown token(s): holy, trinity, melange",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Honey Clover",
+      "reason": "unknown token(s): honey, clover",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Honey Clover Cheese Spread",
+      "reason": "unknown token(s): honey, clover",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Mustard Mélange",
+      "reason": "unknown token(s): mustard, melange",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Plain Overjarige (24+ months)",
+      "reason": "unknown token(s): overjarige",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Reserve (1000+ Days)",
+      "reason": "unknown token(s): days",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "marieke-gouda",
+      "name": "Marieke® Gouda Smoked Core",
+      "reason": "unknown token(s): core",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Aged Over 5 Years Cheddar",
+      "reason": "unknown token(s): over",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Banana Pepper Jack",
+      "reason": "unknown token(s): banana",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Banana Pepper Jack Spread",
+      "reason": "unknown token(s): banana",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Beechwood Smoked Cheddar",
+      "reason": "unknown token(s): beechwood",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Bruschetta Jack",
+      "reason": "unknown token(s): bruschetta",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Bruschetta Jack Cheese Spread",
+      "reason": "unknown token(s): bruschetta",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Bruschetta Jack Spread",
+      "reason": "unknown token(s): bruschetta",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Bruschetta Jack Spread",
+      "reason": "unknown token(s): bruschetta",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Cappuccino Jack",
+      "reason": "unknown token(s): cappuccino",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Muscoda Mayhem Colby Jack",
+      "reason": "unknown token(s): muscoda, mayhem",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Muscoda Mayhem Colby Jack Spread",
+      "reason": "unknown token(s): muscoda, mayhem",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Sweet Fire Mango Jack",
+      "reason": "unknown token(s): fire",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Wild Morel & Leek Jack",
+      "reason": "unknown token(s): wild",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "meister-cheese-co-llc",
+      "name": "Wild Morel & Leek Jack Spread",
+      "reason": "unknown token(s): wild",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "mullins-cheese-inc",
+      "name": "Deep Fried Cheese Curds",
+      "reason": "unknown token(s): deep, fried",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "Bacon Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "Buffalo Wing Jack Cheese",
+      "reason": "unknown token(s): wing",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "Café Olympia Feta Spread 14oz",
+      "reason": "unknown token(s): cafe, olympia",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "Carolina Reaper Cheddar",
+      "reason": "unknown token(s): carolina, reaper",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "Farmer's Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "German Brick Cheese",
+      "reason": "unknown token(s): german",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "Honey BBQ Jack Cheese",
+      "reason": "unknown token(s): honey",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nasonville-dairy-inc",
+      "name": "XXX Habanero Jack Cheese",
+      "reason": "unknown token(s): xxx",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nordic-creamery",
+      "name": "A Cheese 2 Love- Raw Milk Cheddar-100% A2/A2",
+      "reason": "unknown token(s): love",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nordic-creamery",
+      "name": "A2 Esofea Ridge Raw Milk Cheddar Cheese",
+      "reason": "unknown token(s): esofea, ridge",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nordic-creamery",
+      "name": "Grumpy Goat",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "nordic-creamery",
+      "name": "Nordic Creamery Unsalted Butter",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "oak-grove-dairy-inc",
+      "name": "Fire Jack (Marble Jack with Hot Peppers)",
+      "reason": "unknown token(s): fire",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "oak-grove-dairy-inc",
+      "name": "Sliced American",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "oak-grove-dairy-inc",
+      "name": "Vegetable",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "organic-valley-chaseburg",
+      "name": "Organic White American Cheese - Premium Pasteurized Prepared Cheese",
+      "reason": "unknown token(s): prepared",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "pasture-pride-cheese-llc",
+      "name": "Guusto",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pasture-pride-cheese-llc",
+      "name": "Italian Juusto Baked Cheese",
+      "reason": "unknown token(s): italian",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pasture-pride-cheese-llc",
+      "name": "Oven Baked Cheese filled with 5 Year-Old Cheddar",
+      "reason": "unknown token(s): oven, filled",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pasture-pride-cheese-llc",
+      "name": "Oven Baked Cheese filled with Aged Goat Cheese",
+      "reason": "unknown token(s): oven, filled",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pasture-pride-cheese-llc",
+      "name": "Oven Baked Cheese filled with Aged Parmesan",
+      "reason": "unknown token(s): oven, filled",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Dill Pickle Cheese Spread",
+      "reason": "unknown token(s): pickle",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Garden Vegetable Cold Pack Cheese Spread",
+      "reason": "unknown token(s): garden, vegetable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Garlic & Herb Gourmet Cheese Snack Spread",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Garlic & Herb Shelf Stable Snack Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Horseradish Flavor Cold Pack Cheese Spread",
+      "reason": "unknown token(s): flavor",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Italian Truffle Premier All-Natural Cheese Spread",
+      "reason": "unknown token(s): italian",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Jalapeno Shelf Stable Snack Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Kickin' Dill Pickle Flavor Cold Pack Cheese Spread",
+      "reason": "unknown token(s): kickin, pickle, flavor",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Kickin' Mango Cold Pack Cheese Spread",
+      "reason": "unknown token(s): kickin",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Pimento Cold Pack Cheese Spread",
+      "reason": "unknown token(s): pimento",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Pimento Cold Pack Cheese Spread",
+      "reason": "unknown token(s): pimento",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Port Wine Shelf Stable Snack Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Raspberry Chipotle Premier All-Natural Cheese Spread",
+      "reason": "unknown token(s): raspberry",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Sharp Cheddar Shelf Stable Snack Spread",
+      "reason": "unknown token(s): shelf, stable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Smokey Bacon Cold Pack Cheese Spread",
+      "reason": "unknown token(s): smokey",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Smokey Bacon Shelf Stable Snack Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Spicy Beer Shelf Stable Snack Spread",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Spicy Pickle Cheese Spread",
+      "reason": "unknown token(s): pickle",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Spicy Pimento Cold Pack Cheese Spread",
+      "reason": "unknown token(s): pimento",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "pine-river-pre-pack-inc",
+      "name": "Street Corn Dip",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Farmhouse Colby",
+      "reason": "unknown token(s): farmhouse",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Gravity Hill Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Haus Select Cheddar Cheese",
+      "reason": "unknown token(s): haus",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Lowlander Goudse Kaas",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Red Rock Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Roelli Cheddar Cheeses (Mild, Medium, Sharp, Extra Sharp)",
+      "reason": "unknown token(s): cheeses",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "roelli-cheese-company-inc",
+      "name": "Roelli Haus Select Cheddar",
+      "reason": "unknown token(s): haus",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Brandy Old Fashioned Snow Cheddar 7oz",
+      "reason": "unknown token(s): brandy, fashioned, snow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Deep Medium Cheddar 8 Oz",
+      "reason": "unknown token(s): deep",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Original Herb & Spice Cheese Spread",
+      "reason": "unknown token(s): spice",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Ron's Cheese Whips",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Ron's Garlic & Dill Cheese Whips 8oz",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Ron's Snow Cheddar Cheese",
+      "reason": "unknown token(s): snow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Snow Cheddar Spread",
+      "reason": "unknown token(s): snow",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Three Pepper Cheddar 8 Oz",
+      "reason": "unknown token(s): three",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Three Pepper Cheddar Cheese Curds 8oz",
+      "reason": "unknown token(s): three",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "ron-s-wisconsin-cheese",
+      "name": "Zesty Beer Cheddar Spread 8oz",
+      "reason": "unknown token(s): zesty",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "Balsamic Caramelized Onion Cheddar Cheese",
+      "reason": "unknown token(s): balsamic, caramelized",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "Cherry Cheddar with Door County Cherries",
+      "reason": "unknown token(s): door, county, cherries",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "French Onion Cheddar Cheese",
+      "reason": "unknown token(s): french",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "Legacy Blend Cheese (Blend of Cheddar & Gouda)",
+      "reason": "unknown token(s): legacy",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "Terrific Trio Cheese (Blend of Cheddar, Parmesan, & Gouda)",
+      "reason": "unknown token(s): terrific, trio",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "Traditional Hoop Cheddar Cheese, Cracker Cut",
+      "reason": "unknown token(s): hoop, cracker",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "rosewood-dairy-inc",
+      "name": "Whip String Cheese - Sealed",
+      "reason": "unknown token(s): whip",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "saputo-cheese-usa",
+      "name": "Montchevre Blueberry Vanilla Goat Cheese",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "saputo-cheese-usa",
+      "name": "Montchevre Goat Milk Cheddar",
+      "reason": "unknown token(s): montchevre",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "saputo-cheese-usa",
+      "name": "Stella Aged Asiago",
+      "reason": "unknown token(s): stella",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Balanced Breaks® Cheese + Crunch Mix",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Carolina Reaper Jack Sliced Cheese",
+      "reason": "unknown token(s): carolina, reaper",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Cheese Bakes",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Colby-Jack Cheese Cubes, 16 oz.",
+      "reason": "unknown token(s): cubes",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Mild Cheddar Cheese Cubes, 16 oz.",
+      "reason": "unknown token(s): cubes",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Reserve Series™ Aged Gouda Sliced Cheese, 8 Slices",
+      "reason": "unknown token(s): seriestm",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Reserve Series™ Aged White Cheddar Sliced Cheese, 10 slices",
+      "reason": "unknown token(s): seriestm",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Smokehouse Cheddar™ Sliced Cheese, 11 slices",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Ultra Thin® Pepper Jack Sliced Cheese, 18 slices",
+      "reason": "unknown token(s): ultra, thin",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sargento-cheese-inc",
+      "name": "Sargento® Ultra Thin® Sharp Cheddar Sliced Cheese, 18 slices",
+      "reason": "unknown token(s): ultra, thin",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "BellaVitano® Balsamic",
+      "reason": "unknown token(s): balsamic",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "BellaVitano® Espresso",
+      "reason": "unknown token(s): espresso",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "BellaVitano® Hatch Chile",
+      "reason": "unknown token(s): hatch, chile",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "BellaVitano® Merlot",
+      "reason": "unknown token(s): merlot",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Cherrywood Smoked Cheddar",
+      "reason": "unknown token(s): cherrywood",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Farmhouse Cheddar",
+      "reason": "unknown token(s): farmhouse",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Italian Herb Cheese Bites",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Jalapeño Ranch Cheese Bites",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Merlot BellaVitano® Spread & Dip",
+      "reason": "unknown token(s): merlot",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "MontAmoré® Cheese Bites",
+      "reason": "unknown token(s): bites",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Old World Cheddar",
+      "reason": "unknown token(s): world",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Rosemary & Olive Oil Asiago",
+      "reason": "unknown token(s): rosemary, oil",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "SarVecchio Parmesan",
+      "reason": "unknown token(s): sarvecchio",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "sartori-company",
+      "name": "Tuscan Blend Parmesan",
+      "reason": "unknown token(s): tuscan",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "schreiber-foods-inc",
+      "name": "Harris Teeter's Whipped Chive Cream Cheese Spread",
+      "reason": "unknown token(s): harris, teeter, whipped",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "schreiber-foods-inc",
+      "name": "Sharp American Process Cheese Slices- Schreiber Foods",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "scray-s-cheese-co",
+      "name": "Blueberry Cheddar 1 lb.",
+      "reason": "unknown token(s): blueberry",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "scray-s-cheese-co",
+      "name": "Door County Cherry Cheddar - 1 lb",
+      "reason": "unknown token(s): door, county",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "scray-s-cheese-co",
+      "name": "French Onion Cheese Curds 14 oz.",
+      "reason": "unknown token(s): french",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "scray-s-cheese-co",
+      "name": "Mozzarella Whips 10 oz.",
+      "reason": "unknown token(s): whips",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "BHARATMA™ Paneer",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Fried Cubed Paneer",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Garlic Toast Frying Cheese",
+      "reason": "unknown token(s): toast",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "La VacaRica® Duro Blando",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "La VacaRica® High Moisture Crumbled Cotija",
+      "reason": "unknown token(s): high",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "La VacaRica® Queso Fresco w/Jalapeños",
+      "reason": "unknown token(s): jalapenos",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "La VacaRica® Queso Quesadilla w/Jalapeños",
+      "reason": "unknown token(s): jalapenos",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "La VacaRica® Seco",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "La VacaRica® Seco w/Jalapeño",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Lower Fat Paneer",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Pineapple & Mango Frying Cheese",
+      "reason": "unknown token(s): pineapple",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Ackawi",
+      "reason": "unknown token(s): rich, cowtm",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Frying Cheese",
+      "reason": "unknown token(s): rich, cowtm",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Jibneh Arabieh",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Kenafa",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Naboulsi (Boiled Spring Cheese)",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Paneer",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "specialty-cheese-company-inc",
+      "name": "Rich Cow™ Sweet Cheese (Frozen)",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "2-Chile Colby Jack",
+      "reason": "unknown token(s): chile",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "3-Chile Colby Jack",
+      "reason": "unknown token(s): chile",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "Caribbean Red Hot Jack",
+      "reason": "unknown token(s): caribbean, red",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "Chicken Soup Jack",
+      "reason": "unknown token(s): chicken, soup",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "Chile-Lime Adobo Cheddar VW",
+      "reason": "unknown token(s): chile, lime, adobo",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "Pueblo Jack",
+      "reason": "unknown token(s): pueblo",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "Roasted Red Pepper Jack",
+      "reason": "unknown token(s): roasted, red",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "springside-artisan-cheese-llc",
+      "name": "Vegetable Jack",
+      "reason": "unknown token(s): vegetable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "union-star-corp",
+      "name": "Red Willow",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "uplands-cheese-company",
+      "name": "Extra-Aged Pleasant Ridge Reserve",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "uplands-cheese-company",
+      "name": "Extra-Aged Pleasant Ridge Reserve",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "uplands-cheese-company",
+      "name": "Pleasant Ridge Reserve",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "uplands-cheese-company",
+      "name": "Rush Creek Reserve",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Chihuahua® Brand Quesadilla Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Chihuahua® Brand Quesadilla Cheese with Jalapeño",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Grated Sierra® Brand Cotija Cheese from V&V SUPREMO®",
+      "reason": "unknown token(s): sierra, from",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Queso Blanco Del Caribe®",
+      "reason": "unknown token(s): del, caribe",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Queso Chihuahua",
+      "reason": "unknown token(s): chihuahua",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Rancherito® Brand Fresh Crumbling Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "v-v-supremo-foods-inc",
+      "name": "Shredded Chihuahua",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "wakker-cheese-llc",
+      "name": "WAKKER'S GOLDEN RESERVE GOUDA AGED OVER 2000 DAYS (1 POUND)",
+      "reason": "unknown token(s): over, days",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "westby-cooperative-creamery",
+      "name": "Westby 2% Small Curd Cottage Cheese",
+      "reason": "unknown token(s): cottage",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "westby-cooperative-creamery",
+      "name": "Westby French Onion Dip",
+      "reason": "no base type in name",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "weyauwega-star-dairy-inc",
+      "name": "Cheddar Cheese Curd – Bloody Mary – 10oz",
+      "reason": "unknown token(s): bloody, mary",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "weyauwega-star-dairy-inc",
+      "name": "Cheddar Cheese Curd – Buffalo Wing – 10oz",
+      "reason": "unknown token(s): wing",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "weyauwega-star-dairy-inc",
+      "name": "Cheddar Cheese Curd – Sour Cream & Onion – 10oz",
+      "reason": "unknown token(s): sour",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "weyauwega-star-dairy-inc",
+      "name": "Cheddar Cheese Curd – Sweet Bourbon Chipotle Bacon – 10oz",
+      "reason": "unknown token(s): bourbon",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "weyauwega-star-dairy-inc",
+      "name": "Diamond Marble – 12oz",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "weyauwega-star-dairy-inc",
+      "name": "Montery Jack with Habanero – 12oz",
+      "reason": "unknown token(s): montery",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "widmer-s-cheese-cellars-inc",
+      "name": "Foil Pack Aged Brick 14 OZ.",
+      "reason": "unknown token(s): foil",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "widmer-s-cheese-cellars-inc",
+      "name": "Matterhorn Alpine Cheddar 15oz",
+      "reason": "unknown token(s): matterhorn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "widmer-s-cheese-cellars-inc",
+      "name": "Matterhorn Cheddar Spread 8oz",
+      "reason": "unknown token(s): matterhorn",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "widmer-s-cheese-cellars-inc",
+      "name": "Vac Pack Mild Specialty Brick 14oz",
+      "reason": "unknown token(s): vac, specialty",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "widmer-s-cheese-cellars-inc",
+      "name": "Vegetable Colby 14oz",
+      "reason": "unknown token(s): vegetable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "El Viajero Queso Panela",
+      "reason": "unknown token(s): el, viajero",
+      "source": "contest"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "Queso Boricua",
+      "reason": "unknown token(s): boricua",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "Queso Colombiano",
+      "reason": "unknown token(s): colombiano",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "Queso Criollo",
+      "reason": "unknown token(s): criollo",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "Queso De Hoja",
+      "reason": "unknown token(s): de, hoja",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "Queso Dominicano",
+      "reason": "unknown token(s): dominicano",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "wisconsin-cheese-group-llc",
+      "name": "Queso Ecuatoriano",
+      "reason": "unknown token(s): ecuatoriano",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Calico Cheese",
+      "reason": "no base type in name",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Cheddar Yellow Nitro",
+      "reason": "unknown token(s): nitro",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Colby Beef Salami",
+      "reason": "unknown token(s): beef, salami",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack BBQ Wild Wings",
+      "reason": "unknown token(s): wild, wings",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Carolina Reapers Cheese",
+      "reason": "unknown token(s): carolina, reapers",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Cranberry-Walnut Jack",
+      "reason": "unknown token(s): walnut",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Dill Pickle",
+      "reason": "unknown token(s): pickle",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Mild Banana Pepper",
+      "reason": "unknown token(s): banana",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Nitro Jack",
+      "reason": "unknown token(s): nitro",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Vegetable",
+      "reason": "unknown token(s): vegetable",
+      "source": "shop"
+    },
+    {
+      "creamery_id": "yellowstone-cheese-inc",
+      "name": "Monterey Jack Yellowstone Crunch",
+      "reason": "unknown token(s): crunch",
+      "source": "shop"
+    }
+  ],
   "untyped_types": [
     {
       "makers": [

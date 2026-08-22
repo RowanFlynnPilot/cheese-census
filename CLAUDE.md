@@ -124,26 +124,41 @@ manual dispatch only until all scrapers are implemented.
 
 ## Status (August 22, 2026) and next steps, in order
 
-**The build is green with a cheese catalog**: 89 creameries, 623 cheeses, 61
-people, 299 awards — deterministic and idempotent end to end. The similarity
-engine and the curd map (32 plain-curds records) are live. The review gate was
-cleared by an evidence pass, not by waving records through — see below.
+**The build is green with a product-level cheese catalog**: 89 creameries,
+1,069 cheeses (446 named products + 623 plain type variants), 61 people, 299
+awards — deterministic and idempotent end to end. The similarity engine, the
+curd map, and cross-family discovery are all live: Cedar Valley's Habanero
+Muenster surfaces habanero jacks from three other creameries above its own
+jalapeño sibling.
 
-### The flavor tagging pass (done at type level)
+### The flavor tagging pass (product level)
 
-`data/tagging/types.json` maps 111 DFW cheese types into the closed vocabularies
-(curated, seeded by `dfw_varieties.json`); `scripts/catalog.py` crosses it with
-each exported creamery's made-role links → 623 records, one per creamery × type.
-144 of 299 awards now link to a specific cheese (unique name-containment only).
-Worklist in `queue/review_cheeses.json`: 35 untyped single-maker types with their
-makers (Auribella, Weird Sisters, Luna…) and 6 texture disagreements vs DFW's own
-hardness groupings (deliberate — e.g. DFW calls curds "Semi-Hard").
+`data/tagging/types.json` is the editorial heart: 114 DFW cheese types mapped
+into the closed vocabularies, plus a product-name lexicon — base aliases
+(longhorn→Colby, brun-uusto→bread cheese), modifiers (habanero → add-in +
+peppery; goat → milk override; raw milk → raw_milk true; aged → age-band
+shift), per-creamery brand words (Odyssey is Klondike, Cello is Schuman), and
+an ignore list for sizes and marketing filler. `scripts/catalog.py` derives a
+named product as base type row + parsed modifiers, from two name sources:
+championship entries (in hand) and shop titles harvested from 84 creamery
+websites into `queue/products_research.json` (1,355 titles, supervised
+agent-and-hand collection; foreign-brand resale items excluded).
 
-**Known limit, by design**: type-level records make same-type cheeses identical,
-so a Gouda's similar-list is other Goudas at 100.0. Cross-family discovery — the
-similarity engine's real promise — arrives as flagship products get differentiated
-tags and names via `data/overrides/cheeses.json` (rename `marieke-gouda--gouda`,
-adjust its flavors) or new table rows. Never fudge tags to force variety.
+Every token of a product name must be accounted for or NO record is produced —
+an unknown word is flavor information we refuse to drop. Semantic dedupe keeps
+one record per (creamery, base, modifiers) however the name is spelled. Bare
+type records stay alongside named products: the bare record IS the plain
+variant, which is real (Klondike's plain Feta wins championships). 165 of 299
+awards link to a specific cheese (exact name first, else longest-contained
+name; never reverse containment). Nordic Creamery's raw-milk line populates
+`raw_milk: true`; 39 products carry goat/sheep/mixed milk.
+
+Worklist in `queue/review_cheeses.json`: 541 unparsed product names (single-name
+signatures like Marisa and Mobay, plus flavors outside the vocabulary), 35
+untyped single-maker types, and 6 deliberate texture disagreements with DFW's
+groupings. **Known limit**: plain variants of the same type still mirror each
+other across creameries at 100.0 in similar-lists; differentiation continues
+through overrides and the unparsed-signature worklist.
 
 ### Non-Wisconsin cleanup
 
@@ -229,10 +244,9 @@ Next steps, in order:
    - Note: `retail.mail_order` and `retail.online` are false for every creamery.
      DFW offers both as filters but publishes neither value, so they are not
      scraped; correct them in `data/overrides/creameries.json` where they matter.
-2. Tagging worklist: the 35 untyped types in `queue/review_cheeses.json` (add rows
-   to `data/tagging/types.json`, re-run `scripts/catalog.py`), the 6 texture
-   disagreements, and flagship-product differentiation via overrides so
-   similar-lists stop being same-type mirrors.
+2. Tagging worklist in `queue/review_cheeses.json`: 541 unparsed product names
+   (add lexicon rows or override records), 35 untyped types, 6 texture
+   disagreements. Re-run `scripts/catalog.py` after edits.
 3. `scripts/describe.py` — generation with the WPR voice prompt (623 descriptions
    missing, per `queue/report.json`).
 4. Front end: the reader layer — cheese browse, cheese detail with similar-cheese

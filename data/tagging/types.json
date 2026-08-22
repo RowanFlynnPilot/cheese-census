@@ -10,122 +10,2626 @@
     "any override. A type ABSENT from this table produces no records: catalog.py",
     "lists absentees with their makers in queue/review_cheeses.json so untagged",
     "cheeses are always a visible worklist, never silently dropped.",
-    "Trademarks are detected from ® / ™ in the type name, not stored here."
+    "Trademarks are detected from ® / ™ in the type name, not stored here.",
+    "",
+    "base_aliases maps extra base-name spellings onto a type row (jack, curds,",
+    "munster). modifiers maps product-name tokens onto tag effects: add_ins,",
+    "extra flavor tags, or an age_shift along the age_band scale. ignore lists",
+    "tokens that carry no tag information (sizes, cuts, marketing filler).",
+    "A product name that leaves any token unaccounted for produces NO record —",
+    "it lands in queue/review_cheeses.json as an unparsed product instead.",
+    "'pepper' -> jalapeno is the pepper-jack convention; cracked/black pepper",
+    "-> peppercorn. Veto any of this by editing the row."
+  ],
+  "brand_words": {
+    "_about": "Per-creamery brand-line words that carry no tag information when they appear in that creamery's own product names. The parser also ignores every word of the owning creamery's name and trade names automatically.",
+    "klondike-cheese-company": [
+      "odyssey",
+      "buholzer",
+      "brothers"
+    ],
+    "lake-country-dairy-inc": [
+      "cello"
+    ],
+    "arla-foods-production-llc-arla-foods-amba": [
+      "castello"
+    ],
+    "burnett-dairy-cooperative": [
+      "wood",
+      "river"
+    ],
+    "associated-milk-producers-inc": [
+      "ampi",
+      "dinner",
+      "bell"
+    ],
+    "sargento-cheese-inc": [
+      "sargento"
+    ],
+    "springside-artisan-cheese-llc": [
+      "vw"
+    ],
+    "specialty-cheese-company-inc": [
+      "la",
+      "vacarica"
+    ],
+    "bel-brands-usa": [
+      "merkts"
+    ]
+  },
+  "base_aliases": {
+    "grana": "42",
+    "gruyere": "251",
+    "brun uusto": "75",
+    "uusto": "75",
+    "longhorn": "15",
+    "pizza": "47",
+    "queso": "49",
+    "baked cheese": "75",
+    "american cheese": "43",
+    "cheese spread": "45",
+    "jack": "36",
+    "cojack": "16",
+    "co jack": "16",
+    "colby jack": "16",
+    "marble jack": "16",
+    "curd": "135",
+    "curds": "135",
+    "cheese curd": "135",
+    "cheese curds": "135",
+    "string": "57",
+    "string cheese": "57",
+    "munster": "38",
+    "brie": "11",
+    "swiss cheese": "58",
+    "mozz": "37",
+    "feta cheese": "22",
+    "quark cheese": "213",
+    "juustoleipa": "75",
+    "bread cheese": "75",
+    "juusto": "75",
+    "bleu": "7"
+  },
+  "modifiers": {
+    "smoked": {
+      "flavor": [
+        "smoky"
+      ]
+    },
+    "smoky": {
+      "flavor": [
+        "smoky"
+      ]
+    },
+    "applewood": {
+      "flavor": [
+        "smoky"
+      ]
+    },
+    "applewood smoked": {
+      "flavor": [
+        "smoky"
+      ]
+    },
+    "hickory smoked": {
+      "flavor": [
+        "smoky"
+      ]
+    },
+    "aged": {
+      "age_shift": 1
+    },
+    "extra aged": {
+      "age_shift": 2
+    },
+    "reserve": {
+      "age_shift": 1
+    },
+    "vintage": {
+      "age_shift": 1
+    },
+    "mature": {
+      "age_shift": 1
+    },
+    "young": {
+      "age_shift": -1
+    },
+    "sharp": {
+      "flavor": [
+        "sharp"
+      ]
+    },
+    "extra sharp": {
+      "flavor": [
+        "sharp"
+      ]
+    },
+    "mild": {
+      "flavor": [
+        "mild"
+      ]
+    },
+    "medium": {},
+    "sweet": {
+      "flavor": [
+        "sweet"
+      ]
+    },
+    "dill": {
+      "add_ins": [
+        "dill"
+      ]
+    },
+    "garlic": {
+      "add_ins": [
+        "garlic"
+      ]
+    },
+    "onion": {
+      "add_ins": [
+        "onion"
+      ]
+    },
+    "toasted onion": {
+      "add_ins": [
+        "onion"
+      ],
+      "flavor": [
+        "toasty"
+      ]
+    },
+    "chive": {
+      "add_ins": [
+        "chive"
+      ]
+    },
+    "chives": {
+      "add_ins": [
+        "chive"
+      ]
+    },
+    "basil": {
+      "add_ins": [
+        "basil"
+      ]
+    },
+    "tomato": {
+      "add_ins": [
+        "tomato"
+      ]
+    },
+    "tomato basil": {
+      "add_ins": [
+        "tomato",
+        "basil"
+      ]
+    },
+    "sun dried tomato": {
+      "add_ins": [
+        "tomato"
+      ]
+    },
+    "jalapeno": {
+      "add_ins": [
+        "jalapeno"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "chipotle": {
+      "add_ins": [
+        "chipotle"
+      ],
+      "flavor": [
+        "peppery",
+        "smoky"
+      ]
+    },
+    "habanero": {
+      "add_ins": [
+        "habanero"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "horseradish": {
+      "add_ins": [
+        "horseradish"
+      ],
+      "flavor": [
+        "pungent"
+      ]
+    },
+    "caraway": {
+      "add_ins": [
+        "caraway"
+      ]
+    },
+    "fenugreek": {
+      "add_ins": [
+        "fenugreek"
+      ]
+    },
+    "cumin": {
+      "add_ins": [
+        "cumin"
+      ]
+    },
+    "truffle": {
+      "add_ins": [
+        "truffle"
+      ],
+      "flavor": [
+        "earthy"
+      ]
+    },
+    "bacon": {
+      "add_ins": [
+        "bacon"
+      ],
+      "flavor": [
+        "smoky",
+        "savory"
+      ]
+    },
+    "cranberry": {
+      "add_ins": [
+        "cranberry"
+      ],
+      "flavor": [
+        "fruity"
+      ]
+    },
+    "cherry": {
+      "add_ins": [
+        "cherry"
+      ],
+      "flavor": [
+        "fruity"
+      ]
+    },
+    "pepper": {
+      "add_ins": [
+        "jalapeno"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "peppers": {
+      "add_ins": [
+        "jalapeno"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "hot pepper": {
+      "add_ins": [
+        "jalapeno"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "cracked pepper": {
+      "add_ins": [
+        "peppercorn"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "black pepper": {
+      "add_ins": [
+        "peppercorn"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "peppercorn": {
+      "add_ins": [
+        "peppercorn"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "hot": {
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "spicy": {
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "in brine": {
+      "flavor": [
+        "briny"
+      ]
+    },
+    "brine": {
+      "flavor": [
+        "briny"
+      ]
+    },
+    "brined": {
+      "flavor": [
+        "briny"
+      ]
+    },
+    "goat": {
+      "milk": [
+        "goat"
+      ]
+    },
+    "goat milk": {
+      "milk": [
+        "goat"
+      ]
+    },
+    "goats milk": {
+      "milk": [
+        "goat"
+      ]
+    },
+    "sheep": {
+      "milk": [
+        "sheep"
+      ]
+    },
+    "sheep milk": {
+      "milk": [
+        "sheep"
+      ]
+    },
+    "sheeps milk": {
+      "milk": [
+        "sheep"
+      ]
+    },
+    "mixed milk": {
+      "milk": [
+        "mixed"
+      ]
+    },
+    "three milk": {
+      "milk": [
+        "mixed"
+      ]
+    },
+    "triple milk": {
+      "milk": [
+        "mixed"
+      ]
+    },
+    "raw": {
+      "raw_milk": true
+    },
+    "raw milk": {
+      "raw_milk": true
+    },
+    "beer": {
+      "flavor": [
+        "savory",
+        "toasty"
+      ]
+    },
+    "buffalo": {
+      "flavor": [
+        "peppery",
+        "savory"
+      ]
+    },
+    "cajun": {
+      "flavor": [
+        "peppery",
+        "savory"
+      ]
+    },
+    "ranch": {
+      "flavor": [
+        "savory",
+        "creamy"
+      ]
+    },
+    "taco": {
+      "flavor": [
+        "peppery",
+        "savory"
+      ]
+    },
+    "salsa": {
+      "flavor": [
+        "peppery",
+        "savory"
+      ]
+    },
+    "bbq": {
+      "flavor": [
+        "smoky",
+        "savory"
+      ]
+    },
+    "sriracha": {
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "chili": {
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "ghost pepper": {
+      "add_ins": [
+        "ghost_pepper"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "ghost chili": {
+      "add_ins": [
+        "ghost_pepper"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "ghost chili pepper": {
+      "add_ins": [
+        "ghost_pepper"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "ghost": {
+      "add_ins": [
+        "ghost_pepper"
+      ],
+      "flavor": [
+        "peppery"
+      ]
+    },
+    "everything": {
+      "add_ins": [
+        "garlic",
+        "onion"
+      ]
+    },
+    "pesto": {
+      "add_ins": [
+        "basil",
+        "garlic"
+      ]
+    },
+    "cinnamon": {
+      "add_ins": [
+        "cinnamon"
+      ],
+      "flavor": [
+        "sweet"
+      ]
+    },
+    "apple": {
+      "add_ins": [
+        "apple"
+      ],
+      "flavor": [
+        "fruity"
+      ]
+    },
+    "apple cinnamon": {
+      "add_ins": [
+        "apple",
+        "cinnamon"
+      ],
+      "flavor": [
+        "fruity",
+        "sweet"
+      ]
+    },
+    "mango": {
+      "add_ins": [
+        "mango"
+      ],
+      "flavor": [
+        "fruity"
+      ]
+    },
+    "maple": {
+      "add_ins": [
+        "maple"
+      ],
+      "flavor": [
+        "sweet"
+      ]
+    },
+    "morel": {
+      "add_ins": [
+        "morel"
+      ],
+      "flavor": [
+        "earthy",
+        "mushroomy"
+      ]
+    },
+    "morel mushroom": {
+      "add_ins": [
+        "morel"
+      ],
+      "flavor": [
+        "earthy",
+        "mushroomy"
+      ]
+    },
+    "leek": {
+      "add_ins": [
+        "leek"
+      ]
+    },
+    "olive": {
+      "add_ins": [
+        "olive"
+      ],
+      "flavor": [
+        "briny"
+      ]
+    },
+    "green olive": {
+      "add_ins": [
+        "olive"
+      ],
+      "flavor": [
+        "briny"
+      ]
+    },
+    "kalamata": {
+      "add_ins": [
+        "olive"
+      ],
+      "flavor": [
+        "briny"
+      ]
+    },
+    "almond": {
+      "add_ins": [
+        "almond"
+      ],
+      "flavor": [
+        "nutty"
+      ]
+    },
+    "herb": {
+      "flavor": [
+        "grassy"
+      ]
+    },
+    "herbs": {
+      "flavor": [
+        "grassy"
+      ]
+    },
+    "garden herb": {
+      "flavor": [
+        "grassy"
+      ]
+    },
+    "mediterranean": {
+      "flavor": [
+        "savory"
+      ]
+    },
+    "port wine": {
+      "flavor": [
+        "fruity"
+      ]
+    },
+    "wine": {
+      "flavor": [
+        "fruity"
+      ]
+    },
+    "creamy": {
+      "flavor": [
+        "creamy"
+      ]
+    }
+  },
+  "ignore": [
+    "cheese",
+    "wheel",
+    "wedge",
+    "block",
+    "blocks",
+    "slice",
+    "slices",
+    "sliced",
+    "shredded",
+    "shreds",
+    "shred",
+    "grated",
+    "crumbled",
+    "crumbles",
+    "cut",
+    "exact",
+    "weight",
+    "deli",
+    "style",
+    "original",
+    "recipe",
+    "classic",
+    "traditional",
+    "artisan",
+    "artisanal",
+    "premium",
+    "gourmet",
+    "signature",
+    "wisconsin",
+    "creamery",
+    "farmstead",
+    "small",
+    "batch",
+    "handcrafted",
+    "oz",
+    "lb",
+    "lbs",
+    "pound",
+    "pounds",
+    "ounce",
+    "ounces",
+    "approx",
+    "approximately",
+    "each",
+    "piece",
+    "pieces",
+    "pack",
+    "bag",
+    "bags",
+    "box",
+    "loaf",
+    "half",
+    "quarter",
+    "whole",
+    "milk",
+    "low",
+    "moisture",
+    "part",
+    "skim",
+    "reduced",
+    "sodium",
+    "fat",
+    "free",
+    "lite",
+    "light",
+    "organic",
+    "fresh",
+    "plain",
+    "white",
+    "yellow",
+    "colored",
+    "natural",
+    "a",
+    "b",
+    "c",
+    "of",
+    "the",
+    "and",
+    "with",
+    "in",
+    "s",
+    "spread",
+    "dip",
+    "snack",
+    "snacking",
+    "fancy",
+    "brand",
+    "month",
+    "months",
+    "year",
+    "years",
+    "old",
+    "dairy",
+    "farms",
+    "farm",
+    "our",
+    "on",
+    "cheddars",
+    "curdles",
+    "super",
+    "premier",
+    "stick",
+    "sticks",
+    "count",
+    "sealed",
+    "pasteurized",
+    "process",
+    "processed",
+    "blend",
+    "blends",
+    "marble",
+    "marbled",
+    "wax",
+    "waxed",
+    "black",
+    "chunk",
+    "chunks",
+    "mini",
+    "minis",
+    "snackers",
+    "twin",
+    "vacuum",
+    "wrapped",
+    "squeaky",
+    "select",
+    "special",
+    "famous",
+    "variety",
+    "two",
+    "tone",
+    "cloud",
+    "flavored",
+    "flavors",
+    "other",
+    "all",
+    "triple",
+    "double",
+    "chunky",
+    "table",
+    "grade"
   ],
   "types": {
-    "1": {"name": "Ackawi", "family": "brined", "milk": ["cow"], "texture": "soft", "age_band": "young", "rind": "none", "flavor": ["salty", "milky", "mild"], "add_ins": []},
-    "2": {"name": "Anejo Enchilado", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["salty", "peppery", "savory"], "add_ins": []},
-    "3": {"name": "Asadero", "family": "hispanic", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["mild", "milky", "creamy"], "add_ins": []},
-    "4": {"name": "Asiago", "family": "italian_hard", "milk": ["cow"], "texture": "hard", "age_band": "medium", "rind": "natural", "flavor": ["sharp", "fruity", "salty"], "add_ins": []},
-    "5": {"name": "Baby Swiss", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "young", "rind": "none", "flavor": ["buttery", "nutty", "sweet", "milky"], "add_ins": []},
-    "7": {"name": "Blue", "family": "blue", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "natural", "flavor": ["funky", "salty", "tangy", "pungent"], "add_ins": []},
-    "8": {"name": "Brick", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "washed", "flavor": ["earthy", "buttery", "tangy"], "add_ins": [], "wisconsin_original": true},
-    "10": {"name": "Butterkase", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["buttery", "milky", "mild"], "add_ins": []},
-    "11": {"name": "Camembert", "family": "bloomy", "milk": ["cow"], "texture": "soft", "age_band": "young", "rind": "bloomy", "flavor": ["creamy", "earthy", "mushroomy"], "add_ins": []},
-    "12": {"name": "Cheddar", "family": "cheddar", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["buttery", "sharp", "tangy"], "add_ins": []},
-    "13": {"name": "Cheese Blends (excl. Colby-Monterey Jack)", "family": "other", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "creamy"], "add_ins": []},
-    "14": {"name": "Pasteurized Processed Cheese Sauce", "family": "spreads_processed", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "salty", "mild"], "add_ins": []},
-    "15": {"name": "Colby", "family": "colby_jack", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "sweet"], "add_ins": [], "wisconsin_original": true},
-    "16": {"name": "Colby-Monterey Jack", "family": "colby_jack", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "creamy"], "add_ins": [], "wisconsin_original": true},
-    "17": {"name": "Cold Pack", "family": "spreads_processed", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["sharp", "tangy", "creamy"], "add_ins": [], "wisconsin_original": true},
-    "18": {"name": "Cotija", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["salty", "savory", "milky"], "add_ins": []},
-    "19": {"name": "Cream Cheese", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "milky", "tangy"], "add_ins": []},
-    "20": {"name": "Edam", "family": "gouda_edam", "milk": ["cow"], "texture": "semi_hard", "age_band": "young", "rind": "wax", "flavor": ["nutty", "mild", "sweet"], "add_ins": []},
-    "21": {"name": "Farmers", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "tangy"], "add_ins": []},
-    "22": {"name": "Feta", "family": "brined", "milk": ["cow"], "texture": "soft", "age_band": "young", "rind": "none", "flavor": ["briny", "tangy", "salty"], "add_ins": []},
-    "24": {"name": "Fontina", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["buttery", "earthy", "mild"], "add_ins": []},
-    "25": {"name": "Gorgonzola", "family": "blue", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "natural", "flavor": ["funky", "creamy", "salty", "pungent"], "add_ins": []},
-    "26": {"name": "Gouda", "family": "gouda_edam", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "wax", "flavor": ["nutty", "sweet", "caramel"], "add_ins": []},
-    "27": {"name": "Alpine-Style", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "earthy", "savory"], "add_ins": []},
-    "28": {"name": "Havarti", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["buttery", "creamy", "mild"], "add_ins": []},
-    "30": {"name": "Italico", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["buttery", "milky", "sweet"], "add_ins": []},
-    "32": {"name": "Kasseri", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["salty", "tangy", "buttery"], "add_ins": []},
-    "33": {"name": "Limburger", "family": "washed_rind", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "washed", "flavor": ["pungent", "funky", "earthy"], "add_ins": []},
-    "35": {"name": "Mascarpone", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "sweet", "milky"], "add_ins": []},
-    "36": {"name": "Monterey Jack", "family": "colby_jack", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "buttery"], "add_ins": []},
-    "37": {"name": "Mozzarella", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "mild", "creamy"], "add_ins": []},
-    "38": {"name": "Muenster", "family": "semi_soft_table", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "buttery"], "add_ins": []},
-    "39": {"name": "Neufchatel", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "milky", "tangy"], "add_ins": []},
-    "41": {"name": "Panela", "family": "hispanic", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "mild", "salty"], "add_ins": []},
-    "42": {"name": "Parmesan", "family": "italian_hard", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "fruity", "salty", "crystalline"], "add_ins": []},
-    "43": {"name": "American (Pasteurized Processed)", "family": "spreads_processed", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["mild", "creamy", "salty"], "add_ins": []},
-    "44": {"name": "Pasteurized Processed Cheese Food", "family": "spreads_processed", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["mild", "creamy", "salty"], "add_ins": []},
-    "45": {"name": "Pasteurized Processed Cheese Spread", "family": "spreads_processed", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "salty", "mild"], "add_ins": []},
-    "46": {"name": "Pepato", "family": "italian_hard", "milk": ["cow"], "texture": "hard", "age_band": "medium", "rind": "natural", "flavor": ["sharp", "salty", "peppery"], "add_ins": ["peppercorn"]},
-    "47": {"name": "Pizza Cheese", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["mild", "milky", "salty"], "add_ins": []},
-    "48": {"name": "Provolone", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["buttery", "sharp", "tangy"], "add_ins": []},
-    "49": {"name": "Queso Blanco", "family": "hispanic", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "mild", "salty"], "add_ins": []},
-    "50": {"name": "Queso Blanco Para Freir", "family": "hispanic", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["salty", "milky", "mild"], "add_ins": []},
-    "51": {"name": "Queso Fresco", "family": "hispanic", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "salty", "mild"], "add_ins": []},
-    "52": {"name": "Queso Quesadilla", "family": "hispanic", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["buttery", "creamy", "mild"], "add_ins": []},
-    "53": {"name": "Queso Seco", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["salty", "savory", "milky"], "add_ins": []},
-    "54": {"name": "Ricotta", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "sweet", "creamy"], "add_ins": []},
-    "55": {"name": "Romano", "family": "italian_hard", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "natural", "flavor": ["sharp", "salty", "savory"], "add_ins": []},
-    "57": {"name": "String", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["mild", "milky", "salty"], "add_ins": []},
-    "58": {"name": "Swiss", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["nutty", "sweet", "buttery"], "add_ins": []},
-    "59": {"name": "Toscanello", "family": "italian_hard", "milk": ["cow"], "texture": "hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "fruity", "salty"], "add_ins": []},
-    "62": {"name": "Raclette", "family": "washed_rind", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "washed", "flavor": ["savory", "earthy", "pungent"], "add_ins": []},
-    "65": {"name": "Yogurt Cheese", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["tangy", "creamy", "milky"], "add_ins": []},
-    "71": {"name": "Double Gloucester", "family": "other", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["buttery", "nutty", "tangy"], "add_ins": []},
-    "72": {"name": "Canaria", "family": "other", "milk": ["mixed"], "texture": "hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "sharp", "crystalline", "savory"], "add_ins": []},
-    "75": {"name": "Bread Cheese (Juustoleipa)", "family": "other", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["buttery", "toasty", "salty", "sweet"], "add_ins": []},
-    "77": {"name": "Fresh Mozzarella", "family": "pasta_filata", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "creamy", "sweet"], "add_ins": []},
-    "79": {"name": "Gran Canaria", "family": "other", "milk": ["mixed"], "texture": "hard", "age_band": "extra_aged", "rind": "natural", "flavor": ["nutty", "sharp", "crystalline", "savory"], "add_ins": []},
-    "80": {"name": "Monastery", "family": "washed_rind", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "washed", "flavor": ["earthy", "pungent", "savory"], "add_ins": []},
-    "81": {"name": "Benedictine", "family": "washed_rind", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "washed", "flavor": ["pungent", "earthy", "savory"], "add_ins": []},
-    "82": {"name": "Creama Kasa", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "buttery", "milky"], "add_ins": []},
-    "83": {"name": "Shepherd's Blend", "family": "other", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "tangy", "savory"], "add_ins": []},
-    "85": {"name": "Virgin Pine Native Blue", "family": "blue", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "natural", "flavor": ["funky", "salty", "pungent"], "add_ins": []},
-    "92": {"name": "Manteche", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["buttery", "milky", "mild"], "add_ins": []},
-    "93": {"name": "Lacy Swiss", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "young", "rind": "none", "flavor": ["nutty", "sweet", "mild"], "add_ins": []},
-    "114": {"name": "Ricotta Salata", "family": "other", "milk": ["cow"], "texture": "semi_soft", "age_band": "medium", "rind": "none", "flavor": ["salty", "milky", "nutty"], "add_ins": []},
-    "118": {"name": "Frying Cheese", "family": "hispanic", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["salty", "milky", "mild"], "add_ins": []},
-    "119": {"name": "Oaxaca", "family": "hispanic", "milk": ["cow"], "texture": "semi_soft", "age_band": "fresh", "rind": "none", "flavor": ["milky", "creamy", "salty"], "add_ins": []},
-    "120": {"name": "Enchilado", "family": "hispanic", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["salty", "peppery", "savory"], "add_ins": []},
-    "123": {"name": "Canela", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "salty", "savory"], "add_ins": []},
-    "135": {"name": "Cheese Curds", "family": "curds", "milk": ["cow"], "texture": "fresh", "age_band": "fresh", "rind": "none", "flavor": ["milky", "salty", "mild"], "add_ins": []},
-    "136": {"name": "Burrata", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "milky", "sweet"], "add_ins": []},
-    "138": {"name": "Crescenza/Stracchino", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "tangy", "milky"], "add_ins": []},
-    "146": {"name": "BellaVitano", "family": "cheddar", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["fruity", "nutty", "crystalline", "sweet"], "add_ins": [], "wisconsin_original": true},
-    "151": {"name": "Emmentaler", "family": "alpine", "milk": ["cow"], "texture": "hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "fruity", "sweet"], "add_ins": []},
-    "153": {"name": "Airco", "family": "other", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "tangy", "earthy"], "add_ins": []},
-    "154": {"name": "Bessie's Blend", "family": "other", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "tangy", "milky"], "add_ins": []},
-    "155": {"name": "Mellage", "family": "other", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "tangy", "earthy"], "add_ins": []},
-    "156": {"name": "Caso Bolo Mellage", "family": "other", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "tangy", "earthy"], "add_ins": []},
-    "161": {"name": "Provolone-Jack", "family": "pasta_filata", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "buttery", "tangy"], "add_ins": []},
-    "166": {"name": "Cheshire", "family": "other", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["tangy", "salty", "milky"], "add_ins": []},
-    "172": {"name": "Capriko", "family": "other", "milk": ["mixed"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["tangy", "milky", "mild"], "add_ins": []},
-    "175": {"name": "Caerphilly", "family": "other", "milk": ["cow"], "texture": "semi_hard", "age_band": "young", "rind": "natural", "flavor": ["tangy", "milky", "grassy"], "add_ins": []},
-    "181": {"name": "Pastorale Blend", "family": "other", "milk": ["mixed"], "texture": "hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "fruity", "savory"], "add_ins": []},
-    "203": {"name": "Cheddar Blue", "family": "blue", "milk": ["cow"], "texture": "semi_hard", "age_band": "aged", "rind": "natural", "flavor": ["sharp", "funky", "crystalline"], "add_ins": []},
-    "206": {"name": "Pinconning", "family": "colby_jack", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["sharp", "tangy", "milky"], "add_ins": []},
-    "207": {"name": "Cave-Aged Mellage", "family": "other", "milk": ["mixed"], "texture": "semi_hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "earthy", "savory", "crystalline"], "add_ins": []},
-    "213": {"name": "Quark", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["tangy", "creamy", "milky"], "add_ins": []},
-    "220": {"name": "Marbled Blue-Jack", "family": "blue", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "funky", "milky"], "add_ins": []},
-    "227": {"name": "Colby-Swiss", "family": "colby_jack", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["mild", "nutty", "milky"], "add_ins": []},
-    "228": {"name": "Marieke Golden", "family": "gouda_edam", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "wax", "flavor": ["buttery", "milky", "sweet"], "add_ins": []},
-    "229": {"name": "Spreadable Cheese", "family": "spreads_processed", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["creamy", "tangy", "mild"], "add_ins": []},
-    "243": {"name": "MontAmore", "family": "cheddar", "milk": ["cow"], "texture": "hard", "age_band": "medium", "rind": "none", "flavor": ["fruity", "sweet", "creamy", "crystalline"], "add_ins": []},
-    "250": {"name": "Little Mountain", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "aged", "rind": "washed", "flavor": ["nutty", "savory", "earthy"], "add_ins": []},
-    "251": {"name": "Grand Cru", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "washed", "flavor": ["nutty", "fruity", "savory"], "add_ins": []},
-    "253": {"name": "Alpine Renegade", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "aged", "rind": "natural", "flavor": ["nutty", "earthy", "grassy"], "add_ins": []},
-    "257": {"name": "Chandoka", "family": "cheddar", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["tangy", "nutty", "sharp"], "add_ins": []},
-    "264": {"name": "Aged Cheddar", "family": "cheddar", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["sharp", "crystalline", "nutty", "tangy"], "add_ins": []},
-    "266": {"name": "Mixed-Milk Blue", "family": "blue", "milk": ["mixed"], "texture": "semi_soft", "age_band": "medium", "rind": "natural", "flavor": ["funky", "salty", "tangy"], "add_ins": []},
-    "278": {"name": "Cupola", "family": "alpine", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["fruity", "nutty", "savory"], "add_ins": []},
-    "293": {"name": "Saganaki", "family": "brined", "milk": ["cow"], "texture": "semi_soft", "age_band": "young", "rind": "none", "flavor": ["salty", "milky", "mild"], "add_ins": []},
-    "294": {"name": "Cincho", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "natural", "flavor": ["salty", "savory", "nutty"], "add_ins": []},
-    "295": {"name": "Faarko", "family": "other", "milk": ["sheep"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["nutty", "grassy", "tangy"], "add_ins": []},
-    "296": {"name": "Montague", "family": "other", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "natural", "flavor": ["earthy", "sharp", "tangy"], "add_ins": []},
-    "304": {"name": "Artigiano", "family": "italian_hard", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["fruity", "nutty", "crystalline"], "add_ins": []},
-    "308": {"name": "Prairie Sunset", "family": "washed_rind", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "washed", "flavor": ["savory", "nutty", "fruity"], "add_ins": []},
-    "315": {"name": "Tvarog", "family": "fresh", "milk": ["cow"], "texture": "soft", "age_band": "fresh", "rind": "none", "flavor": ["tangy", "milky", "creamy"], "add_ins": []},
-    "319": {"name": "Fenugreek Gouda", "family": "gouda_edam", "milk": ["cow"], "texture": "semi_hard", "age_band": "medium", "rind": "wax", "flavor": ["nutty", "sweet", "caramel"], "add_ins": ["fenugreek"]},
-    "320": {"name": "Young Cheddar", "family": "cheddar", "milk": ["cow"], "texture": "semi_hard", "age_band": "young", "rind": "none", "flavor": ["mild", "milky", "buttery"], "add_ins": []},
-    "321": {"name": "EWE CALF to be KIDding", "family": "cheddar", "milk": ["mixed"], "texture": "semi_hard", "age_band": "medium", "rind": "none", "flavor": ["tangy", "nutty", "sharp"], "add_ins": []},
-    "322": {"name": "Dunbarton Blue", "family": "blue", "milk": ["cow"], "texture": "semi_hard", "age_band": "aged", "rind": "natural", "flavor": ["sharp", "funky", "earthy", "crystalline"], "add_ins": []},
-    "327": {"name": "Cheddar Gruyere", "family": "cheddar", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["nutty", "sharp", "crystalline"], "add_ins": []},
-    "339": {"name": "Morolique", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["salty", "savory", "milky"], "add_ins": []},
-    "341": {"name": "Costeño", "family": "hispanic", "milk": ["cow"], "texture": "hard", "age_band": "aged", "rind": "none", "flavor": ["salty", "savory", "sharp"], "add_ins": []}
+    "1": {
+      "name": "Ackawi",
+      "family": "brined",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "2": {
+      "name": "Anejo Enchilado",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "peppery",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "3": {
+      "name": "Asadero",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "creamy"
+      ],
+      "add_ins": []
+    },
+    "4": {
+      "name": "Asiago",
+      "family": "italian_hard",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "sharp",
+        "fruity",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "5": {
+      "name": "Baby Swiss",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "nutty",
+        "sweet",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "7": {
+      "name": "Blue",
+      "family": "blue",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "funky",
+        "salty",
+        "tangy",
+        "pungent"
+      ],
+      "add_ins": []
+    },
+    "8": {
+      "name": "Brick",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "washed",
+      "flavor": [
+        "earthy",
+        "buttery",
+        "tangy"
+      ],
+      "add_ins": [],
+      "wisconsin_original": true
+    },
+    "10": {
+      "name": "Butterkase",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "11": {
+      "name": "Camembert",
+      "family": "bloomy",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "young",
+      "rind": "bloomy",
+      "flavor": [
+        "creamy",
+        "earthy",
+        "mushroomy"
+      ],
+      "add_ins": []
+    },
+    "12": {
+      "name": "Cheddar",
+      "family": "cheddar",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "sharp",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "13": {
+      "name": "Cheese Blends (excl. Colby-Monterey Jack)",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "creamy"
+      ],
+      "add_ins": []
+    },
+    "14": {
+      "name": "Pasteurized Processed Cheese Sauce",
+      "family": "spreads_processed",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "salty",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "15": {
+      "name": "Colby",
+      "family": "colby_jack",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "sweet"
+      ],
+      "add_ins": [],
+      "wisconsin_original": true
+    },
+    "16": {
+      "name": "Colby-Monterey Jack",
+      "family": "colby_jack",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "creamy"
+      ],
+      "add_ins": [],
+      "wisconsin_original": true
+    },
+    "17": {
+      "name": "Cold Pack",
+      "family": "spreads_processed",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "sharp",
+        "tangy",
+        "creamy"
+      ],
+      "add_ins": [],
+      "wisconsin_original": true
+    },
+    "18": {
+      "name": "Cotija",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "savory",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "19": {
+      "name": "Cream Cheese",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "milky",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "20": {
+      "name": "Edam",
+      "family": "gouda_edam",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "young",
+      "rind": "wax",
+      "flavor": [
+        "nutty",
+        "mild",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "21": {
+      "name": "Farmers",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "22": {
+      "name": "Feta",
+      "family": "brined",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "briny",
+        "tangy",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "24": {
+      "name": "Fontina",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "earthy",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "25": {
+      "name": "Gorgonzola",
+      "family": "blue",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "funky",
+        "creamy",
+        "salty",
+        "pungent"
+      ],
+      "add_ins": []
+    },
+    "26": {
+      "name": "Gouda",
+      "family": "gouda_edam",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "wax",
+      "flavor": [
+        "nutty",
+        "sweet",
+        "caramel"
+      ],
+      "add_ins": []
+    },
+    "27": {
+      "name": "Alpine-Style",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "earthy",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "28": {
+      "name": "Havarti",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "creamy",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "30": {
+      "name": "Italico",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "milky",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "32": {
+      "name": "Kasseri",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "tangy",
+        "buttery"
+      ],
+      "add_ins": []
+    },
+    "33": {
+      "name": "Limburger",
+      "family": "washed_rind",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "washed",
+      "flavor": [
+        "pungent",
+        "funky",
+        "earthy"
+      ],
+      "add_ins": []
+    },
+    "35": {
+      "name": "Mascarpone",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "sweet",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "36": {
+      "name": "Monterey Jack",
+      "family": "colby_jack",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "buttery"
+      ],
+      "add_ins": []
+    },
+    "37": {
+      "name": "Mozzarella",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "mild",
+        "creamy"
+      ],
+      "add_ins": []
+    },
+    "38": {
+      "name": "Muenster",
+      "family": "semi_soft_table",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "buttery"
+      ],
+      "add_ins": []
+    },
+    "39": {
+      "name": "Neufchatel",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "milky",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "41": {
+      "name": "Panela",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "mild",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "42": {
+      "name": "Parmesan",
+      "family": "italian_hard",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "fruity",
+        "salty",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "43": {
+      "name": "American (Pasteurized Processed)",
+      "family": "spreads_processed",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "creamy",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "44": {
+      "name": "Pasteurized Processed Cheese Food",
+      "family": "spreads_processed",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "creamy",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "45": {
+      "name": "Pasteurized Processed Cheese Spread",
+      "family": "spreads_processed",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "salty",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "46": {
+      "name": "Pepato",
+      "family": "italian_hard",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "sharp",
+        "salty",
+        "peppery"
+      ],
+      "add_ins": [
+        "peppercorn"
+      ]
+    },
+    "47": {
+      "name": "Pizza Cheese",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "48": {
+      "name": "Provolone",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "sharp",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "49": {
+      "name": "Queso Blanco",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "mild",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "50": {
+      "name": "Queso Blanco Para Freir",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "51": {
+      "name": "Queso Fresco",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "salty",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "52": {
+      "name": "Queso Quesadilla",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "creamy",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "53": {
+      "name": "Queso Seco",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "savory",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "54": {
+      "name": "Ricotta",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "sweet",
+        "creamy"
+      ],
+      "add_ins": []
+    },
+    "55": {
+      "name": "Romano",
+      "family": "italian_hard",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "sharp",
+        "salty",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "57": {
+      "name": "String",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "58": {
+      "name": "Swiss",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "nutty",
+        "sweet",
+        "buttery"
+      ],
+      "add_ins": []
+    },
+    "59": {
+      "name": "Toscanello",
+      "family": "italian_hard",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "fruity",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "62": {
+      "name": "Raclette",
+      "family": "washed_rind",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "washed",
+      "flavor": [
+        "savory",
+        "earthy",
+        "pungent"
+      ],
+      "add_ins": []
+    },
+    "65": {
+      "name": "Yogurt Cheese",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "tangy",
+        "creamy",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "71": {
+      "name": "Double Gloucester",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "buttery",
+        "nutty",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "72": {
+      "name": "Canaria",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "sharp",
+        "crystalline",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "75": {
+      "name": "Bread Cheese (Juustoleipa)",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "toasty",
+        "salty",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "77": {
+      "name": "Fresh Mozzarella",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "creamy",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "79": {
+      "name": "Gran Canaria",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "hard",
+      "age_band": "extra_aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "sharp",
+        "crystalline",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "80": {
+      "name": "Monastery",
+      "family": "washed_rind",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "washed",
+      "flavor": [
+        "earthy",
+        "pungent",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "81": {
+      "name": "Benedictine",
+      "family": "washed_rind",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "washed",
+      "flavor": [
+        "pungent",
+        "earthy",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "82": {
+      "name": "Creama Kasa",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "buttery",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "83": {
+      "name": "Shepherd's Blend",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "tangy",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "85": {
+      "name": "Virgin Pine Native Blue",
+      "family": "blue",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "funky",
+        "salty",
+        "pungent"
+      ],
+      "add_ins": []
+    },
+    "92": {
+      "name": "Manteche",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "buttery",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "93": {
+      "name": "Lacy Swiss",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "nutty",
+        "sweet",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "114": {
+      "name": "Ricotta Salata",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "milky",
+        "nutty"
+      ],
+      "add_ins": []
+    },
+    "118": {
+      "name": "Frying Cheese",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "119": {
+      "name": "Oaxaca",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "creamy",
+        "salty"
+      ],
+      "add_ins": []
+    },
+    "120": {
+      "name": "Enchilado",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "peppery",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "123": {
+      "name": "Canela",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "salty",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "135": {
+      "name": "Cheese Curds",
+      "family": "curds",
+      "milk": [
+        "cow"
+      ],
+      "texture": "fresh",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "milky",
+        "salty",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "136": {
+      "name": "Burrata",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "milky",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "138": {
+      "name": "Crescenza/Stracchino",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "tangy",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "146": {
+      "name": "BellaVitano",
+      "family": "cheddar",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "fruity",
+        "nutty",
+        "crystalline",
+        "sweet"
+      ],
+      "add_ins": [],
+      "wisconsin_original": true
+    },
+    "151": {
+      "name": "Emmentaler",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "fruity",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "153": {
+      "name": "Airco",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "tangy",
+        "earthy"
+      ],
+      "add_ins": []
+    },
+    "154": {
+      "name": "Bessie's Blend",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "tangy",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "155": {
+      "name": "Mellage",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "tangy",
+        "earthy"
+      ],
+      "add_ins": []
+    },
+    "156": {
+      "name": "Caso Bolo Mellage",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "tangy",
+        "earthy"
+      ],
+      "add_ins": []
+    },
+    "161": {
+      "name": "Provolone-Jack",
+      "family": "pasta_filata",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "buttery",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "166": {
+      "name": "Cheshire",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "tangy",
+        "salty",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "172": {
+      "name": "Capriko",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "tangy",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "175": {
+      "name": "Caerphilly",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "young",
+      "rind": "natural",
+      "flavor": [
+        "tangy",
+        "milky",
+        "grassy"
+      ],
+      "add_ins": []
+    },
+    "181": {
+      "name": "Pastorale Blend",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "fruity",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "203": {
+      "name": "Cheddar Blue",
+      "family": "blue",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "sharp",
+        "funky",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "206": {
+      "name": "Pinconning",
+      "family": "colby_jack",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "sharp",
+        "tangy",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "207": {
+      "name": "Cave-Aged Mellage",
+      "family": "other",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "earthy",
+        "savory",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "213": {
+      "name": "Quark",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "tangy",
+        "creamy",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "220": {
+      "name": "Marbled Blue-Jack",
+      "family": "blue",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "funky",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "227": {
+      "name": "Colby-Swiss",
+      "family": "colby_jack",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "nutty",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "228": {
+      "name": "Marieke Golden",
+      "family": "gouda_edam",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "wax",
+      "flavor": [
+        "buttery",
+        "milky",
+        "sweet"
+      ],
+      "add_ins": []
+    },
+    "229": {
+      "name": "Spreadable Cheese",
+      "family": "spreads_processed",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "creamy",
+        "tangy",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "243": {
+      "name": "MontAmore",
+      "family": "cheddar",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "fruity",
+        "sweet",
+        "creamy",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "250": {
+      "name": "Little Mountain",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "aged",
+      "rind": "washed",
+      "flavor": [
+        "nutty",
+        "savory",
+        "earthy"
+      ],
+      "add_ins": []
+    },
+    "251": {
+      "name": "Grand Cru",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "washed",
+      "flavor": [
+        "nutty",
+        "fruity",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "253": {
+      "name": "Alpine Renegade",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "earthy",
+        "grassy"
+      ],
+      "add_ins": []
+    },
+    "257": {
+      "name": "Chandoka",
+      "family": "cheddar",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "tangy",
+        "nutty",
+        "sharp"
+      ],
+      "add_ins": []
+    },
+    "264": {
+      "name": "Aged Cheddar",
+      "family": "cheddar",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "sharp",
+        "crystalline",
+        "nutty",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "266": {
+      "name": "Mixed-Milk Blue",
+      "family": "blue",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_soft",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "funky",
+        "salty",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "278": {
+      "name": "Cupola",
+      "family": "alpine",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "fruity",
+        "nutty",
+        "savory"
+      ],
+      "add_ins": []
+    },
+    "293": {
+      "name": "Saganaki",
+      "family": "brined",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_soft",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "milky",
+        "mild"
+      ],
+      "add_ins": []
+    },
+    "294": {
+      "name": "Cincho",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "salty",
+        "savory",
+        "nutty"
+      ],
+      "add_ins": []
+    },
+    "295": {
+      "name": "Faarko",
+      "family": "other",
+      "milk": [
+        "sheep"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "nutty",
+        "grassy",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "296": {
+      "name": "Montague",
+      "family": "other",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "natural",
+      "flavor": [
+        "earthy",
+        "sharp",
+        "tangy"
+      ],
+      "add_ins": []
+    },
+    "304": {
+      "name": "Artigiano",
+      "family": "italian_hard",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "fruity",
+        "nutty",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "308": {
+      "name": "Prairie Sunset",
+      "family": "washed_rind",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "washed",
+      "flavor": [
+        "savory",
+        "nutty",
+        "fruity"
+      ],
+      "add_ins": []
+    },
+    "315": {
+      "name": "Tvarog",
+      "family": "fresh",
+      "milk": [
+        "cow"
+      ],
+      "texture": "soft",
+      "age_band": "fresh",
+      "rind": "none",
+      "flavor": [
+        "tangy",
+        "milky",
+        "creamy"
+      ],
+      "add_ins": []
+    },
+    "319": {
+      "name": "Fenugreek Gouda",
+      "family": "gouda_edam",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "wax",
+      "flavor": [
+        "nutty",
+        "sweet",
+        "caramel"
+      ],
+      "add_ins": [
+        "fenugreek"
+      ]
+    },
+    "320": {
+      "name": "Young Cheddar",
+      "family": "cheddar",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "young",
+      "rind": "none",
+      "flavor": [
+        "mild",
+        "milky",
+        "buttery"
+      ],
+      "add_ins": []
+    },
+    "321": {
+      "name": "EWE CALF to be KIDding",
+      "family": "cheddar",
+      "milk": [
+        "mixed"
+      ],
+      "texture": "semi_hard",
+      "age_band": "medium",
+      "rind": "none",
+      "flavor": [
+        "tangy",
+        "nutty",
+        "sharp"
+      ],
+      "add_ins": []
+    },
+    "322": {
+      "name": "Dunbarton Blue",
+      "family": "blue",
+      "milk": [
+        "cow"
+      ],
+      "texture": "semi_hard",
+      "age_band": "aged",
+      "rind": "natural",
+      "flavor": [
+        "sharp",
+        "funky",
+        "earthy",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "327": {
+      "name": "Cheddar Gruyere",
+      "family": "cheddar",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "nutty",
+        "sharp",
+        "crystalline"
+      ],
+      "add_ins": []
+    },
+    "339": {
+      "name": "Morolique",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "savory",
+        "milky"
+      ],
+      "add_ins": []
+    },
+    "341": {
+      "name": "Costeño",
+      "family": "hispanic",
+      "milk": [
+        "cow"
+      ],
+      "texture": "hard",
+      "age_band": "aged",
+      "rind": "none",
+      "flavor": [
+        "salty",
+        "savory",
+        "sharp"
+      ],
+      "add_ins": []
+    }
   }
 }

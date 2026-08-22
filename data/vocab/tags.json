@@ -17,7 +17,8 @@
   "add_ins": [
     "dill", "garlic", "onion", "chive", "basil", "tomato", "jalapeno",
     "chipotle", "habanero", "horseradish", "caraway", "fenugreek", "cumin",
-    "truffle", "bacon", "cranberry", "cherry", "peppercorn"
+    "truffle", "bacon", "cranberry", "cherry", "peppercorn", "ghost_pepper",
+    "olive", "morel", "leek", "maple", "apple", "mango", "cinnamon", "almond"
   ],
   "mc_certifications": [
     "ALPINE STYLE", "ASIAGO", "BABY SWISS", "BEL PAESE", "BLUE", "BRICK",
