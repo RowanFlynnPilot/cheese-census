@@ -731,14 +731,14 @@ export default function App() {
             aria-current={view === "map" ? "page" : undefined}
             onClick={() => setView("map")}
           >
-            Creamery map
+            Creamery Map
           </button>
           <button
             className="mode"
             aria-current={view === "cheeses" ? "page" : undefined}
             onClick={() => setView("cheeses")}
           >
-            Cheese catalog
+            Cheese Catalog
           </button>
           {hearts.length > 0 && (
             <button

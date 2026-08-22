@@ -25,7 +25,7 @@ npm run typecheck
 
 Two views under one masthead, switched by the mode bar:
 
-**Creamery map** — creameries, their licensed plants and operations, master
+**Creamery Map** — creameries, their licensed plants and operations, master
 cheesemakers and contest awards — filterable by county, retail store and award
 record, sortable by name, award count or county (with sticky county section
 heads), with a map pin per creamery (retail stores render as a donut; the legend
@@ -47,7 +47,7 @@ Plant operations are split into cheese types and plant capabilities using DATCP'
 own closed vocabularies (the 7 GeneralProcessing and 29 SpecificProcessing values,
 pinned in `src/data.ts`) — membership, not pattern-matching.
 
-**Cheese catalog** — the product-level reader layer over `build/cheeses.json`:
+**Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry
 a "matched: …" hint), sortable A–Z / by creamery / most awarded / by family
