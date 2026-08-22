@@ -1,5 +1,5 @@
 import type { Cheese, Creamery } from "../types";
-import { FLAVOR_GROUP, MILK_LABEL, chipLabel, familyLabel, flavorClass } from "../data";
+import { MILK_LABEL, chipLabel, familyLabel, flavorClass } from "../data";
 import DraftPhoto from "./DraftPhoto";
 import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
@@ -69,7 +69,7 @@ export default function CheeseCard({
             <span className="tags">
               {flavors.map((f) => (
                 <span className={flavorClass(f)} key={f}>
-                  <FlavorIcon group={FLAVOR_GROUP[f]} />
+                  <FlavorIcon term={f} />
                   {chipLabel(f)}
                 </span>
               ))}

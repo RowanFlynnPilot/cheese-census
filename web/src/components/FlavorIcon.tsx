@@ -1,4 +1,18 @@
 import type { ReactNode } from "react";
+import { FLAVOR_GROUP } from "../data";
+
+/** A term with its own glyph wins over its family's; the chip color always
+ *  stays the family's. */
+const TERM_GLYPHS: Record<string, ReactNode> = {
+  // butter dish — dome, knob and tray
+  buttery: (
+    <>
+      <circle cx="12" cy="5.6" r="1.6" />
+      <path d="M12 7.6c-3.8 0-6.3 3-6.5 7.4h13c-.2-4.4-2.7-7.4-6.5-7.4z" />
+      <rect x="3" y="16.4" width="18" height="2.4" rx="1.2" />
+    </>
+  ),
+};
 
 /** One glyph per flavor family, drawn in currentColor so it wears the family's
  *  chip color (styles.css .f-*). Deliberately not emoji: these render
@@ -37,8 +51,8 @@ const GLYPHS: Record<string, ReactNode> = {
   ),
 };
 
-export default function FlavorIcon({ group }: { group: string | undefined }) {
-  const glyph = group ? GLYPHS[group] : undefined;
+export default function FlavorIcon({ term }: { term: string }) {
+  const glyph = TERM_GLYPHS[term] ?? GLYPHS[FLAVOR_GROUP[term]];
   if (!glyph) return null;
   return (
     <svg className="fi" viewBox="0 0 24 24" aria-hidden="true">

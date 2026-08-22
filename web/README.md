@@ -56,7 +56,8 @@ Flavor chips are color-coded into six families (`FLAVOR_GROUP` in `src/data.ts`:
 dairy, sweet, toast, green, acid, bold — acid wears the house teal), each with
 a monochrome currentColor glyph (`FlavorIcon.tsx`: droplet, berry, acorn, leaf,
 bolt, flame — deliberately not emoji, which render platform-dependently and
-outside the palette), so a card's profile scans at a glance. Labels are
+outside the palette), so a card's profile scans at a glance. A term can carry
+its own glyph over its family's (`TERM_GLYPHS` — buttery gets a butter dish). Labels are
 sentence-case; add-ins render as additions ("+ Habanero"). A new vocabulary
 term joins its family there, or falls back to a plain tag.
 The detail panel shows the facts (family, texture, age, rind, milk), clickable

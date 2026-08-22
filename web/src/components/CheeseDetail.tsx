@@ -3,7 +3,6 @@ import type { Award, Cheese, Creamery, Highlight } from "../types";
 import {
   AGE_LABEL,
   CONTEST,
-  FLAVOR_GROUP,
   MILK_LABEL,
   PLACEMENT,
   RIND_LABEL,
@@ -193,7 +192,7 @@ export default function CheeseDetail({
               onClick={() => onSearchTerm(labelize(f))}
               title={`Every cheese tagged ${labelize(f)}`}
             >
-              <FlavorIcon group={FLAVOR_GROUP[f]} />
+              <FlavorIcon term={f} />
               {chipLabel(f)}
             </button>
           ))}
