@@ -355,7 +355,7 @@ export default function CheeseBrowse({
         {hasMore && (
           <div className="more-wrap" ref={sentinel}>
             <button className="more" onClick={() => setVisible((v) => v + PAGE)}>
-              Show more ({shown.length - visible} remaining)
+              Show more ({(shown.length - visible).toLocaleString("en-US")} remaining)
             </button>
           </div>
         )}

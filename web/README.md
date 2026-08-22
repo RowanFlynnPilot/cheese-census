@@ -172,7 +172,9 @@ which drops the "Provisional data" notice from the colophon.
 
 - WPR design system only: teal `#3A867C`, cream `#F6F2E9`, Fraunces display,
   Public Sans body, JetBrains Mono for figures (plant numbers, scores, counts).
-  Nothing here gestures at DFW's badge or trade dress.
+  Nothing here gestures at DFW's badge or trade dress. The masthead carries the
+  WPR typewriter seal (`public/wpr-typewriter-badge.png`, self-hosted — the
+  same mark the Brewers tracker uses) beside the attribution phrase.
 - "Wisconsin" belongs in the subtitle and page title, never in the mark.
 - Editorial and sponsored highlights must render visibly differently — the
   `.highlight` / `.highlight.sponsored` rules already diverge, and must stay that way.

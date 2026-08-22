@@ -675,10 +675,13 @@ export default function App() {
     );
   }
 
+  // Newspaper numbers carry their commas.
+  const fmt = (n: number) => n.toLocaleString("en-US");
+
   const countLine = !data
     ? "loading…"
     : view === "cheeses"
-      ? `${cheesesShown.length} of ${activeCheeses.length} cheeses`
+      ? `${fmt(cheesesShown.length)} of ${fmt(activeCheeses.length)} cheeses`
       : `${shown.length} of ${data.creameries.length} creameries`;
 
   return (
@@ -694,6 +697,13 @@ export default function App() {
           <h1>The Cheese Census</h1>
           <p className="subtitle">
             A census of Wisconsin cheese, from Wausau Pilot &amp; Review
+            <img
+              className="wpr-badge"
+              src={`${import.meta.env.BASE_URL}wpr-typewriter-badge.png`}
+              alt=""
+              width={26}
+              height={26}
+            />
           </p>
           <span className="count" aria-live="polite">
             {countLine}
@@ -713,7 +723,7 @@ export default function App() {
             </span>
             {stats.cheeses > 0 && (
               <span>
-                <b>{stats.cheeses}</b> cheeses
+                <b>{stats.cheeses.toLocaleString("en-US")}</b> cheeses
               </span>
             )}
             <span>
