@@ -1,6 +1,7 @@
 import type { Cheese, Creamery } from "../types";
-import { MILK_LABEL, familyLabel, flavorClass, labelize } from "../data";
+import { FLAVOR_GROUP, MILK_LABEL, chipLabel, familyLabel, flavorClass } from "../data";
 import DraftPhoto from "./DraftPhoto";
+import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
 
 interface Props {
@@ -68,13 +69,14 @@ export default function CheeseCard({
             <span className="tags">
               {flavors.map((f) => (
                 <span className={flavorClass(f)} key={f}>
-                  {labelize(f)}
+                  <FlavorIcon group={FLAVOR_GROUP[f]} />
+                  {chipLabel(f)}
                 </span>
               ))}
               {overflow > 0 && <span className="tag more">+{overflow}</span>}
               {cheese.add_ins.map((a) => (
                 <span className="tag addin" key={a}>
-                  {labelize(a)}
+                  {chipLabel(a)}
                 </span>
               ))}
             </span>

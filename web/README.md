@@ -53,10 +53,12 @@ a "matched: …" hint), sortable A–Z / by creamery / most awarded / by family
 (family sort groups under sticky heads). Cards carry family kicker, flavor tags,
 add-in chips, and award / Wisconsin-original / raw-milk / goat-sheep badges.
 Flavor chips are color-coded into six families (`FLAVOR_GROUP` in `src/data.ts`:
-dairy, sweet, toast, green, acid, bold — acid wears the house teal) with a
-matching dot, so a card's profile scans at a glance; add-ins render as
-additions ("+ habanero"). A new vocabulary term joins its family there, or
-falls back to a plain tag.
+dairy, sweet, toast, green, acid, bold — acid wears the house teal), each with
+a monochrome currentColor glyph (`FlavorIcon.tsx`: droplet, berry, acorn, leaf,
+bolt, flame — deliberately not emoji, which render platform-dependently and
+outside the palette), so a card's profile scans at a glance. Labels are
+sentence-case; add-ins render as additions ("+ Habanero"). A new vocabulary
+term joins its family there, or falls back to a plain tag.
 The detail panel shows the facts (family, texture, age, rind, milk), clickable
 flavor and add-in chips ("what else tastes like this, statewide?"), the cheese's
 contest record, and the **similar-cheeses list** with match-strength bars —

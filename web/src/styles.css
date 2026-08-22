@@ -1109,20 +1109,18 @@ button.tag:hover {
 .tag.fl {
   display: inline-flex;
   align-items: center;
-  gap: 0.32rem;
+  gap: 0.28rem;
   border-radius: 999px;
-  padding: 0.14rem 0.55rem 0.14rem 0.5rem;
+  padding: 0.14rem 0.55rem 0.14rem 0.45rem;
   font-weight: 500;
 }
 
-.tag.fl::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: 0.7;
+.tag.fl .fi {
+  width: 0.78rem;
+  height: 0.78rem;
   flex: none;
+  fill: currentColor;
+  opacity: 0.85;
 }
 
 .f-dairy {

@@ -3,15 +3,18 @@ import type { Award, Cheese, Creamery, Highlight } from "../types";
 import {
   AGE_LABEL,
   CONTEST,
+  FLAVOR_GROUP,
   MILK_LABEL,
   PLACEMENT,
   RIND_LABEL,
   TEXTURE_LABEL,
+  chipLabel,
   familyLabel,
   flavorClass,
   labelize,
 } from "../data";
 import DraftPhoto from "./DraftPhoto";
+import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
 
 interface Props {
@@ -190,7 +193,8 @@ export default function CheeseDetail({
               onClick={() => onSearchTerm(labelize(f))}
               title={`Every cheese tagged ${labelize(f)}`}
             >
-              {labelize(f)}
+              <FlavorIcon group={FLAVOR_GROUP[f]} />
+              {chipLabel(f)}
             </button>
           ))}
         </div>
@@ -205,7 +209,7 @@ export default function CheeseDetail({
                   onClick={() => onSearchTerm(labelize(a))}
                   title={`Every cheese made with ${labelize(a)}`}
                 >
-                  {labelize(a)}
+                  {chipLabel(a)}
                 </button>
               ))}
             </div>

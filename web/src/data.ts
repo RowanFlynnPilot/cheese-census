@@ -251,6 +251,13 @@ export function flavorClass(term: string): string {
   return group ? `tag fl f-${group}` : "tag";
 }
 
+/** "ghost_pepper" → "Ghost pepper" — chip labels read sentence-case; queries
+ *  and prose keep the lowercase vocabulary term. */
+export function chipLabel(term: string): string {
+  const label = labelize(term);
+  return label.charAt(0).toUpperCase() + label.slice(1);
+}
+
 export function familyLabel(family: string): string {
   return FAMILY_LABEL[family] ?? labelize(family);
 }
