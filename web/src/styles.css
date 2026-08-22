@@ -1103,10 +1103,78 @@ button.tag:hover {
 
 /* ── Tag variants and badges for cheese records ─────────────────────────── */
 
+/* Flavor chips: the closed 22-term vocabulary in six field-guide families
+   (FLAVOR_GROUP in data.ts). Muted, paper-toned tints — the dot repeats the
+   family color so a card's profile scans even at chip size. */
+.tag.fl {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  border-radius: 999px;
+  padding: 0.14rem 0.55rem 0.14rem 0.5rem;
+  font-weight: 500;
+}
+
+.tag.fl::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.7;
+  flex: none;
+}
+
+.f-dairy {
+  background: #f4efe0;
+  color: #6d6146;
+}
+
+.f-sweet {
+  background: #f6e3d4;
+  color: #8a4f26;
+}
+
+.f-toast {
+  background: #ecdec6;
+  color: #6f5426;
+}
+
+.f-green {
+  background: #e5ecd9;
+  color: #55663a;
+}
+
+.f-acid {
+  background: #dfece7;
+  color: var(--teal-dark);
+}
+
+.f-bold {
+  background: #eddbd2;
+  color: #7d4229;
+}
+
+/* Overflow marker — quieter than a real tag: there is more, not another note. */
+.tag.more {
+  background: transparent;
+  border: 1px dashed var(--rule);
+  border-radius: 999px;
+  color: var(--ink-soft);
+}
+
+/* Add-ins read as additions: "+ habanero". */
 .tag.addin {
   background: #f1e7d2;
   color: #79602f;
   font-weight: 500;
+  border-radius: 999px;
+  padding: 0.14rem 0.55rem;
+}
+
+.tag.addin::before {
+  content: "+ ";
+  font-weight: 700;
 }
 
 /* Catalog product chips in the creamery panel — outlined, unlike licence types. */

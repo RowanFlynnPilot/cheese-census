@@ -1,5 +1,5 @@
 import type { Cheese, Creamery } from "../types";
-import { MILK_LABEL, familyLabel, labelize } from "../data";
+import { MILK_LABEL, familyLabel, flavorClass, labelize } from "../data";
 import DraftPhoto from "./DraftPhoto";
 import HeartButton from "./HeartButton";
 
@@ -67,11 +67,11 @@ export default function CheeseCard({
           <>
             <span className="tags">
               {flavors.map((f) => (
-                <span className="tag" key={f}>
+                <span className={flavorClass(f)} key={f}>
                   {labelize(f)}
                 </span>
               ))}
-              {overflow > 0 && <span className="tag">+{overflow}</span>}
+              {overflow > 0 && <span className="tag more">+{overflow}</span>}
               {cheese.add_ins.map((a) => (
                 <span className="tag addin" key={a}>
                   {labelize(a)}

@@ -8,6 +8,7 @@ import {
   RIND_LABEL,
   TEXTURE_LABEL,
   familyLabel,
+  flavorClass,
   labelize,
 } from "../data";
 import DraftPhoto from "./DraftPhoto";
@@ -184,7 +185,7 @@ export default function CheeseDetail({
         <div className="tags">
           {cheese.flavor.map((f) => (
             <button
-              className="tag"
+              className={flavorClass(f)}
               key={f}
               onClick={() => onSearchTerm(labelize(f))}
               title={`Every cheese tagged ${labelize(f)}`}

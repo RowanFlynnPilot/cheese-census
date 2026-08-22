@@ -217,6 +217,40 @@ export function labelize(term: string): string {
   return term.replace(/_/g, " ");
 }
 
+/** The closed 22-term flavor vocabulary, grouped into six palette families so
+ *  a card's profile reads at a glance (acid = house teal, green = earthy…).
+ *  Presentation only — a term missing here renders as a plain tag, and a new
+ *  vocabulary term should be added to its family when it lands. */
+export const FLAVOR_GROUP: Record<string, string> = {
+  buttery: "dairy",
+  creamy: "dairy",
+  milky: "dairy",
+  mild: "dairy",
+  sweet: "sweet",
+  caramel: "sweet",
+  fruity: "sweet",
+  nutty: "toast",
+  toasty: "toast",
+  crystalline: "toast",
+  grassy: "green",
+  earthy: "green",
+  mushroomy: "green",
+  tangy: "acid",
+  sharp: "acid",
+  salty: "acid",
+  briny: "acid",
+  savory: "bold",
+  smoky: "bold",
+  peppery: "bold",
+  pungent: "bold",
+  funky: "bold",
+};
+
+export function flavorClass(term: string): string {
+  const group = FLAVOR_GROUP[term];
+  return group ? `tag fl f-${group}` : "tag";
+}
+
 export function familyLabel(family: string): string {
   return FAMILY_LABEL[family] ?? labelize(family);
 }
