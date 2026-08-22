@@ -37,11 +37,19 @@ scrapers/                  one module per source; each emits data/raw/<name>.jso
   masters.py               Master Cheesemaker directory PDF (annual)
   contests.py              WCMA championship results via the MyEntries JSON API
 scripts/describe.py        description generation (Anthropic API) — curation tool, never in build
+scripts/evidence.py        review-evidence assembler: corroborates proposals with local
+                           signals + committed web research; writes queue/review_*.json
+scripts/promote.py         promotes the auto tier into data/overrides/ (humans always win)
+scripts/catalog.py         assembles data/catalog/cheeses.json from the tagging table
 data/raw/                  committed scraper output (diffable history)
   dfw_varieties.json       DFW's 55 cheese varieties + their hardness/intensity/flavor
                            groupings — a reference table for the tagging pass, not a
                            source table; build.py does not read it
 data/overrides/            hand-edited: creameries/cheeses patches, manual crosswalk, classifications
+data/tagging/types.json    the flavor tagging pass's editorial table: one row per DFW
+                           cheese-type id, mapped into the closed vocabularies
+data/catalog/cheeses.json  the tagging pass's product (scripts/catalog.py): one record
+                           per exported creamery x tagged type; canonical build input
 data/vocab/tags.json       all controlled vocabularies
 data/highlights.json       editorial + sponsored highlight entries (hand-edited)
 queue/report.json          generated review reports (non-fatal work: coverage, unmatched awards)
@@ -116,9 +124,36 @@ manual dispatch only until all scrapers are implemented.
 
 ## Status (August 22, 2026) and next steps, in order
 
-**The build is green**: 93 creameries, 61 people, 299 awards, deterministic and
-idempotent end to end. The review gate was cleared by an evidence pass, not by
-waving records through — see "How the review gate was cleared" below.
+**The build is green with a cheese catalog**: 89 creameries, 623 cheeses, 61
+people, 299 awards — deterministic and idempotent end to end. The similarity
+engine and the curd map (32 plain-curds records) are live. The review gate was
+cleared by an evidence pass, not by waving records through — see below.
+
+### The flavor tagging pass (done at type level)
+
+`data/tagging/types.json` maps 111 DFW cheese types into the closed vocabularies
+(curated, seeded by `dfw_varieties.json`); `scripts/catalog.py` crosses it with
+each exported creamery's made-role links → 623 records, one per creamery × type.
+144 of 299 awards now link to a specific cheese (unique name-containment only).
+Worklist in `queue/review_cheeses.json`: 35 untyped single-maker types with their
+makers (Auribella, Weird Sisters, Luna…) and 6 texture disagreements vs DFW's own
+hardness groupings (deliberate — e.g. DFW calls curds "Semi-Hard").
+
+**Known limit, by design**: type-level records make same-type cheeses identical,
+so a Gouda's similar-list is other Goudas at 100.0. Cross-family discovery — the
+similarity engine's real promise — arrives as flagship products get differentiated
+tags and names via `data/overrides/cheeses.json` (rename `marieke-gouda--gouda`,
+adjust its flavors) or new table rows. Never fudge tags to force variety.
+
+### Non-Wisconsin cleanup
+
+Out-of-state DFW listings are gone: Lactalis's Buffalo HQ, Palmetto (SC), Prairie
+Farms' Iowa office and "Wisconsin's Finest" of Plano, TX are classified
+`excluded`; ten more listings merged into their licensed Wisconsin companies with
+licence-file evidence (Sargento → TTLF Inc dba Sargento Cheese Inc, Schuman →
+Lake Country Dairy, Sartori → Sartori Company, Arla → Arla Foods Amba, CROPP →
+the co-op, MCT → Bella Pak…). Edelweiss Creamery is `status: closed` (liquidated
+Feb 2026) — in the dataset, out of browse.
 
 ### How the review gate was cleared
 
@@ -194,12 +229,12 @@ Next steps, in order:
    - Note: `retail.mail_order` and `retail.online` are false for every creamery.
      DFW offers both as filters but publishes neither value, so they are not
      scraped; correct them in `data/overrides/creameries.json` where they matter.
-2. Flavor tagging pass → the cheese catalog. Seed candidate products from DFW
-   `cheese_types`, DATCP `cheese_manufactured`, and contest cheese names; tag with
-   `data/raw/dfw_varieties.json` as a starting signal, human approves in batches.
-   `flavor` needs 2–6 tags per record, so this is what unblocks `build/cheeses.json`
-   and lights up the similarity engine — and with it the whole reader layer of the
-   front end (browse, hearts, similar-cheese, highlights), which is stubbed out.
-3. `scripts/describe.py` — generation with the WPR voice prompt
-4. Front end, continued: GitHub Pages deploy workflow (build/ is real now), then
-   the reader layer once step 2 lands.
+2. Tagging worklist: the 35 untyped types in `queue/review_cheeses.json` (add rows
+   to `data/tagging/types.json`, re-run `scripts/catalog.py`), the 6 texture
+   disagreements, and flagship-product differentiation via overrides so
+   similar-lists stop being same-type mirrors.
+3. `scripts/describe.py` — generation with the WPR voice prompt (623 descriptions
+   missing, per `queue/report.json`).
+4. Front end: the reader layer — cheese browse, cheese detail with similar-cheese
+   and award refs, highlights — plus the GitHub Pages deploy workflow. The data
+   is fully live in `build/`; only the UI is missing.

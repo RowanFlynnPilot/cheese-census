@@ -1,0 +1,287 @@
+{
+  "texture_disagreements": [
+    {
+      "dfw_hardness": "Semi-Hard",
+      "name": "Colby",
+      "table_texture": "semi_soft",
+      "type_id": 15
+    },
+    {
+      "dfw_hardness": "Semi-Hard",
+      "name": "Colby-Monterey Jack",
+      "table_texture": "semi_soft",
+      "type_id": 16
+    },
+    {
+      "dfw_hardness": "Semi-Soft",
+      "name": "Provolone",
+      "table_texture": "semi_hard",
+      "type_id": 48
+    },
+    {
+      "dfw_hardness": "Semi-Hard",
+      "name": "Romano",
+      "table_texture": "hard",
+      "type_id": 55
+    },
+    {
+      "dfw_hardness": "Semi-Hard",
+      "name": "Cheese Curds",
+      "table_texture": "fresh",
+      "type_id": 135
+    },
+    {
+      "dfw_hardness": "Semi-Hard",
+      "name": "Pastorale Blend",
+      "table_texture": "hard",
+      "type_id": 181
+    }
+  ],
+  "untyped_types": [
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Basket Cheese",
+      "type_id": 6
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Folded Mint Cheese",
+      "type_id": 23
+    },
+    {
+      "makers": [
+        "Saputo Cheese USA"
+      ],
+      "name": "Italian Sharp",
+      "type_id": 29
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Jibneh Arabieh",
+      "type_id": 31
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Paneer",
+      "type_id": 40
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Tooma",
+      "type_id": 60
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Naboulsi",
+      "type_id": 63
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Duro Blando",
+      "type_id": 64
+    },
+    {
+      "makers": [
+        "Carr Valley Cheese Company, Inc."
+      ],
+      "name": "Menage™",
+      "type_id": 74
+    },
+    {
+      "makers": [
+        "Uplands Cheese Company"
+      ],
+      "name": "Pleasant Ridge Reserve",
+      "type_id": 78
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Queso Blanco con Frutas",
+      "type_id": 86
+    },
+    {
+      "makers": [
+        "Specialty Cheese Company, Inc"
+      ],
+      "name": "Kenafa",
+      "type_id": 87
+    },
+    {
+      "makers": [
+        "BelGioioso Cheese, Inc."
+      ],
+      "name": "Auribella®",
+      "type_id": 117
+    },
+    {
+      "makers": [
+        "Hook's Cheese Company, Inc."
+      ],
+      "name": "Sweet Constantine™",
+      "type_id": 124
+    },
+    {
+      "makers": [
+        "W&W Dairy, LLC"
+      ],
+      "name": "Queso Colombiano",
+      "type_id": 130
+    },
+    {
+      "makers": [
+        "Brunkow Cheese of Wisconsin, Inc."
+      ],
+      "name": "Little Darling",
+      "type_id": 158
+    },
+    {
+      "makers": [
+        "Harmony Cheese"
+      ],
+      "name": "Abergele",
+      "type_id": 176
+    },
+    {
+      "makers": [
+        "Zimmerman Cheese Company, Inc."
+      ],
+      "name": "Baby Jack",
+      "type_id": 184
+    },
+    {
+      "makers": [
+        "Bleu Mont Dairy"
+      ],
+      "name": "Lil' Will's Big Cheese",
+      "type_id": 193
+    },
+    {
+      "makers": [
+        "Weyauwega Star Dairy, Inc."
+      ],
+      "name": "Gournay",
+      "type_id": 197
+    },
+    {
+      "makers": [
+        "Harmony Cheese"
+      ],
+      "name": "Kidwelly Castle",
+      "type_id": 201
+    },
+    {
+      "makers": [
+        "Union Star, Corp."
+      ],
+      "name": "St. Jeanne™",
+      "type_id": 210
+    },
+    {
+      "makers": [
+        "Hook's Cheese Company, Inc."
+      ],
+      "name": "Red Errigal",
+      "type_id": 211
+    },
+    {
+      "makers": [
+        "Uplands Cheese Company"
+      ],
+      "name": "Rush Creek Reserve",
+      "type_id": 216
+    },
+    {
+      "makers": [
+        "Koepke Farms, Inc"
+      ],
+      "name": "LaBelle™",
+      "type_id": 241
+    },
+    {
+      "makers": [
+        "Cedar Grove Cheese, Inc."
+      ],
+      "name": "Willi",
+      "type_id": 252
+    },
+    {
+      "makers": [
+        "LaClare Family Creamery"
+      ],
+      "name": "Martone",
+      "type_id": 258
+    },
+    {
+      "makers": [
+        "Hook's Cheese Company, Inc."
+      ],
+      "name": "Triple Play",
+      "type_id": 272
+    },
+    {
+      "makers": [
+        "Landmark Creamery LLC"
+      ],
+      "name": "Tallgrass",
+      "type_id": 286
+    },
+    {
+      "makers": [
+        "Landmark Creamery LLC"
+      ],
+      "name": "Tallgrass Reserve",
+      "type_id": 287
+    },
+    {
+      "makers": [
+        "Cedar Grove Cheese, Inc."
+      ],
+      "name": "Weird Sisters®",
+      "type_id": 301
+    },
+    {
+      "makers": [
+        "Hoard's Dairymen Farm Creamery"
+      ],
+      "name": "Belaire",
+      "type_id": 326
+    },
+    {
+      "makers": [
+        "Ellsworth Cooperative Creamery"
+      ],
+      "name": "Antonella",
+      "type_id": 330
+    },
+    {
+      "makers": [
+        "Hill Valley Dairy"
+      ],
+      "name": "Luna",
+      "type_id": 334
+    },
+    {
+      "makers": [
+        "Union Star, Corp."
+      ],
+      "name": "Red Willow",
+      "type_id": 340
+    }
+  ]
+}

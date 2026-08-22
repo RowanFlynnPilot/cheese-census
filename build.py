@@ -444,6 +444,36 @@ def merge(raw: dict[str, list[dict]]) -> dict:
             active=True,
         ))
 
+    # ── The cheese catalog (built by the flavor tagging pass) ────────────────
+    # data/catalog/cheeses.json is scripts/catalog.py's product: one record per
+    # exported creamery × tagged cheese type. Its absence is the legitimate
+    # pre-tagging state, not an error. Regenerate it after classification
+    # changes — a record pointing at a creamery that left the export is fatal
+    # downstream, by design.
+    catalog_path = ROOT / "data" / "catalog" / "cheeses.json"
+    cheeses = (
+        [Cheese(**record) for record in _read_json(catalog_path)]
+        if catalog_path.exists()
+        else []
+    )
+    cheeses_by_creamery: dict[str, list[Cheese]] = {}
+    for cheese in cheeses:
+        cheeses_by_creamery.setdefault(cheese.creamery_id, []).append(cheese)
+
+    def _award_cheese(creamery_key: str | None, cheese_name: str) -> str | None:
+        """Link an award to a cheese when exactly one of the creamery's cheeses
+        appears by name inside the published entry name — 'Odyssey Mediterranean
+        Feta in Brine' contains Feta. Anything ambiguous stays unlinked."""
+        if creamery_key is None:
+            return None
+        candidates = cheeses_by_creamery.get(company_id[creamery_key], [])
+        entry = f" {_normalize_name(cheese_name)} "
+        hits = [
+            c.id for c in sorted(candidates, key=lambda c: c.id)
+            if f" {_normalize_name(c.name)} " in entry
+        ]
+        return hits[0] if len(hits) == 1 else None
+
     awards: list[Award] = []
     for record in sorted(raw["contests"], key=lambda r: r["source_key"]):
         matched, candidates = full.resolve(record["company"], record["city"])
@@ -481,7 +511,7 @@ def merge(raw: dict[str, list[dict]]) -> dict:
                 city=record["city"],
             ),
             creamery_id=company_id[matched] if matched else None,
-            cheese_id=None,   # no cheese catalog yet — see the flavor tagging pass
+            cheese_id=_award_cheese(matched, record["cheese_name"]),
         ))
 
     creameries = [
@@ -517,11 +547,7 @@ def merge(raw: dict[str, list[dict]]) -> dict:
 
     return {
         "creameries": creameries,
-        # The cheese catalog needs family/texture/age/rind and 2-6 flavor tags per
-        # record. DFW publishes cheese *types* per company, never named products, so
-        # there is nothing here to build a cheese from without inventing it. The
-        # catalog arrives with the assisted flavor tagging pass.
-        "cheeses": [],
+        "cheeses": cheeses,
         "people": people,
         "awards": awards,
         "crosswalk": [

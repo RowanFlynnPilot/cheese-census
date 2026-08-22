@@ -94,6 +94,7 @@ export default function App() {
       creameries: data.creameries.length,
       counties: counties.length,
       plants: data.creameries.reduce((n, c) => n + c.plants.length, 0),
+      cheeses: data.cheeses.length,
       masters: data.people.length,
       awards: data.awards.length,
     };
@@ -107,6 +108,9 @@ export default function App() {
     const hints = new Map<string, string>();
     const list = (data?.creameries ?? [])
       .filter((c) => {
+        // Closed creameries stay in the dataset (history is useful) but drop out
+        // of browse views — SCHEMA.md's status rule.
+        if (c.status !== "active") return false;
         if (county && c.county !== county) return false;
         if (retailOnly && !c.retail.store) return false;
         if (awardedOnly && !awardCounts.has(c.id)) return false;
@@ -335,6 +339,11 @@ export default function App() {
           <span className="stat">
             <b>{stats.plants}</b> licensed plants
           </span>
+          {stats.cheeses > 0 && (
+            <span className="stat">
+              <b>{stats.cheeses}</b> cheeses
+            </span>
+          )}
           <span className="stat">
             <b>{stats.masters}</b> master cheesemakers
           </span>

@@ -30,20 +30,6 @@
     "tier": "review"
   },
   {
-    "creamery_id": "sargento-cheese-inc",
-    "evidence": [
-      {
-        "detail": "920-893-8484 is also the licence phone of Sargento Cheese Inc.",
-        "signal": "phone"
-      }
-    ],
-    "excluded": false,
-    "note": "signal match, but lookalike company(ies) exist: ['saco-foods-and-hoosier-hill-farm']",
-    "source": "dfw",
-    "source_key": "100",
-    "tier": "review"
-  },
-  {
     "creamery_id": "the-deli-source",
     "evidence": [
       {
@@ -66,26 +52,6 @@
     "evidence": [
       {
         "confidence": "high",
-        "detail": "Schuman Cheese (legal parent Arthur Schuman, Inc., Fairfield NJ) makes its Wisconsin cheese at the Turtle Lake plant it bought from the Ludy family in 2007, which is licensed under the name Lake Country Dairy, Inc. (present in the DATCP pull) - not Chalet, Gilman, or Holmen.",
-        "signal": "web-research",
-        "url": "https://www.dairyfoods.com/articles/92430-schuman-cheeses-lake-country-dairy-plant-makes-italian-style-alpine-cheeses"
-      },
-      {
-        "detail": "finding mentions several licensed companies (Lake Country Dairy, Inc., Schuman Cheese, Inc., Wisconsin Cheese Company) — not resolvable mechanically",
-        "signal": "note"
-      }
-    ],
-    "excluded": false,
-    "note": null,
-    "source": "dfw",
-    "source_key": "125",
-    "tier": "review"
-  },
-  {
-    "creamery_id": null,
-    "evidence": [
-      {
-        "confidence": "high",
         "detail": "Palmetto Cheese is a pimento cheese brand of Pawleys Island Specialty Foods (South Carolina), produced at South Carolina co-packers (originally Duke Sandwich Productions in Easley, later a Simpsonville SC plant); its only Wisconsin tie is buying Wisconsin cheddar as an ingredient, so it holds no Wisconsin plant licence.",
         "signal": "web-research",
         "url": "https://en.wikipedia.org/wiki/Palmetto_Cheese"
@@ -95,52 +61,6 @@
     "note": null,
     "source": "dfw",
     "source_key": "1305",
-    "tier": "review"
-  },
-  {
-    "creamery_id": "springside-artisan-cheese-llc",
-    "evidence": [
-      {
-        "detail": "920-829-6395 is also the licence phone of Springside Artisan Cheese LLC",
-        "signal": "phone"
-      },
-      {
-        "detail": "7989 Arndt Rd., Oconto Falls is also a licensed plant address of Springside Artisan Cheese LLC",
-        "signal": "address"
-      },
-      {
-        "detail": "920-829-6395 is also the licence phone of Springside Artisan Cheese LLC",
-        "signal": "phone"
-      },
-      {
-        "detail": "7989 Arndt Road, Oconto Falls is also a licensed plant address of Springside Artisan Cheese LLC",
-        "signal": "address"
-      }
-    ],
-    "excluded": false,
-    "note": "signal match, but lookalike company(ies) exist: ['alpinage-cheese-llc']",
-    "source": "dfw",
-    "source_key": "155",
-    "tier": "review"
-  },
-  {
-    "creamery_id": "organic-valley-chaseburg",
-    "evidence": [
-      {
-        "confidence": "high",
-        "detail": "The legal entity is Cooperative Regions of Organic Producer Pools (CROPP Cooperative), dba Organic Valley, headquartered in La Farge; the licensed candidate 'Organic Valley Chaseburg' is its own Chaseburg creamery (butter plant operating since 1999), so the two records are the same cooperative.",
-        "signal": "web-research",
-        "url": "https://www.organicvalley.coop/blog/the-not-so-secret-ingredient-to-organic-valley-butter"
-      },
-      {
-        "detail": "the finding mentions exactly one licensed company",
-        "signal": "name-rule"
-      }
-    ],
-    "excluded": false,
-    "note": "web identity only — no contact-detail corroboration; not build-blocking",
-    "source": "dfw",
-    "source_key": "16",
     "tier": "review"
   },
   {
@@ -196,20 +116,6 @@
     "tier": "review"
   },
   {
-    "creamery_id": "harmony-cheese-llc-athens-plant",
-    "evidence": [
-      {
-        "detail": "920-351-3555 is also the licence phone of Harmony Cheese LLC - Athens Plant",
-        "signal": "phone"
-      }
-    ],
-    "excluded": false,
-    "note": "signal match, but lookalike company(ies) exist: ['arena-cheese', 'harmony-cheese', 'marathon-cheese-corporation']",
-    "source": "dfw",
-    "source_key": "199",
-    "tier": "review"
-  },
-  {
     "creamery_id": null,
     "evidence": [
       {
@@ -261,26 +167,6 @@
     "creamery_id": null,
     "evidence": [
       {
-        "confidence": "high",
-        "detail": "The DFW listing 'Sartori Cheese Company' is simply Sartori Company (a Wisconsin corporation dating to 1947, dba Sartori Cheese, founded 1939 as S&R Cheese), the same entity as the licensed candidate Sartori Company of Plymouth - not Sargento or Saputo.",
-        "signal": "web-research",
-        "url": "https://www.sartoricheese.com/"
-      },
-      {
-        "detail": "finding mentions several licensed companies (Sartori Cheese Company, Sartori Company) — not resolvable mechanically",
-        "signal": "note"
-      }
-    ],
-    "excluded": false,
-    "note": null,
-    "source": "dfw",
-    "source_key": "25",
-    "tier": "review"
-  },
-  {
-    "creamery_id": null,
-    "evidence": [
-      {
         "confidence": "medium",
         "detail": "G&R Foods, Inc. (Reedsburg, founded 1995) is a family-owned dairy trading house - import/export, risk management, inventory and aging programs for cheese, butter, and powders, plus canned cheese/butter brands - selling product made by other plants; no G&R plant appears in the DATCP licence pull and it is unrelated to Gehl Foods.",
         "signal": "web-research",
@@ -291,26 +177,6 @@
     "note": null,
     "source": "dfw",
     "source_key": "253",
-    "tier": "review"
-  },
-  {
-    "creamery_id": null,
-    "evidence": [
-      {
-        "confidence": "high",
-        "detail": "MCT Dairies, Inc. is a Chatham, NJ dairy trader/importer with Wisconsin offices, and its processing arm IS licensed in Wisconsin: the DATCP pull lists MCT Manufacturing LLC dba Bella Pak LLC at 2358 W Packard St, Appleton (licence 279532, cut/wrap/shred and powder blending) - the same address as MCT Dairies' Appleton office; it is unrelated to Family Dairies USA.",
-        "signal": "web-research",
-        "url": "https://www.mctdairies.com/"
-      },
-      {
-        "detail": "finding mentions several licensed companies (Bella Pak LLC, Family Dairies USA, MCT Dairies, Inc.) — not resolvable mechanically",
-        "signal": "note"
-      }
-    ],
-    "excluded": false,
-    "note": null,
-    "source": "dfw",
-    "source_key": "298",
     "tier": "review"
   },
   {
@@ -331,42 +197,6 @@
     "note": null,
     "source": "dfw",
     "source_key": "45",
-    "tier": "review"
-  },
-  {
-    "creamery_id": "dairy-state-cheese-llc",
-    "evidence": [
-      {
-        "detail": "715-435-3144 is also the licence phone of Dairy State Cheese, LLC",
-        "signal": "phone"
-      },
-      {
-        "detail": "715-435-3144 is also the licence phone of Dairy State Cheese, LLC",
-        "signal": "phone"
-      }
-    ],
-    "excluded": false,
-    "note": "signal match, but lookalike company(ies) exist: ['wisconsin-pride-cheese-co-inc']",
-    "source": "dfw",
-    "source_key": "50",
-    "tier": "review"
-  },
-  {
-    "creamery_id": "scray-s-cheese-co",
-    "evidence": [
-      {
-        "detail": "2082 Old Martin Rd, De Pere is also a licensed plant address of Scray's Cheese Co",
-        "signal": "address"
-      },
-      {
-        "detail": "2082 Old Martin Rd, De Pere is also a licensed plant address of Scray's Cheese Co",
-        "signal": "address"
-      }
-    ],
-    "excluded": false,
-    "note": "signal match, but lookalike company(ies) exist: ['arena-cheese', 'biery-cheese-company', 'capri-cheese', 'cascade-cheese-co', 'schuman-cheese-inc', 'specialty-cheese-company-inc', 'uplands-cheese-company']",
-    "source": "dfw",
-    "source_key": "54",
     "tier": "review"
   },
   {
@@ -409,26 +239,6 @@
     "note": "signals split across ['alpine-slicing-cheese-conversion-company', 'maple-leaf-sales-inc']",
     "source": "dfw",
     "source_key": "9",
-    "tier": "review"
-  },
-  {
-    "creamery_id": null,
-    "evidence": [
-      {
-        "confidence": "high",
-        "detail": "Arla Foods' US cheese plant is the historic Hollandtown dairy in Kaukauna (havarti, gouda, edam; owned by the Danish cooperative since 2006), licensed in the DATCP pull under business name Arla Foods Amba dba Arla Foods Production, LLC - the first candidate; CTL Foods and Century Foods are unrelated.",
-        "signal": "web-research",
-        "url": "https://www.dairyfoods.com/directories/7376-dairy-plants-usa/listing/8705-arla-foods-inc-kaukauna-wi"
-      },
-      {
-        "detail": "finding mentions several licensed companies (Arla Foods Production, LLC (Arla Foods Amba), Arla Foods, Inc., CTL Foods, Inc.) — not resolvable mechanically",
-        "signal": "note"
-      }
-    ],
-    "excluded": false,
-    "note": null,
-    "source": "dfw",
-    "source_key": "96",
     "tier": "review"
   }
 ]

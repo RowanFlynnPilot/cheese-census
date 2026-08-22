@@ -207,26 +207,12 @@
         "url": "https://www.wisconsincheese.com/wi-cheese-companies/96/arla-foods%2c-inc"
       },
       {
-        "detail": "no cheese manufactured on any licence",
+        "detail": "licensed to make Edam, Gouda, Muenster (Munster), Other",
         "signal": "licence"
       },
       {
         "detail": "8 championship award(s)",
         "signal": "awards"
-      }
-    ],
-    "flags": [],
-    "id": "arla-foods-inc",
-    "name": "Arla Foods, Inc.",
-    "tier": "auto"
-  },
-  {
-    "city": "Kaukauna",
-    "classification": "commodity",
-    "evidence": [
-      {
-        "detail": "licensed to make Edam, Gouda, Muenster (Munster), Other",
-        "signal": "licence"
       },
       {
         "confidence": "high",
@@ -235,12 +221,10 @@
         "url": "https://www.arlausa.com/about-us/"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
-    ],
+    "flags": [],
     "id": "arla-foods-production-llc-arla-foods-amba",
-    "name": "Arla Foods Production, LLC (Arla Foods Amba)",
-    "tier": "review"
+    "name": "Arla Foods, Inc.",
+    "tier": "auto"
   },
   {
     "city": "Blair",
@@ -372,8 +356,13 @@
   },
   {
     "city": "Appleton",
-    "classification": "processor",
+    "classification": "creamery",
     "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 5 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/298/mct-dairies%2c-inc"
+      },
       {
         "detail": "no cheese manufactured on any licence",
         "signal": "licence"
@@ -381,7 +370,7 @@
     ],
     "flags": [],
     "id": "bella-pak-llc",
-    "name": "Bella Pak LLC",
+    "name": "MCT Dairies, Inc.",
     "tier": "auto"
   },
   {
@@ -1067,29 +1056,6 @@
     "tier": "auto"
   },
   {
-    "city": "La Farge",
-    "classification": "creamery",
-    "evidence": [
-      {
-        "detail": "wisconsincheese.com lists it under Made By and Sold By with 12 cheese types",
-        "signal": "dfw",
-        "url": "https://www.wisconsincheese.com/wi-cheese-companies/16/organic-valley"
-      },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      },
-      {
-        "detail": "1 championship award(s)",
-        "signal": "awards"
-      }
-    ],
-    "flags": [],
-    "id": "cropp-cooperative-organic-valley",
-    "name": "CROPP Cooperative/Organic Valley",
-    "tier": "auto"
-  },
-  {
     "city": "Osceola",
     "classification": "creamery",
     "evidence": [
@@ -1207,8 +1173,13 @@
   },
   {
     "city": "Rudolph",
-    "classification": "commodity",
+    "classification": "creamery",
     "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 41 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/50/wisconsin-dairy-state-cheese-co"
+      },
       {
         "detail": "licensed to make Asiago, Parmesan and Reggiano, Romano",
         "signal": "licence"
@@ -1220,12 +1191,10 @@
         "url": "https://dairystatecheese.com/"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
-    ],
+    "flags": [],
     "id": "dairy-state-cheese-llc",
-    "name": "Dairy State Cheese, LLC",
-    "tier": "review"
+    "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "tier": "auto"
   },
   {
     "city": "Blue Mounds",
@@ -2126,7 +2095,7 @@
     "tier": "auto"
   },
   {
-    "city": "De Pere",
+    "city": "Athens",
     "classification": "creamery",
     "evidence": [
       {
@@ -2140,22 +2109,8 @@
       }
     ],
     "flags": [],
-    "id": "harmony-cheese-de-pere",
-    "name": "Harmony Cheese",
-    "tier": "auto"
-  },
-  {
-    "city": "Athens",
-    "classification": "processor",
-    "evidence": [
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
-    "flags": [],
     "id": "harmony-cheese-llc-athens-plant",
-    "name": "Harmony Cheese LLC - Athens Plant",
+    "name": "Harmony Cheese",
     "tier": "auto"
   },
   {
@@ -3030,8 +2985,13 @@
   },
   {
     "city": "Turtle Lake",
-    "classification": "commodity",
+    "classification": "creamery",
     "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/125/schuman-cheese"
+      },
       {
         "detail": "licensed to make Asiago, Other, Parmesan and Reggiano, Romano",
         "signal": "licence"
@@ -3047,13 +3007,10 @@
         "url": "https://www.dairyfoods.com/articles/92430-schuman-cheeses-lake-country-dairy-plant-makes-italian-style-alpine-cheeses"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
-      "has master cheesemakers or championship awards — worth an editorial look"
-    ],
+    "flags": [],
     "id": "lake-country-dairy-inc",
-    "name": "Lake Country Dairy, Inc.",
-    "tier": "review"
+    "name": "Schuman Cheese, Inc.",
+    "tier": "auto"
   },
   {
     "city": "Appleton",
@@ -3514,25 +3471,6 @@
     "id": "mccluskey-brothers",
     "name": "McCluskey Brothers",
     "tier": "review"
-  },
-  {
-    "city": "Green Bay",
-    "classification": "creamery",
-    "evidence": [
-      {
-        "detail": "wisconsincheese.com lists it under Made By and Sold By with 5 cheese types",
-        "signal": "dfw",
-        "url": "https://www.wisconsincheese.com/wi-cheese-companies/298/mct-dairies%2c-inc"
-      },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
-    "flags": [],
-    "id": "mct-dairies-inc",
-    "name": "MCT Dairies, Inc.",
-    "tier": "auto"
   },
   {
     "city": "Muscoda",
@@ -4057,14 +3995,19 @@
   },
   {
     "city": "Chaseburg",
-    "classification": "commodity",
+    "classification": "creamery",
     "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 12 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/16/organic-valley"
+      },
       {
         "detail": "licensed to make Other",
         "signal": "licence"
       },
       {
-        "detail": "1 championship award(s)",
+        "detail": "2 championship award(s)",
         "signal": "awards"
       },
       {
@@ -4074,13 +4017,10 @@
         "url": "https://www.organicvalley.coop/blog/the-not-so-secret-ingredient-to-organic-valley-butter"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
-      "has master cheesemakers or championship awards — worth an editorial look"
-    ],
+    "flags": [],
     "id": "organic-valley-chaseburg",
-    "name": "Organic Valley Chaseburg",
-    "tier": "review"
+    "name": "CROPP Cooperative/Organic Valley",
+    "tier": "auto"
   },
   {
     "city": "Hilbert",
@@ -4772,8 +4712,13 @@
   },
   {
     "city": "Hilbert",
-    "classification": "commodity",
+    "classification": "creamery",
     "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By and Sold By with 28 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/100/sargento-foods-inc"
+      },
       {
         "detail": "licensed to make Mozzarella",
         "signal": "licence"
@@ -4789,30 +4734,8 @@
         "url": "https://www.sargento.com/our-cheese"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
-      "has master cheesemakers or championship awards — worth an editorial look"
-    ],
-    "id": "sargento-cheese-inc",
-    "name": "Sargento Cheese Inc.",
-    "tier": "review"
-  },
-  {
-    "city": "Plymouth",
-    "classification": "creamery",
-    "evidence": [
-      {
-        "detail": "wisconsincheese.com lists it under Made By and Sold By with 28 cheese types",
-        "signal": "dfw",
-        "url": "https://www.wisconsincheese.com/wi-cheese-companies/100/sargento-foods-inc"
-      },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
     "flags": [],
-    "id": "sargento-foods-inc",
+    "id": "sargento-cheese-inc",
     "name": "Sargento Foods, Inc.",
     "tier": "auto"
   },
@@ -4825,20 +4748,6 @@
         "signal": "dfw",
         "url": "https://www.wisconsincheese.com/wi-cheese-companies/25/sartori-company"
       },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
-    "flags": [],
-    "id": "sartori-cheese-company",
-    "name": "Sartori Cheese Company",
-    "tier": "auto"
-  },
-  {
-    "city": "Plymouth",
-    "classification": "commodity",
-    "evidence": [
       {
         "detail": "licensed to make Asiago, Cheddar, Other, Parmesan and Reggiano, Romano",
         "signal": "licence"
@@ -4858,13 +4767,10 @@
         "url": "https://www.sartoricheese.com/"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json",
-      "has master cheesemakers or championship awards — worth an editorial look"
-    ],
+    "flags": [],
     "id": "sartori-company",
-    "name": "Sartori Company",
-    "tier": "review"
+    "name": "Sartori Cheese Company",
+    "tier": "auto"
   },
   {
     "city": "Columbus",
@@ -4954,25 +4860,6 @@
     "tier": "review"
   },
   {
-    "city": "Fairfield",
-    "classification": "creamery",
-    "evidence": [
-      {
-        "detail": "wisconsincheese.com lists it under Made By with 7 cheese types",
-        "signal": "dfw",
-        "url": "https://www.wisconsincheese.com/wi-cheese-companies/125/schuman-cheese"
-      },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
-    "flags": [],
-    "id": "schuman-cheese-inc",
-    "name": "Schuman Cheese, Inc.",
-    "tier": "auto"
-  },
-  {
     "city": "Chilton",
     "classification": "processor",
     "evidence": [
@@ -5032,20 +4919,6 @@
         "url": "https://www.wisconsincheese.com/wi-cheese-companies/54/scray-cheese-co-llc"
       },
       {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
-    "flags": [],
-    "id": "scray-cheese-company",
-    "name": "Scray Cheese Company",
-    "tier": "auto"
-  },
-  {
-    "city": "De Pere",
-    "classification": "commodity",
-    "evidence": [
-      {
         "detail": "licensed to make Cheddar, Edam, Gouda, Mozzarella",
         "signal": "licence"
       },
@@ -5056,12 +4929,10 @@
         "url": "https://www.scraycheese.com/"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
-    ],
+    "flags": [],
     "id": "scray-s-cheese-co",
-    "name": "Scray's Cheese Co",
-    "tier": "review"
+    "name": "Scray Cheese Company",
+    "tier": "auto"
   },
   {
     "city": "La Crosse",
@@ -5145,8 +5016,13 @@
   },
   {
     "city": "Oconto Falls",
-    "classification": "commodity",
+    "classification": "creamery",
     "evidence": [
+      {
+        "detail": "wisconsincheese.com lists it under Made By with 8 cheese types",
+        "signal": "dfw",
+        "url": "https://www.wisconsincheese.com/wi-cheese-companies/155/springside-cheese-corp"
+      },
       {
         "detail": "licensed to make Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella, Washed Curd and Soaked Curd",
         "signal": "licence"
@@ -5158,29 +5034,8 @@
         "url": "https://springsidecheese.com/"
       }
     ],
-    "flags": [
-      "upgrade candidate: web shows a consumer brand — flipping to creamery needs lat/lng in data/overrides/creameries.json"
-    ],
-    "id": "springside-artisan-cheese-llc",
-    "name": "Springside Artisan Cheese LLC",
-    "tier": "review"
-  },
-  {
-    "city": "Oconto Falls",
-    "classification": "creamery",
-    "evidence": [
-      {
-        "detail": "wisconsincheese.com lists it under Made By with 8 cheese types",
-        "signal": "dfw",
-        "url": "https://www.wisconsincheese.com/wi-cheese-companies/155/springside-cheese-corp"
-      },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
     "flags": [],
-    "id": "springside-cheese-corporation",
+    "id": "springside-artisan-cheese-llc",
     "name": "Springside Cheese Corporation",
     "tier": "auto"
   },
@@ -5888,25 +5743,6 @@
     "flags": [],
     "id": "wisconsin-dairy-distributing",
     "name": "Wisconsin Dairy Distributing",
-    "tier": "auto"
-  },
-  {
-    "city": "Rudolph",
-    "classification": "creamery",
-    "evidence": [
-      {
-        "detail": "wisconsincheese.com lists it under Made By and Sold By with 41 cheese types",
-        "signal": "dfw",
-        "url": "https://www.wisconsincheese.com/wi-cheese-companies/50/wisconsin-dairy-state-cheese-co"
-      },
-      {
-        "detail": "no cheese manufactured on any licence",
-        "signal": "licence"
-      }
-    ],
-    "flags": [],
-    "id": "wisconsin-dairy-state-cheese-co-inc",
-    "name": "Wisconsin Dairy State Cheese Co, Inc",
     "tier": "auto"
   },
   {

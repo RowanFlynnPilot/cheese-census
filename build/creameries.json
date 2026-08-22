@@ -177,10 +177,13 @@
     "website": "http://www.arenacheese.com"
   },
   {
-    "address": "Arla Foods Production",
-    "aka": [],
+    "address": "489 Holland Crt",
+    "aka": [
+      "Arla Foods Amba",
+      "Arla Foods Production, LLC (Arla Foods Amba)"
+    ],
     "city": "Kaukauna",
-    "county": null,
+    "county": "Brown",
     "dfw_company_id": 96,
     "editorial": {
       "photo": null,
@@ -188,11 +191,32 @@
       "visit_notes": null
     },
     "founded": null,
-    "id": "arla-foods-inc",
+    "id": "arla-foods-production-llc-arla-foods-amba",
     "lat": 40.636265,
     "lng": -74.574617,
     "name": "Arla Foods, Inc.",
-    "plants": [],
+    "plants": [
+      {
+        "address": "489 Holland Crt",
+        "city": "Kaukauna",
+        "county": "Brown",
+        "datcp_id": "55-905",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Membrane Processing",
+          "Other",
+          "Other",
+          "Whey/Whey By Products",
+          "Edam",
+          "Gouda",
+          "Muenster (Munster)",
+          "Other"
+        ]
+      }
+    ],
     "retail": {
       "mail_order": false,
       "online": false,
@@ -534,6 +558,47 @@
     },
     "status": "active",
     "website": "http://www.belgioioso.com"
+  },
+  {
+    "address": "2358 W Packard St",
+    "aka": [
+      "Bella Pak LLC",
+      "MCT Manufacturing LLC"
+    ],
+    "city": "Appleton",
+    "county": "Outagamie",
+    "dfw_company_id": 298,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "bella-pak-llc",
+    "lat": 44.488411,
+    "lng": -88.06885,
+    "name": "MCT Dairies, Inc.",
+    "plants": [
+      {
+        "address": "2358 W Packard St",
+        "city": "Appleton",
+        "county": "Outagamie",
+        "datcp_id": "55-445",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred",
+          "Powder Mixing/Blending"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://mctdairies.com/"
   },
   {
     "address": "3480 County Road F",
@@ -1113,31 +1178,6 @@
     "website": "http://www.cravecheese.com"
   },
   {
-    "address": "One Organic Way",
-    "aka": [],
-    "city": "La Farge",
-    "county": null,
-    "dfw_company_id": 16,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "cropp-cooperative-organic-valley",
-    "lat": 43.581795,
-    "lng": -90.637614,
-    "name": "CROPP Cooperative/Organic Valley",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": true
-    },
-    "status": "active",
-    "website": "http://www.organicvalley.coop"
-  },
-  {
     "address": "527 State Road 35",
     "aka": [
       "Troy Derosier"
@@ -1180,6 +1220,51 @@
     },
     "status": "active",
     "website": "http://www.facebook.com/pages/Crystal-Ball-Farms-Organic-Dairy/123047694418683"
+  },
+  {
+    "address": "6888 State Road 34",
+    "aka": [
+      "Dairy State Cheese, LLC"
+    ],
+    "city": "Rudolph",
+    "county": "Wood",
+    "dfw_company_id": 50,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "dairy-state-cheese-llc",
+    "lat": 44.5,
+    "lng": -89.81,
+    "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "plants": [
+      {
+        "address": "6888 State Road 34",
+        "city": "Rudolph",
+        "county": "Wood",
+        "datcp_id": "55-1886",
+        "operations": [
+          "Retail Store",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://dairystatecheese.com/"
   },
   {
     "address": "W1668 County Road F",
@@ -1312,7 +1397,7 @@
       "online": false,
       "store": true
     },
-    "status": "active",
+    "status": "closed",
     "website": "http://www.edelweisscreamery.com/"
   },
   {
@@ -2078,10 +2163,13 @@
     "website": "http://www.sincerelybrigitte.com/"
   },
   {
-    "address": "2200 Dickinson Road",
-    "aka": [],
-    "city": "De Pere",
-    "county": null,
+    "address": "122480 Schnappsville Rd",
+    "aka": [
+      "Harmony Cheese LLC",
+      "Harmony Cheese LLC - Athens Plant"
+    ],
+    "city": "Athens",
+    "county": "Marathon",
     "dfw_company_id": 199,
     "editorial": {
       "photo": null,
@@ -2089,11 +2177,22 @@
       "visit_notes": null
     },
     "founded": null,
-    "id": "harmony-cheese-de-pere",
+    "id": "harmony-cheese-llc-athens-plant",
     "lat": 44.810099,
     "lng": -90.017025,
     "name": "Harmony Cheese",
-    "plants": [],
+    "plants": [
+      {
+        "address": "122480 Schnappsville Rd",
+        "city": "Athens",
+        "county": "Marathon",
+        "datcp_id": "55-1478",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
     "retail": {
       "mail_order": false,
       "online": false,
@@ -2571,31 +2670,6 @@
     "website": "https://www.laclarefamilycreamery.com/"
   },
   {
-    "address": "2376 South Park Avenue",
-    "aka": [],
-    "city": "Buffalo",
-    "county": null,
-    "dfw_company_id": 45,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "lactalis-usa-inc",
-    "lat": 40.760219,
-    "lng": -73.968095,
-    "name": "Lactalis USA, Inc.",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": false
-    },
-    "status": "active",
-    "website": "http://www.presidentcheese.com"
-  },
-  {
     "address": "W11299 Broek Rd",
     "aka": [
       "Lagranders Hillside Dairy Inc."
@@ -2637,6 +2711,52 @@
     },
     "status": "active",
     "website": "http://www.lagranderscheese.com"
+  },
+  {
+    "address": "458 Western Blvd",
+    "aka": [
+      "Lake Country Dairy, Inc."
+    ],
+    "city": "Turtle Lake",
+    "county": "Polk",
+    "dfw_company_id": 125,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "lake-country-dairy-inc",
+    "lat": 45.390182,
+    "lng": -92.161305,
+    "name": "Schuman Cheese, Inc.",
+    "plants": [
+      {
+        "address": "458 Western Blvd",
+        "city": "Turtle Lake",
+        "county": "Polk",
+        "datcp_id": "55-505",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Other",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": false
+    },
+    "status": "active",
+    "website": "http://schumancheese.com/"
   },
   {
     "address": "6858 Paoli Rd",
@@ -2843,31 +2963,6 @@
     },
     "status": "active",
     "website": "https://www.mariekegouda.com/"
-  },
-  {
-    "address": "926 Willard Drive",
-    "aka": [],
-    "city": "Green Bay",
-    "county": null,
-    "dfw_company_id": 298,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "mct-dairies-inc",
-    "lat": 44.488411,
-    "lng": -88.06885,
-    "name": "MCT Dairies, Inc.",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": false
-    },
-    "status": "active",
-    "website": "http://mctdairies.com/"
   },
   {
     "address": "1160 Industrial Dr",
@@ -3131,6 +3226,59 @@
     "website": "https://www.oakgrovedairy.com/"
   },
   {
+    "address": "203 S Main St",
+    "aka": [
+      "Cooperative Regions of Organic Producer Pools",
+      "Organic Valley",
+      "Organic Valley Chaseburg"
+    ],
+    "city": "Chaseburg",
+    "county": "Vernon",
+    "dfw_company_id": 16,
+    "editorial": {
+      "photo": null,
+      "summary": null,
+      "visit_notes": null
+    },
+    "founded": null,
+    "id": "organic-valley-chaseburg",
+    "lat": 43.581795,
+    "lng": -90.637614,
+    "name": "CROPP Cooperative/Organic Valley",
+    "plants": [
+      {
+        "address": "203 S Main St",
+        "city": "Chaseburg",
+        "county": "Vernon",
+        "datcp_id": "55-75",
+        "operations": [
+          "Bovine Milk",
+          "Butter Processing",
+          "Condensary/Evap",
+          "Pasteurizer - HTST"
+        ]
+      },
+      {
+        "address": "440 Organic Dr",
+        "city": "Cashton",
+        "county": "Monroe",
+        "datcp_id": "55-416",
+        "operations": [
+          "Bovine Milk",
+          "Cut/Wrap/Shred",
+          "Other"
+        ]
+      }
+    ],
+    "retail": {
+      "mail_order": false,
+      "online": false,
+      "store": true
+    },
+    "status": "active",
+    "website": "http://www.organicvalley.coop"
+  },
+  {
     "address": "N7630 County Road Bb",
     "aka": [
       "Ornua (Wisconsin) Ingredients LLC"
@@ -3168,31 +3316,6 @@
     },
     "status": "active",
     "website": "https://www.ornua.com/"
-  },
-  {
-    "address": "P.O. Box 1481",
-    "aka": [],
-    "city": "Pawleys Island",
-    "county": null,
-    "dfw_company_id": 1305,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "palmetto-cheese",
-    "lat": 33.4246,
-    "lng": -79.12951,
-    "name": "Palmetto Cheese",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": false
-    },
-    "status": "active",
-    "website": "https://pimentocheese.com"
   },
   {
     "address": "110 Eagle Dr",
@@ -3269,31 +3392,6 @@
     },
     "status": "active",
     "website": "http://www.pineriver.com/"
-  },
-  {
-    "address": "PO Box 4493",
-    "aka": [],
-    "city": "Davenport",
-    "county": null,
-    "dfw_company_id": 69,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "prairie-farms-dairy-inc",
-    "lat": 41.5236,
-    "lng": -90.5777,
-    "name": "Prairie Farms Dairy, Inc",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": false
-    },
-    "status": "active",
-    "website": "http://www.prairiefarms.com"
   },
   {
     "address": "W3933 Highview Dr.",
@@ -3709,10 +3807,13 @@
     "website": "https://www.saputocheeseusa.com/"
   },
   {
-    "address": "One Persnickety Place",
-    "aka": [],
-    "city": "Plymouth",
-    "county": null,
+    "address": "460 S 8th St",
+    "aka": [
+      "Sargento Cheese Inc.",
+      "TTLF Inc."
+    ],
+    "city": "Hilbert",
+    "county": "Calumet",
     "dfw_company_id": 100,
     "editorial": {
       "photo": null,
@@ -3720,11 +3821,73 @@
       "visit_notes": null
     },
     "founded": null,
-    "id": "sargento-foods-inc",
+    "id": "sargento-cheese-inc",
     "lat": 43.925776,
     "lng": -88.019373,
     "name": "Sargento Foods, Inc.",
-    "plants": [],
+    "plants": [
+      {
+        "address": "460 S 8th St",
+        "city": "Hilbert",
+        "county": "Calumet",
+        "datcp_id": "55-1011",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "460 S 8th St",
+        "city": "Hilbert",
+        "county": "Calumet",
+        "datcp_id": "55-2711",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "1 Persnickety Pl",
+        "city": "Kiel",
+        "county": "Manitowoc",
+        "datcp_id": "55-3377",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "N5279 County Road G",
+        "city": "Saint Cloud",
+        "county": "Fond du Lac",
+        "datcp_id": "55-4288",
+        "operations": [
+          "Bovine Milk",
+          "Brine System",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Powder Mixing/Blending",
+          "Whey/Whey By Products",
+          "Mozzarella"
+        ]
+      },
+      {
+        "address": "1 Persnickety Pl",
+        "city": "Plymouth",
+        "county": "Sheboygan",
+        "datcp_id": "55-4911",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      }
+    ],
     "retail": {
       "mail_order": false,
       "online": false,
@@ -3734,10 +3897,12 @@
     "website": "http://www.sargento.com"
   },
   {
-    "address": "107 Pleasant View Road",
-    "aka": [],
+    "address": "W4200 County Road PP",
+    "aka": [
+      "Sartori Company"
+    ],
     "city": "Plymouth",
-    "county": null,
+    "county": "Sheboygan",
     "dfw_company_id": 25,
     "editorial": {
       "photo": null,
@@ -3745,11 +3910,69 @@
       "visit_notes": null
     },
     "founded": null,
-    "id": "sartori-cheese-company",
+    "id": "sartori-company",
     "lat": 43.745728,
     "lng": -87.951304,
     "name": "Sartori Cheese Company",
-    "plants": [],
+    "plants": [
+      {
+        "address": "W4200 County Road PP",
+        "city": "Plymouth",
+        "county": "Sheboygan",
+        "datcp_id": "55-230",
+        "operations": [
+          "ACaSS",
+          "Bovine Milk",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "2 E Main St",
+        "city": "Plymouth",
+        "county": "Sheboygan",
+        "datcp_id": "55-239",
+        "operations": [
+          "Bovine Milk",
+          "Affinage (Aging)",
+          "Cheese Processing",
+          "Cut/Wrap/Shred"
+        ]
+      },
+      {
+        "address": "201 Morse St",
+        "city": "Antigo",
+        "county": "Langlade",
+        "datcp_id": "55-352",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Membrane Processing",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      },
+      {
+        "address": "12 W Main St",
+        "city": "Plymouth",
+        "county": "Sheboygan",
+        "datcp_id": "55-1785",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cream",
+          "Membrane Processing",
+          "Pasteurizer - HTST",
+          "Whey/Whey By Products",
+          "Asiago",
+          "Cheddar",
+          "Other",
+          "Parmesan and Reggiano",
+          "Romano"
+        ]
+      }
+    ],
     "retail": {
       "mail_order": false,
       "online": false,
@@ -3844,35 +4067,13 @@
     "website": "http://www.schreiberfoods.com"
   },
   {
-    "address": "40 New Dutch Lane",
-    "aka": [],
-    "city": "Fairfield",
-    "county": null,
-    "dfw_company_id": 125,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "schuman-cheese-inc",
-    "lat": 45.390182,
-    "lng": -92.161305,
-    "name": "Schuman Cheese, Inc.",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": false
-    },
-    "status": "active",
-    "website": "http://schumancheese.com/"
-  },
-  {
     "address": "2082 Old Martin Rd",
-    "aka": [],
+    "aka": [
+      "Scray's Cheese Co",
+      "Scray's Cheese, LLC"
+    ],
     "city": "De Pere",
-    "county": null,
+    "county": "Brown",
     "dfw_company_id": 54,
     "editorial": {
       "photo": null,
@@ -3880,11 +4081,26 @@
       "visit_notes": null
     },
     "founded": null,
-    "id": "scray-cheese-company",
+    "id": "scray-s-cheese-co",
     "lat": 44.401066,
     "lng": -88.065534,
     "name": "Scray Cheese Company",
-    "plants": [],
+    "plants": [
+      {
+        "address": "2082 Old Martin Rd",
+        "city": "De Pere",
+        "county": "Brown",
+        "datcp_id": "55-1805",
+        "operations": [
+          "Bovine Milk",
+          "Cheese Processing",
+          "Cheddar",
+          "Edam",
+          "Gouda",
+          "Mozzarella"
+        ]
+      }
+    ],
     "retail": {
       "mail_order": false,
       "online": false,
@@ -3986,10 +4202,12 @@
     "website": "http://www.specialcheese.com"
   },
   {
-    "address": "7989 Arndt Road",
-    "aka": [],
+    "address": "7989 Arndt Rd",
+    "aka": [
+      "Springside Artisan Cheese LLC"
+    ],
     "city": "Oconto Falls",
-    "county": null,
+    "county": "Oconto",
     "dfw_company_id": 155,
     "editorial": {
       "photo": null,
@@ -3997,11 +4215,31 @@
       "visit_notes": null
     },
     "founded": null,
-    "id": "springside-cheese-corporation",
+    "id": "springside-artisan-cheese-llc",
     "lat": 44.966475,
     "lng": -88.159438,
     "name": "Springside Cheese Corporation",
-    "plants": [],
+    "plants": [
+      {
+        "address": "7989 Arndt Rd",
+        "city": "Oconto Falls",
+        "county": "Oconto",
+        "datcp_id": "55-1712",
+        "operations": [
+          "Bovine Milk",
+          "Retail Store",
+          "Cheese Processing",
+          "Cut/Wrap/Shred",
+          "Pasteurizer - HTST",
+          "Cheddar",
+          "Colby",
+          "Gouda",
+          "Monterey/Monterey Jack",
+          "Mozzarella",
+          "Washed Curd and Soaked Curd"
+        ]
+      }
+    ],
     "retail": {
       "mail_order": false,
       "online": false,
@@ -4488,56 +4726,6 @@
     },
     "status": "active",
     "website": "http://sabrosurafoods.com/"
-  },
-  {
-    "address": "Box 215 Hwy 34/C",
-    "aka": [],
-    "city": "Rudolph",
-    "county": null,
-    "dfw_company_id": 50,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "wisconsin-dairy-state-cheese-co-inc",
-    "lat": 44.5,
-    "lng": -89.81,
-    "name": "Wisconsin Dairy State Cheese Co, Inc",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": true
-    },
-    "status": "active",
-    "website": "http://dairystatecheese.com/"
-  },
-  {
-    "address": "P.O. Box 940425",
-    "aka": [],
-    "city": "Plano",
-    "county": null,
-    "dfw_company_id": 124,
-    "editorial": {
-      "photo": null,
-      "summary": null,
-      "visit_notes": null
-    },
-    "founded": null,
-    "id": "wisconsin-s-finest",
-    "lat": 33.021845,
-    "lng": -96.615719,
-    "name": "Wisconsin's Finest",
-    "plants": [],
-    "retail": {
-      "mail_order": false,
-      "online": false,
-      "store": false
-    },
-    "status": "active",
-    "website": "http://www.wisconsinsfinest.com"
   },
   {
     "address": "5710 County Road H",

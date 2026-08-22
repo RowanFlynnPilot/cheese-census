@@ -78,17 +78,10 @@
   },
   {
     "city": "Kaukauna",
-    "evidence": "DFW lists it as a maker (5 cheese types: Edam, Fontina, Gouda, Havarti); 0 DATCP plant(s)",
-    "id": "arla-foods-inc",
+    "evidence": "DFW lists it as a maker (5 cheese types: Edam, Fontina, Gouda, Havarti); 1 DATCP plant(s)",
+    "id": "arla-foods-production-llc-arla-foods-amba",
     "name": "Arla Foods, Inc.",
     "suggested": "creamery"
-  },
-  {
-    "city": "Kaukauna",
-    "evidence": "1 DATCP plant(s) making Edam, Gouda, Muenster (Munster), Other; no DFW consumer listing",
-    "id": "arla-foods-production-llc-arla-foods-amba",
-    "name": "Arla Foods Production, LLC (Arla Foods Amba)",
-    "suggested": "commodity"
   },
   {
     "city": "Blair",
@@ -134,10 +127,10 @@
   },
   {
     "city": "Appleton",
-    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: ACaSS, Bovine Milk, Cut/Wrap/Shred, Powder Mixing/Blending",
+    "evidence": "DFW lists it as a maker (5 cheese types: Cheddar, Cream Cheese, Mozzarella, Parmesan); 1 DATCP plant(s)",
     "id": "bella-pak-llc",
-    "name": "Bella Pak LLC",
-    "suggested": "processor"
+    "name": "MCT Dairies, Inc.",
+    "suggested": "creamery"
   },
   {
     "city": "Shawano",
@@ -392,13 +385,6 @@
     "suggested": "commodity"
   },
   {
-    "city": "La Farge",
-    "evidence": "DFW lists it as a maker (12 cheese types: Blue, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 0 DATCP plant(s)",
-    "id": "cropp-cooperative-organic-valley",
-    "name": "CROPP Cooperative/Organic Valley",
-    "suggested": "creamery"
-  },
-  {
     "city": "Osceola",
     "evidence": "DFW lists it as a maker (3 cheese types: Cheddar, Colby, Gouda), retail store; 1 DATCP plant(s)",
     "id": "crystal-ball-farms",
@@ -449,10 +435,10 @@
   },
   {
     "city": "Rudolph",
-    "evidence": "1 DATCP plant(s) making Asiago, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (41 cheese types: Asiago, Blue, Brick, Brie), retail store; 1 DATCP plant(s)",
     "id": "dairy-state-cheese-llc",
-    "name": "Dairy State Cheese, LLC",
-    "suggested": "commodity"
+    "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "suggested": "creamery"
   },
   {
     "city": "Blue Mounds",
@@ -777,18 +763,11 @@
     "suggested": "creamery"
   },
   {
-    "city": "De Pere",
-    "evidence": "DFW lists it as a maker (10 cheese types: Cheddar, Havarti, Monterey Jack, Mozzarella); 0 DATCP plant(s)",
-    "id": "harmony-cheese-de-pere",
+    "city": "Athens",
+    "evidence": "DFW lists it as a maker (10 cheese types: Cheddar, Havarti, Monterey Jack, Mozzarella); 1 DATCP plant(s)",
+    "id": "harmony-cheese-llc-athens-plant",
     "name": "Harmony Cheese",
     "suggested": "creamery"
-  },
-  {
-    "city": "Athens",
-    "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Cut/Wrap/Shred",
-    "id": "harmony-cheese-llc-athens-plant",
-    "name": "Harmony Cheese LLC - Athens Plant",
-    "suggested": "processor"
   },
   {
     "city": "Barron",
@@ -1086,10 +1065,10 @@
   },
   {
     "city": "Turtle Lake",
-    "evidence": "1 DATCP plant(s) making Asiago, Other, Parmesan and Reggiano, Romano; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (7 cheese types: Asiago, Blue, Fontina, Gorgonzola); 1 DATCP plant(s)",
     "id": "lake-country-dairy-inc",
-    "name": "Lake Country Dairy, Inc.",
-    "suggested": "commodity"
+    "name": "Schuman Cheese, Inc.",
+    "suggested": "creamery"
   },
   {
     "city": "Appleton",
@@ -1251,13 +1230,6 @@
     "id": "mccluskey-brothers",
     "name": "McCluskey Brothers",
     "suggested": "commodity"
-  },
-  {
-    "city": "Green Bay",
-    "evidence": "DFW lists it as a maker (5 cheese types: Cheddar, Cream Cheese, Mozzarella, Parmesan); 0 DATCP plant(s)",
-    "id": "mct-dairies-inc",
-    "name": "MCT Dairies, Inc.",
-    "suggested": "creamery"
   },
   {
     "city": "Muscoda",
@@ -1457,10 +1429,10 @@
   },
   {
     "city": "Chaseburg",
-    "evidence": "2 DATCP plant(s) making Other; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (12 cheese types: Blue, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 2 DATCP plant(s)",
     "id": "organic-valley-chaseburg",
-    "name": "Organic Valley Chaseburg",
-    "suggested": "commodity"
+    "name": "CROPP Cooperative/Organic Valley",
+    "suggested": "creamery"
   },
   {
     "city": "Hilbert",
@@ -1730,31 +1702,17 @@
   },
   {
     "city": "Hilbert",
-    "evidence": "5 DATCP plant(s) making Mozzarella; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (28 cheese types: Asadero, Asiago, Baby Swiss, Blue); 5 DATCP plant(s)",
     "id": "sargento-cheese-inc",
-    "name": "Sargento Cheese Inc.",
-    "suggested": "commodity"
-  },
-  {
-    "city": "Plymouth",
-    "evidence": "DFW lists it as a maker (28 cheese types: Asadero, Asiago, Baby Swiss, Blue); 0 DATCP plant(s)",
-    "id": "sargento-foods-inc",
     "name": "Sargento Foods, Inc.",
     "suggested": "creamery"
   },
   {
     "city": "Plymouth",
-    "evidence": "DFW lists it as a maker (16 cheese types: Asadero, Asiago, Blue, Cheese Blends (excl. Colby-Monterey Jack)); 0 DATCP plant(s)",
-    "id": "sartori-cheese-company",
+    "evidence": "DFW lists it as a maker (16 cheese types: Asadero, Asiago, Blue, Cheese Blends (excl. Colby-Monterey Jack)); 4 DATCP plant(s)",
+    "id": "sartori-company",
     "name": "Sartori Cheese Company",
     "suggested": "creamery"
-  },
-  {
-    "city": "Plymouth",
-    "evidence": "4 DATCP plant(s) making Asiago, Cheddar, Other, Parmesan and Reggiano, Romano; no DFW consumer listing",
-    "id": "sartori-company",
-    "name": "Sartori Company",
-    "suggested": "commodity"
   },
   {
     "city": "Columbus",
@@ -1792,13 +1750,6 @@
     "suggested": "commodity"
   },
   {
-    "city": "Fairfield",
-    "evidence": "DFW lists it as a maker (7 cheese types: Asiago, Blue, Fontina, Gorgonzola); 0 DATCP plant(s)",
-    "id": "schuman-cheese-inc",
-    "name": "Schuman Cheese, Inc.",
-    "suggested": "creamery"
-  },
-  {
     "city": "Chilton",
     "evidence": "1 DATCP plant(s), no cheese manufactured; operations: Bovine Milk, Frozen Dairy Products",
     "id": "scoops-ice-cream-house",
@@ -1821,17 +1772,10 @@
   },
   {
     "city": "De Pere",
-    "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Edam, Fontina, Gouda), retail store; 0 DATCP plant(s)",
-    "id": "scray-cheese-company",
+    "evidence": "DFW lists it as a maker (4 cheese types: Cheddar, Edam, Fontina, Gouda), retail store; 1 DATCP plant(s)",
+    "id": "scray-s-cheese-co",
     "name": "Scray Cheese Company",
     "suggested": "creamery"
-  },
-  {
-    "city": "De Pere",
-    "evidence": "1 DATCP plant(s) making Cheddar, Edam, Gouda, Mozzarella; no DFW consumer listing",
-    "id": "scray-s-cheese-co",
-    "name": "Scray's Cheese Co",
-    "suggested": "commodity"
   },
   {
     "city": "La Crosse",
@@ -1870,15 +1814,8 @@
   },
   {
     "city": "Oconto Falls",
-    "evidence": "1 DATCP plant(s) making Cheddar, Colby, Gouda, Monterey/Monterey Jack, Mozzarella; no DFW consumer listing",
+    "evidence": "DFW lists it as a maker (8 cheese types: Cheddar, Colby, Colby-Monterey Jack, Farmers), retail store; 1 DATCP plant(s)",
     "id": "springside-artisan-cheese-llc",
-    "name": "Springside Artisan Cheese LLC",
-    "suggested": "commodity"
-  },
-  {
-    "city": "Oconto Falls",
-    "evidence": "DFW lists it as a maker (8 cheese types: Cheddar, Colby, Colby-Monterey Jack, Farmers), retail store; 0 DATCP plant(s)",
-    "id": "springside-cheese-corporation",
     "name": "Springside Cheese Corporation",
     "suggested": "creamery"
   },
@@ -2140,13 +2077,6 @@
     "id": "wisconsin-dairy-distributing",
     "name": "Wisconsin Dairy Distributing",
     "suggested": "processor"
-  },
-  {
-    "city": "Rudolph",
-    "evidence": "DFW lists it as a maker (41 cheese types: Asiago, Blue, Brick, Brie), retail store; 0 DATCP plant(s)",
-    "id": "wisconsin-dairy-state-cheese-co-inc",
-    "name": "Wisconsin Dairy State Cheese Co, Inc",
-    "suggested": "creamery"
   },
   {
     "city": "Mauston",

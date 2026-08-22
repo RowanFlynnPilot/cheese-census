@@ -366,10 +366,34 @@
     "source_key": "wccc-2026-c90-2"
   },
   {
+    "creamery_id": "sargento-cheese-inc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "100"
+  },
+  {
+    "creamery_id": "lake-country-dairy-inc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "125"
+  },
+  {
     "creamery_id": "kingston-cheese-cooperative",
     "method": "manual",
     "source": "dfw",
     "source_key": "1301"
+  },
+  {
+    "creamery_id": "springside-artisan-cheese-llc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "155"
+  },
+  {
+    "creamery_id": "organic-valley-chaseburg",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "16"
   },
   {
     "creamery_id": "revela-foods-colby-llc",
@@ -384,6 +408,12 @@
     "source_key": "193"
   },
   {
+    "creamery_id": "harmony-cheese-llc-athens-plant",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "199"
+  },
+  {
     "creamery_id": "oshkosh-storage-company",
     "method": "manual",
     "source": "dfw",
@@ -394,6 +424,12 @@
     "method": "manual",
     "source": "dfw",
     "source_key": "231"
+  },
+  {
+    "creamery_id": "sartori-company",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "25"
   },
   {
     "creamery_id": "harmony-cheese",
@@ -408,16 +444,40 @@
     "source_key": "272"
   },
   {
+    "creamery_id": "bella-pak-llc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "298"
+  },
+  {
     "creamery_id": "crystal-farms-dairy-co",
     "method": "manual",
     "source": "dfw",
     "source_key": "38"
   },
   {
+    "creamery_id": "dairy-state-cheese-llc",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "50"
+  },
+  {
+    "creamery_id": "scray-s-cheese-co",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "54"
+  },
+  {
     "creamery_id": "forgotten-valley-cheese",
     "method": "manual",
     "source": "dfw",
     "source_key": "63"
+  },
+  {
+    "creamery_id": "arla-foods-production-llc-arla-foods-amba",
+    "method": "manual",
+    "source": "dfw",
+    "source_key": "96"
   },
   {
     "creamery_id": "eau-galle-cheese-factory-llc",

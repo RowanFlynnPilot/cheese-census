@@ -35,39 +35,6 @@
   {
     "candidates": [
       {
-        "city": "Hilbert",
-        "city_match": true,
-        "company": "Sargento Cheese Inc.",
-        "company_key": "ttlf",
-        "name_similarity": 0.69,
-        "plants": 5
-      },
-      {
-        "city": "Middleton",
-        "city_match": false,
-        "company": "Saco Foods and Hoosier Hill Farm",
-        "company_key": "saco foods",
-        "name_similarity": 0.75,
-        "plants": 1
-      },
-      {
-        "city": "Plymouth",
-        "city_match": true,
-        "company": "Masters Gallery Foods, Inc.",
-        "company_key": "masters gallery foods",
-        "name_similarity": 0.514,
-        "plants": 2
-      }
-    ],
-    "city": "Plymouth",
-    "name": "Sargento Foods, Inc.",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "100"
-  },
-  {
-    "candidates": [
-      {
         "city": "Appleton",
         "city_match": false,
         "company": "Bella Pak LLC",
@@ -81,39 +48,6 @@
     "resolved_to": "a new standalone creamery",
     "source": "dfw",
     "source_key": "12"
-  },
-  {
-    "candidates": [
-      {
-        "city": "Monroe",
-        "city_match": false,
-        "company": "Chalet Cheese Cooperative",
-        "company_key": "chalet cheese",
-        "name_similarity": 0.741,
-        "plants": 2
-      },
-      {
-        "city": "Gilman",
-        "city_match": false,
-        "company": "Gilman Cheese Corporation",
-        "company_key": "gilman acquisition",
-        "name_similarity": 0.741,
-        "plants": 1
-      },
-      {
-        "city": "Holmen",
-        "city_match": false,
-        "company": "Holmen Cheese, LLC",
-        "company_key": "holmen cheese",
-        "name_similarity": 0.741,
-        "plants": 1
-      }
-    ],
-    "city": "Fairfield",
-    "name": "Schuman Cheese, Inc.",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "125"
   },
   {
     "candidates": [
@@ -139,56 +73,6 @@
     "resolved_to": "a new standalone creamery",
     "source": "dfw",
     "source_key": "1305"
-  },
-  {
-    "candidates": [
-      {
-        "city": "Oconto Falls",
-        "city_match": true,
-        "company": "Springside Artisan Cheese LLC",
-        "company_key": "springside artisan cheese",
-        "name_similarity": 0.81,
-        "plants": 1
-      },
-      {
-        "city": "Sturtevant",
-        "city_match": false,
-        "company": "Alpinage Cheese Co.",
-        "company_key": "alpinage cheese",
-        "name_similarity": 0.75,
-        "plants": 1
-      },
-      {
-        "city": "South Wayne",
-        "city_match": false,
-        "company": "Forgotten Valley Cheese",
-        "company_key": "alpine cheese",
-        "name_similarity": 0.733,
-        "plants": 1
-      }
-    ],
-    "city": "Oconto Falls",
-    "name": "Springside Cheese Corporation",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "155"
-  },
-  {
-    "candidates": [
-      {
-        "city": "Chaseburg",
-        "city_match": false,
-        "company": "Organic Valley Chaseburg",
-        "company_key": "regions of organic producer pools",
-        "name_similarity": 0.824,
-        "plants": 2
-      }
-    ],
-    "city": "La Farge",
-    "name": "CROPP Cooperative/Organic Valley",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "16"
   },
   {
     "candidates": [
@@ -252,39 +136,6 @@
   {
     "candidates": [
       {
-        "city": "Edgar",
-        "city_match": false,
-        "company": "Harmony Cheese",
-        "company_key": "anderson international",
-        "name_similarity": 1.0,
-        "plants": 1
-      },
-      {
-        "city": "Athens",
-        "city_match": false,
-        "company": "Harmony Cheese LLC - Athens Plant",
-        "company_key": "harmony cheese",
-        "name_similarity": 1.0,
-        "plants": 1
-      },
-      {
-        "city": "De Pere",
-        "city_match": true,
-        "company": "Scray's Cheese Co",
-        "company_key": "scray s cheese",
-        "name_similarity": 0.643,
-        "plants": 1
-      }
-    ],
-    "city": "De Pere",
-    "name": "Harmony Cheese",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "199"
-  },
-  {
-    "candidates": [
-      {
         "city": "Appleton",
         "city_match": true,
         "company": "Foremost Farms USA Cooperative",
@@ -336,39 +187,6 @@
   {
     "candidates": [
       {
-        "city": "Hilbert",
-        "city_match": true,
-        "company": "Sargento Cheese Inc.",
-        "company_key": "ttlf",
-        "name_similarity": 0.828,
-        "plants": 5
-      },
-      {
-        "city": "Plymouth",
-        "city_match": true,
-        "company": "Sartori Company",
-        "company_key": "sartori",
-        "name_similarity": 0.667,
-        "plants": 4
-      },
-      {
-        "city": "Waupun",
-        "city_match": false,
-        "company": "Saputo Cheese USA Inc.",
-        "company_key": "saputo cheese",
-        "name_similarity": 0.815,
-        "plants": 7
-      }
-    ],
-    "city": "Plymouth",
-    "name": "Sartori Cheese Company",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "25"
-  },
-  {
-    "candidates": [
-      {
         "city": "Germantown",
         "city_match": false,
         "company": "Gehl Foods",
@@ -382,23 +200,6 @@
     "resolved_to": "a new standalone creamery",
     "source": "dfw",
     "source_key": "253"
-  },
-  {
-    "candidates": [
-      {
-        "city": "Kewaskum",
-        "city_match": false,
-        "company": "Family Dairies USA",
-        "company_key": "farmfirst dairy",
-        "name_similarity": 0.72,
-        "plants": 1
-      }
-    ],
-    "city": "Green Bay",
-    "name": "MCT Dairies, Inc.",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "298"
   },
   {
     "candidates": [
@@ -424,72 +225,6 @@
     "resolved_to": "a new standalone creamery",
     "source": "dfw",
     "source_key": "45"
-  },
-  {
-    "candidates": [
-      {
-        "city": "Rudolph",
-        "city_match": true,
-        "company": "Dairy State Cheese, LLC",
-        "company_key": "dairy state cheese",
-        "name_similarity": 0.783,
-        "plants": 1
-      },
-      {
-        "city": "Mauston",
-        "city_match": false,
-        "company": "Wisconsin Pride Cheese Co. Inc.",
-        "company_key": "wisconsin pride cheese",
-        "name_similarity": 0.76,
-        "plants": 1
-      },
-      {
-        "city": "Oregon",
-        "city_match": false,
-        "company": "Wisconsin Cheese Company",
-        "company_key": "wisconsin cheese",
-        "name_similarity": 0.727,
-        "plants": 1
-      }
-    ],
-    "city": "Rudolph",
-    "name": "Wisconsin Dairy State Cheese Co, Inc",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "50"
-  },
-  {
-    "candidates": [
-      {
-        "city": "De Pere",
-        "city_match": true,
-        "company": "Scray's Cheese Co",
-        "company_key": "scray s cheese",
-        "name_similarity": 0.923,
-        "plants": 1
-      },
-      {
-        "city": "Reeseville",
-        "city_match": false,
-        "company": "Specialty Cheese",
-        "company_key": "specialty cheese",
-        "name_similarity": 0.786,
-        "plants": 1
-      },
-      {
-        "city": "Cascade",
-        "city_match": false,
-        "company": "Cascade Cheese Co",
-        "company_key": "babler",
-        "name_similarity": 0.769,
-        "plants": 1
-      }
-    ],
-    "city": "De Pere",
-    "name": "Scray Cheese Company",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "54"
   },
   {
     "candidates": [
@@ -560,39 +295,6 @@
   {
     "candidates": [
       {
-        "city": "Kaukauna",
-        "city_match": true,
-        "company": "Arla Foods Production, LLC (Arla Foods Amba)",
-        "company_key": "arla foods amba",
-        "name_similarity": 0.8,
-        "plants": 1
-      },
-      {
-        "city": "Colfax",
-        "city_match": false,
-        "company": "CTL Foods, Inc.",
-        "company_key": "ctl foods",
-        "name_similarity": 0.737,
-        "plants": 1
-      },
-      {
-        "city": "Sparta",
-        "city_match": false,
-        "company": "Century Foods International",
-        "company_key": "hormel foods",
-        "name_similarity": 0.727,
-        "plants": 3
-      }
-    ],
-    "city": "Kaukauna",
-    "name": "Arla Foods, Inc.",
-    "resolved_to": "a new standalone creamery",
-    "source": "dfw",
-    "source_key": "96"
-  },
-  {
-    "candidates": [
-      {
         "city": "Belgium",
         "company": "Cedar Valley Cheese Store",
         "company_key": "cedar-valley-cheese-store",
@@ -612,26 +314,5 @@
     "resolved_to": null,
     "source": "duplicate-company",
     "source_key": "cedar-valley-cheese-inc|cedar-valley-cheese-store"
-  },
-  {
-    "candidates": [
-      {
-        "city": "De Pere",
-        "company": "Scray's Cheese Co",
-        "company_key": "scray-s-cheese-co",
-        "name_similarity": 0.923,
-        "plants": [
-          "55-1805"
-        ],
-        "shared_cities": [
-          "de pere"
-        ]
-      }
-    ],
-    "city": "De Pere",
-    "name": "Scray Cheese Company",
-    "resolved_to": null,
-    "source": "duplicate-company",
-    "source_key": "scray-cheese-company|scray-s-cheese-co"
   }
 ]
