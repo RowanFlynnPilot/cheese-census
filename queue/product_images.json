@@ -41,7 +41,7 @@
   },
   {
     "cheese_id": "arena-cheese--monterey-jack",
-    "image": "http://www.arenacheese.com/prodimages/Monterey_small.jpg",
+    "image": "http://www.arenacheese.com/prodimages/Monterey.jpg",
     "matched_title": "monterey jack",
     "source_page": "http://www.arenacheese.com",
     "summary": null,
@@ -49,7 +49,7 @@
   },
   {
     "cheese_id": "arena-cheese--pepper-jack",
-    "image": "http://www.arenacheese.com/prodimages/Pepper Jack_small.jpg",
+    "image": "http://www.arenacheese.com/prodimages/Pepper Jack.jpg",
     "matched_title": "pepper jack",
     "source_page": "http://www.arenacheese.com",
     "summary": null,
@@ -1057,7 +1057,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--1-year-aged-sharp-cheddar",
-    "image": "http://gilecheese.com/prodimages/1-yr-aged-cheddar_small.jpg",
+    "image": "http://gilecheese.com/prodimages/1-yr-aged-cheddar.jpg",
     "matched_title": "1 year aged sharp cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1065,7 +1065,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--beer-cheddar",
-    "image": "http://gilecheese.com/prodimages/beer-cheddar_small.jpg",
+    "image": "http://gilecheese.com/prodimages/beer-cheddar.jpg",
     "matched_title": "beer cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1073,7 +1073,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--black-pepper-cheddar",
-    "image": "http://gilecheese.com/prodimages/black-pepper-cheddar_small.jpg",
+    "image": "http://gilecheese.com/prodimages/black-pepper-cheddar.jpg",
     "matched_title": "black pepper cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1081,7 +1081,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--cheddar",
-    "image": "http://gilecheese.com/prodimages/medium-cheddar-2_small.jpg",
+    "image": "http://gilecheese.com/prodimages/medium-cheddar-2.jpg",
     "matched_title": "medium cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1097,7 +1097,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--chipotle-pepper-cheddar",
-    "image": "http://gilecheese.com/prodimages/chipotle-pepper_small.jpg",
+    "image": "http://gilecheese.com/prodimages/chipotle-pepper.jpg",
     "matched_title": "chipotle pepper cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1105,7 +1105,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--cranberry-cheddar",
-    "image": "http://gilecheese.com/prodimages/cranberry-cheddar_small.jpg",
+    "image": "http://gilecheese.com/prodimages/cranberry-cheddar.jpg",
     "matched_title": "cranberry cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1113,7 +1113,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--mild-cheddar",
-    "image": "http://gilecheese.com/prodimages/mild-cheddar-2_small.jpg",
+    "image": "http://gilecheese.com/prodimages/mild-cheddar-2.jpg",
     "matched_title": "mild cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1121,7 +1121,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--morel-and-leek-jack",
-    "image": "http://gilecheese.com/prodimages/morel-leek-jack_small.jpg",
+    "image": "http://gilecheese.com/prodimages/morel-leek-jack.jpg",
     "matched_title": "morel and leek jack",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1129,7 +1129,7 @@
   },
   {
     "cheese_id": "gile-cheese-llc--tomato-basil-cheddar",
-    "image": "http://gilecheese.com/prodimages/tomato-basil-cheddar_small.jpg",
+    "image": "http://gilecheese.com/prodimages/tomato-basil-cheddar.jpg",
     "matched_title": "tomato basil cheddar",
     "source_page": "http://gilecheese.com/",
     "summary": null,
@@ -1329,7 +1329,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--aged-goat-cheddar",
-    "image": "https://static.wixstatic.com/media/abe06f_aa873a64b7be4230bc6cbd9a6ae62712~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_aa873a64b7be4230bc6cbd9a6ae62712~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_aa873a64b7be4230bc6cbd9a6ae62712~mv2.png",
     "matched_title": "aged goat cheddar",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1337,7 +1337,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--cave-aged-chandoka",
-    "image": "https://static.wixstatic.com/media/9283d3_a4655195525747b38343af014606d207~mv2.jpg/v1/fill/w_147,h_118,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/9283d3_a4655195525747b38343af014606d207~mv2.jpg",
+    "image": "https://static.wixstatic.com/media/9283d3_a4655195525747b38343af014606d207~mv2.jpg",
     "matched_title": "cave aged chandoka",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1345,7 +1345,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--chandoka",
-    "image": "https://static.wixstatic.com/media/abe06f_c3f53f8a373d4bb99f28e29e1c2d3560~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_c3f53f8a373d4bb99f28e29e1c2d3560~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_c3f53f8a373d4bb99f28e29e1c2d3560~mv2.png",
     "matched_title": "chandoka",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1353,7 +1353,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--goat-cheddar",
-    "image": "https://static.wixstatic.com/media/abe06f_e4d6dc1c82d94236bd534cbb63d2274d~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_e4d6dc1c82d94236bd534cbb63d2274d~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_e4d6dc1c82d94236bd534cbb63d2274d~mv2.png",
     "matched_title": "goat cheddar",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1361,7 +1361,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--goat-feta",
-    "image": "https://static.wixstatic.com/media/abe06f_5f6a4b48c2a74726b36099309509b6d6~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_5f6a4b48c2a74726b36099309509b6d6~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_5f6a4b48c2a74726b36099309509b6d6~mv2.png",
     "matched_title": "goat feta",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1369,7 +1369,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--goat-jack",
-    "image": "https://static.wixstatic.com/media/abe06f_f7d2a3a914b5427e8dcc23f45842319c~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_f7d2a3a914b5427e8dcc23f45842319c~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_f7d2a3a914b5427e8dcc23f45842319c~mv2.png",
     "matched_title": "goat jack",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1377,7 +1377,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--goat-mozzarella",
-    "image": "https://static.wixstatic.com/media/abe06f_1f59eeaf384647a5b79c1559ac5077bc~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_1f59eeaf384647a5b79c1559ac5077bc~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_1f59eeaf384647a5b79c1559ac5077bc~mv2.png",
     "matched_title": "goat mozzarella",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1385,7 +1385,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--goat-pepper-jack",
-    "image": "https://static.wixstatic.com/media/abe06f_c5b21973f69243d2931c0475008fd807~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_c5b21973f69243d2931c0475008fd807~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_c5b21973f69243d2931c0475008fd807~mv2.png",
     "matched_title": "goat pepper jack",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1393,7 +1393,7 @@
   },
   {
     "cheese_id": "laclare-creamery-llc--smoked-goat-cheddar",
-    "image": "https://static.wixstatic.com/media/abe06f_3ca676991e0641b882a702208bbc7e73~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_3ca676991e0641b882a702208bbc7e73~mv2.png",
+    "image": "https://static.wixstatic.com/media/abe06f_3ca676991e0641b882a702208bbc7e73~mv2.png",
     "matched_title": "smoked goat cheddar",
     "source_page": "https://www.laclarefamilycreamery.com/products",
     "summary": null,
@@ -1817,7 +1817,7 @@
   },
   {
     "cheese_id": "nordic-creamery--aged-cheese-cheddar",
-    "image": "http://www.nordiccreamery.com/prodimages/Aged Cheddar_small.jpg",
+    "image": "http://www.nordiccreamery.com/prodimages/Aged Cheddar.jpg",
     "matched_title": "aged cheese cheddar",
     "source_page": "http://www.nordiccreamery.com/products.php?cat=All+Products",
     "summary": null,
@@ -1825,7 +1825,7 @@
   },
   {
     "cheese_id": "nordic-creamery--capriko-smoked-cheese",
-    "image": "http://www.nordiccreamery.com/prodimages/Capriko-Smoked-Cheese_small.jpg",
+    "image": "http://www.nordiccreamery.com/prodimages/Capriko-Smoked-Cheese.jpg",
     "matched_title": "capriko smoked cheese",
     "source_page": "http://www.nordiccreamery.com/products.php?cat=All+Products",
     "summary": null,
@@ -1833,7 +1833,7 @@
   },
   {
     "cheese_id": "nordic-creamery--raw-milk-goat-cheddar-cheese",
-    "image": "http://www.nordiccreamery.com/prodimages/Raw Milk Cheddar cheese_small.jpg",
+    "image": "http://www.nordiccreamery.com/prodimages/Raw Milk Cheddar cheese.jpg",
     "matched_title": "raw milk goat cheddar cheese",
     "source_page": "http://www.nordiccreamery.com/products.php?cat=All+Products",
     "summary": null,
@@ -2369,7 +2369,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--gouda",
-    "image": "https://static.wixstatic.com/media/1c6f8f_eac69f84a0c346ecaef7fa5d4ba9b58d~mv2.jpg/v1/fill/w_444,h_374,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_eac69f84a0c346ecaef7fa5d4ba9b58d~mv2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_eac69f84a0c346ecaef7fa5d4ba9b58d~mv2.jpg",
     "matched_title": "wakker s golden reserve gouda aged over 2000 days",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2377,7 +2377,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-creamy-aged-gouda-aged-12-18-months",
-    "image": "https://static.wixstatic.com/media/1c6f8f_e535cffa75d848c8997199f74c9e3b36~mv2_d_4912_2760_s_4_2.jpg/v1/fill/w_737,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_e535cffa75d848c8997199f74c9e3b36~mv2_d_4912_2760_s_4_2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_e535cffa75d848c8997199f74c9e3b36~mv2_d_4912_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy aged gouda aged 12 18 months",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2385,7 +2385,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-creamy-cheddar-curds",
-    "image": "https://static.wixstatic.com/media/1c6f8f_72877ad1125c4c48954e146d137f2992~mv2_d_5952_3348_s_4_2.jpg/v1/fill/w_893,h_502,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_72877ad1125c4c48954e146d137f2992~mv2_d_5952_3348_s_4_2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_72877ad1125c4c48954e146d137f2992~mv2_d_5952_3348_s_4_2.jpg",
     "matched_title": "wakker s creamy cheddar curds",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2393,7 +2393,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-creamy-cumin-gouda",
-    "image": "https://static.wixstatic.com/media/1c6f8f_4fc131e95e5c4374a309cd34c4abd7c0~mv2_d_4912_2760_s_4_2.jpg/v1/fill/w_737,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_4fc131e95e5c4374a309cd34c4abd7c0~mv2_d_4912_2760_s_4_2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_4fc131e95e5c4374a309cd34c4abd7c0~mv2_d_4912_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy cumin gouda",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2401,7 +2401,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-creamy-mild-gouda-aged-6-9-months",
-    "image": "https://static.wixstatic.com/media/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg/v1/fill/w_427,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy mild gouda aged 6 9 months",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2409,7 +2409,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-creamy-young-gouda-aged-2-4-months",
-    "image": "https://static.wixstatic.com/media/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg/v1/fill/w_427,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy young gouda aged 2 4 months",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2417,7 +2417,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-extra-aged-chipotle-gouda",
-    "image": "https://static.wixstatic.com/media/1c6f8f_50188081880b463aa348393129688adf~mv2.jpg/v1/fill/w_636,h_377,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_50188081880b463aa348393129688adf~mv2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_50188081880b463aa348393129688adf~mv2.jpg",
     "matched_title": "wakker s extra aged chipotle gouda",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,
@@ -2425,7 +2425,7 @@
   },
   {
     "cheese_id": "wakker-cheese-llc--wakker-s-young-chipotle-gouda",
-    "image": "https://static.wixstatic.com/media/1c6f8f_f84e80c0147d48998572a27b628d3e18~mv2.jpg/v1/fill/w_381,h_402,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_f84e80c0147d48998572a27b628d3e18~mv2.jpg",
+    "image": "https://static.wixstatic.com/media/1c6f8f_f84e80c0147d48998572a27b628d3e18~mv2.jpg",
     "matched_title": "wakker s young chipotle gouda",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
     "summary": null,

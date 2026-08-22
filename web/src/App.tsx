@@ -960,7 +960,8 @@ export default function App() {
         </button>
         {DATA_STATUS !== "reviewed" && (
           <button className="provisional" onClick={openAbout}>
-            Provisional data — classifications not yet editorially reviewed
+            Provisional data
+            <span className="pd-long"> — classifications not yet editorially reviewed</span>
           </button>
         )}
       </footer>

@@ -182,14 +182,63 @@ def squarespace(page_url: str) -> dict[str, dict]:
     return found
 
 
+# Listing pages serve thumbnails. Known patterns, each swappable for the
+# original: Wix's transform segment (w_75,h_75 placeholders — the source of
+# genuinely blurry panels), a "_small"-style name suffix, and WordPress-style
+# -WxH suffixes when the dimensions are actually small.
+WIX_TRANSFORM = re.compile(r"^(https?://static\.wixstatic\.com/media/[^/]+)/v1/.*$")
+NAMED_SMALL = re.compile(
+    r"_(?:small|thumb|thumbnail|compact|icon)(?=\.(?:jpe?g|png|webp)(?:\?|$))", re.I
+)
+SIZE_SUFFIX = re.compile(
+    r"[-_](\d{2,4})x(\d{2,4})(?=\.(?:jpe?g|png|webp)(?:\?|$))", re.I
+)
+
+
+def _upgrade(url: str) -> str:
+    """Swap a thumbnail URL for its original — but keep the swap only if the
+    original really exists (one cached probe), else the thumbnail stands."""
+    candidate = WIX_TRANSFORM.sub(r"\1", url)
+    if candidate == url:
+        candidate = NAMED_SMALL.sub("", url)
+    if candidate == url:
+        m = SIZE_SUFFIX.search(url)
+        if m and max(int(m.group(1)), int(m.group(2))) < 400:
+            candidate = SIZE_SUFFIX.sub("", url)
+    if candidate != url and probe(candidate) is not None:
+        return candidate
+    return url
+
+
+def _largest_srcset(value: str) -> str | None:
+    """A srcset's FIRST candidate is usually its smallest — take the widest."""
+    best_url, best_w = None, -1
+    for part in value.split(","):
+        bits = part.strip().split()
+        if not bits:
+            continue
+        width = 0
+        if len(bits) > 1 and bits[1].endswith("w"):
+            try:
+                width = int(bits[1][:-1])
+            except ValueError:
+                width = 0
+        if width > best_w:
+            best_w, best_url = width, bits[0]
+    return best_url
+
+
 def _img_src(img, base: str) -> str | None:
     src = img.get("data-src") or img.get("data-original") or img.get("src")
-    if not src and img.get("srcset"):
-        src = img["srcset"].split(",")[0].split()[0]
+    srcset = img.get("data-srcset") or img.get("srcset")
+    if not src and srcset:
+        src = _largest_srcset(srcset)
     if not src or src.startswith("data:"):
         return None
     absolute = urljoin(base, src)
-    return None if NOISE.search(absolute) else absolute
+    if NOISE.search(absolute):
+        return None
+    return _upgrade(absolute)
 
 
 def page_scan(start_url: str, wanted: set[str]) -> dict[str, dict]:
