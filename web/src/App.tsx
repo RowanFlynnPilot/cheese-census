@@ -11,6 +11,7 @@ import {
   fold,
   labelize,
   loadDataset,
+  loadDraftImages,
   peopleFor,
   recommend,
 } from "./data";
@@ -107,6 +108,14 @@ export default function App() {
 
   useEffect(() => {
     loadDataset().then(setData, (e: Error) => setError(e.message));
+  }, []);
+
+  // The draft photo overlay exists only under `npm run dev` — production
+  // builds scrub the file (sync-data.mjs) and this never even fetches.
+  const [draftImages, setDraftImages] = useState<Map<string, string> | null>(null);
+  useEffect(() => {
+    if (!import.meta.env.DEV) return;
+    loadDraftImages().then(setDraftImages, (e: Error) => console.error(e.message));
   }, []);
 
   const creameriesById = useMemo(
@@ -674,7 +683,7 @@ export default function App() {
         </svg>
         <h1>The Cheese Census</h1>
         <p className="subtitle">
-          A census of Wisconsin cheese, from the Wausau Pilot &amp; Review
+          A census of Wisconsin cheese, from Wausau Pilot &amp; Review
         </p>
         <span className="count" aria-live="polite">
           {countLine}
@@ -894,6 +903,7 @@ export default function App() {
             vocab={cheeseVocab}
             familyCounts={familyCounts}
             onClearAll={clearCheeseFacets}
+            images={draftImages}
           />
           {selectedCheese && data && (
             <CheeseDetail
@@ -921,6 +931,7 @@ export default function App() {
               onOpenCreamery={openCreamery}
               onBrowseMaker={browseMaker}
               onSearchTerm={searchTerm}
+              imageUrl={draftImages?.get(selectedCheese.id) ?? null}
             />
           )}
         </div>

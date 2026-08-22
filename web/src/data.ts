@@ -10,6 +10,21 @@ async function table<T>(name: string): Promise<T[]> {
   return (await response.json()) as T[];
 }
 
+/** DEV-only overlay: hotlinked product-photo candidates awaiting each
+ *  creamery's permission (queue/product_images.json, served by
+ *  `sync-data.mjs --draft`). Production builds scrub the file and never call
+ *  this — the permission gate lives in the sync script, not up here. */
+export async function loadDraftImages(): Promise<Map<string, string>> {
+  const response = await fetch(`${BASE}data/draft_images.json`);
+  if (!response.ok) {
+    throw new Error(
+      `no draft image overlay (HTTP ${response.status}) — start with npm run dev, not vite directly`,
+    );
+  }
+  const rows = (await response.json()) as { cheese_id: string; image: string }[];
+  return new Map(rows.map((r) => [r.cheese_id, r.image]));
+}
+
 export async function loadDataset(): Promise<Dataset> {
   const [creameries, cheeses, people, awards, highlights] = await Promise.all([
     table<Creamery>("creameries"),

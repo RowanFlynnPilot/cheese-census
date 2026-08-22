@@ -45,6 +45,8 @@ interface Props {
   vocab: { families: string[]; textures: string[]; milks: string[] };
   familyCounts: Map<string, number>;
   onClearAll: () => void;
+  /** Dev-only draft overlay (photos pending permission); null in production. */
+  images: Map<string, string> | null;
 }
 
 // One expansion step of the grid — the sentinel below auto-loads the next step
@@ -97,6 +99,7 @@ export default function CheeseBrowse({
   vocab,
   familyCounts,
   onClearAll,
+  images,
 }: Props) {
   const [visible, setVisible] = useState(PAGE);
   const scroller = useRef<HTMLDivElement>(null);
@@ -134,6 +137,7 @@ export default function CheeseBrowse({
         hint={hints.get(cheese.id)}
         hearted={heartSet.has(cheese.id)}
         selected={cheese.id === selectedId}
+        imageUrl={images?.get(cheese.id)}
         onOpen={() => onOpen(cheese.id)}
         onToggleHeart={() => onToggleHeart(cheese.id)}
       />
@@ -142,6 +146,13 @@ export default function CheeseBrowse({
 
   return (
     <div className="cheese-main">
+      {images && images.size > 0 && (
+        <div className="draftbar" role="note">
+          Internal draft — {images.size} product photos hotlinked from creamery
+          sites for review only, pending each creamery&apos;s permission. Not for
+          publication.
+        </div>
+      )}
       <div className="cheese-filters">
         <div className="cheese-filter-row">
           <input
@@ -279,6 +290,7 @@ export default function CheeseBrowse({
                     selected={cheese.id === selectedId}
                     compact
                     because={because.name}
+                    imageUrl={images?.get(cheese.id)}
                     onOpen={() => onOpen(cheese.id)}
                     onToggleHeart={() => onToggleHeart(cheese.id)}
                   />

@@ -1,6 +1,6 @@
 # CLAUDE.md — The Cheese Census
 
-**The Cheese Census** — a census of Wisconsin cheese, from the Wausau Pilot & Review.
+**The Cheese Census** — a census of Wisconsin cheese, from Wausau Pilot & Review.
 Statewide cheese database and reader tool: a sponsor + engagement franchise with an
 evergreen cheese/creamery database at the core, and hearts, similar-cheese matching,
 editorial + sponsored highlights, and later tentpoles (statewide cheese bracket,
@@ -37,6 +37,9 @@ scrapers/                  one module per source; each emits data/raw/<name>.jso
   masters.py               Master Cheesemaker directory PDF (annual)
   contests.py              WCMA championship results via the MyEntries JSON API
 scripts/describe.py        description generation (Anthropic API) — curation tool, never in build
+scripts/images.py          product-image URL harvester (shops behind the title harvest);
+                           writes queue/product_images.json — a PERMISSION queue, never
+                           pipeline input; web dev overlays it as a marked draft
 scripts/evidence.py        review-evidence assembler: corroborates proposals with local
                            signals + committed web research; writes queue/review_*.json
 scripts/promote.py         promotes the auto tier into data/overrides/ (humans always win)
@@ -116,8 +119,9 @@ manual dispatch only until all scrapers are implemented.
   Public Sans body, JetBrains Mono for data. Editorial and sponsored
   highlights must render visibly differently.
 - Name & branding: the product is **The Cheese Census**. "Wisconsin" lives in
-  the standing subtitle ("A census of Wisconsin cheese, from the Wausau
-  Pilot & Review") and in page titles/metadata — never in the mark itself.
+  the standing subtitle ("A census of Wisconsin cheese, from Wausau
+  Pilot & Review" — no "the" before the paper's name) and in page
+  titles/metadata — never in the mark itself.
   Always render with WPR attribution; visual identity stays WPR (nothing
   gesturing at DFW's badge or trade dress); attorney review before the name
   appears on sponsor contracts.
@@ -277,3 +281,14 @@ strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 "…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That
 renamed ~40 cheese ids; hearts were not yet public, so the ids were still free
 to move. They are frozen now that hearts key on them.
+
+**Product photos are permission-gated.** `scripts/images.py` harvests image
+URLs from the same shops as the title harvest (Shopify/Woo/Squarespace feeds,
+then alt-text page scan) into `queue/product_images.json`, matched to cheese
+ids by the award rule (exact name, else longest contained). Those URLs are a
+*permission queue*: product photographs are copyrighted works, so nothing in
+`build/` references them and `Cheese.image` stays null until a creamery says
+yes (then: override + locally hosted asset). `npm run dev` overlays them as an
+unmistakable internal draft (DRAFT ribbon per image, amber not-for-publication
+bar) for stakeholder review; `sync-data.mjs` deletes the overlay file on any
+non-`--draft` run, so `npm run build` cannot ship it. Do not weaken this gate.

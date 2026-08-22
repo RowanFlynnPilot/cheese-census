@@ -78,6 +78,20 @@ Highlights from `build/highlights.json` render as a band above the grid and
 inside the matching cheese's panel, date-windowed by their `starts`/`ends`.
 Editorial and sponsored highlights render visibly differently (see Conventions).
 
+**Draft photo overlay (dev only).** `queue/product_images.json` (from
+`python scripts/images.py`) holds product-photo URLs harvested from creamery
+shops — a *permission queue*: WPR may not publish them until each creamery says
+yes. `npm run dev` serves it as `data/draft_images.json` and the app overlays
+the photos with a DRAFT ribbon on every image, an amber "not for publication"
+bar over the catalog, and a caption in the detail panel. The gate is in
+`scripts/sync-data.mjs`: without `--draft` it *deletes* the file from
+`public/data/`, so `npm run build` physically cannot ship it, and the fetch is
+additionally `import.meta.env.DEV`-gated. Photos are hotlinked with
+`referrerPolicy="no-referrer"` and vanish silently if a shop blocks or moves
+them. When a creamery grants permission, its photos graduate to `Cheese.image`
+via the pipeline (`data/overrides/` + locally hosted assets) — never from this
+overlay.
+
 ## Shareable views
 
 The active view lives in the URL, so a story or embed can link straight to it.

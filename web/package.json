@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "data": "node scripts/sync-data.mjs",
-    "dev": "npm run data && vite",
+    "dev": "node scripts/sync-data.mjs --draft && vite",
     "build": "npm run data && tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit"

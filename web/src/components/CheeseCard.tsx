@@ -1,5 +1,6 @@
 import type { Cheese, Creamery } from "../types";
 import { MILK_LABEL, familyLabel, labelize } from "../data";
+import DraftPhoto from "./DraftPhoto";
 import HeartButton from "./HeartButton";
 
 interface Props {
@@ -14,6 +15,8 @@ interface Props {
   compact?: boolean;
   /** "because you saved X" — only the recommendation rail passes this. */
   because?: string;
+  /** Dev-only draft overlay (photos pending permission); absent in production. */
+  imageUrl?: string;
   onOpen: () => void;
   onToggleHeart: () => void;
 }
@@ -29,6 +32,7 @@ export default function CheeseCard({
   selected,
   compact,
   because,
+  imageUrl,
   onOpen,
   onToggleHeart,
 }: Props) {
@@ -45,6 +49,13 @@ export default function CheeseCard({
         aria-current={selected || undefined}
         onClick={onOpen}
       >
+        {imageUrl && (
+          <DraftPhoto
+            src={imageUrl}
+            alt={`${cheese.name} — product photo (draft)`}
+            className="card-photo"
+          />
+        )}
         <span className="kicker">{familyLabel(cheese.family)}</span>
         <span className="cheese-name">{cheese.name}</span>
         <span className="cheese-maker">

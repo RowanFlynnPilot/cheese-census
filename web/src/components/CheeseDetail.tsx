@@ -10,6 +10,7 @@ import {
   familyLabel,
   labelize,
 } from "../data";
+import DraftPhoto from "./DraftPhoto";
 import HeartButton from "./HeartButton";
 
 interface Props {
@@ -33,6 +34,8 @@ interface Props {
   onBrowseMaker: (id: string) => void;
   /** A flavor or add-in chip answers "what else tastes like this?" statewide. */
   onSearchTerm: (term: string) => void;
+  /** Dev-only draft overlay (photo pending permission); null in production. */
+  imageUrl: string | null;
 }
 
 export default function CheeseDetail({
@@ -52,6 +55,7 @@ export default function CheeseDetail({
   onOpenCreamery,
   onBrowseMaker,
   onSearchTerm,
+  imageUrl,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
   const [copied, setCopied] = useState(false);
@@ -127,6 +131,20 @@ export default function CheeseDetail({
           )}
         </div>
       </div>
+
+      {imageUrl && (
+        <section>
+          <DraftPhoto
+            src={imageUrl}
+            alt={`${cheese.name} — product photo (draft)`}
+            className="detail-photo"
+          />
+          <p className="aka" style={{ marginTop: "0.45rem", marginBottom: 0 }}>
+            Product photo from the creamery&apos;s site — internal draft, pending
+            permission. Not for publication.
+          </p>
+        </section>
+      )}
 
       {highlight && (
         <section className={`highlight${highlight.type === "sponsored" ? " sponsored" : ""}`}>
