@@ -684,80 +684,82 @@ export default function App() {
   return (
     <div className="app">
       <header className="masthead">
-        <svg className="mark" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3 22 18H2Z" fill="var(--gold)" />
-          <circle cx="12" cy="13.6" r="1.7" fill="var(--teal)" />
-          <circle cx="8.6" cy="16.2" r="1.1" fill="var(--teal)" />
-          <circle cx="15.5" cy="16.4" r="1.25" fill="var(--teal)" />
-        </svg>
-        <h1>The Cheese Census</h1>
-        <p className="subtitle">
-          A census of Wisconsin cheese, from Wausau Pilot &amp; Review
-        </p>
-        <span className="count" aria-live="polite">
-          {countLine}
-        </span>
-      </header>
-
-      <nav className="modebar" aria-label="Census views">
-        <button
-          className="mode"
-          aria-current={view === "map" ? "page" : undefined}
-          onClick={() => setView("map")}
-        >
-          Creamery map
-        </button>
-        <button
-          className="mode"
-          aria-current={view === "cheeses" ? "page" : undefined}
-          onClick={() => setView("cheeses")}
-        >
-          Cheese catalog
-        </button>
-        {hearts.length > 0 && (
-          <button
-            className="mode-hearts"
-            onClick={() => {
-              // "Take me to my shelf" — stale facets from earlier browsing
-              // would silently hide saved cheeses.
-              clearCheeseFacets();
-              setMineOnly(true);
-              setView("cheeses");
-            }}
-            aria-label={`Open my ${hearts.length} saved cheese${hearts.length === 1 ? "" : "s"}`}
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 20.4C8.5 17.6 3 13.3 3 8.8 3 6.1 5.1 4 7.7 4c1.7 0 3.4 1 4.3 2.5C12.9 5 14.6 4 16.3 4 18.9 4 21 6.1 21 8.8c0 4.5-5.5 8.8-9 11.6z" />
-            </svg>
-            {hearts.length} saved
-          </button>
-        )}
-      </nav>
-
-      {stats && (
-        <div className="stats">
-          <span className="stat">
-            <b>{stats.creameries}</b> creameries
-          </span>
-          <span className="stat">
-            <b>{stats.counties}</b> counties
-          </span>
-          <span className="stat">
-            <b>{stats.plants}</b> licensed plants
-          </span>
-          {stats.cheeses > 0 && (
-            <span className="stat">
-              <b>{stats.cheeses}</b> cheeses
-            </span>
-          )}
-          <span className="stat">
-            <b>{stats.masters}</b> master cheesemakers
-          </span>
-          <span className="stat">
-            <b>{stats.awards}</b> contest awards
+        <div className="mast-top">
+          <svg className="mark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 22 18H2Z" fill="var(--gold)" />
+            <circle cx="12" cy="13.6" r="1.7" fill="var(--teal)" />
+            <circle cx="8.6" cy="16.2" r="1.1" fill="var(--teal)" />
+            <circle cx="15.5" cy="16.4" r="1.25" fill="var(--teal)" />
+          </svg>
+          <h1>The Cheese Census</h1>
+          <p className="subtitle">
+            A census of Wisconsin cheese, from Wausau Pilot &amp; Review
+          </p>
+          <span className="count" aria-live="polite">
+            {countLine}
           </span>
         </div>
-      )}
+
+        {stats && (
+          <div className="stats-line">
+            <span>
+              <b>{stats.creameries}</b> creameries
+            </span>
+            <span>
+              <b>{stats.counties}</b> counties
+            </span>
+            <span>
+              <b>{stats.plants}</b> licensed plants
+            </span>
+            {stats.cheeses > 0 && (
+              <span>
+                <b>{stats.cheeses}</b> cheeses
+              </span>
+            )}
+            <span>
+              <b>{stats.masters}</b> master cheesemakers
+            </span>
+            <span>
+              <b>{stats.awards}</b> contest awards
+            </span>
+          </div>
+        )}
+
+        <nav className="mast-tabs" aria-label="Census views">
+          <button
+            className="mode"
+            aria-current={view === "map" ? "page" : undefined}
+            onClick={() => setView("map")}
+          >
+            Creamery map
+          </button>
+          <button
+            className="mode"
+            aria-current={view === "cheeses" ? "page" : undefined}
+            onClick={() => setView("cheeses")}
+          >
+            Cheese catalog
+          </button>
+          {hearts.length > 0 && (
+            <button
+              className="mode-hearts"
+              onClick={() => {
+                // "Take me to my shelf" — stale facets from earlier browsing
+                // would silently hide saved cheeses.
+                clearCheeseFacets();
+                setMineOnly(true);
+                setView("cheeses");
+              }}
+              aria-label={`Open my ${hearts.length} saved cheese${hearts.length === 1 ? "" : "s"}`}
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20.4C8.5 17.6 3 13.3 3 8.8 3 6.1 5.1 4 7.7 4c1.7 0 3.4 1 4.3 2.5C12.9 5 14.6 4 16.3 4 18.9 4 21 6.1 21 8.8c0 4.5-5.5 8.8-9 11.6z" />
+              </svg>
+              {hearts.length} saved
+            </button>
+          )}
+        </nav>
+      </header>
 
       <div className="viewport">
         <div className={`layout${view === "map" ? "" : " view-off"}`}>

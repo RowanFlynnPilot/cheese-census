@@ -30,8 +30,9 @@ cheesemakers and contest awards — filterable by county, retail store and award
 record, sortable by name, award count or county (with sticky county section
 heads), with a map pin per creamery (retail stores render as a donut; the legend
 on the map explains the pins). Awards group by contest edition with 1st/2nd/3rd
-medal chips and champion / top-20 treatment. A stats strip under the masthead
-carries the census-wide numbers, and an "About this census" panel in the colophon
+medal chips and champion / top-20 treatment. The masthead is one teal band:
+title row, a census-numbers line, and the two view tabs folder-style on its
+bottom edge (active tab in cream). An "About this census" panel in the colophon
 explains sources, methodology and the provisional-data notice.
 
 Search answers the census's home question — *who makes X?* It matches names,
