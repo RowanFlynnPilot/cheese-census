@@ -149,13 +149,6 @@ export default function CheeseBrowse({
 
   return (
     <div className="cheese-main">
-      {images && images.size > 0 && (
-        <div className="draftbar" role="note">
-          Internal draft — {images.size} product photos hotlinked from creamery
-          sites for review only, pending each creamery&apos;s permission. Not for
-          publication.
-        </div>
-      )}
       <div className="cheese-filters">
         <div className="cheese-filter-row">
           <input

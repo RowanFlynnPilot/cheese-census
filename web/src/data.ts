@@ -38,6 +38,20 @@ export async function loadDraftImages(): Promise<Map<string, DraftMedia>> {
   );
 }
 
+/** DEV-only: hotlinked creamery brand marks (queue/creamery_logos.json).
+ *  Identification use, but still brand artwork — same draft overlay, same
+ *  production scrub, until the attorney blesses the pattern. */
+export async function loadDraftLogos(): Promise<Map<string, string>> {
+  const response = await fetch(`${BASE}data/draft_logos.json`);
+  if (!response.ok) {
+    throw new Error(
+      `no draft logo overlay (HTTP ${response.status}) — start with npm run dev, not vite directly`,
+    );
+  }
+  const rows = (await response.json()) as { creamery_id: string; logo: string }[];
+  return new Map(rows.map((r) => [r.creamery_id, r.logo]));
+}
+
 export async function loadDataset(): Promise<Dataset> {
   const [creameries, cheeses, people, awards, highlights] = await Promise.all([
     table<Creamery>("creameries"),

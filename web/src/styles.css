@@ -1489,6 +1489,38 @@ button.highlight {
   color: var(--ink-soft);
 }
 
+/* ── Facility logos (dev-only draft overlay) ────────────────────────────── */
+
+/* White chip so transparent marks stay legible on cream and teal alike. */
+.logo-mark {
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1px;
+}
+
+.row-logo {
+  width: 18px;
+  height: 18px;
+  vertical-align: -4px;
+  margin-right: 0.45rem;
+}
+
+.creamery-logo {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: 6px;
+}
+
+.where-logo {
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+  margin-right: 0.35rem;
+}
+
 /* ── Draft photo overlay (dev only — pending permission) ────────────────── */
 
 .draftbar {

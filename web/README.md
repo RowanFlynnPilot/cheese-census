@@ -103,7 +103,15 @@ section in the panel), which is ordinary quotation and needs no per-creamery
 permission (the attorney blesses the pattern in the standing pre-launch
 review). Both currently ride the dev-only overlay because the reader layer
 has not shipped; when it does, the quotes can go to production while the
-photos keep waiting on permissions. `npm run dev` serves it as `data/draft_images.json` and the app overlays
+photos keep waiting on permissions.
+
+`queue/creamery_logos.json` (from `python scripts/logos.py`) rides the same
+overlay as `draft_logos.json`: each creamery's own brand mark (apple-touch-icon,
+else largest favicon, else a header logo image, probe-verified), shown in the
+directory rows and both detail panels. Identification use, but still brand
+artwork — dev-only until the pre-launch rights review. The draft notice bar is
+app-level (both views show overlay material), and any non-`--draft` sync
+deletes both overlay files. `npm run dev` serves it as `data/draft_images.json` and the app overlays
 the photos with a DRAFT ribbon on every image, an amber "not for publication"
 bar over the catalog, and a caption in the detail panel. The gate is in
 `scripts/sync-data.mjs`: without `--draft` it *deletes* the file from

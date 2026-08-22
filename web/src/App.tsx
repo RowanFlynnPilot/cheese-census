@@ -13,10 +13,12 @@ import {
   labelize,
   loadDataset,
   loadDraftImages,
+  loadDraftLogos,
   peopleFor,
   recommend,
 } from "./data";
 import { useHearts } from "./hearts";
+import LogoMark from "./components/LogoMark";
 import MapView from "./components/MapView";
 import CreameryDetail from "./components/CreameryDetail";
 import CheeseBrowse, { CHEESE_SORTS, type CheeseSortKey } from "./components/CheeseBrowse";
@@ -111,12 +113,14 @@ export default function App() {
     loadDataset().then(setData, (e: Error) => setError(e.message));
   }, []);
 
-  // The draft photo overlay exists only under `npm run dev` — production
-  // builds scrub the file (sync-data.mjs) and this never even fetches.
+  // The draft overlays exist only under `npm run dev` — production builds
+  // scrub the files (sync-data.mjs) and these never even fetch.
   const [draftImages, setDraftImages] = useState<Map<string, DraftMedia> | null>(null);
+  const [draftLogos, setDraftLogos] = useState<Map<string, string> | null>(null);
   useEffect(() => {
     if (!import.meta.env.DEV) return;
     loadDraftImages().then(setDraftImages, (e: Error) => console.error(e.message));
+    loadDraftLogos().then(setDraftLogos, (e: Error) => console.error(e.message));
   }, []);
 
   const creameriesById = useMemo(
@@ -645,7 +649,12 @@ export default function App() {
         aria-current={creamery.id === selectedId}
         onClick={() => setSelectedId(creamery.id)}
       >
-        <div className="name">{creamery.name}</div>
+        <div className="name">
+          {draftLogos?.get(creamery.id) && (
+            <LogoMark src={draftLogos.get(creamery.id)!} className="row-logo" />
+          )}
+          {creamery.name}
+        </div>
         <div className="meta">
           <span>
             {creamery.city}
@@ -771,6 +780,15 @@ export default function App() {
         </nav>
       </header>
 
+      {((draftImages?.size ?? 0) > 0 || (draftLogos?.size ?? 0) > 0) && (
+        <div className="draftbar" role="note">
+          Internal draft — {draftImages?.size ?? 0} product photos and{" "}
+          {draftLogos?.size ?? 0} facility logos hotlinked from creamery sites
+          for review only, pending the pre-launch rights review. Not for
+          publication.
+        </div>
+      )}
+
       <div className="viewport">
         <div className={`layout${view === "map" ? "" : " view-off"}`}>
           <div className="sidebar">
@@ -877,6 +895,7 @@ export default function App() {
                 people={peopleFor(data.people, selected.id)}
                 awards={awardsFor(data.awards, selected.id)}
                 cheeses={selectedCreameryCheeses}
+                logoUrl={draftLogos?.get(selected.id) ?? null}
                 position={shownIndex >= 0 ? `${shownIndex + 1} / ${shown.length}` : null}
                 onClose={closeDetail}
                 onPrev={() => step(-1)}
@@ -954,6 +973,7 @@ export default function App() {
               onSearchTerm={searchTerm}
               imageUrl={draftImages?.get(selectedCheese.id)?.image ?? null}
               blurb={draftImages?.get(selectedCheese.id)?.summary ?? null}
+              logoUrl={draftLogos?.get(selectedCheese.creamery_id) ?? null}
             />
           )}
         </div>

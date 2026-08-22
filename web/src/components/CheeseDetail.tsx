@@ -15,6 +15,7 @@ import {
 import DraftPhoto from "./DraftPhoto";
 import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
+import LogoMark from "./LogoMark";
 
 interface Props {
   cheese: Cheese;
@@ -41,6 +42,8 @@ interface Props {
    *  null in production. */
   imageUrl: string | null;
   blurb: string | null;
+  /** The maker's brand mark (draft overlay); null in production. */
+  logoUrl: string | null;
 }
 
 export default function CheeseDetail({
@@ -62,6 +65,7 @@ export default function CheeseDetail({
   onSearchTerm,
   imageUrl,
   blurb,
+  logoUrl,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
   const [copied, setCopied] = useState(false);
@@ -116,6 +120,7 @@ export default function CheeseDetail({
         <div className="where">
           {creamery ? (
             <>
+              {logoUrl && <LogoMark src={logoUrl} className="where-logo" />}
               <button className="linkish" onClick={() => onOpenCreamery(creamery.id)}>
                 {creamery.name}
               </button>

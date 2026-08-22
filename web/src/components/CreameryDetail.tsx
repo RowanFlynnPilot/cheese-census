@@ -8,6 +8,7 @@ import {
   groupAwards,
   isCapability,
 } from "../data";
+import LogoMark from "./LogoMark";
 
 // Chips beyond this fold behind the "browse all" link to the catalog view —
 // Carr Valley alone has 50 records.
@@ -19,6 +20,8 @@ interface Props {
   awards: Award[];
   /** This creamery's records in the cheese catalog, name-sorted. */
   cheeses: Cheese[];
+  /** Dev-only draft overlay (brand mark pending rights review); null in production. */
+  logoUrl: string | null;
   /** "12 / 93" within the filtered list, or null when filtered out mid-view. */
   position: string | null;
   onClose: () => void;
@@ -34,6 +37,7 @@ export default function CreameryDetail({
   people,
   awards,
   cheeses,
+  logoUrl,
   position,
   onClose,
   onPrev,
@@ -98,7 +102,10 @@ export default function CreameryDetail({
             ×
           </button>
         </div>
-        <h2 id="detail-title">{creamery.name}</h2>
+        <div className="title-row">
+          {logoUrl && <LogoMark src={logoUrl} className="creamery-logo" />}
+          <h2 id="detail-title">{creamery.name}</h2>
+        </div>
         <div className="where">
           {creamery.city}
           {creamery.county ? ` · ${creamery.county} County` : ""}

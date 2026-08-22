@@ -14,8 +14,10 @@ const target = join(web, "public", "data");
 // any stale copy is DELETED, so `npm run build` can never ship it: everything in
 // public/ lands in dist/, and the permission gate lives here, not in the UI.
 const draft = process.argv.includes("--draft");
-const draftSource = join(dirname(web), "queue", "product_images.json");
-const draftTarget = join(web, "public", "data", "draft_images.json");
+const DRAFT_FILES = [
+  ["product_images.json", "draft_images.json"],
+  ["creamery_logos.json", "draft_logos.json"],
+];
 
 const TABLES = ["creameries", "cheeses", "people", "awards", "highlights"];
 
@@ -40,15 +42,20 @@ for (const table of TABLES) {
 }
 
 if (draft) {
-  if (!existsSync(draftSource)) {
-    console.error(
-      `sync-data: --draft needs ${draftSource} — run \`python scripts/images.py\` first`,
-    );
-    process.exit(1);
+  for (const [source, name] of DRAFT_FILES) {
+    const path = join(dirname(web), "queue", source);
+    if (!existsSync(path)) {
+      console.error(
+        `sync-data: --draft needs queue/${source} — run the matching scripts/ harvester first`,
+      );
+      process.exit(1);
+    }
+    await cp(path, join(target, name));
   }
-  await cp(draftSource, draftTarget);
-  console.log(`sync-data: ${TABLES.length} tables + DRAFT image overlay -> web/public/data/`);
+  console.log(`sync-data: ${TABLES.length} tables + DRAFT overlays -> web/public/data/`);
 } else {
-  await rm(draftTarget, { force: true });
+  for (const [, name] of DRAFT_FILES) {
+    await rm(join(target, name), { force: true });
+  }
   console.log(`sync-data: ${TABLES.length} tables -> web/public/data/`);
 }

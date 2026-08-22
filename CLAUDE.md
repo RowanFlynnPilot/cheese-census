@@ -40,6 +40,9 @@ scripts/describe.py        description generation (Anthropic API) — curation t
 scripts/images.py          product-image URL harvester (shops behind the title harvest);
                            writes queue/product_images.json — a PERMISSION queue, never
                            pipeline input; web dev overlays it as a marked draft
+scripts/logos.py           creamery brand-mark harvester (apple-touch-icon/favicon/header
+                           logo from each creamery's own site) → queue/creamery_logos.json;
+                           same dev-only draft overlay, never pipeline input
 scripts/evidence.py        review-evidence assembler: corroborates proposals with local
                            signals + committed web research; writes queue/review_*.json
 scripts/promote.py         promotes the auto tier into data/overrides/ (humans always win)
@@ -301,3 +304,8 @@ name, else longest contained). The two payloads carry different rules:
   attorney blesses the pattern in the standing pre-launch review. They are
   supplementary quotes only — the census's own `description` field remains
   `scripts/describe.py`'s generated voice, never scraped prose.
+- *Facility logos* (`scripts/logos.py` → `queue/creamery_logos.json`:
+  apple-touch-icon, else largest favicon, else a header img calling itself a
+  logo; probe-verified) identify the company — nominative use, ordinary in
+  editorial directories — but are still brand artwork, so they ride the same
+  dev-only overlay until the attorney blesses the pattern.
