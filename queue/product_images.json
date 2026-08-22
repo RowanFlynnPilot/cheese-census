@@ -4,6 +4,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0919/3780/0470/files/alpinage-studio_ng2025-199079-Opening-Edit.jpg?v=1761313337",
     "matched_title": "black truffle raclette",
     "source_page": "https://www.alpinagecheese.com/collections/all",
+    "summary": "Indulge in the rich, creamy decadence of our Black Truffle Raclette, freshly cut straight from the wheel.",
     "via": "shopify"
   },
   {
@@ -11,6 +12,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0919/3780/0470/files/alpinage-studio_ng2025-199088_30b348f6-794a-4902-b7e9-d1f29d064c5b.jpg?v=1764952926",
     "matched_title": "garlic dill raclette",
     "source_page": "https://www.alpinagecheese.com/collections/all",
+    "summary": "Indulge in the rich, creamy decadence of our Garlic & Dill Raclette, freshly cut straight from the wheel.",
     "via": "shopify"
   },
   {
@@ -18,6 +20,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0919/3780/0470/files/wheel.webp?v=1736981856",
     "matched_title": "classic raclette",
     "source_page": "https://www.alpinagecheese.com/collections/all",
+    "summary": "Indulge in the rich, creamy decadence of our award-winning Raclette cheese, freshly cut straight from the wheel.",
     "via": "shopify"
   },
   {
@@ -25,6 +28,7 @@
     "image": "http://www.arenacheese.com/prodimages/chipotle-cheddar-cheese-250.jpg",
     "matched_title": "chipotle cheddar",
     "source_page": "http://www.arenacheese.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -32,6 +36,7 @@
     "image": "http://www.arenacheese.com/prodimages/ghost-pepper-cheddar-cheese-250.jpg",
     "matched_title": "ghost pepper cheddar",
     "source_page": "http://www.arenacheese.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -39,6 +44,7 @@
     "image": "http://www.arenacheese.com/prodimages/Monterey_small.jpg",
     "matched_title": "monterey jack",
     "source_page": "http://www.arenacheese.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -46,6 +52,7 @@
     "image": "http://www.arenacheese.com/prodimages/Pepper Jack_small.jpg",
     "matched_title": "pepper jack",
     "source_page": "http://www.arenacheese.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -53,6 +60,7 @@
     "image": "https://images.arla.com/recordid/7C603B3A-DC17-490D-A14C2306BC902B98/picture.jpg?width=150&height=120&mode=max&format=webp",
     "matched_title": "creamy havarti",
     "source_page": "https://www.arlausa.com/our-brands/dofino/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -60,6 +68,7 @@
     "image": "https://images.arla.com/recordid/F4B09BE3-9B95-438B-AA6A38D5FBC021D6/picture.jpg?width=150&height=120&mode=max&format=webp",
     "matched_title": "dill havarti",
     "source_page": "https://www.arlausa.com/our-brands/dofino/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -67,6 +76,7 @@
     "image": "https://www.merkts.com/wp-content/uploads/2021/04/product-page-@2x-482x371-original-beer.png",
     "matched_title": "merkts beer cheese cheese spread",
     "source_page": "https://www.merkts.com/original-cheese-spreads/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -74,6 +84,7 @@
     "image": "https://www.merkts.com/wp-content/uploads/2021/04/product-page-@2x-482x371-original-portwine.png",
     "matched_title": "merkts port wine cheese spread",
     "source_page": "https://www.merkts.com/original-cheese-spreads/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -81,6 +92,7 @@
     "image": "https://www.merkts.com/wp-content/uploads/2021/04/product-page-@2x-482x371-original-sharpcheddar.png",
     "matched_title": "merkts sharp cheddar cheese spread",
     "source_page": "https://www.merkts.com/original-cheese-spreads/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -88,6 +100,7 @@
     "image": "https://www.belgioioso.com/wp-content/uploads/2022/01/Artigiano-LB-e1643126966614.jpg",
     "matched_title": "artigiano",
     "source_page": "https://www.belgioioso.com/products/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -95,6 +108,7 @@
     "image": "https://www.belgioioso.com/wp-content/uploads/2021/12/Asiago-Header_verTL1zojy5S1Nc94HvPp6BeA3d3d-e1643127049207.jpg",
     "matched_title": "asiago",
     "source_page": "https://www.belgioioso.com/products/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -102,6 +116,7 @@
     "image": "https://www.belgioioso.com/wp-content/uploads/2024/08/Blue_Header.jpg",
     "matched_title": "blue cheese",
     "source_page": "https://www.belgioioso.com/products/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -109,6 +124,7 @@
     "image": "https://www.belgioioso.com/wp-content/uploads/2022/01/LinkClick.aspx_-e1643127103805.jpg",
     "matched_title": "burrata",
     "source_page": "https://www.belgioioso.com/products/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -116,6 +132,7 @@
     "image": "https://www.belgioioso.com/wp-content/uploads/2021/12/ExtraAged-AmericanGrana-Header-LB_ver2018-07-20-095038-787-e1642389229917.jpg",
     "matched_title": "extra aged american grana",
     "source_page": "https://www.belgioioso.com/products/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -123,6 +140,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0726/0812/1123/files/baked-cheese-garlic.jpg?v=1733192362",
     "matched_title": "brun uusto baked cheese with garlic",
     "source_page": "https://brunkowcheeseofwi.com/",
+    "summary": "Heat it to Eat it! Brunkow’s award-winning Garlic Baked Cheese is a rich and savory treat served warm.",
     "via": "shopify"
   },
   {
@@ -130,6 +148,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0726/0812/1123/files/BrunkowCheese_c_NaturalIntuitionPhotography-1_229.jpg?v=1733206759",
     "matched_title": "brun uusto baked cheese with jalapeno",
     "source_page": "https://brunkowcheeseofwi.com/",
+    "summary": "Heat it to Eat it! Brunkow’s award-winning Jalapeño Baked Cheese brings just the right amount of heat to elevate this baked cheese to the next level.",
     "via": "shopify"
   },
   {
@@ -137,6 +156,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0726/0812/1123/files/BrunkowCheese_c_NaturalIntuitionPhotography-1_231.jpg?v=1733199209",
     "matched_title": "brun uusto baked cheese with smoked bacon",
     "source_page": "https://brunkowcheeseofwi.com/",
+    "summary": "Heat it to Eat it! Our Baked Cheese with Smoked Bacon is a crowd favorite. Heat it until crispy and soft to enjoy its incredible depth of rich, smoky flavor.",
     "via": "shopify"
   },
   {
@@ -144,6 +164,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/31e3cad1-e965-454c-b506-074afbc5202c.png?v=1785354552",
     "matched_title": "black truffle cheddar gruyere",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Our Black Truffle Cheddar Gruyere combines the rich, nutty flavors of Cheddar Gruyere with the earthy aroma of real Italian black truffles for a truly decadent experience.",
     "via": "shopify"
   },
   {
@@ -151,6 +172,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/0894ef6a-d6c1-4011-afc6-b1a671315a26.png?v=1785362770",
     "matched_title": "medium cheddar",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Aged 6+ months. Medium Cheddar is nutty and firm. The medium aging makes it the cheddar flavor most common in overall use in the U.S.",
     "via": "shopify"
   },
   {
@@ -158,6 +180,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/a3cea73b-de60-42d8-bb76-fb4a9a32084c.png?v=1785354876",
     "matched_title": "original cheddar gruyere",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Our signature Original Cheddar Gruyere is a masterful fusion of creamy, nutty Gruyere and sharp, bold Cheddar—classic, versatile, and aged to perfection.",
     "via": "shopify"
   },
   {
@@ -165,6 +188,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/0a3e9151-2faa-4a78-89cd-23fa7c94693b.png?v=1756911484",
     "matched_title": "north country mixed cheese curds",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Mixed flavor Cheese Curds. *Not available at our Cady location.",
     "via": "shopify"
   },
   {
@@ -172,6 +196,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/b429be88-8b73-4c87-87b3-4baf5cfb68ed.png?v=1785352753",
     "matched_title": "colby",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "A Wisconsin classic, Burnett Dairy Colby is handcrafted using fresh, high-quality milk to deliver a smooth, creamy texture and a mild, buttery flavor that's perfect for any occasion.",
     "via": "shopify"
   },
   {
@@ -179,6 +204,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/a6e72b2d-d50e-4e1f-839b-3f2678166851.png?v=1785352866",
     "matched_title": "garlic chive monterey jack",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Elevate your everyday snacking with the savory flavor of Burnett Dairy Garlic & Chive Monterey Jack.",
     "via": "shopify"
   },
   {
@@ -186,6 +212,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/2bc46e1b-6e83-4efc-bd47-7e44e0ae07b0.png?v=1785356865",
     "matched_title": "garlic herb dill monterey jack",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Bring bold, savory flavor to every bite with Burnett Dairy Garlic Herb & Dill Monterey Jack.",
     "via": "shopify"
   },
   {
@@ -193,6 +220,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/4095c07e-fa37-4fd8-9a87-d75da837de50.png?v=1785353838",
     "matched_title": "mild cheddar",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "A timeless favorite, Burnett Dairy Mild Cheddar delivers the classic cheddar flavor Wisconsin cheese lovers know and enjoy.",
     "via": "shopify"
   },
   {
@@ -200,6 +228,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/3599b8c9-7bcb-4a4e-b8bd-5010e8604197.png?v=1785353945",
     "matched_title": "monterey jack",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Smooth, creamy, and endlessly versatile, Burnett Dairy Monterey Jack is a classic Wisconsin cheese that's perfect for everyday enjoyment.",
     "via": "shopify"
   },
   {
@@ -207,6 +236,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/e3af5a0e-3929-4c76-bdc2-d9a7aca13338.png?v=1785362776",
     "matched_title": "mozzarella",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Crafted with care by our farmer-owned cooperative since 1896, Burnett Dairy Mozzarella is everything you want in a classic cheese: creamy, melty, and irresistibly delicious.",
     "via": "shopify"
   },
   {
@@ -214,6 +244,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/f5a011d0-5126-44aa-a789-84eeb04797f2.png?v=1785448324",
     "matched_title": "provolone",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Flavor changes from slightly piquant when young to sharp when aged. Firm texture becomes more granular with age. Slice for sandwiches; shred for pizza, fillings; dice on salads.",
     "via": "shopify"
   },
   {
@@ -221,6 +252,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/c416a789-5b14-4b9c-b510-19c7ca345b5f.png?v=1785448442",
     "matched_title": "sharp cheddar",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Bold. Tangy. Unforgettable. Our Sharp Cheddar is aged to perfection, delivering that classic bite cheddar lovers crave.",
     "via": "shopify"
   },
   {
@@ -228,6 +260,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/4418fda9-d1ce-456d-8ee9-5354e0a838fd.png?v=1785448070",
     "matched_title": "string cheese",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Try our award-winning Mozzarella String Cheese!",
     "via": "shopify"
   },
   {
@@ -235,6 +268,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0224/3834/6832/files/86ef90f1-39c2-4730-845d-4e3c4226d7d1.png?v=1785356493",
     "matched_title": "triple pepper cheddar gruyere spreadable cheese",
     "source_page": "https://shop.burnettdairy.com/",
+    "summary": "Try Our Triple Pepper Cheddar Gruyere Cheese Spread! Spicy, bold, and irresistibly creamy. Get ready to turn up the heat with our Triple Pepper Cheddar Gruyere Cheese Spread .",
     "via": "shopify"
   },
   {
@@ -242,6 +276,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/AgedSwiss-1536x1024.jpg?v=1762440986",
     "matched_title": "aged 2 year swiss",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Hand selected by Carr Valley, this Swiss Cheese is aged 2 years or more.",
     "via": "shopify"
   },
   {
@@ -249,6 +284,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/8b03745f9640dcc80d78659b6c62caee.jpg?v=1762440905",
     "matched_title": "aged asiago spread",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "This gourmet cold pack cheese spread is made with aged Asiago for delectable and bold Italian delight!",
     "via": "shopify"
   },
   {
@@ -256,6 +292,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/1181-NEW-LABEL-5-Year-Yellow-WBG.png?v=1787145577",
     "matched_title": "5 year aged cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Wisconsin is leading in Cheddar production, which makes it no surprise that this Cheddar is one of our most popular cheeses.",
     "via": "shopify"
   },
   {
@@ -263,6 +300,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/asg.png?v=1762440896",
     "matched_title": "apple smoked garlic cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "With flavor that’s so bold, deep and delicious, Sid says this cheese should be placed on the “Controlled Substance” list. One try, and we think you will agree!",
     "via": "shopify"
   },
   {
@@ -270,6 +308,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/d4e0b8f2-c86f-4316-81a3-fb3ee7f92a9d.png?v=1762440909",
     "matched_title": "beer cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A Wisconsin football season favorite with beer added.",
     "via": "shopify"
   },
   {
@@ -277,6 +316,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/CV-BENEDICTINE.png?v=1762440910",
     "matched_title": "benedictine",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Benedictine is a washed rind cheese made with fresh sheep, goat and cow milk. It is cellar cured and hand rubbed for 12 weeks before packaging. The flavor explodes with intensity.",
     "via": "shopify"
   },
   {
@@ -284,6 +324,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/35638d3e1b82889c64daf8fe8b95e010.jpg?v=1762440911",
     "matched_title": "billy blue",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Made from the fresh milk of pasture grazed Wisconsin goats, it’s aged four months. You’ll love its distinctive bleu flavor and delightful creamy texture.",
     "via": "shopify"
   },
   {
@@ -291,6 +332,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/BaconBreadCheeseCarrValley1_8ae9080a681e46cbb41142db8e02dbe7_241227.jpg?v=1762440372",
     "matched_title": "bread cheese bacon",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Inspired by the Finnish cheese Juustoleipa, or cheese bread.",
     "via": "shopify"
   },
   {
@@ -298,6 +340,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/Add_two_6.png?v=1782416018",
     "matched_title": "bread cheese chipotle",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Carr Valley’s Chipotle Bread Cheese adds a smoky, spicy kick to the beloved Finnish-style “juustoleipa.” Handcrafted from fresh Wisconsin cow’s milk and baked to form its signature golden crust, th…",
     "via": "shopify"
   },
   {
@@ -305,6 +348,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/EWGarlicBreadCheese.jpg?v=1762440015",
     "matched_title": "bread cheese with garlic",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Carr Valley’s Garlic Bread Cheese is a savory, melt-in-your-mouth twist on the classic Finnish-style “juustoleipa.” Handcrafted from fresh Wisconsin cow’s milk, this baked cheese features a golden,…",
     "via": "shopify"
   },
   {
@@ -312,6 +356,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/CV-3-YEAR-CHEDDAR.png?v=1762440923",
     "matched_title": "cheddar 3 year",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Our 3 Year Cheddar has a sharp cheddar flavor with a few “crunchy” calcium lactate crystals starting to form within the body of the cheese.",
     "via": "shopify"
   },
   {
@@ -319,6 +364,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/products/1108-Apple-Smoked-Cheddar-R.jpg?v=1762439932",
     "matched_title": "cheddar apple smoked",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "With various cheesemaking sites located across the state of Wisconsin, Carr Valley creamery created this Wisconsin white cheddar.",
     "via": "shopify"
   },
   {
@@ -326,6 +372,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/products/1111-Cheddar-Cave-Aged.jpg?v=1762440156",
     "matched_title": "cheddar cave aged",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "This Wisconsin cheddar is aged and developed in an open-air cave. This upbringing adds incredible character to this cheddar cheese, and elicits an feeling of ancient connection.",
     "via": "shopify"
   },
   {
@@ -333,6 +380,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/b6dc8e60b02b7dc28b8f894dc2bad948.jpg?v=1762440994",
     "matched_title": "cheese curds",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Have the taste of Wisconsin shipped to your door. Our “World Famous” Cheddar Cheese Curds are made fresh daily to ensure great flavor and squeaky texture.",
     "via": "shopify"
   },
   {
@@ -340,6 +388,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/5106-Carr-Valley-Colby.png?v=1778610946",
     "matched_title": "colby",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A Wisconsin original first made in Colby, Wisconsin. We make and age the original recipe with an open body creamy texture and a fresh cheesy flavor.",
     "via": "shopify"
   },
   {
@@ -347,6 +396,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/products/Cranberry-Chipotle-Cheddar.jpg?v=1762440385",
     "matched_title": "cranberry chipotle cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Carr Valley's Chipotle Cranberry Cheddar is a white cheddar blended with cranberries and chipotle peppers.",
     "via": "shopify"
   },
   {
@@ -354,6 +404,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/CV-CREAMA-KASA.png?v=1762440930",
     "matched_title": "creama kasa",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Carr Valley’s Crema Kasa Cheese is a luxuriously rich and creamy delight that showcases the best of Wisconsin cheesemaking.",
     "via": "shopify"
   },
   {
@@ -361,6 +412,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/CV-COW-FETA.png?v=1762440933",
     "matched_title": "feta",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Carr Valley’s Cow Feta Cheese is a creamy, tangy take on a Mediterranean favorite—crafted right in the heart of Wisconsin.",
     "via": "shopify"
   },
   {
@@ -368,6 +420,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/CV-FONTINA.png?v=1762440933",
     "matched_title": "fontina",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A master-crafted Fontina cheese that is cured at a higher temperature to create more complex flavors. This cheese has great meltability and flexibility.",
     "via": "shopify"
   },
   {
@@ -375,6 +428,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/1383-Juusto-Carr-Valley-Goat_49ea1987dc274b749a6606b87d14790b_241227.jpg?v=1762440100",
     "matched_title": "goat bread cheese",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Inspired by the Finnish cheese Juustoleipa, or cheese bread.",
     "via": "shopify"
   },
   {
@@ -382,6 +436,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/446a78c24a829027b4948fad858d29e5.jpg?v=1762440945",
     "matched_title": "goat cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A Cheddar-style cheese for goat milk cheese lovers. Formulated by our master cheesemaker to have a soft creamy pliable body with a pleasant mild goat milk flavor.",
     "via": "shopify"
   },
   {
@@ -389,6 +444,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/Gorgonzola_web.jpg?v=1762440898",
     "matched_title": "glacier gorgonzola",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Back room Trattoria delicious! Imbued with melodious mushroom truffle notes. A symphony of pure flavor! Great for salads, pastas and snacking!",
     "via": "shopify"
   },
   {
@@ -396,6 +452,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/buholzer-gouda-8oz.png?v=1762441105",
     "matched_title": "gouda",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Smooth and creamy, Gouda is a semi-soft cheese known for its rich, buttery flavor and incredible versatility.",
     "via": "shopify"
   },
   {
@@ -403,6 +460,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/70de162186a23d3f18be00fc611914c4.jpg?v=1762440948",
     "matched_title": "gouda aged",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A Dutch style cheese made in the Wisconsin tradition. It has a firm, cream body with a nutty flavor made with 100% pasteurized cow’s milk and then aged to perfection.",
     "via": "shopify"
   },
   {
@@ -410,6 +468,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/Smoked_Gouda_095.png?v=1762440949",
     "matched_title": "gouda smoked",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A Dutch style smoked cheese, our Smoked Gouda has a firm, creamy body with a nutty flavor with a nice smoky flavor.",
     "via": "shopify"
   },
   {
@@ -417,6 +476,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/havarti-8oz-chunk-2.jpg?v=1762441103",
     "matched_title": "havarti",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Great for slicing, melting, or grilling, Havarti is a cream or yellow hued cheese that originated and became popular in Denmark.",
     "via": "shopify"
   },
   {
@@ -424,6 +484,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/Horseradish_Cheddar_105.png?v=1762440953",
     "matched_title": "horseradish cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "We make our Horseradish Cheddar with a special blend of natural horseradish and our fantastic white cheddar cheese.",
     "via": "shopify"
   },
   {
@@ -431,6 +492,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/SmokedPepperJack_0073web.jpg?v=1762440956",
     "matched_title": "hot pepper jack smoked",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A Monterey Jack cheese with green and red jalapeno peppers that has a mild smoky flavor, giving it a wonderfully added punch! Melts well and easy to use in many recipes.",
     "via": "shopify"
   },
   {
@@ -438,6 +500,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/CV-MILD-CHEDDAR.png?v=1762440964",
     "matched_title": "mild cheddar",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Our Mild Cheddar Cheese is handcrafted in our LaValle, Wisconsin plant in small vats by cheesemakers with more than 100 years experience.",
     "via": "shopify"
   },
   {
@@ -445,6 +508,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/files/DFW_Monterey_Jack.png?v=1762440965",
     "matched_title": "monterey jack",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "A soft white cheese with an open body and texture.",
     "via": "shopify"
   },
   {
@@ -452,6 +516,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0287/2377/3499/products/1802ChaletBabySwissReshoot.png?v=1762440203",
     "matched_title": "baby swiss",
     "source_page": "https://www.wisconsincheesemart.com/collections/carr-valley-cheese",
+    "summary": "Silky, creamy texture with small eyes. Mild, buttery, slightly sweet flavor. Slices and melts well.",
     "via": "shopify"
   },
   {
@@ -459,6 +524,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Butterkase.jpg",
     "matched_title": "traditional butterkase",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "All our cheeses are produced from the highest quality milk. This milk is produced by proud patrons who produce their milk without the use of the synthetic growth hormone rBGH.",
     "via": "woocommerce"
   },
   {
@@ -466,6 +532,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Organic-Medium-Ceddar-Cheese.jpg",
     "matched_title": "organic mild cheddar",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Cedar Grove Cheese has been certified organic since 1996.",
     "via": "woocommerce"
   },
   {
@@ -473,6 +540,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Cheddar-Cheese-w-Jalepno.jpg",
     "matched_title": "traditional cheddar with jalapeno peppers",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "All our cheeses are produced from the highest quality milk. This milk is produced by proud patrons who produce their milk without the use of the synthetic growth hormone rBGH.",
     "via": "woocommerce"
   },
   {
@@ -480,6 +548,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2019/05/Cheese-curds.jpg",
     "matched_title": "fresh cheddar cheese curds",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "*Very* Fresh Cheddar Cheese Curds are available online! The default curd selection will be our classic Yellow Cheddar curds.",
     "via": "woocommerce"
   },
   {
@@ -487,6 +556,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Organic-Colby-Jack.jpg",
     "matched_title": "organic colby",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Cedar Grove Cheese has been certified organic since 1996.",
     "via": "woocommerce"
   },
   {
@@ -494,6 +564,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Organic-Farmers-Cheese.jpg",
     "matched_title": "organic farmers",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Cedar Grove Cheese has been certified organic since 1996.",
     "via": "woocommerce"
   },
   {
@@ -501,6 +572,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Cedar-Cheese-w-Garlic-and-Dill.jpg",
     "matched_title": "traditional garlic dill cheddar",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "All our cheeses are produced from the highest quality milk. This milk is produced by proud patrons who produce their milk without the use of the synthetic growth hormone rBGH.",
     "via": "woocommerce"
   },
   {
@@ -508,6 +580,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Havarti.jpg",
     "matched_title": "traditional havarti",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "All our cheeses are produced from the highest quality milk. This milk is produced by proud patrons who produce their milk without the use of the synthetic growth hormone rBGH.",
     "via": "woocommerce"
   },
   {
@@ -515,6 +588,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Cheddar-Cheese-w-Horseraddish.jpg",
     "matched_title": "traditional horseradish cheddar",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "All our cheeses are produced from the highest quality milk. This milk is produced by proud patrons who produce their milk without the use of the synthetic growth hormone rBGH.",
     "via": "woocommerce"
   },
   {
@@ -522,6 +596,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Mantague.jpg",
     "matched_title": "artisan montague",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Blend of Sheep and Cow milk",
     "via": "woocommerce"
   },
   {
@@ -529,6 +604,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Organic-Monterry-Jack-Cheese.jpg",
     "matched_title": "organic monterey jack",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Cedar Grove Cheese has been certified organic since 1996.",
     "via": "woocommerce"
   },
   {
@@ -536,6 +612,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2018/11/Organic-Muesnster-Cheese.jpg",
     "matched_title": "organic muenster",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Cedar Grove Cheese has been certified organic since 1996.",
     "via": "woocommerce"
   },
   {
@@ -543,6 +620,7 @@
     "image": "https://cedargrovecheese.com/wp/wp-content/uploads/2023/12/quark.jpg",
     "matched_title": "clock shadow creamery quark",
     "source_page": "https://cedargrovecheese.com/our-cheese/",
+    "summary": "Quark is creamy, soft cow’s milk cheese that originated in Germany. Use it in any place you would use sour cream or cream cheese.",
     "via": "woocommerce"
   },
   {
@@ -550,6 +628,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/212/565/garlic-dill-cheddar-curds__73200.1570015453.jpg?c=1",
     "matched_title": "garlic dill cheddar cheese curds",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -557,6 +636,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/484/903/garlic_and_dill_muen__83033.1730914651.jpg?c=1",
     "matched_title": "garlic dill muenster",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -564,6 +644,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/486/905/habanaero_munster__71661.1730915154.jpg?c=1",
     "matched_title": "habanero muenster",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -571,6 +652,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/214/567/jalapeno-cheddar-curds__63516.1570015457.jpg?c=1",
     "matched_title": "jalapeno cheddar cheese curds",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -578,6 +660,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/485/904/jalapeno_mues__10083.1730914964.jpg?c=1",
     "matched_title": "jalapeno muenster",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -585,6 +668,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/26/399/mozzarella__18822.1570015173.jpg?c=1",
     "matched_title": "whole milk mozzarella",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -592,6 +676,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/24/397/smoked-string__62574.1570015170.jpg?c=1",
     "matched_title": "smoked string cheese",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -599,6 +684,7 @@
     "image": "https://cdn11.bigcommerce.com/s-5cae58szid/images/stencil/500x659/products/23/396/string__74241.1570015169.jpg?c=1",
     "matched_title": "string cheese",
     "source_page": "https://www.cedarvalleycheesestore.com",
+    "summary": null,
     "via": "page"
   },
   {
@@ -606,6 +692,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_BasilFarmers_Front-18710.png",
     "matched_title": "basil farmers",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own Farmers cheese blended with fresh basil leaves. This is a lower fat/lower sodium option. Different and delicious!",
     "via": "woocommerce"
   },
   {
@@ -613,6 +700,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2015/03/Decatur_BeerCheddar_Front-18784-scaled.jpg",
     "matched_title": "beer cheddar",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own Beer Cheddar recipe made with LOCAL BEER. Beer lovers and cheese lovers unite and enjoy! This product contains gluten.",
     "via": "woocommerce"
   },
   {
@@ -620,6 +708,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/09/Decatur_Brick_Front-18744-scaled.jpg",
     "matched_title": "brick",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own Brick cheese is a semi-soft, mild cheese comparable to Muenster or Farmers cheese. Brick cheese originates in Wisconsin!",
     "via": "woocommerce"
   },
   {
@@ -627,6 +716,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/08/Decatur_Butterkase_Front-18726-scaled.jpg",
     "matched_title": "butterkase",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own Butterkase, a mild, yellow semi-soft Brick cheese. Melts wonderfully on a burger or grilled cheese sandwich.",
     "via": "woocommerce"
   },
   {
@@ -634,6 +724,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_CarawayHavarti_Front-18693-scaled.jpg",
     "matched_title": "caraway havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s own creamy Havarti cheese blended with caraway seeds to add a bit of personality. Try this melted on seeded rye bread!",
     "via": "woocommerce"
   },
   {
@@ -641,6 +732,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/08/Decatur_Colby_Front-18757-scaled.jpg",
     "matched_title": "colby longhorn",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Steve Stettler worked with UW Madison while creating this cheese. A smooth, mild Colby made in the old-fashioned Longhorn shape.",
     "via": "woocommerce"
   },
   {
@@ -648,6 +740,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_ColbySwiss_Front-18759-scaled.jpg",
     "matched_title": "colby swiss",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Steve’s patented creation of Stettler Swiss marbled with Colby. The mild flavor of Colby mixed with the tangy flavor of Swiss is every cheese lover’s dream!",
     "via": "woocommerce"
   },
   {
@@ -655,6 +748,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/09/Decatur_DillHavarti_Front-18782-scaled.jpg",
     "matched_title": "dill havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own Dill Havarti will add a gourmet touch to any table. Our signature Havarti blended with Dill creates this dilly delicacy.",
     "via": "woocommerce"
   },
   {
@@ -662,6 +756,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_Farmers_Front-18711-scaled.jpg",
     "matched_title": "farmers",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Farmers cheese is a lower fat/lower sodium cheese. Mild and smooth, similar to Brick or Muenster in flavor. Perfect cheese for snacking!",
     "via": "woocommerce"
   },
   {
@@ -669,6 +764,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_GarlicBrick_Front-18772-scaled.jpg",
     "matched_title": "garlic brick",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own Brick cheese recipe infused with garlic. This cheese will enhance any recipe and is perfect for garlic lovers!",
     "via": "woocommerce"
   },
   {
@@ -676,6 +772,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/08/DECATUR_GHOST_PEPPER_CHEDDAR_CHEESE-scaled-e1668548155707.jpg",
     "matched_title": "ghost pepper cheddar",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s cheddar made with HOT ghost peppers. Hotter than your average pepper jack! If you can never find something spicy enough, try this!",
     "via": "woocommerce"
   },
   {
@@ -683,6 +780,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_Gouda_Front-18718-scaled.jpg",
     "matched_title": "gouda",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own recipe creates this smooth Gouda cheese, known for its mild and rich flavor. Mild, sweet and slightly nutty.",
     "via": "woocommerce"
   },
   {
@@ -690,6 +788,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_OliveHavarti_Front-18781-scaled.jpg",
     "matched_title": "green olive havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s Famous Havarti cheese blended with sliced green olives complete this mild, buttery cheese. Perfect for snacking or melts beautifully.",
     "via": "woocommerce"
   },
   {
@@ -697,6 +796,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/08/Decatur_Havarti_Front-18699-scaled.jpg",
     "matched_title": "havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s smooth and buttery European-style cheese. Steve travelled all the way to Denmark to craft this cheese! One of our most notable award winners.",
     "via": "woocommerce"
   },
   {
@@ -704,6 +804,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/09/Decatur_HerbHavarti_Front-18763-scaled.jpg",
     "matched_title": "herb havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s famous Havarti cheese blended with the perfect amount of Italian herbs and seasonings. Check out the Smoked Herb Havarti for a smoky twist.",
     "via": "woocommerce"
   },
   {
@@ -711,6 +812,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_HorseradishHavarti_Front-18715-scaled.jpg",
     "matched_title": "horseradish havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy has won many awards for our different flavored Havarti’s. You won’t want to miss out on this one! Just a little bit of kick.",
     "via": "woocommerce"
   },
   {
@@ -718,6 +820,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_JalapenoMuenster_Front-18778-scaled.jpg",
     "matched_title": "jalapeno muenster",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Our award winning Muenster cheese blended with mild jalapeno peppers. This cheese is perfect for tacos or quesadillas. Try our other pepper cheeses!",
     "via": "woocommerce"
   },
   {
@@ -725,6 +828,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/09/Decatur_Muenster_Front-18767-scaled.jpg",
     "matched_title": "muenster",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": null,
     "via": "woocommerce"
   },
   {
@@ -732,6 +836,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/10/Decatur_OnionBrick_Front-18720-scaled.jpg",
     "matched_title": "onion brick",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "A smooth, semi-soft cheese with mild onion flavor. Onion Brick makes a perfect grilled cheese, especially on rye bread! Try adding some raw onion.",
     "via": "woocommerce"
   },
   {
@@ -739,6 +844,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/08/DECATUR_PEPPER_BRICK_CHEESE-scaled.jpg",
     "matched_title": "pepper brick",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Our mild Brick cheese infused with mild jalapeno peppers. Perfect to add some kick to any recipe. Try our Jalapeno Muenster or Pepper Havarti as well!",
     "via": "woocommerce"
   },
   {
@@ -746,6 +852,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/09/Decatur_PepperHavarti_Front-18706-scaled.jpg",
     "matched_title": "pepper havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s Pepper Havarti is perfect with any Mexican or Southwestern cuisine. Try our Pepper Brick and Jalapeno Muenster, featuring the same peppers!",
     "via": "woocommerce"
   },
   {
@@ -753,6 +860,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2015/03/Decatur_SmokedButtercase_Front-18740-scaled.jpg",
     "matched_title": "smoked butterkase",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Naturally smoked in a local smokehouse. Mild, smoky and buttery. This cheese is featured on our Smokey Bandit grilled cheese.",
     "via": "woocommerce"
   },
   {
@@ -760,6 +868,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2015/10/Decatur_SmokedCheddar_Front-18728-scaled.jpg",
     "matched_title": "smoked cheddar",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s own mild cheddar smoked in a local smoke house. This makes a fantastic snacking cheese or grilled cheese sandwich.",
     "via": "woocommerce"
   },
   {
@@ -767,6 +876,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2015/03/Decatur_SmokedGouda_Front-18702-scaled.jpg",
     "matched_title": "smoked gouda",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur Dairy’s own mild European style cheese smoked in a local smokehouse. Try Smoked Gouda in your next batch of mac and cheese.",
     "via": "woocommerce"
   },
   {
@@ -774,6 +884,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2016/11/Decatur_SmokedMediterraneanHerbHavarti_Front-18716-scaled.jpg",
     "matched_title": "smoked mediterranean herb havarti",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "This smoked Havarti won Best of Class at the World Cheese Contest in 2016. The Mediterranean herbs bring an Italian flair to traditional Havarti.",
     "via": "woocommerce"
   },
   {
@@ -781,6 +892,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2015/03/Decatur_SmokedMuenster_Front-18776-scaled.jpg",
     "matched_title": "smoked muenster",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s famous Muenster cheese smoked naturally in a local smokehouse. Mild, savory and delicious! The perfect snacking cheese.",
     "via": "woocommerce"
   },
   {
@@ -788,6 +900,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2016/11/Decatur_SmokedPepperMuenster_Front-18769-scaled.jpg",
     "matched_title": "smoked pepper muenster",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "Decatur’s World Class Muenster blended with jalapeno peppers and smoked in a local smoke house. An interesting twist on your average pepper jack.",
     "via": "woocommerce"
   },
   {
@@ -795,6 +908,7 @@
     "image": "https://decaturdairy.com/wp-content/uploads/2014/08/DECATUR_SWISS_CHEESE-scaled.jpg",
     "matched_title": "swiss",
     "source_page": "https://decaturdairy.com/product-category/decatur-cheeses/",
+    "summary": "This traditional Swiss cheese is aged in Steve’s own care and eventually cut from a 200 pound block. Try this on your next ham and swiss!",
     "via": "woocommerce"
   },
   {
@@ -802,6 +916,7 @@
     "image": "https://images.squarespace-cdn.com/content/v1/61cca43392ec94505df209d8/1728325693018-4GMY471NV42NSFJ1NI4N/5+Yr_Square+Beauty_W+Label_0862.jpg",
     "matched_title": "5 year aged cheddar",
     "source_page": "https://deercreekcheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -809,6 +924,7 @@
     "image": "https://images.squarespace-cdn.com/content/v1/61cca43392ec94505df209d8/21f6f8d8-a7d2-4adb-b668-c3ecb04ebc6a/blue-jay-wheel_new-label_0333-1.jpg",
     "matched_title": "the blue jay",
     "source_page": "https://deercreekcheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -816,6 +932,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-1-15.5-Bacon-Cheddar.jpeg",
     "matched_title": "bacon cheddar cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Bacon Cheddar Cheese is a savory masterpiece that combines the rich, sharp flavor of aged Cheddar with the smoky goodness of bacon.",
     "via": "woocommerce"
   },
   {
@@ -823,6 +940,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/5-ox-cheese-curds-for-website-1.jpeg",
     "matched_title": "cajun cheddar cheese curds",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Direct from the Cheese Curd Capital®. 100% all natural premium cheddar cheese curds with a spicy and flavorful Cajun seasoning.",
     "via": "woocommerce"
   },
   {
@@ -830,6 +948,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-3-15.5-Chipotle-Colby.jpeg",
     "matched_title": "chipotle colby cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "15.5 Chipotle Colby Ellsworth",
     "via": "woocommerce"
   },
   {
@@ -837,6 +956,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-4-15.5-Colby.jpeg",
     "matched_title": "colby cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Discover this Wisconsin original! Colby cheese was born in Colby, Wisconsin in 1885.",
     "via": "woocommerce"
   },
   {
@@ -844,6 +964,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/2-oz-cheese-curds-1-garlic.jpeg",
     "matched_title": "garlic cheddar cheese curds",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "2 oz Garlic Cheese Curds (24 quantity)",
     "via": "woocommerce"
   },
   {
@@ -851,6 +972,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-6-15.5-habanero-ghost-jack.jpeg",
     "matched_title": "habanero ghost jack cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Some like it hot, and for those who crave intense heat Habanero Ghost Jack Cheese is sure to ignite your taste buds.",
     "via": "woocommerce"
   },
   {
@@ -858,6 +980,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-8-15.5-Montery-Jack.jpeg",
     "matched_title": "monterey jack cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "From the heart of Wisconsin, we bring you our Monterey Jack Cheese.",
     "via": "woocommerce"
   },
   {
@@ -865,6 +988,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-15.jpeg",
     "matched_title": "muenster cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Crafted by our cheesemakers in our Menomonie, WI facility, this award winning cheese has a long history of being a Wisconsin favorite.",
     "via": "woocommerce"
   },
   {
@@ -872,6 +996,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/5-ox-cheese-curds-for-website-9.jpeg",
     "matched_title": "ranch cheddar cheese curds",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Direct from the Cheese Curd Capital®. 100% all natural premium cheddar cheese curds with a mild and tangy ranch seasoning.",
     "via": "woocommerce"
   },
   {
@@ -879,6 +1004,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/15.5-cheese-blocks-v2-16.jpeg",
     "matched_title": "sharp cheddar cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "Bold and tangy, Sharp Cheddar Cheese offers a distinctive sharpness that is balanced by its smooth and creamy texture.",
     "via": "woocommerce"
   },
   {
@@ -886,6 +1012,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/7.5-cheese-blocks-v2-12-7.5-smoky-cheddar.jpeg",
     "matched_title": "smoky cheddar cheese",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "7.5oz Smoked Cheddar Cheese",
     "via": "woocommerce"
   },
   {
@@ -893,6 +1020,7 @@
     "image": "https://www.ellsworthcheese.com/wp-content/uploads/2018/02/5-ox-cheese-curds-for-website-11.jpeg",
     "matched_title": "taco cheddar cheese curds",
     "source_page": "https://www.ellsworthcheese.com/products/",
+    "summary": "5oz Taco Natural Cheddar Cheese Curds",
     "via": "woocommerce"
   },
   {
@@ -900,6 +1028,7 @@
     "image": "https://gibbsvillecheese.com/wp-content/uploads/2016/09/Shredded-Cheddar-cheese-8oz.jpg",
     "matched_title": "shredded cheddar cheese",
     "source_page": "https://gibbsvillecheese.com/shop-online/",
+    "summary": "Gibbsville Shredded Cheddar Cheese.",
     "via": "woocommerce"
   },
   {
@@ -907,6 +1036,7 @@
     "image": "https://gibbsvillecheese.com/wp-content/uploads/2016/09/GIbbsville-Cajun-Cheese-Curds.jpg",
     "matched_title": "cajun flavored cheddar cheese curds",
     "source_page": "https://gibbsvillecheese.com/shop-online/",
+    "summary": "Gibbsville Cheese Curds, made fresh every Tuesday and available in store after 2PM. Makes a great snack, perfect for shipping!",
     "via": "woocommerce"
   },
   {
@@ -914,6 +1044,7 @@
     "image": "https://gibbsvillecheese.com/wp-content/uploads/2017/11/Colby-Cheese.jpg",
     "matched_title": "gibbsville natural rindless colby cheese",
     "source_page": "https://gibbsvillecheese.com/shop-online/",
+    "summary": null,
     "via": "woocommerce"
   },
   {
@@ -921,6 +1052,7 @@
     "image": "https://gibbsvillecheese.com/wp-content/uploads/2017/11/Monterey-Jack-Cheese.jpg",
     "matched_title": "monterey jack cheese",
     "source_page": "https://gibbsvillecheese.com/shop-online/",
+    "summary": null,
     "via": "woocommerce"
   },
   {
@@ -928,6 +1060,7 @@
     "image": "http://gilecheese.com/prodimages/1-yr-aged-cheddar_small.jpg",
     "matched_title": "1 year aged sharp cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -935,6 +1068,7 @@
     "image": "http://gilecheese.com/prodimages/beer-cheddar_small.jpg",
     "matched_title": "beer cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -942,6 +1076,7 @@
     "image": "http://gilecheese.com/prodimages/black-pepper-cheddar_small.jpg",
     "matched_title": "black pepper cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -949,6 +1084,7 @@
     "image": "http://gilecheese.com/prodimages/medium-cheddar-2_small.jpg",
     "matched_title": "medium cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -956,6 +1092,7 @@
     "image": "http://gilecheese.com/images/Category-Cheese-Curds.png",
     "matched_title": "cheese curds",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -963,6 +1100,7 @@
     "image": "http://gilecheese.com/prodimages/chipotle-pepper_small.jpg",
     "matched_title": "chipotle pepper cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -970,6 +1108,7 @@
     "image": "http://gilecheese.com/prodimages/cranberry-cheddar_small.jpg",
     "matched_title": "cranberry cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -977,6 +1116,7 @@
     "image": "http://gilecheese.com/prodimages/mild-cheddar-2_small.jpg",
     "matched_title": "mild cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -984,6 +1124,7 @@
     "image": "http://gilecheese.com/prodimages/morel-leek-jack_small.jpg",
     "matched_title": "morel and leek jack",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -991,6 +1132,7 @@
     "image": "http://gilecheese.com/prodimages/tomato-basil-cheddar_small.jpg",
     "matched_title": "tomato basil cheddar",
     "source_page": "http://gilecheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -998,6 +1140,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0692/4651/7427/files/caerphilly-stacked.jpg?v=1743606857",
     "matched_title": "caerphilly a welsh delight",
     "source_page": "http://www.harmonycheese.com/collections/all",
+    "summary": "Experience the time-honored tradition of Welsh cheesemaking with our classic Caerphilly.",
     "via": "shopify"
   },
   {
@@ -1005,6 +1148,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0692/4651/7427/files/merlot-cheddar-stacked.jpg?v=1743606848",
     "matched_title": "merlot cheddar a sophisticated indulgence",
     "source_page": "http://www.harmonycheese.com/collections/all",
+    "summary": "Experience the luxurious flavor of Merlot Cheddar, where the rich notes of Merlot grapes infuse the classic cheddar with a sophisticated depth.",
     "via": "shopify"
   },
   {
@@ -1012,6 +1156,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0692/4651/7427/files/double-gloucester-stacked.jpg?v=1743606657",
     "matched_title": "double gloucester a delicate touch of welsh tradition",
     "source_page": "http://www.harmonycheese.com/collections/all",
+    "summary": "Discover the delicate flavor of Gloucestor, a semi-hard cheese with a smooth, creamy texture and a hint of fruitiness.",
     "via": "shopify"
   },
   {
@@ -1019,6 +1164,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0692/4651/7427/files/Stacked_Reserve_Parmesan_Harmony_Cheese_Shoot_III.jpg?v=1750195211",
     "matched_title": "reserve parmesan",
     "source_page": "http://www.harmonycheese.com/collections/all",
+    "summary": "Experience our Reserve Parmesan, an extraordinary cheese aged over 5 years. This long aging creates a deep, complex, and intensely nutty flavor with a delightful, crumbly texture.",
     "via": "shopify"
   },
   {
@@ -1026,6 +1172,7 @@
     "image": "https://cdn11.bigcommerce.com/s-mshhgmhl6m/images/stencil/160w/products/518/1142/1392__52476.1763478346.jpg?c=2",
     "matched_title": "henning s aleppo cheddar cheese",
     "source_page": "https://store.henningscheese.com/",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1033,6 +1180,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0864/6685/5186/files/HVDlogocolor.png?v=1765739326",
     "matched_title": "bacon gouda",
     "source_page": "https://hillvalleydairy.com/shop",
+    "summary": "Our bacon gouda is one of the collaborative cheeses we’ve developed at Hill Valley Dairy.",
     "via": "shopify"
   },
   {
@@ -1040,6 +1188,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0864/6685/5186/files/prod2-min.png?v=1711735966",
     "matched_title": "black pepper cheddar",
     "source_page": "https://hillvalleydairy.com/shop",
+    "summary": "There is something about a strong cheddar and fresh black pepper that is irresistible.",
     "via": "shopify"
   },
   {
@@ -1047,6 +1196,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0864/6685/5186/files/HVDlogocolor.png?v=1765739326",
     "matched_title": "5 yr cheddar",
     "source_page": "https://hillvalleydairy.com/shop",
+    "summary": "The key ingredient to an excellent cheddar is high quality milk. All of the milk we source comes from our family dairy farm, so we know we have premium milk to work.",
     "via": "shopify"
   },
   {
@@ -1054,6 +1204,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0864/6685/5186/files/cheese-crud.jpg?v=1720700634",
     "matched_title": "plain cheddar cheese curds",
     "source_page": "https://hillvalleydairy.com/shop",
+    "summary": "A wisconsin delicacy, this is the youngest form of cheddar available, we make our fresh curds every week. They are creamy, salty and of course like all good Wisco curds, squeaky.",
     "via": "shopify"
   },
   {
@@ -1061,6 +1212,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0864/6685/5186/files/Garlic_Dill.jpg?v=1724123131",
     "matched_title": "garlic dill cheddar",
     "source_page": "https://hillvalleydairy.com/shop",
+    "summary": "One of our most popular flavored cheddars, Garlic Dill Cheddar provides a perfect blend of sweet grassy dill notes with a soft buttery garlic flavor.",
     "via": "shopify"
   },
   {
@@ -1068,6 +1220,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0994/0254/7483/files/Sark_No_WP_292d1d30-910d-4aeb-8acc-0420c0ae67bf.jpg?v=1781899004",
     "matched_title": "sark butterkase",
     "source_page": "https://www.hoardscreamery.com/collections/frontpage",
+    "summary": "Creamy, buttery, mild, and versatile are words that quickly come to mind when describing our Sark butterkäse cheese.",
     "via": "shopify"
   },
   {
@@ -1075,6 +1228,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0994/0254/7483/files/StSaviour_No_WP_ffba120f-dcfd-4610-8269-cdb02e494fce.jpg?v=1781899100",
     "matched_title": "st saviour camembert style",
     "source_page": "https://www.hoardscreamery.com/collections/frontpage",
+    "summary": "Named for a small parish on the Isle of Guernsey, our St. Saviour Camembert-style cheese delivers a rich, buttery flavor from a soft, creamy core inside a brilliant rind.",
     "via": "shopify"
   },
   {
@@ -1082,6 +1236,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0994/0254/7483/files/Havarti_Dill_NO_WP.jpg?v=1781898981",
     "matched_title": "dill havarti",
     "source_page": "https://www.hoardscreamery.com/collections/frontpage",
+    "summary": "The addition of real dill fronds among our Island Havarti’s little holes is a classic complement to the cheese’s soft tang and the serious Unami qualities it gathers from our farm’s milk.",
     "via": "shopify"
   },
   {
@@ -1089,6 +1244,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0994/0254/7483/files/Gouda_NO_WP.jpg?v=1781899027",
     "matched_title": "gouda",
     "source_page": "https://www.hoardscreamery.com/collections/frontpage",
+    "summary": "This very special Gouda cheese will be a welcome addition to your next charcuterie platter.",
     "via": "shopify"
   },
   {
@@ -1096,6 +1252,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/55/image_512/Applewood%20Smoked%20Cheddar%20Cheese?unique=73c6634",
     "matched_title": "applewood smoked cheddar cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1103,6 +1260,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/56/image_512/Black%20Peppercorn%20Cheddar%20Cheese?unique=87c1be9",
     "matched_title": "black peppercorn cheddar cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1110,6 +1268,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/58/image_512/Breezy%20Blue%C2%AE%20Cheese?unique=9bf9c92",
     "matched_title": "breezy blue cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1117,6 +1276,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/60/image_512/Ghost%20Pepper%20Cheddar%20Cheese?unique=44c16e9",
     "matched_title": "ghost pepper cheddar cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1124,6 +1284,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/61/image_512/Goat%20Blue%20Cheese?unique=fcb21e9",
     "matched_title": "goat blue cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1131,6 +1292,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/62/image_512/Gorgonzola%20Cheese?unique=edc763e",
     "matched_title": "gorgonzola cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1138,6 +1300,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/64/image_512/Juusto%20with%20Bacon%20Crumbles?unique=2f2caae",
     "matched_title": "juusto with bacon crumbles",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1145,6 +1308,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/65/image_512/Juusto%20with%20Jalapeno%20Peppers?unique=5b0190c",
     "matched_title": "juusto with jalapeno peppers",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1152,6 +1316,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/70/image_512/Signature%202%20Year%20Aged%20Sharp%20Cheddar%20Cheese?unique=6d88b34",
     "matched_title": "signature 2 year aged sharp cheddar cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1159,6 +1324,7 @@
     "image": "https://www.kingstoncoop.org/web/image/product.template/71/image_512/Smoked%20Blue%20Cheese?unique=5346c5f",
     "matched_title": "smoked blue cheese",
     "source_page": "https://www.kingstoncoop.org/shop",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1166,6 +1332,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_aa873a64b7be4230bc6cbd9a6ae62712~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_aa873a64b7be4230bc6cbd9a6ae62712~mv2.png",
     "matched_title": "aged goat cheddar",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1173,6 +1340,7 @@
     "image": "https://static.wixstatic.com/media/9283d3_a4655195525747b38343af014606d207~mv2.jpg/v1/fill/w_147,h_118,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/9283d3_a4655195525747b38343af014606d207~mv2.jpg",
     "matched_title": "cave aged chandoka",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1180,6 +1348,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_c3f53f8a373d4bb99f28e29e1c2d3560~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_c3f53f8a373d4bb99f28e29e1c2d3560~mv2.png",
     "matched_title": "chandoka",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1187,6 +1356,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_e4d6dc1c82d94236bd534cbb63d2274d~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_e4d6dc1c82d94236bd534cbb63d2274d~mv2.png",
     "matched_title": "goat cheddar",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1194,6 +1364,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_5f6a4b48c2a74726b36099309509b6d6~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_5f6a4b48c2a74726b36099309509b6d6~mv2.png",
     "matched_title": "goat feta",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1201,6 +1372,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_f7d2a3a914b5427e8dcc23f45842319c~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_f7d2a3a914b5427e8dcc23f45842319c~mv2.png",
     "matched_title": "goat jack",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1208,6 +1380,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_1f59eeaf384647a5b79c1559ac5077bc~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_1f59eeaf384647a5b79c1559ac5077bc~mv2.png",
     "matched_title": "goat mozzarella",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1215,6 +1388,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_c5b21973f69243d2931c0475008fd807~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_c5b21973f69243d2931c0475008fd807~mv2.png",
     "matched_title": "goat pepper jack",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1222,6 +1396,7 @@
     "image": "https://static.wixstatic.com/media/abe06f_3ca676991e0641b882a702208bbc7e73~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/abe06f_3ca676991e0641b882a702208bbc7e73~mv2.png",
     "matched_title": "smoked goat cheddar",
     "source_page": "https://www.laclarefamilycreamery.com/products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1229,6 +1404,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/lagranders-hillside-dairy-gouda.png",
     "matched_title": "3 pepper gouda",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": null,
     "via": "woocommerce"
   },
   {
@@ -1236,6 +1412,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/lagranders-hillside-dairy-gouda.png",
     "matched_title": "aged gouda",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": null,
     "via": "woocommerce"
   },
   {
@@ -1243,6 +1420,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/lagranders-hillside-dairy-cheddar-cheese-brick.png",
     "matched_title": "aged cheddar cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "🧀 LaGrander’s Cheddar Collection – Aged Wisconsin Excellence From mild and buttery to sharp and aged — LaGrander’s Cheddar show how Wisconsin does it best.",
     "via": "woocommerce"
   },
   {
@@ -1250,6 +1428,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/gilman-cheddar-bacon-cheese.png",
     "matched_title": "cheddar bacon cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "Get that block of Cheddar Bacon Cheese, let it earn its place in your snack arsenal, and watch how fast it becomes the “go-to” in your cheese drawer. Ready when you are.",
     "via": "woocommerce"
   },
   {
@@ -1257,6 +1436,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/10/lagranders-hillside-dairy-cheese-curds.png",
     "matched_title": "plain cheese curds",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "When the snacks need to step up and you want to give your crew something not ordinary , bring in the 10 lb Plain Cheese Curds from LaGrander’s.",
     "via": "woocommerce"
   },
   {
@@ -1264,6 +1444,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/10/lagranders-hillside-dairy-colby-cheese.png",
     "matched_title": "colby deli cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "Bring home this 6 lb Colby from LaGrander’s and you’re not just buying cheese — you’re investing in reliable flavor, smart kitchen prep, and a block that supports everything from everyday meals to…",
     "via": "woocommerce"
   },
   {
@@ -1271,6 +1452,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/lagranders-hillside-dairy-gouda.png",
     "matched_title": "gouda mango habanero deli cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "Grab this mango-habanero Gouda from LaGrander’s and let your next cheese moment bring both the sensory punch and the craft you deserve.",
     "via": "woocommerce"
   },
   {
@@ -1278,6 +1460,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/lagranders-hillside-dairy-gouda.png",
     "matched_title": "gouda smoked deli cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "Bring this Smoked Gouda 1-lb brick into your kitchen and let every slice, melt or cube feel intentional. Bold flavor, smart format, ready to stack up with your best meals.",
     "via": "woocommerce"
   },
   {
@@ -1285,6 +1468,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/11/lagranders-hillside-dairy-cheddar-cheese-brick.png",
     "matched_title": "mild cheddar cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "🧀 LaGrander’s Cheddar Collection – Aged Wisconsin Excellence From mild and buttery to sharp and aged — LaGrander’s Cheddar show how Wisconsin does it best.",
     "via": "woocommerce"
   },
   {
@@ -1292,6 +1476,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/10/lagranders-hillside-dairy-monterey-jack-deli-cheese.png",
     "matched_title": "monterey jack deli cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "Bring home the LaGrander’s 6 lb Monterey Jack Deli Cheese—it gives you bulk utility with real cheese flavor , not just filler.",
     "via": "woocommerce"
   },
   {
@@ -1299,6 +1484,7 @@
     "image": "https://shoplagranders.com/wp-content/uploads/2025/10/lagranders-hillside-dairy-pepper-jack-deli-cheese.png",
     "matched_title": "pepper jack deli cheese",
     "source_page": "https://shoplagranders.com/shop/",
+    "summary": "Bring home a big block of flavor with LaGrander’s 6 lb Pepper Jack Deli Cheese — a creamy, mildly spicy Monterey Jack-style cheese crafted by Wisconsin’s renowned cheesemakers.",
     "via": "woocommerce"
   },
   {
@@ -1306,6 +1492,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Cores.jpg?v=1712001472",
     "matched_title": "marieke gouda cores",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Cores from our Gouda wheels are the definition of a \"middle piece\". These cores are the perfect shape and size for easy slicing to snack or pair with a round cracker.",
     "via": "shopify"
   },
   {
@@ -1313,6 +1500,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Golden.jpg?v=1712000790",
     "matched_title": "marieke golden",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "This American Original precisely encapsulates the American dream.",
     "via": "shopify"
   },
   {
@@ -1320,6 +1508,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Bacon.jpg?v=1712000749",
     "matched_title": "marieke gouda bacon",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Juicy bacon is sprinkled throughout the luscious cheese creating a combination unmatched. All Marieke® Gouda is made using fresh raw milk from our family farm.",
     "via": "shopify"
   },
   {
@@ -1327,6 +1516,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/ChipotleCakeGlam-4.jpg?v=1719402462",
     "matched_title": "marieke gouda chipotle",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "A warm zing and a spicy kick give this Gouda its signature taste. All Marieke® Gouda is made using fresh raw milk from our family farm.",
     "via": "shopify"
   },
   {
@@ -1334,6 +1524,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Cranberry_c113b721-813d-495d-9d31-3c3e28a62411.jpg?v=1712594245",
     "matched_title": "marieke gouda cranberry",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Tart notes of cranberry burst within this creamy and rich true farmstead Gouda. A seasonal flavor that is sure to bring the feelings of a crisp Wisconsin day to your table.",
     "via": "shopify"
   },
   {
@@ -1341,6 +1532,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/3240959345.jpg?v=1714397535",
     "matched_title": "marieke gouda onion garlic",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Complex notes of paprika, ginger, and horseradish start this Gouda with robust aromas. Paired with its creamy and rich texture, this cheese is a whole new level of luscious.",
     "via": "shopify"
   },
   {
@@ -1348,6 +1540,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/3240647436.jpg?v=1714396332",
     "matched_title": "marieke gouda pesto basil",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Creamy and full-flavored this Gouda is woven with aromatic herbs. Notes of oregano, basil, and pepper are all apparent in this farmstead cheese.",
     "via": "shopify"
   },
   {
@@ -1355,6 +1548,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Mature.jpg?v=1712000562",
     "matched_title": "marieke gouda plain mature 6 9months",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Marieke® Gouda Plain Mature (6-9 months) is an artisan cheese that has a rich and full flavor profile. Its refined caramel notes finish the Gouda with a subtle bite.",
     "via": "shopify"
   },
   {
@@ -1362,6 +1556,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Young.jpg?v=1712000506",
     "matched_title": "marieke gouda plain young 2 4 months",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "This creamy and buttery Gouda has an irresistible, mild taste that is perfect for any occasion. Slightly sweet notes balance out the richness with a burst of flavor.",
     "via": "shopify"
   },
   {
@@ -1369,6 +1564,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/Smoked.jpg?v=1712000359",
     "matched_title": "marieke gouda smoked",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "A Gouda rich and full-flavored that is gently smoked over natural hickory wood. The authentic aromas arouse feelings of warm summer nights.",
     "via": "shopify"
   },
   {
@@ -1376,6 +1572,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0754/8580/6912/files/SmokedCumin.jpg?v=1712000237",
     "matched_title": "marieke gouda smoked cumin",
     "source_page": "https://shopmariekegouda.com/collections/marieke-gouda-all-flavors",
+    "summary": "Distinctly sweet scents encompass this Gouda. A subtle spice is enhanced by being smoked over natural hickory wood.",
     "via": "shopify"
   },
   {
@@ -1383,6 +1580,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-caraway-cheddar-6oz.jpg?v=1785778604",
     "matched_title": "caraway cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "Experience a bold, savory twist on a Wisconsin classic.",
     "via": "shopify"
   },
   {
@@ -1390,6 +1588,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-white-cheddar-8oz.jpg?v=1785778778",
     "matched_title": "white cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "Our White Cheddar Cheese is a smooth, creamy, and flavorful classic with a rich, tangy bite.",
     "via": "shopify"
   },
   {
@@ -1397,6 +1596,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-chipotle-cheddar.jpg?v=1785779925",
     "matched_title": "chipotle cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A semi-hard Cheddar with the spicy, smokey flavor of chipotle peppers. -- Pairs well with: a full body red wine.",
     "via": "shopify"
   },
   {
@@ -1404,6 +1604,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-colby-8oz.jpg?v=1785781396",
     "matched_title": "colby",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A natural, semi-soft mild cheese with a pleasant clean finish. Makes a great table cheese for slicing, grilling or grating. -- Pairs well with: Champagne, Riesling or Pinot Grigio",
     "via": "shopify"
   },
   {
@@ -1411,6 +1612,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-dill-havarti-6oz.jpg?v=1785779729",
     "matched_title": "dill havarti",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A semi-soft Havarti with a fresh dill taste. A creamy texture with a mild buttery flavor.",
     "via": "shopify"
   },
   {
@@ -1418,6 +1620,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-garlic-pesto-jack-6oz.jpg?v=1785781345",
     "matched_title": "garlic pesto jack",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "This semi-soft cheese with the perfect balance of garlic and basil is great on your favorite cracker or topping a pizza. -- Pairs well with: a soft white wine.",
     "via": "shopify"
   },
   {
@@ -1425,6 +1628,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-hickory-smoked-cheddar-8oz.jpg?v=1785781121",
     "matched_title": "hickory smoked cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "Our Hickory Smoked Cheddar is a rich, savory cheese infused with deep, smoky flavor from natural hickory wood smoking.",
     "via": "shopify"
   },
   {
@@ -1432,6 +1636,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-horseradish-cheddar-8oz.jpg?v=1785780156",
     "matched_title": "horseradish cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A semi-hard Cheddar with the bite of horseradish root. A true Wisconsin favorite. -- Forget the wine on this one! Pairs well with: brats, burgers and beer!",
     "via": "shopify"
   },
   {
@@ -1439,6 +1644,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-mediterranean-cheddar-8oz.jpg?v=1785781290",
     "matched_title": "mediterranean cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A semi-hard Cheddar with sun-dried tomatoes, kalamata olives, oregano and basil. Top a pizza for a new twist! -- Pairs well with: a fruitier red wine.",
     "via": "shopify"
   },
   {
@@ -1446,6 +1652,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-mild-cheddar-8oz.jpg?v=1785779169",
     "matched_title": "mild cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "Semi-hard Cheddar that carries a tanginess along with smooth, consistent flavor. Great table cheese used for grating or grilling. -- Pairs well with: Champagne or Chardonnay",
     "via": "shopify"
   },
   {
@@ -1453,6 +1660,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-monterey-jack-6oz.jpg?v=1785781453",
     "matched_title": "monterey jack",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "This semi-soft, natural cheese is mild and pleasantly flavorful with a smooth creamy texture. -- Pairs well with: Riesling wine.",
     "via": "shopify"
   },
   {
@@ -1460,6 +1668,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-smoked-gouda-8oz.jpg?v=1785781169",
     "matched_title": "natural smoked gouda",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "This rich Gouda cheese with an all-natural smoke will have you craving more.",
     "via": "shopify"
   },
   {
@@ -1467,6 +1676,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-pepper-jack-6oz.jpg?v=1785779002",
     "matched_title": "pepper jack",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A semi-soft, Monterey Jack with the delicate flavors of jalapeno peppers. -- Pairs well with: Sauvignon blanc.",
     "via": "shopify"
   },
   {
@@ -1474,6 +1684,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-sharp-cheddar-8oz.jpg?v=1785940192",
     "matched_title": "sharp cheddar",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "Full flavored with a nice firm texture, Sharp Cheddar has great versatility. You will want to stock up! A richer flavor and firmer texture develops as the aging process continues.",
     "via": "shopify"
   },
   {
@@ -1481,6 +1692,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0399/4301/2520/files/Wisconsin-meister-cheese-siriacha-jack-6oz.jpg?v=1785781023",
     "matched_title": "sriracha jack",
     "source_page": "https://store.meistercheese.com/collections/shop",
+    "summary": "A semi-soft Monterey Jack with the bold flavor of Sriracha. A sure-fire win for Sriracha lovers and heat seekers!",
     "via": "shopify"
   },
   {
@@ -1488,6 +1700,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Aged-Swiss-Cheese.jpg",
     "matched_title": "aged swiss cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Aged Swiss has a sharper flavor and a more firm consistency. Enjoy the open texture, and larger holes with a multilayered nutty flavor profile.",
     "via": "woocommerce"
   },
   {
@@ -1495,6 +1708,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2020/06/Bacon-Cheddar-Cheese.jpg",
     "matched_title": "bacon cheddar cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Bacon Cheddar Cheese Price shown is for 1 lb.",
     "via": "woocommerce"
   },
   {
@@ -1502,6 +1716,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Mild-Brick-Cheese-1.jpg",
     "matched_title": "mild brick cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Enjoy this semi-hard cheese with its open texture and small, irregular holes.",
     "via": "woocommerce"
   },
   {
@@ -1509,6 +1724,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Caraway-Jack-Cheese.jpg",
     "matched_title": "caraway jack cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "You might associate caraway seeds with rye bread and sausages, but our delightfully different combination will let you enjoy the pungent aroma and sweet but tangy zest of this herb that is actually…",
     "via": "woocommerce"
   },
   {
@@ -1516,6 +1732,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/11/Scorpion-Cheddar-Cheese.jpg",
     "matched_title": "scorpion cheddar",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Hot, hot, hot!",
     "via": "woocommerce"
   },
   {
@@ -1523,6 +1740,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Baby-Colby-Cheese.jpg",
     "matched_title": "baby colby cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Baby Colby has a milder flavor and tiny holes. Try this moist, delicious cheese for your next grilling, grating, snack or salad for a taste to remember. Price shown is for 1 lb.",
     "via": "woocommerce"
   },
   {
@@ -1530,6 +1748,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Cranberry-Jack-Cheese.jpg",
     "matched_title": "cranberry jack cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "The smack of bittersweet flavor makes this imaginative combination savory and sophisticated.",
     "via": "woocommerce"
   },
   {
@@ -1537,6 +1756,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Dill-Jack-Cheese.jpg",
     "matched_title": "dill jack cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "The scent explodes when you open our package! Even a tiny nibble will create a tang of flavor that will add a full-bodied snap to your next burger or cracker and cheese appetizer.",
     "via": "woocommerce"
   },
   {
@@ -1544,6 +1764,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2023/07/Cafe-Olympia-Feta-Spread-14-oz.jpg",
     "matched_title": "cafe olympia feta spread",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Feta Cheese Spread is a NEW signature item for Nasonville Dairy. Our Feta Spread starts with our own quality aged Feta and is designed for a robust flavor and great spreadability.",
     "via": "woocommerce"
   },
   {
@@ -1551,6 +1772,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Ghost-Pepper-Jack-Cheese.jpg",
     "matched_title": "ghost pepper jack cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Hot, hot, hot!",
     "via": "woocommerce"
   },
   {
@@ -1558,6 +1780,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Gouda-Cheese-1.jpg",
     "matched_title": "gouda cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Gouda Cheese from Nasonville Dairy is a semi-hard curd cheese soaked in a brine solution to achieve its distinctive taste.",
     "via": "woocommerce"
   },
   {
@@ -1565,6 +1788,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Habanero-Jack-Cheese-1.jpg",
     "matched_title": "habanero jack cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Many pepper fans and chefs say that the Habanero Pepper adds heat with notes of fruity-citrus to your foods, like in this Habanero Jack Cheese that is boldly satisfying to your taste buds.",
     "via": "woocommerce"
   },
   {
@@ -1572,6 +1796,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Monterey-Jack-Cheese.jpg",
     "matched_title": "monterey jack cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Buttery-ivory color with a rich, sharp and slightly nutty flavor, this cheese is a perennial favorite.",
     "via": "woocommerce"
   },
   {
@@ -1579,6 +1804,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Pizza-Cheese-1.jpg",
     "matched_title": "pizza cheese",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Enjoy the meltability and taste of our specially created just for pizza cheese. Delicioso! Price shown is for 1 lb.",
     "via": "woocommerce"
   },
   {
@@ -1586,6 +1812,7 @@
     "image": "https://nasonvilledairy.com/wp-content/uploads/2016/10/Queso-Blanco.jpg",
     "matched_title": "queso blanco",
     "source_page": "https://nasonvilledairy.com/product-category/all-products/",
+    "summary": "Queso Blanco is a fresh, mild, and crumbly white Mexican cheese. It softens without melting and is perfect with fruit, marmalades, on salads, sandwiches and over rice and beans.",
     "via": "woocommerce"
   },
   {
@@ -1593,6 +1820,7 @@
     "image": "http://www.nordiccreamery.com/prodimages/Aged Cheddar_small.jpg",
     "matched_title": "aged cheese cheddar",
     "source_page": "http://www.nordiccreamery.com/products.php?cat=All+Products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1600,6 +1828,7 @@
     "image": "http://www.nordiccreamery.com/prodimages/Capriko-Smoked-Cheese_small.jpg",
     "matched_title": "capriko smoked cheese",
     "source_page": "http://www.nordiccreamery.com/products.php?cat=All+Products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1607,6 +1836,7 @@
     "image": "http://www.nordiccreamery.com/prodimages/Raw Milk Cheddar cheese_small.jpg",
     "matched_title": "raw milk goat cheddar cheese",
     "source_page": "http://www.nordiccreamery.com/products.php?cat=All+Products",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1614,6 +1844,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Cheddar-Bacon-resized-scaled.jpg",
     "matched_title": "cheddar bacon cheese spread",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Because everything’s better with bacon. 🧀🥓 Creamy Wisconsin cheddar and smoky bacon come together for a spread that’s downright addictive.",
     "via": "woocommerce"
   },
   {
@@ -1621,6 +1852,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Cheddar-Garlic-spread-resized-scaled.jpg",
     "matched_title": "cheddar garlic cheese spread",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Garlic lovers—meet your match. Smooth Wisconsin cheddar pairs with bold garlic flavor in a spread that’s perfect for crackers, bread, or sneaky spoonfuls.",
     "via": "woocommerce"
   },
   {
@@ -1628,6 +1860,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Cheddar-Horseradish-resized-scaled.jpg",
     "matched_title": "cheddar horseradish cheese spread",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Smooth Wisconsin cheddar with a bold horseradish kick — creamy, tangy, and just the right amount of heat to wake up your taste buds.",
     "via": "woocommerce"
   },
   {
@@ -1635,6 +1868,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Cheddar-WIne-resized-scaled.jpg",
     "matched_title": "cheddar wine cheese spread",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Smooth, savory, and rich—our Cheddar Wine Cheese Spread blends aged Wisconsin cheddar with a touch of red wine for a creamy, crowd-pleasing favorite.",
     "via": "woocommerce"
   },
   {
@@ -1642,6 +1876,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Curd-Snack-Cheeses-resized-scaled.jpg",
     "matched_title": "fresh wisconsin cheese curds",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "The ultimate Wisconsin snack! Fresh, squeaky, and full of creamy cheddar flavor — straight from our farm to your fridge.",
     "via": "woocommerce"
   },
   {
@@ -1649,6 +1884,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Cranberry-White-Cheddar-V2-resized-scaled.jpg",
     "matched_title": "cranberry white cheddar cheese",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Sweet meets savory in this creamy Cranberry White Cheddar cheese blended with real dried cranberries. A festive, flavorful twist on a Wisconsin classic.",
     "via": "woocommerce"
   },
   {
@@ -1656,6 +1892,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Dill-Cheese-Curds-square-scaled.jpg",
     "matched_title": "garlic and dill cheddar cheese curds",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Squeaky, savory, and packed with flavor! Fresh Wisconsin curds tossed with zesty garlic and bright dill — the perfect farm-fresh snack you can’t stop eating.",
     "via": "woocommerce"
   },
   {
@@ -1663,6 +1900,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Mild-Cheddar-Block-resized.jpg",
     "matched_title": "mild cheddar cheese",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Creamy, mild, and versatile — Ron’s Mild Cheddar Cheese is perfect for sandwiches, snacking, melting, or boards.",
     "via": "woocommerce"
   },
   {
@@ -1670,6 +1908,7 @@
     "image": "https://ronscheese.com/wp-content/uploads/2020/08/Pepper-Jack-Block-resized-scaled.jpg",
     "matched_title": "pepper jack cheese",
     "source_page": "https://ronscheese.com/shop/",
+    "summary": "Creamy, smooth, and delightfully spicy — Ron’s Pepper Jack Cheese brings a little heat to any dish without overpowering.",
     "via": "woocommerce"
   },
   {
@@ -1677,6 +1916,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/1YearSharpCheddar8oz.png?v=1769635275",
     "matched_title": "1 year aged sharp cheddar cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Experience the rich, nuanced flavor that only a year of patient aging can create with our 1 Year Aged Sharp Cheddar.",
     "via": "shopify"
   },
   {
@@ -1684,6 +1924,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/AgedAsiagoCheeseSpread.png?v=1720446411",
     "matched_title": "aged asiago cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Invite the rich, nutty aroma of aged Italian cheese to your family table with Renard's Artisan Aged Asiago Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1691,6 +1932,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/AgedBrickCheese8oz.png?v=1720446432",
     "matched_title": "aged brick cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your family for an authentic taste of Wisconsin heritage with Renard's Artisan Aged Brick Cheese.",
     "via": "shopify"
   },
   {
@@ -1698,6 +1940,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/CajunCheeseCurds8oz.png?v=1739374822",
     "matched_title": "cajun cheese curds sealed",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring a touch of lively Southern-inspired spice to your family gatherings with Renard's Artisan Cajun Cheese Curds.",
     "via": "shopify"
   },
   {
@@ -1705,6 +1948,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/BlueCheddarCheese8oz.png?v=1764107600",
     "matched_title": "blue cheddar cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Discover the delightful taste of our Natural Blue Cheddar Cheese from Renard's Artisan Cheese.",
     "via": "shopify"
   },
   {
@@ -1712,6 +1956,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Fried_Cheese_Curds.png?v=1774642399",
     "matched_title": "cheese curds bistro",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Renard's famous golden fried cheese curds served with a side of garlic aioli or ranch.",
     "via": "shopify"
   },
   {
@@ -1719,6 +1964,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/ColbyCheese8oz.png?v=1758203755",
     "matched_title": "colby cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Share the simple, honest flavor of Renard's Artisan Colby Cheese, a true American classic crafted with heart.",
     "via": "shopify"
   },
   {
@@ -1726,6 +1972,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/FarmersCheese8oz.png?v=1758292148",
     "matched_title": "farmers cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Rediscover the simple, wholesome goodness of Renard's Artisan Farmers Cheese, a timeless classic crafted for your family’s table.",
     "via": "shopify"
   },
   {
@@ -1733,6 +1980,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/DillandGarlicCheeseCurds8oz.png?v=1739374819",
     "matched_title": "garlic and dill cheese curds sealed",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Share a taste of tradition, elevated with a fresh, savory twist, with our Garlic & Dill Cheese Curds.",
     "via": "shopify"
   },
   {
@@ -1740,6 +1988,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/GarlicCheddarCheeseSpread.png?v=1720449500",
     "matched_title": "garlic cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring the comforting, savory aroma of roasted garlic into your home with Renard's Artisan Garlic Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1747,6 +1996,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/HavartiCheesewithDill8oz.png?v=1758203152",
     "matched_title": "havarti cheese with dill",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Experience the fresh, delightful flavor of Renard's Artisan Havarti with Dill, a cheese that captures the essence of a summer garden.",
     "via": "shopify"
   },
   {
@@ -1754,6 +2004,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/HorseradishCheddarCheeseSpread8oz.png?v=1720450287",
     "matched_title": "horseradish cheddar cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Add a bold and zesty flavor to your family table with Renard's Artisan Horseradish Cheddar Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1761,6 +2012,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/JalapenoPepperCheddarCheeseSpread.png?v=1720450385",
     "matched_title": "jalapeno pepper cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Turn up the heat and bring a spirited kick to your next family gathering with Renard's Artisan Jalapeno Pepper Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1768,6 +2020,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/MontereyJackCheese8oz.png?v=1758296034",
     "matched_title": "monterey jack cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Discover the simple, classic comfort of Renard's Artisan Monterey Jack Cheese.",
     "via": "shopify"
   },
   {
@@ -1775,6 +2028,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/HotPepperMontereyJackCheese8oz.png?v=1769634108",
     "matched_title": "monterey jack and hot pepper pepper jack cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Turn up the flavor at your next family gathering with Renard's Artisan Monterey Jack & Hot Pepper Cheese.",
     "via": "shopify"
   },
   {
@@ -1782,6 +2036,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/MorelandLeekMontereyJackCheese8oz.png?v=1758295873",
     "matched_title": "morel and leek monterey jack cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Invite the sophisticated, earthy flavors of the forest to your family table with Renard's Artisan Morel & Leek Monterey Jack.",
     "via": "shopify"
   },
   {
@@ -1789,6 +2044,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/MozzarellaCheese8oz.png?v=1758293710",
     "matched_title": "mozzarella cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring home the taste of classic comfort with Renard's Artisan Mozzarella Cheese, the perfect ingredient for your family’s most cherished recipes.",
     "via": "shopify"
   },
   {
@@ -1796,6 +2052,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/MuensterCheese8oz.png?v=1758202328",
     "matched_title": "muenster cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Indulge in the gentle, creamy flavor of Renard's Artisan Muenster Cheese, a beloved classic perfect for bringing the family together.",
     "via": "shopify"
   },
   {
@@ -1803,6 +2060,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/OliveCheddarCheese8oz.png?v=1758300856",
     "matched_title": "olive cheddar cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring the sunny, savory flavors of the Mediterranean to your table with Renard's Artisan Olive Cheddar Cheese.",
     "via": "shopify"
   },
   {
@@ -1810,6 +2068,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Wine_Cheddar_Cheese_Spread.png?v=1721924460",
     "matched_title": "port wine cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your friends and family for a taste of timeless elegance with Renard's Artisan Port Wine Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1817,6 +2076,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/RanchCheeseCurds8oz.png?v=1739374819",
     "matched_title": "ranch cheese curds sealed",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your favorite people and share a snack that’s bursting with flavor: our Ranch Cheese Curds.",
     "via": "shopify"
   },
   {
@@ -1824,6 +2084,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/SharpCheddarCheeseSpread.png?v=1720448824",
     "matched_title": "sharp cheddar cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your family for the timeless, robust flavor of Renard's Artisan Sharp Cheddar Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1831,6 +2092,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Smoked_Gouda_Cheese_8oz.webp?v=1758202106",
     "matched_title": "smoked gouda cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Indulge in the rich, comforting flavor of Renard's Artisan Smoked Gouda, a cheese that perfectly balances creamy texture with a savory, smoky finish.",
     "via": "shopify"
   },
   {
@@ -1838,6 +2100,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Smoked_String_Cheese_8oz.webp?v=1758299272",
     "matched_title": "smoked string cheese sealed",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring the comforting aroma of a crackling campfire to your snack time with Renard's Artisan Smoked String Cheese.",
     "via": "shopify"
   },
   {
@@ -1845,6 +2108,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Smoky-Bacon-Cheddar-Spread-8oz.webp?v=1721761171",
     "matched_title": "smoky bacon cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring the irresistible aroma of a weekend breakfast to your table with Renard's Artisan Smoky Bacon Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1852,6 +2116,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Spicy-Beer-Cheddar-Spread-8oz.webp?v=1721761103",
     "matched_title": "spicy beer cheddar cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your friends for a truly spirited taste experience with Renard's Artisan Spicy Beer Cheddar Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1859,6 +2124,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Renard_s_String_Cheese_8oz.webp?v=1721759809",
     "matched_title": "string cheese sealed",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Rediscover the simple, wholesome joy of a classic snack with Renard's Artisan String Cheese.",
     "via": "shopify"
   },
   {
@@ -1866,6 +2132,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Swiss-Almond-Cheddar-8oz.webp?v=1721759517",
     "matched_title": "swiss almond cheese spread",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your favorite people for a taste of pure comfort with Renard's Artisan Swiss Almond Cheese Spread.",
     "via": "shopify"
   },
   {
@@ -1873,6 +2140,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Tomato_Basil_Cheddar_Cheese_16oz.png?v=1758300285",
     "matched_title": "tomato basil cheddar cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Bring the bright, cheerful flavors of a summer garden to your table with Renard's Artisan Tomato Basil Cheddar Cheese.",
     "via": "shopify"
   },
   {
@@ -1880,6 +2148,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0596/8563/4136/files/Young_Cheddar.webp?v=1769631491",
     "matched_title": "young cheddar cheese",
     "source_page": "http://www.renardscheese.com/collections/artisan-cheese",
+    "summary": "Gather your family for the simple, comforting taste of Renard's Artisan Young Cheddar Cheese.",
     "via": "shopify"
   },
   {
@@ -1887,6 +2156,7 @@
     "image": "https://www.sargento.com/assets/00102_SL_MldChddr_8oz_5504940_Frnt__ScaleMaxHeightWzI3NV0_CompressedW10.png",
     "matched_title": "sargento mild cheddar sliced cheese 11 slices",
     "source_page": "https://www.sargento.com/our-cheese/sliced-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -1894,6 +2164,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/PhotoComingSoon.png?v=1774377717",
     "matched_title": "7 year aged cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Bold • Concentrated • Deep Aged to its peak, this cheddar is firm and crumbly with a bold, concentrated sharpness.",
     "via": "shopify"
   },
   {
@@ -1901,6 +2172,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Bacon-Onion-CC_MainImage.jpg?v=1784922363",
     "matched_title": "bacon onion cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Smoky • Savory • Slightly Sweet Savory bacon and sweet onion come together in a rich, creamy cheddar.",
     "via": "shopify"
   },
   {
@@ -1908,6 +2180,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Beer-Cheddar.jpg?v=1773244934",
     "matched_title": "beer cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Malty • Smooth • Earthy Infused with the malty character of beer, this cheddar has a smooth texture and a subtly robust flavor.",
     "via": "shopify"
   },
   {
@@ -1915,6 +2188,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Black-Pepper-Cheddar.jpg?v=1773245409",
     "matched_title": "black pepper cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Peppery • Warm • Sharp Edge Cracked black pepper brings a subtle heat and sharp edge to this smooth cheddar.",
     "via": "shopify"
   },
   {
@@ -1922,6 +2196,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/MainImage_Upright.jpg?v=1780950656",
     "matched_title": "cajun cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Spiced • Savory • Warm Heat Seasoned with a lively Cajun blend, this cheddar delivers a warm, savory kick.",
     "via": "shopify"
   },
   {
@@ -1929,6 +2204,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-White-Cheddar-Caraway-1.jpg?v=1773245838",
     "matched_title": "caraway cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Caraway Cheddar cheese is sprinkled with caraway seed giving it that hint of rye flavor. This cheese is a perfect complement to any roast beef or turkey sandwich.",
     "via": "shopify"
   },
   {
@@ -1936,6 +2212,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Blue-Cheese-Cheddar.jpg?v=1773245269",
     "matched_title": "blue cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Tangy • Bold • Earthy This cheddar blends classic sharpness with the distinct character of blue cheese.",
     "via": "shopify"
   },
   {
@@ -1943,6 +2220,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Color-Curds.jpg?v=1787334166",
     "matched_title": "cheddar cheese curds",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Fresh • Milky • Mild Fresh and springy, these curds have a mild, milky flavor and a signature squeak with every bite when at their freshest.",
     "via": "shopify"
   },
   {
@@ -1950,6 +2228,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Chipotle-Jack-1.jpg?v=1773051750",
     "matched_title": "chipotle jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Smoky • Warm Heat • Rich Smoky chipotle peppers give this Jack a deep, rich flavor with a gentle heat. It begins smooth before the smoky spice builds and lingers.",
     "via": "shopify"
   },
   {
@@ -1957,6 +2236,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Colby.jpg?v=1773173704",
     "matched_title": "colby vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Mild • Buttery • Clean Soft and creamy with a mild, slightly sweet flavor, Colby is known for its smooth, open texture. It delivers a clean, mellow bite that is easy to enjoy.",
     "via": "shopify"
   },
   {
@@ -1964,6 +2244,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Cranberry-Cheddar.jpg?v=1773245922",
     "matched_title": "cranberry cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Sweet • Tart • Creamy Sweet cranberries are blended into creamy cheddar for a bright, slightly tart contrast.",
     "via": "shopify"
   },
   {
@@ -1971,6 +2252,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/PhotoComingSoon.png?v=1774377717",
     "matched_title": "dill garlic cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Herby • Savory • Bright Bright dill and savory garlic are blended into a smooth cheddar for a fresh, herb-forward flavor.",
     "via": "shopify"
   },
   {
@@ -1978,6 +2260,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Dill-1.jpg?v=1773246426",
     "matched_title": "dill jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Fresh • Herby • Light Fresh dill adds a clean, herb-forward brightness to this creamy Jack. It opens light and aromatic before finishing smooth and balanced.",
     "via": "shopify"
   },
   {
@@ -1985,6 +2268,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/PhotoComingSoon.png?v=1774377717",
     "matched_title": "garlic herb jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Aromatic • Savory • Smooth This Jack combines aromatic herbs and garlic for a layered, savory flavor. It opens fragrant and finishes smooth with a well-rounded depth.",
     "via": "shopify"
   },
   {
@@ -1992,6 +2276,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Ghost_Jack_MainImage_Upright.jpg?v=1779203327",
     "matched_title": "ghost jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Extreme Heat • Intense • Lingering Among the hottest in the lineup, this Jack delivers an intense, immediate heat.",
     "via": "shopify"
   },
   {
@@ -1999,6 +2284,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Habenero-Jack.jpg?v=1773051677",
     "matched_title": "habanero jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Hot • Sharp Heat • Bold One of the hotter offerings, this Jack delivers a strong, immediate heat. It begins creamy before the spice builds quickly into a bold, lingering finish.",
     "via": "shopify"
   },
   {
@@ -2006,6 +2292,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Jalepeno-Jack.jpg?v=1773049683",
     "matched_title": "jalapeno jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Mild Heat • Fresh • Creamy Studded with jalapenos, this Jack offers a mild, approachable heat. It opens creamy before finishing with a gentle, satisfying kick.",
     "via": "shopify"
   },
   {
@@ -2013,6 +2300,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Cheddar-Mild.jpg?v=1773080452",
     "matched_title": "mild cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Mild Cheddar cheese has a young smooth and creamy flavor with a firm texture. It slices, shreds and melts well. This cheese goes well as a snack and on party trays.",
     "via": "shopify"
   },
   {
@@ -2020,6 +2308,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Monterey-Jack.jpg?v=1773246656",
     "matched_title": "monterey jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Monterey Jack cheese is a semi-soft cheese with a buttery, ivory color and mild flavor.",
     "via": "shopify"
   },
   {
@@ -2027,6 +2316,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Morel-Leek-Jack.jpg?v=1773246596",
     "matched_title": "morel mushroom leek jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Earthy • Savory • Rich Earthy morel mushrooms and mild leek bring a rich, savory depth to this creamy Jack. It opens smooth before developing into a deep, slightly woodsy finish.",
     "via": "shopify"
   },
   {
@@ -2034,6 +2324,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/PhotoComingSoon.png?v=1774377717",
     "matched_title": "onion chive jack vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Mild • Savory • Clean Mild onion and chive create a smooth, savory Jack with a gentle flavor. It builds slowly, finishing clean and balanced.",
     "via": "shopify"
   },
   {
@@ -2041,6 +2332,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/PhotoComingSoon.png?v=1774377717",
     "matched_title": "onion garlic jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Bold • Savory • Full A classic savory blend gives this Jack a rich, full flavor. It opens creamy before finishing with a bold, well-rounded depth.",
     "via": "shopify"
   },
   {
@@ -2048,6 +2340,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Peppercorn-Ranch-Jack.jpg?v=1773246734",
     "matched_title": "peppercorn ranch jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Herby • Creamy • Peppery This Jack combines creamy texture with the familiar flavor of ranch and cracked peppercorn.",
     "via": "shopify"
   },
   {
@@ -2055,6 +2348,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Springside-Cheese-Salsa-Jack-1.jpg?v=1773051522",
     "matched_title": "salsa jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Zesty • Savory • Mild Heat Made with real salsa, this Jack delivers a bright, zesty flavor with a mild heat. It starts smooth before building into a lively, savory finish.",
     "via": "shopify"
   },
   {
@@ -2062,6 +2356,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/Smoked_Cheddar_MainImage_Upright.jpg?v=1779208234",
     "matched_title": "smoked cheddar vw",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Smoked Cheddar cheese has a very well defined smoked flavor. If you are a fan of smoked foods this smoked Wisconsin cheddar cheese will surely be a hit.",
     "via": "shopify"
   },
   {
@@ -2069,6 +2364,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0715/8156/4997/files/PhotoComingSoon.png?v=1774377717",
     "matched_title": "tomato basil jack",
     "source_page": "https://www.springsidecheese.com/collections/all",
+    "summary": "Bright • Herbaceous • Smooth Sweet tomato and fragrant basil give this Jack a clean, familiar flavor. It opens bright before settling into a smooth, balanced finish.",
     "via": "shopify"
   },
   {
@@ -2076,6 +2372,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_eac69f84a0c346ecaef7fa5d4ba9b58d~mv2.jpg/v1/fill/w_444,h_374,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_eac69f84a0c346ecaef7fa5d4ba9b58d~mv2.jpg",
     "matched_title": "wakker s golden reserve gouda aged over 2000 days",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2083,6 +2380,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_e535cffa75d848c8997199f74c9e3b36~mv2_d_4912_2760_s_4_2.jpg/v1/fill/w_737,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_e535cffa75d848c8997199f74c9e3b36~mv2_d_4912_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy aged gouda aged 12 18 months",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2090,6 +2388,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_72877ad1125c4c48954e146d137f2992~mv2_d_5952_3348_s_4_2.jpg/v1/fill/w_893,h_502,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_72877ad1125c4c48954e146d137f2992~mv2_d_5952_3348_s_4_2.jpg",
     "matched_title": "wakker s creamy cheddar curds",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2097,6 +2396,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_4fc131e95e5c4374a309cd34c4abd7c0~mv2_d_4912_2760_s_4_2.jpg/v1/fill/w_737,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_4fc131e95e5c4374a309cd34c4abd7c0~mv2_d_4912_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy cumin gouda",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2104,6 +2404,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg/v1/fill/w_427,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy mild gouda aged 6 9 months",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2111,6 +2412,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg/v1/fill/w_427,h_414,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_4c9a298f789e48f0b5087ad8df4802ae~mv2_d_2844_2760_s_4_2.jpg",
     "matched_title": "wakker s creamy young gouda aged 2 4 months",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2118,6 +2420,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_50188081880b463aa348393129688adf~mv2.jpg/v1/fill/w_636,h_377,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_50188081880b463aa348393129688adf~mv2.jpg",
     "matched_title": "wakker s extra aged chipotle gouda",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2125,6 +2428,7 @@
     "image": "https://static.wixstatic.com/media/1c6f8f_f84e80c0147d48998572a27b628d3e18~mv2.jpg/v1/fill/w_381,h_402,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1c6f8f_f84e80c0147d48998572a27b628d3e18~mv2.jpg",
     "matched_title": "wakker s young chipotle gouda",
     "source_page": "https://www.wakkercheese.com/plain-cheese",
+    "summary": null,
     "via": "page"
   },
   {
@@ -2132,6 +2436,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2026/02/beer-cheddar-verns.jpg",
     "matched_title": "beer cheddar",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "This delicious Beer Cheddar Block, made with dark lager, is served at room temperature is a wonderful snack with crackers. Weight: 16 oz.",
     "via": "woocommerce"
   },
   {
@@ -2139,6 +2444,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2025/10/westby-cooperative-creamery-ww-homestead-dairy-cheese-curds-curd-white-plain.jpg",
     "matched_title": "ww homestead dairy cheese curds multiple flavors available",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "Savor the irresistible flavor of Award-Winning Cheese Curds, made fresh weekly with the finest local ingredients.",
     "via": "woocommerce"
   },
   {
@@ -2146,6 +2452,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2023/01/westby-creamery-cheese-block-8oz-colby.jpg",
     "matched_title": "colby",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "8 oz. of Westby Creamery Colby Cheese is a great addition to any party or dinner. Age Range: 6 months – 3 years",
     "via": "woocommerce"
   },
   {
@@ -2153,6 +2460,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2023/01/westby-creamery-cheese-block-8oz-mild.jpg",
     "matched_title": "mild cheddar",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "8 oz. of Westby Creamery Mild Cheddar Cheese is a great addition to any party or dinner. Age Range: 6 months – 3 years",
     "via": "woocommerce"
   },
   {
@@ -2160,6 +2468,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2022/12/westby-cooperative-creamery-lynn-dairy-monterey-jack-cheese-scaled.jpg",
     "matched_title": "monterey jack",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "Monterey Jack Lynn Dairy brand, made right here in Wisconsin. 16 oz.",
     "via": "woocommerce"
   },
   {
@@ -2167,6 +2476,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2022/03/westby-cooperative-creamery-shredded-grated-parmesan-cheese-12oz.jpg",
     "matched_title": "grated parmesan",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "Known as the KING of Italian cheese with its buttery and sweet nutty flavors. Serve as a table cheese, on a casserole, pizza, salad, or to spice up any dish. Size: 8 oz. shaker",
     "via": "woocommerce"
   },
   {
@@ -2174,6 +2484,7 @@
     "image": "https://www.westbycreamery.com/wp-content/uploads/2023/01/westby-creamery-cheese-block-1lb-sharp.jpg",
     "matched_title": "sharp cheddar",
     "source_page": "https://www.westbycreamery.com/shop-category/westby-cheese/",
+    "summary": "1 lb. of Westby Creamery Sharp Cheddar Cheese is a great addition to any party or dinner. Age Range: 6 months – 3 years",
     "via": "woocommerce"
   },
   {
@@ -2181,6 +2492,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Asiago_81.jpg",
     "matched_title": "asiago 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Asiago derives its name from a small town in northern Italy. In Italy, Asiago usually means Asiago Fresco (fresh), which has a mild flavor and semi-hard texture.",
     "via": "woocommerce"
   },
   {
@@ -2188,6 +2500,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Colby_121.jpg",
     "matched_title": "colby 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Colby cheese, originally called Colby Swiss Cheddar, is a semi-hard American cheese prepared from cow’s milk.",
     "via": "woocommerce"
   },
   {
@@ -2195,6 +2508,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Feta_81.jpg",
     "matched_title": "feta 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Feta was first made in Greece from sheep or goat milk. In Wisconsin, producers make Feta from cow milk.",
     "via": "woocommerce"
   },
   {
@@ -2202,6 +2516,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Jalapeno_String1.jpg",
     "matched_title": "jalapeno string cheese 8211 12oz package",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "We took our delicious fresh string cheese, which has a creamy, mild flavor to the next level by adding sweet peppers, rosemary, habanero chiles, garlic, and spicy jalapeños for an extra kick.",
     "via": "woocommerce"
   },
   {
@@ -2209,6 +2524,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Mild_Brick_121.jpg",
     "matched_title": "mild brick 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Brick is a Wisconsin original, first made by John Jossi around 1877. Some Brick cheeses resemble Germany’s surface-ripened Beer Cheese or Beer Käse.",
     "via": "woocommerce"
   },
   {
@@ -2216,6 +2532,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Monterey_Jack_121.jpg",
     "matched_title": "monterey jack 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Scotsman David Jacks first produced Monterey Jack in Monterey, California in the 1890s, and this popular cheese retains its place name even when made elsewhere.",
     "via": "woocommerce"
   },
   {
@@ -2223,6 +2540,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Mozzarella_121.jpg",
     "matched_title": "mozzarella 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "The story of Mozzarella Cheese in American begins when after World War II, American GIs returned home with a taste for a delicious new food they had discovered in Italy – pizza.",
     "via": "woocommerce"
   },
   {
@@ -2230,6 +2548,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Parm_Wedge1.jpg",
     "matched_title": "parmesan wedge 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Known as the king of Italian cheeses, Parmesan originated in the Reggio and Parma regions of Italy.",
     "via": "woocommerce"
   },
   {
@@ -2237,6 +2556,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Pepperjack1.jpg",
     "matched_title": "pepper jack 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Pepper Jack is a derivative of Monterey Jack, the original “American” cheese invented by Mexican Franciscan friars of Monterey, California.",
     "via": "woocommerce"
   },
   {
@@ -2244,6 +2564,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Provolone_11.jpg",
     "matched_title": "provolone 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Like Mozzarella, Provolone is made by the Pasta Filata process.",
     "via": "woocommerce"
   },
   {
@@ -2251,6 +2572,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Romano_Wedge1.jpg",
     "matched_title": "romano 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Romano comes in an 8oz wedge.",
     "via": "woocommerce"
   },
   {
@@ -2258,6 +2580,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Sharp_121.jpg",
     "matched_title": "sharp aged cheddar 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Also known as aged cheddar, our sharp cheddar has been aged between 9 months and 2 years. Prior to 1850, nearly all cheese produced in the United States was Cheddar.",
     "via": "woocommerce"
   },
   {
@@ -2265,6 +2588,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Smoked-Gouda-scaled-e1705511641523.jpeg",
     "matched_title": "smoked gouda 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Gouda originated in Holland over 800 years ago. The name “Gouda” comes from a village in southern Holland.",
     "via": "woocommerce"
   },
   {
@@ -2272,6 +2596,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/Star_Dairy_-_String_8oz_Smoked_11.jpg",
     "matched_title": "smoked string cheese 8211",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "We added just the right amount of smoke to our classic string cheese to create a mild, creamy and smoky snack perfect for your lunch box or next family get-together.",
     "via": "woocommerce"
   },
   {
@@ -2279,6 +2604,7 @@
     "image": "https://stardairy.com/wp-content/uploads/2021/07/String_81.jpg",
     "matched_title": "string cheese 8211 8oz package",
     "source_page": "https://www.stardairy.com/products/cheese/",
+    "summary": "Our regular String Cheese, with its creamy and mild flavor, is great for snacking, lunch boxes or your next family get-together.",
     "via": "woocommerce"
   },
   {
@@ -2286,6 +2612,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/csm/s-nfnlz3mm/products/85/images/429/6_year_aged_white_cheddar_cheese_1lb__70345.1439486719.1280.1280.jpgc-2.jpg",
     "matched_title": "6 year aged white cheddar",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Cheddar cheese aged 6 years is an extra-aged, intensely sharp cheese with a powerful, concentrated flavor.",
     "via": "woocommerce"
   },
   {
@@ -2293,6 +2620,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2025/08/202060416_Widmer_AgedBrickSpread7oz__16_01R.jpg",
     "matched_title": "aged brick spread",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "2026 Best in Show in the World!",
     "via": "woocommerce"
   },
   {
@@ -2300,6 +2628,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/csm/s-nfnlz3mm/products/100/images/438/6_year_aged_cheddar_cheese_1lb__34630.1439487049.1280.1280.jpgc-2.jpg",
     "matched_title": "6 year aged cheddar",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Cheddar cheese aged 6 years is an extra-aged, intensely sharp cheese with a powerful, concentrated flavor.",
     "via": "woocommerce"
   },
   {
@@ -2307,6 +2636,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2019/10/Gemini_Generated_Image_12jhtg12jhtg12jh.png",
     "matched_title": "mild brick",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Brick cheese (mild) is a semi-soft American cheese known for its smooth, creamy texture and gentle, slightly tangy flavor.",
     "via": "woocommerce"
   },
   {
@@ -2314,6 +2644,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2024/02/Gemini_Generated_Image_gcf4ipgcf4ipgcf4.png",
     "matched_title": "butterkase with chives",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Butterkäse with chives is a smooth, semi-soft cheese flavored with fresh chives, adding a light oniony, herbal note to its naturally mild, buttery taste.",
     "via": "woocommerce"
   },
   {
@@ -2321,6 +2652,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2015/03/Gemini_Generated_Image_ea6fzwea6fzwea6f.png",
     "matched_title": "caraway aged brick",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Brick cheese with caraway is a semi-soft cheese flavored with aromatic caraway seeds, giving it a warm, slightly earthy, and lightly anise-like note layered over the cheese’s creamy, mildly tangy b…",
     "via": "woocommerce"
   },
   {
@@ -2328,6 +2660,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2015/03/20260415_Widmer_CarawayColby15oz_42_02R-scaled.jpg",
     "matched_title": "caraway colby",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Colby cheese with caraway is a semi-soft cheese that combines Colby’s mild, creamy, slightly buttery flavor with the warm, earthy spice of caraway seeds.",
     "via": "woocommerce"
   },
   {
@@ -2335,6 +2668,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2015/03/Cheddar-Cheese-Curds-1-Pound.jpg",
     "matched_title": "cheddar curds",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Cheddar Curds 1 lb Heritage: Prior to 1850, nearly all the cheese produced in the United States was Cheddar.",
     "via": "woocommerce"
   },
   {
@@ -2342,6 +2676,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2018/11/7OZ.png",
     "matched_title": "colby",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Colby cheese is a semi-hard American cheese known for its mild, creamy flavor and smooth, slightly springy texture.",
     "via": "woocommerce"
   },
   {
@@ -2349,6 +2684,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2025/08/202060416_Widmer_CranberryBrickSpread7oz__19_01R.jpg",
     "matched_title": "cranberry brick spread",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Brick cheese spread with cranberry is a creamy, spreadable cheese that blends the mild, tangy richness of brick cheese with the sweet-tart brightness of cranberries.",
     "via": "woocommerce"
   },
   {
@@ -2356,6 +2692,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2025/08/202060416_Widmer_JalapenoBrickSpread7oz__18_01R.jpg",
     "matched_title": "jalapeno brick spread",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Brick cheese spread with jalapeño is a creamy, spreadable cheese blend that combines the smooth, mild tang of brick cheese with the bright heat of jalapeño peppers.",
     "via": "woocommerce"
   },
   {
@@ -2363,6 +2700,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2025/08/20260415_Widmer_JalapinoColby15oz_40_02R-scaled.jpg",
     "matched_title": "jalapeno pepper colby",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Colby cheese with jalapeño is a semi-hard, smooth cheese that blends mild, creamy Colby with spicy jalapeño peppers for a balanced mix of richness and heat.",
     "via": "woocommerce"
   },
   {
@@ -2370,6 +2708,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2018/11/Mild-Cheddar-Cheese.jpg",
     "matched_title": "mild cheddar",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Cheddar cheese (mild) is a firm, smooth-textured cheese with a gentle, creamy flavor and just a hint of tang.",
     "via": "woocommerce"
   },
   {
@@ -2377,6 +2716,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2015/03/Jalapeno-Cheddar-Cheese-Curds-1-Pound.jpg",
     "matched_title": "pepper cheddar curds",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Pepper Cheddar Curds 1 lb Heritage: Prior to 1850, nearly all the cheese produced in the United States was Cheddar.",
     "via": "woocommerce"
   },
   {
@@ -2384,6 +2724,7 @@
     "image": "https://www.widmerscheese.com/wp-content/uploads/2024/02/Gemini_Generated_Image_owdf4cowdf4cowdf.png",
     "matched_title": "smoked butterkase",
     "source_page": "https://www.widmerscheese.com/shop/",
+    "summary": "Butterkäse smoked is a semi-soft German cheese with a smooth, creamy texture and a gentle, buttery base flavor enhanced by a rich, smoky finish.",
     "via": "woocommerce"
   },
   {
@@ -2391,6 +2732,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Black_Sharp_cheddar_1.7.25.jpg?v=1736280479",
     "matched_title": "aged sharp cheddar cheese",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Taste the tang of the delicious aged Cheddar. To those who like cheddar don't look no farther we have it. Vern's Cheese is #1. Black wrapped is a white cheese.",
     "via": "shopify"
   },
   {
@@ -2398,6 +2740,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Bacon_472d8b1e-8d36-4423-af79-02a510e8f6b6.jpg?v=1727355231",
     "matched_title": "bacon colby",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Experience a bold, savory cheese like no other with our Bacon Colby.",
     "via": "shopify"
   },
   {
@@ -2405,6 +2748,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Nitro_2f0f2765-7d7f-4d79-b81a-e6f0e97a6d20.jpg?v=1727299411",
     "matched_title": "cheddar yellow nitro",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Cheddar with assorted peppers and spices for a spicy Nitro experience. If you love heat, this one's for you! Indulge in the ultimate cheese experience with Cheddar Yellow Nitro!",
     "via": "shopify"
   },
   {
@@ -2412,6 +2756,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Garlic___herb_46e16e50-69fb-44f4-8680-24f9bfc0149f.jpg?v=1727354666",
     "matched_title": "cheddar white garlic herb",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Spice up your dishes with Cheddar White Garlic & Herb! This blend of cheddar cheese, garlic, and herbs will add a touch of old-world seasoning to your savory creations.",
     "via": "shopify"
   },
   {
@@ -2419,6 +2764,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Ranch_1_409aa871-ffd7-4662-a04c-85f3beb873a4.jpg?v=1727299449",
     "matched_title": "cheddar white ranch",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Add a touch of old-world seasoning to your savory dishes with our Cheddar White Ranch. This unique blend of cheddar, garlic, and herbs will elevate your meals to new heights.",
     "via": "shopify"
   },
   {
@@ -2426,6 +2772,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Cajun_b5c44b83-3279-4f96-98c5-4b01dbecc08b.jpg?v=1727354721",
     "matched_title": "cheddar yellow cajun",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Get a taste of old-world seasoning with our Cheddar Yellow Cajun blend. Infused with garlic and herbs, this cheese is perfect for adding a savory kick to any dish.",
     "via": "shopify"
   },
   {
@@ -2433,6 +2780,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Habanero_cheddar.jpg?v=1727299481",
     "matched_title": "cheddar yellow habanero",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Add some zest to your dishes with our Cheddar Yellow Habanero cheese! Packed with garlic and herbs, this blend is a nod to old-world seasoning.",
     "via": "shopify"
   },
   {
@@ -2440,6 +2788,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Colby_1_3cdd151a-4ddb-492b-82bc-ced6cdd72833.jpg?v=1727355153",
     "matched_title": "colby cheese",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Grab a slice of Colby Cheese, a proud Wisconsin original. Indulge in the creaminess and mildness, perfect for snacking. (Wisconsin pride not included!)",
     "via": "shopify"
   },
   {
@@ -2447,6 +2796,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Green_olive.jpg?v=1727355061",
     "matched_title": "colby green olive",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Get your taste buds ready for a quirky and creamy experience with Colby Green Olive! Proudly made in Wisconsin, this mild and smooth cheese is perfect for snacking. Say cheese!",
     "via": "shopify"
   },
   {
@@ -2454,6 +2804,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Onion___garlic_1.jpg?v=1727354992",
     "matched_title": "colby onion garlic",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Colby with onions, garlic, and chives, adding a savory flavor burst to every bite.",
     "via": "shopify"
   },
   {
@@ -2461,6 +2812,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Salsa_e660c4ec-a2f2-41fc-a529-533aef7c8d5e.jpg?v=1727354758",
     "matched_title": "colby salsa",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Indulge in a flavorful Wisconsin tradition with Colby Salsa. This longhorn-style cheese offers a classic taste that will transport you to the heart of America's dairy land.",
     "via": "shopify"
   },
   {
@@ -2468,6 +2820,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/MapleBaconColby2025.jpg?v=1767725390",
     "matched_title": "maple bacon colby",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "We think you will like it. It's a savory flavor that pleases the taste buds. One piece is not enough. It's a hit.",
     "via": "shopify"
   },
   {
@@ -2475,6 +2828,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/MarbleCheddar26.jpg?v=1769198256",
     "matched_title": "marble mild cheddar cheese",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Introducing our Marble Yellow and White Mild Cheddar, a classic cheese with a smooth, balanced flavor. Satisfy your cravings with its rich, creamy taste.",
     "via": "shopify"
   },
   {
@@ -2482,6 +2836,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Pizza1.jpg?v=1727298810",
     "matched_title": "monterey jack pizza",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Get ready to experience a bold punch of pizza flavor with our Monterey Jack Pizza!",
     "via": "shopify"
   },
   {
@@ -2489,6 +2844,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Black_olive_21028a22-ef88-440a-bf4c-7279e9561c8d.jpg?v=1727299313",
     "matched_title": "monterey jack black olive",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Satisfy your cravings with Monterey Jack Black Olive, a playful twist on traditional cheese!",
     "via": "shopify"
   },
   {
@@ -2496,6 +2852,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Caraway_1558843b-f866-41de-a522-715d1c135e31.jpg?v=1727299277",
     "matched_title": "monterey jack caraway",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Add some salty, savory flair to your Mediterranean-style dishes with our Monterey Jack Caraway - featuring creamy Monterey Jack blended with black olives.",
     "via": "shopify"
   },
   {
@@ -2503,6 +2860,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Horseradish_a4ea0869-6844-44ae-92b9-dd782493c0d8.jpg?v=1727299123",
     "matched_title": "monterey jack horseradish",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Spice up your taste buds with Monterey Jack Horseradish! This unique blend of Monterey Jack and black olives adds a salty and savory twist to any dish.",
     "via": "shopify"
   },
   {
@@ -2510,6 +2868,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Onion___chives_1078da8e-8fe9-4a1c-848d-859c3760f7af.jpg?v=1727299086",
     "matched_title": "monterey jack onion chive",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Indulge in the unique and delicious Monterey Jack Onion & Chive cheese. This creamy cheese offers a fresh burst of onion and chives, adding a savory twist to every bite.",
     "via": "shopify"
   },
   {
@@ -2517,6 +2876,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Pepperjack_1.jpg?v=1726156335",
     "matched_title": "monterey jack pepper jack cheese",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Add some spice to your snacks and recipes with our Monterey Jack Pepper Jack Cheese! Made with red and green jalapeño peppers, this cheese packs a flavorful punch.",
     "via": "shopify"
   },
   {
@@ -2524,6 +2884,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Tomato_basil_1.jpg?v=1727298770",
     "matched_title": "monterey jack tomato basil cheese",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Indulge in the perfect combination of flavors with Monterey Jack Tomato Basil.",
     "via": "shopify"
   },
   {
@@ -2531,6 +2892,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0705/8394/3412/files/Triple_x_habanero1.jpg?v=1727299191",
     "matched_title": "monterey jack triple x habanero",
     "source_page": "https://www.yellowstonecheese.com/collections/all",
+    "summary": "Unleash a fiery blend of flavor with our Monterey Jack Triple X Habanero.",
     "via": "shopify"
   }
 ]

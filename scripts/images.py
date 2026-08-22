@@ -92,8 +92,30 @@ def probe_json(url: str):
         return None
 
 
-def shopify(origin: str) -> dict[str, str]:
-    found: dict[str, str] = {}
+def _summary(markup: str | None) -> str | None:
+    """First sentence(s) of the shop's own description, plain-texted and kept
+    under ~180 chars — a card blurb, not an essay. Same permission gate as the
+    images: this is the creamery's prose, drafted for review only."""
+    if not markup:
+        return None
+    text = " ".join(BeautifulSoup(markup, "html.parser").get_text(" ").split())
+    if len(text) < 15:
+        return None
+    picked = ""
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        candidate = f"{picked} {sentence}".strip()
+        if picked and len(candidate) > 180:
+            break
+        picked = candidate
+        if len(picked) > 180:
+            break
+    if len(picked) > 200:
+        picked = picked[:197].rstrip() + "…"
+    return picked or None
+
+
+def shopify(origin: str) -> dict[str, dict]:
+    found: dict[str, dict] = {}
     for page in range(1, 6):
         data = probe_json(f"{origin}/products.json?limit=250&page={page}")
         if not isinstance(data, dict) or not isinstance(data.get("products"), list):
@@ -105,14 +127,17 @@ def shopify(origin: str) -> dict[str, str]:
             images = product.get("images") or []
             src = images[0].get("src") if images else None
             if product.get("title") and src:
-                found.setdefault(_fold(clean_title(product["title"])), src)
+                found.setdefault(
+                    _fold(clean_title(product["title"])),
+                    {"image": src, "summary": _summary(product.get("body_html"))},
+                )
         if len(products) < 250:
             break
     return found
 
 
-def woocommerce(origin: str) -> dict[str, str]:
-    found: dict[str, str] = {}
+def woocommerce(origin: str) -> dict[str, dict]:
+    found: dict[str, dict] = {}
     for page in range(1, 6):
         data = probe_json(
             f"{origin}/wp-json/wc/store/v1/products?per_page=100&page={page}"
@@ -123,22 +148,33 @@ def woocommerce(origin: str) -> dict[str, str]:
             images = product.get("images") or []
             src = images[0].get("src") if images else None
             if product.get("name") and src:
-                found.setdefault(_fold(clean_title(product["name"])), src)
+                found.setdefault(
+                    _fold(clean_title(product["name"])),
+                    {
+                        "image": src,
+                        "summary": _summary(
+                            product.get("short_description") or product.get("description")
+                        ),
+                    },
+                )
         if len(data) < 100:
             break
     return found
 
 
-def squarespace(page_url: str) -> dict[str, str]:
+def squarespace(page_url: str) -> dict[str, dict]:
     sep = "&" if "?" in page_url else "?"
     data = probe_json(f"{page_url}{sep}format=json")
     if not isinstance(data, dict):
         return {}
-    found: dict[str, str] = {}
+    found: dict[str, dict] = {}
     for item in data.get("items", []):
         title, asset = item.get("title"), item.get("assetUrl")
         if title and asset:
-            found[_fold(clean_title(title))] = asset
+            found[_fold(clean_title(title))] = {
+                "image": asset,
+                "summary": _summary(item.get("excerpt") or item.get("body")),
+            }
     return found
 
 
@@ -152,11 +188,11 @@ def _img_src(img, base: str) -> str | None:
     return None if NOISE.search(absolute) else absolute
 
 
-def page_scan(start_url: str, wanted: set[str]) -> dict[str, str]:
+def page_scan(start_url: str, wanted: set[str]) -> dict[str, dict]:
     """Match <img alt> (and enclosing-link titles) on the listing page and one
     hop of same-host category/collection/product-list links against the titles
-    we know this shop sells."""
-    found: dict[str, str] = {}
+    we know this shop sells. Listing pages carry no per-product prose."""
+    found: dict[str, dict] = {}
     seen: set[str] = set()
     queue = [start_url]
     host = urlsplit(start_url).netloc
@@ -178,7 +214,7 @@ def page_scan(start_url: str, wanted: set[str]) -> dict[str, str]:
             if key and key in wanted and key not in found:
                 src = _img_src(img, url)
                 if src:
-                    found[key] = src
+                    found[key] = {"image": src, "summary": None}
         if url == start_url and len(found) < len(wanted):
             for a in soup.find_all("a", href=True):
                 href = urljoin(url, a["href"]).split("#")[0]
@@ -234,7 +270,7 @@ def main() -> None:
             key=lambda pair: -len(pair[0]),
         )
         best: dict[str, tuple] = {}
-        for title_key, src in sorted(images.items()):
+        for title_key, media in sorted(images.items()):
             match, exact = None, False
             for name_key, record in names:
                 if title_key == name_key:
@@ -245,15 +281,16 @@ def main() -> None:
                     break
             if match is None:
                 continue
-            rank = (0 if exact else 1, len(title_key), src)
+            rank = (0 if exact else 1, len(title_key), media["image"])
             if match["id"] not in best or rank < best[match["id"]][:3]:
-                best[match["id"]] = (*rank, title_key, src)
+                best[match["id"]] = (*rank, title_key, media)
         for cheese_id in sorted(best):
-            _, _, src, title_key, _ = best[cheese_id]
+            _, _, _, title_key, media = best[cheese_id]
             rows.append(
                 {
                     "cheese_id": cheese_id,
-                    "image": src,
+                    "image": media["image"],
+                    "summary": media["summary"],
                     "matched_title": title_key,
                     "source_page": url,
                     "via": via,

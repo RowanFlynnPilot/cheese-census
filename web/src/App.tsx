@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { Creamery, Dataset } from "./types";
+import type { Award, Creamery, Dataset } from "./types";
+import type { DraftMedia } from "./data";
 import {
   MILK_ORDER,
   TEXTURE_ORDER,
@@ -112,7 +113,7 @@ export default function App() {
 
   // The draft photo overlay exists only under `npm run dev` — production
   // builds scrub the file (sync-data.mjs) and this never even fetches.
-  const [draftImages, setDraftImages] = useState<Map<string, string> | null>(null);
+  const [draftImages, setDraftImages] = useState<Map<string, DraftMedia> | null>(null);
   useEffect(() => {
     if (!import.meta.env.DEV) return;
     loadDraftImages().then(setDraftImages, (e: Error) => console.error(e.message));
@@ -137,14 +138,16 @@ export default function App() {
     return counts;
   }, [data]);
 
-  const cheeseAwardCounts = useMemo(() => {
-    const counts = new Map<string, number>();
+  const awardsByCheese = useMemo(() => {
+    const map = new Map<string, Award[]>();
     for (const award of data?.awards ?? []) {
       if (award.cheese_id) {
-        counts.set(award.cheese_id, (counts.get(award.cheese_id) ?? 0) + 1);
+        const list = map.get(award.cheese_id);
+        if (list) list.push(award);
+        else map.set(award.cheese_id, [award]);
       }
     }
-    return counts;
+    return map;
   }, [data]);
 
   const counties = useMemo(
@@ -252,10 +255,10 @@ export default function App() {
   const shown = filtered.list;
 
   // The cheese search answers the reader question in the other direction —
-  // "what is there to eat?" It matches names and makers directly, and reaches
-  // into family, flavor and add-in tags with a "matched:" hint.
+  // "what is there to eat?" Tokenized, so "klondike feta" spans maker and
+  // name; tag-only matches carry a "matched:" hint.
   const cheeseFiltered = useMemo(() => {
-    const needle = fold(cheeseQuery.trim());
+    const tokens = fold(cheeseQuery.trim()).split(/\s+/).filter(Boolean);
     const hints = new Map<string, string>();
     const list = activeCheeses
       .filter((cheese) => {
@@ -263,33 +266,39 @@ export default function App() {
         if (family && cheese.family !== family) return false;
         if (texture && cheese.texture !== texture) return false;
         if (milk && !cheese.milk.includes(milk)) return false;
-        if (cheeseAwarded && !cheeseAwardCounts.has(cheese.id)) return false;
+        if (cheeseAwarded && !awardsByCheese.has(cheese.id)) return false;
         if (originalsOnly && !cheese.wisconsin_original) return false;
         if (mineOnly && !heartSet.has(cheese.id)) return false;
-        if (!needle) return true;
+        if (!tokens.length) return true;
         const creamery = creameriesById.get(cheese.creamery_id);
-        const direct =
-          fold(cheese.name).includes(needle) ||
-          (creamery &&
-            (fold(creamery.name).includes(needle) ||
-              fold(creamery.city).includes(needle) ||
-              creamery.aka.some((a) => fold(a).includes(needle))));
-        if (direct) return true;
-        const term = [
+        const identity = [
+          cheese.name,
+          creamery?.name ?? "",
+          creamery?.city ?? "",
+          ...(creamery?.aka ?? []),
+        ]
+          .map(fold)
+          .join(" ");
+        const tagTerms = [
           familyLabel(cheese.family),
           ...cheese.flavor.map(labelize),
           ...cheese.add_ins.map(labelize),
-        ].find((t) => fold(t).includes(needle));
-        if (term) {
-          hints.set(cheese.id, term);
-          return true;
+        ];
+        const everything = `${identity} ${tagTerms.map(fold).join(" ")}`;
+        if (!tokens.every((t) => everything.includes(t))) return false;
+        if (!tokens.every((t) => identity.includes(t))) {
+          const term = tagTerms.find((t) =>
+            tokens.some((token) => fold(t).includes(token)),
+          );
+          if (term) hints.set(cheese.id, term);
         }
-        return false;
+        return true;
       })
       .sort((a, b) => {
         if (cheeseSort === "awards") {
           const diff =
-            (cheeseAwardCounts.get(b.id) ?? 0) - (cheeseAwardCounts.get(a.id) ?? 0);
+            (awardsByCheese.get(b.id)?.length ?? 0) -
+            (awardsByCheese.get(a.id)?.length ?? 0);
           if (diff) return diff;
         } else if (cheeseSort === "creamery") {
           const diff = (creameriesById.get(a.creamery_id)?.name ?? "").localeCompare(
@@ -315,7 +324,7 @@ export default function App() {
     mineOnly,
     heartSet,
     cheeseSort,
-    cheeseAwardCounts,
+    awardsByCheese,
     creameriesById,
   ]);
   const cheesesShown = cheeseFiltered.list;
@@ -874,7 +883,7 @@ export default function App() {
             shown={cheesesShown}
             hints={cheeseFiltered.hints}
             creameriesById={creameriesById}
-            awardCounts={cheeseAwardCounts}
+            awardsByCheese={awardsByCheese}
             heartSet={heartSet}
             heartCount={hearts.length}
             onToggleHeart={toggleHeart}
@@ -931,7 +940,8 @@ export default function App() {
               onOpenCreamery={openCreamery}
               onBrowseMaker={browseMaker}
               onSearchTerm={searchTerm}
-              imageUrl={draftImages?.get(selectedCheese.id) ?? null}
+              imageUrl={draftImages?.get(selectedCheese.id)?.image ?? null}
+              blurb={draftImages?.get(selectedCheese.id)?.summary ?? null}
             />
           )}
         </div>

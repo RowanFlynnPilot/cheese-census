@@ -1044,22 +1044,98 @@ button.tag:hover {
   margin-top: 0.1rem;
 }
 
+/* Everything pinned to the card's bottom edge: identity badges, then the
+   award citation. */
+.card-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+
 .cheese-card .badges {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
-  margin-top: auto;
-  padding-top: 0.35rem;
+}
+
+/* The maker's own words — draft material, quoted so they read as theirs. */
+.card-blurb {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.detail-blurb {
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0.55rem 0 0;
+}
+
+/* What it won, spelled out. */
+.card-won {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: #7c5f28;
+  background: #f5eedb;
+  border-radius: 4px;
+  padding: 0.32rem 0.5rem;
+}
+
+.card-won svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex: none;
+  fill: var(--gold);
+  margin-top: 0.05rem;
 }
 
 .cheese-card .op-hint {
   font-size: 0.72rem;
 }
 
-.card-heart {
+/* Top-right cluster: award seal beside the heart, each on a cream disc so
+   they stay legible over draft photos. */
+.card-heart,
+.card-seal {
   position: absolute;
   top: 0.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  background: rgba(246, 242, 233, 0.94);
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.card-heart {
   right: 0.4rem;
+}
+
+.card-seal {
+  right: 2.15rem;
+  color: #8a6a33;
+}
+
+.card-seal svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
+}
+
+.card-open .kicker {
+  padding-right: 3.6rem;
 }
 
 /* ── Hearts ─────────────────────────────────────────────────────────────── */

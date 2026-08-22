@@ -282,10 +282,11 @@ strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 renamed ~40 cheese ids; hearts were not yet public, so the ids were still free
 to move. They are frozen now that hearts key on them.
 
-**Product photos are permission-gated.** `scripts/images.py` harvests image
-URLs from the same shops as the title harvest (Shopify/Woo/Squarespace feeds,
-then alt-text page scan) into `queue/product_images.json`, matched to cheese
-ids by the award rule (exact name, else longest contained). Those URLs are a
+**Product photos and shop prose are permission-gated.** `scripts/images.py`
+harvests image URLs and the maker's own short description (first sentences,
+≤~200 chars) from the same shops as the title harvest (Shopify/Woo/Squarespace
+feeds, then alt-text page scan) into `queue/product_images.json`, matched to
+cheese ids by the award rule (exact name, else longest contained). Those URLs are a
 *permission queue*: product photographs are copyrighted works, so nothing in
 `build/` references them and `Cheese.image` stays null until a creamery says
 yes (then: override + locally hosted asset). `npm run dev` overlays them as an

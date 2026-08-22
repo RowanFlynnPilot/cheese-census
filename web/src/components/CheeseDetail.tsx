@@ -37,8 +37,10 @@ interface Props {
   onBrowseMaker: (id: string) => void;
   /** A flavor or add-in chip answers "what else tastes like this?" statewide. */
   onSearchTerm: (term: string) => void;
-  /** Dev-only draft overlay (photo pending permission); null in production. */
+  /** Dev-only draft overlay (photo + maker's blurb pending permission);
+   *  null in production. */
   imageUrl: string | null;
+  blurb: string | null;
 }
 
 export default function CheeseDetail({
@@ -59,6 +61,7 @@ export default function CheeseDetail({
   onBrowseMaker,
   onSearchTerm,
   imageUrl,
+  blurb,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
   const [copied, setCopied] = useState(false);
@@ -142,9 +145,11 @@ export default function CheeseDetail({
             alt={`${cheese.name} — product photo (draft)`}
             className="detail-photo"
           />
+          {blurb && <p className="detail-blurb">“{blurb}”</p>}
           <p className="aka" style={{ marginTop: "0.45rem", marginBottom: 0 }}>
-            Product photo from the creamery&apos;s site — internal draft, pending
-            permission. Not for publication.
+            Product photo{blurb ? " and description" : ""} from the
+            creamery&apos;s site — internal draft, pending permission. Not for
+            publication.
           </p>
         </section>
       )}

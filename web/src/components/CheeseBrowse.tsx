@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import type { Cheese, Creamery, Highlight } from "../types";
+import type { Award, Cheese, Creamery, Highlight } from "../types";
 import {
   MILK_LABEL,
   TEXTURE_LABEL,
   familyLabel,
+  type DraftMedia,
   type Recommendation,
 } from "../data";
 import CheeseCard from "./CheeseCard";
@@ -16,7 +17,7 @@ interface Props {
   shown: Cheese[];
   hints: Map<string, string>;
   creameriesById: Map<string, Creamery>;
-  awardCounts: Map<string, number>;
+  awardsByCheese: Map<string, Award[]>;
   heartSet: Set<string>;
   heartCount: number;
   onToggleHeart: (id: string) => void;
@@ -45,8 +46,8 @@ interface Props {
   vocab: { families: string[]; textures: string[]; milks: string[] };
   familyCounts: Map<string, number>;
   onClearAll: () => void;
-  /** Dev-only draft overlay (photos pending permission); null in production. */
-  images: Map<string, string> | null;
+  /** Dev-only draft overlay (photos + blurbs pending permission); null in production. */
+  images: Map<string, DraftMedia> | null;
 }
 
 // One expansion step of the grid — the sentinel below auto-loads the next step
@@ -70,7 +71,7 @@ export default function CheeseBrowse({
   shown,
   hints,
   creameriesById,
-  awardCounts,
+  awardsByCheese,
   heartSet,
   heartCount,
   onToggleHeart,
@@ -128,16 +129,18 @@ export default function CheeseBrowse({
   const slice = shown.slice(0, visible);
 
   function renderCard(cheese: Cheese) {
+    const media = images?.get(cheese.id);
     return (
       <CheeseCard
         key={cheese.id}
         cheese={cheese}
         creamery={creameriesById.get(cheese.creamery_id)}
-        awardCount={awardCounts.get(cheese.id) ?? 0}
+        awards={awardsByCheese.get(cheese.id) ?? []}
         hint={hints.get(cheese.id)}
         hearted={heartSet.has(cheese.id)}
         selected={cheese.id === selectedId}
-        imageUrl={images?.get(cheese.id)}
+        imageUrl={media?.image}
+        blurb={media?.summary ?? undefined}
         onOpen={() => onOpen(cheese.id)}
         onToggleHeart={() => onToggleHeart(cheese.id)}
       />
@@ -285,12 +288,12 @@ export default function CheeseBrowse({
                   <CheeseCard
                     cheese={cheese}
                     creamery={creameriesById.get(cheese.creamery_id)}
-                    awardCount={awardCounts.get(cheese.id) ?? 0}
+                    awards={awardsByCheese.get(cheese.id) ?? []}
                     hearted={heartSet.has(cheese.id)}
                     selected={cheese.id === selectedId}
                     compact
                     because={because.name}
-                    imageUrl={images?.get(cheese.id)}
+                    imageUrl={images?.get(cheese.id)?.image}
                     onOpen={() => onOpen(cheese.id)}
                     onToggleHeart={() => onToggleHeart(cheese.id)}
                   />

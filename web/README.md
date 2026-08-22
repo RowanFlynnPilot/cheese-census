@@ -52,7 +52,13 @@ across names, makers, families, flavor tags and add-ins (indirect matches carry
 a "matched: …" hint), sortable A–Z / by creamery / most awarded / by family
 (family sort groups under sticky heads). Cards carry family kicker, flavor tags,
 add-in chips, and award / Wisconsin-original / raw-milk / goat-sheep badges.
-Flavor chips are color-coded into six families (`FLAVOR_GROUP` in `src/data.ts`:
+Award winners wear a gold rosette seal beside the heart and a citation strip at
+the card's foot — the top win spelled out ("1st · Lowfat Cheeses · World
+Championship 2026 · +7 more awards"; champion beats placement beats recency,
+`topAward`/`awardCitation` in `src/data.ts`). That treatment is census data and
+ships; it is independent of the draft overlay. Search is tokenized — every word
+must match somewhere across name, maker, city and tags, so "klondike feta"
+works. Flavor chips are color-coded into six families (`FLAVOR_GROUP` in `src/data.ts`:
 dairy, sweet, toast, green, acid, bold — acid wears the house teal), each with
 a monochrome currentColor glyph (`FlavorIcon.tsx`: droplet, berry, acorn, leaf,
 bolt, flame — deliberately not emoji, which render platform-dependently and
@@ -87,9 +93,10 @@ inside the matching cheese's panel, date-windowed by their `starts`/`ends`.
 Editorial and sponsored highlights render visibly differently (see Conventions).
 
 **Draft photo overlay (dev only).** `queue/product_images.json` (from
-`python scripts/images.py`) holds product-photo URLs harvested from creamery
-shops — a *permission queue*: WPR may not publish them until each creamery says
-yes. `npm run dev` serves it as `data/draft_images.json` and the app overlays
+`python scripts/images.py`) holds product-photo URLs and the maker's own short
+description harvested from creamery shops — a *permission queue*: WPR may not
+publish either until each creamery says yes. The blurb renders quoted and
+italic under a card's tags and beneath the panel photo. `npm run dev` serves it as `data/draft_images.json` and the app overlays
 the photos with a DRAFT ribbon on every image, an amber "not for publication"
 bar over the catalog, and a caption in the detail panel. The gate is in
 `scripts/sync-data.mjs`: without `--draft` it *deletes* the file from

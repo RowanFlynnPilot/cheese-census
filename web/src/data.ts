@@ -10,19 +10,32 @@ async function table<T>(name: string): Promise<T[]> {
   return (await response.json()) as T[];
 }
 
-/** DEV-only overlay: hotlinked product-photo candidates awaiting each
+/** One cheese's shop-sourced draft material: a hotlinkable photo and the
+ *  maker's own short description — both awaiting that creamery's permission. */
+export interface DraftMedia {
+  image: string;
+  summary: string | null;
+}
+
+/** DEV-only overlay: shop-sourced photo + blurb candidates awaiting each
  *  creamery's permission (queue/product_images.json, served by
  *  `sync-data.mjs --draft`). Production builds scrub the file and never call
  *  this — the permission gate lives in the sync script, not up here. */
-export async function loadDraftImages(): Promise<Map<string, string>> {
+export async function loadDraftImages(): Promise<Map<string, DraftMedia>> {
   const response = await fetch(`${BASE}data/draft_images.json`);
   if (!response.ok) {
     throw new Error(
       `no draft image overlay (HTTP ${response.status}) — start with npm run dev, not vite directly`,
     );
   }
-  const rows = (await response.json()) as { cheese_id: string; image: string }[];
-  return new Map(rows.map((r) => [r.cheese_id, r.image]));
+  const rows = (await response.json()) as {
+    cheese_id: string;
+    image: string;
+    summary?: string | null;
+  }[];
+  return new Map(
+    rows.map((r) => [r.cheese_id, { image: r.image, summary: r.summary ?? null }]),
+  );
 }
 
 export async function loadDataset(): Promise<Dataset> {
@@ -260,6 +273,27 @@ export function chipLabel(term: string): string {
 
 export function familyLabel(family: string): string {
   return FAMILY_LABEL[family] ?? labelize(family);
+}
+
+/** The single win a card should brag about: champion first, then placement,
+ *  then recency. */
+export function topAward(awards: Award[]): Award | null {
+  if (!awards.length) return null;
+  return [...awards].sort(
+    (a, b) =>
+      Number(b.champion) - Number(a.champion) ||
+      a.placement - b.placement ||
+      b.year - a.year ||
+      a.class_number - b.class_number,
+  )[0];
+}
+
+/** "1st · Lowfat Cheeses · World Championship 2026" — the card citation. */
+export function awardCitation(award: Award): string {
+  const label = award.champion
+    ? "Champion"
+    : PLACEMENT[award.placement] + (award.finalist ? " · Top 20" : "");
+  return `${label} · ${award.class_name} · ${CONTEST[award.contest]} ${award.year}`;
 }
 
 export function awardsForCheese(awards: Award[], cheeseId: string): Award[] {
