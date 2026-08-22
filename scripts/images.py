@@ -1,12 +1,14 @@
 """Product-image URL harvester (curation tool, never in build).
 
 Revisits the shops behind queue/products_research.json and pairs the titles
-harvested there with product image URLs. Output is queue/product_images.json —
-a REVIEW AND PERMISSION queue, not pipeline input: nothing in build/ references
-these URLs, and Cheese.image stays null until a creamery grants use and the
-photo is ingested through data/overrides/. The web dev server can overlay the
-queue as an explicitly-marked internal draft (see web/scripts/sync-data.mjs
---draft); production builds scrub it.
+harvested there with product image URLs and the maker's own short description.
+Output is queue/product_images.json — a review queue, not pipeline input.
+The two payloads carry different rules: PHOTOS are permission-gated (nothing
+in build/ references them; Cheese.image stays null until a creamery grants use
+and the photo is ingested through data/overrides/), while the DESCRIPTIONS
+render as short quoted, attributed excerpts — ordinary quotation. The web dev
+server overlays the queue as an explicitly-marked internal draft (see
+web/scripts/sync-data.mjs --draft); production builds scrub it.
 
 Sources are tried per shop, cheapest first:
   shopify      {origin}/products.json — the platform's public catalog feed
@@ -94,8 +96,10 @@ def probe_json(url: str):
 
 def _summary(markup: str | None) -> str | None:
     """First sentence(s) of the shop's own description, plain-texted and kept
-    under ~180 chars — a card blurb, not an essay. Same permission gate as the
-    images: this is the creamery's prose, drafted for review only."""
+    under ~180 chars. Unlike the photos, these render as QUOTES — quoted,
+    attributed to the maker — which is ordinary quotation, not reproduction;
+    no per-creamery permission, though the pattern goes past the attorney with
+    the rest of the pre-launch review."""
     if not markup:
         return None
     text = " ".join(BeautifulSoup(markup, "html.parser").get_text(" ").split())

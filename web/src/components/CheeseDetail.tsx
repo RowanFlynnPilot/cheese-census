@@ -145,11 +145,19 @@ export default function CheeseDetail({
             alt={`${cheese.name} — product photo (draft)`}
             className="detail-photo"
           />
-          {blurb && <p className="detail-blurb">“{blurb}”</p>}
           <p className="aka" style={{ marginTop: "0.45rem", marginBottom: 0 }}>
-            Product photo{blurb ? " and description" : ""} from the
-            creamery&apos;s site — internal draft, pending permission. Not for
-            publication.
+            Product photo from the creamery&apos;s site — internal draft,
+            pending permission. Not for publication.
+          </p>
+        </section>
+      )}
+
+      {blurb && (
+        <section>
+          <h3>In their words</h3>
+          <p className="detail-blurb">“{blurb}”</p>
+          <p className="aka" style={{ marginTop: "0.35rem", marginBottom: 0 }}>
+            — {creamery?.name ?? "the creamery"}, from their product page
           </p>
         </section>
       )}

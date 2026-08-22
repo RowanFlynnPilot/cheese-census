@@ -1074,8 +1074,10 @@ button.tag:hover {
 
 .detail-blurb {
   font-style: italic;
-  color: var(--ink-soft);
-  margin: 0.55rem 0 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* What it won, spelled out. */

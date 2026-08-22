@@ -94,9 +94,15 @@ Editorial and sponsored highlights render visibly differently (see Conventions).
 
 **Draft photo overlay (dev only).** `queue/product_images.json` (from
 `python scripts/images.py`) holds product-photo URLs and the maker's own short
-description harvested from creamery shops — a *permission queue*: WPR may not
-publish either until each creamery says yes. The blurb renders quoted and
-italic under a card's tags and beneath the panel photo. `npm run dev` serves it as `data/draft_images.json` and the app overlays
+description harvested from creamery shops. The *photos* are a permission
+queue — WPR may not publish them until each creamery says yes. The
+*descriptions* are different: they render as short quoted, attributed
+excerpts (italic under a card's tags; an "In their words — {creamery}"
+section in the panel), which is ordinary quotation and needs no per-creamery
+permission (the attorney blesses the pattern in the standing pre-launch
+review). Both currently ride the dev-only overlay because the reader layer
+has not shipped; when it does, the quotes can go to production while the
+photos keep waiting on permissions. `npm run dev` serves it as `data/draft_images.json` and the app overlays
 the photos with a DRAFT ribbon on every image, an amber "not for publication"
 bar over the catalog, and a caption in the detail panel. The gate is in
 `scripts/sync-data.mjs`: without `--draft` it *deletes* the file from
