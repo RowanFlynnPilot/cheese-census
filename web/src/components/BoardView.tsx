@@ -10,7 +10,9 @@ import {
   chipLabel,
   familyLabel,
   flavorClass,
+  type DraftMedia,
 } from "../data";
+import DraftPhoto from "./DraftPhoto";
 import {
   BOARD_SIZES,
   GROUP_LABEL,
@@ -41,6 +43,8 @@ interface Props {
   featured: FeaturedBoard[];
   /** Load a featured board as the working board (its size comes with it). */
   onAdopt: (ids: string[]) => void;
+  /** Dev-only draft overlay (product photos pending permission); null in production. */
+  images: Map<string, DraftMedia> | null;
   heartCount: number;
   /** The canonical share link for the current board (mirrors the URL). */
   shareUrl: string;
@@ -65,6 +69,7 @@ export default function BoardView({
   sponsor,
   featured,
   onAdopt,
+  images,
   heartCount,
   shareUrl,
   onSetSize,
@@ -196,8 +201,16 @@ export default function BoardView({
               );
             }
             const maker = creameriesById.get(cheese.creamery_id);
+            const photo = images?.get(cheese.id)?.image;
             return (
               <div className="board-slot" key={cheese.id}>
+                {photo && (
+                  <DraftPhoto
+                    src={photo}
+                    alt={`${cheese.name} — product photo (draft)`}
+                    className="slot-photo"
+                  />
+                )}
                 <span className="kicker">{familyLabel(cheese.family)}</span>
                 <button
                   className="slot-name"
@@ -309,8 +322,16 @@ export default function BoardView({
             <div className="board-suggestions">
               {suggestions.map(({ cheese, gains }) => {
                 const maker = creameriesById.get(cheese.creamery_id);
+                const photo = images?.get(cheese.id)?.image;
                 return (
                   <div className="suggest-card" key={cheese.id}>
+                    {photo && (
+                      <DraftPhoto
+                        src={photo}
+                        alt={`${cheese.name} — product photo (draft)`}
+                        className="s-photo"
+                      />
+                    )}
                     <span className="kicker">{familyLabel(cheese.family)}</span>
                     <button
                       className="s-name"

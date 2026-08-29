@@ -150,8 +150,9 @@ overlay as `draft_logos.json`: each creamery's own brand mark (apple-touch-icon,
 else largest favicon, else a header logo image, probe-verified), shown in the
 directory rows and both detail panels. Identification use, but still brand
 artwork — dev-only until the pre-launch rights review. The draft notice bar is
-app-level (both views show overlay material), and any non-`--draft` sync
-deletes both overlay files. `npm run dev` serves it as `data/draft_images.json` and the app overlays
+app-level (all three views show overlay material — catalog cards and panels,
+board tray slots and suggestion cards, map hover cards), and any non-`--draft`
+sync deletes both overlay files. `npm run dev` serves it as `data/draft_images.json` and the app overlays
 the photos with a DRAFT ribbon on every image, an amber "not for publication"
 bar over the catalog, and a caption in the detail panel. The gate is in
 `scripts/sync-data.mjs`: without `--draft` it *deletes* the file from

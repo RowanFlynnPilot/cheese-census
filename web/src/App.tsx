@@ -1294,6 +1294,7 @@ export default function App() {
             sponsor={boardSponsor}
             featured={featuredBoards}
             onAdopt={adoptBoard}
+            images={draftImages}
             heartCount={hearts.length}
             shareUrl={boardShareUrl}
             onSetSize={board.setSize}

@@ -1619,6 +1619,15 @@ button.highlight {
   margin: -0.15rem 0 0.25rem;
 }
 
+/* Board tray and suggestion thumbnails — wider and shorter than catalog
+   cards, so the grids stay scannable. */
+.slot-photo,
+.s-photo {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin: -0.1rem 0 0.2rem;
+}
+
 .cheese-card.compact .card-photo {
   aspect-ratio: 16 / 9;
 }
