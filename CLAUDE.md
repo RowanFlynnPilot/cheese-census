@@ -60,8 +60,14 @@ data/vocab/tags.json       all controlled vocabularies
 data/highlights.json       editorial + sponsored highlight entries (hand-edited)
 data/sponsors.json         feature-level sponsorship slots (hand-edited): a highlight
                            plugs a cheese, a sponsor entry buys a surface (placement
-                           "board" = the Board Builder's presenting slot); date-windowed,
-                           validated, exported verbatim to build/sponsors.json
+                           "board" = the Board Builder's "Made possible by" slot);
+                           date-windowed, validated, exported to build/sponsors.json
+data/boards.json           featured cheese boards (hand-edited, curated from reader
+                           email submissions to editor@wausaupilotandreview.com):
+                           3/5/7 validated cheese ids + credit + optional locally
+                           hosted photo (web/public/boards/, submitter-granted);
+                           exported to build/boards.json, rendered as the builder's
+                           gallery — nothing reaches it unreviewed
 queue/report.json          generated review reports (non-fatal work: coverage, unmatched awards)
 queue/proposed_*.json      merge()'s review proposals — classifications and fuzzy
                            crosswalk candidates; written every run, before the build's
@@ -108,6 +114,8 @@ manual dispatch only until all scrapers are implemented.
 8. `sponsored` highlight without a `sponsor`, or vice versa
 9. Sponsor entry with an unknown `placement`, a malformed or inverted date
    window, or a duplicate `id`
+10. Featured board with an unknown or repeated cheese id, a pick count other
+    than 3/5/7, or a duplicate `id`
 
 ## Conventions
 
@@ -300,8 +308,14 @@ one-tap Complete, and seed-from-hearts. Board state: `localStorage`
 (`cheese-census.board.v1`) + URL (`?view=board&b=id,…` — the link IS the board);
 ends in a print-clean shopping list. The sponsor door is open two ways, both
 always in the sponsored visual language: highlights surface in the builder as
-add-a-pick cards, and `data/sponsors.json` fills the presenting slot (currently
-WPR's own house ad — no fabricated brands; real sponsor entries replace it).
+add-a-pick cards, and `data/sponsors.json` fills the "Made possible by" slot
+(currently WPR's own house ad — no fabricated brands; real entries replace it).
+Reader boards close the loop via the **featured-board gallery**
+(`data/boards.json`, see layout above): submission is email-to-newsroom with
+the share link + photo + publication grant, curation is editorial, and the
+gallery renders each board from census data ("Use this board" adopts it) — the
+static-site-honest v1; self-serve in-page upload waits for the Supabase layer
+and a moderation workflow.
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

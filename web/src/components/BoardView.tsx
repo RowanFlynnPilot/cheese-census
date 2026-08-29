@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Award, Cheese, Creamery, Highlight, Sponsor } from "../types";
+import type { Award, Cheese, Creamery, FeaturedBoard, Highlight, Sponsor } from "../types";
 import {
   AGE_LABEL,
   AGE_ORDER,
@@ -21,18 +21,26 @@ import {
 } from "../boards";
 import FlavorIcon from "./FlavorIcon";
 
+// The paper's published submission address (news tips and reader content).
+const NEWSROOM = "editor@wausaupilotandreview.com";
+
 interface Props {
   loading: boolean;
   /** The board's cheeses, in pick order. */
   picks: Cheese[];
   size: number;
+  cheesesById: Map<string, Cheese>;
   creameriesById: Map<string, Creamery>;
   awardsByCheese: Map<string, Award[]>;
   suggestions: BoardSuggestion[];
   /** Active highlight placements — the editorial/sponsored add path. */
   highlights: { highlight: Highlight; cheese: Cheese }[];
-  /** The active presenting sponsor for this surface, or null (slot absent). */
+  /** The active sponsor for this surface, or null (slot absent). */
   sponsor: Sponsor | null;
+  /** The curated gallery — reader submissions and cheese-desk boards. */
+  featured: FeaturedBoard[];
+  /** Load a featured board as the working board (its size comes with it). */
+  onAdopt: (ids: string[]) => void;
   heartCount: number;
   /** The canonical share link for the current board (mirrors the URL). */
   shareUrl: string;
@@ -49,11 +57,14 @@ export default function BoardView({
   loading,
   picks,
   size,
+  cheesesById,
   creameriesById,
   awardsByCheese,
   suggestions,
   highlights,
   sponsor,
+  featured,
+  onAdopt,
   heartCount,
   shareUrl,
   onSetSize,
@@ -82,6 +93,19 @@ export default function BoardView({
     }
   }
 
+  // Submissions go through the newsroom — the reader's own mail client, their
+  // board's link prefilled, and the publication grant spelled out. Curation
+  // lands in data/boards.json, so nothing reaches the gallery unreviewed.
+  const submitBody = [
+    ...(picks.length ? ["Here's my board:", shareUrl, ""] : []),
+    "Attach a photo of the real spread (JPG is perfect) — sending it means",
+    "Wausau Pilot & Review may publish it in The Cheese Census. Tell us the",
+    "first name and town to credit.",
+  ].join("\n");
+  const submitHref = `mailto:${NEWSROOM}?subject=${encodeURIComponent(
+    "My cheese board — The Cheese Census",
+  )}&body=${encodeURIComponent(submitBody)}`;
+
   function meterCells(order: string[], labels: Record<string, string>, on: Set<string>) {
     return order.map((key) => (
       <span className={`meter-cell${on.has(key) ? " on" : ""}`} key={key}>
@@ -107,7 +131,7 @@ export default function BoardView({
       <div className="board-inner">
         {sponsor && (
           <div className="board-sponsor" role="note">
-            <span className="kicker">Presented by</span>
+            <span className="kicker">Made possible by</span>
             <span className="sp-name">
               {sponsor.url ? (
                 <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
@@ -166,7 +190,7 @@ export default function BoardView({
               return (
                 <div className="board-slot empty" key={`empty-${i}`}>
                   {i === 0 && picks.length === 0
-                    ? "An empty board — start from a suggestion below, your saved cheeses, or any cheese's page in the catalog."
+                    ? "An empty board — start from a suggestion, a featured board below, your saved cheeses, or any cheese's page in the catalog."
                     : "Empty slot"}
                 </div>
               );
@@ -355,7 +379,7 @@ export default function BoardView({
                 </>
               )}
               Picked with The Cheese Census — Wausau Pilot &amp; Review
-              {sponsor ? ` · Board Builder presented by ${sponsor.name}` : ""}
+              {sponsor ? ` · Board Builder made possible by ${sponsor.name}` : ""}
             </p>
             <p className="sheet-link">{shareUrl}</p>
             <div className="board-share">
@@ -365,7 +389,69 @@ export default function BoardView({
               <button className="board-action quiet" onClick={() => window.print()}>
                 Print the list
               </button>
+              <a className="board-action quiet" href={submitHref}>
+                Send it to the newsroom
+              </a>
             </div>
+          </section>
+        )}
+
+        {featured.length > 0 && (
+          <section className="board-featured">
+            <h3>Featured boards</h3>
+            <div className="featured-row">
+              {featured.map((b) => (
+                <div className="featured-card" key={b.id}>
+                  {b.image && (
+                    <img
+                      className="featured-photo"
+                      src={`${import.meta.env.BASE_URL}boards/${b.image}`}
+                      alt={`${b.title} — ${b.credit}'s board`}
+                      loading="lazy"
+                      decoding="async"
+                      onError={(e) => (e.currentTarget.style.display = "none")}
+                    />
+                  )}
+                  <span className="kicker">
+                    {b.source === "editorial"
+                      ? "From the cheese desk"
+                      : `Shared by ${b.credit}`}
+                  </span>
+                  <span className="featured-title">{b.title}</span>
+                  <span className="featured-picks">
+                    {b.cheese_ids.map((id) => {
+                      const cheese = cheesesById.get(id);
+                      if (!cheese) return null;
+                      const maker = creameriesById.get(cheese.creamery_id);
+                      return (
+                        <button
+                          className="featured-pick"
+                          key={id}
+                          onClick={() => onOpen(id)}
+                          title={maker ? `${cheese.name} — ${maker.name}` : cheese.name}
+                        >
+                          {cheese.name}
+                        </button>
+                      );
+                    })}
+                  </span>
+                  <button
+                    className="s-add"
+                    onClick={() => onAdopt(b.cheese_ids)}
+                    title="Replaces your current picks"
+                  >
+                    Use this board
+                  </button>
+                </div>
+              ))}
+            </div>
+            <p className="aka" style={{ marginTop: "0.55rem" }}>
+              Made one worth showing off?{" "}
+              <a className="linkish" href={submitHref}>
+                Email your board&apos;s link and a photo to the newsroom
+              </a>{" "}
+              — reader boards land here, credited by first name and town.
+            </p>
           </section>
         )}
       </div>

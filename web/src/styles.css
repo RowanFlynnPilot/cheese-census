@@ -2143,6 +2143,69 @@ button.highlight {
   margin-top: 0.7rem;
 }
 
+/* The featured-board gallery: reader submissions and cheese-desk boards,
+   curated through the newsroom. */
+.board-featured {
+  margin-top: 1.2rem;
+}
+
+.featured-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.featured-card {
+  flex: 1 1 300px;
+  max-width: 460px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.65rem 0.75rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.featured-photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.15rem;
+}
+
+.featured-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.featured-picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem;
+}
+
+.featured-pick {
+  border: 0;
+  background: var(--teal-tint);
+  color: var(--teal-dark);
+  border-radius: 3px;
+  padding: 0.13rem 0.42rem;
+  font-family: var(--body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.featured-pick:hover {
+  background: var(--teal);
+  color: var(--cream);
+}
+
 /* Board count riding the masthead tab. */
 .tab-count {
   display: inline-block;
@@ -2533,6 +2596,7 @@ button.highlight {
   .app[data-view="board"] .board-meter,
   .app[data-view="board"] .board-hl-row,
   .app[data-view="board"] .board-suggest,
+  .app[data-view="board"] .board-featured,
   .app[data-view="board"] .board-share {
     display: none;
   }

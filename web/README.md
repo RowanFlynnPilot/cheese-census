@@ -115,10 +115,23 @@ button. The board persists in `localStorage` (`cheese-census.board.v1`), mirrors
 into the URL (`?view=board&b=id,id,…`) so **the link is the board** — a
 recipient loads those picks — and ends in a shopping list (creamery, city,
 retail store, award count) with copy-link and a print stylesheet that prints the
-list and nothing else. `build/sponsors.json` feeds the **presenting-sponsor
-slot**: the active `placement: "board"` entry renders "Presented by …" in the
-sponsored visual language (absent when none is live) and its credit rides the
-printed sheet; the current entry is WPR's own house ad.
+list and nothing else. `build/sponsors.json` feeds the **sponsor slot**: the
+active `placement: "board"` entry renders "Made possible by …" in the sponsored
+visual language (absent when none is live) and its credit rides the printed
+sheet; the current entry is WPR's own house ad.
+
+**Featured boards** (`build/boards.json`) close the loop: readers email the
+newsroom (`editor@wausaupilotandreview.com` — the paper's published submission
+address) their board's share link plus a photo of the real spread; an editor
+curates entries into `data/boards.json` (build-validated: every pick must exist,
+counts are 3/5/7), so nothing reaches the gallery unreviewed. Each gallery card
+renders the board from census data — pick chips open the cheese panels, "Use
+this board" adopts it as the working board — with the photo (a locally hosted
+asset under `public/boards/`, never a hotlink, published only with the
+submitter's grant) when there is one. "Send it to the newsroom" in the share
+row opens the reader's own mail client with the link and the publication grant
+prefilled; the gallery's invite line does the same. Editorial entries render
+"From the cheese desk", reader entries "Shared by {first name, town}".
 
 **Draft photo overlay (dev only).** `queue/product_images.json` (from
 `python scripts/images.py`) holds product-photo URLs and the maker's own short

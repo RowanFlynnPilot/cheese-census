@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cheese-desk-starter-2026",
+    "title": "The census starter board",
+    "credit": "The cheese desk",
+    "source": "editorial",
+    "cheese_ids": [
+      "agropur-inc--cheddar",
+      "carr-valley-cheese-company-inc--gran-canaria",
+      "hook-s-cheese-company-inc--hook-s-sheep-milk-butterkase",
+      "belgioioso-cheese-inc--burrata",
+      "decatur-dairy-inc--herb-and-garlic-white-curds"
+    ],
+    "image": null,
+    "added": "2026-08-29"
+  }
+]

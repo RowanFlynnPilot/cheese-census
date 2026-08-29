@@ -21,6 +21,7 @@ from models import (
     Cheese,
     Creamery,
     CrosswalkEntry,
+    FeaturedBoard,
     Highlight,
     Person,
     Plant,
@@ -709,6 +710,10 @@ def load_sponsors() -> list[Sponsor]:
     return [Sponsor(**s) for s in _read_json(ROOT / "data" / "sponsors.json")]
 
 
+def load_boards() -> list[FeaturedBoard]:
+    return [FeaturedBoard(**b) for b in _read_json(ROOT / "data" / "boards.json")]
+
+
 # ── Stage 4: validation (all fatal) ──────────────────────────────────────────
 
 def _no_duplicates(table: str, ids: list[str]) -> None:
@@ -718,7 +723,7 @@ def _no_duplicates(table: str, ids: list[str]) -> None:
 
 
 def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
-    for table in ("creameries", "cheeses", "people", "awards", "sponsors"):
+    for table in ("creameries", "cheeses", "people", "awards", "sponsors", "boards"):
         _no_duplicates(table, [record.id for record in ds[table]])
 
     exported_creameries = {
@@ -756,6 +761,10 @@ def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
     for highlight in ds["highlights"]:
         if highlight.cheese_id not in cheese_ids:
             fatal(f"highlight references unknown cheese '{highlight.cheese_id}'")
+    for board in ds["boards"]:
+        unknown = [c for c in board.cheese_ids if c not in cheese_ids]
+        if unknown:
+            fatal(f"featured board '{board.id}' references unknown cheese(s) {unknown}")
 
     resolved = {(e.source, e.source_key) for e in ds["crosswalk"]}
     for entry in ds["crosswalk"]:
@@ -831,6 +840,7 @@ def export(ds: dict, classifications: dict[str, str]) -> dict[str, int]:
         encoding="utf-8", newline="\n",
     )
     _write_table("sponsors", ds["sponsors"])
+    _write_table("boards", ds["boards"])
     return {name: len(records) for name, records in exported.items()}
 
 
@@ -843,6 +853,7 @@ def main() -> None:
     ds = apply_overrides(ds)
     ds["highlights"] = load_highlights()
     ds["sponsors"] = load_sponsors()
+    ds["boards"] = load_boards()
     classifications = load_classifications(ds)
     validate(ds, raw, classifications)
     attach_similar(ds["cheeses"])
@@ -851,7 +862,8 @@ def main() -> None:
     print(
         "OK: "
         + ", ".join(f"{count} {name}" for name, count in counts.items())
-        + f", {len(ds['highlights'])} highlights, {len(ds['sponsors'])} sponsors -> build/"
+        + f", {len(ds['highlights'])} highlights, {len(ds['sponsors'])} sponsors, "
+        + f"{len(ds['boards'])} featured boards -> build/"
     )
 
 

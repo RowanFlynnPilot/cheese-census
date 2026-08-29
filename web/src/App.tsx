@@ -481,6 +481,23 @@ export default function App() {
     [data, today],
   );
 
+  // The gallery, newest first. Build validation guarantees every pick exists.
+  const featuredBoards = useMemo(
+    () =>
+      [...(data?.boards ?? [])].sort(
+        (a, b) => b.added.localeCompare(a.added) || a.id.localeCompare(b.id),
+      ),
+    [data],
+  );
+
+  /** "Use this board" from the gallery: the picks arrive with their own size. */
+  function adoptBoard(ids: string[]) {
+    const size = (BOARD_SIZES as readonly number[]).includes(ids.length)
+      ? ids.length
+      : board.size;
+    board.replace(ids, size);
+  }
+
   // The board's picks, resolved in saved order. A closed creamery's cheese
   // stays — it is the reader's list — but leaves the suggestion pool.
   const boardCheeses = useMemo(
@@ -1269,11 +1286,14 @@ export default function App() {
             loading={!data}
             picks={boardCheeses}
             size={board.size}
+            cheesesById={cheesesById}
             creameriesById={creameriesById}
             awardsByCheese={awardsByCheese}
             suggestions={boardSuggestions}
             highlights={highlights}
             sponsor={boardSponsor}
+            featured={featuredBoards}
+            onAdopt={adoptBoard}
             heartCount={hearts.length}
             shareUrl={boardShareUrl}
             onSetSize={board.setSize}

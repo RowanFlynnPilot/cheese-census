@@ -196,13 +196,23 @@ Editorial state kept apart from the catalog (separation of concerns — the cata
 
 ## `build/sponsors.json`
 
-Feature-level sponsorship, kept apart from highlights: a highlight plugs a *cheese*; a sponsor entry buys a *surface* ("Board Builder presented by …"). Hand-edited in `data/sponsors.json`, exported verbatim.
+Feature-level sponsorship, kept apart from highlights: a highlight plugs a *cheese*; a sponsor entry buys a *surface* (the Board Builder's "Made possible by …" slot). Hand-edited in `data/sponsors.json`, exported verbatim.
 
 ```json
 {"id": "board-presenting-house-2026", "name": "...", "placement": "board", "label": "...", "url": null, "starts": "2026-08-01", "ends": "2027-12-31"}
 ```
 
 `placement` names the surface and comes from the closed `sponsor_placements` vocabulary (currently just `board`; later tentpoles — bracket, quiz — add theirs deliberately). The frontend renders whatever active entry targets a surface, always in the sponsored visual language, and renders nothing when none does. The window is inclusive `[starts, ends]` like a highlight's; an inverted window is build-fatal.
+
+## `build/boards.json`
+
+Featured cheese boards — the Board Builder's gallery. Readers submit by email (their board's share link, a photo of the real spread, a first name and town for the credit); an editor curates entries into `data/boards.json`, so every row here has been through human hands. Exported verbatim.
+
+```json
+{"id": "...", "title": "...", "credit": "Margaret, Wausau", "source": "reader", "cheese_ids": ["...", "..."], "image": "margaret-board.jpg", "added": "2026-09-12"}
+```
+
+`source` is `editorial` | `reader`. `cheese_ids` are the board itself — 3, 5 or 7 distinct ids, every one of which must exist — which means a featured board renders from census data and stays loadable even without its photo. `image` is a filename under `web/public/boards/` (a locally hosted asset, published only with the submitter's grant — the submission invite says sending the photo is saying WPR may publish it), never a hotlink. `added` orders the gallery, newest first.
 
 ## Validation (build-fatal, all of them)
 
@@ -215,5 +225,6 @@ Feature-level sponsorship, kept apart from highlights: a highlight plugs a *chee
 7. `sponsored` highlight without a `sponsor`, or vice versa
 8. Non-deterministic output (build runs sort checks on its own export)
 9. Sponsor entry with an unknown `placement`, a malformed or inverted date window, or a duplicate `id`
+10. Featured board with an unknown or repeated cheese id, a pick count other than 3/5/7, or a duplicate `id`
 
 `queue/` reports are regenerated every run for the non-fatal review work: creameries with zero cataloged cheeses, awards with `creamery_id` but no `cheese_id`, cheeses still carrying provisional flavor tags from assisted tagging, and description coverage (missing / generated / human-edited).

@@ -120,6 +120,19 @@ export interface Sponsor {
   ends: string;
 }
 
+/** A featured cheese board — a reader's (or the cheese desk's) picks, curated
+ *  into the gallery by email submission. The board is its cheese ids; the photo
+ *  is a locally hosted asset and optional. */
+export interface FeaturedBoard {
+  id: string;
+  title: string;
+  credit: string;
+  source: "editorial" | "reader";
+  cheese_ids: string[];
+  image: string | null;
+  added: string;
+}
+
 export interface Dataset {
   creameries: Creamery[];
   cheeses: Cheese[];
@@ -127,4 +140,5 @@ export interface Dataset {
   awards: Award[];
   highlights: Highlight[];
   sponsors: Sponsor[];
+  boards: FeaturedBoard[];
 }

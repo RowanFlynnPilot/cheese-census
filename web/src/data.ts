@@ -1,4 +1,13 @@
-import type { Award, Cheese, Creamery, Dataset, Highlight, Person, Sponsor } from "./types";
+import type {
+  Award,
+  Cheese,
+  Creamery,
+  Dataset,
+  FeaturedBoard,
+  Highlight,
+  Person,
+  Sponsor,
+} from "./types";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -53,15 +62,17 @@ export async function loadDraftLogos(): Promise<Map<string, string>> {
 }
 
 export async function loadDataset(): Promise<Dataset> {
-  const [creameries, cheeses, people, awards, highlights, sponsors] = await Promise.all([
-    table<Creamery>("creameries"),
-    table<Cheese>("cheeses"),
-    table<Person>("people"),
-    table<Award>("awards"),
-    table<Highlight>("highlights"),
-    table<Sponsor>("sponsors"),
-  ]);
-  return { creameries, cheeses, people, awards, highlights, sponsors };
+  const [creameries, cheeses, people, awards, highlights, sponsors, boards] =
+    await Promise.all([
+      table<Creamery>("creameries"),
+      table<Cheese>("cheeses"),
+      table<Person>("people"),
+      table<Award>("awards"),
+      table<Highlight>("highlights"),
+      table<Sponsor>("sponsors"),
+      table<FeaturedBoard>("boards"),
+    ]);
+  return { creameries, cheeses, people, awards, highlights, sponsors, boards };
 }
 
 /** Plant.operations concatenates DATCP's three licence columns. The first two are

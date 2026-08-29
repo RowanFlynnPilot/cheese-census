@@ -264,6 +264,42 @@ class Sponsor(BaseModel):
         return self
 
 
+class FeaturedBoard(BaseModel):
+    """A reader's (or the cheese desk's) board, featured in the Board Builder's
+    gallery. Readers submit by email — the board's share link plus a photo of
+    the real spread — and an editor curates entries into data/boards.json, so
+    everything here has been through human hands. The photo is a locally hosted
+    asset (web/public/boards/), never a hotlink."""
+
+    model_config = ConfigDict(extra="forbid")
+    id: str
+    title: str
+    # "The cheese desk" or a reader credit, newspaper style ("Margaret, Wausau").
+    credit: str
+    source: Literal["editorial", "reader"]
+    cheese_ids: list[str] = Field(min_length=3, max_length=7)
+    # Filename under web/public/boards/, once the reader's photo is in hand.
+    image: str | None = None
+    added: str
+
+    @field_validator("added")
+    @classmethod
+    def _iso_date(cls, v: str) -> str:
+        date.fromisoformat(v)  # raises on malformed dates
+        return v
+
+    @model_validator(mode="after")
+    def _shape(self) -> "FeaturedBoard":
+        if len(set(self.cheese_ids)) != len(self.cheese_ids):
+            raise ValueError(f"featured board '{self.id}' repeats a cheese")
+        if len(self.cheese_ids) not in (3, 5, 7):
+            raise ValueError(
+                f"featured board '{self.id}' has {len(self.cheese_ids)} picks — "
+                f"boards come in 3, 5 or 7"
+            )
+        return self
+
+
 class CrosswalkEntry(BaseModel):
     model_config = ConfigDict(extra="forbid")
     source: Literal["datcp", "dfw", "masters", "contests"]
