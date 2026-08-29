@@ -42,6 +42,17 @@ function initialParam(name: string): string {
   return new URLSearchParams(location.search).get(name) ?? "";
 }
 
+/** The hash, decoded defensively — a hand-mangled escape (`#%`) throws from
+ *  decodeURIComponent, and a bad shared link must not blank the whole app. */
+function readHash(): string {
+  const raw = location.hash.slice(1);
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return raw;
+  }
+}
+
 function initialSort(): SortKey {
   const sort = initialParam("sort");
   return (SORTS as readonly string[]).includes(sort) ? (sort as SortKey) : "name";
@@ -55,7 +66,7 @@ function initialCheeseSort(): CheeseSortKey {
 }
 
 function initialView(): ViewKey {
-  if (decodeURIComponent(location.hash.slice(1)).includes("--")) return "cheeses";
+  if (readHash().includes("--")) return "cheeses";
   return initialParam("view") === "cheeses" ? "cheeses" : "map";
 }
 
@@ -105,7 +116,7 @@ export default function App() {
   // Captured at first render: the URL-mirror effect below rewrites the URL (hashless
   // while nothing is selected) before the data arrives, so reading location.hash in
   // the data-load effect would find it already stripped.
-  const [deepLink] = useState(() => decodeURIComponent(location.hash.slice(1)));
+  const [deepLink] = useState(readHash);
   // Highlights are dated placements; the window check happens once per visit.
   const [today] = useState(() => new Date().toISOString().slice(0, 10));
   const aboutCard = useRef<HTMLDivElement>(null);
@@ -156,25 +167,31 @@ export default function App() {
     return map;
   }, [data]);
 
+  // The browse universe: closed creameries stay in the dataset (their awards
+  // and deep links resolve) but leave the filters, the counters and the county
+  // menu, so "X of Y" always means "clearing the filters gets you Y".
+  const activeCreameries = useMemo(
+    () => (data?.creameries ?? []).filter((c) => c.status === "active"),
+    [data],
+  );
+
   const counties = useMemo(
     () =>
       [
-        ...new Set(
-          (data?.creameries ?? []).map((c) => c.county).filter(Boolean) as string[],
-        ),
+        ...new Set(activeCreameries.map((c) => c.county).filter(Boolean) as string[]),
       ].sort(),
-    [data],
+    [activeCreameries],
   );
 
   const countyCounts = useMemo(() => {
     const counts = new Map<string, number>();
-    for (const creamery of data?.creameries ?? []) {
+    for (const creamery of activeCreameries) {
       if (creamery.county) {
         counts.set(creamery.county, (counts.get(creamery.county) ?? 0) + 1);
       }
     }
     return counts;
-  }, [data]);
+  }, [activeCreameries]);
 
   // Closed creameries stay in the dataset (history is useful) but their records
   // drop out of browse views — SCHEMA.md's status rule, applied to both tables.
@@ -190,6 +207,24 @@ export default function App() {
     const counts = new Map<string, number>();
     for (const cheese of activeCheeses) {
       counts.set(cheese.family, (counts.get(cheese.family) ?? 0) + 1);
+    }
+    return counts;
+  }, [activeCheeses]);
+
+  const textureCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const cheese of activeCheeses) {
+      counts.set(cheese.texture, (counts.get(cheese.texture) ?? 0) + 1);
+    }
+    return counts;
+  }, [activeCheeses]);
+
+  // A mixed-milk cheese counts toward each of its milks — the menu answers
+  // "how many can I get with goat in them?", not a partition.
+  const milkCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const cheese of activeCheeses) {
+      for (const m of cheese.milk) counts.set(m, (counts.get(m) ?? 0) + 1);
     }
     return counts;
   }, [activeCheeses]);
@@ -335,6 +370,21 @@ export default function App() {
   ]);
   const cheesesShown = cheeseFiltered.list;
 
+  // What the reader *asked for*, as one string. The grid scrolls back to the
+  // top when this changes — and only then: the result set also changes when a
+  // heart is toggled mid-scroll, and that must not bounce the reader around.
+  const cheeseFilterKey = [
+    cheeseQuery,
+    family,
+    texture,
+    milk,
+    maker,
+    cheeseSort,
+    cheeseAwarded,
+    originalsOnly,
+    mineOnly,
+  ].join(" ");
+
   const catalogCounts = useMemo(() => {
     const counts = new Map<string, number>();
     for (const cheese of activeCheeses) {
@@ -468,7 +518,7 @@ export default function App() {
       }
     };
     apply(deepLink);
-    const onHashChange = () => apply(decodeURIComponent(location.hash.slice(1)));
+    const onHashChange = () => apply(readHash());
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, [data, deepLink]);
@@ -545,7 +595,7 @@ export default function App() {
     setSelectedId(null);
     if (id) {
       requestAnimationFrame(() => {
-        document.querySelector<HTMLElement>(`[data-cid="${id}"]`)?.focus();
+        document.querySelector<HTMLElement>(`[data-cid="${CSS.escape(id)}"]`)?.focus();
       });
     }
   }
@@ -627,12 +677,33 @@ export default function App() {
     aboutOpener.current?.focus();
   }
 
+  /** aria-modal promises the dialog is the whole world; make Tab keep that
+   *  promise instead of wandering into the page behind the overlay. */
+  function trapAboutTab(e: React.KeyboardEvent) {
+    if (e.key !== "Tab" || !aboutCard.current) return;
+    const focusables = aboutCard.current.querySelectorAll<HTMLElement>("button, a[href]");
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    const active = document.activeElement;
+    if (e.shiftKey && (active === first || active === aboutCard.current)) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+
   /** Answer "who else makes this?" from a licence chip in the detail panel. The
-   *  county filter clears because the question is statewide; the open creamery
+   *  question is statewide, so every narrower filter clears — a lingering
+   *  county or award toggle would silently hide makers; the open creamery
    *  necessarily matches its own cheese, so its panel stays up. */
   function filterByCheese(operation: string) {
     setQuery(operation);
     setCounty("");
+    setRetailOnly(false);
+    setAwardedOnly(false);
   }
 
   // Global keys, routed through a ref so the listener binds once.
@@ -704,7 +775,7 @@ export default function App() {
         key={creamery.id}
         data-cid={creamery.id}
         className="creamery-row"
-        aria-current={creamery.id === selectedId}
+        aria-current={creamery.id === selectedId || undefined}
         onClick={() => setSelectedId(creamery.id)}
       >
         <div className="name">
@@ -749,7 +820,7 @@ export default function App() {
     ? "loading…"
     : view === "cheeses"
       ? `${fmt(cheesesShown.length)} of ${fmt(activeCheeses.length)} cheeses`
-      : `${shown.length} of ${data.creameries.length} creameries`;
+      : `${shown.length} of ${activeCreameries.length} creameries`;
 
   return (
     <div className="app">
@@ -960,6 +1031,7 @@ export default function App() {
                 cheeses={selectedCreameryCheeses}
                 logoUrl={draftLogos?.get(selected.id) ?? null}
                 position={shownIndex >= 0 ? `${shownIndex + 1} / ${shown.length}` : null}
+                backLabel={mobilePane === "map" ? "Back to the map" : "Back to the list"}
                 onClose={closeDetail}
                 onPrev={() => step(-1)}
                 onNext={() => step(1)}
@@ -996,6 +1068,7 @@ export default function App() {
           <CheeseBrowse
             loading={!data}
             shown={cheesesShown}
+            filterKey={cheeseFilterKey}
             hints={cheeseFiltered.hints}
             creameriesById={creameriesById}
             awardsByCheese={awardsByCheese}
@@ -1026,6 +1099,8 @@ export default function App() {
             onClearMaker={() => setMaker("")}
             vocab={cheeseVocab}
             familyCounts={familyCounts}
+            textureCounts={textureCounts}
+            milkCounts={milkCounts}
             onClearAll={clearCheeseFacets}
             images={draftImages}
           />
@@ -1090,6 +1165,7 @@ export default function App() {
             ref={aboutCard}
             tabIndex={-1}
             onClick={(e) => e.stopPropagation()}
+            onKeyDown={trapAboutTab}
           >
             <button className="close" onClick={closeAbout} aria-label="Close about">
               ×

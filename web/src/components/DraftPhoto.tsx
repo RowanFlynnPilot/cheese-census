@@ -19,6 +19,7 @@ export default function DraftPhoto({ src, alt, className }: Props) {
         src={src}
         alt={alt}
         loading="lazy"
+        decoding="async"
         referrerPolicy="no-referrer"
         onError={() => setBroken(true)}
       />

@@ -174,8 +174,11 @@ BASE_PATH=/ npm run build
 ```
 
 The page is designed to fill its container, so the embedding WordPress iframe must
-be given a height — it does not self-size. Map tiles come from CARTO/OpenStreetMap;
-fonts from Google Fonts. Both are third-party requests from inside the iframe.
+be given a height — it does not self-size. Map tiles come from Esri's keyless
+World Light Gray canvas (CARTO's free basemaps started watermarking "API KEY
+REQUIRED" across every tile in mid-2026, which is why they left); fonts from
+Google Fonts. Both are third-party requests from inside the iframe. The Esri
+canvas tops out at zoom 16 and the map is capped to match.
 
 Once `data/overrides/` has been through editorial review, build with:
 

@@ -19,6 +19,7 @@ export default function LogoMark({ src, className }: Props) {
       src={src}
       alt=""
       loading="lazy"
+      decoding="async"
       referrerPolicy="no-referrer"
       onError={() => setBroken(true)}
     />

@@ -70,17 +70,24 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
     map.current = L.map(host.current, {
       center: CENTER,
       zoom: ZOOM,
+      maxZoom: 16, // the basemap's native ceiling — past it lies grey void
       scrollWheelZoom: false, // an embedded iframe must not hijack page scroll
       // fitBounds snaps to whole zoom levels by default, and Wisconsin misses
       // fitting at 7 by a hair — so the overview collapsed to a whole-Midwest 6.
       // Half-steps let the fit land where the state actually is.
       zoomSnap: 0.5,
     });
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      maxZoom: 18,
-    }).addTo(map.current);
+    // Esri's Light Gray canvas: keyless, CDN-fast, and muted enough to sit
+    // under the WPR palette. (CARTO's free basemaps began watermarking
+    // "API KEY REQUIRED" across every tile in mid-2026.) Native tiles stop at
+    // zoom 16, so the map must not zoom past what exists.
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
+        maxZoom: 16,
+      },
+    ).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
     // Leaflet only watches window resizes; the container itself changes size
     // too (mobile pane flips, embed reflows, orientation changes). Re-measure,
@@ -133,9 +140,11 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       marker.setZIndexOffset(id === selectedId ? 1000 : 0);
     }
     if (!selectedId) {
-      // Closing the panel after viewing an out-of-state company would otherwise
-      // leave the reader looking at New Jersey.
-      frame();
+      // Closing the panel after viewing an out-of-state company would leave the
+      // reader looking at New Jersey — re-frame then. Anywhere in-state, keep
+      // the reader's own pan and zoom: closing a pin they walked to should not
+      // yank the map back to the statewide overview.
+      if (map.current && !WISCONSIN.contains(map.current.getCenter())) frame();
     } else if (map.current) {
       const marker = markers.current.get(selectedId);
       if (marker) {

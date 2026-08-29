@@ -15,6 +15,10 @@ export type CheeseSortKey = (typeof CHEESE_SORTS)[number];
 interface Props {
   loading: boolean;
   shown: Cheese[];
+  /** The filter inputs, folded to one string. A change means the reader asked a
+   *  new question, so the grid restarts at the top; `shown` alone also changes
+   *  when a heart is toggled mid-scroll, which must not move the page. */
+  filterKey: string;
   hints: Map<string, string>;
   creameriesById: Map<string, Creamery>;
   awardsByCheese: Map<string, Award[]>;
@@ -45,6 +49,8 @@ interface Props {
   onClearMaker: () => void;
   vocab: { families: string[]; textures: string[]; milks: string[] };
   familyCounts: Map<string, number>;
+  textureCounts: Map<string, number>;
+  milkCounts: Map<string, number>;
   onClearAll: () => void;
   /** Dev-only draft overlay (photos + blurbs pending permission); null in production. */
   images: Map<string, DraftMedia> | null;
@@ -69,6 +75,7 @@ function groupByFamily(rows: Cheese[]): { label: string; rows: Cheese[] }[] {
 export default function CheeseBrowse({
   loading,
   shown,
+  filterKey,
   hints,
   creameriesById,
   awardsByCheese,
@@ -99,6 +106,8 @@ export default function CheeseBrowse({
   onClearMaker,
   vocab,
   familyCounts,
+  textureCounts,
+  milkCounts,
   onClearAll,
   images,
 }: Props) {
@@ -107,11 +116,11 @@ export default function CheeseBrowse({
   const sentinel = useRef<HTMLDivElement>(null);
   const hasMore = visible < shown.length;
 
-  // A new filtered set starts the reader back at the top of it.
+  // A new question starts the reader back at the top of its answer.
   useEffect(() => {
     setVisible(PAGE);
     scroller.current?.scrollTo(0, 0);
-  }, [shown]);
+  }, [filterKey]);
 
   useEffect(() => {
     const node = sentinel.current;
@@ -178,7 +187,7 @@ export default function CheeseBrowse({
             <option value="">Any texture</option>
             {vocab.textures.map((t) => (
               <option key={t} value={t}>
-                {TEXTURE_LABEL[t] ?? t}
+                {TEXTURE_LABEL[t] ?? t} ({textureCounts.get(t)})
               </option>
             ))}
           </select>
@@ -190,7 +199,7 @@ export default function CheeseBrowse({
             <option value="">Any milk</option>
             {vocab.milks.map((m) => (
               <option key={m} value={m}>
-                {MILK_LABEL[m] ?? m}
+                {MILK_LABEL[m] ?? m} ({milkCounts.get(m)})
               </option>
             ))}
           </select>

@@ -24,6 +24,9 @@ interface Props {
   logoUrl: string | null;
   /** "12 / 93" within the filtered list, or null when filtered out mid-view. */
   position: string | null;
+  /** What the mobile back bar returns to — "Back to the map" from a pin,
+   *  "Back to the list" from a row. */
+  backLabel: string;
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
@@ -39,6 +42,7 @@ export default function CreameryDetail({
   cheeses,
   logoUrl,
   position,
+  backLabel,
   onClose,
   onPrev,
   onNext,
@@ -301,7 +305,7 @@ export default function CreameryDetail({
       {/* Phones show the panel as a full-screen sheet; this thumb-sized bar is
           the way back (the corner × stays for desktop). */}
       <button className="sheet-back" onClick={onClose}>
-        ← Back to the map
+        ← {backLabel}
       </button>
     </aside>
   );

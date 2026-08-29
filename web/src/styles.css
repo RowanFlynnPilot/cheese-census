@@ -91,7 +91,6 @@ input:focus-visible {
 
 .masthead .subtitle {
   font-size: 0.85rem;
-  opacity: 0.9;
   margin: 0;
 }
 
@@ -110,7 +109,6 @@ input:focus-visible {
   margin-left: auto;
   font-family: var(--mono);
   font-size: 0.78rem;
-  opacity: 0.92;
 }
 
 /* The census, by the numbers — an almanac line inside the masthead. */
@@ -120,7 +118,7 @@ input:focus-visible {
   gap: 0.3rem 1.15rem;
   margin: 0.35rem 0 0.65rem;
   font-size: 0.73rem;
-  color: rgba(246, 242, 233, 0.82);
+  color: rgba(246, 242, 233, 0.95);
 }
 
 .stats-line b {
@@ -1755,6 +1753,12 @@ button.highlight {
     border-right: 0;
   }
 
+  /* The floating flip pill hovers over the list's tail; leave the last row
+     room to scroll clear of it. */
+  .sidebar .list {
+    padding-bottom: 4.6rem;
+  }
+
   .pane-off {
     visibility: hidden;
   }
@@ -1764,7 +1768,9 @@ button.highlight {
     align-items: center;
     gap: 0.45rem;
     position: absolute;
-    bottom: 1.1rem;
+    /* env() clears the iPhone home indicator when the page runs edge-to-edge
+       (0 everywhere else). */
+    bottom: calc(1.1rem + env(safe-area-inset-bottom, 0px));
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
@@ -1796,14 +1802,27 @@ button.highlight {
     bottom: 0;
     width: 100%;
     border: 0;
-    background: var(--teal);
+    /* teal-dark, not teal: cream text at this size needs the darker ground
+       to pass AA. */
+    background: var(--teal-dark);
     color: var(--cream);
     font-family: var(--body);
     font-size: 1rem;
     font-weight: 600;
-    padding: 0.95rem 1rem;
+    padding: 0.95rem 1rem calc(0.95rem + env(safe-area-inset-bottom, 0px));
     cursor: pointer;
     box-shadow: 0 -2px 8px rgba(29, 35, 33, 0.12);
+  }
+
+  /* The sheet header's small square buttons grow to thumb size. */
+  .hbtn {
+    min-width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .close {
+    width: 2.15rem;
+    height: 2.15rem;
   }
 
   /* The map pane is only the bottom half here, so anchoring the panel inside it
