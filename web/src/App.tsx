@@ -129,9 +129,12 @@ export default function App() {
   // The cheese board: personal state beside hearts; the ids double as the
   // shareable URL payload.
   const board = useBoard();
-  // Captured once: a shared board link hydrates the working board on arrival.
+  // Captured once: a shared board link hydrates the working board on arrival —
+  // but only a *board-view* arrival. A hand-mixed link (`#cheese` plus `b=`)
+  // opens the cheese and leaves the reader's own board alone.
   const [boardParam] = useState(() => initialParam("b"));
   const [boardSizeParam] = useState(() => initialParam("bsize"));
+  const [arrivedOnBoard] = useState(() => initialView() === "board");
   const boardAdopted = useRef(false);
 
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -520,7 +523,9 @@ export default function App() {
     const params = new URLSearchParams({ view: "board" });
     if (board.size !== DEFAULT_SIZE) params.set("bsize", String(board.size));
     if (board.ids.length) params.set("b", board.ids.join(","));
-    return `${location.origin}${location.pathname}?${params.toString()}`;
+    // Commas are legal in a query string; the encoded form just reads worse
+    // on the printed sheet.
+    return `${location.origin}${location.pathname}?${params.toString().replace(/%2C/g, ",")}`;
   }, [board.ids, board.size]);
 
   // A shared link's board loads once the dataset can vouch for its ids; a bare
@@ -528,6 +533,7 @@ export default function App() {
   useEffect(() => {
     if (!data || boardAdopted.current) return;
     boardAdopted.current = true;
+    if (!arrivedOnBoard) return;
     const size = Number(boardSizeParam);
     const sizeValid = (BOARD_SIZES as readonly number[]).includes(size);
     const ids = boardParam
@@ -535,7 +541,7 @@ export default function App() {
       : [];
     if (ids.length) board.replace(ids, sizeValid ? size : undefined);
     else if (sizeValid) board.setSize(size);
-  }, [data, boardParam, boardSizeParam, cheesesById, board]);
+  }, [data, arrivedOnBoard, boardParam, boardSizeParam, cheesesById, board]);
 
   // Ids the dataset no longer knows (a renamed cheese since the board was
   // saved) drop silently rather than holding a ghost slot.
@@ -668,7 +674,8 @@ export default function App() {
       if (sort !== "name") params.set("sort", sort);
       hash = selectedId;
     }
-    const search = params.toString();
+    // Keep board-id commas readable — the address bar is a share surface too.
+    const search = params.toString().replace(/%2C/g, ",");
     history.replaceState(
       null,
       "",
@@ -1384,6 +1391,14 @@ export default function App() {
               The ♥ list is yours alone: it is stored in your browser and never sent
               anywhere. &ldquo;To try next&rdquo; is matched from your saved cheeses
               by the same similarity scoring, on your device.
+            </p>
+            <h3>The cheese board</h3>
+            <p>
+              Board picks live in your browser the same way, and are shared only
+              when you share your board&apos;s link — the link itself is the board.
+              Featured boards are reader submissions, sent to the newsroom by email
+              and reviewed by an editor before they appear. Sponsor messages in the
+              builder are always labeled as sponsored.
             </p>
             <h3>What &ldquo;licensed to make&rdquo; means</h3>
             <p>

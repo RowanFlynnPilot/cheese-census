@@ -201,9 +201,11 @@ Cheese-board parameters (all under `?view=board`):
 | `?bsize=` | Board size, `3`/`5`/`7` (default 5) | `?bsize=7` |
 
 They compose: `/?view=cheeses&family=curds&csort=awards` is the curd map's list
-form. A `b=` arrival adopts those picks as the working board (ids the dataset
-doesn't know are dropped); arriving without one leaves the saved board alone.
-Esc closes the open panel and returns focus to its card or row.
+form. A `b=` arrival *on the board view* adopts those picks as the working board
+(ids the dataset doesn't know are dropped; a hand-mixed link with a record hash
+opens the record and leaves the board alone); arriving without a `b=` leaves the
+saved board untouched. Esc closes the open panel and returns focus to its card
+or row.
 
 ## Deployment
 
