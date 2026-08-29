@@ -108,10 +108,23 @@ export interface Highlight {
   ends: string;
 }
 
+/** Feature-level sponsorship: a highlight plugs a cheese, a sponsor entry buys
+ *  a surface ("Board Builder presented by …"). Placement names the surface. */
+export interface Sponsor {
+  id: string;
+  name: string;
+  placement: string;
+  label: string;
+  url: string | null;
+  starts: string;
+  ends: string;
+}
+
 export interface Dataset {
   creameries: Creamery[];
   cheeses: Cheese[];
   people: Person[];
   awards: Award[];
   highlights: Highlight[];
+  sponsors: Sponsor[];
 }

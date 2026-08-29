@@ -25,6 +25,7 @@ from models import (
     Person,
     Plant,
     Retail,
+    Sponsor,
 )
 from similarity import attach_similar
 
@@ -704,6 +705,10 @@ def load_highlights() -> list[Highlight]:
     return [Highlight(**h) for h in _read_json(ROOT / "data" / "highlights.json")]
 
 
+def load_sponsors() -> list[Sponsor]:
+    return [Sponsor(**s) for s in _read_json(ROOT / "data" / "sponsors.json")]
+
+
 # ── Stage 4: validation (all fatal) ──────────────────────────────────────────
 
 def _no_duplicates(table: str, ids: list[str]) -> None:
@@ -713,7 +718,7 @@ def _no_duplicates(table: str, ids: list[str]) -> None:
 
 
 def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
-    for table in ("creameries", "cheeses", "people", "awards"):
+    for table in ("creameries", "cheeses", "people", "awards", "sponsors"):
         _no_duplicates(table, [record.id for record in ds[table]])
 
     exported_creameries = {
@@ -825,6 +830,7 @@ def export(ds: dict, classifications: dict[str, str]) -> dict[str, int]:
                    indent=2, sort_keys=True, ensure_ascii=False) + "\n",
         encoding="utf-8", newline="\n",
     )
+    _write_table("sponsors", ds["sponsors"])
     return {name: len(records) for name, records in exported.items()}
 
 
@@ -836,6 +842,7 @@ def main() -> None:
     ds = merge(raw)
     ds = apply_overrides(ds)
     ds["highlights"] = load_highlights()
+    ds["sponsors"] = load_sponsors()
     classifications = load_classifications(ds)
     validate(ds, raw, classifications)
     attach_similar(ds["cheeses"])
@@ -844,7 +851,7 @@ def main() -> None:
     print(
         "OK: "
         + ", ".join(f"{count} {name}" for name, count in counts.items())
-        + f", {len(ds['highlights'])} highlights -> build/"
+        + f", {len(ds['highlights'])} highlights, {len(ds['sponsors'])} sponsors -> build/"
     )
 
 

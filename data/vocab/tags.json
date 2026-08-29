@@ -30,5 +30,6 @@
     "OPEN CLASS HARD CHEESE", "PARMESAN", "PARMESAN (GRANA)", "PROVOLONE",
     "QUESO QUESADILLA", "RACLETTE", "RICOTTA", "ROMANO", "SPECIALTY SWISS",
     "SWISS"
-  ]
+  ],
+  "sponsor_placements": ["board"]
 }

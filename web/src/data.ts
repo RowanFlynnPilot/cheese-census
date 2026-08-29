@@ -1,4 +1,4 @@
-import type { Award, Cheese, Creamery, Dataset, Highlight, Person } from "./types";
+import type { Award, Cheese, Creamery, Dataset, Highlight, Person, Sponsor } from "./types";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -53,14 +53,15 @@ export async function loadDraftLogos(): Promise<Map<string, string>> {
 }
 
 export async function loadDataset(): Promise<Dataset> {
-  const [creameries, cheeses, people, awards, highlights] = await Promise.all([
+  const [creameries, cheeses, people, awards, highlights, sponsors] = await Promise.all([
     table<Creamery>("creameries"),
     table<Cheese>("cheeses"),
     table<Person>("people"),
     table<Award>("awards"),
     table<Highlight>("highlights"),
+    table<Sponsor>("sponsors"),
   ]);
-  return { creameries, cheeses, people, awards, highlights };
+  return { creameries, cheeses, people, awards, highlights, sponsors };
 }
 
 /** Plant.operations concatenates DATCP's three licence columns. The first two are
@@ -238,6 +239,7 @@ export const MILK_LABEL: Record<string, string> = {
 // Softest to hardest / lightest to strongest — the order the filters offer them.
 export const TEXTURE_ORDER = ["fresh", "soft", "semi_soft", "semi_hard", "hard"];
 export const MILK_ORDER = ["cow", "goat", "sheep", "mixed"];
+export const AGE_ORDER = ["fresh", "young", "medium", "aged", "extra_aged"];
 
 /** Vocabulary terms are lowercase words joined with underscores. */
 export function labelize(term: string): string {
@@ -331,6 +333,19 @@ export function activeHighlights(
     .filter((h) => h.starts <= today && today <= h.ends)
     .map((h) => ({ highlight: h, cheese: cheesesById.get(h.cheese_id) }))
     .filter((x): x is { highlight: Highlight; cheese: Cheese } => Boolean(x.cheese));
+}
+
+/** The one live entry for a surface, if any — the latest campaign wins when
+ *  windows overlap, so a new sponsorship takes over without editing the old row. */
+export function activeSponsor(
+  sponsors: Sponsor[],
+  placement: string,
+  today: string,
+): Sponsor | null {
+  const live = sponsors
+    .filter((s) => s.placement === placement && s.starts <= today && today <= s.ends)
+    .sort((a, b) => b.starts.localeCompare(a.starts) || a.id.localeCompare(b.id));
+  return live[0] ?? null;
 }
 
 export interface Recommendation {

@@ -5,6 +5,7 @@ import {
   MILK_ORDER,
   TEXTURE_ORDER,
   activeHighlights,
+  activeSponsor,
   awardsFor,
   awardsForCheese,
   cheeseOperations,
@@ -18,11 +19,20 @@ import {
   recommend,
 } from "./data";
 import { useHearts } from "./hearts";
+import {
+  BOARD_SIZES,
+  DEFAULT_SIZE,
+  completeBoard,
+  suggestForBoard,
+  useBoard,
+} from "./boards";
 import LogoMark from "./components/LogoMark";
 import MapView from "./components/MapView";
 import CreameryDetail from "./components/CreameryDetail";
 import CheeseBrowse, { CHEESE_SORTS, type CheeseSortKey } from "./components/CheeseBrowse";
 import CheeseDetail from "./components/CheeseDetail";
+import BoardView from "./components/BoardView";
+import type { Cheese } from "./types";
 
 // Flip to "reviewed" once data/overrides/ has been through editorial review:
 //   VITE_DATA_STATUS=reviewed npm run build
@@ -33,7 +43,7 @@ const BASE_TITLE = document.title;
 const SORTS = ["name", "awards", "county"] as const;
 type SortKey = (typeof SORTS)[number];
 
-type ViewKey = "map" | "cheeses";
+type ViewKey = "map" | "cheeses" | "board";
 
 // The view is shareable: filters live in the query string, the open record in
 // the hash. Creamery ids are single-hyphen slugs; cheese ids are
@@ -66,8 +76,12 @@ function initialCheeseSort(): CheeseSortKey {
 }
 
 function initialView(): ViewKey {
+  // A record hash names a specific cheese, and that panel lives in the catalog —
+  // it outranks the view param (a shared board link carries no hash).
   if (readHash().includes("--")) return "cheeses";
-  return initialParam("view") === "cheeses" ? "cheeses" : "map";
+  const view = initialParam("view");
+  if (view === "board") return "board";
+  return view === "cheeses" ? "cheeses" : "map";
 }
 
 /** Consecutive runs of one county — the input is already county-sorted. */
@@ -111,6 +125,14 @@ export default function App() {
 
   const { hearts, toggleHeart } = useHearts();
   const heartSet = useMemo(() => new Set(hearts), [hearts]);
+
+  // The cheese board: personal state beside hearts; the ids double as the
+  // shareable URL payload.
+  const board = useBoard();
+  // Captured once: a shared board link hydrates the working board on arrival.
+  const [boardParam] = useState(() => initialParam("b"));
+  const [boardSizeParam] = useState(() => initialParam("bsize"));
+  const boardAdopted = useRef(false);
 
   const [aboutOpen, setAboutOpen] = useState(false);
   // Captured at first render: the URL-mirror effect below rewrites the URL (hashless
@@ -454,6 +476,82 @@ export default function App() {
     [data, cheesesById, today],
   );
 
+  const boardSponsor = useMemo(
+    () => (data ? activeSponsor(data.sponsors, "board", today) : null),
+    [data, today],
+  );
+
+  // The board's picks, resolved in saved order. A closed creamery's cheese
+  // stays — it is the reader's list — but leaves the suggestion pool.
+  const boardCheeses = useMemo(
+    () =>
+      board.ids
+        .map((id) => cheesesById.get(id))
+        .filter((c): c is Cheese => Boolean(c)),
+    [board.ids, cheesesById],
+  );
+
+  const boardSuggestions = useMemo(
+    () =>
+      suggestForBoard(boardCheeses, board.size, activeCheeses, creameriesById, awardsByCheese),
+    [boardCheeses, board.size, activeCheeses, creameriesById, awardsByCheese],
+  );
+
+  // The canonical share link, built from state rather than read back from the
+  // address bar so the printed sheet never lags a render behind.
+  const boardShareUrl = useMemo(() => {
+    const params = new URLSearchParams({ view: "board" });
+    if (board.size !== DEFAULT_SIZE) params.set("bsize", String(board.size));
+    if (board.ids.length) params.set("b", board.ids.join(","));
+    return `${location.origin}${location.pathname}?${params.toString()}`;
+  }, [board.ids, board.size]);
+
+  // A shared link's board loads once the dataset can vouch for its ids; a bare
+  // arrival (no b param) leaves the reader's own saved board alone.
+  useEffect(() => {
+    if (!data || boardAdopted.current) return;
+    boardAdopted.current = true;
+    const size = Number(boardSizeParam);
+    const sizeValid = (BOARD_SIZES as readonly number[]).includes(size);
+    const ids = boardParam
+      ? boardParam.split(",").filter((id) => cheesesById.has(id))
+      : [];
+    if (ids.length) board.replace(ids, sizeValid ? size : undefined);
+    else if (sizeValid) board.setSize(size);
+  }, [data, boardParam, boardSizeParam, cheesesById, board]);
+
+  // Ids the dataset no longer knows (a renamed cheese since the board was
+  // saved) drop silently rather than holding a ghost slot.
+  useEffect(() => {
+    if (!data || !boardAdopted.current) return;
+    const valid = board.ids.filter((id) => cheesesById.has(id));
+    if (valid.length !== board.ids.length) board.replace(valid);
+  }, [data, board, cheesesById]);
+
+  /** Greedy fill from the whole catalog — the one-tap board. */
+  function completeMyBoard() {
+    const filled = completeBoard(
+      boardCheeses,
+      board.size,
+      activeCheeses,
+      creameriesById,
+      awardsByCheese,
+    );
+    board.replace(filled.map((c) => c.id));
+  }
+
+  /** The most balanced board the reader's own saved cheeses can make. */
+  function seedBoardFromHearts() {
+    const saved = hearts
+      .map((id) => cheesesById.get(id))
+      .filter(
+        (c): c is Cheese =>
+          Boolean(c) && creameriesById.get(c!.creamery_id)?.status === "active",
+      );
+    const seeded = completeBoard([], board.size, saved, creameriesById, awardsByCheese);
+    board.replace(seeded.map((c) => c.id));
+  }
+
   const selected = data?.creameries.find((c) => c.id === selectedId) ?? null;
   const shownIndex = selectedId ? shown.findIndex((c) => c.id === selectedId) : -1;
 
@@ -539,6 +637,12 @@ export default function App() {
       if (originalsOnly) params.set("wo", "1");
       if (mineOnly) params.set("mine", "1");
       hash = selectedCheeseId;
+    } else if (view === "board") {
+      // The board IS the URL: anyone the link reaches loads these picks.
+      // No hash — a record hash would flip a shared link into the catalog.
+      params.set("view", "board");
+      if (board.size !== DEFAULT_SIZE) params.set("bsize", String(board.size));
+      if (board.ids.length) params.set("b", board.ids.join(","));
     } else {
       if (query) params.set("q", query);
       if (county) params.set("county", county);
@@ -554,11 +658,13 @@ export default function App() {
       location.pathname + (search ? `?${search}` : "") + (hash ? `#${hash}` : ""),
     );
     document.title =
-      view === "cheeses" && selectedCheese
+      view !== "map" && selectedCheese
         ? `${selectedCheese.name} — The Cheese Census`
         : view === "map" && selected
           ? `${selected.name} — The Cheese Census`
-          : BASE_TITLE;
+          : view === "board"
+            ? "My cheese board — The Cheese Census"
+            : BASE_TITLE;
   }, [
     view,
     query,
@@ -579,6 +685,8 @@ export default function App() {
     mineOnly,
     selectedCheeseId,
     selectedCheese,
+    board.ids,
+    board.size,
   ]);
 
   // Filtering away the creamery someone is reading closes its panel — a detail
@@ -734,13 +842,13 @@ export default function App() {
       const k = keys.current;
       if (e.key === "Escape") {
         if (k.aboutOpen) k.closeAbout();
-        else if (k.view === "cheeses") k.closeCheeseDetail();
-        else k.closeDetail();
+        else if (k.view === "map") k.closeDetail();
+        else k.closeCheeseDetail(); // catalog and board both open cheese panels
         return;
       }
       if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
         if (k.aboutOpen) return;
-        const open = k.view === "cheeses" ? k.selectedCheeseId : k.selectedId;
+        const open = k.view === "map" ? k.selectedId : k.selectedCheeseId;
         if (!open) return;
         // e.target is not always an Element (window itself, for one).
         const target = e.target instanceof Element ? e.target : null;
@@ -748,8 +856,8 @@ export default function App() {
         if (target?.closest("input, select, textarea, .leaflet-container")) return;
         e.preventDefault();
         const delta = e.key === "ArrowLeft" ? -1 : 1;
-        if (k.view === "cheeses") k.stepCheese(delta);
-        else k.step(delta);
+        if (k.view === "map") k.step(delta);
+        else k.stepCheese(delta);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -820,10 +928,51 @@ export default function App() {
     ? "loading…"
     : view === "cheeses"
       ? `${fmt(cheesesShown.length)} of ${fmt(activeCheeses.length)} cheeses`
-      : `${shown.length} of ${activeCreameries.length} creameries`;
+      : view === "board"
+        ? `${boardCheeses.length} of ${board.size} on the board`
+        : `${shown.length} of ${activeCreameries.length} creameries`;
+
+  // One panel, placed in whichever pane is active — two mounted copies would
+  // fight over focus and duplicate the aria ids.
+  const cheeseDetailNode =
+    selectedCheese && data ? (
+      <CheeseDetail
+        cheese={selectedCheese}
+        creamery={creameriesById.get(selectedCheese.creamery_id)}
+        awards={awardsForCheese(data.awards, selectedCheese.id)}
+        similar={similarResolved}
+        highlight={
+          highlights.find((h) => h.cheese.id === selectedCheese.id)?.highlight ?? null
+        }
+        hearted={heartSet.has(selectedCheese.id)}
+        onToggleHeart={() => toggleHeart(selectedCheese.id)}
+        onBoard={board.ids.includes(selectedCheese.id)}
+        boardFull={board.ids.length >= board.size}
+        onToggleBoard={() =>
+          board.ids.includes(selectedCheese.id)
+            ? board.remove(selectedCheese.id)
+            : board.add(selectedCheese.id)
+        }
+        backLabel={view === "board" ? "Back to the board" : "Back to the catalog"}
+        makerCount={
+          activeCheeses.filter((c) => c.creamery_id === selectedCheese.creamery_id).length
+        }
+        position={cheeseIndex >= 0 ? `${cheeseIndex + 1} / ${cheesesShown.length}` : null}
+        onClose={closeCheeseDetail}
+        onPrev={() => stepCheese(-1)}
+        onNext={() => stepCheese(1)}
+        onOpenCheese={openCheese}
+        onOpenCreamery={openCreamery}
+        onBrowseMaker={browseMaker}
+        onSearchTerm={searchTerm}
+        imageUrl={draftImages?.get(selectedCheese.id)?.image ?? null}
+        blurb={draftImages?.get(selectedCheese.id)?.summary ?? null}
+        logoUrl={draftLogos?.get(selectedCheese.creamery_id) ?? null}
+      />
+    ) : null;
 
   return (
-    <div className="app">
+    <div className="app" data-view={view}>
       <header className="masthead">
         <div className="mast-top">
           <svg className="mark" viewBox="0 0 24 24" aria-hidden="true">
@@ -887,6 +1036,14 @@ export default function App() {
             onClick={() => setView("cheeses")}
           >
             Cheese Catalog
+          </button>
+          <button
+            className="mode"
+            aria-current={view === "board" ? "page" : undefined}
+            onClick={() => setView("board")}
+          >
+            Cheese Board
+            {board.ids.length > 0 && <span className="tab-count">{board.ids.length}</span>}
           </button>
           {hearts.length > 0 && (
             <button
@@ -1104,37 +1261,30 @@ export default function App() {
             onClearAll={clearCheeseFacets}
             images={draftImages}
           />
-          {selectedCheese && data && (
-            <CheeseDetail
-              cheese={selectedCheese}
-              creamery={creameriesById.get(selectedCheese.creamery_id)}
-              awards={awardsForCheese(data.awards, selectedCheese.id)}
-              similar={similarResolved}
-              highlight={
-                highlights.find((h) => h.cheese.id === selectedCheese.id)?.highlight ??
-                null
-              }
-              hearted={heartSet.has(selectedCheese.id)}
-              onToggleHeart={() => toggleHeart(selectedCheese.id)}
-              makerCount={
-                activeCheeses.filter((c) => c.creamery_id === selectedCheese.creamery_id)
-                  .length
-              }
-              position={
-                cheeseIndex >= 0 ? `${cheeseIndex + 1} / ${cheesesShown.length}` : null
-              }
-              onClose={closeCheeseDetail}
-              onPrev={() => stepCheese(-1)}
-              onNext={() => stepCheese(1)}
-              onOpenCheese={openCheese}
-              onOpenCreamery={openCreamery}
-              onBrowseMaker={browseMaker}
-              onSearchTerm={searchTerm}
-              imageUrl={draftImages?.get(selectedCheese.id)?.image ?? null}
-              blurb={draftImages?.get(selectedCheese.id)?.summary ?? null}
-              logoUrl={draftLogos?.get(selectedCheese.creamery_id) ?? null}
-            />
-          )}
+          {view !== "board" && cheeseDetailNode}
+        </div>
+
+        <div className={`board-pane${view === "board" ? "" : " view-off"}`}>
+          <BoardView
+            loading={!data}
+            picks={boardCheeses}
+            size={board.size}
+            creameriesById={creameriesById}
+            awardsByCheese={awardsByCheese}
+            suggestions={boardSuggestions}
+            highlights={highlights}
+            sponsor={boardSponsor}
+            heartCount={hearts.length}
+            shareUrl={boardShareUrl}
+            onSetSize={board.setSize}
+            onAdd={board.add}
+            onRemove={board.remove}
+            onClear={board.clear}
+            onComplete={completeMyBoard}
+            onSeed={seedBoardFromHearts}
+            onOpen={setSelectedCheeseId}
+          />
+          {view === "board" && cheeseDetailNode}
         </div>
       </div>
 

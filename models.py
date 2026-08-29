@@ -227,6 +227,43 @@ class Highlight(BaseModel):
         return self
 
 
+class Sponsor(BaseModel):
+    """A feature-level sponsorship slot ("Board Builder presented by …") — kept
+    apart from highlights, which plug a *cheese*. Placement names a surface from
+    the closed vocabulary; the frontend renders whatever active entry targets it,
+    always in the sponsored visual language, and renders nothing when none does."""
+
+    model_config = ConfigDict(extra="forbid")
+    id: str
+    name: str
+    placement: str
+    label: str
+    url: str | None = None
+    starts: str
+    ends: str
+
+    @field_validator("placement")
+    @classmethod
+    def _placement(cls, v: str) -> str:
+        _require(v, "sponsor_placements", "sponsor.placement")
+        return v
+
+    @field_validator("starts", "ends")
+    @classmethod
+    def _iso_date(cls, v: str) -> str:
+        date.fromisoformat(v)  # raises on malformed dates
+        return v
+
+    @model_validator(mode="after")
+    def _window(self) -> "Sponsor":
+        if self.starts > self.ends:
+            raise ValueError(
+                f"sponsor '{self.id}': window is inverted ({self.starts} > {self.ends}) "
+                f"— an entry that can never be active is a mistake, not a pause"
+            )
+        return self
+
+
 class CrosswalkEntry(BaseModel):
     model_config = ConfigDict(extra="forbid")
     source: Literal["datcp", "dfw", "masters", "contests"]

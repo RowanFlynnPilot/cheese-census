@@ -23,7 +23,7 @@ npm run typecheck
 
 ## What it renders today
 
-Two views under one masthead, switched by the mode bar:
+Three views under one masthead, switched by the mode bar:
 
 **Creamery Map** — creameries, their licensed plants and operations, master
 cheesemakers and contest awards — filterable by county, retail store and award
@@ -96,6 +96,30 @@ Highlights from `build/highlights.json` render as a band above the grid and
 inside the matching cheese's panel, date-windowed by their `starts`/`ends`.
 Editorial and sponsored highlights render visibly differently (see Conventions).
 
+**Cheese Board** — the board builder (`src/boards.ts` + `BoardView.tsx`): pick a
+size (3/5/7), then build toward balance. A good board is a *variety* problem, so
+the engine spends the catalog's structured fields on the similarity engine's
+opposite: the **balance meter** shows the board's spread across the texture and
+age spectrums, milks, and the six flavor families; a plain-English nudge names
+the biggest gap ("Nothing firm yet — an aged wheel anchors the board").
+**Suggested next** ranks every catalog cheese by what it would *add* to this
+board (new texture +3, age +2, milk +2, flavor families +1.5 ea, family +1.5,
+county +0.75, award bonus — never enough to outrank fit; second-pick-per-creamery
+penalty, third forbidden, mirror names skipped, and a "dare" boost steers a
+grounded board toward a blue or washed rind). Each suggestion wears gain chips
+saying exactly why ("+ hard · + aged · + goat milk"). **Complete my board**
+greedily fills the remaining slots; **Start from my saved** builds the most
+balanced board the reader's hearts can make. Adding happens from suggestions,
+from the highlight cards, or from any cheese panel's "+ Add to my cheese board"
+button. The board persists in `localStorage` (`cheese-census.board.v1`), mirrors
+into the URL (`?view=board&b=id,id,…`) so **the link is the board** — a
+recipient loads those picks — and ends in a shopping list (creamery, city,
+retail store, award count) with copy-link and a print stylesheet that prints the
+list and nothing else. `build/sponsors.json` feeds the **presenting-sponsor
+slot**: the active `placement: "board"` entry renders "Presented by …" in the
+sponsored visual language (absent when none is live) and its credit rides the
+printed sheet; the current entry is WPR's own house ad.
+
 **Draft photo overlay (dev only).** `queue/product_images.json` (from
 `python scripts/images.py`) holds product-photo URLs and the maker's own short
 description harvested from creamery shops. The *photos* are a permission
@@ -155,8 +179,17 @@ Cheese-catalog parameters (all under `?view=cheeses`):
 | `?cawards=1` / `?wo=1` / `?mine=1` | Award winners / Wisconsin originals / saved only | |
 | `#creamery--cheese` | Opens that cheese's detail panel | `#klondike-cheese-company--feta` |
 
+Cheese-board parameters (all under `?view=board`):
+
+| Parameter | Meaning | Example |
+|---|---|---|
+| `?b=` | The board itself — cheese ids, comma-joined, in pick order | `?b=klondike-cheese-company--feta,…` |
+| `?bsize=` | Board size, `3`/`5`/`7` (default 5) | `?bsize=7` |
+
 They compose: `/?view=cheeses&family=curds&csort=awards` is the curd map's list
-form. Esc closes the open panel and returns focus to its card or row.
+form. A `b=` arrival adopts those picks as the working board (ids the dataset
+doesn't know are dropped); arriving without one leaves the saved board alone.
+Esc closes the open panel and returns focus to its card or row.
 
 ## Deployment
 

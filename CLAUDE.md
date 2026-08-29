@@ -58,6 +58,10 @@ data/catalog/cheeses.json  the tagging pass's product (scripts/catalog.py): one 
                            per exported creamery x tagged type; canonical build input
 data/vocab/tags.json       all controlled vocabularies
 data/highlights.json       editorial + sponsored highlight entries (hand-edited)
+data/sponsors.json         feature-level sponsorship slots (hand-edited): a highlight
+                           plugs a cheese, a sponsor entry buys a surface (placement
+                           "board" = the Board Builder's presenting slot); date-windowed,
+                           validated, exported verbatim to build/sponsors.json
 queue/report.json          generated review reports (non-fatal work: coverage, unmatched awards)
 queue/proposed_*.json      merge()'s review proposals — classifications and fuzzy
                            crosswalk candidates; written every run, before the build's
@@ -102,6 +106,8 @@ manual dispatch only until all scrapers are implemented.
 6. Unresolved source record (no crosswalk entry, no `excluded` classification)
 7. Creamery without a classification; cheese belonging to a non-exported creamery
 8. `sponsored` highlight without a `sponsor`, or vice versa
+9. Sponsor entry with an unknown `placement`, a malformed or inverted date
+   window, or a duplicate `id`
 
 ## Conventions
 
@@ -282,6 +288,20 @@ cheeses' similar-lists, sums scores per candidate, attributes each pick to its
 strongest contributor, and damps the plain-variant mirror limit (one candidate
 per folded name, two per creamery). Highlights render date-windowed, editorial
 and sponsored visibly distinct, in the browse band and the matching panel.
+
+**The Cheese Board Builder** (August 2026) is the third view: pick a 3/5/7
+board and build toward balance. `web/src/boards.ts` is the similarity engine's
+inverse — a deterministic variety scorer over the same structured fields
+(new texture/age/milk/flavor-family/county gains, an award thumb that never
+outranks fit, per-creamery caps, the mirror-name rule, a "dare" boost toward
+blue/washed rind once a board has footing) driving a balance meter with
+plain-English nudges, ranked suggestions wearing "what this adds" chips,
+one-tap Complete, and seed-from-hearts. Board state: `localStorage`
+(`cheese-census.board.v1`) + URL (`?view=board&b=id,…` — the link IS the board);
+ends in a print-clean shopping list. The sponsor door is open two ways, both
+always in the sponsored visual language: highlights surface in the builder as
+add-a-pick cards, and `data/sponsors.json` fills the presenting slot (currently
+WPR's own house ad — no fabricated brands; real sponsor entries replace it).
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

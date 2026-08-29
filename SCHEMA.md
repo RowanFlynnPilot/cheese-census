@@ -194,6 +194,16 @@ Editorial state kept apart from the catalog (separation of concerns — the cata
 
 `type` is `editorial` | `sponsored` and the frontend must render the two visibly differently. `sponsor` is required when `type = sponsored`, forbidden otherwise — validated like everything else.
 
+## `build/sponsors.json`
+
+Feature-level sponsorship, kept apart from highlights: a highlight plugs a *cheese*; a sponsor entry buys a *surface* ("Board Builder presented by …"). Hand-edited in `data/sponsors.json`, exported verbatim.
+
+```json
+{"id": "board-presenting-house-2026", "name": "...", "placement": "board", "label": "...", "url": null, "starts": "2026-08-01", "ends": "2027-12-31"}
+```
+
+`placement` names the surface and comes from the closed `sponsor_placements` vocabulary (currently just `board`; later tentpoles — bracket, quiz — add theirs deliberately). The frontend renders whatever active entry targets a surface, always in the sponsored visual language, and renders nothing when none does. The window is inclusive `[starts, ends]` like a highlight's; an inverted window is build-fatal.
+
 ## Validation (build-fatal, all of them)
 
 1. Any value not in `vocab/tags.json`
@@ -204,5 +214,6 @@ Editorial state kept apart from the catalog (separation of concerns — the cata
 6. Unresolved source record (no crosswalk row, no `excluded` classification)
 7. `sponsored` highlight without a `sponsor`, or vice versa
 8. Non-deterministic output (build runs sort checks on its own export)
+9. Sponsor entry with an unknown `placement`, a malformed or inverted date window, or a duplicate `id`
 
 `queue/` reports are regenerated every run for the non-fatal review work: creameries with zero cataloged cheeses, awards with `creamery_id` but no `cheese_id`, cheeses still carrying provisional flavor tags from assisted tagging, and description coverage (missing / generated / human-edited).

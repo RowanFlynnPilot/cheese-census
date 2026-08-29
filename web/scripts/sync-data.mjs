@@ -19,7 +19,7 @@ const DRAFT_FILES = [
   ["creamery_logos.json", "draft_logos.json"],
 ];
 
-const TABLES = ["creameries", "cheeses", "people", "awards", "highlights"];
+const TABLES = ["creameries", "cheeses", "people", "awards", "highlights", "sponsors"];
 
 if (!existsSync(source)) {
   console.error(`sync-data: ${source} does not exist — run \`python build.py\` first`);

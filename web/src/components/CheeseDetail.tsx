@@ -26,6 +26,12 @@ interface Props {
   highlight: Highlight | null;
   hearted: boolean;
   onToggleHeart: () => void;
+  /** Whether this cheese sits on the reader's board, and whether the board has room. */
+  onBoard: boolean;
+  boardFull: boolean;
+  onToggleBoard: () => void;
+  /** Where the mobile back bar returns to — the catalog or the board. */
+  backLabel: string;
   /** How many of this creamery's cheeses are in the catalog. */
   makerCount: number;
   /** "12 / 1069" within the filtered list, or null when not in the current view. */
@@ -54,6 +60,10 @@ export default function CheeseDetail({
   highlight,
   hearted,
   onToggleHeart,
+  onBoard,
+  boardFull,
+  onToggleBoard,
+  backLabel,
   makerCount,
   position,
   onClose,
@@ -141,6 +151,18 @@ export default function CheeseDetail({
             </span>
           )}
         </div>
+        <button
+          className={`board-btn${onBoard ? " on" : ""}`}
+          onClick={onToggleBoard}
+          disabled={!onBoard && boardFull}
+          aria-pressed={onBoard}
+        >
+          {onBoard
+            ? "✓ On my board — tap to remove"
+            : boardFull
+              ? "Board is full — remove something first"
+              : "+ Add to my cheese board"}
+        </button>
       </div>
 
       {imageUrl && (
@@ -306,7 +328,7 @@ export default function CheeseDetail({
       {/* Phones show the panel as a full-screen sheet; this thumb-sized bar is
           the way back (the corner × stays for desktop). */}
       <button className="sheet-back" onClick={onClose}>
-        ← Back to the catalog
+        ← {backLabel}
       </button>
     </aside>
   );

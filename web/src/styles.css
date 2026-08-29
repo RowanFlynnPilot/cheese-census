@@ -1671,6 +1671,525 @@ button.highlight {
   padding: 0.9rem 0.8rem;
 }
 
+/* ── The cheese board builder ───────────────────────────────────────────── */
+
+.board-pane {
+  position: absolute;
+  inset: 0;
+  background: var(--cream);
+}
+
+.board-scroll {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--silver) transparent;
+}
+
+.board-inner {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 1.1rem 1.25rem 3rem;
+}
+
+.board-inner h3 {
+  font-family: var(--body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin: 0 0 0.55rem;
+}
+
+/* The presenting slot: always the sponsored visual language, never the house
+   teal — paid placement must not dress as editorial. Absent when no entry. */
+.board-sponsor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.6rem;
+  border-left: 3px solid var(--sponsored);
+  background: #f6efe4;
+  border-radius: 4px;
+  padding: 0.55rem 0.85rem 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.board-sponsor .kicker {
+  color: var(--sponsored);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+}
+
+.board-sponsor .sp-name {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.board-sponsor .sp-name a {
+  color: inherit;
+}
+
+.board-sponsor .sp-label {
+  flex-basis: 100%;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.board-head h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.45rem;
+  margin: 0 0 0.3rem;
+}
+
+.board-lede {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  max-width: 62ch;
+  margin: 0 0 0.85rem;
+}
+
+.board-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.size-picker {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.size-picker button {
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+
+.size-picker button[aria-pressed="true"] {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+.board-action {
+  border: 1px solid var(--teal);
+  background: var(--teal);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 0.42rem 1rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.board-action:hover {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+}
+
+.board-action.quiet {
+  background: #fff;
+  color: var(--teal-dark);
+}
+
+.board-action.quiet:hover {
+  background: var(--teal-tint);
+}
+
+.board-tray {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.board-slot {
+  position: relative;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.6rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.24rem;
+  min-height: 118px;
+}
+
+.board-slot.empty {
+  border-style: dashed;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  justify-content: center;
+  text-align: center;
+}
+
+.board-slot .kicker {
+  padding-right: 1.4rem;
+}
+
+.slot-name {
+  border: 0;
+  background: none;
+  padding: 0 1.2rem 0 0;
+  text-align: left;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.97rem;
+  line-height: 1.25;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.slot-name:hover {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
+
+.slot-maker {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+.slot-remove {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.45rem;
+  height: 1.45rem;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slot-remove:hover {
+  background: var(--teal-tint);
+  color: var(--ink);
+}
+
+/* The balance meter: what the board covers, cell by cell. */
+.board-meter {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.75rem 0.95rem 0.8rem;
+  margin-bottom: 1.1rem;
+}
+
+.meter-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.3rem 0;
+}
+
+.meter-row + .meter-row {
+  border-top: 1px dotted var(--rule);
+}
+
+.meter-label {
+  flex: 0 0 4.4rem;
+  font-size: 0.64rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-soft);
+}
+
+.meter-cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem;
+}
+
+.meter-cell {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px dashed var(--rule);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.meter-cell.on {
+  border-color: transparent;
+  background: var(--teal-tint);
+  color: var(--teal-dark);
+  font-weight: 600;
+}
+
+/* Covered flavor families wear their chip palette (values from .f-*). */
+.meter-cell.on.f-dairy { background: #f4efe0; color: #6d6146; }
+.meter-cell.on.f-sweet { background: #f6e3d4; color: #8a4f26; }
+.meter-cell.on.f-toast { background: #ecdec6; color: #6f5426; }
+.meter-cell.on.f-green { background: #e5ecd9; color: #55663a; }
+.meter-cell.on.f-acid { background: #dfece7; color: var(--teal-dark); }
+.meter-cell.on.f-bold { background: #eddbd2; color: #7d4229; }
+
+.meter-note {
+  margin: 0.6rem 0 0;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--teal-dark);
+}
+
+.meter-note.done {
+  color: var(--ink);
+}
+
+.board-counties {
+  margin: 0.3rem 0 0;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+}
+
+/* Editorial / sponsored placements offering a pick — same visual language as
+   the browse band, plus the add action. */
+.board-hl-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.board-hl {
+  flex: 1 1 280px;
+  border-radius: 4px;
+  padding: 0.6rem 0.85rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.board-hl .hl-label {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.board-hl .hl-add {
+  margin-top: 0.25rem;
+  border: 1px solid var(--teal);
+  background: #fff;
+  color: var(--teal-dark);
+  border-radius: 999px;
+  padding: 0.22rem 0.7rem;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.board-hl.sponsored .hl-add {
+  border-color: var(--sponsored);
+  color: var(--sponsored);
+}
+
+.board-hl .hl-add:hover {
+  background: var(--teal-tint);
+}
+
+.board-suggestions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 0.6rem;
+}
+
+.suggest-card {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.6rem 0.7rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.24rem;
+}
+
+.s-name {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.s-name:hover {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
+
+.s-maker {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+.s-gains {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.1rem;
+}
+
+.s-gain {
+  font-size: 0.68rem;
+  font-weight: 500;
+  background: var(--teal-tint);
+  color: var(--teal-dark);
+  border-radius: 999px;
+  padding: 0.08rem 0.45rem;
+  white-space: nowrap;
+}
+
+.s-add {
+  margin-top: 0.35rem;
+  border: 1px solid var(--teal);
+  background: #fff;
+  color: var(--teal-dark);
+  border-radius: 999px;
+  padding: 0.26rem 0.75rem;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.s-add:hover {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+/* The shopping list — also the print sheet. */
+.board-sheet {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.9rem 1rem;
+  margin-top: 1.2rem;
+}
+
+.sheet-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.36rem 0;
+  border-bottom: 1px dotted var(--rule);
+  font-size: 0.86rem;
+}
+
+.sheet-row .sh-name {
+  font-weight: 600;
+}
+
+.sheet-row .sh-where {
+  flex: 1;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.sheet-row .sh-facts {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-family: var(--mono);
+  white-space: nowrap;
+}
+
+.sheet-foot {
+  margin: 0.55rem 0 0.15rem;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+
+.sheet-link {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  color: var(--ink-soft);
+  word-break: break-all;
+}
+
+.board-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+/* Board count riding the masthead tab. */
+.tab-count {
+  display: inline-block;
+  margin-left: 0.4rem;
+  background: var(--gold);
+  color: #2a2113;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  padding: 0.02rem 0.42rem;
+  vertical-align: 1px;
+}
+
+/* Add-to-board from any cheese's panel. */
+.board-btn {
+  margin-top: 0.55rem;
+  width: 100%;
+  border: 1px solid var(--teal);
+  background: #fff;
+  color: var(--teal-dark);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.board-btn:hover:not(:disabled) {
+  background: var(--teal-tint);
+}
+
+.board-btn.on {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--cream);
+}
+
+.board-btn.on:hover {
+  background: var(--teal-dark);
+}
+
+.board-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 /* ── Motion (opt-in only) ───────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1874,9 +2393,14 @@ button.highlight {
     font-size: 0.72rem;
   }
 
+  /* Three tabs share a phone's width; let them wrap rather than squeeze. */
+  .mast-tabs {
+    flex-wrap: wrap;
+  }
+
   .mode {
-    padding: 0.44rem 0.8rem 0.42rem;
-    font-size: 0.8rem;
+    padding: 0.44rem 0.65rem 0.42rem;
+    font-size: 0.78rem;
   }
 
   .mode-hearts {
@@ -1952,5 +2476,87 @@ button.highlight {
 
   .rec-card {
     flex-basis: 180px;
+  }
+
+  .board-inner {
+    padding: 0.85rem 0.75rem 2.4rem;
+  }
+
+  .board-tray {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .board-slot {
+    min-height: 104px;
+  }
+
+  .meter-row {
+    flex-wrap: wrap;
+    gap: 0.25rem 0.7rem;
+  }
+
+  .meter-label {
+    flex-basis: 100%;
+  }
+
+  .board-suggestions {
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  }
+
+  .sheet-row {
+    flex-wrap: wrap;
+    gap: 0.1rem 0.7rem;
+  }
+
+  .sheet-row .sh-where {
+    flex-basis: 100%;
+  }
+}
+
+/* ── Print: the shopping list, and nothing else ─────────────────────────── */
+
+@media print {
+  .app[data-view="board"] {
+    height: auto;
+    display: block;
+  }
+
+  .app[data-view="board"] .masthead,
+  .app[data-view="board"] .draftbar,
+  .app[data-view="board"] .colophon,
+  .app[data-view="board"] .layout,
+  .app[data-view="board"] .cheese-pane,
+  .app[data-view="board"] .detail,
+  .app[data-view="board"] .board-sponsor,
+  .app[data-view="board"] .board-head,
+  .app[data-view="board"] .board-tray,
+  .app[data-view="board"] .board-meter,
+  .app[data-view="board"] .board-hl-row,
+  .app[data-view="board"] .board-suggest,
+  .app[data-view="board"] .board-share {
+    display: none;
+  }
+
+  .app[data-view="board"] .viewport,
+  .app[data-view="board"] .board-pane {
+    position: static;
+  }
+
+  .app[data-view="board"] .board-scroll {
+    height: auto;
+    overflow: visible;
+  }
+
+  .app[data-view="board"] .board-sheet {
+    border: 0;
+    padding: 0;
+  }
+
+  /* The printed page keeps its provenance: WPR attribution, the sponsor
+     credit when one is live, and the link back — all already in the sheet. */
+  .app[data-view="board"] .board-sheet h3::after {
+    content: " — The Cheese Census";
+    text-transform: none;
+    letter-spacing: normal;
   }
 }
