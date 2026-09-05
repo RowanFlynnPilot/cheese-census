@@ -97,8 +97,19 @@ export function useBoard() {
       }),
     [write],
   );
+  // Drop ids the dataset no longer knows. Runs against the *latest* state
+  // inside the updater, so it composes safely with a replace() queued in the
+  // same render (a shared-link adoption) instead of overwriting it with stale ids.
+  const prune = useCallback(
+    (keep: (id: string) => boolean) =>
+      write((s) => {
+        const ids = s.ids.filter(keep);
+        return ids.length === s.ids.length ? s : { ...s, ids };
+      }),
+    [write],
+  );
 
-  return { ids: state.ids, size: state.size, add, remove, clear, setSize, replace };
+  return { ids: state.ids, size: state.size, add, remove, clear, setSize, replace, prune };
 }
 
 /* ── The balance engine (pure, deterministic) ─────────────────────────────── */

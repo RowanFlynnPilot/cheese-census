@@ -7,6 +7,7 @@ import {
   cheeseOperations,
   groupAwards,
   isCapability,
+  safeHref,
 } from "../data";
 import LogoMark from "./LogoMark";
 
@@ -78,6 +79,7 @@ export default function CreameryDetail({
   const abilities = capabilities(creamery);
   const editions = groupAwards(awards);
   const firsts = awards.filter((a) => a.placement === 1).length;
+  const website = safeHref(creamery.website);
 
   return (
     <aside
@@ -146,10 +148,10 @@ export default function CreameryDetail({
           {creamery.city}
           {creamery.county ? `, ${creamery.county} County` : ""}
         </p>
-        {creamery.website && (
+        {website && (
           <p>
-            <a href={creamery.website} target="_blank" rel="noopener noreferrer">
-              {creamery.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+            <a href={website} target="_blank" rel="noopener noreferrer">
+              {website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
             </a>
           </p>
         )}

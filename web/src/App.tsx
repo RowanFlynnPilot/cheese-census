@@ -123,12 +123,15 @@ export default function App() {
   const [mineOnly, setMineOnly] = useState(() => initialParam("mine") === "1");
   const [selectedCheeseId, setSelectedCheeseId] = useState<string | null>(null);
 
-  const { hearts, toggleHeart } = useHearts();
+  const { hearts, toggleHeart, pruneHearts } = useHearts();
   const heartSet = useMemo(() => new Set(hearts), [hearts]);
 
   // The cheese board: personal state beside hearts; the ids double as the
   // shareable URL payload.
   const board = useBoard();
+  // Stable callbacks for effect deps — the hook's return object is rebuilt
+  // every render, the functions inside it are not.
+  const { replace: replaceBoard, setSize: setBoardSize, prune: pruneBoard } = board;
   // Captured once: a shared board link hydrates the working board on arrival —
   // but only a *board-view* arrival. A hand-mixed link (`#cheese` plus `b=`)
   // opens the cheese and leaves the reader's own board alone.
@@ -142,8 +145,14 @@ export default function App() {
   // while nothing is selected) before the data arrives, so reading location.hash in
   // the data-load effect would find it already stripped.
   const [deepLink] = useState(readHash);
-  // Highlights are dated placements; the window check happens once per visit.
-  const [today] = useState(() => new Date().toISOString().slice(0, 10));
+  // Highlights and sponsor slots are dated placements; the window check happens
+  // once per visit, against the reader's *local* calendar date — toISOString()
+  // is UTC and would flip a Wisconsin window five or six hours early.
+  const [today] = useState(() => {
+    const now = new Date();
+    const pad = (n: number) => String(n).padStart(2, "0");
+    return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+  });
   const aboutCard = useRef<HTMLDivElement>(null);
   const aboutOpener = useRef<HTMLElement | null>(null);
 
@@ -539,17 +548,20 @@ export default function App() {
     const ids = boardParam
       ? boardParam.split(",").filter((id) => cheesesById.has(id))
       : [];
-    if (ids.length) board.replace(ids, sizeValid ? size : undefined);
-    else if (sizeValid) board.setSize(size);
-  }, [data, arrivedOnBoard, boardParam, boardSizeParam, cheesesById, board]);
+    if (ids.length) replaceBoard(ids, sizeValid ? size : undefined);
+    else if (sizeValid) setBoardSize(size);
+  }, [data, arrivedOnBoard, boardParam, boardSizeParam, cheesesById, replaceBoard, setBoardSize]);
 
-  // Ids the dataset no longer knows (a renamed cheese since the board was
-  // saved) drop silently rather than holding a ghost slot.
+  // Ids the dataset no longer knows (a cheese removed since the reader saved
+  // it) drop silently rather than holding a ghost slot or padding a count.
+  // prune() filters inside the state updater, so it cannot undo the adoption
+  // queued just above in the same render.
   useEffect(() => {
-    if (!data || !boardAdopted.current) return;
-    const valid = board.ids.filter((id) => cheesesById.has(id));
-    if (valid.length !== board.ids.length) board.replace(valid);
-  }, [data, board, cheesesById]);
+    if (!data) return;
+    const known = (id: string) => cheesesById.has(id);
+    pruneBoard(known);
+    pruneHearts(known);
+  }, [data, cheesesById, pruneBoard, pruneHearts]);
 
   /** Greedy fill from the whole catalog — the one-tap board. */
   function completeMyBoard() {
@@ -934,13 +946,19 @@ export default function App() {
   }
 
   if (error) {
+    // Readers see a plain sentence and a way back; the build hint is dev-only.
     return (
-      <div className="empty" style={{ padding: "3rem 1rem" }}>
-        <p>Could not load the census data.</p>
-        <p style={{ fontFamily: "var(--mono)", fontSize: "0.8rem" }}>{error}</p>
-        <p>
-          Run <code>python build.py</code>, then <code>npm run data</code>.
-        </p>
+      <div className="empty load-error">
+        <p>The Cheese Census didn&apos;t load — the connection may have dropped.</p>
+        <button className="board-action" onClick={() => location.reload()}>
+          Try again
+        </button>
+        <p className="load-error-detail">{error}</p>
+        {import.meta.env.DEV && (
+          <p>
+            Run <code>python build.py</code>, then <code>npm run data</code>.
+          </p>
+        )}
       </div>
     );
   }

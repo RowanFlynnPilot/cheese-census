@@ -113,9 +113,9 @@ manual dispatch only until all scrapers are implemented.
 7. Creamery without a classification; cheese belonging to a non-exported creamery
 8. `sponsored` highlight without a `sponsor`, or vice versa
 9. Sponsor entry with an unknown `placement`, a malformed or inverted date
-   window, or a duplicate `id`
+   window, a non-http(s) `url`, or a duplicate `id`
 10. Featured board with an unknown or repeated cheese id, a pick count other
-    than 3/5/7, or a duplicate `id`
+    than 3/5/7, an `image` that is not a bare filename, or a duplicate `id`
 
 ## Conventions
 
@@ -273,9 +273,12 @@ Next steps, in order:
 4. The WordPress iframe embed on wausaupilotandreview.com — only after the
    editorial review above. The GitHub Pages deploy is live:
    `.github/workflows/deploy.yml` publishes the production build (draft
-   overlays scrubbed, provisional banner up) to
+   overlays scrubbed, provisional banner up, `noindex`) to
    https://rowanflynnpilot.github.io/cheese-census/ on every push touching
-   `web/` or `build/`.
+   `web/`, `build/`, `data/` or the pipeline — after two gates: `python
+   build.py` must reproduce the committed `build/` byte for byte (stale or
+   non-deterministic output fails the deploy, by design), and the web engine
+   tests (`npm test`, vitest over `web/src/engines.test.ts`) must pass.
 
 ### The reader layer (built August 2026)
 

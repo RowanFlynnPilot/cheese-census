@@ -19,7 +19,13 @@ is empty the sync fails loudly: the pipeline stops at the manual review gate unt
 ```bash
 npm run build       # typecheck + production bundle into dist/
 npm run typecheck
+npm test            # vitest: the recommender and board engines, on synthetic fixtures
 ```
+
+`src/engines.test.ts` pins the rules the two pure engines promise — determinism,
+the mirror-name rule, the two-per-creamery cap, "awards never outrank fit", the
+nudge priorities — against small synthetic cheeses, so a data refresh can never
+flip a test. The deploy runs it before every publish.
 
 ## What it renders today
 
@@ -211,9 +217,18 @@ or row.
 
 `.github/workflows/deploy.yml` publishes to GitHub Pages
 (https://rowanflynnpilot.github.io/cheese-census/) on every push that touches
-`web/` or `build/`. It is always the production build: sync-data runs without
-`--draft`, so the site carries no hotlinked photos, blurbs or logos, and the
-provisional banner stays until the build runs with `VITE_DATA_STATUS=reviewed`.
+`web/`, `build/`, `data/` or the pipeline. It is always the production build:
+sync-data runs without `--draft`, so the site carries no hotlinked photos,
+blurbs or logos, and the provisional banner stays until the build runs with
+`VITE_DATA_STATUS=reviewed`. Two gates run first and either failing stops the
+deploy loudly: `python build.py` is re-run on the committed inputs and must
+reproduce `build/` byte for byte (a stale or non-deterministic build/ never
+ships), and `npm test` must pass. The page carries `<meta name="robots"
+content="noindex">` — a review copy under a provisional banner must not outrank
+the article it will be embedded in, and an iframe's inner document should not
+be the indexed page anyway. A render error anywhere is caught by
+`ErrorBoundary` (one sentence and a Reload button rather than a blank frame);
+a failed data load shows the same shape with a Try again button.
 
 Vite `base` defaults to `/cheese-census/` for GitHub Pages. Serving from a domain
 root instead:

@@ -9,6 +9,11 @@
       content="An evergreen database of Wisconsin creameries and the cheese they make, from Wausau Pilot &amp; Review."
     />
     <meta name="theme-color" content="#3A867C" />
+    <!-- The GitHub Pages build is a review copy under a provisional banner; it
+         must not outrank the article WPR will eventually embed it in. Keep
+         noindex until launch — and probably after, since the inner document of
+         an iframe should never be the indexed page. -->
+    <meta name="robots" content="noindex" />
     <meta property="og:title" content="The Cheese Census" />
     <meta property="og:type" content="website" />
     <meta
@@ -28,6 +33,12 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="font-family: Georgia, serif; padding: 2rem 1.25rem; color: #1d2321">
+        The Cheese Census is an interactive map and catalog and needs JavaScript
+        turned on to run.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

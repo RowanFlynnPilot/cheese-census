@@ -248,6 +248,14 @@ class Sponsor(BaseModel):
         _require(v, "sponsor_placements", "sponsor.placement")
         return v
 
+    @field_validator("url")
+    @classmethod
+    def _http_url(cls, v: str | None) -> str | None:
+        # The frontend puts this straight into an href; only http(s) travels.
+        if v is not None and not v.lower().startswith(("https://", "http://")):
+            raise ValueError(f"sponsor url must be http(s), got '{v}'")
+        return v
+
     @field_validator("starts", "ends")
     @classmethod
     def _iso_date(cls, v: str) -> str:
@@ -286,6 +294,17 @@ class FeaturedBoard(BaseModel):
     @classmethod
     def _iso_date(cls, v: str) -> str:
         date.fromisoformat(v)  # raises on malformed dates
+        return v
+
+    @field_validator("image")
+    @classmethod
+    def _bare_filename(cls, v: str | None) -> str | None:
+        # A filename under web/public/boards/ and nothing else — a slash or a
+        # scheme here would be a hotlink smuggled into the gallery.
+        if v is not None and (not v or any(ch in v for ch in "/\\:") or v.startswith(".")):
+            raise ValueError(
+                f"featured board image must be a bare filename in web/public/boards/, got '{v}'"
+            )
         return v
 
     @model_validator(mode="after")

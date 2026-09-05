@@ -129,6 +129,15 @@ export function isCapability(operation: string): boolean {
   return CAPABILITY_VOCAB.has(operation);
 }
 
+/** A link target we will actually put in an href: http(s) only. Creamery
+ *  websites arrive from a scraped directory and sponsor URLs from a hand-edited
+ *  file — neither is a place a `javascript:` or `data:` scheme should be able
+ *  to travel from into a click. Anything else becomes no link at all. */
+export function safeHref(url: string | null | undefined): string | null {
+  if (!url) return null;
+  return /^https?:\/\//i.test(url.trim()) ? url.trim() : null;
+}
+
 /** Case- and diacritic-insensitive folding, so "butterkase" finds Butterkäse. */
 export function fold(value: string): string {
   return value.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
@@ -400,7 +409,15 @@ export function recommend(
   const ranked = [...pool.entries()].sort(
     (a, b) => b[1].total - a[1].total || a[0].localeCompare(b[0]),
   );
-  const seenNames = new Set<string>();
+  // Seeded with the saved names: another creamery's plain Cheddar is not a
+  // recommendation for someone who saved a plain Cheddar, however perfectly
+  // it "matches".
+  const seenNames = new Set(
+    hearts.flatMap((id) => {
+      const heart = cheesesById.get(id);
+      return heart ? [fold(heart.name)] : [];
+    }),
+  );
   const perCreamery = new Map<string, number>();
   const picks: Recommendation[] = [];
   for (const [id, entry] of ranked) {

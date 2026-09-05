@@ -10,6 +10,7 @@ import {
   chipLabel,
   familyLabel,
   flavorClass,
+  safeHref,
   type DraftMedia,
 } from "../data";
 import DraftPhoto from "./DraftPhoto";
@@ -87,6 +88,14 @@ export default function BoardView({
   const counties = [...cov.counties].sort();
   const onBoard = new Set(picks.map((c) => c.id));
   const highlightAdds = highlights.filter((h) => !onBoard.has(h.cheese.id));
+  const sponsorHref = safeHref(sponsor?.url);
+
+  /** What a meter row covers, spelled out for screen readers — the cells
+   *  themselves carry the state only as color and weight. */
+  function covered(order: string[], labels: Record<string, string>, on: Set<string>) {
+    const names = order.filter((k) => on.has(k)).map((k) => labels[k] ?? k);
+    return names.length ? names.join(", ") : "none yet";
+  }
 
   async function copyLink() {
     try {
@@ -138,8 +147,8 @@ export default function BoardView({
           <div className="board-sponsor" role="note">
             <span className="kicker">Made possible by</span>
             <span className="sp-name">
-              {sponsor.url ? (
-                <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+              {sponsorHref ? (
+                <a href={sponsorHref} target="_blank" rel="noopener noreferrer">
                   {sponsor.name}
                 </a>
               ) : (
@@ -244,24 +253,44 @@ export default function BoardView({
           })}
         </div>
 
-        <div className="board-meter" aria-label="Board balance">
-          <div className="meter-row">
+        <div className="board-meter" role="group" aria-label="Board balance">
+          <div
+            className="meter-row"
+            role="group"
+            aria-label={`Texture covered: ${covered(TEXTURE_ORDER, TEXTURE_LABEL, cov.textures)}`}
+          >
             <span className="meter-label">Texture</span>
-            <div className="meter-cells">
+            <div className="meter-cells" aria-hidden="true">
               {meterCells(TEXTURE_ORDER, TEXTURE_LABEL, cov.textures)}
             </div>
           </div>
-          <div className="meter-row">
+          <div
+            className="meter-row"
+            role="group"
+            aria-label={`Age covered: ${covered(AGE_ORDER, AGE_LABEL, cov.ages)}`}
+          >
             <span className="meter-label">Age</span>
-            <div className="meter-cells">{meterCells(AGE_ORDER, AGE_LABEL, cov.ages)}</div>
+            <div className="meter-cells" aria-hidden="true">
+              {meterCells(AGE_ORDER, AGE_LABEL, cov.ages)}
+            </div>
           </div>
-          <div className="meter-row">
+          <div
+            className="meter-row"
+            role="group"
+            aria-label={`Milk covered: ${covered(MILK_ORDER, MILK_LABEL, cov.milks)}`}
+          >
             <span className="meter-label">Milk</span>
-            <div className="meter-cells">{meterCells(MILK_ORDER, MILK_LABEL, cov.milks)}</div>
+            <div className="meter-cells" aria-hidden="true">
+              {meterCells(MILK_ORDER, MILK_LABEL, cov.milks)}
+            </div>
           </div>
-          <div className="meter-row">
+          <div
+            className="meter-row"
+            role="group"
+            aria-label={`Flavor families covered: ${covered(GROUP_ORDER, GROUP_LABEL, cov.groups)}`}
+          >
             <span className="meter-label">Flavor</span>
-            <div className="meter-cells">
+            <div className="meter-cells" aria-hidden="true">
               {GROUP_ORDER.map((g) => (
                 <span
                   className={`meter-cell${cov.groups.has(g) ? ` on f-${g}` : ""}`}

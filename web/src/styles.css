@@ -379,6 +379,28 @@ input:focus-visible {
   cursor: pointer;
 }
 
+/* Load failures and render errors: one sentence, one button, the detail in
+   small type for whoever files the bug. */
+.load-error {
+  padding: 3rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.load-error p {
+  margin: 0;
+  max-width: 44ch;
+}
+
+.load-error-detail {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  word-break: break-word;
+}
+
 /* ── Map ────────────────────────────────────────────────────────────────── */
 
 .map-pane {
