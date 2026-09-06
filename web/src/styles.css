@@ -4,7 +4,12 @@
 
 :root {
   --teal: #3a867c;
+  /* Filled surfaces that carry small text (the masthead band, primary
+     buttons, store pills) use teal-dark: cream on the brand teal measures
+     3.9:1, short of AA; on teal-dark it clears 6:1. Teal itself stays the
+     accent — chips, links, tints, pins, focus rings. */
   --teal-dark: #2b635b;
+  --teal-deep: #234f48;
   --teal-tint: #e8f1ef;
   --cream: #f6f2e9;
   --cream-deep: #ece5d6;
@@ -41,6 +46,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* The browser's own surfaces wear the palette too. */
+::selection {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+input,
+textarea {
+  caret-color: var(--teal);
+}
+
+/* Figures line up in columns: counts, scores, positions, plant numbers. */
+.count,
+.stats-line b,
+.pos,
+.score,
+.era-count,
+.sim-num,
+.medal,
+.plant .id,
+.sh-facts {
+  font-variant-numeric: tabular-nums;
+}
+
 button:focus-visible,
 a:focus-visible,
 select:focus-visible,
@@ -62,7 +91,7 @@ input:focus-visible {
    sitting folder-style on its bottom edge (the active tab's cream connects to
    the page below). */
 .masthead {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
   padding: 0.8rem 1.25rem 0;
 }
@@ -117,7 +146,7 @@ input:focus-visible {
   flex-wrap: wrap;
   gap: 0.3rem 1.15rem;
   margin: 0.35rem 0 0.65rem;
-  font-size: 0.73rem;
+  font-size: 0.78rem;
   color: rgba(246, 242, 233, 0.95);
 }
 
@@ -338,7 +367,7 @@ input:focus-visible {
   padding: 0.32rem 1rem;
   background: var(--cream-deep);
   border-bottom: 1px solid var(--rule);
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -396,7 +425,7 @@ input:focus-visible {
 
 .load-error-detail {
   font-family: var(--mono);
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
   word-break: break-word;
 }
@@ -464,14 +493,14 @@ input:focus-visible {
 }
 
 .mc-where {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   color: var(--ink-soft);
   margin-top: 1px;
 }
 
 .mc-addr {
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   color: var(--ink-soft);
   margin-top: 2px;
 }
@@ -524,7 +553,7 @@ input:focus-visible {
   border: 1px solid var(--rule);
   border-radius: 4px;
   box-shadow: var(--shadow);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   color: var(--ink-soft);
 }
 
@@ -590,7 +619,7 @@ input:focus-visible {
 
 .pos {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   color: var(--ink-soft);
   margin-right: 0.3rem;
 }
@@ -614,7 +643,7 @@ input:focus-visible {
 }
 
 .hbtn.copy {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   padding: 0 0.5rem;
 }
 
@@ -645,7 +674,7 @@ input:focus-visible {
 
 .detail h3 {
   font-family: var(--body);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -679,7 +708,7 @@ input:focus-visible {
 }
 
 .plant {
-  border-left: 2px solid var(--rule);
+  border-left: 1px solid var(--rule);
   padding-left: 0.7rem;
   margin-bottom: 0.8rem;
 }
@@ -708,7 +737,7 @@ input:focus-visible {
 }
 
 .tag {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   padding: 0.13rem 0.42rem;
   border-radius: 3px;
   background: var(--cream-deep);
@@ -731,12 +760,12 @@ button.tag {
 }
 
 button.tag:hover {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
 }
 
 .pill {
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   padding: 0.1rem 0.4rem;
   border-radius: 999px;
   background: var(--cream-deep);
@@ -745,7 +774,7 @@ button.tag:hover {
 }
 
 .pill.store {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
 }
 
@@ -797,7 +826,7 @@ button.tag:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -825,7 +854,7 @@ button.tag:hover {
 
 .medal {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   font-weight: 500;
   padding: 0.08rem 0;
   border-radius: 3px;
@@ -865,19 +894,21 @@ button.tag:hover {
   color: var(--ink-soft);
 }
 
-/* Editorial and sponsored highlights must never look alike. */
+/* Editorial and sponsored highlights must never look alike: the editorial
+   card is house teal on the teal tint, the sponsored card is the sponsor
+   brown on parchment, each with its full accent border and its kicker. */
 .highlight {
-  border-left: 3px solid var(--teal);
+  border: 1px solid var(--teal);
   background: var(--teal-tint);
 }
 
 .highlight.sponsored {
-  border-left: 3px solid var(--sponsored);
+  border-color: var(--sponsored);
   background: #f6efe4;
 }
 
 .highlight .kicker {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -955,7 +986,7 @@ button.tag:hover {
 
 .about-card h3 {
   font-family: var(--body);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -1042,7 +1073,7 @@ button.tag:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
   border-radius: 999px;
   padding: 0.16rem 0.3rem 0.16rem 0.6rem;
@@ -1058,7 +1089,7 @@ button.tag:hover {
   width: 1rem;
   height: 1rem;
   line-height: 1;
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   cursor: pointer;
   padding: 0;
 }
@@ -1076,6 +1107,9 @@ button.tag:hover {
 .cheese-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  /* Cards end where their content ends — a shelf, not a wall of equal boxes
+     with empty bottoms when neighbours carry photos. */
+  align-items: start;
   gap: 0.65rem;
   padding: 1rem 1.25rem 1.4rem;
 }
@@ -1114,7 +1148,7 @@ button.tag:hover {
 }
 
 .kicker {
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -1179,7 +1213,7 @@ button.tag:hover {
   display: flex;
   gap: 0.4rem;
   align-items: flex-start;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   line-height: 1.35;
   color: #7c5f28;
   background: #f5eedb;
@@ -1196,7 +1230,7 @@ button.tag:hover {
 }
 
 .cheese-card .op-hint {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
 }
 
 /* Top-right cluster: award seal beside the heart, each on a cream disc so
@@ -1356,7 +1390,7 @@ button.tag:hover {
 }
 
 button.tag.product:hover {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
 }
 
@@ -1388,8 +1422,7 @@ button.tag.product:hover {
 }
 
 button.highlight {
-  border: 0;
-  border-left: 3px solid var(--teal);
+  border: 1px solid var(--teal);
   text-align: left;
   padding: 0.6rem 0.85rem 0.65rem;
   border-radius: 4px;
@@ -1456,7 +1489,7 @@ button.highlight {
 }
 
 .because {
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   color: var(--teal-dark);
 }
 
@@ -1481,7 +1514,7 @@ button.highlight {
 }
 
 .facts dt {
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -1530,7 +1563,7 @@ button.highlight {
 
 .sim-maker {
   display: block;
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
 }
 
@@ -1560,7 +1593,7 @@ button.highlight {
 
 .sim-num {
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   color: var(--ink-soft);
 }
 
@@ -1725,7 +1758,7 @@ button.highlight {
 
 .board-inner h3 {
   font-family: var(--body);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -1740,7 +1773,7 @@ button.highlight {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.15rem 0.6rem;
-  border-left: 3px solid var(--sponsored);
+  border: 1px solid var(--sponsored);
   background: #f6efe4;
   border-radius: 4px;
   padding: 0.55rem 0.85rem 0.6rem;
@@ -1749,7 +1782,7 @@ button.highlight {
 
 .board-sponsor .kicker {
   color: var(--sponsored);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   letter-spacing: 0.1em;
 }
 
@@ -1812,13 +1845,13 @@ button.highlight {
 }
 
 .size-picker button[aria-pressed="true"] {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
 }
 
 .board-action {
-  border: 1px solid var(--teal);
-  background: var(--teal);
+  border: 1px solid var(--teal-dark);
+  background: var(--teal-dark);
   color: var(--cream);
   border-radius: 999px;
   padding: 0.42rem 1rem;
@@ -1829,8 +1862,8 @@ button.highlight {
 }
 
 .board-action:hover {
-  background: var(--teal-dark);
-  border-color: var(--teal-dark);
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
 }
 
 .board-action.quiet {
@@ -1894,7 +1927,7 @@ button.highlight {
 }
 
 .slot-maker {
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
 }
 
@@ -1941,7 +1974,7 @@ button.highlight {
 
 .meter-label {
   flex: 0 0 4.4rem;
-  font-size: 0.64rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -1955,7 +1988,7 @@ button.highlight {
 }
 
 .meter-cell {
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   padding: 0.1rem 0.5rem;
   border-radius: 999px;
   border: 1px dashed var(--rule);
@@ -2029,7 +2062,7 @@ button.highlight {
   border-radius: 999px;
   padding: 0.22rem 0.7rem;
   font: inherit;
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -2079,7 +2112,7 @@ button.highlight {
 }
 
 .s-maker {
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
 }
 
@@ -2091,7 +2124,7 @@ button.highlight {
 }
 
 .s-gain {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 500;
   background: var(--teal-tint);
   color: var(--teal-dark);
@@ -2114,7 +2147,7 @@ button.highlight {
 }
 
 .s-add:hover {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
 }
 
@@ -2148,21 +2181,21 @@ button.highlight {
 
 .sheet-row .sh-facts {
   color: var(--ink-soft);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-family: var(--mono);
   white-space: nowrap;
 }
 
 .sheet-foot {
   margin: 0.55rem 0 0.15rem;
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   color: var(--ink-soft);
 }
 
 .sheet-link {
   margin: 0;
   font-family: var(--mono);
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   color: var(--ink-soft);
   word-break: break-all;
 }
@@ -2227,13 +2260,13 @@ button.highlight {
   border-radius: 3px;
   padding: 0.13rem 0.42rem;
   font-family: var(--body);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .featured-pick:hover {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--cream);
 }
 
@@ -2244,7 +2277,7 @@ button.highlight {
   background: var(--gold);
   color: #2a2113;
   border-radius: 999px;
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   font-weight: 700;
   padding: 0.02rem 0.42rem;
   vertical-align: 1px;
@@ -2270,13 +2303,13 @@ button.highlight {
 }
 
 .board-btn.on {
-  background: var(--teal);
-  border-color: var(--teal);
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
   color: var(--cream);
 }
 
 .board-btn.on:hover {
-  background: var(--teal-dark);
+  background: var(--teal-deep);
 }
 
 .board-btn:disabled {
@@ -2376,6 +2409,13 @@ button.highlight {
     visibility: hidden;
   }
 
+  /* The creamery sheet lives inside the map pane, and visibility inherits:
+     without this, tapping a row while the LIST is showing opens a sheet the
+     reader cannot see. Scoped so a hidden *view* still hides it. */
+  .layout:not(.view-off) .map-pane.pane-off .detail {
+    visibility: visible;
+  }
+
   .mobile-flip {
     display: inline-flex;
     align-items: center;
@@ -2468,6 +2508,8 @@ button.highlight {
     font-size: 1.2rem;
   }
 
+  /* The one line kept below the legibility floor: it is attribution, not
+     content, and at 0.76rem the WPR seal orphans onto a line of its own. */
   .masthead .subtitle {
     font-size: 0.72rem;
     width: 100%;
@@ -2484,7 +2526,7 @@ button.highlight {
 
   .masthead .count {
     margin-left: auto;
-    font-size: 0.72rem;
+    font-size: 0.76rem;
   }
 
   /* Three tabs share a phone's width; let them wrap rather than squeeze. */
@@ -2521,7 +2563,7 @@ button.highlight {
   .colophon {
     padding: 0.35rem 0.75rem;
     gap: 0.2rem 0.8rem;
-    font-size: 0.68rem;
+    font-size: 0.72rem;
   }
 
   .provisional .pd-long {
@@ -2530,7 +2572,7 @@ button.highlight {
 
   .draftbar {
     padding: 0.32rem 0.75rem;
-    font-size: 0.72rem;
+    font-size: 0.76rem;
   }
 
   /* Thumb-sized targets over photos. */

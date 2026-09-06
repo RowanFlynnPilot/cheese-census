@@ -84,6 +84,22 @@ function initialView(): ViewKey {
   return view === "cheeses" ? "cheeses" : "map";
 }
 
+/** True below the phone breakpoint (styles.css: 760px). The masthead count
+ *  drops its noun there — "1,059 of 1,069 cheeses" is the one string that
+ *  would not share the title line, and the active tab already names the noun. */
+function useNarrow(): boolean {
+  const [narrow, setNarrow] = useState(
+    () => window.matchMedia("(max-width: 760px)").matches,
+  );
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 760px)");
+    const onChange = (e: MediaQueryListEvent) => setNarrow(e.matches);
+    query.addEventListener("change", onChange);
+    return () => query.removeEventListener("change", onChange);
+  }, []);
+  return narrow;
+}
+
 /** Consecutive runs of one county — the input is already county-sorted. */
 function groupByCounty(rows: Creamery[]): { label: string; rows: Creamery[] }[] {
   const groups: { label: string; rows: Creamery[] }[] = [];
@@ -141,6 +157,7 @@ export default function App() {
   const boardAdopted = useRef(false);
 
   const [aboutOpen, setAboutOpen] = useState(false);
+  const narrow = useNarrow();
   // Captured at first render: the URL-mirror effect below rewrites the URL (hashless
   // while nothing is selected) before the data arrives, so reading location.hash in
   // the data-load effect would find it already stripped.
@@ -969,7 +986,7 @@ export default function App() {
   const countLine = !data
     ? "loading…"
     : view === "cheeses"
-      ? `${fmt(cheesesShown.length)} of ${fmt(activeCheeses.length)} cheeses`
+      ? `${fmt(cheesesShown.length)} of ${fmt(activeCheeses.length)}${narrow ? "" : " cheeses"}`
       : view === "board"
         ? `${boardCheeses.length} of ${board.size} on the board`
         : `${shown.length} of ${activeCreameries.length} creameries`;

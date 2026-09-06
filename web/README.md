@@ -261,4 +261,16 @@ which drops the "Provisional data" notice from the colophon.
   same mark the Brewers tracker uses) beside the attribution phrase.
 - "Wisconsin" belongs in the subtitle and page title, never in the mark.
 - Editorial and sponsored highlights must render visibly differently — the
-  `.highlight` / `.highlight.sponsored` rules already diverge, and must stay that way.
+  `.highlight` / `.highlight.sponsored` rules already diverge (house teal on
+  the teal tint vs. sponsor brown on parchment, each with its full accent
+  border and kicker), and must stay that way.
+- WCAG 2.1 AA is a requirement. Cream on the brand teal measures ~3.9:1, so
+  any *filled* surface carrying small text — the masthead band, primary
+  buttons, store pills, active size-picker, board buttons — uses `--teal-dark`
+  (6.2:1) with `--teal-deep` for hover; `--teal` stays the accent for chips,
+  links, tints, pins and focus rings. Never put cream text on `--teal`.
+- Legibility floor for an older readership: no reader-facing text below
+  0.68rem, and secondary text (pills, tags, meta) sits at 0.74–0.8rem. The
+  single exception is the mobile masthead tagline (0.72rem) so the WPR seal
+  stays on its line. Text selection, the caret and tabular figures are
+  themed from the palette (`::selection`, `caret-color`, `tabular-nums`).

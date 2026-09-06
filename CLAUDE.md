@@ -134,7 +134,10 @@ manual dispatch only until all scrapers are implemented.
 - Frontend (later): React/Vite → GitHub Pages → WordPress iframe embed.
   WPR design system: teal `#3A867C`, cream `#F6F2E9`, Fraunces display,
   Public Sans body, JetBrains Mono for data. Editorial and sponsored
-  highlights must render visibly differently.
+  highlights must render visibly differently. WCAG 2.1 AA is a requirement
+  and the readership skews older (see PRODUCT.md): filled surfaces that
+  carry small text use `--teal-dark`, never cream-on-`--teal` (3.9:1), and
+  no reader-facing text sits below 0.68rem — conventions in web/README.md.
 - Name & branding: the product is **The Cheese Census**. "Wisconsin" lives in
   the standing subtitle ("A census of Wisconsin cheese, from Wausau
   Pilot & Review" — no "the" before the paper's name) and in page
