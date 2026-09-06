@@ -107,24 +107,41 @@ size (3/5/7), then build toward balance. A good board is a *variety* problem, so
 the engine spends the catalog's structured fields on the similarity engine's
 opposite: the **balance meter** shows the board's spread across the texture and
 age spectrums, milks, and the six flavor families; a plain-English nudge names
-the biggest gap ("Nothing firm yet — an aged wheel anchors the board").
-**Suggested next** ranks every catalog cheese by what it would *add* to this
-board (new texture +3, age +2, milk +2, flavor families +1.5 ea, family +1.5,
-county +0.75, award bonus — never enough to outrank fit; second-pick-per-creamery
-penalty, third forbidden, mirror names skipped, and a "dare" boost steers a
-grounded board toward a blue or washed rind). Each suggestion wears gain chips
-saying exactly why ("+ hard · + aged · + goat milk"). **Complete my board**
-greedily fills the remaining slots; **Start from my saved** builds the most
-balanced board the reader's hearts can make. Adding happens from suggestions,
-from the highlight cards, or from any cheese panel's "+ Add to my cheese board"
-button. The board persists in `localStorage` (`cheese-census.board.v1`), mirrors
-into the URL (`?view=board&b=id,id,…`) so **the link is the board** — a
-recipient loads those picks — and ends in a shopping list (creamery, city,
-retail store, award count) with copy-link and a print stylesheet that prints the
-list and nothing else. `build/sponsors.json` feeds the **sponsor slot**: the
-active `placement: "board"` entry renders "Made possible by …" in the sponsored
-visual language (absent when none is live) and its credit rides the printed
-sheet; the current entry is WPR's own house ad.
+the biggest gap ("Nothing firm yet — an aged wheel anchors the board"). **The
+engine speaks with one voice:** `boardNudges` returns structured nudges (text,
+a short `want`, and a `resolves` predicate) and `suggestForBoard` gives the
+leading nudge a bonus larger than any single structural gain, so the rail's
+first cards answer the note ("Suggested next — soft first", chip "needed:
+soft"). Beneath that, **Suggested next** ranks by what a cheese would *add*
+(new texture +3, age +2, milk +2, flavor families +1.5 ea, family +1.5, a
+same-county stop +0.75 — the board is a shopping list, fewer stops win — and
+an award bonus that never outranks fit; second-pick-per-creamery penalty, third
+forbidden, mirror names skipped, closed creameries never suggested, and a "dare"
+boost toward a blue or washed rind once a board has footing). A full board that
+still wants something grows a **swap rail**: candidates that answer the nudge,
+each replacing `weakestPick` — the pick carrying the fewest facets nothing else
+covers (a closed creamery's cheese is always the one to spare). **Fill it for
+me** lives in the first empty slot and fills greedily, breaking exact-score ties
+with a per-browser salt (`cheese-census.reader.v1`) so one-tap boards differ
+reader to reader while the build's own determinism (empty salt) is what the
+tests pin; **Start from my saved** builds the most balanced board the reader's
+hearts can make. Nothing is lost by accident: "Use this board" and "Start over"
+show an inline **Undo** for ten seconds, and shrinking the size asks first,
+naming the picks it would drop. Adding happens from suggestions, highlight
+cards, or any cheese panel's "Add to the board" button, and focus follows the
+action (the new slot after an add, the tray after a fill or remove, the slot
+after closing a panel). The board persists in `localStorage`
+(`cheese-census.board.v1`) and mirrors into the URL (`?view=board&bsize=5&b=…`,
+size always included) so **the link is the board** — a recipient loads those
+picks at that size — and ends in a **shopping list grouped by stop**: each
+creamery with its street address, website and whether it has a store at the
+creamery, its cheeses in plain words ("Semi-hard · medium age · cow"), closed
+creameries flagged, copy-link (with the raw link revealed only if copying
+fails) and a print stylesheet that prints the list and nothing else.
+`build/sponsors.json` feeds the **sponsor slot** below the headline: the active
+`placement: "board"` entry renders "Made possible by …" in the sponsored visual
+language (absent when none is live) and its credit rides the printed sheet; the
+current entry is WPR's own house ad.
 
 **Featured boards** (`build/boards.json`) close the loop: readers email the
 newsroom (`editor@wausaupilotandreview.com` — the paper's published submission

@@ -1148,7 +1148,7 @@ button.tag:hover {
 }
 
 .kicker {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -1766,6 +1766,155 @@ button.highlight {
   margin: 0 0 0.55rem;
 }
 
+/* Footnotes everywhere read as footnotes — the panel and About had their
+   own rules, the board's fell through to body size and a 123-character
+   measure. */
+.aka {
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  max-width: 70ch;
+}
+
+.board-inner .aka {
+  margin: 0.55rem 0 0;
+}
+
+/* Inline strips for the two moments that need a word: a board just replaced
+   or cleared (undo beats a confirm), and a shrink that would drop picks. */
+.undo-strip,
+.confirm-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+}
+
+.undo-strip:empty {
+  display: none;
+}
+
+.undo-strip {
+  margin: -0.35rem 0 0.8rem;
+  color: var(--teal-dark);
+  font-weight: 500;
+}
+
+.confirm-strip {
+  margin: -0.35rem 0 0.9rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  background: #f5eedb;
+  color: var(--ink);
+}
+
+.strip-actions {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+/* The primary action lives where the gap is: in the first empty slot. */
+.board-slot.empty .board-action {
+  margin: 0.45rem auto 0.3rem;
+}
+
+.slot-hint {
+  font-size: 0.78rem;
+}
+
+/* Tray columns follow the board size so a 5-board is five across, not 4+1. */
+.board-tray[data-size="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.board-tray[data-size="5"] {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.board-tray[data-size="7"] {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.board-tray:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* The chip that says a suggestion answers the meter's nudge. */
+.s-gain.lead {
+  background: var(--teal-dark);
+  color: var(--cream);
+}
+
+/* The highlight card's cheese opens a panel; it reads as a name, not a link. */
+.hl-open {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  font-size: 0.86rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.hl-open:hover {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
+
+/* The shopping list groups by stop. */
+.sheet-group + .sheet-group {
+  margin-top: 0.7rem;
+}
+
+.sheet-group-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.3rem 0 0.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.sh-maker {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.sheet-addr {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.sheet-addr a {
+  color: var(--teal-dark);
+}
+
+/* The raw link is for print and for the moment copying fails; on screen it
+   is noise. */
+.sheet-link:not(.is-shown) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.sheet-link.is-shown {
+  user-select: all;
+  padding: 0.4rem 0.5rem;
+  background: var(--cream-deep);
+  border-radius: 4px;
+}
+
 /* The presenting slot: always the sponsored visual language, never the house
    teal — paid placement must not dress as editorial. Absent when no entry. */
 .board-sponsor {
@@ -1777,7 +1926,7 @@ button.highlight {
   background: #f6efe4;
   border-radius: 4px;
   padding: 0.55rem 0.85rem 0.6rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
 }
 
 .board-sponsor .kicker {
@@ -1878,6 +2027,9 @@ button.highlight {
 .board-tray {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  /* Slots end where their content ends; a photo in one slot must not leave
+     its neighbours two-thirds empty. */
+  align-items: start;
   gap: 0.6rem;
   margin-bottom: 1.1rem;
 }
@@ -2124,7 +2276,7 @@ button.highlight {
 }
 
 .s-gain {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 500;
   background: var(--teal-tint);
   color: var(--teal-dark);
@@ -2313,7 +2465,7 @@ button.highlight {
 }
 
 .board-btn:disabled {
-  opacity: 0.5;
+  opacity: 0.75;
   cursor: default;
 }
 
@@ -2618,12 +2770,38 @@ button.highlight {
     padding: 0.85rem 0.75rem 2.4rem;
   }
 
-  .board-tray {
+  .board-tray[data-size] {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .board-slot {
     min-height: 104px;
+  }
+
+  /* Thumb-sized board controls: 44px for buttons, 40px for chip buttons,
+     32px for the slot × — the panel got this earlier, the board did not. */
+  .board-action,
+  .size-picker button,
+  .s-add,
+  .hl-add,
+  .board-btn,
+  .strip-actions button {
+    min-height: 44px;
+  }
+
+  .slot-remove {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.15rem;
+  }
+
+  .featured-pick {
+    min-height: 2.5rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .s-gain {
+    font-size: 0.8rem;
   }
 
   .meter-row {
@@ -2687,6 +2865,16 @@ button.highlight {
   .app[data-view="board"] .board-sheet {
     border: 0;
     padding: 0;
+  }
+
+  /* The link belongs on paper. */
+  .app[data-view="board"] .sheet-link {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
   }
 
   /* The printed page keeps its provenance: WPR attribution, the sponsor

@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 import type { Award, Cheese, Creamery } from "./types";
-import { boardCoverage, boardNudges, completeBoard, suggestForBoard } from "./boards";
+import {
+  boardCoverage,
+  boardNudges,
+  completeBoard,
+  suggestForBoard,
+  weakestPick,
+} from "./boards";
 import { awardCitation, fold, recommend } from "./data";
 
 /* The two pure engines — the similarity-driven recommender and the board's
@@ -30,7 +36,7 @@ function cheese(partial: Partial<Cheese> & { id: string; creamery_id: string }):
   };
 }
 
-function creamery(id: string, county: string): Creamery {
+function creamery(id: string, county: string, status: "active" | "closed" = "active"): Creamery {
   return {
     id,
     name: id,
@@ -45,7 +51,7 @@ function creamery(id: string, county: string): Creamery {
     plants: [],
     dfw_company_id: null,
     founded: null,
-    status: "active",
+    status,
     editorial: { summary: null, visit_notes: null, photo: null },
   };
 }
@@ -56,6 +62,7 @@ const creameries = new Map(
     creamery("b", "Green"),
     creamery("c", "Door"),
     creamery("d", "Brown"),
+    creamery("z", "Green", "closed"),
   ].map((c) => [c.id, c]),
 );
 const noAwards = new Map<string, Award[]>();
@@ -107,15 +114,35 @@ describe("board suggestions", () => {
     expect(ids).not.toContain("b--cheddar");
   });
 
-  it("ranks the pick that fills the most gaps first, and says why", () => {
+  it("answers the meter's nudge first, and says so", () => {
     const picks = [byId.get("a--cheddar")!];
+    const cov = boardCoverage(picks, creameries);
+    expect(boardNudges(picks, 5, cov)[0].want).toBe("soft");
     const [top] = suggestForBoard(picks, 5, pool, creameries, noAwards);
-    // The extra-aged gouda adds a texture, an age band, two flavor families and
-    // a family — more new ground than anything else in the pool.
-    expect(top.cheese.id).toBe("b--gouda");
-    expect(top.gains).toEqual(
-      expect.arrayContaining(["hard", "extra-aged", "caramel", "gouda & edam"]),
-    );
+    // The gouda adds more raw novelty, but the board asked for something soft;
+    // the sheep-milk feta answers it and leads.
+    expect(top.cheese.id).toBe("c--feta");
+    expect(top.gains[0]).toBe("needed: soft");
+    expect(top.gains).toEqual(expect.arrayContaining(["soft", "fresh", "sheep milk"]));
+  });
+
+  it("never suggests a closed creamery's cheese, and asks to swap one out", () => {
+    const gone = cheese({ id: "z--limburger", creamery_id: "z", family: "washed_rind", texture: "soft" });
+    const picks = [byId.get("a--cheddar")!, gone];
+    const cov = boardCoverage(picks, creameries);
+    expect(boardNudges(picks, 5, cov)[0].text).toMatch(/has closed/);
+    const ids = suggestForBoard(picks, 5, [...pool, gone], creameries, noAwards).map((s) => s.cheese.id);
+    expect(ids).not.toContain("z--limburger");
+    expect(weakestPick(picks, creameries)?.id).toBe("z--limburger");
+  });
+
+  it("keeps ranking a full board when asked, so a swap can answer the nudge", () => {
+    const picks = [byId.get("a--cheddar")!, byId.get("b--gouda")!, byId.get("c--blue")!];
+    expect(suggestForBoard(picks, 3, pool, creameries, noAwards)).toEqual([]);
+    const swaps = suggestForBoard(picks, 3, pool, creameries, noAwards, 4, { allowFull: true });
+    expect(swaps.map((s) => s.cheese.id)).toContain("c--feta");
+    // The board can best spare the pick carrying the fewest unique facets.
+    expect(weakestPick(picks, creameries)).not.toBeNull();
   });
 
   it("caps a creamery at two picks", () => {
@@ -159,6 +186,13 @@ describe("completeBoard", () => {
     expect(twice).toEqual(once);
   });
 
+  it("breaks ties per reader with a salt, stably", () => {
+    const salted = completeBoard([], 5, pool, creameries, noAwards, "reader-1").map((c) => c.id);
+    const again = completeBoard([], 5, pool, creameries, noAwards, "reader-1").map((c) => c.id);
+    expect(salted).toHaveLength(5);
+    expect(again).toEqual(salted);
+  });
+
   it("stops short when the pool cannot fill the board", () => {
     const filled = completeBoard([], 7, pool.slice(0, 2), creameries, noAwards);
     expect(filled).toHaveLength(1); // the second cheddar is a mirror name
@@ -174,7 +208,7 @@ describe("boardNudges", () => {
     const picks = [byId.get("a--cheddar")!];
     const nudges = boardNudges(picks, 5, boardCoverage(picks, creameries));
     expect(nudges).toHaveLength(2);
-    expect(nudges[0]).toMatch(/Nothing soft yet/);
+    expect(nudges[0].text).toMatch(/Nothing soft yet/);
   });
 
   it("is quiet when the spread is sound", () => {

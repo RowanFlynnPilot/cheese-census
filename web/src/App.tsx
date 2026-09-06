@@ -21,10 +21,12 @@ import {
 import { useHearts } from "./hearts";
 import {
   BOARD_SIZES,
-  DEFAULT_SIZE,
+  boardCoverage,
+  boardNudges,
   completeBoard,
   suggestForBoard,
   useBoard,
+  weakestPick,
 } from "./boards";
 import LogoMark from "./components/LogoMark";
 import MapView from "./components/MapView";
@@ -155,6 +157,25 @@ export default function App() {
   const [boardSizeParam] = useState(() => initialParam("bsize"));
   const [arrivedOnBoard] = useState(() => initialView() === "board");
   const boardAdopted = useRef(false);
+  // A random id kept in this browser, used only to break exact-score ties when
+  // filling a board — so one-tap boards differ from reader to reader instead of
+  // every phone in the state getting the same five cheeses. Never sent anywhere.
+  const [readerSalt] = useState(() => {
+    try {
+      const key = "cheese-census.reader.v1";
+      let salt = localStorage.getItem(key);
+      if (!salt) {
+        salt = Math.random().toString(36).slice(2);
+        localStorage.setItem(key, salt);
+      }
+      return salt;
+    } catch {
+      return "";
+    }
+  });
+  // A board just replaced or cleared, restorable for a few seconds.
+  const [undo, setUndo] = useState<{ ids: string[]; size: number; label: string } | null>(null);
+  const undoTimer = useRef<number | null>(null);
 
   const [aboutOpen, setAboutOpen] = useState(false);
   const narrow = useNarrow();
@@ -519,13 +540,6 @@ export default function App() {
     [data],
   );
 
-  /** "Use this board" from the gallery: the picks arrive with their own size. */
-  function adoptBoard(ids: string[]) {
-    const size = (BOARD_SIZES as readonly number[]).includes(ids.length)
-      ? ids.length
-      : board.size;
-    board.replace(ids, size);
-  }
 
   // The board's picks, resolved in saved order. A closed creamery's cheese
   // stays — it is the reader's list — but leaves the suggestion pool.
@@ -537,17 +551,39 @@ export default function App() {
     [board.ids, cheesesById],
   );
 
-  const boardSuggestions = useMemo(
-    () =>
-      suggestForBoard(boardCheeses, board.size, activeCheeses, creameriesById, awardsByCheese),
-    [boardCheeses, board.size, activeCheeses, creameriesById, awardsByCheese],
-  );
+  // One analysis of the board feeds the meter, the rail and the swap rail, so
+  // they cannot disagree: the note's first nudge is what the rail answers.
+  const boardAnalysis = useMemo(() => {
+    const coverage = boardCoverage(boardCheeses, creameriesById);
+    const nudges = boardNudges(boardCheeses, board.size, coverage);
+    const full = boardCheeses.length >= board.size;
+    const suggestions = full
+      ? []
+      : suggestForBoard(boardCheeses, board.size, activeCheeses, creameriesById, awardsByCheese);
+    const replacing = full && nudges.length ? weakestPick(boardCheeses, creameriesById) : null;
+    const swap = replacing
+      ? {
+          replacing,
+          candidates: suggestForBoard(
+            boardCheeses,
+            board.size,
+            activeCheeses,
+            creameriesById,
+            awardsByCheese,
+            4,
+            { allowFull: true },
+          ),
+        }
+      : null;
+    return { coverage, nudges, suggestions, swap };
+  }, [boardCheeses, board.size, activeCheeses, creameriesById, awardsByCheese]);
 
   // The canonical share link, built from state rather than read back from the
-  // address bar so the printed sheet never lags a render behind.
+  // address bar so the printed sheet never lags a render behind. The size
+  // always travels: the link IS the board, and a recipient's own stored size
+  // must not reshape it.
   const boardShareUrl = useMemo(() => {
-    const params = new URLSearchParams({ view: "board" });
-    if (board.size !== DEFAULT_SIZE) params.set("bsize", String(board.size));
+    const params = new URLSearchParams({ view: "board", bsize: String(board.size) });
     if (board.ids.length) params.set("b", board.ids.join(","));
     // Commas are legal in a query string; the encoded form just reads worse
     // on the printed sheet.
@@ -560,13 +596,19 @@ export default function App() {
     if (!data || boardAdopted.current) return;
     boardAdopted.current = true;
     if (!arrivedOnBoard) return;
-    const size = Number(boardSizeParam);
-    const sizeValid = (BOARD_SIZES as readonly number[]).includes(size);
     const ids = boardParam
       ? boardParam.split(",").filter((id) => cheesesById.has(id))
       : [];
-    if (ids.length) replaceBoard(ids, sizeValid ? size : undefined);
-    else if (sizeValid) setBoardSize(size);
+    const isSize = (n: number) => (BOARD_SIZES as readonly number[]).includes(n);
+    // An older link without bsize still arrives at its own size when the pick
+    // count is one — never the recipient's stored size.
+    const size = isSize(Number(boardSizeParam))
+      ? Number(boardSizeParam)
+      : isSize(ids.length)
+        ? ids.length
+        : undefined;
+    if (ids.length) replaceBoard(ids, size);
+    else if (size) setBoardSize(size);
   }, [data, arrivedOnBoard, boardParam, boardSizeParam, cheesesById, replaceBoard, setBoardSize]);
 
   // Ids the dataset no longer knows (a cheese removed since the reader saved
@@ -588,8 +630,47 @@ export default function App() {
       activeCheeses,
       creameriesById,
       awardsByCheese,
+      readerSalt,
     );
     board.replace(filled.map((c) => c.id));
+  }
+
+  /** Keep the board being replaced for ten seconds: undo beats a confirm
+   *  when recovery is this cheap. */
+  function stashBoard(label: string) {
+    setUndo({ ids: board.ids, size: board.size, label });
+    if (undoTimer.current) window.clearTimeout(undoTimer.current);
+    undoTimer.current = window.setTimeout(() => setUndo(null), 10000);
+  }
+
+  function undoBoard() {
+    if (!undo) return;
+    board.replace(undo.ids, undo.size);
+    setUndo(null);
+  }
+
+  /** "Use this board" from the gallery: the picks arrive with their own size. */
+  function adoptBoard(ids: string[], title: string) {
+    const n = board.ids.length;
+    if (n) stashBoard(`Replaced your ${n} pick${n === 1 ? "" : "s"} with “${title}”`);
+    const size = (BOARD_SIZES as readonly number[]).includes(ids.length)
+      ? ids.length
+      : board.size;
+    board.replace(ids, size);
+  }
+
+  function clearBoard() {
+    const n = board.ids.length;
+    if (n) stashBoard(`Cleared your ${n} pick${n === 1 ? "" : "s"}`);
+    board.clear();
+  }
+
+  /** A full board answering its nudge: the candidate takes the place of the
+   *  pick the board can best spare. */
+  function swapIn(id: string) {
+    const replacing = boardAnalysis.swap?.replacing;
+    if (!replacing) return;
+    board.replace(board.ids.map((x) => (x === replacing.id ? id : x)));
   }
 
   /** The most balanced board the reader's own saved cheeses can make. */
@@ -690,10 +771,11 @@ export default function App() {
       if (mineOnly) params.set("mine", "1");
       hash = selectedCheeseId;
     } else if (view === "board") {
-      // The board IS the URL: anyone the link reaches loads these picks.
-      // No hash — a record hash would flip a shared link into the catalog.
+      // The board IS the URL: anyone the link reaches loads these picks at
+      // this size. No hash — a record hash would flip a shared link into the
+      // catalog.
       params.set("view", "board");
-      if (board.size !== DEFAULT_SIZE) params.set("bsize", String(board.size));
+      params.set("bsize", String(board.size));
       if (board.ids.length) params.set("b", board.ids.join(","));
     } else {
       if (query) params.set("q", query);
@@ -763,10 +845,15 @@ export default function App() {
 
   function closeCheeseDetail() {
     const id = selectedCheeseId;
+    const pane = view === "board" ? ".board-pane" : ".cheese-pane";
     setSelectedCheeseId(null);
     if (id) {
+      // Scoped to the active pane: the catalog's hidden card carries the same
+      // id and would otherwise win the query and swallow the focus.
       requestAnimationFrame(() => {
-        document.querySelector<HTMLElement>(`[data-chid="${CSS.escape(id)}"]`)?.focus();
+        document
+          .querySelector<HTMLElement>(`${pane} [data-chid="${CSS.escape(id)}"]`)
+          ?.focus();
       });
     }
   }
@@ -1082,26 +1169,30 @@ export default function App() {
         )}
 
         <nav className="mast-tabs" aria-label="Census views">
+          {/* Phones get the short names so all three tabs share one row. */}
           <button
             className="mode"
             aria-current={view === "map" ? "page" : undefined}
             onClick={() => setView("map")}
+            aria-label="Creamery Map"
           >
-            Creamery Map
+            {narrow ? "Map" : "Creamery Map"}
           </button>
           <button
             className="mode"
             aria-current={view === "cheeses" ? "page" : undefined}
             onClick={() => setView("cheeses")}
+            aria-label="Cheese Catalog"
           >
-            Cheese Catalog
+            {narrow ? "Catalog" : "Cheese Catalog"}
           </button>
           <button
             className="mode"
             aria-current={view === "board" ? "page" : undefined}
             onClick={() => setView("board")}
+            aria-label={`Cheese Board${board.ids.length ? `, ${board.ids.length} picks` : ""}`}
           >
-            Cheese Board
+            {narrow ? "Board" : "Cheese Board"}
             {board.ids.length > 0 && <span className="tab-count">{board.ids.length}</span>}
           </button>
           {hearts.length > 0 && (
@@ -1331,7 +1422,10 @@ export default function App() {
             cheesesById={cheesesById}
             creameriesById={creameriesById}
             awardsByCheese={awardsByCheese}
-            suggestions={boardSuggestions}
+            coverage={boardAnalysis.coverage}
+            nudges={boardAnalysis.nudges}
+            suggestions={boardAnalysis.suggestions}
+            swap={boardAnalysis.swap}
             highlights={highlights}
             sponsor={boardSponsor}
             featured={featuredBoards}
@@ -1339,12 +1433,15 @@ export default function App() {
             images={draftImages}
             heartCount={hearts.length}
             shareUrl={boardShareUrl}
+            undo={undo ? { label: undo.label } : null}
+            onUndo={undoBoard}
             onSetSize={board.setSize}
             onAdd={board.add}
             onRemove={board.remove}
-            onClear={board.clear}
+            onClear={clearBoard}
             onComplete={completeMyBoard}
             onSeed={seedBoardFromHearts}
+            onSwap={swapIn}
             onOpen={setSelectedCheeseId}
           />
           {view === "board" && cheeseDetailNode}

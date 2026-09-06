@@ -158,10 +158,10 @@ export default function CheeseDetail({
           aria-pressed={onBoard}
         >
           {onBoard
-            ? "✓ On my board — tap to remove"
+            ? "On the board — remove it"
             : boardFull
-              ? "Board is full — remove something first"
-              : "+ Add to my cheese board"}
+              ? "Board is full — remove a cheese to add this one"
+              : "Add to the board"}
         </button>
       </div>
 
