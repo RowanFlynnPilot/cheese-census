@@ -82,6 +82,21 @@ contest record, and the **similar-cheeses list** with match-strength bars —
 `similarity.py`'s scores, rendered as shipped. Closed-creamery records stay
 reachable by deep link and award reference but never appear in browse.
 
+The catalog explains its own state (October 2026 critique, 27/40 → the five
+priority issues): every filter in force renders as a removable chip in one row
+beside the "from …" maker chip, on both breakpoints, so a `?milk=goat` link
+never reads as "the census is small"; an empty search box carries three worked
+examples (a flavor, a maker, a note) that fill it on tap; a search that finds
+nothing names what was typed and offers the three nearest names (character-
+bigram overlap over the folded names, `nearMisses` in `App.tsx`), with the
+cheese-desk band hidden over an empty result; the family-sort heads count the
+whole answer (`familyTotals`), never the page that has rendered so far, with
+the count beside the label; on phones the band follows the first row of cards
+(the reader's answer before the paper's plug — DOM order is the visual order),
+the record sheet's header scrolls with the record while a bottom bar carries
+back plus previous/next, and the maker line reads in ink at 0.86rem, bold where
+a name repeats in view.
+
 The two views cross-navigate: a creamery panel lists its catalog records as
 chips ("In the cheese catalog") and links each pinned award to its cheese; a
 cheese panel links back to its creamery on the map and to a maker-filtered

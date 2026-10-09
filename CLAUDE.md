@@ -341,7 +341,12 @@ every pane, hover rules behind `@media (hover: hover)`, forced-colors outlines,
 3:1 control borders (`--rule-strong`), a bronze that passes, and a share
 helper (`web/src/share.ts`: the phone's share sheet, else the clipboard; a
 `VITE_SHARE_BASE` for the article that will embed the census). The embed
-iframe needs `allow="web-share; clipboard-write"` — see web/README.md.
+iframe needs `allow="web-share; clipboard-write"` — see web/README.md. An
+Impeccable critique of the catalog (27/40) then drove a clarify → layout →
+harden → typeset → polish pass: filter chips for every facet in force, worked
+search examples, a search-aware empty state with nearest names, honest
+family-sort counts, the band below the first row on phones, a scrolling sheet
+header with a bottom back/step bar, and the maker line at body size.
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { Award, Cheese, Creamery, Highlight } from "../types";
 import {
   MILK_LABEL,
@@ -15,6 +15,15 @@ export type CheeseSortKey = (typeof CHEESE_SORTS)[number];
 // A–Z is a phone book; most-awarded is the newspaper's first page. Ties fall
 // back to A–Z, so the tail of the list reads exactly as it used to.
 export const DEFAULT_CHEESE_SORT: CheeseSortKey = "awards";
+const SORT_LABEL: Record<CheeseSortKey, string> = {
+  awards: "Most awarded",
+  name: "A–Z",
+  creamery: "Creamery",
+  family: "Family",
+};
+// Worked examples under an empty search box: a flavor, a maker, a note — the
+// three kinds of word the search understands, each one tap away.
+const EXAMPLES = ["habanero", "Hook’s", "smoky"];
 
 interface Props {
   loading: boolean;
@@ -27,6 +36,8 @@ interface Props {
    *  when a heart is toggled mid-scroll, which must not move the page. */
   filterKey: string;
   hints: Map<string, string>;
+  /** The names nearest a search that found nothing (App computes them). */
+  nearMisses: { id: string; name: string }[];
   creameriesById: Map<string, Creamery>;
   awardsByCheese: Map<string, Award[]>;
   heartSet: Set<string>;
@@ -85,6 +96,7 @@ export default function CheeseBrowse({
   shown,
   filterKey,
   hints,
+  nearMisses,
   creameriesById,
   awardsByCheese,
   heartSet,
@@ -128,16 +140,75 @@ export default function CheeseBrowse({
   // narrowed list never reads as "the census is small". Desktop ignores this.
   const [facetsOpen, setFacetsOpen] = useState(false);
   const folded = narrow && !facetsOpen;
-  const activeFacets =
-    [family, texture, milk].filter(Boolean).length +
-    [awardedOnly, originalsOnly, mineOnly].filter(Boolean).length +
-    (sort !== DEFAULT_CHEESE_SORT ? 1 : 0);
 
   function clearEverything() {
     onClearAll();
     onMineOnly(false);
     onSort(DEFAULT_CHEESE_SORT);
   }
+
+  // Every filter in force, as a removable chip — visible with the facets
+  // folded, so a short list always shows its cause and its undo. The maker
+  // chip is the one a reader did not set here (it arrives from a creamery's
+  // panel), so it leads.
+  const chips: { key: string; label: string; aria: string; remove: () => void }[] = [];
+  if (makerName) {
+    chips.push({
+      key: "maker",
+      label: `from ${makerName}`,
+      aria: `Stop filtering to ${makerName}`,
+      remove: onClearMaker,
+    });
+  }
+  if (family) {
+    chips.push({
+      key: "family",
+      label: familyLabel(family),
+      aria: `Remove the ${familyLabel(family)} filter`,
+      remove: () => onFamily(""),
+    });
+  }
+  if (texture) {
+    const label = TEXTURE_LABEL[texture] ?? texture;
+    chips.push({ key: "texture", label, aria: `Remove the ${label} filter`, remove: () => onTexture("") });
+  }
+  if (milk) {
+    const label = `${MILK_LABEL[milk] ?? milk} milk`;
+    chips.push({ key: "milk", label, aria: `Remove the ${label} filter`, remove: () => onMilk("") });
+  }
+  if (awardedOnly) {
+    chips.push({
+      key: "awarded",
+      label: "Award winners",
+      aria: "Remove the award winners filter",
+      remove: () => onAwardedOnly(false),
+    });
+  }
+  if (originalsOnly) {
+    chips.push({
+      key: "originals",
+      label: "Wisconsin originals",
+      aria: "Remove the Wisconsin originals filter",
+      remove: () => onOriginalsOnly(false),
+    });
+  }
+  if (mineOnly) {
+    chips.push({
+      key: "mine",
+      label: "My cheeses",
+      aria: "Show every cheese, not only the saved ones",
+      remove: () => onMineOnly(false),
+    });
+  }
+  if (sort !== DEFAULT_CHEESE_SORT) {
+    chips.push({
+      key: "sort",
+      label: `Sort: ${SORT_LABEL[sort]}`,
+      aria: `Back to the ${SORT_LABEL[DEFAULT_CHEESE_SORT]} sort`,
+      remove: () => onSort(DEFAULT_CHEESE_SORT),
+    });
+  }
+  const activeFacets = chips.length - (makerName ? 1 : 0);
 
   // A new question starts the reader back at the top of its answer.
   useEffect(() => {
@@ -161,7 +232,27 @@ export default function CheeseBrowse({
     return () => io.disconnect();
   }, [hasMore, shown]);
 
-  const slice = shown.slice(0, visible);
+  const slice = useMemo(() => shown.slice(0, visible), [shown, visible]);
+
+  // The family heads count the whole answer, not the page of it that has
+  // rendered so far — a number that grew as you scrolled was a number nobody
+  // could trust.
+  const familyTotals = useMemo(() => {
+    const totals = new Map<string, number>();
+    for (const cheese of shown) {
+      const label = familyLabel(cheese.family);
+      totals.set(label, (totals.get(label) ?? 0) + 1);
+    }
+    return totals;
+  }, [shown]);
+
+  // Ten "Aged Cheddar" cards in a row differ only by maker, so where a name
+  // repeats in view the maker line leads with the weight.
+  const repeated = useMemo(() => {
+    const seen = new Map<string, number>();
+    for (const cheese of slice) seen.set(cheese.name, (seen.get(cheese.name) ?? 0) + 1);
+    return new Set([...seen].filter(([, n]) => n > 1).map(([name]) => name));
+  }, [slice]);
 
   function renderCard(cheese: Cheese) {
     const media = images?.get(cheese.id);
@@ -174,6 +265,7 @@ export default function CheeseBrowse({
         hint={hints.get(cheese.id)}
         hearted={heartSet.has(cheese.id)}
         selected={cheese.id === selectedId}
+        leadMaker={repeated.has(cheese.name)}
         imageUrl={media?.image}
         blurb={media?.summary ?? undefined}
         onOpen={onOpen}
@@ -182,13 +274,50 @@ export default function CheeseBrowse({
     );
   }
 
+  const band =
+    highlights.length > 0 && shown.length > 0 ? (
+      <div className="highlight-row" key="highlights">
+        {highlights.map(({ highlight, cheese }) => (
+          <button
+            type="button"
+            key={`${highlight.cheese_id}-${highlight.starts}`}
+            className={`highlight${highlight.type === "sponsored" ? " sponsored" : ""}`}
+            onClick={() => onOpen(cheese.id)}
+          >
+            <span className="kicker">
+              {highlight.type === "sponsored"
+                ? `Sponsored · ${highlight.sponsor}`
+                : "From the cheese desk"}
+            </span>
+            <span className="hl-label">{highlight.label}</span>
+            <span className="hl-name">
+              {cheese.name} — {creameriesById.get(cheese.creamery_id)?.name}
+            </span>
+          </button>
+        ))}
+      </div>
+    ) : null;
+
+  /** The cheese-desk band inside the first grid: on a phone it follows the
+   *  first row of cards, so the reader's answer comes before the paper's
+   *  plug; on desktop it leads the grid as before. DOM order is the visual
+   *  order either way. */
+  function withBand(cards: ReactNode[], first: boolean): ReactNode[] {
+    if (!band || !first) return cards;
+    if (!narrow) return [band, ...cards];
+    const row = Math.min(2, cards.length);
+    return [...cards.slice(0, row), band, ...cards.slice(row)];
+  }
+
+  const trimmedQuery = query.trim();
+
   return (
     <div className="cheese-main">
       <div className="cheese-filters">
         <div className="cheese-filter-row">
           <input
             type="search"
-            placeholder="Search cheeses — try “habanero”"
+            placeholder="Search cheeses"
             value={query}
             onChange={(e) => onQuery(e.target.value)}
             aria-label="Search cheeses by name, creamery, family, flavor or add-in"
@@ -261,6 +390,16 @@ export default function CheeseBrowse({
             </select>
           </div>
         </div>
+        {!trimmedQuery && (
+          <div className="search-examples" aria-label="Example searches">
+            <span>Try</span>
+            {EXAMPLES.map((example) => (
+              <button type="button" key={example} onClick={() => onQuery(example)}>
+                {example}
+              </button>
+            ))}
+          </div>
+        )}
         <div className="filter-toggles" hidden={folded}>
           <label>
             <input
@@ -286,56 +425,33 @@ export default function CheeseBrowse({
             />
             My cheeses{heartCount > 0 ? ` (${heartCount})` : ""}
           </label>
-          {narrow && activeFacets > 0 && (
-            <button type="button" className="linkish" onClick={clearEverything}>
-              Clear all
-            </button>
-          )}
         </div>
-        {/* The maker chip stays in view even with the facets folded: it is the
-            one filter a reader did not set here (it arrives from a creamery's
-            panel) and so the one they would otherwise hunt for. */}
-        {makerName && (
-          <div className="active-filters">
-            <button
-              type="button"
-              className="maker-chip"
-              onClick={onClearMaker}
-              aria-label={`Stop filtering to ${makerName}`}
-            >
-              from {makerName}
-              <span className="chip-x" aria-hidden="true">
-                ×
-              </span>
-            </button>
+        {chips.length > 0 && (
+          <div className="active-filters" aria-label="Filters in force">
+            {chips.map((chip) => (
+              <button
+                type="button"
+                key={chip.key}
+                className="filter-chip"
+                onClick={chip.remove}
+                aria-label={chip.aria}
+              >
+                {chip.label}
+                <span className="chip-x" aria-hidden="true">
+                  ×
+                </span>
+              </button>
+            ))}
+            {chips.length > 1 && (
+              <button type="button" className="linkish" onClick={clearEverything}>
+                Clear all
+              </button>
+            )}
           </div>
         )}
       </div>
 
       <div className="cheese-scroll" ref={scroller}>
-        {highlights.length > 0 && (
-          <div className="highlight-row">
-            {highlights.map(({ highlight, cheese }) => (
-              <button
-                type="button"
-                key={`${highlight.cheese_id}-${highlight.starts}`}
-                className={`highlight${highlight.type === "sponsored" ? " sponsored" : ""}`}
-                onClick={() => onOpen(cheese.id)}
-              >
-                <span className="kicker">
-                  {highlight.type === "sponsored"
-                    ? `Sponsored · ${highlight.sponsor}`
-                    : "From the cheese desk"}
-                </span>
-                <span className="hl-label">{highlight.label}</span>
-                <span className="hl-name">
-                  {cheese.name} — {creameriesById.get(cheese.creamery_id)?.name}
-                </span>
-              </button>
-            ))}
-          </div>
-        )}
-
         {mineOnly && recommendations.length > 0 && (
           <section className="rail" aria-label="Cheeses to try next">
             <div className="rail-head">
@@ -375,17 +491,17 @@ export default function CheeseBrowse({
         )}
 
         {!loading && sort === "family" ? (
-          groupByFamily(slice).map((group) => (
+          groupByFamily(slice).map((group, index) => (
             <div key={group.label}>
               <h3 className="county-head">
                 <span>{group.label}</span>
-                <span className="era-count">{group.rows.length}</span>
+                <span className="era-count">{familyTotals.get(group.label)}</span>
               </h3>
-              <div className="cheese-grid">{group.rows.map(renderCard)}</div>
+              <div className="cheese-grid">{withBand(group.rows.map(renderCard), index === 0)}</div>
             </div>
           ))
         ) : !loading ? (
-          <div className="cheese-grid">{slice.map(renderCard)}</div>
+          <div className="cheese-grid">{withBand(slice.map(renderCard), true)}</div>
         ) : null}
 
         {!loading && shown.length === 0 && (
@@ -401,10 +517,42 @@ export default function CheeseBrowse({
                   Browse the catalog
                 </button>
               </>
+            ) : trimmedQuery ? (
+              <>
+                <p className="empty-head">Nothing called “{trimmedQuery}”.</p>
+                {nearMisses.length > 0 && (
+                  <p className="near-misses">
+                    Did you mean{" "}
+                    {nearMisses.map((miss, i) => (
+                      <span key={miss.id}>
+                        {i > 0 ? (i === nearMisses.length - 1 ? " or " : ", ") : ""}
+                        <button type="button" className="linkish" onClick={() => onQuery(miss.name)}>
+                          {miss.name}
+                        </button>
+                      </span>
+                    ))}
+                    ?
+                  </p>
+                )}
+                <p>Try a maker (Hook’s), a flavor (smoky) or a county (Green).</p>
+                <p>
+                  <button type="button" className="linkish" onClick={() => onQuery("")}>
+                    Clear the search
+                  </button>
+                  {chips.length > 0 && (
+                    <>
+                      {" · "}
+                      <button type="button" className="linkish" onClick={clearEverything}>
+                        Clear the filters too
+                      </button>
+                    </>
+                  )}
+                </p>
+              </>
             ) : (
               <>
                 <p>No cheeses match those filters.</p>
-                <button className="linkish" onClick={onClearAll}>
+                <button type="button" className="linkish" onClick={clearEverything}>
                   Clear filters
                 </button>
               </>

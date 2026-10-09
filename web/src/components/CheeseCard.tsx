@@ -25,6 +25,9 @@ interface Props {
   compact?: boolean;
   /** "because you saved X" — only the recommendation rail passes this. */
   because?: string;
+  /** The same name appears more than once in view, so the maker — the one
+   *  fact that differs — carries the weight. */
+  leadMaker?: boolean;
   /** Dev-only draft overlay (photo + maker's blurb pending permission);
    *  absent in production. */
   imageUrl?: string;
@@ -54,6 +57,7 @@ function CheeseCard({
   selected,
   compact,
   because,
+  leadMaker,
   imageUrl,
   blurb,
   onOpen,
@@ -83,7 +87,7 @@ function CheeseCard({
         )}
         <span className="kicker">{familyLabel(cheese.family)}</span>
         <span className="cheese-name">{cheese.name}</span>
-        <span className="cheese-maker">
+        <span className={`cheese-maker${leadMaker ? " is-lead" : ""}`}>
           {creamery?.name ?? cheese.creamery_id}
           {creamery?.county ? ` · ${creamery.county} Co.` : ""}
         </span>

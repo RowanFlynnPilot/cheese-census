@@ -518,6 +518,36 @@ export default function App() {
   ]);
   const cheesesShown = cheeseFiltered.list;
 
+  // When a search finds nothing, the three names nearest the typed text — a
+  // typo'd "habanro" still lands on Habanero Jack. Character-bigram overlap
+  // (Dice) over the folded names, computed only on an empty result.
+  const nearMisses = useMemo(() => {
+    const q = fold(deferredCheeseQuery.trim());
+    if (!q || cheesesShown.length > 0) return [] as { id: string; name: string }[];
+    const grams = (s: string) => {
+      const set = new Set<string>();
+      const padded = ` ${s} `;
+      for (let i = 0; i < padded.length - 1; i++) set.add(padded.slice(i, i + 2));
+      return set;
+    };
+    const qg = grams(q);
+    const seen = new Set<string>();
+    const scored: { id: string; name: string; score: number }[] = [];
+    for (const cheese of activeCheeses) {
+      if (seen.has(cheese.name)) continue;
+      seen.add(cheese.name);
+      const ng = grams(fold(cheese.name));
+      let hits = 0;
+      for (const g of qg) if (ng.has(g)) hits++;
+      const score = (2 * hits) / (qg.size + ng.size);
+      if (score >= 0.3) scored.push({ id: cheese.id, name: cheese.name, score });
+    }
+    return scored
+      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+      .slice(0, 3)
+      .map(({ id, name }) => ({ id, name }));
+  }, [deferredCheeseQuery, cheesesShown.length, activeCheeses]);
+
   // What the reader *asked for*, as one string. The grid scrolls back to the
   // top when this changes — and only then: the result set also changes when a
   // heart is toggled mid-scroll, and that must not bounce the reader around.
@@ -1535,6 +1565,7 @@ export default function App() {
             shown={cheesesShown}
             filterKey={cheeseFilterKey}
             hints={cheeseFiltered.hints}
+            nearMisses={nearMisses}
             creameriesById={creameriesById}
             awardsByCheese={awardsByCheese}
             heartSet={heartSet}

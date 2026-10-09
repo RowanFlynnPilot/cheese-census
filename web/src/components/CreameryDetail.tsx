@@ -90,10 +90,10 @@ export default function CreameryDetail({
       <div className="detail-head">
         <div className="head-actions">
           {position && <span className="pos">{position}</span>}
-          <button className="hbtn" onClick={onPrev} aria-label="Previous creamery" title="Previous (←)">
+          <button className="hbtn step" onClick={onPrev} aria-label="Previous creamery" title="Previous (←)">
             ‹
           </button>
-          <button className="hbtn" onClick={onNext} aria-label="Next creamery" title="Next (→)">
+          <button className="hbtn step" onClick={onNext} aria-label="Next creamery" title="Next (→)">
             ›
           </button>
           <button
@@ -113,7 +113,7 @@ export default function CreameryDetail({
           <span className="sr-only" role="status">
             {copied === "done" ? "Link copied" : copied === "failed" ? "Couldn't copy the link" : ""}
           </span>
-          <button className="hbtn" onClick={onClose} aria-label="Close detail">
+          <button className="hbtn close-x" onClick={onClose} aria-label="Close detail">
             ×
           </button>
         </div>
@@ -319,10 +319,19 @@ export default function CreameryDetail({
       </section>
 
       {/* Phones show the panel as a full-screen sheet; this thumb-sized bar is
-          the way back (the corner × stays for desktop). */}
-      <button className="sheet-back" onClick={onClose}>
-        ← {backLabel}
-      </button>
+          the way back, with the previous/next steps beside it so the header
+          above can scroll away (the corner toolbar stays for desktop). */}
+      <div className="sheet-bar">
+        <button className="sheet-step" onClick={onPrev} aria-label="Previous creamery">
+          ‹
+        </button>
+        <button className="sheet-back" onClick={onClose}>
+          ← {backLabel}
+        </button>
+        <button className="sheet-step" onClick={onNext} aria-label="Next creamery">
+          ›
+        </button>
+      </div>
     </aside>
   );
 }
