@@ -1,4 +1,13 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import {
+  Suspense,
+  lazy,
+  useDeferredValue,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import type { Award, Creamery, Dataset } from "./types";
 import type { DraftMedia } from "./data";
 import {
@@ -29,12 +38,20 @@ import {
   weakestPick,
 } from "./boards";
 import LogoMark from "./components/LogoMark";
-import MapView from "./components/MapView";
 import CreameryDetail from "./components/CreameryDetail";
-import CheeseBrowse, { CHEESE_SORTS, type CheeseSortKey } from "./components/CheeseBrowse";
+import CheeseBrowse, {
+  CHEESE_SORTS,
+  DEFAULT_CHEESE_SORT,
+  type CheeseSortKey,
+} from "./components/CheeseBrowse";
 import CheeseDetail from "./components/CheeseDetail";
 import BoardView from "./components/BoardView";
+import { shareBase } from "./share";
 import type { Cheese } from "./types";
+
+// Leaflet and its stylesheet are a third of the bundle and only the map view
+// needs them: they load the first time that view shows.
+const MapView = lazy(() => import("./components/MapView"));
 
 // Flip to "reviewed" once data/overrides/ has been through editorial review:
 //   VITE_DATA_STATUS=reviewed npm run build
@@ -74,7 +91,7 @@ function initialCheeseSort(): CheeseSortKey {
   const sort = initialParam("csort");
   return (CHEESE_SORTS as readonly string[]).includes(sort)
     ? (sort as CheeseSortKey)
-    : "name";
+    : DEFAULT_CHEESE_SORT;
 }
 
 function initialView(): ViewKey {
@@ -83,7 +100,8 @@ function initialView(): ViewKey {
   if (readHash().includes("--")) return "cheeses";
   const view = initialParam("view");
   if (view === "board") return "board";
-  return view === "cheeses" ? "cheeses" : "map";
+  // "catalog" is what the tab says, so a hand-typed link gets there too.
+  return view === "cheeses" || view === "catalog" ? "cheeses" : "map";
 }
 
 /** True below the phone breakpoint (styles.css: 760px). The masthead count
@@ -96,10 +114,34 @@ function useNarrow(): boolean {
   useEffect(() => {
     const query = window.matchMedia("(max-width: 760px)");
     const onChange = (e: MediaQueryListEvent) => setNarrow(e.matches);
-    query.addEventListener("change", onChange);
-    return () => query.removeEventListener("change", onChange);
+    // iOS 13 has only the deprecated addListener; calling a missing method
+    // would take the whole frame down through the error boundary.
+    if (typeof query.addEventListener === "function") {
+      query.addEventListener("change", onChange);
+      return () => query.removeEventListener("change", onChange);
+    }
+    query.addListener(onChange);
+    return () => query.removeListener(onChange);
   }, []);
   return narrow;
+}
+
+/** Return focus without jolting the page: no ancestor scroll (the embedding
+ *  article included), just the pane's own scroller nudged until the target
+ *  shows. A target that is hidden (the list pane behind a phone's map) yields
+ *  to the fallback instead of dropping focus to the body. */
+function restoreFocus(el: HTMLElement | null, fallback: HTMLElement | null) {
+  const visible =
+    el !== null && el.offsetParent !== null && getComputedStyle(el).visibility !== "hidden";
+  const target = visible ? el : fallback;
+  if (!target) return;
+  target.focus({ preventScroll: true });
+  const scroller = target.closest<HTMLElement>(".list, .cheese-scroll, .board-scroll");
+  if (!scroller) return;
+  const r = target.getBoundingClientRect();
+  const s = scroller.getBoundingClientRect();
+  if (r.top < s.top) scroller.scrollTop -= s.top - r.top;
+  else if (r.bottom > s.bottom) scroller.scrollTop += r.bottom - s.bottom;
 }
 
 /** Consecutive runs of one county — the input is already county-sorted. */
@@ -179,6 +221,13 @@ export default function App() {
 
   const [aboutOpen, setAboutOpen] = useState(false);
   const narrow = useNarrow();
+  // The map (Leaflet, its stylesheet, its tiles) mounts the first time the map
+  // view shows and then stays, so the visibility trick keeps its size. A
+  // catalog or board arrival never fetches a basemap it does not display.
+  const [mapMounted, setMapMounted] = useState(() => view === "map");
+  useEffect(() => {
+    if (view === "map") setMapMounted(true);
+  }, [view]);
   // Captured at first render: the URL-mirror effect below rewrites the URL (hashless
   // while nothing is selected) before the data arrives, so reading location.hash in
   // the data-load effect would find it already stripped.
@@ -312,17 +361,21 @@ export default function App() {
     [familyCounts, activeCheeses],
   );
 
+  // The almanac line counts what the tool browses: a closed creamery and its
+  // cheeses stay in the record (deep links and award rows still resolve) but
+  // the masthead must agree with the "88 of 88" beside it. Awards and master
+  // cheesemakers are history, so those stay whole.
   const stats = useMemo(() => {
     if (!data) return null;
     return {
-      creameries: data.creameries.length,
+      creameries: activeCreameries.length,
       counties: counties.length,
-      plants: data.creameries.reduce((n, c) => n + c.plants.length, 0),
-      cheeses: data.cheeses.length,
+      plants: activeCreameries.reduce((n, c) => n + c.plants.length, 0),
+      cheeses: activeCheeses.length,
       masters: data.people.length,
       awards: data.awards.length,
     };
-  }, [data, counties]);
+  }, [data, activeCreameries, activeCheeses, counties]);
 
   // The census's home question is "who makes X?", so search reaches past names
   // into each creamery's licensed cheese types; hints record when that — and only
@@ -367,11 +420,46 @@ export default function App() {
   }, [data, query, county, retailOnly, awardedOnly, sort, awardCounts]);
   const shown = filtered.list;
 
+  // Search text folds once per cheese, not once per keystroke: ~1,000 records
+  // × eight strings through NFD-normalize is tens of milliseconds on a phone.
+  const searchIndex = useMemo(() => {
+    const index = new Map<
+      string,
+      { identity: string; everything: string; tags: { label: string; folded: string }[] }
+    >();
+    for (const cheese of activeCheeses) {
+      const creamery = creameriesById.get(cheese.creamery_id);
+      const identity = [
+        cheese.name,
+        creamery?.name ?? "",
+        creamery?.city ?? "",
+        ...(creamery?.aka ?? []),
+      ]
+        .map(fold)
+        .join(" ");
+      const tags = [
+        familyLabel(cheese.family),
+        ...cheese.flavor.map(labelize),
+        ...cheese.add_ins.map(labelize),
+      ].map((label) => ({ label, folded: fold(label) }));
+      index.set(cheese.id, {
+        identity,
+        everything: `${identity} ${tags.map((t) => t.folded).join(" ")}`,
+        tags,
+      });
+    }
+    return index;
+  }, [activeCheeses, creameriesById]);
+
+  // Typing stays responsive: the grid follows the deferred value, so a slow
+  // phone skips intermediate renders instead of lagging every keystroke.
+  const deferredCheeseQuery = useDeferredValue(cheeseQuery);
+
   // The cheese search answers the reader question in the other direction —
   // "what is there to eat?" Tokenized, so "klondike feta" spans maker and
   // name; tag-only matches carry a "matched:" hint.
   const cheeseFiltered = useMemo(() => {
-    const tokens = fold(cheeseQuery.trim()).split(/\s+/).filter(Boolean);
+    const tokens = fold(deferredCheeseQuery.trim()).split(/\s+/).filter(Boolean);
     const hints = new Map<string, string>();
     const list = activeCheeses
       .filter((cheese) => {
@@ -383,27 +471,14 @@ export default function App() {
         if (originalsOnly && !cheese.wisconsin_original) return false;
         if (mineOnly && !heartSet.has(cheese.id)) return false;
         if (!tokens.length) return true;
-        const creamery = creameriesById.get(cheese.creamery_id);
-        const identity = [
-          cheese.name,
-          creamery?.name ?? "",
-          creamery?.city ?? "",
-          ...(creamery?.aka ?? []),
-        ]
-          .map(fold)
-          .join(" ");
-        const tagTerms = [
-          familyLabel(cheese.family),
-          ...cheese.flavor.map(labelize),
-          ...cheese.add_ins.map(labelize),
-        ];
-        const everything = `${identity} ${tagTerms.map(fold).join(" ")}`;
-        if (!tokens.every((t) => everything.includes(t))) return false;
-        if (!tokens.every((t) => identity.includes(t))) {
-          const term = tagTerms.find((t) =>
-            tokens.some((token) => fold(t).includes(token)),
+        const entry = searchIndex.get(cheese.id);
+        if (!entry) return false;
+        if (!tokens.every((t) => entry.everything.includes(t))) return false;
+        if (!tokens.every((t) => entry.identity.includes(t))) {
+          const term = entry.tags.find((tag) =>
+            tokens.some((token) => tag.folded.includes(token)),
           );
-          if (term) hints.set(cheese.id, term);
+          if (term) hints.set(cheese.id, term.label);
         }
         return true;
       })
@@ -427,7 +502,8 @@ export default function App() {
     return { list, hints };
   }, [
     activeCheeses,
-    cheeseQuery,
+    deferredCheeseQuery,
+    searchIndex,
     maker,
     family,
     texture,
@@ -446,7 +522,7 @@ export default function App() {
   // top when this changes — and only then: the result set also changes when a
   // heart is toggled mid-scroll, and that must not bounce the reader around.
   const cheeseFilterKey = [
-    cheeseQuery,
+    deferredCheeseQuery,
     family,
     texture,
     milk,
@@ -455,7 +531,7 @@ export default function App() {
     cheeseAwarded,
     originalsOnly,
     mineOnly,
-  ].join(" ");
+  ].join("\u0000");
 
   const catalogCounts = useMemo(() => {
     const counts = new Map<string, number>();
@@ -587,7 +663,7 @@ export default function App() {
     if (board.ids.length) params.set("b", board.ids.join(","));
     // Commas are legal in a query string; the encoded form just reads worse
     // on the printed sheet.
-    return `${location.origin}${location.pathname}?${params.toString().replace(/%2C/g, ",")}`;
+    return `${shareBase()}?${params.toString().replace(/%2C/g, ",")}`;
   }, [board.ids, board.size]);
 
   // A shared link's board loads once the dataset can vouch for its ids; a bare
@@ -765,7 +841,7 @@ export default function App() {
       if (texture) params.set("texture", texture);
       if (milk) params.set("milk", milk);
       if (maker) params.set("maker", maker);
-      if (cheeseSort !== "name") params.set("csort", cheeseSort);
+      if (cheeseSort !== DEFAULT_CHEESE_SORT) params.set("csort", cheeseSort);
       if (cheeseAwarded) params.set("cawards", "1");
       if (originalsOnly) params.set("wo", "1");
       if (mineOnly) params.set("mine", "1");
@@ -787,11 +863,18 @@ export default function App() {
     }
     // Keep board-id commas readable — the address bar is a share surface too.
     const search = params.toString().replace(/%2C/g, ",");
-    history.replaceState(
-      null,
-      "",
-      location.pathname + (search ? `?${search}` : "") + (hash ? `#${hash}` : ""),
-    );
+    const href = location.pathname + (search ? `?${search}` : "") + (hash ? `#${hash}` : "");
+    // Debounced: WebKit refuses more than 100 history writes in 30 seconds,
+    // and one write per keystroke gets there mid-word. The URL is a
+    // convenience, so a refused write is swallowed, never thrown into the
+    // error boundary.
+    const timer = window.setTimeout(() => {
+      try {
+        history.replaceState(null, "", href);
+      } catch {
+        // rate-limited or sandboxed — the state is still the state
+      }
+    }, 250);
     document.title =
       view !== "map" && selectedCheese
         ? `${selectedCheese.name} — The Cheese Census`
@@ -799,7 +882,10 @@ export default function App() {
           ? `${selected.name} — The Cheese Census`
           : view === "board"
             ? "My cheese board — The Cheese Census"
-            : BASE_TITLE;
+            : view === "cheeses"
+              ? "Cheese catalog — The Cheese Census"
+              : BASE_TITLE;
+    return () => window.clearTimeout(timer);
   }, [
     view,
     query,
@@ -838,7 +924,12 @@ export default function App() {
     setSelectedId(null);
     if (id) {
       requestAnimationFrame(() => {
-        document.querySelector<HTMLElement>(`[data-cid="${CSS.escape(id)}"]`)?.focus();
+        // From a pin on a phone the row sits in the hidden list pane; the flip
+        // pill is the nearest visible control.
+        restoreFocus(
+          document.querySelector<HTMLElement>(`[data-cid="${CSS.escape(id)}"]`),
+          document.querySelector<HTMLElement>(".mobile-flip"),
+        );
       });
     }
   }
@@ -851,12 +942,29 @@ export default function App() {
       // Scoped to the active pane: the catalog's hidden card carries the same
       // id and would otherwise win the query and swallow the focus.
       requestAnimationFrame(() => {
-        document
-          .querySelector<HTMLElement>(`${pane} [data-chid="${CSS.escape(id)}"]`)
-          ?.focus();
+        restoreFocus(
+          document.querySelector<HTMLElement>(`${pane} [data-chid="${CSS.escape(id)}"]`),
+          document.querySelector<HTMLElement>(`${pane} input[type="search"], ${pane} button`),
+        );
       });
     }
   }
+
+  // On a phone the detail sheet covers the whole frame, so what it covers must
+  // leave the tab and swipe order too — aria-modal alone does not do that.
+  useEffect(() => {
+    const open = narrow && (view === "map" ? selectedId !== null : selectedCheeseId !== null);
+    const covered = document.querySelectorAll<HTMLElement>(
+      ".skip-links, .masthead, .draftbar, .sidebar, .mobile-flip, .cheese-main, .board-scroll, .colophon",
+    );
+    covered.forEach((el) => {
+      el.inert = open;
+    });
+    return () =>
+      covered.forEach((el) => {
+        el.inert = false;
+      });
+  }, [narrow, view, selectedId, selectedCheeseId]);
 
   /** Walk the filtered list from the detail panel, wrapping at the ends.
    *  A functional update, so rapid repeats compose instead of reading one
@@ -966,17 +1074,21 @@ export default function App() {
     selectedCheeseId,
     view,
   });
-  keys.current = {
-    closeDetail,
-    closeCheeseDetail,
-    step,
-    stepCheese,
-    closeAbout,
-    aboutOpen,
-    selectedId,
-    selectedCheeseId,
-    view,
-  };
+  // Refreshed after every commit (not during render, which the compiler rules
+  // forbid), so the listener below always sees the latest handlers.
+  useLayoutEffect(() => {
+    keys.current = {
+      closeDetail,
+      closeCheeseDetail,
+      step,
+      stepCheese,
+      closeAbout,
+      aboutOpen,
+      selectedId,
+      selectedCheeseId,
+      view,
+    };
+  });
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const k = keys.current;
@@ -1052,9 +1164,9 @@ export default function App() {
   if (error) {
     // Readers see a plain sentence and a way back; the build hint is dev-only.
     return (
-      <div className="empty load-error">
+      <div className="empty load-error" role="alert">
         <p>The Cheese Census didn&apos;t load — the connection may have dropped.</p>
-        <button className="board-action" onClick={() => location.reload()}>
+        <button className="board-action" onClick={() => location.reload()} autoFocus>
           Try again
         </button>
         <p className="load-error-detail">{error}</p>
@@ -1070,13 +1182,15 @@ export default function App() {
   // Newspaper numbers carry their commas.
   const fmt = (n: number) => n.toLocaleString("en-US");
 
+  // Phones drop the noun on every view (the active tab names it), so the count
+  // always shares the title line instead of wrapping under it.
   const countLine = !data
     ? "loading…"
     : view === "cheeses"
       ? `${fmt(cheesesShown.length)} of ${fmt(activeCheeses.length)}${narrow ? "" : " cheeses"}`
       : view === "board"
-        ? `${boardCheeses.length} of ${board.size} on the board`
-        : `${shown.length} of ${activeCreameries.length} creameries`;
+        ? `${boardCheeses.length} of ${board.size}${narrow ? " picked" : " on the board"}`
+        : `${shown.length} of ${activeCreameries.length}${narrow ? "" : " creameries"}`;
 
   // One panel, placed in whichever pane is active — two mounted copies would
   // fight over focus and duplicate the aria ids.
@@ -1117,8 +1231,23 @@ export default function App() {
       />
     ) : null;
 
+  /** Skip links move focus instead of changing the hash — the hash is a
+   *  record's address here, and `#main` would be a share link to nowhere. */
+  const skipTo = (selector: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    document.querySelector<HTMLElement>(selector)?.focus({ preventScroll: true });
+  };
+
   return (
     <div className="app" data-view={view}>
+      <div className="skip-links">
+        <a className="skip-link" href="#main" onClick={skipTo("#main")}>
+          Skip to the {view === "map" ? "creamery list" : view === "cheeses" ? "cheese catalog" : "cheese board"}
+        </a>
+        <a className="skip-link" href="#colophon" onClick={skipTo("#colophon")}>
+          Skip to about and sources
+        </a>
+      </div>
       <header className="masthead">
         <div className="mast-top">
           <svg className="mark" viewBox="0 0 24 24" aria-hidden="true">
@@ -1143,58 +1272,76 @@ export default function App() {
           </span>
         </div>
 
-        {stats && (
-          <div className="stats-line">
-            <span>
-              <b>{stats.creameries}</b> creameries
-            </span>
-            <span>
-              <b>{stats.counties}</b> counties
-            </span>
-            <span>
-              <b>{stats.plants}</b> licensed plants
-            </span>
-            {stats.cheeses > 0 && (
+        {/* Always in the flow (empty until the tables land) so the tabs and the
+            list do not jump down when the figures arrive. */}
+        <div className="stats-line">
+          {stats && (
+            <>
               <span>
-                <b>{stats.cheeses.toLocaleString("en-US")}</b> cheeses
+                <b>{stats.creameries}</b> creameries
               </span>
-            )}
-            <span>
-              <b>{stats.masters}</b> master cheesemakers
-            </span>
-            <span>
-              <b>{stats.awards}</b> contest awards
-            </span>
-          </div>
-        )}
+              <span>
+                <b>{stats.counties}</b> counties
+              </span>
+              <span>
+                <b>{stats.plants}</b> licensed plants
+              </span>
+              {stats.cheeses > 0 && (
+                <span>
+                  <b>{stats.cheeses.toLocaleString("en-US")}</b> cheeses
+                </span>
+              )}
+              <span>
+                <b>{stats.masters}</b> master cheesemakers
+              </span>
+              <span>
+                <b>{stats.awards}</b> contest awards
+              </span>
+            </>
+          )}
+        </div>
 
+        {/* Real links: each view has an address, so right-click "copy link"
+            and middle-click work; a plain click stays in the page. */}
         <nav className="mast-tabs" aria-label="Census views">
           {/* Phones get the short names so all three tabs share one row. */}
-          <button
+          <a
             className="mode"
+            href="?view=map"
             aria-current={view === "map" ? "page" : undefined}
-            onClick={() => setView("map")}
+            onClick={(e) => {
+              e.preventDefault();
+              setView("map");
+            }}
             aria-label="Creamery Map"
           >
             {narrow ? "Map" : "Creamery Map"}
-          </button>
-          <button
+          </a>
+          <a
             className="mode"
+            href="?view=cheeses"
             aria-current={view === "cheeses" ? "page" : undefined}
-            onClick={() => setView("cheeses")}
+            onClick={(e) => {
+              e.preventDefault();
+              setView("cheeses");
+            }}
             aria-label="Cheese Catalog"
           >
             {narrow ? "Catalog" : "Cheese Catalog"}
-          </button>
-          <button
+          </a>
+          <a
             className="mode"
+            href="?view=board"
             aria-current={view === "board" ? "page" : undefined}
-            onClick={() => setView("board")}
+            onClick={(e) => {
+              e.preventDefault();
+              setView("board");
+            }}
             aria-label={`Cheese Board${board.ids.length ? `, ${board.ids.length} picks` : ""}`}
           >
             {narrow ? "Board" : "Cheese Board"}
             {board.ids.length > 0 && <span className="tab-count">{board.ids.length}</span>}
-          </button>
+          </a>
           {hearts.length > 0 && (
             <button
               className="mode-hearts"
@@ -1225,16 +1372,21 @@ export default function App() {
         </div>
       )}
 
-      <div className="viewport">
+      <main className="viewport" id="main" tabIndex={-1}>
         <div className={`layout${view === "map" ? "" : " view-off"}`}>
+          <h2 className="sr-only">Creamery map</h2>
           <div className={`sidebar${mobilePane === "map" ? " pane-off" : ""}`}>
             <div className="filters">
               <input
                 type="search"
-                placeholder="Search names, cities, or a cheese — try “limburger”"
+                placeholder="Search creameries — try “limburger”"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 aria-label="Search creameries by name, city, county or cheese type"
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
+                enterKeyHint="search"
               />
               <div className="filter-row">
                 <select
@@ -1291,10 +1443,10 @@ export default function App() {
               {sort === "county"
                 ? groupByCounty(shown).map((group) => (
                     <div key={group.label}>
-                      <div className="county-head">
+                      <h3 className="county-head">
                         <span>{group.label}</span>
                         <span className="era-count">{group.rows.length}</span>
-                      </div>
+                      </h3>
                       {group.rows.map(renderRow)}
                     </div>
                   ))
@@ -1311,13 +1463,17 @@ export default function App() {
           </div>
 
           <div className={`map-pane${mobilePane === "list" ? " pane-off" : ""}`}>
-            <MapView
-              creameries={shown}
-              selectedId={selectedId}
-              onSelect={setSelectedId}
-              tooltips={mapTips}
-            />
-            <div className="legend" aria-hidden="true">
+            {mapMounted && (
+              <Suspense fallback={null}>
+                <MapView
+                  creameries={shown}
+                  selectedId={selectedId}
+                  onSelect={setSelectedId}
+                  tooltips={mapTips}
+                />
+              </Suspense>
+            )}
+            <div className="legend">
               <span>
                 <i className="marker" style={{ width: 10, height: 10 }} /> Creamery
               </span>
@@ -1372,8 +1528,10 @@ export default function App() {
         </div>
 
         <div className={`cheese-pane${view === "cheeses" ? "" : " view-off"}`}>
+          <h2 className="sr-only">Cheese catalog</h2>
           <CheeseBrowse
             loading={!data}
+            narrow={narrow}
             shown={cheesesShown}
             filterKey={cheeseFilterKey}
             hints={cheeseFiltered.hints}
@@ -1446,9 +1604,9 @@ export default function App() {
           />
           {view === "board" && cheeseDetailNode}
         </div>
-      </div>
+      </main>
 
-      <footer className="colophon">
+      <footer className="colophon" id="colophon" tabIndex={-1}>
         <span>The Cheese Census — Wausau Pilot &amp; Review</span>
         <span className="sources">
           Plant data: Wisconsin DATCP · Consumer listings: Dairy Farmers of Wisconsin ·
@@ -1490,6 +1648,7 @@ export default function App() {
                 rel="noopener noreferrer"
               >
                 Wausau Pilot &amp; Review
+                <span className="sr-only"> (opens in a new tab)</span>
               </a>
               .
             </p>
@@ -1545,8 +1704,8 @@ export default function App() {
               directory carries a provisional-data notice and details may change.
             </p>
             <p className="aka">
-              Spot an error? Corrections are welcome via the Wausau Pilot &amp; Review
-              newsroom.
+              Spot an error? Corrections are welcome at{" "}
+              <a href="mailto:editor@wausaupilotandreview.com">editor@wausaupilotandreview.com</a>.
             </p>
           </div>
         </div>

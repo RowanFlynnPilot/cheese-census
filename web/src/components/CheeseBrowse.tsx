@@ -11,9 +11,16 @@ import CheeseCard from "./CheeseCard";
 
 export const CHEESE_SORTS = ["name", "creamery", "awards", "family"] as const;
 export type CheeseSortKey = (typeof CHEESE_SORTS)[number];
+// The catalog opens on the state's contest winners, not on "1 Year Aged…" —
+// A–Z is a phone book; most-awarded is the newspaper's first page. Ties fall
+// back to A–Z, so the tail of the list reads exactly as it used to.
+export const DEFAULT_CHEESE_SORT: CheeseSortKey = "awards";
 
 interface Props {
   loading: boolean;
+  /** Below the phone breakpoint the facets fold behind one "Filters & sort"
+   *  button, so the first screen shows cheese instead of a wall of controls. */
+  narrow: boolean;
   shown: Cheese[];
   /** The filter inputs, folded to one string. A change means the reader asked a
    *  new question, so the grid restarts at the top; `shown` alone also changes
@@ -74,6 +81,7 @@ function groupByFamily(rows: Cheese[]): { label: string; rows: Cheese[] }[] {
 
 export default function CheeseBrowse({
   loading,
+  narrow,
   shown,
   filterKey,
   hints,
@@ -116,6 +124,21 @@ export default function CheeseBrowse({
   const sentinel = useRef<HTMLDivElement>(null);
   const hasMore = visible < shown.length;
 
+  // Phones: the facets start folded; the button carries how many are set so a
+  // narrowed list never reads as "the census is small". Desktop ignores this.
+  const [facetsOpen, setFacetsOpen] = useState(false);
+  const folded = narrow && !facetsOpen;
+  const activeFacets =
+    [family, texture, milk].filter(Boolean).length +
+    [awardedOnly, originalsOnly, mineOnly].filter(Boolean).length +
+    (sort !== DEFAULT_CHEESE_SORT ? 1 : 0);
+
+  function clearEverything() {
+    onClearAll();
+    onMineOnly(false);
+    onSort(DEFAULT_CHEESE_SORT);
+  }
+
   // A new question starts the reader back at the top of its answer.
   useEffect(() => {
     setVisible(PAGE);
@@ -125,11 +148,14 @@ export default function CheeseBrowse({
   useEffect(() => {
     const node = sentinel.current;
     if (!node) return;
+    // The grid scrolls inside .cheese-scroll, so the observer must watch that
+    // box: against the viewport, clipping defeated the margin and the next
+    // page only mounted once the sentinel was already on screen.
     const io = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) setVisible((v) => v + PAGE);
       },
-      { rootMargin: "600px" },
+      { root: scroller.current, rootMargin: "600px" },
     );
     io.observe(node);
     return () => io.disconnect();
@@ -150,8 +176,8 @@ export default function CheeseBrowse({
         selected={cheese.id === selectedId}
         imageUrl={media?.image}
         blurb={media?.summary ?? undefined}
-        onOpen={() => onOpen(cheese.id)}
-        onToggleHeart={() => onToggleHeart(cheese.id)}
+        onOpen={onOpen}
+        onToggleHeart={onToggleHeart}
       />
     );
   }
@@ -162,59 +188,80 @@ export default function CheeseBrowse({
         <div className="cheese-filter-row">
           <input
             type="search"
-            placeholder="Search cheeses, creameries, or a flavor — try “habanero”"
+            placeholder="Search cheeses — try “habanero”"
             value={query}
             onChange={(e) => onQuery(e.target.value)}
             aria-label="Search cheeses by name, creamery, family, flavor or add-in"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            enterKeyHint="search"
           />
-          <select
-            value={family}
-            onChange={(e) => onFamily(e.target.value)}
-            aria-label="Filter by cheese family"
-          >
-            <option value="">All families</option>
-            {vocab.families.map((f) => (
-              <option key={f} value={f}>
-                {familyLabel(f)} ({familyCounts.get(f)})
-              </option>
-            ))}
-          </select>
-          <select
-            value={texture}
-            onChange={(e) => onTexture(e.target.value)}
-            aria-label="Filter by texture"
-          >
-            <option value="">Any texture</option>
-            {vocab.textures.map((t) => (
-              <option key={t} value={t}>
-                {TEXTURE_LABEL[t] ?? t} ({textureCounts.get(t)})
-              </option>
-            ))}
-          </select>
-          <select
-            value={milk}
-            onChange={(e) => onMilk(e.target.value)}
-            aria-label="Filter by milk"
-          >
-            <option value="">Any milk</option>
-            {vocab.milks.map((m) => (
-              <option key={m} value={m}>
-                {MILK_LABEL[m] ?? m} ({milkCounts.get(m)})
-              </option>
-            ))}
-          </select>
-          <select
-            value={sort}
-            onChange={(e) => onSort(e.target.value as CheeseSortKey)}
-            aria-label="Sort cheeses"
-          >
-            <option value="name">Sort: A–Z</option>
-            <option value="creamery">Sort: Creamery</option>
-            <option value="awards">Sort: Most awarded</option>
-            <option value="family">Sort: Family</option>
-          </select>
+          {narrow && (
+            <button
+              type="button"
+              className={`facets-toggle${activeFacets ? " is-active" : ""}`}
+              aria-expanded={facetsOpen}
+              aria-controls="catalog-facets"
+              onClick={() => setFacetsOpen((o) => !o)}
+            >
+              Filters &amp; sort
+              {activeFacets > 0 && <span className="facets-count">{activeFacets}</span>}
+              <svg className="chev" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2.4" />
+              </svg>
+            </button>
+          )}
+          <div className="cheese-facets" id="catalog-facets" hidden={folded}>
+            <select
+              value={family}
+              onChange={(e) => onFamily(e.target.value)}
+              aria-label="Filter by cheese family"
+            >
+              <option value="">All families</option>
+              {vocab.families.map((f) => (
+                <option key={f} value={f}>
+                  {familyLabel(f)} ({familyCounts.get(f)})
+                </option>
+              ))}
+            </select>
+            <select
+              value={texture}
+              onChange={(e) => onTexture(e.target.value)}
+              aria-label="Filter by texture"
+            >
+              <option value="">Any texture</option>
+              {vocab.textures.map((t) => (
+                <option key={t} value={t}>
+                  {TEXTURE_LABEL[t] ?? t} ({textureCounts.get(t)})
+                </option>
+              ))}
+            </select>
+            <select
+              value={milk}
+              onChange={(e) => onMilk(e.target.value)}
+              aria-label="Filter by milk"
+            >
+              <option value="">Any milk</option>
+              {vocab.milks.map((m) => (
+                <option key={m} value={m}>
+                  {MILK_LABEL[m] ?? m} ({milkCounts.get(m)})
+                </option>
+              ))}
+            </select>
+            <select
+              value={sort}
+              onChange={(e) => onSort(e.target.value as CheeseSortKey)}
+              aria-label="Sort cheeses"
+            >
+              <option value="awards">Sort: Most awarded</option>
+              <option value="name">Sort: A–Z</option>
+              <option value="creamery">Sort: Creamery</option>
+              <option value="family">Sort: Family</option>
+            </select>
+          </div>
         </div>
-        <div className="filter-toggles">
+        <div className="filter-toggles" hidden={folded}>
           <label>
             <input
               type="checkbox"
@@ -223,13 +270,13 @@ export default function CheeseBrowse({
             />
             Award winners
           </label>
-          <label title="Cheeses invented in Wisconsin">
+          <label>
             <input
               type="checkbox"
               checked={originalsOnly}
               onChange={(e) => onOriginalsOnly(e.target.checked)}
             />
-            Wisconsin originals
+            Wisconsin originals <span className="hint">(invented here)</span>
           </label>
           <label>
             <input
@@ -239,19 +286,30 @@ export default function CheeseBrowse({
             />
             My cheeses{heartCount > 0 ? ` (${heartCount})` : ""}
           </label>
-          {makerName && (
-            <span className="maker-chip">
-              from {makerName}
-              <button
-                type="button"
-                onClick={onClearMaker}
-                aria-label={`Stop filtering to ${makerName}`}
-              >
-                ×
-              </button>
-            </span>
+          {narrow && activeFacets > 0 && (
+            <button type="button" className="linkish" onClick={clearEverything}>
+              Clear all
+            </button>
           )}
         </div>
+        {/* The maker chip stays in view even with the facets folded: it is the
+            one filter a reader did not set here (it arrives from a creamery's
+            panel) and so the one they would otherwise hunt for. */}
+        {makerName && (
+          <div className="active-filters">
+            <button
+              type="button"
+              className="maker-chip"
+              onClick={onClearMaker}
+              aria-label={`Stop filtering to ${makerName}`}
+            >
+              from {makerName}
+              <span className="chip-x" aria-hidden="true">
+                ×
+              </span>
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="cheese-scroll" ref={scroller}>
@@ -296,8 +354,8 @@ export default function CheeseBrowse({
                     compact
                     because={because.name}
                     imageUrl={images?.get(cheese.id)?.image}
-                    onOpen={() => onOpen(cheese.id)}
-                    onToggleHeart={() => onToggleHeart(cheese.id)}
+                    onOpen={onOpen}
+                    onToggleHeart={onToggleHeart}
                   />
                 </div>
               ))}
@@ -319,10 +377,10 @@ export default function CheeseBrowse({
         {!loading && sort === "family" ? (
           groupByFamily(slice).map((group) => (
             <div key={group.label}>
-              <div className="county-head">
+              <h3 className="county-head">
                 <span>{group.label}</span>
                 <span className="era-count">{group.rows.length}</span>
-              </div>
+              </h3>
               <div className="cheese-grid">{group.rows.map(renderCard)}</div>
             </div>
           ))

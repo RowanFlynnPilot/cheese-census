@@ -1,6 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 import type { Creamery } from "../types";
+import wisconsin from "../wisconsin.json";
 
 // Wisconsin, comfortably framed.
 const CENTER: L.LatLngTuple = [44.6, -89.8];
@@ -14,6 +16,18 @@ const WISCONSIN = L.latLngBounds([42.3, -93.1], [47.4, -86.1]);
 // Keep in step with `.detail { width: min(420px, 100%) }` in styles.css.
 const DETAIL_WIDTH = 420;
 const MIN_VISIBLE_MAP = 140;
+
+// The pin stays a 12 px dot (18 selected); its hit box is what a thumb needs.
+const COARSE = window.matchMedia("(pointer: coarse)").matches;
+const HIT = COARSE ? 40 : 28;
+// Reduced motion covers Leaflet's own zoom, fade and pan animations too.
+const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Inside an article (the WordPress iframe) on a phone, a one-finger swipe on
+// the map must scroll the article, not pan the map — a full-height map pane
+// would otherwise trap the page. So the map starts un-draggable there and arms
+// on the reader's first tap; pinch-zoom works throughout. Standalone, the page
+// has nothing else to scroll, so dragging is on from the start.
+const COOPERATIVE = COARSE && window.self !== window.top;
 
 interface Props {
   creameries: Creamery[];
@@ -33,6 +47,7 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
   select.current = onSelect;
   const selection = useRef(selectedId);
   selection.current = selectedId;
+  const [armed, setArmed] = useState(!COOPERATIVE);
 
   /** One source of truth for pin appearance: retail stores read as a donut,
    *  the selected creamery as a larger gold pin. Classes live in styles.css
@@ -44,9 +59,9 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
     if (selected) classes.push("is-selected");
     return L.divIcon({
       className: "",
-      html: `<div class="${classes.join(" ")}" style="width:${size}px;height:${size}px"></div>`,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
+      html: `<div class="marker-hit"><div class="${classes.join(" ")}" style="width:${size}px;height:${size}px"></div></div>`,
+      iconSize: [HIT, HIT],
+      iconAnchor: [HIT / 2, HIT / 2],
     });
   }
 
@@ -72,6 +87,10 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       zoom: ZOOM,
       maxZoom: 16, // the basemap's native ceiling — past it lies grey void
       scrollWheelZoom: false, // an embedded iframe must not hijack page scroll
+      dragging: !COOPERATIVE,
+      zoomAnimation: MOTION,
+      fadeAnimation: MOTION,
+      markerZoomAnimation: MOTION,
       // fitBounds snaps to whole zoom levels by default, and Wisconsin misses
       // fitting at 7 by a hair — so the overview collapsed to a whole-Midwest 6.
       // Half-steps let the fit land where the state actually is.
@@ -88,6 +107,20 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
         maxZoom: 16,
       },
     ).addTo(map.current);
+    // The state's own outline under the pins, so the census reads as a map
+    // *of Wisconsin* and not pins adrift on a grey canvas. U.S. Census Bureau
+    // 2010 cartographic boundary file (1:5,000,000, public domain), simplified
+    // to 0.003° and bundled as web/src/wisconsin.json — no fetch, no failure path.
+    L.geoJSON(wisconsin as GeoJSON.Feature, {
+      interactive: false,
+      style: {
+        color: "#3a867c",
+        weight: 1.5,
+        opacity: 0.85,
+        fillColor: "#3a867c",
+        fillOpacity: 0.04,
+      },
+    }).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
     // Leaflet only watches window resizes; the container itself changes size
     // too (mobile pane flips, embed reflows, orientation changes). Re-measure,
@@ -119,6 +152,9 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       const marker = L.marker([creamery.lat, creamery.lng], {
         title: creamery.name,
         icon: icon(creamery.id, creamery.id === selection.current),
+        // The list beside the map is the keyboard path to every creamery;
+        // 88 focusable pins would be 88 extra Tab stops on the way to it.
+        keyboard: false,
       })
         .bindTooltip(
           tooltips.get(creamery.id) ?? `${creamery.name} — ${creamery.city}`,
@@ -162,10 +198,35 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
                 zoom,
               )
             : marker.getLatLng();
-        map.current.panTo(centre, { animate: true });
+        map.current.panTo(centre, { animate: MOTION });
       }
     }
   }, [selectedId]);
 
-  return <div className="map" ref={host} role="application" aria-label="Map of Wisconsin creameries" />;
+  /** The first tap on an embedded phone map arms dragging (this tap itself
+   *  still lands on whatever it touched — a pin opens as usual). */
+  function arm() {
+    if (armed || !map.current) return;
+    map.current.dragging.enable();
+    setArmed(true);
+  }
+
+  return (
+    <div
+      className="map-wrap"
+      role="region"
+      aria-label="Map of Wisconsin creameries"
+      onPointerDown={arm}
+    >
+      <p className="sr-only">
+        Pins are not keyboard stops; the list beside the map has every creamery.
+      </p>
+      <div className="map" ref={host} />
+      {!armed && (
+        <p className="map-hint" aria-hidden="true">
+          Tap the map to move it
+        </p>
+      )}
+    </div>
+  );
 }

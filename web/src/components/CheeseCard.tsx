@@ -1,3 +1,4 @@
+import { memo } from "react";
 import type { Award, Cheese, Creamery } from "../types";
 import {
   MILK_LABEL,
@@ -28,8 +29,10 @@ interface Props {
    *  absent in production. */
   imageUrl?: string;
   blurb?: string;
-  onOpen: () => void;
-  onToggleHeart: () => void;
+  /** Id-based and stable, so a memoized card only re-renders when its own
+   *  props change — not on every keystroke in the search box. */
+  onOpen: (id: string) => void;
+  onToggleHeart: (id: string) => void;
 }
 
 const TAG_LIMIT = 3;
@@ -42,7 +45,7 @@ const ROSETTE = (
   </>
 );
 
-export default function CheeseCard({
+function CheeseCard({
   cheese,
   creamery,
   awards,
@@ -69,7 +72,7 @@ export default function CheeseCard({
         className="card-open"
         data-chid={cheese.id}
         aria-current={selected || undefined}
-        onClick={onOpen}
+        onClick={() => onOpen(cheese.id)}
       >
         {imageUrl && (
           <DraftPhoto
@@ -155,9 +158,11 @@ export default function CheeseCard({
       <HeartButton
         hearted={hearted}
         name={cheese.name}
-        onToggle={onToggleHeart}
+        onToggle={() => onToggleHeart(cheese.id)}
         className="card-heart"
       />
     </div>
   );
 }
+
+export default memo(CheeseCard);

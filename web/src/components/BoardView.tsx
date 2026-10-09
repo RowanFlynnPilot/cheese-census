@@ -24,6 +24,7 @@ import {
 } from "../boards";
 import DraftPhoto from "./DraftPhoto";
 import FlavorIcon from "./FlavorIcon";
+import { hasShareSheet, shareLink } from "../share";
 
 // The paper's published submission address (news tips and reader content).
 const NEWSROOM = "editor@wausaupilotandreview.com";
@@ -119,12 +120,14 @@ export default function BoardView({
     const target = focusAfter.current;
     if (!target) return;
     focusAfter.current = null;
+    // preventScroll: a plain focus() scrolls every ancestor, the embedding
+    // article included, to reveal the element.
     if (target.kind === "slot") {
       tray.current
         ?.querySelector<HTMLElement>(`[data-chid="${CSS.escape(target.id)}"]`)
-        ?.focus();
+        ?.focus({ preventScroll: true });
     } else {
-      tray.current?.focus();
+      tray.current?.focus({ preventScroll: true });
     }
   }, [picks]);
 
@@ -156,16 +159,16 @@ export default function BoardView({
     else onSetSize(n);
   }
 
+  // The phone's share sheet where there is one (the board goes straight into a
+  // text or an email), the clipboard otherwise; a denied clipboard (in-app
+  // browsers, permissions) shows the link itself to select by hand.
   async function copyLink() {
-    try {
-      await navigator.clipboard.writeText(shareUrl);
-      setCopied("done");
-      window.setTimeout(() => setCopied("idle"), 1600);
-    } catch {
-      // Clipboard denied (in-app browsers, permissions): show the link itself.
-      setCopied("failed");
-    }
+    const result = await shareLink(shareUrl, "My Wisconsin cheese board — The Cheese Census");
+    if (result === "shared" || result === "dismissed") return;
+    setCopied(result === "copied" ? "done" : "failed");
+    if (result === "copied") window.setTimeout(() => setCopied("idle"), 1600);
   }
+  const sheet = hasShareSheet();
 
   // Submissions go through the newsroom — the reader's own mail client, their
   // board's link prefilled, and the publication grant spelled out. Curation
@@ -631,8 +634,17 @@ export default function BoardView({
                   ? "Copied ✓"
                   : copied === "failed"
                     ? "Couldn't copy — select the link above"
-                    : "Copy board link"}
+                    : sheet
+                      ? "Share this board"
+                      : "Copy board link"}
               </button>
+              <span className="sr-only" role="status">
+                {copied === "done"
+                  ? "Board link copied"
+                  : copied === "failed"
+                    ? "Couldn't copy — the link is shown above the buttons"
+                    : ""}
+              </span>
               <button className="board-action quiet" onClick={() => window.print()}>
                 Print the list
               </button>

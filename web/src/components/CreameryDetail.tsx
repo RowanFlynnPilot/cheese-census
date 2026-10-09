@@ -9,6 +9,7 @@ import {
   isCapability,
   safeHref,
 } from "../data";
+import { currentShareUrl, hasShareSheet, shareLink } from "../share";
 import LogoMark from "./LogoMark";
 
 // Chips beyond this fold behind the "browse all" link to the catalog view —
@@ -52,28 +53,26 @@ export default function CreameryDetail({
   onBrowseCheeses,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<"idle" | "done" | "failed">("idle");
 
   // Move focus into the panel so Esc and screen readers land where the reader is
   // looking; App returns focus to the list row on close.
   useEffect(() => {
     panel.current?.focus({ preventScroll: true });
     panel.current?.scrollTo(0, 0);
-    setCopied(false);
+    setCopied("idle");
   }, [creamery.id]);
 
   // The URL-mirror effect keeps the address bar carrying this creamery's deep
-  // link, so sharing is just copying the current URL.
+  // link, so sharing is handing on the current URL: the phone's share sheet
+  // where there is one, the clipboard otherwise.
   async function copyLink() {
-    try {
-      await navigator.clipboard.writeText(location.href);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1600);
-    } catch {
-      // Clipboard unavailable (permissions, insecure context) — the address bar
-      // still carries the same link.
-    }
+    const result = await shareLink(currentShareUrl(), `${creamery.name} — The Cheese Census`);
+    if (result === "shared" || result === "dismissed") return;
+    setCopied(result === "copied" ? "done" : "failed");
+    window.setTimeout(() => setCopied("idle"), 1800);
   }
+  const sheet = hasShareSheet();
 
   const operations = cheeseOperations(creamery);
   const abilities = capabilities(creamery);
@@ -86,7 +85,7 @@ export default function CreameryDetail({
       className="detail"
       ref={panel}
       tabIndex={-1}
-      aria-labelledby="detail-title"
+      aria-labelledby="creamery-title"
     >
       <div className="detail-head">
         <div className="head-actions">
@@ -100,17 +99,27 @@ export default function CreameryDetail({
           <button
             className="hbtn copy"
             onClick={copyLink}
-            aria-label="Copy a link to this creamery"
+            aria-label={sheet ? "Share a link to this creamery" : "Copy a link to this creamery"}
           >
-            {copied ? "Copied ✓" : "Copy link"}
+            {copied === "done"
+              ? "Copied ✓"
+              : copied === "failed"
+                ? "Couldn't copy"
+                : sheet
+                  ? "Share"
+                  : "Copy link"}
           </button>
+          {/* A button's changing label is not announced; this is. */}
+          <span className="sr-only" role="status">
+            {copied === "done" ? "Link copied" : copied === "failed" ? "Couldn't copy the link" : ""}
+          </span>
           <button className="hbtn" onClick={onClose} aria-label="Close detail">
             ×
           </button>
         </div>
         <div className="title-row">
           {logoUrl && <LogoMark src={logoUrl} className="creamery-logo" />}
-          <h2 id="detail-title">{creamery.name}</h2>
+          <h2 id="creamery-title">{creamery.name}</h2>
         </div>
         <div className="where">
           {creamery.city}
@@ -152,6 +161,7 @@ export default function CreameryDetail({
           <p>
             <a href={website} target="_blank" rel="noopener noreferrer">
               {website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </p>
         )}
@@ -200,6 +210,7 @@ export default function CreameryDetail({
               </button>
             ))}
           </div>
+          <p className="aka chip-hint">Tap a type to see every creamery licensed to make it.</p>
         </section>
       )}
 
@@ -258,7 +269,10 @@ export default function CreameryDetail({
                     </span>
                   </span>
                   {award.score !== null && (
-                    <span className="score">{award.score.toFixed(3)}</span>
+                    <span className="score">
+                      <span className="sr-only">score </span>
+                      {award.score.toFixed(3)}
+                    </span>
                   )}
                 </div>
               ))}
@@ -271,7 +285,7 @@ export default function CreameryDetail({
         <h3>Licensed plants ({creamery.plants.length})</h3>
         {creamery.plants.map((plant) => (
           <div className="plant" key={plant.datcp_id}>
-            <div className="id">{plant.datcp_id}</div>
+            <div className="id">Licence {plant.datcp_id}</div>
             <div className="addr">
               {plant.address}, {plant.city} · {plant.county} County
             </div>

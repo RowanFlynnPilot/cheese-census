@@ -1,6 +1,6 @@
 // Copy the committed build/ tables into public/data/ so Vite serves them.
 // public/data/ is gitignored: build/ stays the single source of truth.
-import { cp, mkdir, readdir, rm } from "node:fs/promises";
+import { cp, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -37,8 +37,12 @@ if (missing.length) {
 }
 
 await mkdir(target, { recursive: true });
+// build/ is pretty-printed for diffs (and stays byte-identical, the deploy
+// gate checks); the served copy is compacted — cheeses.json drops from 1.26 MB
+// to 0.86 MB raw, which is what a phone has to decode and JSON.parse.
 for (const table of TABLES) {
-  await cp(join(source, `${table}.json`), join(target, `${table}.json`));
+  const text = await readFile(join(source, `${table}.json`), "utf8");
+  await writeFile(join(target, `${table}.json`), JSON.stringify(JSON.parse(text)));
 }
 
 if (draft) {

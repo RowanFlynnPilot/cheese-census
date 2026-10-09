@@ -203,7 +203,7 @@ Creamery-map parameters:
 | `?store=1` | Retail-store filter on | |
 | `?awards=1` | Award-winners filter on | |
 | `?sort=` | `awards` or `county` (default name) | `?sort=awards` |
-| `#creamery-id` | Opens that creamery's detail panel | `#hooks-cheese-company-inc` |
+| `#creamery-id` | Opens that creamery's detail panel | `#hook-s-cheese-company-inc` |
 
 Cheese-catalog parameters (all under `?view=cheeses`):
 
@@ -212,7 +212,7 @@ Cheese-catalog parameters (all under `?view=cheeses`):
 | `?cq=` | Search text | `?cq=habanero` |
 | `?family=` / `?texture=` / `?milk=` | Facet filters (vocabulary terms) | `?family=colby_jack` |
 | `?maker=` | One creamery's cheeses | `?maker=cedar-valley-cheese-inc` |
-| `?csort=` | `creamery`, `awards` or `family` (default name) | `?csort=awards` |
+| `?csort=` | `name`, `creamery` or `family` (default `awards` — contest winners first, then A–Z) | `?csort=name` |
 | `?cawards=1` / `?wo=1` / `?mine=1` | Award winners / Wisconsin originals / saved only | |
 | `#creamery--cheese` | Opens that cheese's detail panel | `#klondike-cheese-company--feta` |
 
@@ -255,11 +255,51 @@ BASE_PATH=/ npm run build
 ```
 
 The page is designed to fill its container, so the embedding WordPress iframe must
-be given a height — it does not self-size. Map tiles come from Esri's keyless
+be given a height — it does not self-size. (A child-side `ResizeObserver` →
+`postMessage` broadcaster is the standard pattern if a content-height embed is
+ever wanted; it is not built because every view here is a viewport-height
+layout with its own scroller.) Map tiles come from Esri's keyless
 World Light Gray canvas (CARTO's free basemaps started watermarking "API KEY
 REQUIRED" across every tile in mid-2026, which is why they left); fonts from
 Google Fonts. Both are third-party requests from inside the iframe. The Esri
 canvas tops out at zoom 16 and the map is capped to match.
+
+### The embed iframe
+
+Three things the WordPress embed must carry, or features that work on the
+standalone page go quiet inside the article:
+
+```html
+<iframe
+  src="https://rowanflynnpilot.github.io/cheese-census/"
+  title="The Cheese Census"
+  allow="web-share; clipboard-write"
+  style="width: 100%; height: 760px; border: 0"
+></iframe>
+```
+
+- `allow="web-share; clipboard-write"` — Chromium gates both the share sheet
+  and the clipboard behind Permissions Policy, default allowlist `self`; a
+  cross-origin frame without it gets `NotAllowedError` on every Share / Copy
+  link tap. The buttons already fall back to showing the link itself, but
+  the tap should just work.
+- A share link should open the *article*, not the bare inner frame. Build
+  with `VITE_SHARE_BASE=https://www.wausaupilotandreview.com/<article>/`
+  (the page that holds the iframe) and have that page forward its own
+  `location.search` and `location.hash` into the iframe `src` — the census
+  reads `?view=…`, `?b=…`, `#record` from its own URL as today. Without the
+  variable, share links point at the page the app is served from.
+- On phones inside an article the map starts un-draggable (a one-finger
+  swipe scrolls the article, not the map); the first tap on the map arms
+  dragging and a "Tap the map to move it" label goes with it. Pinch-zoom works
+  throughout. The standalone page has nothing else to scroll, so there the map
+  drags from the start. (`MapView.tsx`, `COOPERATIVE`.)
+
+Browser floor: iOS 14.1 / Safari 14.1 and the matching Chromium (the build
+emits `||=`, `??=`, `inset`); `matchMedia` falls back to `addListener` for
+anything older rather than taking the frame down. Fonts still come from
+Google Fonts (three families, ~120 KB, render-blocking CSS); self-hosting a
+latin subset with preloads is the one performance item left on the table.
 
 Once `data/overrides/` has been through editorial review, build with:
 

@@ -323,6 +323,26 @@ gallery renders each board from census data ("Use this board" adopts it) — the
 static-site-honest v1; self-serve in-page upload waits for the Supabase layer
 and a moderation workflow.
 
+**The October 2026 review pass** (two audits — accessibility/UI guidelines and
+mobile/performance/robustness — plus a hands-on walk at phone and desktop
+widths) landed as one polish commit: the map draws Wisconsin's own outline
+(`web/src/wisconsin.json`, Census 2010 1:5M boundary, public domain,
+simplified); the masthead almanac counts the browsable set so it never
+contradicts the "88 of 88" beside it; the catalog opens on contest winners
+(`csort` default `awards`); phones fold the catalog facets behind one
+"Filters & sort" button; Leaflet and its stylesheet load on the first map
+view only (catalog and board arrivals fetch no tiles); the three big tables
+preload with the bundle and are served compacted; search folds once per
+cheese, cards are memoized and typing is deferred; the URL mirror is debounced
+behind a try/catch (WebKit's 100-writes rule); skip links, a `main` landmark,
+an inert page under the phone sheet, 44 px hit boxes on pins and sheet
+buttons, 16 px inputs (no iOS focus-zoom), `overscroll-behavior: contain` on
+every pane, hover rules behind `@media (hover: hover)`, forced-colors outlines,
+3:1 control borders (`--rule-strong`), a bronze that passes, and a share
+helper (`web/src/share.ts`: the phone's share sheet, else the clipboard; a
+`VITE_SHARE_BASE` for the article that will embed the census). The embed
+iframe needs `allow="web-share; clipboard-write"` — see web/README.md.
+
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 "…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That

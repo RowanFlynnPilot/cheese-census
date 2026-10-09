@@ -16,6 +16,7 @@ import DraftPhoto from "./DraftPhoto";
 import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
 import LogoMark from "./LogoMark";
+import { currentShareUrl, hasShareSheet, shareLink } from "../share";
 
 interface Props {
   cheese: Cheese;
@@ -78,30 +79,30 @@ export default function CheeseDetail({
   logoUrl,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<"idle" | "done" | "failed">("idle");
 
   useEffect(() => {
     panel.current?.focus({ preventScroll: true });
     panel.current?.scrollTo(0, 0);
-    setCopied(false);
+    setCopied("idle");
   }, [cheese.id]);
 
+  // The address bar already carries this cheese's deep link; hand it on through
+  // the phone's share sheet where there is one, the clipboard otherwise.
   async function copyLink() {
-    try {
-      await navigator.clipboard.writeText(location.href);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1600);
-    } catch {
-      // Clipboard unavailable — the address bar still carries the same link.
-    }
+    const result = await shareLink(currentShareUrl(), `${cheese.name} — The Cheese Census`);
+    if (result === "shared" || result === "dismissed") return;
+    setCopied(result === "copied" ? "done" : "failed");
+    window.setTimeout(() => setCopied("idle"), 1800);
   }
+  const sheet = hasShareSheet();
 
   const milkLine =
     cheese.milk.map((m) => MILK_LABEL[m] ?? m).join(" & ") +
     (cheese.raw_milk ? " · raw" : "");
 
   return (
-    <aside className="detail" ref={panel} tabIndex={-1} aria-labelledby="detail-title">
+    <aside className="detail" ref={panel} tabIndex={-1} aria-labelledby="cheese-title">
       <div className="detail-head">
         <div className="head-actions">
           {position && <span className="pos">{position}</span>}
@@ -111,15 +112,29 @@ export default function CheeseDetail({
           <button className="hbtn" onClick={onNext} aria-label="Next cheese" title="Next (→)">
             ›
           </button>
-          <button className="hbtn copy" onClick={copyLink} aria-label="Copy a link to this cheese">
-            {copied ? "Copied ✓" : "Copy link"}
+          <button
+            className="hbtn copy"
+            onClick={copyLink}
+            aria-label={sheet ? "Share a link to this cheese" : "Copy a link to this cheese"}
+          >
+            {copied === "done"
+              ? "Copied ✓"
+              : copied === "failed"
+                ? "Couldn't copy"
+                : sheet
+                  ? "Share"
+                  : "Copy link"}
           </button>
+          {/* A button's changing label is not announced; this is. */}
+          <span className="sr-only" role="status">
+            {copied === "done" ? "Link copied" : copied === "failed" ? "Couldn't copy the link" : ""}
+          </span>
           <button className="hbtn" onClick={onClose} aria-label="Close detail">
             ×
           </button>
         </div>
         <div className="title-row">
-          <h2 id="detail-title">{cheese.name}</h2>
+          <h2 id="cheese-title">{cheese.name}</h2>
           <HeartButton
             hearted={hearted}
             name={cheese.name}
@@ -151,10 +166,15 @@ export default function CheeseDetail({
             </span>
           )}
         </div>
+        {/* aria-disabled, not disabled: the full-board sentence is the
+            instruction, so it stays in the tab order and at full contrast. */}
         <button
           className={`board-btn${onBoard ? " on" : ""}`}
-          onClick={onToggleBoard}
-          disabled={!onBoard && boardFull}
+          onClick={() => {
+            if (!onBoard && boardFull) return;
+            onToggleBoard();
+          }}
+          aria-disabled={!onBoard && boardFull ? true : undefined}
           aria-pressed={onBoard}
         >
           {onBoard
@@ -237,6 +257,7 @@ export default function CheeseDetail({
             </button>
           ))}
         </div>
+        <p className="aka chip-hint">Tap a note or an ingredient to find every cheese that shares it.</p>
         {cheese.add_ins.length > 0 && (
           <>
             <h3 style={{ marginTop: "0.9rem" }}>Made with</h3>
@@ -275,7 +296,10 @@ export default function CheeseDetail({
                 </span>
               </span>
               {award.score !== null && (
-                <span className="score">{award.score.toFixed(3)}</span>
+                <span className="score">
+                  <span className="sr-only">score </span>
+                  {award.score.toFixed(3)}
+                </span>
               )}
             </div>
           ))}

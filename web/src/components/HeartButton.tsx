@@ -7,14 +7,16 @@ interface Props {
 }
 
 /** The heart is always a sibling of the card/row it belongs to, never nested
- *  inside another button — stopPropagation keeps a save from also opening. */
+ *  inside another button — stopPropagation keeps a save from also opening.
+ *  One constant name plus aria-pressed: "Save X to my cheeses, pressed" says
+ *  the state once, where a flipping label would say it twice. */
 export default function HeartButton({ hearted, name, onToggle, className }: Props) {
   return (
     <button
       type="button"
       className={`heart${hearted ? " is-on" : ""}${className ? ` ${className}` : ""}`}
       aria-pressed={hearted}
-      aria-label={hearted ? `Remove ${name} from my cheeses` : `Save ${name} to my cheeses`}
+      aria-label={`Save ${name} to my cheeses`}
       title={hearted ? "Saved to my cheeses — click to remove" : "Save to my cheeses"}
       onClick={(e) => {
         e.stopPropagation();
