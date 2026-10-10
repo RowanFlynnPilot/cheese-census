@@ -18,6 +18,7 @@
     "lat": 44.287526,
     "lng": -88.309352,
     "name": "Agropur, Inc.",
+    "phone": "(920) 714-0258",
     "plants": [
       {
         "address": "3805 Freedom Rd",
@@ -33,7 +34,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 714-0258"
       },
       {
         "address": "W6470 Quality Dr",
@@ -45,7 +47,8 @@
           "Other",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 714-0258"
       },
       {
         "address": "N2915 County Road AB",
@@ -63,7 +66,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 944-0900"
       },
       {
         "address": "105 E Third Ave",
@@ -83,7 +87,8 @@
           "Mozzarella",
           "Semisoft",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(920) 944-0900"
       }
     ],
     "retail": {
@@ -112,13 +117,15 @@
     "lat": 42.88711,
     "lng": -87.86334,
     "name": "Alpinage Cheese LLC",
+    "phone": "(262) 721-4412",
     "plants": [
       {
         "address": "1510 S Sylvania Ave Ste 205",
         "city": "Sturtevant",
         "county": "Racine",
         "datcp_id": "55-5931",
-        "operations": []
+        "operations": [],
+        "phone": "(262) 721-4412"
       }
     ],
     "retail": {
@@ -147,6 +154,7 @@
     "lat": 43.161586,
     "lng": -89.911089,
     "name": "Arena Cheese",
+    "phone": "(608) 753-2501",
     "plants": [
       {
         "address": "300 US Highway 14",
@@ -165,7 +173,8 @@
           "Monterey/Monterey Jack",
           "Provolone",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(608) 753-2501"
       }
     ],
     "retail": {
@@ -195,6 +204,7 @@
     "lat": 44.24894,
     "lng": -88.17381,
     "name": "Arla Foods, Inc.",
+    "phone": "(920) 462-1304",
     "plants": [
       {
         "address": "489 Holland Crt",
@@ -214,7 +224,8 @@
           "Gouda",
           "Muenster (Munster)",
           "Other"
-        ]
+        ],
+        "phone": "(920) 462-1304"
       }
     ],
     "retail": {
@@ -243,6 +254,7 @@
     "lat": 44.29548,
     "lng": -91.23067,
     "name": "Associated Milk Producers, Inc.",
+    "phone": "(608) 989-2535",
     "plants": [
       {
         "address": "220 E Center St",
@@ -254,7 +266,8 @@
           "Cheese Processing",
           "Whey/Whey By Products",
           "Cheddar"
-        ]
+        ],
+        "phone": "(608) 989-2535"
       },
       {
         "address": "14193 County Road S",
@@ -273,7 +286,8 @@
           "Gouda",
           "Gruyere",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(715) 382-4113"
       },
       {
         "address": "301 Brook St",
@@ -285,7 +299,8 @@
           "Bovine Milk",
           "Cut/Wrap/Shred",
           "Pasteurized Process Cheese/Cheese Food"
-        ]
+        ],
+        "phone": "(608) 742-2114"
       }
     ],
     "retail": {
@@ -314,6 +329,7 @@
     "lat": 44.28784,
     "lng": -88.29739,
     "name": "Bel Brands USA",
+    "phone": "(920) 687-3925",
     "plants": [
       {
         "address": "1500 E North Ave",
@@ -328,7 +344,8 @@
           "Cold Pack Cheese/Cheese Food",
           "Cream Cheese",
           "Pasteurized Processed Cheese Spread"
-        ]
+        ],
+        "phone": "(920) 687-3925"
       }
     ],
     "retail": {
@@ -362,6 +379,7 @@
     "lat": 44.378543,
     "lng": -87.887205,
     "name": "BelGioioso Cheese, Inc.",
+    "phone": "(920) 863-2123",
     "plants": [
       {
         "address": "N8495 State Road 55",
@@ -375,7 +393,8 @@
           "Membrane Processing",
           "Pasteurizer - HTST",
           "Whey/Whey By Products"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "W6521 County Road F",
@@ -391,7 +410,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "7700 N Brown County Line Rd",
@@ -412,7 +432,8 @@
           "Parmesan and Reggiano",
           "Romano",
           "Spiced"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "N4056 Vine Rd",
@@ -429,7 +450,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Other"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "5312 Steve's Cheese Rd",
@@ -440,7 +462,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "4200 Main St",
@@ -452,7 +475,8 @@
           "Affinage (Aging)",
           "Cheese Processing",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "5911 County Road NN",
@@ -469,7 +493,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Other"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "W2400 County Road S",
@@ -485,7 +510,8 @@
           "Raw Milk Cheese",
           "Whey/Whey By Products",
           "Parmesan and Reggiano"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "5810 County Road NN",
@@ -496,7 +522,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "5900 County Road NN",
@@ -515,7 +542,8 @@
           "Mozzarella",
           "Other",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "5550 County Road R",
@@ -533,7 +561,8 @@
           "Bleu",
           "Gorgonzola",
           "Other"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       },
       {
         "address": "4348 Brookside Dr",
@@ -548,7 +577,8 @@
           "Raw Milk Cheese",
           "Other",
           "Parmesan and Reggiano"
-        ]
+        ],
+        "phone": "(920) 863-2123"
       }
     ],
     "retail": {
@@ -578,6 +608,7 @@
     "lat": 44.488411,
     "lng": -88.06885,
     "name": "MCT Dairies, Inc.",
+    "phone": "(920) 735-4919",
     "plants": [
       {
         "address": "2358 W Packard St",
@@ -589,7 +620,8 @@
           "Bovine Milk",
           "Cut/Wrap/Shred",
           "Powder Mixing/Blending"
-        ]
+        ],
+        "phone": "(920) 735-4919"
       }
     ],
     "retail": {
@@ -618,6 +650,7 @@
     "lat": 43.020536,
     "lng": -89.834277,
     "name": "Bleu Mont Dairy",
+    "phone": null,
     "plants": [
       {
         "address": "3480 County Road F",
@@ -630,7 +663,8 @@
           "Cut/Wrap/Shred",
           "Cheddar",
           "Other"
-        ]
+        ],
+        "phone": null
       }
     ],
     "retail": {
@@ -657,6 +691,7 @@
     "lat": 42.687788,
     "lng": -90.130401,
     "name": "Brunkow Cheese of Wisconsin, Inc.",
+    "phone": "(608) 776-3716",
     "plants": [
       {
         "address": "17975 County Road F",
@@ -676,7 +711,8 @@
           "Semisoft",
           "Soft Ripened",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(608) 776-3716"
       }
     ],
     "retail": {
@@ -705,6 +741,7 @@
     "lat": 45.772158,
     "lng": -92.581209,
     "name": "Burnett Dairy Cooperative",
+    "phone": "(715) 689-2468",
     "plants": [
       {
         "address": "11631 State Road 70",
@@ -727,7 +764,8 @@
           "Monterey/Monterey Jack",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(715) 689-2468"
       },
       {
         "address": "126 State Road 128",
@@ -745,7 +783,8 @@
           "Gouda",
           "Monterey/Monterey Jack",
           "Pasteurized Process Cheese/Cheese Food"
-        ]
+        ],
+        "phone": "(715) 689-2468"
       }
     ],
     "retail": {
@@ -780,6 +819,7 @@
     "lat": 43.507591,
     "lng": -90.165539,
     "name": "Carr Valley Cheese Company, Inc.",
+    "phone": "(608) 448-4405",
     "plants": [
       {
         "address": "1042 E State St",
@@ -789,7 +829,8 @@
         "operations": [
           "Cut/Wrap/Shred",
           "Other"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "1675 Lincoln Ave",
@@ -800,7 +841,8 @@
           "Bovine Milk",
           "Cheese Processing",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "428 Wall St",
@@ -810,7 +852,8 @@
         "operations": [
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "420 Broadway",
@@ -820,7 +863,8 @@
         "operations": [
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "110 E Oneida St",
@@ -831,7 +875,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "1006 Gateway Ave",
@@ -841,7 +886,8 @@
         "operations": [
           "Retail Store",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "S3797 County Road G",
@@ -856,7 +902,8 @@
           "Colby",
           "Monterey/Monterey Jack",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       },
       {
         "address": "807 Phillips Blvd",
@@ -867,7 +914,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 448-4405"
       }
     ],
     "retail": {
@@ -896,6 +944,7 @@
     "lat": 43.281047,
     "lng": -90.004232,
     "name": "Cedar Grove Cheese, Inc.",
+    "phone": "(608) 546-5284",
     "plants": [
       {
         "address": "E5904 Mill Rd",
@@ -918,7 +967,8 @@
           "Muenster (Munster)",
           "Other",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(608) 546-5284"
       }
     ],
     "retail": {
@@ -947,6 +997,7 @@
     "lat": 43.528715,
     "lng": -87.890695,
     "name": "Cedar Valley Cheese, Inc.",
+    "phone": "(920) 994-4415",
     "plants": [
       {
         "address": "N6977 State Hwy 57",
@@ -956,7 +1007,8 @@
         "operations": [
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 994-4415"
       },
       {
         "address": "W3111 Jay Rd",
@@ -970,7 +1022,8 @@
           "Cut/Wrap/Shred",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 994-4415"
       }
     ],
     "retail": {
@@ -999,6 +1052,7 @@
     "lat": 43.025392,
     "lng": -87.912395,
     "name": "Cesar's Cheese LLC",
+    "phone": "(608) 459-5419",
     "plants": [
       {
         "address": "138 W Bruce St",
@@ -1016,7 +1070,8 @@
           "Granular and Stirred Curd",
           "Mozzarella",
           "Other"
-        ]
+        ],
+        "phone": "(608) 459-5419"
       }
     ],
     "retail": {
@@ -1043,6 +1098,7 @@
     "lat": 42.661579,
     "lng": -89.661398,
     "name": "Chalet Cheese Cooperative",
+    "phone": "(608) 325-4343",
     "plants": [
       {
         "address": "W6805 Deppler Rd",
@@ -1056,7 +1112,8 @@
           "Pasteurizer - HTST",
           "Whey/Whey By Products",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(608) 325-4343"
       },
       {
         "address": "N4858 County Road N",
@@ -1073,7 +1130,8 @@
           "Gouda",
           "Limburger",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(608) 325-4343"
       }
     ],
     "retail": {
@@ -1100,6 +1158,7 @@
     "lat": 44.653146,
     "lng": -91.977882,
     "name": "Cheese Merchants of America",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -1125,6 +1184,7 @@
     "lat": 43.841003,
     "lng": -88.52566,
     "name": "Clearview Dairy aTwo Cheese LLC",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -1152,6 +1212,7 @@
     "lat": 43.234265,
     "lng": -88.972557,
     "name": "Crave Brothers Farmstead Cheese, L.L.C.",
+    "phone": "(920) 478-4887",
     "plants": [
       {
         "address": "W11555 Torpy Rd",
@@ -1166,7 +1227,8 @@
           "Membrane Processing",
           "Whey/Whey By Products",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 478-4887"
       }
     ],
     "retail": {
@@ -1195,6 +1257,7 @@
     "lat": 45.285926,
     "lng": -92.697488,
     "name": "Crystal Ball Farms",
+    "phone": "(715) 294-4090",
     "plants": [
       {
         "address": "527 State Road 35",
@@ -1210,7 +1273,8 @@
           "Frozen Dairy Products",
           "Cheddar",
           "Colby"
-        ]
+        ],
+        "phone": "(715) 294-4090"
       }
     ],
     "retail": {
@@ -1239,6 +1303,7 @@
     "lat": 44.5,
     "lng": -89.81,
     "name": "Wisconsin Dairy State Cheese Co, Inc",
+    "phone": "(715) 435-3144",
     "plants": [
       {
         "address": "6888 State Road 34",
@@ -1255,7 +1320,8 @@
           "Asiago",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(715) 435-3144"
       }
     ],
     "retail": {
@@ -1284,6 +1350,7 @@
     "lat": 42.654476,
     "lng": -89.446397,
     "name": "Decatur Dairy, Inc.",
+    "phone": "(608) 897-8661",
     "plants": [
       {
         "address": "W1668 County Road F",
@@ -1297,7 +1364,8 @@
           "Brick",
           "Colby",
           "Muenster (Munster)"
-        ]
+        ],
+        "phone": "(608) 897-8661"
       }
     ],
     "retail": {
@@ -1324,6 +1392,7 @@
     "lat": 43.752063,
     "lng": -87.712951,
     "name": "Deer Creek Cheese",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -1349,6 +1418,7 @@
     "lat": 44.614285,
     "lng": -88.900144,
     "name": "Dupont Cheese, Inc.",
+    "phone": "(715) 754-5424",
     "plants": [
       {
         "address": "N10140 State Road 110",
@@ -1364,7 +1434,8 @@
           "Colby",
           "Gouda",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(715) 754-5424"
       }
     ],
     "retail": {
@@ -1391,6 +1462,7 @@
     "lat": 42.516938,
     "lng": -89.542899,
     "name": "Edelweiss Creamery",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -1418,6 +1490,7 @@
     "lat": 44.734427,
     "lng": -92.462904,
     "name": "Ellsworth Cooperative Creamery",
+    "phone": "(715) 273-4311",
     "plants": [
       {
         "address": "232 N Wallace St",
@@ -1435,7 +1508,8 @@
           "Pasteurizer - HTST",
           "Whey/Whey By Products",
           "Cheddar"
-        ]
+        ],
+        "phone": "(715) 273-4311"
       }
     ],
     "retail": {
@@ -1465,6 +1539,7 @@
     "lat": 42.610113,
     "lng": -89.652641,
     "name": "Emmi Roth USA",
+    "phone": "(608) 285-9800",
     "plants": [
       {
         "address": "1525 Vision Dr",
@@ -1483,7 +1558,8 @@
           "Gouda",
           "Gruyere",
           "Semisoft"
-        ]
+        ],
+        "phone": "(608) 285-9800"
       },
       {
         "address": "657 2nd St",
@@ -1500,7 +1576,8 @@
           "Whey/Whey By Products",
           "Gouda",
           "Gruyere"
-        ]
+        ],
+        "phone": "(608) 285-9800"
       },
       {
         "address": "1800 Williams Dr",
@@ -1511,7 +1588,8 @@
           "Bovine Milk",
           "Goat Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 285-9800"
       },
       {
         "address": "124 E Bronson Rd",
@@ -1528,7 +1606,8 @@
           "Whey/Whey By Products",
           "Bleu",
           "Gorgonzola"
-        ]
+        ],
+        "phone": "(608) 285-9800"
       }
     ],
     "retail": {
@@ -1557,6 +1636,7 @@
     "lat": 42.859395,
     "lng": -89.535755,
     "name": "Family Fresh Pack LLC",
+    "phone": "(608) 938-4494",
     "plants": [
       {
         "address": "520 N Pratt Rd",
@@ -1578,7 +1658,8 @@
           "Muenster (Munster)",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(608) 938-4494"
       },
       {
         "address": "110 112 Pratt Road",
@@ -1591,7 +1672,8 @@
           "Cream Cheese",
           "Pasteurized Process Cheese/Cheese Food",
           "Pasteurized Processed Cheese Spread"
-        ]
+        ],
+        "phone": "(608) 938-4494"
       }
     ],
     "retail": {
@@ -1620,6 +1702,7 @@
     "lat": 43.522647,
     "lng": -89.778998,
     "name": "Foremost Farms USA Cooperative",
+    "phone": "(608) 355-8700",
     "plants": [
       {
         "address": "1815 W Spencer St",
@@ -1638,7 +1721,8 @@
           "Mozzarella",
           "Muenster (Munster)",
           "Provolone"
-        ]
+        ],
+        "phone": "(608) 355-8700"
       },
       {
         "address": "240 Prentice St N",
@@ -1655,7 +1739,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(608) 355-8700"
       },
       {
         "address": "684 S Church St",
@@ -1675,7 +1760,8 @@
           "Mozzarella",
           "Other",
           "Provolone"
-        ]
+        ],
+        "phone": "(608) 355-8700"
       },
       {
         "address": "501 S Pine St",
@@ -1688,7 +1774,8 @@
           "Butter Processing",
           "Condensary/Evap",
           "Cream"
-        ]
+        ],
+        "phone": "(608) 355-8700"
       },
       {
         "address": "932 N Madison St",
@@ -1704,7 +1791,8 @@
           "Cheddar",
           "Colby",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(608) 355-8700"
       },
       {
         "address": "1511 E 4th St",
@@ -1720,7 +1808,8 @@
           "Cheddar",
           "Colby",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(608) 355-8700"
       }
     ],
     "retail": {
@@ -1750,6 +1839,7 @@
     "lat": 42.587478,
     "lng": -89.90387,
     "name": "Valley View Cheese Cooperative",
+    "phone": "(608) 439-5569",
     "plants": [
       {
         "address": "6519 Larson Rd",
@@ -1765,7 +1855,8 @@
           "Brick",
           "Cheddar",
           "Granular and Stirred Curd"
-        ]
+        ],
+        "phone": "(608) 439-5569"
       }
     ],
     "retail": {
@@ -1794,6 +1885,7 @@
     "lat": 43.652204,
     "lng": -87.841064,
     "name": "Gibbsville Cheese Company, Inc.",
+    "phone": "(920) 564-3242",
     "plants": [
       {
         "address": "W2663 County Road OO",
@@ -1811,7 +1903,8 @@
           "Gouda",
           "Monterey/Monterey Jack",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(920) 564-3242"
       }
     ],
     "retail": {
@@ -1838,6 +1931,7 @@
     "lat": 42.606463,
     "lng": -90.430842,
     "name": "Gile Cheese, LLC",
+    "phone": "(608) 744-3456",
     "plants": [
       {
         "address": "116 N Main St",
@@ -1847,7 +1941,8 @@
         "operations": [
           "Retail Store",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 744-3456"
       }
     ],
     "retail": {
@@ -1878,6 +1973,7 @@
     "lat": 43.599258,
     "lng": -88.541486,
     "name": "Grande Cheese Company",
+    "phone": "(920) 952-7403",
     "plants": [
       {
         "address": "N2689 County Road S",
@@ -1891,7 +1987,8 @@
           "Membrane Processing",
           "Pasteurizer - HTST",
           "Whey/Whey By Products"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "W1234 Rome Rd",
@@ -1913,7 +2010,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "N11689 Dairy Rd",
@@ -1932,7 +2030,8 @@
           "Pasteurizer - HTST",
           "Whey/Whey By Products",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "181 W Monroe St",
@@ -1950,7 +2049,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "W3240 County Road F",
@@ -1967,7 +2067,8 @@
           "Pasteurizer - HTST",
           "Whey/Whey By Products",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "420 Trowbridge Dr",
@@ -1978,7 +2079,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "N2607 County Road S",
@@ -1997,7 +2099,8 @@
           "Pasteurizer - HTST",
           "Whey/Whey By Products",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "246 Trowbridge Dr",
@@ -2016,7 +2119,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "1007 W Lake St",
@@ -2031,7 +2135,8 @@
           "Pasteurizer - Batch",
           "Pasteurizer - HTST",
           "Whey/Whey By Products"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       },
       {
         "address": "302 E Main St",
@@ -2047,7 +2152,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 952-7403"
       }
     ],
     "retail": {
@@ -2077,6 +2183,7 @@
     "lat": 44.736186,
     "lng": -90.577846,
     "name": "Grassland Dairy Products, Inc.",
+    "phone": "(715) 267-6182",
     "plants": [
       {
         "address": "N8790 Fairground Ave",
@@ -2093,7 +2200,8 @@
           "Membrane Processing",
           "Pasteurizer - HTST",
           "Powder Mixing/Blending"
-        ]
+        ],
+        "phone": "(715) 267-6182"
       },
       {
         "address": "423 S Main St",
@@ -2108,7 +2216,8 @@
           "Fluid Milk",
           "Membrane Processing",
           "Pasteurizer - HTST"
-        ]
+        ],
+        "phone": "(715) 267-6182"
       }
     ],
     "retail": {
@@ -2138,6 +2247,7 @@
     "lat": 44.95397,
     "lng": -89.99443,
     "name": "Anderson International Foods",
+    "phone": "(516) 747-2210",
     "plants": [
       {
         "address": "230266 Red Cardinal Rd",
@@ -2151,7 +2261,8 @@
           "Whey/Whey By Products",
           "Cheddar",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(516) 747-2210"
       }
     ],
     "retail": {
@@ -2181,6 +2292,7 @@
     "lat": 44.810099,
     "lng": -90.017025,
     "name": "Harmony Cheese",
+    "phone": "(920) 351-3555",
     "plants": [
       {
         "address": "122480 Schnappsville Rd",
@@ -2190,7 +2302,8 @@
         "operations": [
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 351-3555"
       }
     ],
     "retail": {
@@ -2217,6 +2330,7 @@
     "lat": 43.964104,
     "lng": -88.011547,
     "name": "Henning Cheese, Inc.",
+    "phone": "(920) 894-3032",
     "plants": [
       {
         "address": "20201 Point Creek Rd",
@@ -2234,7 +2348,8 @@
           "Gouda",
           "Monterey/Monterey Jack",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 894-3032"
       }
     ],
     "retail": {
@@ -2263,6 +2378,7 @@
     "lat": 42.49498,
     "lng": -88.538724,
     "name": "Highfield Farm Creamery",
+    "phone": "(262) 275-3027",
     "plants": [
       {
         "address": "W4854 Stateline Rd",
@@ -2283,7 +2399,8 @@
           "Semisoft",
           "Soft Ripened",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(262) 275-3027"
       }
     ],
     "retail": {
@@ -2312,6 +2429,7 @@
     "lat": 42.602078,
     "lng": -88.434633,
     "name": "Hill Valley Dairy",
+    "phone": "(262) 745-8699",
     "plants": [
       {
         "address": "138 W Bruce St",
@@ -2326,7 +2444,8 @@
           "Cheddar",
           "Gouda",
           "Hard"
-        ]
+        ],
+        "phone": "(262) 745-8699"
       },
       {
         "address": "N8207 Bell School Rd",
@@ -2337,7 +2456,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(262) 745-8699"
       }
     ],
     "retail": {
@@ -2364,6 +2484,7 @@
     "lat": 42.926932,
     "lng": -88.837484,
     "name": "Hoard's Dairymen Farm Creamery",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -2389,6 +2510,7 @@
     "lat": 42.86281,
     "lng": -90.177356,
     "name": "Hook's Cheese Company, Inc.",
+    "phone": "(608) 987-3259",
     "plants": [
       {
         "address": "320 Commerce St",
@@ -2410,7 +2532,8 @@
           "Monterey/Monterey Jack",
           "Parmesan and Reggiano",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(608) 987-3259"
       }
     ],
     "retail": {
@@ -2439,6 +2562,7 @@
     "lat": 43.646393,
     "lng": -89.106076,
     "name": "Kingston Cheese Co-op",
+    "phone": "(920) 394-3433",
     "plants": [
       {
         "address": "W4481 County Road GG",
@@ -2455,7 +2579,8 @@
           "Pasteurizer - HTST",
           "Bleu",
           "Gorgonzola"
-        ]
+        ],
+        "phone": "(920) 394-3433"
       }
     ],
     "retail": {
@@ -2485,6 +2610,7 @@
     "lat": 42.589673,
     "lng": -89.662811,
     "name": "Klondike Cheese Company",
+    "phone": "(608) 325-3021",
     "plants": [
       {
         "address": "W7839 State Road 81 W",
@@ -2502,7 +2628,8 @@
           "Gouda",
           "Muenster (Munster)",
           "Other"
-        ]
+        ],
+        "phone": "(608) 325-3021"
       }
     ],
     "retail": {
@@ -2529,6 +2656,7 @@
     "lat": 43.186837,
     "lng": -88.483519,
     "name": "Koepke Farms, Inc",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -2557,6 +2685,7 @@
     "lat": 43.206056,
     "lng": -88.708445,
     "name": "Kraemer Wisconsin Cheese Ltd",
+    "phone": "(920) 261-6363",
     "plants": [
       {
         "address": "1173 N 4th St",
@@ -2569,7 +2698,8 @@
           "Cheese Processing",
           "Cut/Wrap/Shred",
           "Cold Pack Cheese/Cheese Food"
-        ]
+        ],
+        "phone": "(920) 261-6363"
       }
     ],
     "retail": {
@@ -2599,6 +2729,7 @@
     "lat": 44.289072,
     "lng": -88.260718,
     "name": "Laack Brothers Cheese Company",
+    "phone": "(920) 864-2815",
     "plants": [
       {
         "address": "7050 Morrison Rd",
@@ -2608,7 +2739,8 @@
         "operations": [
           "Cut/Wrap/Shred",
           "Pasteurized Process Cheese/Cheese Food"
-        ]
+        ],
+        "phone": "(920) 864-2815"
       }
     ],
     "retail": {
@@ -2637,6 +2769,7 @@
     "lat": 44.013344,
     "lng": -88.184288,
     "name": "LaClare Family Creamery",
+    "phone": "(920) 670-0051 ext. 205",
     "plants": [
       {
         "address": "W2994 County Road HH",
@@ -2658,7 +2791,8 @@
           "Muenster (Munster)",
           "Semisoft",
           "Soft Ripened"
-        ]
+        ],
+        "phone": "(920) 670-0051 ext. 205"
       }
     ],
     "retail": {
@@ -2687,6 +2821,7 @@
     "lat": 44.901025,
     "lng": -90.892072,
     "name": "LaGrander's Hillside Dairy, Inc.",
+    "phone": "(715) 644-2275 ext. 803",
     "plants": [
       {
         "address": "W11299 Broek Rd",
@@ -2701,7 +2836,8 @@
           "Cheddar",
           "Colby",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(715) 644-2275 ext. 803"
       }
     ],
     "retail": {
@@ -2730,6 +2866,7 @@
     "lat": 45.390182,
     "lng": -92.161305,
     "name": "Schuman Cheese, Inc.",
+    "phone": "(715) 788-6143",
     "plants": [
       {
         "address": "458 Western Blvd",
@@ -2747,7 +2884,8 @@
           "Other",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(715) 788-6143"
       }
     ],
     "retail": {
@@ -2774,6 +2912,7 @@
     "lat": 42.769373,
     "lng": -89.425537,
     "name": "Landmark Creamery LLC",
+    "phone": "(608) 886-8801",
     "plants": [
       {
         "address": "6858 Paoli Rd",
@@ -2790,7 +2929,8 @@
           "Frozen Dairy Products",
           "Pasteurizer - Batch",
           "Other"
-        ]
+        ],
+        "phone": "(608) 886-8801"
       }
     ],
     "retail": {
@@ -2819,6 +2959,7 @@
     "lat": 44.582765,
     "lng": -90.409155,
     "name": "Lynn Dairy, Inc.",
+    "phone": "(715) 238-7129",
     "plants": [
       {
         "address": "W4510 Meridian Ave",
@@ -2827,7 +2968,8 @@
         "datcp_id": "55-60",
         "operations": [
           "Bovine Milk"
-        ]
+        ],
+        "phone": "(715) 238-7129"
       },
       {
         "address": "W1929 US Highway 10",
@@ -2843,7 +2985,8 @@
           "Granular and Stirred Curd",
           "Monterey/Monterey Jack",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(715) 238-7129"
       }
     ],
     "retail": {
@@ -2873,6 +3016,7 @@
     "lat": 44.244076,
     "lng": -88.401762,
     "name": "Malcore Foods",
+    "phone": "(920) 733-1556",
     "plants": [
       {
         "address": "237 E Calumet St",
@@ -2884,7 +3028,8 @@
           "Cut/Wrap/Shred",
           "Cold Pack Cheese/Cheese Food",
           "Cream Cheese"
-        ]
+        ],
+        "phone": "(920) 733-1556"
       }
     ],
     "retail": {
@@ -2911,6 +3056,7 @@
     "lat": 42.516938,
     "lng": -89.542899,
     "name": "Maple Leaf Cheese Co",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -2939,6 +3085,7 @@
     "lat": 44.944694,
     "lng": -90.760177,
     "name": "Hollands Family Cheese - Marieke Gouda",
+    "phone": "(715) 669-5230",
     "plants": [
       {
         "address": "200 W Liberty Dr",
@@ -2953,7 +3100,8 @@
           "Cut/Wrap/Shred",
           "Cheddar",
           "Gouda"
-        ]
+        ],
+        "phone": "(715) 669-5230"
       }
     ],
     "retail": {
@@ -2982,6 +3130,7 @@
     "lat": 43.185116,
     "lng": -90.416029,
     "name": "Meister Cheese Co LLC",
+    "phone": "(608) 739-3134",
     "plants": [
       {
         "address": "1160 Industrial Dr",
@@ -3009,7 +3158,8 @@
           "Provolone",
           "Semisoft",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(608) 739-3134"
       }
     ],
     "retail": {
@@ -3040,6 +3190,7 @@
     "lat": 44.717459,
     "lng": -89.685951,
     "name": "Mullins Cheese, Inc.",
+    "phone": "(715) 693-3205 ext. 273",
     "plants": [
       {
         "address": "204000 County Road DB",
@@ -3060,7 +3211,8 @@
           "Mozzarella",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(715) 693-3205 ext. 273"
       },
       {
         "address": "115454 County Road C",
@@ -3083,7 +3235,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": "(715) 693-3205 ext. 273"
       }
     ],
     "retail": {
@@ -3110,6 +3263,7 @@
     "lat": 44.599085,
     "lng": -90.247107,
     "name": "Nasonville Dairy, Inc.",
+    "phone": "(715) 676-2177",
     "plants": [
       {
         "address": "10898 US Highway 10 W",
@@ -3133,7 +3287,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": "(715) 676-2177"
       }
     ],
     "retail": {
@@ -3162,6 +3317,7 @@
     "lat": 43.650265,
     "lng": -90.960105,
     "name": "Nordic Creamery",
+    "phone": "(608) 606-4121",
     "plants": [
       {
         "address": "S2244 Langaard Lane",
@@ -3175,7 +3331,8 @@
           "Cut/Wrap/Shred",
           "Frozen Dairy Products",
           "Cheddar"
-        ]
+        ],
+        "phone": "(608) 606-4121"
       }
     ],
     "retail": {
@@ -3202,6 +3359,7 @@
     "lat": 44.719108,
     "lng": -88.750102,
     "name": "Oak Grove Dairy, Inc.",
+    "phone": "(715) 823-6226",
     "plants": [
       {
         "address": "W10198 Oak Grove Rd",
@@ -3214,7 +3372,8 @@
           "Cheddar",
           "Colby",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(715) 823-6226"
       }
     ],
     "retail": {
@@ -3245,6 +3404,7 @@
     "lat": 43.581795,
     "lng": -90.637614,
     "name": "CROPP Cooperative/Organic Valley",
+    "phone": "(608) 625-7311",
     "plants": [
       {
         "address": "203 S Main St",
@@ -3256,7 +3416,8 @@
           "Butter Processing",
           "Condensary/Evap",
           "Pasteurizer - HTST"
-        ]
+        ],
+        "phone": "(608) 625-7311"
       },
       {
         "address": "440 Organic Dr",
@@ -3267,7 +3428,8 @@
           "Bovine Milk",
           "Cut/Wrap/Shred",
           "Other"
-        ]
+        ],
+        "phone": "(608) 625-7311"
       }
     ],
     "retail": {
@@ -3296,6 +3458,7 @@
     "lat": 44.167286,
     "lng": -88.20716,
     "name": "Ornua Ingredients North America",
+    "phone": "(920) 714-0977",
     "plants": [
       {
         "address": "N7630 County Road Bb",
@@ -3306,7 +3469,8 @@
           "Bovine Milk",
           "Cut/Wrap/Shred",
           "Pasteurized Process Cheese/Cheese Food"
-        ]
+        ],
+        "phone": "(920) 714-0977"
       }
     ],
     "retail": {
@@ -3333,6 +3497,7 @@
     "lat": 43.732881,
     "lng": -90.758146,
     "name": "Pasture Pride Cheese, LLC",
+    "phone": "(608) 654-7444",
     "plants": [
       {
         "address": "110 Eagle Dr",
@@ -3343,7 +3508,8 @@
           "Bovine Milk",
           "Affinage (Aging)",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(608) 654-7444"
       }
     ],
     "retail": {
@@ -3372,6 +3538,7 @@
     "lat": 44.000284,
     "lng": -87.80102,
     "name": "Pine River Pre Pack, Inc",
+    "phone": "(920) 726-4216",
     "plants": [
       {
         "address": "10134 Pine River Rd",
@@ -3382,7 +3549,8 @@
           "Bovine Milk",
           "Cold Pack Cheese/Cheese Food",
           "Pasteurized Processed Cheese Spread"
-        ]
+        ],
+        "phone": "(920) 726-4216"
       }
     ],
     "retail": {
@@ -3409,6 +3577,7 @@
     "lat": 44.267343,
     "lng": -88.454053,
     "name": "Red Barn Family Farms",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -3436,6 +3605,7 @@
     "lat": 44.909354,
     "lng": -90.278749,
     "name": "Welcome Dairy LLC",
+    "phone": "(715) 223-2874",
     "plants": [
       {
         "address": "225567 Silver Maple Ln",
@@ -3453,7 +3623,8 @@
           "Pasteurized Cheese Spread",
           "Pasteurized Process Cheese/Cheese Food",
           "Pasteurized Processed Cheese Spread"
-        ]
+        ],
+        "phone": "(715) 223-2874"
       }
     ],
     "retail": {
@@ -3484,6 +3655,7 @@
     "lat": 42.579763,
     "lng": -90.030622,
     "name": "Roelli Cheese Company, Inc.",
+    "phone": "(608) 965-3779",
     "plants": [
       {
         "address": "15982 State Road 11",
@@ -3503,7 +3675,8 @@
           "Hard",
           "Monterey/Monterey Jack",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(608) 965-3779"
       },
       {
         "address": "15982 Highway 11",
@@ -3516,7 +3689,8 @@
           "Bleu",
           "Cheddar",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(608) 965-3779"
       }
     ],
     "retail": {
@@ -3545,6 +3719,7 @@
     "lat": 44.545016,
     "lng": -87.70334,
     "name": "Ron's Wisconsin Cheese",
+    "phone": "(920) 845-5330",
     "plants": [
       {
         "address": "124 Main St",
@@ -3555,7 +3730,8 @@
           "Bovine Milk",
           "Retail Store",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 845-5330"
       },
       {
         "address": "N4893 County Road C",
@@ -3572,7 +3748,8 @@
           "Monterey/Monterey Jack",
           "Mozzarella",
           "Semisoft"
-        ]
+        ],
+        "phone": "(920) 845-5330"
       }
     ],
     "retail": {
@@ -3601,6 +3778,7 @@
     "lat": 44.610285,
     "lng": -87.438518,
     "name": "Rosewood Dairy, Inc.",
+    "phone": "(920) 743-6626",
     "plants": [
       {
         "address": "248 County Road S",
@@ -3619,7 +3797,8 @@
           "Mozzarella",
           "Muenster (Munster)",
           "Other"
-        ]
+        ],
+        "phone": "(920) 743-6626"
       },
       {
         "address": "248 County Rd S",
@@ -3628,7 +3807,8 @@
         "datcp_id": "55-1062",
         "operations": [
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 743-6626"
       }
     ],
     "retail": {
@@ -3659,6 +3839,7 @@
     "lat": 43.67113,
     "lng": -88.79522,
     "name": "Saputo Cheese USA",
+    "phone": "(920) 346-2215",
     "plants": [
       {
         "address": "N3545 County Road EE",
@@ -3677,7 +3858,8 @@
           "Whey/Whey By Products",
           "Mozzarella",
           "Provolone"
-        ]
+        ],
+        "phone": "(920) 346-2215"
       },
       {
         "address": "317 N Rosera St",
@@ -3699,7 +3881,8 @@
           "Powder Mixing/Blending",
           "Whey/Whey By Products",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 829-5251"
       },
       {
         "address": "522 Greenway Ct",
@@ -3713,7 +3896,8 @@
           "Membrane Processing",
           "Pasteurizer - HTST",
           "Whey/Whey By Products"
-        ]
+        ],
+        "phone": "(608) 495-8067"
       },
       {
         "address": "1120 Commercial Ave",
@@ -3728,7 +3912,8 @@
           "Pasteurizer - HTST",
           "Semisoft",
           "Soft Ripened"
-        ]
+        ],
+        "phone": "(608) 495-8067"
       },
       {
         "address": "2895 W Oakwood Rd",
@@ -3752,7 +3937,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": null
       },
       {
         "address": "307 N Clark St",
@@ -3776,7 +3962,8 @@
           "Muenster (Munster)",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 984-3331"
       },
       {
         "address": "1052 6th St",
@@ -3795,7 +3982,8 @@
           "Gorgonzola",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(715) 214-1100"
       }
     ],
     "retail": {
@@ -3825,6 +4013,7 @@
     "lat": 43.925776,
     "lng": -88.019373,
     "name": "Sargento Foods, Inc.",
+    "phone": "(920) 893-8484",
     "plants": [
       {
         "address": "460 S 8th St",
@@ -3835,7 +4024,8 @@
           "ACaSS",
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 893-8484"
       },
       {
         "address": "460 S 8th St",
@@ -3846,7 +4036,8 @@
           "ACaSS",
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 893-8484"
       },
       {
         "address": "1 Persnickety Pl",
@@ -3857,7 +4048,8 @@
           "ACaSS",
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 893-8484"
       },
       {
         "address": "N5279 County Road G",
@@ -3874,7 +4066,8 @@
           "Powder Mixing/Blending",
           "Whey/Whey By Products",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 893-8484"
       },
       {
         "address": "1 Persnickety Pl",
@@ -3885,7 +4078,8 @@
           "ACaSS",
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 893-8484"
       }
     ],
     "retail": {
@@ -3914,6 +4108,7 @@
     "lat": 43.745728,
     "lng": -87.951304,
     "name": "Sartori Cheese Company",
+    "phone": "(920) 449-7899",
     "plants": [
       {
         "address": "W4200 County Road PP",
@@ -3924,7 +4119,8 @@
           "ACaSS",
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 449-7899"
       },
       {
         "address": "2 E Main St",
@@ -3936,7 +4132,8 @@
           "Affinage (Aging)",
           "Cheese Processing",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 449-7899"
       },
       {
         "address": "201 Morse St",
@@ -3951,7 +4148,8 @@
           "Asiago",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 449-7899"
       },
       {
         "address": "12 W Main St",
@@ -3970,7 +4168,8 @@
           "Other",
           "Parmesan and Reggiano",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 449-7899"
       }
     ],
     "retail": {
@@ -4001,6 +4200,7 @@
     "lat": 44.515048,
     "lng": -88.011602,
     "name": "Schreiber Foods, Inc.",
+    "phone": "(920) 455-3232",
     "plants": [
       {
         "address": "2101 Bohmann Dr",
@@ -4012,7 +4212,8 @@
           "Bovine Milk",
           "Pasteurizer - HTST",
           "Yogurt"
-        ]
+        ],
+        "phone": "(608) 647-8705 ext. 3753"
       },
       {
         "address": "807 Pleasant Valley Rd",
@@ -4023,7 +4224,8 @@
           "ACaSS",
           "Bovine Milk",
           "Cream Cheese"
-        ]
+        ],
+        "phone": "(262) 675-6533"
       },
       {
         "address": "1695 Mills St",
@@ -4034,7 +4236,8 @@
           "ACaSS",
           "Bovine Milk",
           "Pasteurized Process Cheese/Cheese Food"
-        ]
+        ],
+        "phone": "(920) 455-3232"
       },
       {
         "address": "2924 Wyetta Dr",
@@ -4045,7 +4248,8 @@
           "Bovine Milk",
           "Aseptic or Canning",
           "Non-Dairy - Low Acid Canned Foods"
-        ]
+        ],
+        "phone": null
       },
       {
         "address": "920 Sextonville Rd",
@@ -4055,7 +4259,8 @@
         "operations": [
           "Bovine Milk",
           "Yogurt"
-        ]
+        ],
+        "phone": "(608) 647-6369"
       }
     ],
     "retail": {
@@ -4085,6 +4290,7 @@
     "lat": 44.401066,
     "lng": -88.065534,
     "name": "Scray Cheese Company",
+    "phone": "(920) 336-8359",
     "plants": [
       {
         "address": "2082 Old Martin Rd",
@@ -4098,7 +4304,8 @@
           "Edam",
           "Gouda",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 336-8359"
       }
     ],
     "retail": {
@@ -4127,6 +4334,7 @@
     "lat": 42.741454,
     "lng": -89.545193,
     "name": "Silver Lewis Cheese Factory Cooperative",
+    "phone": "(608) 938-4813",
     "plants": [
       {
         "address": "W3075 County Road EE",
@@ -4143,7 +4351,8 @@
           "Mozzarella",
           "Provolone",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(608) 938-4813"
       }
     ],
     "retail": {
@@ -4172,6 +4381,7 @@
     "lat": 43.311287,
     "lng": -88.838263,
     "name": "Specialty Cheese Company, Inc",
+    "phone": "(920) 927-3888",
     "plants": [
       {
         "address": "430 N Main St",
@@ -4190,7 +4400,8 @@
           "Muenster (Munster)",
           "Other",
           "Semisoft"
-        ]
+        ],
+        "phone": "(920) 927-3888"
       }
     ],
     "retail": {
@@ -4219,6 +4430,7 @@
     "lat": 44.966475,
     "lng": -88.159438,
     "name": "Springside Cheese Corporation",
+    "phone": "(920) 829-6395",
     "plants": [
       {
         "address": "7989 Arndt Rd",
@@ -4237,7 +4449,8 @@
           "Monterey/Monterey Jack",
           "Mozzarella",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(920) 829-6395"
       }
     ],
     "retail": {
@@ -4266,6 +4479,7 @@
     "lat": 44.216823,
     "lng": -88.78795,
     "name": "Union Star, Corp.",
+    "phone": "(920) 836-2804",
     "plants": [
       {
         "address": "7742 County Road II",
@@ -4282,7 +4496,8 @@
           "Colby",
           "Monterey/Monterey Jack",
           "Mozzarella"
-        ]
+        ],
+        "phone": "(920) 836-2804"
       },
       {
         "address": "W1965 State Road 21",
@@ -4304,7 +4519,8 @@
           "Muenster (Munster)",
           "Other",
           "Washed Curd and Soaked Curd"
-        ]
+        ],
+        "phone": "(920) 836-2804"
       }
     ],
     "retail": {
@@ -4334,6 +4550,7 @@
     "lat": 43.058998,
     "lng": -90.140873,
     "name": "Uplands Cheese Company",
+    "phone": "(608) 935-5558",
     "plants": [
       {
         "address": "5023 State Road 23",
@@ -4346,7 +4563,8 @@
           "Cheese Processing",
           "Cut/Wrap/Shred",
           "Hard"
-        ]
+        ],
+        "phone": "(608) 935-5558"
       }
     ],
     "retail": {
@@ -4376,6 +4594,7 @@
     "lat": 42.5329,
     "lng": -89.84768,
     "name": "V & V Supremo Foods, Inc.",
+    "phone": "(608) 439-5211",
     "plants": [
       {
         "address": "2923 Mayer Rd",
@@ -4389,7 +4608,8 @@
           "Cut/Wrap/Shred",
           "Other",
           "Pasteurizer - HTST"
-        ]
+        ],
+        "phone": "(608) 439-5211"
       },
       {
         "address": "6415 County Road H",
@@ -4403,7 +4623,8 @@
           "Cut/Wrap/Shred",
           "Pasteurizer - HTST",
           "Other"
-        ]
+        ],
+        "phone": "(608) 753-2311"
       }
     ],
     "retail": {
@@ -4430,6 +4651,7 @@
     "lat": 42.608468,
     "lng": -89.636786,
     "name": "W&W Dairy, LLC",
+    "phone": null,
     "plants": [],
     "retail": {
       "mail_order": false,
@@ -4457,6 +4679,7 @@
     "lat": 44.45894,
     "lng": -87.50342,
     "name": "Wakker Cheese LLC",
+    "phone": "(920) 388-6500",
     "plants": [
       {
         "address": "409 Milwaukee St",
@@ -4468,7 +4691,8 @@
           "Brine System",
           "Cut/Wrap/Shred",
           "Pasteurizer - Batch"
-        ]
+        ],
+        "phone": "(920) 388-6500"
       }
     ],
     "retail": {
@@ -4495,6 +4719,7 @@
     "lat": 43.647468,
     "lng": -90.861263,
     "name": "Westby Cooperative Creamery",
+    "phone": "(608) 634-3181",
     "plants": [
       {
         "address": "615 N Main St",
@@ -4513,7 +4738,8 @@
           "Whey/Whey By Products",
           "Yogurt",
           "Cream Cheese"
-        ]
+        ],
+        "phone": "(608) 634-3181"
       }
     ],
     "retail": {
@@ -4542,6 +4768,7 @@
     "lat": 44.322219,
     "lng": -88.934321,
     "name": "Weyauwega Star Dairy, Inc.",
+    "phone": "(920) 867-2870",
     "plants": [
       {
         "address": "N5722 County Road C",
@@ -4551,7 +4778,8 @@
         "operations": [
           "Bovine Milk",
           "Cut/Wrap/Shred"
-        ]
+        ],
+        "phone": "(920) 922-5200"
       },
       {
         "address": "113 W Wisconsin St",
@@ -4573,7 +4801,8 @@
           "Parmesan and Reggiano",
           "Provolone",
           "Romano"
-        ]
+        ],
+        "phone": "(920) 867-2870"
       }
     ],
     "retail": {
@@ -4602,6 +4831,7 @@
     "lat": 43.517314,
     "lng": -88.453489,
     "name": "Widmer's Cheese Cellars, Inc.",
+    "phone": "(920) 488-2503",
     "plants": [
       {
         "address": "214 W Henni St",
@@ -4617,7 +4847,8 @@
           "Brick",
           "Cheddar",
           "Colby"
-        ]
+        ],
+        "phone": "(920) 488-2503"
       }
     ],
     "retail": {
@@ -4644,6 +4875,7 @@
     "lat": 44.591367,
     "lng": -88.043968,
     "name": "Winona Foods, Inc.",
+    "phone": "(920) 662-2184",
     "plants": [
       {
         "address": "1521 Brookfield Ave",
@@ -4663,7 +4895,8 @@
           "Provolone",
           "Romano",
           "Swiss and Emmentaler"
-        ]
+        ],
+        "phone": "(920) 662-2184"
       }
     ],
     "retail": {
@@ -4690,6 +4923,7 @@
     "lat": 42.608118,
     "lng": -89.657898,
     "name": "Wisconsin Cheese Group, LLC",
+    "phone": "(608) 325-2012",
     "plants": [
       {
         "address": "105 3rd St",
@@ -4702,7 +4936,8 @@
           "Cut/Wrap/Shred",
           "Process Cheese",
           "Other"
-        ]
+        ],
+        "phone": "(608) 325-2012"
       },
       {
         "address": "114 E Coates Ave",
@@ -4716,7 +4951,8 @@
           "Cream",
           "Cut/Wrap/Shred",
           "Other"
-        ]
+        ],
+        "phone": "(608) 325-2012"
       }
     ],
     "retail": {
@@ -4746,6 +4982,7 @@
     "lat": 44.655099,
     "lng": -90.157951,
     "name": "Wiskerchen Cheese, Inc.",
+    "phone": "(715) 652-2333",
     "plants": [
       {
         "address": "5710 County Road H",
@@ -4764,7 +5001,8 @@
           "Bleu",
           "Gorgonzola",
           "Other"
-        ]
+        ],
+        "phone": "(715) 652-2333"
       }
     ],
     "retail": {
@@ -4794,6 +5032,7 @@
     "lat": 44.929215,
     "lng": -91.183782,
     "name": "Yellowstone Cheese, Inc.",
+    "phone": "(715) 289-3800",
     "plants": [
       {
         "address": "24105 County Highway MM",
@@ -4808,7 +5047,8 @@
           "Cheddar",
           "Colby",
           "Monterey/Monterey Jack"
-        ]
+        ],
+        "phone": "(715) 289-3800"
       }
     ],
     "retail": {
@@ -4838,6 +5078,7 @@
     "lat": 42.641031,
     "lng": -89.915714,
     "name": "Zimmerman Cheese Company, Inc.",
+    "phone": "(608) 968-3414",
     "plants": [
       {
         "address": "N6853 State Road 78",
@@ -4853,7 +5094,8 @@
           "Whey/Whey By Products",
           "Brick",
           "Muenster (Munster)"
-        ]
+        ],
+        "phone": "(608) 968-3414"
       }
     ],
     "retail": {

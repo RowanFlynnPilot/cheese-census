@@ -156,7 +156,7 @@ export default function CreameryDetail({
         </section>
       )}
 
-      <section>
+      <section className="contact">
         <h3>Contact</h3>
         <p>
           {creamery.address}
@@ -172,6 +172,16 @@ export default function CreameryDetail({
               </svg>
               Open in Maps
               <span className="sr-only"> (opens in a new tab)</span>
+            </a>
+          </p>
+        )}
+        {creamery.phone && (
+          <p>
+            <a className="tel-link" href={telHref(creamery.phone)}>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.6 3.5c.5-.3 1.1-.1 1.4.4l1.9 3.3c.3.5.2 1.1-.2 1.5L8.3 10a11.6 11.6 0 0 0 5.7 5.7l1.3-1.4c.4-.4 1-.5 1.5-.2l3.3 1.9c.5.3.7.9.4 1.4l-1.2 2.3c-.3.6-1 .9-1.6.8C10.8 19.4 4.6 13.2 3.5 6.3c-.1-.6.2-1.3.8-1.6z" />
+              </svg>
+              {creamery.phone}
             </a>
           </p>
         )}
@@ -324,6 +334,12 @@ export default function CreameryDetail({
                 <div className="id">Licence {plant.datcp_id}</div>
                 <div className="addr">
                   {plant.address}, {plant.city} · {plant.county} County
+                  {plant.phone && (
+                    <>
+                      {" · "}
+                      <a href={telHref(plant.phone)}>{plant.phone}</a>
+                    </>
+                  )}
                 </div>
                 <div className="tags">
                   {plant.operations.map((op) => (
@@ -366,4 +382,12 @@ export default function CreameryDetail({
       </div>
     </aside>
   );
+}
+
+/** "(715) 693-6662 ext. 210" → tel:+17156936662;ext=210 (RFC 3966), so a phone
+ *  dials it and a desktop hands it to whatever answers tel: links. */
+function telHref(phone: string): string {
+  const [number, ext] = phone.split(" ext. ");
+  const digits = number.replace(/\D/g, "");
+  return `tel:+1${digits}${ext ? `;ext=${ext}` : ""}`;
 }

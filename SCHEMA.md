@@ -48,9 +48,10 @@ One record per **distinct named product**. Marieke Gouda and Marieke Gouda Smoke
 | `county` | string | DATCP | Drives the county map view |
 | `lat`, `lng` | float | geocoded once | Pinned via override after first geocode; **required** — the map can't render a null |
 | `address` | string | DATCP/DFW | Retail address if one exists, else plant address |
+| `phone` | string \| null | DATCP | The home plant's BusinessPhone (the plant whose address the record carries), normalised to `(715) 693-6662`, with ` ext. 210` when the directory lists an extension; null when the listing holds no plant or the plant publishes no number |
 | `website` | string \| null | DFW/curated | |
 | `retail` | object | DFW | `{store: bool, mail_order: bool, online: bool}` — feeds trail planner |
-| `plants` | object[] | DATCP | `{datcp_id, address, city, county, operations: string[]}` — operations kept verbatim from the directory |
+| `plants` | object[] | DATCP | `{datcp_id, address, city, county, phone: string \| null, operations: string[]}` — operations kept verbatim from the directory; phone normalised as above |
 | `dfw_company_id` | int \| null | DFW | From `/wi-cheese-companies/{id}/…` |
 | `founded` | int \| null | curated | Storytelling field |
 | `status` | enum | curated | `active` \| `closed` — closed creameries stay in the dataset (history is useful) but drop out of browse views |

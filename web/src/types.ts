@@ -6,6 +6,8 @@ export interface Plant {
   address: string;
   city: string;
   county: string;
+  /** "(715) 693-6662", optionally "… ext. 210"; null when DATCP lists none. */
+  phone: string | null;
   operations: string[];
 }
 
@@ -30,6 +32,8 @@ export interface Creamery {
   lat: number | null;
   lng: number | null;
   address: string;
+  /** The home plant's number, same shape as Plant.phone. */
+  phone: string | null;
   website: string | null;
   retail: Retail;
   plants: Plant[];

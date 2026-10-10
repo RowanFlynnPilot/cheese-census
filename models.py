@@ -31,12 +31,20 @@ def _require(values: str | list[str], key: str, field: str) -> None:
         )
 
 
+# build.py normalises DATCP's BusinessPhone to this one shape; an override that
+# writes any other shape is a typo, and a typo in a phone number is a wrong call.
+PHONE_SHAPE = r"^\(\d{3}\) \d{3}-\d{4}( ext\. \d{1,5})?$"
+
+
 class Plant(BaseModel):
     model_config = ConfigDict(extra="forbid")
     datcp_id: str
     address: str
     city: str
     county: str
+    # DATCP's BusinessPhone for this plant, "(715) 693-6662" or "… ext. 210";
+    # 10 of 388 plants publish none.
+    phone: str | None = Field(default=None, pattern=PHONE_SHAPE)
     operations: list[str]
 
 
@@ -70,6 +78,9 @@ class Creamery(BaseModel):
     lat: float | None = None
     lng: float | None = None
     address: str
+    # The home plant's number (the plant whose address and city the record
+    # carries); null for a listing with no licensed plant or a plant without one.
+    phone: str | None = Field(default=None, pattern=PHONE_SHAPE)
     website: str | None = None
     retail: Retail
     plants: list[Plant] = []

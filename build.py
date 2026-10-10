@@ -95,6 +95,24 @@ def _slugify(value: str) -> str:
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", ascii_value.lower())).strip("-")
 
 
+# DATCP publishes BusinessPhone as "(715) 693-6662", a few with a space for the
+# hyphen, and extensions as " x210" (two to five digits).
+_PHONE = re.compile(r"^\((\d{3})\) (\d{3})[- ](\d{4})(?: x(\d{1,5}))?$")
+
+
+def _phone(raw: str | None, source_key: str) -> str | None:
+    """One shape for every number: "(715) 693-6662", plus " ext. 210" when the
+    directory carries an extension. A phone the pattern does not recognise is a
+    new shape the directory has started publishing, so the build stops on it."""
+    if not raw:
+        return None
+    match = _PHONE.match(raw)
+    if not match:
+        fatal(f"datcp plant {source_key}: unrecognised phone {raw!r}")
+    area, exchange, line, ext = match.groups()
+    return f"({area}) {exchange}-{line}" + (f" ext. {ext}" if ext else "")
+
+
 def _ratio(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
@@ -229,6 +247,7 @@ def merge(raw: dict[str, list[dict]]) -> dict:
                     "address": p["address"],
                     "city": p["city"],
                     "county": p["county"],
+                    "phone": _phone(p["phone"], p["source_key"]),
                     "operations": p["operations"],
                 }
                 for p in plants
@@ -318,6 +337,9 @@ def merge(raw: dict[str, list[dict]]) -> dict:
             company["city"] = home["city"]
             company["county"] = home["county"]
             company["address"] = home["address"]
+            # The number a reader can ring is the one at the place the pin marks;
+            # another plant's line would answer for a different building.
+            company["phone"] = home["phone"]
 
     _assign_ids(companies)
     company_id = {key: company["id"] for key, company in companies.items()}
@@ -537,6 +559,7 @@ def merge(raw: dict[str, list[dict]]) -> dict:
             lat=company.get("coords", (None, None))[0],
             lng=company.get("coords", (None, None))[1],
             address=company["address"],
+            phone=company.get("phone"),
             website=(company["dfw"] or {}).get("website"),
             retail=Retail(
                 store=bool((company["dfw"] or {}).get("retail", {}).get("store")),
