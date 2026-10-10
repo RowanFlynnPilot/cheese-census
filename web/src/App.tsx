@@ -2058,7 +2058,7 @@ export default function App() {
         <span>The Cheese Census — Wausau Pilot &amp; Review · 715-301-5539</span>
         <span className="sources">
           Plant data: Wisconsin DATCP · Consumer listings: Dairy Farmers of Wisconsin ·
-          Awards: Wisconsin Cheese Makers Association
+          Awards: Wisconsin Cheese Makers Association · Map: © OpenStreetMap contributors
         </span>
         <button className="about-link" onClick={openAbout}>
           About this census
@@ -2123,6 +2123,22 @@ export default function App() {
                 controlled set of families, textures, flavors and add-ins. The
                 similar-cheese scores are computed from those fields — family,
                 texture, age, milk, flavor, add-ins — not from popularity.
+              </li>
+              <li>
+                <b>The map</b> — roads, rivers and towns from{" "}
+                <a
+                  href="https://www.openstreetmap.org/copyright"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  OpenStreetMap
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>{" "}
+                contributors, via Protomaps, served by WPR from a Wisconsin extract
+                with nothing fetched from a third party; state and county lines from
+                the U.S. Census Bureau. Each creamery is pinned at its licensed plant
+                (the one nearest its listing when it has several), placed with the
+                Census Bureau&apos;s geocoder.
               </li>
             </ul>
             <h3>Saved cheeses</h3>

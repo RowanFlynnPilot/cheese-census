@@ -55,6 +55,11 @@ data/geocode/plants.json   every DATCP plant's point (committed): build.py picks
                            and snaps the pin to it, so the panel describes the pinned place
 scripts/counties.py        Wisconsin's 72 county outlines (Census cartographic boundaries,
                            public domain) → web/src/counties.json for the map's county layer
+web/public/map/wisconsin.pmtiles
+                           the map's basemap: a Protomaps extract of Wisconsin (OpenStreetMap
+                           data, zoom 0–11, 38 MB), served from the site by HTTP range requests
+                           and drawn by protomaps-leaflet in the WPR palette; refreshed only
+                           with the pmtiles CLI (command in web/README.md), never edited
 web/tests/                 Playwright smoke test of the production build (npm run test:e2e);
                            the deploy workflow's third gate
 data/raw/                  committed scraper output (diffable history)
@@ -417,8 +422,15 @@ balanced heads, pretty paragraphs, gold by role (`--gold-text`, `--gold-ring`,
 `--gold-ink`) from OKLCH ramps recorded in `:root`; an authored glyph per
 cheese family (`web/src/components/FamilyIcon.tsx`); a Playwright smoke test
 (`web/tests`, `npm run test:e2e`) as the deploy's third gate on desktop, a
-touch phone and reduced motion; and a review-only `?basemap=protomaps` flag
-(a 38 MB Wisconsin PMTiles extract, gitignored) awaiting a choice of look.
+touch phone and reduced motion; and, the look chosen, the basemap itself:
+Esri's grey canvas is gone and the map draws a Protomaps basemap
+(OpenStreetMap data) in the WPR palette from a committed Wisconsin extract
+(`web/public/map/wisconsin.pmtiles`, 38 MB, zoom 0–11, read by HTTP range
+requests from the site, so the map makes no third-party request; the map is
+capped at zoom 14, three steps of redrawn zoom-11 geometry; the smoke test
+asserts the host answers `Range` with 206). OpenStreetMap is credited on the
+map, in the colophon and in About. Details and the re-extract command are in
+web/README.md.
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

@@ -44,6 +44,18 @@ test("the census loads with every creamery on the map and in the list", async ({
   expect(await page.locator(".leaflet-marker-pane .marker.has-award").count()).toBeGreaterThan(30);
 });
 
+test("the basemap is read by byte range from the site's own extract", async ({ page }) => {
+  // PMTiles works only on a host that honours Range (GitHub Pages does, and
+  // so must any host the census moves to): a 200 carrying all 38 MB is a
+  // failure, and the pmtiles reader says so in the console.
+  const slice = await page.request.get("map/wisconsin.pmtiles", { headers: { Range: "bytes=0-16383" } });
+  expect(slice.status()).toBe(206);
+  expect((await slice.body()).length).toBe(16384);
+  // Tiles drawn from it, and OpenStreetMap credited on the map.
+  await expect(page.locator(".leaflet-tile-pane canvas.leaflet-tile-loaded").first()).toBeAttached();
+  await expect(page.locator(".leaflet-control-attribution")).toContainText("OpenStreetMap");
+});
+
 test("search shows its work and clears", async ({ page }) => {
   await page.getByLabel("Search creameries by name, city, county or cheese type").fill("gouda");
   await expect(page.locator(".result-strip")).toContainText("28");

@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Creamery } from "../types";
-import type { Flavor } from "@protomaps/basemaps";
-import type { LabelRule } from "protomaps-leaflet";
+import { labelRules, leafletLayer, paintRules, type LabelRule } from "protomaps-leaflet";
+import { namedFlavor, type Flavor } from "@protomaps/basemaps";
 import wisconsin from "../wisconsin.json";
 import counties from "../counties.json";
 
@@ -48,23 +48,25 @@ const COOPERATIVE = COARSE && window.self !== window.top;
 // shape and its own outside-click listener.
 const POPOVER = typeof HTMLElement !== "undefined" && "showPopover" in HTMLElement.prototype;
 
-// Review-only: ?basemap=protomaps or ?basemap=protomaps-quiet swaps Esri's
-// grey canvas for a Protomaps basemap in the WPR palette, read from a
-// Wisconsin PMTiles extract (public/map/wisconsin.pmtiles, not committed)
-// and rendered by protomaps-leaflet, which loads only when the flag is set.
-// The default stays Esri until a look is chosen.
-const BASEMAP = new URLSearchParams(window.location.search).get("basemap");
-const PROTOMAPS = BASEMAP === "protomaps" || BASEMAP === "protomaps-quiet";
+// The basemap is the census's own: a Protomaps extract of Wisconsin
+// (public/map/wisconsin.pmtiles — OpenStreetMap data, zoom 0–11, read from
+// the site itself by HTTP range requests, so the map makes no third-party
+// request) drawn by protomaps-leaflet in the WPR palette. The extract stops
+// at zoom 11 to stay well inside GitHub's 100 MB file limit; past it,
+// protomaps-leaflet redraws the zoom-11 geometry at the finer zooms, which
+// holds up for three steps (the state's roads, rivers and towns, no
+// residential streets or buildings) and goes polygonal beyond them.
+const DATA_ZOOM = 11;
+const MAX_ZOOM = 14;
 
 /** The light flavor recoloured into the census's own palette: cream land,
- *  a tinted water, warm hairline roads, ink labels with cream halos. The
- *  quiet variant fades the roads further and keeps only place names. */
-function wprFlavor(light: Flavor, quiet: boolean): Flavor {
+ *  a tinted water, warm hairline roads, ink labels with cream halos. */
+function wprFlavor(light: Flavor): Flavor {
   const cream = "#f6f2e9";
   const paper = "#fbf9f4";
-  const rule = quiet ? "#ebe6da" : "#e3ddd0";
-  const minor = quiet ? "#f3efe6" : "#f0ebe1";
-  const major = quiet ? "#f8f5ee" : "#ffffff";
+  const rule = "#e3ddd0";
+  const minor = "#f0ebe1";
+  const major = "#ffffff";
   const casingKeys = Object.keys(light).filter((k) => k.endsWith("_casing") || k.endsWith("_casing_early") || k.endsWith("_casing_late"));
   const overrides: Record<string, unknown> = {
     background: cream,
@@ -347,7 +349,7 @@ export default function MapView({
     map.current = L.map(host.current, {
       center: CENTER,
       zoom: ZOOM,
-      maxZoom: 16, // the basemap's native ceiling — past it lies grey void
+      maxZoom: MAX_ZOOM, // three steps past the extract's data; see DATA_ZOOM
       scrollWheelZoom: false, // an embedded iframe must not hijack page scroll
       dragging: !COOPERATIVE,
       zoomAnimation: MOTION,
@@ -358,47 +360,23 @@ export default function MapView({
       // Half-steps let the fit land where the state actually is.
       zoomSnap: 0.5,
     });
-    // Esri's Light Gray canvas: keyless, CDN-fast, and muted enough to sit
-    // under the WPR palette. (CARTO's free basemaps began watermarking
-    // "API KEY REQUIRED" across every tile in mid-2026.) Native tiles stop at
-    // zoom 16, so the map must not zoom past what exists. The matching
-    // reference layer carries the place names — a map with no "Wausau" on it
-    // asked readers to recall where they live.
-    if (PROTOMAPS) {
-      const quiet = BASEMAP === "protomaps-quiet";
-      const target = map.current;
-      void Promise.all([import("protomaps-leaflet"), import("@protomaps/basemaps")]).then(
-        ([pm, basemaps]) => {
-          if (map.current !== target) return;
-          const flavor = wprFlavor(basemaps.namedFlavor("light"), quiet);
-          let labels = pm.labelRules(flavor, "en");
-          if (quiet) labels = labels.filter((rule) => rule.dataLayer === "places");
-          withFont(labels, '"Public Sans", sans-serif');
-          pm.leafletLayer({
-            url: `${import.meta.env.BASE_URL}map/wisconsin.pmtiles`,
-            paintRules: pm.paintRules(flavor),
-            labelRules: labels,
-            maxDataZoom: 11,
-            backgroundColor: "#f6f2e9",
-            attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; <a href="https://protomaps.com">Protomaps</a>',
-          }).addTo(target);
-        },
-      );
-    } else {
-      const tiles = {
-        attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
-        maxZoom: 16,
-      };
-      L.tileLayer(
-        "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-        tiles,
-      ).addTo(map.current);
-      L.tileLayer(
-        "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
-        { maxZoom: 16 },
-      ).addTo(map.current);
-    }
+    // The basemap (see DATA_ZOOM above): the Protomaps light flavor in the
+    // census's palette, labels in the body face, place names included — a map
+    // with no "Wausau" on it asked readers to recall where they live. The
+    // cream background also stands in beyond the extract's edge, about a
+    // degree past the state line at zoom 8 and a few miles at zoom 11.
+    const flavor = wprFlavor(namedFlavor("light"));
+    const labels = labelRules(flavor, "en");
+    withFont(labels, '"Public Sans", sans-serif');
+    leafletLayer({
+      url: `${import.meta.env.BASE_URL}map/wisconsin.pmtiles`,
+      paintRules: paintRules(flavor),
+      labelRules: labels,
+      maxDataZoom: DATA_ZOOM,
+      backgroundColor: "#f6f2e9",
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; <a href="https://protomaps.com">Protomaps</a>',
+    }).addTo(map.current);
     // The state's own outline under the pins, so the census reads as a map
     // *of Wisconsin* and not pins adrift on a grey canvas. U.S. Census Bureau
     // 2010 cartographic boundary file (1:5,000,000, public domain), simplified

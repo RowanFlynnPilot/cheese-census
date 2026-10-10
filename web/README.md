@@ -61,8 +61,9 @@ priority issues): every exported pin is in Wisconsin, by build validation #11
 (six licensed plants had carried their listing's out-of-state headquarters
 coordinates; their first Wisconsin plants are pinned in
 `data/overrides/creameries.json`, geocoded with the Census Bureau's public
-geocoder); Esri's keyless Light Gray *Reference* layer puts the place names on
-the map; **Near me** asks the browser for the reader's position once, draws one
+geocoder); a place-name layer puts the towns on the map (Esri's reference
+tiles then; the Protomaps basemap, below, since); **Near me** asks the browser
+for the reader's position once, draws one
 ink dot, sorts the list by distance with miles on each row, and keeps nothing
 (not in storage, not in the URL — the distance sort never travels in a link;
 the WordPress iframe needs `allow="geolocation"`); a tap that lands on more
@@ -131,13 +132,33 @@ the facts and the chip. `npm run test:e2e` runs the Playwright smoke test in
 `tests/` against the production preview on desktop, a Pixel 7 with touch and
 a reduced-motion desktop; the deploy workflow runs it as its third gate.
 
-A basemap review flag is in place and off by default: `?basemap=protomaps`
-or `?basemap=protomaps-quiet` renders a Protomaps PMTiles extract of
-Wisconsin (`public/map/wisconsin.pmtiles`, built with the `pmtiles` CLI from
-`build.protomaps.com`, 38 MB at zoom 0–11, gitignored until a look is chosen)
-through `protomaps-leaflet` in the WPR palette; `scripts/basemap-shots.mjs`
-captures the three looks for comparison. Choosing it means committing the
-extract (GitHub Pages serves range requests) and crediting OpenStreetMap.
+**The basemap is the census's own (October 2026).** Esri's grey canvas is
+gone; the map draws a Protomaps basemap — OpenStreetMap data, rendered in the
+browser by `protomaps-leaflet` in the WPR palette (`wprFlavor()` in
+`components/MapView.tsx`: cream land, tinted water, warm hairline roads, ink
+labels in Public Sans) — from a Wisconsin extract committed at
+`public/map/wisconsin.pmtiles` (38 MB, zoom 0–11, 93.0–86.7 W × 42.4–47.2 N,
+OpenStreetMap data as of 2026-10-09). The file is read by HTTP range requests
+from the site itself, so the map makes no third-party request and needs no
+key; the host must honour `Range` (GitHub Pages answers 206, as does `vite
+preview`), and the smoke test asserts it. The extract stops at zoom 11 to stay
+well inside GitHub's 100 MB file limit (the same extract to zoom 12 is 77 MB,
+and every re-extract stays in the clone's history for good);
+`protomaps-leaflet` redraws the zoom-11 geometry at finer zooms, which holds
+up for three steps, so the map is capped at zoom 14: roads, rivers, towns and
+land cover, no residential streets or buildings. Past the extract's edge the
+tiles are plain cream (about a degree beyond the state line at zoom 8, a few
+miles at zoom 11). To refresh it, install the `pmtiles` CLI
+(github.com/protomaps/go-pmtiles) and run, from `web/`, with the newest build
+date from build.protomaps.com in place of `20261009`:
+
+```bash
+pmtiles extract https://build.protomaps.com/20261009.pmtiles public/map/wisconsin.pmtiles --bbox=-93.0,42.4,-86.7,47.2 --maxzoom=11
+```
+
+`pmtiles show public/map/wisconsin.pmtiles` prints the bounds, zoom range and
+OpenStreetMap timestamp to check. OpenStreetMap is credited on the map's
+attribution control, in the colophon and in the About panel.
 
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
@@ -356,11 +377,11 @@ The page is designed to fill its container, so the embedding WordPress iframe mu
 be given a height — it does not self-size. (A child-side `ResizeObserver` →
 `postMessage` broadcaster is the standard pattern if a content-height embed is
 ever wanted; it is not built because every view here is a viewport-height
-layout with its own scroller.) Map tiles come from Esri's keyless
-World Light Gray canvas (CARTO's free basemaps started watermarking "API KEY
-REQUIRED" across every tile in mid-2026, which is why they left); fonts from
-Google Fonts. Both are third-party requests from inside the iframe. The Esri
-canvas tops out at zoom 16 and the map is capped to match.
+layout with its own scroller.) The basemap is served from the site itself
+(`public/map/wisconsin.pmtiles`, above — read by range requests, so the host
+must honour `Range`); fonts come from Google Fonts, the one third-party
+request from inside the iframe. The extract's data stops at zoom 11 and the
+map is capped at 14.
 
 ### The embed iframe
 
