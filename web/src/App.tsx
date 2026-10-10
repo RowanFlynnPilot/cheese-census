@@ -28,6 +28,11 @@ function transition(update: () => void): Promise<void> {
   const running = document.startViewTransition(() => {
     flushSync(update);
   });
+  // A transition begun while the document is hidden (a background tab) is
+  // aborted with InvalidStateError on every promise; the update still
+  // applies, and nothing here should surface as an unhandled rejection.
+  running.ready.catch(() => undefined);
+  running.finished.catch(() => undefined);
   return running.updateCallbackDone.catch(() => undefined);
 }
 import type { DraftMedia } from "./data";
