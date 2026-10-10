@@ -17,14 +17,18 @@ import type { Award, Creamery, Dataset } from "./types";
  *  them); stepping ← → between creameries is rapid navigation and stays
  *  instant, so it never goes through here. */
 const REDUCED_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)");
-function transition(update: () => void) {
+/** Resolves once the update is in the DOM: a transition applies it a frame
+ *  later, after the old state is captured, so anything that must follow it
+ *  (returning focus to a row that was inert under the sheet) waits here. */
+function transition(update: () => void): Promise<void> {
   if (typeof document.startViewTransition !== "function" || REDUCED_MOTION.matches) {
     update();
-    return;
+    return Promise.resolve();
   }
-  document.startViewTransition(() => {
+  const running = document.startViewTransition(() => {
     flushSync(update);
   });
+  return running.updateCallbackDone.catch(() => undefined);
 }
 import type { DraftMedia } from "./data";
 import {
@@ -1074,8 +1078,8 @@ export default function App() {
 
   function closeDetail() {
     const id = selectedId;
-    transition(() => setSelectedId(null));
-    if (id) {
+    void transition(() => setSelectedId(null)).then(() => {
+      if (!id) return;
       requestAnimationFrame(() => {
         // From a pin on a phone the row sits in the hidden list pane; the flip
         // pill is the nearest visible control.
@@ -1084,14 +1088,14 @@ export default function App() {
           document.querySelector<HTMLElement>(".mobile-flip"),
         );
       });
-    }
+    });
   }
 
   function closeCheeseDetail() {
     const id = selectedCheeseId;
     const pane = view === "board" ? ".board-pane" : ".cheese-pane";
-    transition(() => setSelectedCheeseId(null));
-    if (id) {
+    void transition(() => setSelectedCheeseId(null)).then(() => {
+      if (!id) return;
       // Scoped to the active pane: the catalog's hidden card carries the same
       // id and would otherwise win the query and swallow the focus.
       requestAnimationFrame(() => {
@@ -1100,7 +1104,7 @@ export default function App() {
           document.querySelector<HTMLElement>(`${pane} input[type="search"], ${pane} button`),
         );
       });
-    }
+    });
   }
 
   // On a phone the detail sheet covers the whole frame, so what it covers must

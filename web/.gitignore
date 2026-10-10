@@ -3,3 +3,6 @@ dist/
 *.tsbuildinfo
 # Mirrored from build/ by scripts/sync-data.mjs — build/ is the source of truth.
 public/data/
+# Playwright's run output (traces of failures, the HTML report).
+test-results/
+playwright-report/

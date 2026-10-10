@@ -5,12 +5,15 @@
 # editorial review is complete. The site reads the committed build/*.json;
 # no scraper runs here.
 #
-# Two gates run first, and either one failing stops the deploy loudly:
+# Three gates run first, and any one failing stops the deploy loudly:
 #   1. build/ must be current — python build.py is re-run from the committed
 #      inputs and must reproduce build/ byte for byte. A stale build/ (an
 #      override edited without rebuilding) would otherwise ship old data
 #      silently; a non-reproducible one would break the determinism promise.
 #   2. The front end's engine tests must pass.
+#   3. The production build must pass the Playwright smoke test (web/tests):
+#      the reader's path on a desktop, on a phone with touch, and with reduced
+#      motion, against the same files that get published.
 name: deploy-pages
 
 on:
@@ -67,6 +70,17 @@ jobs:
       - run: npm test
         working-directory: web
       - run: npm run build
+        working-directory: web
+
+      - name: Cache Playwright's Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('web/package-lock.json') }}
+      - run: npx playwright install --with-deps chromium
+        working-directory: web
+      - name: Smoke-test the production build (desktop, phone, reduced motion)
+        run: npm run test:e2e
         working-directory: web
 
       - uses: actions/configure-pages@v5
