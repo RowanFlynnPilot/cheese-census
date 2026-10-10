@@ -116,6 +116,9 @@ manual dispatch only until all scrapers are implemented.
    window, a non-http(s) `url`, or a duplicate `id`
 10. Featured board with an unknown or repeated cheese id, a pick count other
     than 3/5/7, an `image` that is not a bare filename, or a duplicate `id`
+11. Exported creamery pinned outside Wisconsin (lat/lng beyond 42.4–47.4 N,
+    93.0–86.2 W) — a listing's headquarters standing in for the plant; pin the
+    first Wisconsin plant in `data/overrides/creameries.json`
 
 ## Conventions
 
@@ -346,7 +349,12 @@ Impeccable critique of the catalog (27/40) then drove a clarify → layout →
 harden → typeset → polish pass: filter chips for every facet in force, worked
 search examples, a search-aware empty state with nearest names, honest
 family-sort counts, the band below the first row on phones, a scrolling sheet
-header with a bottom back/step bar, and the maker line at body size.
+header with a bottom back/step bar, and the maker line at body size. The map's
+critique (27/40) found a P0 — six licensed Wisconsin plants pinned at their
+listing's out-of-state headquarters — now validation #11 plus overrides; the
+same pass added the place-name layer, Near me (distance sort, nothing stored),
+the pin chooser for overlapping hit boxes, the result strip and chip-tap
+hand-off on phones, the phone legend, the maps link and the licence fold.
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

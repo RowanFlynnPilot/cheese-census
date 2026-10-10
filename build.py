@@ -743,6 +743,26 @@ def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
             f"reclassify: {ungeocoded[:10]}{' …' if len(ungeocoded) > 10 else ''}"
         )
 
+    # Validation #11: the pin must be in Wisconsin. A DFW listing's coordinates
+    # are its headquarters, and six licensed Wisconsin plants were pinned in New
+    # Jersey, Illinois and Minnesota under rows that said Kaukauna and Edgar.
+    # The state's extent with a small margin: 42.4–47.4 N, 93.0–86.2 W.
+    stray = sorted(
+        f"{c.id} ({c.lat}, {c.lng})"
+        for c in ds["creameries"]
+        if c.id in exported_creameries
+        and c.lat is not None
+        and c.lng is not None
+        and not (42.4 <= c.lat <= 47.4 and -93.0 <= c.lng <= -86.2)
+    )
+    if stray:
+        fatal(
+            f"{len(stray)} exported creamery(ies) are pinned outside Wisconsin — the "
+            f"listing's coordinates are a headquarters, not the plant. Pin the first "
+            f"Wisconsin plant in data/overrides/creameries.json: "
+            f"{stray[:10]}{' …' if len(stray) > 10 else ''}"
+        )
+
     for cheese in ds["cheeses"]:
         if cheese.creamery_id not in exported_creameries:
             fatal(

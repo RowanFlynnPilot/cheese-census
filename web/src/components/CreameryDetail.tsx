@@ -79,6 +79,13 @@ export default function CreameryDetail({
   const editions = groupAwards(awards);
   const firsts = awards.filter((a) => a.placement === 1).length;
   const website = safeHref(creamery.website);
+  // The address is something to go to, not only to read: a maps search that
+  // opens the phone's maps app (or the web) with the plant's street address.
+  const mapsHref = creamery.address
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        `${creamery.address}, ${creamery.city}, WI`,
+      )}`
+    : null;
 
   return (
     <aside
@@ -157,6 +164,17 @@ export default function CreameryDetail({
           {creamery.city}
           {creamery.county ? `, ${creamery.county} County` : ""}
         </p>
+        {mapsHref && (
+          <p>
+            <a className="maps-link" href={mapsHref} target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.5a6.3 6.3 0 0 0-6.3 6.3c0 4.6 5 11.2 6.3 12.7 1.3-1.5 6.3-8.1 6.3-12.7A6.3 6.3 0 0 0 12 2.5zm0 8.9a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z" />
+              </svg>
+              Open in Maps
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
+          </p>
+        )}
         {website && (
           <p>
             <a href={website} target="_blank" rel="noopener noreferrer">
@@ -281,40 +299,54 @@ export default function CreameryDetail({
         </section>
       )}
 
+      {/* The licence file is provenance, not the visit: every operation it
+          lists already appears above as a chip, so the plant-by-plant detail
+          folds behind one line until someone wants the licence numbers. */}
       <section>
-        <h3>Licensed plants ({creamery.plants.length})</h3>
-        {creamery.plants.map((plant) => (
-          <div className="plant" key={plant.datcp_id}>
-            <div className="id">Licence {plant.datcp_id}</div>
-            <div className="addr">
-              {plant.address}, {plant.city} · {plant.county} County
-            </div>
-            <div className="tags">
-              {plant.operations.map((op) => (
-                <span className={`tag${isCapability(op) ? "" : " cheese"}`} key={op}>
-                  {op}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-        {creamery.plants.length === 0 && (
-          <p className="aka">
-            No Wisconsin dairy plant licence on file — listed by Dairy Farmers of
-            Wisconsin but not matched to a DATCP plant.
-          </p>
-        )}
-        {abilities.length > 0 && (
+        {creamery.plants.length === 0 ? (
           <>
-            <h3 style={{ marginTop: "0.9rem" }}>Plant capabilities</h3>
-            <div className="tags">
-              {abilities.map((a) => (
-                <span className="tag" key={a}>
-                  {a}
-                </span>
-              ))}
-            </div>
+            <h3>Licence</h3>
+            <p className="aka">
+              No Wisconsin dairy plant licence on file — listed by Dairy Farmers of
+              Wisconsin but not matched to a DATCP plant.
+            </p>
           </>
+        ) : (
+          <details className="licence">
+            <summary>
+              <h3>
+                Licence details ({creamery.plants.length} plant
+                {creamery.plants.length === 1 ? "" : "s"})
+              </h3>
+            </summary>
+            {creamery.plants.map((plant) => (
+              <div className="plant" key={plant.datcp_id}>
+                <div className="id">Licence {plant.datcp_id}</div>
+                <div className="addr">
+                  {plant.address}, {plant.city} · {plant.county} County
+                </div>
+                <div className="tags">
+                  {plant.operations.map((op) => (
+                    <span className={`tag${isCapability(op) ? "" : " cheese"}`} key={op}>
+                      {op}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+            {abilities.length > 0 && (
+              <>
+                <h3 style={{ marginTop: "0.9rem" }}>Plant capabilities</h3>
+                <div className="tags">
+                  {abilities.map((a) => (
+                    <span className="tag" key={a}>
+                      {a}
+                    </span>
+                  ))}
+                </div>
+              </>
+            )}
+          </details>
         )}
       </section>
 

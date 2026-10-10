@@ -8,9 +8,9 @@ import wisconsin from "../wisconsin.json";
 const CENTER: L.LatLngTuple = [44.6, -89.8];
 const ZOOM = 7;
 
-// A handful of DFW-listed companies sit in New Jersey, South Carolina and Texas.
-// They get pins and pan normally when selected, but they must not drag the
-// overview framing out of the state.
+// The overview frames the in-state pins. (Every exported pin is in-state —
+// build validation #11 — so this is a guard for the reader's own location
+// marker and for any future out-of-state listing, not a working assumption.)
 const WISCONSIN = L.latLngBounds([42.3, -93.1], [47.4, -86.1]);
 
 // Keep in step with `.detail { width: min(420px, 100%) }` in styles.css.
@@ -29,20 +29,27 @@ const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 // has nothing else to scroll, so dragging is on from the start.
 const COOPERATIVE = COARSE && window.self !== window.top;
 
+const esc = (value: string) =>
+  value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
 interface Props {
   creameries: Creamery[];
   selectedId: string | null;
   onSelect: (id: string) => void;
   /** Prepared, escaped HTML hover cards, keyed by creamery id (built in App). */
   tooltips: Map<string, string>;
+  /** The reader's own position, once they asked for it; never stored. */
+  here: { lat: number; lng: number } | null;
 }
 
-export default function MapView({ creameries, selectedId, onSelect, tooltips }: Props) {
+export default function MapView({ creameries, selectedId, onSelect, tooltips, here }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<L.Map | null>(null);
   const layer = useRef<L.LayerGroup | null>(null);
   const markers = useRef<Map<string, L.Marker>>(new Map());
+  const byId = useRef<Map<string, Creamery>>(new Map());
   const storeIds = useRef<Set<string>>(new Set());
+  const hereMarker = useRef<L.Marker | null>(null);
   const select = useRef(onSelect);
   select.current = onSelect;
   const selection = useRef(selectedId);
@@ -80,6 +87,28 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
     }
   }
 
+  /** A tap that lands on more than one pin's hit box opens a chooser instead
+   *  of whichever pin happened to be on top — at the overview the south-east
+   *  cluster is a dozen creameries under one thumb. */
+  function openChooser(at: L.LatLng, ids: string[]) {
+    if (!map.current) return;
+    const rows = ids
+      .map((id) => byId.current.get(id))
+      .filter((c): c is Creamery => Boolean(c))
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map(
+        (c) =>
+          `<li><button type="button" data-id="${esc(c.id)}">${esc(c.name)}<span>${esc(c.city)}${
+            c.county ? ` · ${esc(c.county)} Co.` : ""
+          }</span></button></li>`,
+      )
+      .join("");
+    L.popup({ className: "pin-chooser", offset: [0, -6], maxWidth: 300, autoPanPadding: [24, 24] })
+      .setLatLng(at)
+      .setContent(`<p class="pc-head">${ids.length} creameries here — pick one</p><ul>${rows}</ul>`)
+      .openOn(map.current);
+  }
+
   useEffect(() => {
     if (!host.current || map.current) return;
     map.current = L.map(host.current, {
@@ -99,13 +128,20 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
     // Esri's Light Gray canvas: keyless, CDN-fast, and muted enough to sit
     // under the WPR palette. (CARTO's free basemaps began watermarking
     // "API KEY REQUIRED" across every tile in mid-2026.) Native tiles stop at
-    // zoom 16, so the map must not zoom past what exists.
+    // zoom 16, so the map must not zoom past what exists. The matching
+    // reference layer carries the place names — a map with no "Wausau" on it
+    // asked readers to recall where they live.
+    const tiles = {
+      attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
+      maxZoom: 16,
+    };
     L.tileLayer(
       "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-      {
-        attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
-        maxZoom: 16,
-      },
+      tiles,
+    ).addTo(map.current);
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+      { maxZoom: 16 },
     ).addTo(map.current);
     // The state's own outline under the pins, so the census reads as a map
     // *of Wisconsin* and not pins adrift on a grey canvas. U.S. Census Bureau
@@ -122,6 +158,18 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       },
     }).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
+    // The chooser's buttons: one delegated listener, bound when a popup opens.
+    map.current.on("popupopen", (e: L.PopupEvent) => {
+      const el = e.popup.getElement();
+      if (!el) return;
+      el.addEventListener("click", (ev) => {
+        const button = (ev.target as Element).closest<HTMLElement>("button[data-id]");
+        if (!button?.dataset.id) return;
+        map.current?.closePopup();
+        select.current(button.dataset.id);
+      });
+      el.querySelector<HTMLElement>("button[data-id]")?.focus({ preventScroll: true });
+    });
     // Leaflet only watches window resizes; the container itself changes size
     // too (mobile pane flips, embed reflows, orientation changes). Re-measure,
     // and re-frame the overview unless the reader is looking at a pin.
@@ -144,6 +192,7 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
     if (!layer.current) return;
     layer.current.clearLayers();
     markers.current.clear();
+    byId.current = new Map(creameries.map((c) => [c.id, c]));
     storeIds.current = new Set(
       creameries.filter((c) => c.retail.store).map((c) => c.id),
     );
@@ -160,7 +209,16 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
           tooltips.get(creamery.id) ?? `${creamery.name} — ${creamery.city}`,
           { direction: "top", offset: [0, -10], opacity: 1, className: "map-card-tip" },
         )
-        .on("click", () => select.current(creamery.id));
+        .on("click", () => {
+          const m = map.current;
+          if (!m) return;
+          const at = m.latLngToContainerPoint(marker.getLatLng());
+          const under = [...markers.current.entries()]
+            .filter(([, other]) => at.distanceTo(m.latLngToContainerPoint(other.getLatLng())) <= HIT * 0.8)
+            .map(([id]) => id);
+          if (under.length > 1) openChooser(marker.getLatLng(), under);
+          else select.current(creamery.id);
+        });
       marker.addTo(layer.current!);
       markers.current.set(creamery.id, marker);
     }
@@ -182,6 +240,7 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       // yank the map back to the statewide overview.
       if (map.current && !WISCONSIN.contains(map.current.getCenter())) frame();
     } else if (map.current) {
+      map.current.closePopup();
       const marker = markers.current.get(selectedId);
       if (marker) {
         // Selecting a creamery opens the detail panel over the right of the map, so
@@ -202,6 +261,21 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips }: 
       }
     }
   }, [selectedId]);
+
+  // The reader's own position: one ink dot, and the map moves to it once.
+  useEffect(() => {
+    if (!map.current) return;
+    hereMarker.current?.remove();
+    hereMarker.current = null;
+    if (!here) return;
+    hereMarker.current = L.marker([here.lat, here.lng], {
+      icon: L.divIcon({ className: "", html: '<div class="here-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] }),
+      interactive: false,
+      keyboard: false,
+      zIndexOffset: 500,
+    }).addTo(map.current);
+    map.current.setView([here.lat, here.lng], Math.max(map.current.getZoom(), 9), { animate: MOTION });
+  }, [here]);
 
   /** The first tap on an embedded phone map arms dragging (this tap itself
    *  still lands on whatever it touched — a pin opens as usual). */

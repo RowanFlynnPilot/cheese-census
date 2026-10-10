@@ -226,5 +226,6 @@ Featured cheese boards — the Board Builder's gallery. Readers submit by email 
 8. Non-deterministic output (build runs sort checks on its own export)
 9. Sponsor entry with an unknown `placement`, a malformed or inverted date window, a non-http(s) `url`, or a duplicate `id`
 10. Featured board with an unknown or repeated cheese id, a pick count other than 3/5/7, an `image` that is not a bare filename, or a duplicate `id`
+11. Exported creamery pinned outside Wisconsin (lat/lng beyond 42.4–47.4 N, 93.0–86.2 W) — a listing's headquarters coordinates standing in for the plant; pin the first Wisconsin plant in `data/overrides/creameries.json`
 
 `queue/` reports are regenerated every run for the non-fatal review work: creameries with zero cataloged cheeses, awards with `creamery_id` but no `cheese_id`, cheeses still carrying provisional flavor tags from assisted tagging, and description coverage (missing / generated / human-edited).

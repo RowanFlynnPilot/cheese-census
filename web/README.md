@@ -56,6 +56,27 @@ Plant operations are split into cheese types and plant capabilities using DATCP'
 own closed vocabularies (the 7 GeneralProcessing and 29 SpecificProcessing values,
 pinned in `src/data.ts`) — membership, not pattern-matching.
 
+The map answers "where" and "near me" (October 2026 critique, 27/40 → the five
+priority issues): every exported pin is in Wisconsin, by build validation #11
+(six licensed plants had carried their listing's out-of-state headquarters
+coordinates; their first Wisconsin plants are pinned in
+`data/overrides/creameries.json`, geocoded with the Census Bureau's public
+geocoder); Esri's keyless Light Gray *Reference* layer puts the place names on
+the map; **Near me** asks the browser for the reader's position once, draws one
+ink dot, sorts the list by distance with miles on each row, and keeps nothing
+(not in storage, not in the URL — the distance sort never travels in a link;
+the WordPress iframe needs `allow="geolocation"`); a tap that lands on more
+than one pin's hit box opens a chooser (a Leaflet popup in the cream card,
+one 44px button per creamery) instead of whichever pin was on top; the legend
+stays on phones as one line at the map's top right; a search shows a result
+strip at the head of the list ("28 match “Gouda” · Clear"), and on a phone a
+"Licensed to make" chip closes the sheet onto that strip so the tap has a
+visible result; an empty search names what was typed and offers the nearest
+creamery names (`nearness` in `App.tsx`); the panel's address carries an
+"Open in Maps" link, and the plant-by-plant licence detail folds behind
+"Licence details (N plants)" — every operation it lists is already a chip
+above.
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry
@@ -288,16 +309,17 @@ standalone page go quiet inside the article:
 <iframe
   src="https://rowanflynnpilot.github.io/cheese-census/"
   title="The Cheese Census"
-  allow="web-share; clipboard-write"
+  allow="web-share; clipboard-write; geolocation"
   style="width: 100%; height: 760px; border: 0"
 ></iframe>
 ```
 
-- `allow="web-share; clipboard-write"` — Chromium gates both the share sheet
-  and the clipboard behind Permissions Policy, default allowlist `self`; a
-  cross-origin frame without it gets `NotAllowedError` on every Share / Copy
-  link tap. The buttons already fall back to showing the link itself, but
-  the tap should just work.
+- `allow="web-share; clipboard-write; geolocation"` — Chromium gates the
+  share sheet, the clipboard and geolocation behind Permissions Policy,
+  default allowlist `self`; a cross-origin frame without it gets
+  `NotAllowedError` on every Share / Copy link tap and a denied "Near me".
+  The buttons already fall back (the link itself; "pick a county"), but the
+  tap should just work.
 - A share link should open the *article*, not the bare inner frame. Build
   with `VITE_SHARE_BASE=https://www.wausaupilotandreview.com/<article>/`
   (the page that holds the iframe) and have that page forward its own

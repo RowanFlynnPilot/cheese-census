@@ -59,8 +59,44 @@ const DATA_STATUS = import.meta.env.VITE_DATA_STATUS ?? "provisional";
 
 const BASE_TITLE = document.title;
 
-const SORTS = ["name", "awards", "county"] as const;
+const SORTS = ["name", "awards", "county", "distance"] as const;
 type SortKey = (typeof SORTS)[number];
+
+/** Great-circle miles between two points — enough for "14 mi" on a row. */
+function milesBetween(a: { lat: number; lng: number }, b: { lat: number; lng: number }): number {
+  const rad = Math.PI / 180;
+  const dLat = (b.lat - a.lat) * rad;
+  const dLng = (b.lng - a.lng) * rad;
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLng / 2) ** 2;
+  return 3958.8 * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+}
+
+function fmtMiles(miles: number): string {
+  return miles < 10 ? `${miles.toFixed(1)} mi` : `${Math.round(miles)} mi`;
+}
+
+/** How near a typed word is to a name: character-bigram overlap (Dice),
+ *  taken against the whole name and against each of its words, so "hookz"
+ *  finds Hook's Cheese Company and "habanro" finds Habanero Jack. Both
+ *  strings arrive folded. */
+function nearness(query: string, text: string): number {
+  const grams = (s: string) => {
+    const set = new Set<string>();
+    const padded = ` ${s} `;
+    for (let i = 0; i < padded.length - 1; i++) set.add(padded.slice(i, i + 2));
+    return set;
+  };
+  const qg = grams(query);
+  const dice = (candidate: string) => {
+    const ng = grams(candidate);
+    let hits = 0;
+    for (const g of qg) if (ng.has(g)) hits++;
+    return (2 * hits) / (qg.size + ng.size);
+  };
+  return Math.max(dice(text), ...text.split(/\s+/).filter(Boolean).map(dice));
+}
 
 type ViewKey = "map" | "cheeses" | "board";
 
@@ -170,6 +206,28 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   // Phones show one pane at a time (the floating flip pill); desktop ignores this.
   const [mobilePane, setMobilePane] = useState<"list" | "map">("list");
+  // "Near me": the reader's position, asked for on a tap and kept only for
+  // this visit — never written anywhere, never in the URL (a shared link
+  // cannot carry someone else's location).
+  const [here, setHere] = useState<{ lat: number; lng: number } | null>(null);
+  const [locating, setLocating] = useState<"idle" | "asking" | "denied" | "unavailable">("idle");
+
+  function locate() {
+    if (!("geolocation" in navigator)) {
+      setLocating("unavailable");
+      return;
+    }
+    setLocating("asking");
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setHere({ lat: position.coords.latitude, lng: position.coords.longitude });
+        setSort("distance");
+        setLocating("idle");
+      },
+      (err) => setLocating(err.code === err.PERMISSION_DENIED ? "denied" : "unavailable"),
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 },
+    );
+  }
 
   // Cheese-view state.
   const [cheeseQuery, setCheeseQuery] = useState(() => initialParam("cq"));
@@ -404,7 +462,12 @@ export default function App() {
         return false;
       })
       .sort((a, b) => {
-        if (sort === "awards") {
+        if (sort === "distance" && here) {
+          const miles = (c: Creamery) =>
+            c.lat === null || c.lng === null ? Infinity : milesBetween(here, { lat: c.lat, lng: c.lng });
+          const diff = miles(a) - miles(b);
+          if (diff) return diff;
+        } else if (sort === "awards") {
           const diff = (awardCounts.get(b.id) ?? 0) - (awardCounts.get(a.id) ?? 0);
           if (diff) return diff;
         } else if (sort === "county") {
@@ -417,8 +480,24 @@ export default function App() {
         return a.name.localeCompare(b.name);
       });
     return { list, hints };
-  }, [data, query, county, retailOnly, awardedOnly, sort, awardCounts]);
+  }, [data, query, county, retailOnly, awardedOnly, sort, awardCounts, here]);
   const shown = filtered.list;
+
+  // A creamery search that finds nothing: the three names (or cities) nearest
+  // the typed text, so "hooks" still lands on Hook's.
+  const creameryNearMisses = useMemo(() => {
+    const q = fold(query.trim());
+    if (!q || shown.length > 0) return [] as { id: string; name: string }[];
+    const scored: { id: string; name: string; score: number }[] = [];
+    for (const creamery of activeCreameries) {
+      const best = Math.max(nearness(q, fold(creamery.name)), nearness(q, fold(creamery.city)));
+      if (best >= 0.3) scored.push({ id: creamery.id, name: creamery.name, score: best });
+    }
+    return scored
+      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+      .slice(0, 3)
+      .map(({ id, name }) => ({ id, name }));
+  }, [query, shown.length, activeCreameries]);
 
   // Search text folds once per cheese, not once per keystroke: ~1,000 records
   // × eight strings through NFD-normalize is tens of milliseconds on a phone.
@@ -524,22 +603,12 @@ export default function App() {
   const nearMisses = useMemo(() => {
     const q = fold(deferredCheeseQuery.trim());
     if (!q || cheesesShown.length > 0) return [] as { id: string; name: string }[];
-    const grams = (s: string) => {
-      const set = new Set<string>();
-      const padded = ` ${s} `;
-      for (let i = 0; i < padded.length - 1; i++) set.add(padded.slice(i, i + 2));
-      return set;
-    };
-    const qg = grams(q);
     const seen = new Set<string>();
     const scored: { id: string; name: string; score: number }[] = [];
     for (const cheese of activeCheeses) {
       if (seen.has(cheese.name)) continue;
       seen.add(cheese.name);
-      const ng = grams(fold(cheese.name));
-      let hits = 0;
-      for (const g of qg) if (ng.has(g)) hits++;
-      const score = (2 * hits) / (qg.size + ng.size);
+      const score = nearness(q, fold(cheese.name));
       if (score >= 0.3) scored.push({ id: cheese.id, name: cheese.name, score });
     }
     return scored
@@ -888,7 +957,9 @@ export default function App() {
       if (county) params.set("county", county);
       if (retailOnly) params.set("store", "1");
       if (awardedOnly) params.set("awards", "1");
-      if (sort !== "name") params.set("sort", sort);
+      // The distance sort belongs to this reader's position, so it never
+      // travels in a link.
+      if (sort !== "name" && sort !== "distance") params.set("sort", sort);
       hash = selectedId;
     }
     // Keep board-id commas readable — the address bar is a share surface too.
@@ -1090,7 +1161,31 @@ export default function App() {
     setCounty("");
     setRetailOnly(false);
     setAwardedOnly(false);
+    // On a phone the sheet covers the list it just filtered, so the tap would
+    // change nothing the reader can see: close the sheet onto the list, whose
+    // result strip names the answer, and put focus there (once the list pane
+    // is no longer inert — the effect below runs after that one).
+    if (narrow) {
+      focusStripNext.current = true;
+      setSelectedId(null);
+      setMobilePane("list");
+    }
   }
+
+  const focusStripNext = useRef(false);
+  useEffect(() => {
+    if (!focusStripNext.current || selectedId) return;
+    focusStripNext.current = false;
+    // Synchronous first (the covered panes are no longer inert by now), with
+    // one retry a beat later for a browser that is still settling the sheet.
+    const land = () => {
+      const strip = document.querySelector<HTMLElement>(".result-strip");
+      if (!strip) return false;
+      strip.focus({ preventScroll: true });
+      return document.activeElement === strip;
+    };
+    if (!land()) window.setTimeout(land, 80);
+  }, [selectedId, query]);
 
   // Global keys, routed through a ref so the listener binds once.
   const keys = useRef({
@@ -1160,6 +1255,10 @@ export default function App() {
   function renderRow(creamery: Creamery) {
     const wins = awardCounts.get(creamery.id) ?? 0;
     const hint = filtered.hints.get(creamery.id);
+    const miles =
+      here && creamery.lat !== null && creamery.lng !== null
+        ? fmtMiles(milesBetween(here, { lat: creamery.lat, lng: creamery.lng }))
+        : null;
     return (
       <button
         key={creamery.id}
@@ -1175,6 +1274,7 @@ export default function App() {
           {creamery.name}
         </div>
         <div className="meta">
+          {miles && <span className="dist">{miles}</span>}
           <span>
             {creamery.city}
             {creamery.county ? ` · ${creamery.county} Co.` : ""}
@@ -1432,10 +1532,11 @@ export default function App() {
                   ))}
                 </select>
                 <select
-                  value={sort}
+                  value={sort === "distance" && !here ? "name" : sort}
                   onChange={(e) => setSort(e.target.value as SortKey)}
                   aria-label="Sort creameries"
                 >
+                  {here && <option value="distance">Sort: Nearest</option>}
                   <option value="name">Sort: A–Z</option>
                   <option value="awards">Sort: Most awarded</option>
                   <option value="county">Sort: County</option>
@@ -1458,7 +1559,43 @@ export default function App() {
                   />
                   Award winners
                 </label>
+                {/* The reader's position stays in this browser: it sorts the
+                    list and draws one dot, and is never stored or shared. */}
+                <button
+                  type="button"
+                  className={`near-me${here ? " is-on" : ""}`}
+                  onClick={locate}
+                  disabled={locating === "asking"}
+                  aria-pressed={here !== null}
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3.2" />
+                    <path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4" />
+                    <circle cx="12" cy="12" r="7.5" fill="none" />
+                  </svg>
+                  {locating === "asking" ? "Finding you…" : here ? "Nearest first" : "Near me"}
+                </button>
               </div>
+              {locating === "denied" && (
+                <p className="locate-note" role="status">
+                  Location is off for this site. Turn it on in your browser, or pick a
+                  county above.
+                </p>
+              )}
+              {locating === "unavailable" && (
+                <p className="locate-note" role="status">
+                  Your location isn&rsquo;t available here — pick a county above instead.
+                </p>
+              )}
+              {query.trim() && data && shown.length > 0 && (
+                <p className="result-strip" role="status" tabIndex={-1}>
+                  <b>{shown.length}</b> {shown.length === 1 ? "matches" : "match"}{" "}
+                  &ldquo;{query.trim()}&rdquo;
+                  <button type="button" className="linkish" onClick={() => setQuery("")}>
+                    Clear
+                  </button>
+                </p>
+              )}
             </div>
 
             <div className="list">
@@ -1483,10 +1620,50 @@ export default function App() {
                 : shown.map(renderRow)}
               {data && shown.length === 0 && (
                 <div className="empty">
-                  <p>No creameries match those filters.</p>
-                  <button className="linkish" onClick={clearFilters}>
-                    Clear filters
-                  </button>
+                  {query.trim() ? (
+                    <>
+                      <p className="empty-head">Nothing called &ldquo;{query.trim()}&rdquo;.</p>
+                      {creameryNearMisses.length > 0 && (
+                        <p className="near-misses">
+                          Did you mean{" "}
+                          {creameryNearMisses.map((miss, i) => (
+                            <span key={miss.id}>
+                              {i > 0 ? (i === creameryNearMisses.length - 1 ? " or " : ", ") : ""}
+                              <button
+                                type="button"
+                                className="linkish"
+                                onClick={() => setQuery(miss.name)}
+                              >
+                                {miss.name}
+                              </button>
+                            </span>
+                          ))}
+                          ?
+                        </p>
+                      )}
+                      <p>Try a creamery, a city, a county or a cheese type (Limburger).</p>
+                      <p>
+                        <button type="button" className="linkish" onClick={() => setQuery("")}>
+                          Clear the search
+                        </button>
+                        {(county || retailOnly || awardedOnly) && (
+                          <>
+                            {" · "}
+                            <button type="button" className="linkish" onClick={clearFilters}>
+                              Clear the filters too
+                            </button>
+                          </>
+                        )}
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>No creameries match those filters.</p>
+                      <button className="linkish" onClick={clearFilters}>
+                        Clear filters
+                      </button>
+                    </>
+                  )}
                 </div>
               )}
             </div>
@@ -1500,6 +1677,7 @@ export default function App() {
                   selectedId={selectedId}
                   onSelect={setSelectedId}
                   tooltips={mapTips}
+                  here={here}
                 />
               </Suspense>
             )}
@@ -1515,6 +1693,11 @@ export default function App() {
                 <i className="marker is-selected" style={{ width: 10, height: 10 }} />{" "}
                 Selected
               </span>
+              {here && (
+                <span>
+                  <i className="here-dot" /> You
+                </span>
+              )}
             </div>
             {selected && data && (
               <CreameryDetail

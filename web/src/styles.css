@@ -2773,6 +2773,231 @@ button.highlight {
 
 /* ── Narrow / mobile ────────────────────────────────────────────────────── */
 
+/* ── Map: near me, the result strip, the pin chooser, the licence fold ──── */
+
+/* "Near me" sits with the toggles; once located it reads as the active sort. */
+.near-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  background: #fff;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  cursor: pointer;
+}
+
+.near-me svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.near-me.is-on {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  color: var(--cream);
+}
+
+.near-me:disabled {
+  cursor: progress;
+  color: var(--ink-soft);
+}
+
+.locate-note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+/* Miles to a creamery, once the reader has a position. */
+.creamery-row .dist {
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--teal-dark);
+}
+
+/* What the search found, where the list begins — the masthead's count is a
+   screen away on a phone. Focusable so a chip tap from the sheet lands here. */
+.result-strip {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.86rem;
+  color: var(--ink);
+}
+
+.result-strip b {
+  font-family: var(--mono);
+  font-weight: 500;
+}
+
+.result-strip:focus {
+  outline: none;
+}
+
+.result-strip .linkish {
+  margin-left: auto;
+  font-size: 0.82rem;
+}
+
+/* The legend's "You" dot and the map's: ink, so it is not a creamery. */
+.here-dot {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 6px rgba(29, 35, 33, 0.16);
+}
+
+.legend .here-dot {
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  box-shadow: 0 0 0 3px rgba(29, 35, 33, 0.16);
+  flex: none;
+}
+
+/* The pin chooser: a Leaflet popup wearing the cream card, one button a row. */
+.pin-chooser .leaflet-popup-content-wrapper {
+  background: var(--cream);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  font-family: var(--body);
+}
+
+.pin-chooser .leaflet-popup-tip {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-width: 0 1px 1px 0;
+}
+
+.pin-chooser .leaflet-popup-content {
+  margin: 0.6rem 0.75rem 0.7rem;
+  min-width: 220px;
+}
+
+.pin-chooser .pc-head {
+  margin: 0 2rem 0.35rem 0;
+  font: 500 0.74rem/1.3 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.pin-chooser ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.pin-chooser li + li {
+  border-top: 1px solid var(--rule);
+}
+
+.pin-chooser button {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.45rem 0.2rem;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: 600 0.92rem/1.25 var(--body);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.pin-chooser button span {
+  display: block;
+  margin-top: 1px;
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.pin-chooser button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: -2px;
+}
+
+.pin-chooser .leaflet-popup-close-button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  color: var(--ink-soft);
+}
+
+/* "Open in Maps" beside the address. */
+.maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.maps-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
+}
+
+/* The licence fold: the section heading is the summary. */
+.licence summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.licence summary::-webkit-details-marker {
+  display: none;
+}
+
+.licence summary::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-right: 2px solid var(--ink-soft);
+  border-bottom: 2px solid var(--ink-soft);
+  transform: rotate(-45deg);
+  flex: none;
+}
+
+.licence[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.licence summary h3 {
+  margin-bottom: 0.55rem;
+}
+
+.licence summary:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
 /* ── Catalog: examples, filters in force, the empty search ─────────────── */
 
 /* Three worked examples under an empty search box, each one tap away. */
@@ -3156,13 +3381,38 @@ button.highlight {
     gap: 0.4rem;
   }
 
-  /* Small screens keep the essentials; the almanac line, legend and source
-     roll are desktop furniture. WPR attribution and the provisional-data
-     notice stay everywhere. */
+  /* Small screens keep the essentials; the almanac line and source roll are
+     desktop furniture. WPR attribution and the provisional-data notice stay
+     everywhere. */
   .stats-line,
-  .legend,
   .colophon .sources {
     display: none;
+  }
+
+  /* The legend stays on phones as one compact line at the map's top right,
+     clear of the zoom control and the flip pill. The framed-map hint moves
+     under it. */
+  .legend {
+    left: auto;
+    right: 0.6rem;
+    top: 0.6rem;
+    bottom: auto;
+    gap: 0.55rem;
+    padding: 0.3rem 0.55rem;
+    font-size: 0.74rem;
+  }
+
+  .map-hint {
+    top: 3.2rem;
+  }
+
+  .near-me,
+  .result-strip .linkish {
+    min-height: 2.75rem;
+  }
+
+  .result-strip {
+    font-size: 0.92rem;
   }
 
   /* One compact wrapping line: attribution stays, the provisional notice
