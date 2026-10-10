@@ -24,9 +24,13 @@ const HIT = COARSE ? 44 : 28;
 // only a pin drawn on top of another needs the chooser there.
 const HOVER = window.matchMedia("(hover: hover)").matches;
 const CHOOSER_RADIUS = HOVER ? 8 : HIT * 0.8;
-// Below this zoom a cluster is towns, not one address: a tap zooms in to let
-// the pins part before any chooser is offered.
-const CLUSTER_ZOOM = 9;
+// A cluster tap zooms to where the tapped pins part, at most this many steps
+// closer and never past this zoom; pins that still coincide there share one
+// address and get the chooser instead.
+const SPLIT_STEPS = 4;
+const SPLIT_MAX_ZOOM = 13;
+// How long the "zooming in" label stays, in ms.
+const HINT_MS = 1600;
 // Reduced motion covers Leaflet's own zoom, fade and pan animations too.
 const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 // Inside an article (the WordPress iframe) on a phone, a one-finger swipe on
@@ -62,6 +66,34 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
   const selection = useRef(selectedId);
   selection.current = selectedId;
   const [armed, setArmed] = useState(!COOPERATIVE);
+  // The reader moved the map by hand (drag, pinch, the zoom buttons) — then a
+  // refit would take a view they chose. Our own moves set `programmatic`.
+  const touched = useRef(false);
+  const programmatic = useRef(false);
+  // The filtered set changed while a panel was open: refit when it closes.
+  const pendingFrame = useRef(false);
+  const [hint, setHint] = useState<string | null>(null);
+  const hintTimer = useRef<number | null>(null);
+
+  /** Move the map ourselves without counting it as the reader's hand. The
+   *  flag clears when this move ends — listened for after the action, because
+   *  Leaflet stops any running animation first and that stop fires its own
+   *  moveend — or after a beat, for a move that turns out to be no move. */
+  function move(action: () => void) {
+    programmatic.current = true;
+    action();
+    const done = () => {
+      programmatic.current = false;
+    };
+    map.current?.once("moveend", done);
+    window.setTimeout(done, 1500);
+  }
+
+  function flash(text: string) {
+    setHint(text);
+    if (hintTimer.current) window.clearTimeout(hintTimer.current);
+    hintTimer.current = window.setTimeout(() => setHint(null), HINT_MS);
+  }
 
   /** One source of truth for pin appearance: retail stores read as a donut,
    *  the selected creamery as a larger gold pin. Classes live in styles.css
@@ -81,17 +113,22 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
 
   /** Frame the visible set: fit the in-state pins, or fall back to the whole state. */
   function frame() {
-    if (!map.current) return;
+    const m = map.current;
+    if (!m) return;
     const inState = [...markers.current.values()]
-      .map((m) => m.getLatLng())
+      .map((marker) => marker.getLatLng())
       .filter((p) => WISCONSIN.contains(p));
-    if (inState.length > 1) {
-      map.current.fitBounds(L.latLngBounds(inState), { padding: [32, 32], maxZoom: 11 });
-    } else if (inState.length === 1) {
-      map.current.setView(inState[0], 10);
-    } else {
-      map.current.setView(CENTER, ZOOM);
-    }
+    move(() => {
+      if (inState.length > 1) {
+        m.fitBounds(L.latLngBounds(inState), { padding: [32, 32], maxZoom: 11 });
+      } else if (inState.length === 1) {
+        m.setView(inState[0], 10);
+      } else {
+        m.setView(CENTER, ZOOM);
+      }
+    });
+    touched.current = false;
+    pendingFrame.current = false;
   }
 
   /** A tap that lands on more than one pin's hit box opens a chooser instead
@@ -165,6 +202,32 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
       },
     }).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
+    // The reader's own hand on the map, as opposed to our fits and pans: a
+    // drag, a pinch, the zoom buttons. `programmatic` covers our own moves
+    // until they end.
+    map.current.on("dragstart", () => {
+      touched.current = true;
+    });
+    map.current.on("zoomstart", () => {
+      if (!programmatic.current) touched.current = true;
+    });
+    // "Wisconsin": the way back to the statewide frame, under the zoom
+    // buttons — the zoom control alone offers no return once a search or a
+    // cluster tap has flown the map to one town.
+    const Reset = L.Control.extend({
+      onAdd: () => {
+        const bar = L.DomUtil.create("div", "leaflet-bar map-reset");
+        const button = L.DomUtil.create("button", "", bar) as HTMLButtonElement;
+        button.type = "button";
+        button.textContent = "Wisconsin";
+        button.title = "Show all of Wisconsin";
+        button.setAttribute("aria-label", "Show all of Wisconsin");
+        L.DomEvent.disableClickPropagation(bar);
+        L.DomEvent.on(button, "click", frame);
+        return bar;
+      },
+    });
+    new Reset({ position: "topleft" }).addTo(map.current);
     // The chooser's buttons: one delegated listener, bound when a popup opens.
     map.current.on("popupopen", (e: L.PopupEvent) => {
       const el = e.popup.getElement();
@@ -245,19 +308,34 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
             return;
           }
           // At the overview the Fox Valley is seven pins under one thumb but
-          // seven towns on the ground: zoom two steps onto the tap and the
-          // pins part. The chooser is for pins that still coincide.
-          const zoom = m.getZoom();
-          if (zoom < CLUSTER_ZOOM) {
-            const closer = zoom + 2;
-            const parts = under.some((id) => {
-              const other = markers.current.get(id)!.getLatLng();
-              return m.project(pin, closer).distanceTo(m.project(other, closer)) > CHOOSER_RADIUS;
-            });
-            if (parts) {
-              m.setView(pin, closer, { animate: MOTION });
-              return;
+          // seven towns on the ground. One move, to the zoom where the tapped
+          // pins part the most (within a few steps), with a label saying why
+          // the map moved; the chooser is for pins that share an address and
+          // never part.
+          const base = Math.ceil(m.getZoom());
+          const crowd = (z: number) =>
+            under.filter(
+              (id) =>
+                m.project(pin, z).distanceTo(m.project(markers.current.get(id)!.getLatLng(), z)) <=
+                CHOOSER_RADIUS,
+            ).length;
+          let target = base;
+          let fewest = under.length;
+          for (let z = base + 1; z <= Math.min(base + SPLIT_STEPS, SPLIT_MAX_ZOOM); z++) {
+            const left = crowd(z);
+            if (left < fewest) {
+              fewest = left;
+              target = z;
             }
+            if (left <= 1) break;
+          }
+          // Worth a move only when it clears the tap or at least halves the
+          // crowd; splitting three pins into two is a chooser's job, not a
+          // second silent zoom.
+          if (target > base && (fewest <= 1 || fewest * 2 <= under.length)) {
+            flash(`${under.length} creameries here — zooming in`);
+            move(() => m.setView(pin, target, { animate: MOTION }));
+            return;
           }
           openChooser(pin, under);
         });
@@ -265,8 +343,9 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
       markers.current.set(creamery.id, marker);
     }
     // Refit as filters narrow the set, but never yank the map while the reader is
-    // looking at a particular creamery.
+    // looking at a particular creamery — remember to, for when the panel closes.
     if (!selection.current) frame();
+    else pendingFrame.current = true;
   }, [creameries, tooltips]);
 
   // Re-style the selected pin and bring it into view.
@@ -276,11 +355,15 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
       marker.setZIndexOffset(id === selectedId ? 1000 : 0);
     }
     if (!selectedId) {
-      // Closing the panel after viewing an out-of-state company would leave the
-      // reader looking at New Jersey — re-frame then. Anywhere in-state, keep
-      // the reader's own pan and zoom: closing a pin they walked to should not
-      // yank the map back to the statewide overview.
-      if (map.current && !WISCONSIN.contains(map.current.getCenter())) frame();
+      // Closing the panel: if the list changed underneath it (a search cleared
+      // while a creamery was open) the map still shows the old answer, so
+      // refit — unless the reader moved the map by hand, which is theirs to
+      // keep. A centre that left the state is always re-framed.
+      if (!map.current) return;
+      if (!WISCONSIN.contains(map.current.getCenter()) || (pendingFrame.current && !touched.current)) {
+        frame();
+      }
+      pendingFrame.current = false;
     } else if (map.current) {
       map.current.closePopup();
       const marker = markers.current.get(selectedId);
@@ -299,7 +382,7 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
                 zoom,
               )
             : marker.getLatLng();
-        map.current.panTo(centre, { animate: MOTION });
+        move(() => map.current!.panTo(centre, { animate: MOTION }));
       }
     }
   }, [selectedId]);
@@ -316,7 +399,8 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
       keyboard: false,
       zIndexOffset: 500,
     }).addTo(map.current);
-    map.current.setView([here.lat, here.lng], Math.max(map.current.getZoom(), 9), { animate: MOTION });
+    const m = map.current;
+    move(() => m.setView([here.lat, here.lng], Math.max(m.getZoom(), 9), { animate: MOTION }));
   }, [here]);
 
   /** The first tap on an embedded phone map arms dragging (this tap itself
@@ -343,6 +427,12 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
           Tap the map to move it
         </p>
       )}
+      {/* Why the map just moved on its own: "13 creameries here — zooming in".
+          Always mounted (a live region announces changes, not arrivals);
+          styles.css hides it while empty. */}
+      <p className="map-hint map-zoom-hint" role="status">
+        {hint}
+      </p>
     </div>
   );
 }

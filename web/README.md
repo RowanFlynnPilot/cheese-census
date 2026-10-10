@@ -96,6 +96,23 @@ Leaflet's 30px (Leaflet's stylesheet arrives with the lazy map chunk, after
 `styles.css`). Contact carries the home plant's phone as a `tel:` link
 (`phone` on the creamery and on each plant, normalised in `build.py`).
 
+A third critique (31/40 again, with five new issues) led with the pin and
+the panel disagreeing (Emmi Roth pinned in Monroe under a Platteville
+address). The pipeline now geocodes every licensed plant once
+(`scripts/geocode.py` → `data/geocode/plants.json`), makes the home plant
+the one nearest the listing's point and snaps the pin onto it, so Contact
+describes the pinned plant ("The Monroe plant is pinned; also licensed in
+Platteville, Stoughton and Seymour."), the licence fold marks it, and the
+phone is labelled as the business line on that licence. The map gained a
+"Wisconsin" control under the zoom buttons; closing a panel after the list
+changed underneath it refits the map unless the reader moved it by hand; the
+view shows its filters in force as removable chips, as the catalog does; a
+cluster tap moves once, to where the tapped pins part, with a status label
+("18 creameries here — zooming in"), and opens the chooser only for pins that
+will not part; and the secondary type and targets came up for the
+readership (pills 0.8rem, row meta 0.84rem, 36 px panel buttons, 44 px
+summaries, links and the chooser's × on phones).
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry

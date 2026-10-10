@@ -1306,11 +1306,41 @@ export default function App() {
   ]
     .filter(Boolean)
     .join(" ");
-  const activeFilters =
-    (county ? 1 : 0) +
-    (retailOnly ? 1 : 0) +
-    (awardedOnly ? 1 : 0) +
-    (sort !== "name" && sort !== "distance" ? 1 : 0);
+  const mapChips: { key: string; label: string; aria: string; remove: () => void }[] = [];
+  if (county) {
+    mapChips.push({
+      key: "county",
+      label: `${county} County`,
+      aria: `Remove the ${county} County filter`,
+      remove: () => setCounty(""),
+    });
+  }
+  if (retailOnly) {
+    mapChips.push({
+      key: "store",
+      label: "Retail store",
+      aria: "Remove the retail store filter",
+      remove: () => setRetailOnly(false),
+    });
+  }
+  if (awardedOnly) {
+    mapChips.push({
+      key: "awards",
+      label: "Award winners",
+      aria: "Remove the award winners filter",
+      remove: () => setAwardedOnly(false),
+    });
+  }
+  if (sort === "awards" || sort === "county") {
+    const label = sort === "awards" ? "Most awarded" : "County";
+    mapChips.push({
+      key: "sort",
+      label: `Sort: ${label}`,
+      aria: "Back to the A–Z sort",
+      remove: () => setSort("name"),
+    });
+  }
+  const activeFilters = mapChips.length;
   const foldFilters = narrow && !filtersOpen;
 
   // Once located, the list says what "nearest first" came to — the sort select
@@ -1609,6 +1639,39 @@ export default function App() {
                   </svg>
                 </button>
               </div>
+              {/* Every filter in force as a removable chip, as the catalog
+                  shows its own — visible with the phone's fold closed, so a
+                  short list always shows its cause and its undo. */}
+              {mapChips.length > 0 && (
+                <div className="active-filters" aria-label="Filters in force">
+                  {mapChips.map((chip) => (
+                    <button
+                      type="button"
+                      key={chip.key}
+                      className="filter-chip"
+                      onClick={chip.remove}
+                      aria-label={chip.aria}
+                    >
+                      {chip.label}
+                      <span className="chip-x" aria-hidden="true">
+                        ×
+                      </span>
+                    </button>
+                  ))}
+                  {mapChips.length > 1 && (
+                    <button
+                      type="button"
+                      className="linkish"
+                      onClick={() => {
+                        clearNarrowing();
+                        setSort("name");
+                      }}
+                    >
+                      Clear all
+                    </button>
+                  )}
+                </div>
+              )}
               <div className="map-facets" id="map-facets" hidden={foldFilters}>
                 <div className="filter-row">
                   <select

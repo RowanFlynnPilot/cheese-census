@@ -47,6 +47,12 @@ scripts/evidence.py        review-evidence assembler: corroborates proposals wit
                            signals + committed web research; writes queue/review_*.json
 scripts/promote.py         promotes the auto tier into data/overrides/ (humans always win)
 scripts/catalog.py         assembles data/catalog/cheeses.json from the tagging table
+scripts/geocode.py         plant geocoder (Census Bureau batch geocoder, public, no key):
+                           writes data/geocode/plants.json once; incremental, lists the
+                           plants it could not place — a curation tool, never in build
+data/geocode/plants.json   every DATCP plant's point (committed): build.py picks each
+                           creamery's home plant as the one nearest its listing's point
+                           and snaps the pin to it, so the panel describes the pinned place
 data/raw/                  committed scraper output (diffable history)
   dfw_varieties.json       DFW's 55 cheese varieties + their hardness/intensity/flavor
                            groupings — a reference table for the tagging pass, not a
@@ -119,6 +125,11 @@ manual dispatch only until all scrapers are implemented.
 11. Exported creamery pinned outside Wisconsin (lat/lng beyond 42.4–47.4 N,
     93.0–86.2 W) — a listing's headquarters standing in for the plant; pin the
     first Wisconsin plant in `data/overrides/creameries.json`
+12. Exported creamery pinned more than 1 km from its home plant's geocode, or
+    whose `home_plant` is not one of its plants — the record would describe
+    one place and the map another. Drop the lat/lng override, or re-run
+    `scripts/geocode.py` if the plant moved; a home plant the geocoder could
+    not place is exempt (its pin stays the listing's point)
 
 ## Conventions
 
@@ -365,8 +376,30 @@ the matches ("4 match “Marathon” statewide, none in Burnett County · Show a
 4"), and the phone's filters folded behind "Filters & sort" as the catalog's
 are. The same pass added `phone` to the schema: DATCP's BusinessPhone,
 normalised in `build.py` to "(715) 693-6662" / "… ext. 210", on every plant
-and on the creamery from its home plant (the plant whose address the record
-carries); the panel's Contact block dials it.
+and on the creamery from its home plant; the panel's Contact block dials it.
+
+The third map critique (31/40 again: the earlier five issues gone, five new
+ones of the same weight) led with data, not design — Emmi Roth pinned at
+Monroe under a Platteville address, because a listing's coordinates are
+wherever DFW geocoded the company and its city string does not say which
+plant that is. The fix is structural: `scripts/geocode.py` geocodes every
+licensed plant once into `data/geocode/plants.json` (340 of 388 placed; the
+rest are rural grid addresses the Census geocoder cannot read), and `merge()`
+makes the **home plant** the licensed plant nearest the listing's point, snaps
+the pin onto it, and takes city, county, address and phone from it — so
+Contact describes the pinned place, says which plant is pinned when the
+company has others, and the licence fold marks it. Validation #12 fails any
+pin that drifts from its home plant. `phone` is the licensee's business line
+on that plant's licence (21 of 27 multi-plant companies file one number for
+every plant), and is labelled so. The six P0 pin overrides are gone (the rule
+reproduces them); a DFW-only listing takes the county every licensed plant in
+its city shares, with one override (Hoard's, Jefferson). The map gained a
+"Wisconsin" control under the zoom buttons, a refit on panel close when the
+list changed underneath it and the reader's hand was not on the map, filter
+chips as the catalog has, a one-move cluster zoom with a "18 creameries here
+— zooming in" label (the chooser handles pins that will not part), and the
+secondary type and targets lifted for the readership (pills 0.8rem, row meta
+0.84rem, 36 px panel buttons, 44 px phone summaries and links).
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

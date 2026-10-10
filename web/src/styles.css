@@ -395,7 +395,7 @@ input:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem 0.9rem;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   color: var(--ink-soft);
 }
 
@@ -455,7 +455,7 @@ input:focus-visible {
 }
 
 .creamery-row .meta {
-  font-size: 0.8rem;
+  font-size: 0.84rem;
   color: var(--ink-soft);
   margin-top: 0.15rem;
   display: flex;
@@ -601,7 +601,7 @@ input:focus-visible {
   box-shadow: var(--shadow);
   border-radius: 4px;
   font-family: var(--body);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   padding: 0.25rem 0.55rem;
 }
 
@@ -640,14 +640,14 @@ input:focus-visible {
 }
 
 .mc-where {
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
   margin-top: 1px;
 }
 
 .mc-addr {
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
   margin-top: 2px;
 }
@@ -700,7 +700,7 @@ input:focus-visible {
   border: 1px solid var(--rule);
   border-radius: 4px;
   box-shadow: var(--shadow);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
 }
 
@@ -775,8 +775,8 @@ input:focus-visible {
   border: 1px solid var(--rule-strong);
   background: #fff;
   border-radius: 4px;
-  min-width: 1.75rem;
-  height: 1.75rem;
+  min-width: 2.25rem;
+  height: 2.25rem;
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
@@ -792,8 +792,8 @@ input:focus-visible {
 }
 
 .hbtn.copy {
-  font-size: 0.76rem;
-  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  padding: 0 0.6rem;
 }
 
 .close {
@@ -825,7 +825,7 @@ input:focus-visible {
 
 .detail h3 {
   font-family: var(--body);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -870,9 +870,14 @@ input:focus-visible {
 
 .plant .id {
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--teal-dark);
   font-weight: 500;
+}
+
+.plant .id .pinned {
+  color: var(--ink-soft);
+  font-weight: 400;
 }
 
 .plant .addr {
@@ -918,8 +923,8 @@ button.tag {
 }
 
 .pill {
-  font-size: 0.74rem;
-  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.12rem 0.45rem;
   border-radius: 999px;
   background: var(--cream-deep);
   color: var(--ink-soft);
@@ -1007,7 +1012,7 @@ button.tag {
 
 .medal {
   font-family: var(--mono);
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   font-weight: 500;
   padding: 0.08rem 0;
   border-radius: 3px;
@@ -1037,13 +1042,13 @@ button.tag {
 
 .award-row .score {
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
 }
 
 .award-row .cls {
   display: block;
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
 }
 
@@ -1078,7 +1083,7 @@ button.tag {
   padding: 0.6rem 1.25rem;
   border-top: 1px solid var(--rule);
   background: var(--cream-deep);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
   display: flex;
   gap: 0.75rem;
@@ -2818,7 +2823,7 @@ button.highlight {
   border-radius: 999px;
   background: #fff;
   font: inherit;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: var(--teal-dark);
   cursor: pointer;
@@ -2846,7 +2851,7 @@ button.highlight {
 
 .locate-note {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   color: var(--ink-soft);
 }
 
@@ -2884,7 +2889,9 @@ button.highlight {
 
 .result-strip .linkish {
   margin-left: auto;
-  font-size: 0.82rem;
+  min-height: 2rem;
+  padding: 0 0.4rem;
+  font-size: 0.86rem;
 }
 
 /* The legend's "You" dot and the map's: ink, so it is not a creamery. */
@@ -2928,8 +2935,8 @@ button.highlight {
 }
 
 .pin-chooser .pc-head {
-  margin: 0 2rem 0.35rem 0;
-  font: 500 0.74rem/1.3 var(--mono);
+  margin: 0 2.4rem 0.35rem 0;
+  font: 500 0.78rem/1.3 var(--mono);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -2965,7 +2972,7 @@ button.highlight {
   display: block;
   margin-top: 1px;
   font-weight: 400;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: var(--ink-soft);
 }
 
@@ -2974,11 +2981,38 @@ button.highlight {
   outline-offset: -2px;
 }
 
-.pin-chooser .leaflet-popup-close-button {
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.3rem;
+/* The × a thumb can hit (Leaflet's is 24 px; its stylesheet loads after this
+   one with the lazy map chunk, so the extra class outranks it). */
+.map-wrap .pin-chooser .leaflet-popup-close-button {
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-size: 1.4rem;
   color: var(--ink-soft);
+}
+
+/* "Wisconsin": the Leaflet control under the zoom buttons that frames the
+   state (or the filtered set) again. */
+.map-reset button {
+  display: block;
+  height: 1.9rem;
+  padding: 0 0.6rem;
+  border: 0;
+  background: #fff;
+  font: 600 0.8rem var(--body);
+  color: var(--teal-dark);
+  cursor: pointer;
+}
+
+.map-reset button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: -2px;
+}
+
+/* The transient "N creameries here — zooming in" label is the tap hint's
+   twin; an empty live region takes no room. */
+.map-zoom-hint:empty {
+  display: none;
 }
 
 /* "Open in Maps" and the phone number beside the address: the two things a
@@ -3244,8 +3278,9 @@ button.highlight {
     display: grid;
     place-items: center;
     position: absolute;
-    /* Under Leaflet's zoom control: 10 px margin + two 44 px buttons + borders. */
-    top: calc(10px + 92px + 0.6rem);
+    /* Under Leaflet's zoom control (10 px margin, two 44 px buttons and
+       borders) and the "Wisconsin" bar (10 px margin, 44 px and borders). */
+    top: calc(10px + 92px + 10px + 48px + 10px);
     left: 10px;
     z-index: 900;
     width: 44px;
@@ -3539,7 +3574,25 @@ button.highlight {
     bottom: auto;
     gap: 0.55rem;
     padding: 0.3rem 0.55rem;
-    font-size: 0.74rem;
+    font-size: 0.78rem;
+  }
+
+  /* The sheet's one-line controls a thumb needs: the licence fold's summary
+     and the "Browse all … in the catalog" link. */
+  .licence summary {
+    min-height: 2.75rem;
+  }
+
+  .detail .linkish {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+
+  .map-reset button {
+    height: 44px;
+    padding: 0 0.8rem;
+    font-size: 0.86rem;
   }
 
   .map-hint {
@@ -3567,7 +3620,7 @@ button.highlight {
   .colophon {
     padding: 0.35rem 0.75rem;
     gap: 0.2rem 0.8rem;
-    font-size: 0.72rem;
+    font-size: 0.76rem;
   }
 
   .provisional .pd-long {
