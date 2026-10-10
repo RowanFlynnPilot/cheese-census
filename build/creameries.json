@@ -14,9 +14,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-322",
     "id": "agropur-inc",
-    "lat": 44.287526,
-    "lng": -88.309352,
+    "lat": 44.304465,
+    "lng": -88.312961,
     "name": "Agropur, Inc.",
     "phone": "(920) 714-0258",
     "plants": [
@@ -113,9 +114,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-5931",
     "id": "alpinage-cheese-llc",
-    "lat": 42.88711,
-    "lng": -87.86334,
+    "lat": 42.720688,
+    "lng": -87.954499,
     "name": "Alpinage Cheese LLC",
     "phone": "(262) 721-4412",
     "plants": [
@@ -150,9 +152,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-800",
     "id": "arena-cheese",
-    "lat": 43.161586,
-    "lng": -89.911089,
+    "lat": 43.161669,
+    "lng": -89.907569,
     "name": "Arena Cheese",
     "phone": "(608) 753-2501",
     "plants": [
@@ -200,9 +203,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-905",
     "id": "arla-foods-production-llc-arla-foods-amba",
-    "lat": 44.24894,
-    "lng": -88.17381,
+    "lat": 44.248943,
+    "lng": -88.173811,
     "name": "Arla Foods, Inc.",
     "phone": "(920) 462-1304",
     "plants": [
@@ -250,9 +254,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-226",
     "id": "associated-milk-producers-inc",
-    "lat": 44.29548,
-    "lng": -91.23067,
+    "lat": 44.295484,
+    "lng": -91.230674,
     "name": "Associated Milk Producers, Inc.",
     "phone": "(608) 989-2535",
     "plants": [
@@ -325,9 +330,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-826",
     "id": "bel-brands-usa",
-    "lat": 44.28784,
-    "lng": -88.29739,
+    "lat": 44.287839,
+    "lng": -88.297394,
     "name": "Bel Brands USA",
     "phone": "(920) 687-3925",
     "plants": [
@@ -357,7 +363,7 @@
     "website": "http://www.Merkts.com"
   },
   {
-    "address": "4200 Main St",
+    "address": "5810 County Road NN",
     "aka": [
       "BelGioioso Cheese Inc",
       "BelGioioso Cheese Inc.",
@@ -366,7 +372,7 @@
       "Belgioioso Cheese, Inc",
       "Belgioioso Cheese, Inc."
     ],
-    "city": "Green Bay",
+    "city": "Denmark",
     "county": "Brown",
     "dfw_company_id": 5,
     "editorial": {
@@ -375,9 +381,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-910",
     "id": "belgioioso-cheese-inc",
-    "lat": 44.378543,
-    "lng": -87.887205,
+    "lat": 44.361978,
+    "lng": -87.887505,
     "name": "BelGioioso Cheese, Inc.",
     "phone": "(920) 863-2123",
     "plants": [
@@ -604,9 +611,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-445",
     "id": "bella-pak-llc",
-    "lat": 44.488411,
-    "lng": -88.06885,
+    "lat": 44.266069,
+    "lng": -88.445432,
     "name": "MCT Dairies, Inc.",
     "phone": "(920) 735-4919",
     "plants": [
@@ -646,9 +654,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-201",
     "id": "bleu-mont-dairy",
-    "lat": 43.020536,
-    "lng": -89.834277,
+    "lat": 43.045894,
+    "lng": -89.806675,
     "name": "Bleu Mont Dairy",
     "phone": null,
     "plants": [
@@ -687,9 +696,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-523",
     "id": "brunkow-cheese-of-wisconsin-inc",
-    "lat": 42.687788,
-    "lng": -90.130401,
+    "lat": 42.746531,
+    "lng": -90.045209,
     "name": "Brunkow Cheese of Wisconsin, Inc.",
     "phone": "(608) 776-3716",
     "plants": [
@@ -737,9 +747,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-298",
     "id": "burnett-dairy-cooperative",
-    "lat": 45.772158,
-    "lng": -92.581209,
+    "lat": 45.772087,
+    "lng": -92.57883,
     "name": "Burnett Dairy Cooperative",
     "phone": "(715) 689-2468",
     "plants": [
@@ -815,9 +826,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1710",
     "id": "carr-valley-cheese-company-inc",
-    "lat": 43.507591,
-    "lng": -90.165539,
+    "lat": 43.504778,
+    "lng": -90.162088,
     "name": "Carr Valley Cheese Company, Inc.",
     "phone": "(608) 448-4405",
     "plants": [
@@ -940,9 +952,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-671",
     "id": "cedar-grove-cheese-inc",
-    "lat": 43.281047,
-    "lng": -90.004232,
+    "lat": 43.280956,
+    "lng": -90.02413,
     "name": "Cedar Grove Cheese, Inc.",
     "phone": "(608) 546-5284",
     "plants": [
@@ -980,7 +993,7 @@
     "website": "http://www.cedargrovecheese.com"
   },
   {
-    "address": "N6977 State Hwy 57",
+    "address": "W3111 Jay Rd",
     "aka": [
       "Cedar Valley Cheese Inc"
     ],
@@ -993,9 +1006,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-704",
     "id": "cedar-valley-cheese-inc",
-    "lat": 43.528715,
-    "lng": -87.890695,
+    "lat": 43.528379,
+    "lng": -87.941814,
     "name": "Cedar Valley Cheese, Inc.",
     "phone": "(920) 994-4415",
     "plants": [
@@ -1048,9 +1062,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1715",
     "id": "cesar-s-cheese-llc",
-    "lat": 43.025392,
-    "lng": -87.912395,
+    "lat": 43.025328,
+    "lng": -87.911681,
     "name": "Cesar's Cheese LLC",
     "phone": "(608) 459-5419",
     "plants": [
@@ -1083,7 +1098,7 @@
     "website": ""
   },
   {
-    "address": "W6805 Deppler Rd",
+    "address": "N4858 County Road N",
     "aka": [],
     "city": "Monroe",
     "county": "Green",
@@ -1094,9 +1109,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-160",
     "id": "chalet-cheese-cooperative",
-    "lat": 42.661579,
-    "lng": -89.661398,
+    "lat": 42.683446,
+    "lng": -89.705151,
     "name": "Chalet Cheese Cooperative",
     "phone": "(608) 325-4343",
     "plants": [
@@ -1146,7 +1162,7 @@
     "address": "N6765 State Hwy 25",
     "aka": [],
     "city": "Durand",
-    "county": null,
+    "county": "Pepin",
     "dfw_company_id": 33,
     "editorial": {
       "photo": null,
@@ -1154,6 +1170,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "cheese-merchants-of-america",
     "lat": 44.653146,
     "lng": -91.977882,
@@ -1172,7 +1189,7 @@
     "address": "N8238 Townline Rd",
     "aka": [],
     "city": "Fond Du Lac",
-    "county": null,
+    "county": "Fond du Lac",
     "dfw_company_id": 1304,
     "editorial": {
       "photo": null,
@@ -1180,6 +1197,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "clearview-dairy-atwo-cheese-llc",
     "lat": 43.841003,
     "lng": -88.52566,
@@ -1208,9 +1226,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-22",
     "id": "crave-brothers-farmstead-cheese-l-l-c",
-    "lat": 43.234265,
-    "lng": -88.972557,
+    "lat": 43.234224,
+    "lng": -88.969369,
     "name": "Crave Brothers Farmstead Cheese, L.L.C.",
     "phone": "(920) 478-4887",
     "plants": [
@@ -1253,9 +1272,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1899",
     "id": "crystal-ball-farms",
-    "lat": 45.285926,
-    "lng": -92.697488,
+    "lat": 45.286685,
+    "lng": -92.697606,
     "name": "Crystal Ball Farms",
     "phone": "(715) 294-4090",
     "plants": [
@@ -1299,6 +1319,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1886",
     "id": "dairy-state-cheese-llc",
     "lat": 44.5,
     "lng": -89.81,
@@ -1346,6 +1367,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-522",
     "id": "decatur-dairy-inc",
     "lat": 42.654476,
     "lng": -89.446397,
@@ -1380,7 +1402,7 @@
     "address": "721 Riverfront Drive",
     "aka": [],
     "city": "Sheboygan",
-    "county": null,
+    "county": "Sheboygan",
     "dfw_company_id": 243,
     "editorial": {
       "photo": null,
@@ -1388,6 +1410,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "deer-creek-cheese",
     "lat": 43.752063,
     "lng": -87.712951,
@@ -1414,9 +1437,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1349",
     "id": "dupont-cheese-inc",
-    "lat": 44.614285,
-    "lng": -88.900144,
+    "lat": 44.60502,
+    "lng": -88.916209,
     "name": "Dupont Cheese, Inc.",
     "phone": "(715) 754-5424",
     "plants": [
@@ -1450,7 +1474,7 @@
     "address": "W6117 County Highway C",
     "aka": [],
     "city": "Monticello",
-    "county": null,
+    "county": "Green",
     "dfw_company_id": 171,
     "editorial": {
       "photo": null,
@@ -1458,6 +1482,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "edelweiss-creamery",
     "lat": 42.516938,
     "lng": -89.542899,
@@ -1486,9 +1511,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-356",
     "id": "ellsworth-cooperative-creamery",
-    "lat": 44.734427,
-    "lng": -92.462904,
+    "lat": 44.734511,
+    "lng": -92.462833,
     "name": "Ellsworth Cooperative Creamery",
     "phone": "(715) 273-4311",
     "plants": [
@@ -1521,13 +1547,13 @@
     "website": "http://www.ellsworthcheese.com/"
   },
   {
-    "address": "1525 Vision Dr",
+    "address": "657 2nd St",
     "aka": [
       "Emmi Roth",
       "Emmi Roth USA, Inc."
     ],
-    "city": "Platteville",
-    "county": "Grant",
+    "city": "Monroe",
+    "county": "Green",
     "dfw_company_id": 88,
     "editorial": {
       "photo": null,
@@ -1535,9 +1561,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-95",
     "id": "emmi-roth-usa",
-    "lat": 42.610113,
-    "lng": -89.652641,
+    "lat": 42.610179,
+    "lng": -89.652609,
     "name": "Emmi Roth USA",
     "phone": "(608) 285-9800",
     "plants": [
@@ -1632,9 +1659,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-86",
     "id": "family-fresh-pack-llc",
-    "lat": 42.859395,
-    "lng": -89.535755,
+    "lat": 42.750488,
+    "lng": -89.580773,
     "name": "Family Fresh Pack LLC",
     "phone": "(608) 938-4494",
     "plants": [
@@ -1685,12 +1713,12 @@
     "website": "https://freshpackwi.com/"
   },
   {
-    "address": "1815 W Spencer St",
+    "address": "501 S Pine St",
     "aka": [
       "Foremost Farms USA, Cooperative"
     ],
-    "city": "Appleton",
-    "county": "Outagamie",
+    "city": "Reedsburg",
+    "county": "Sauk",
     "dfw_company_id": 41,
     "editorial": {
       "photo": null,
@@ -1698,9 +1726,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-360",
     "id": "foremost-farms-usa-cooperative",
-    "lat": 43.522647,
-    "lng": -89.778998,
+    "lat": 43.528337,
+    "lng": -90.003767,
     "name": "Foremost Farms USA Cooperative",
     "phone": "(608) 355-8700",
     "plants": [
@@ -1835,9 +1864,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-527",
     "id": "forgotten-valley-cheese",
-    "lat": 42.587478,
-    "lng": -89.90387,
+    "lat": 42.587518,
+    "lng": -89.904551,
     "name": "Valley View Cheese Cooperative",
     "phone": "(608) 439-5569",
     "plants": [
@@ -1881,9 +1911,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1099",
     "id": "gibbsville-cheese-company-inc",
-    "lat": 43.652204,
-    "lng": -87.841064,
+    "lat": 43.652022,
+    "lng": -87.828134,
     "name": "Gibbsville Cheese Company, Inc.",
     "phone": "(920) 564-3242",
     "plants": [
@@ -1927,9 +1958,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-116",
     "id": "gile-cheese-llc",
-    "lat": 42.606463,
-    "lng": -90.430842,
+    "lat": 42.606625,
+    "lng": -90.430731,
     "name": "Gile Cheese, LLC",
     "phone": "(608) 744-3456",
     "plants": [
@@ -1954,14 +1986,14 @@
     "website": "http://www.gilecheese.com"
   },
   {
-    "address": "420 Trowbridge Dr",
+    "address": "N11689 Dairy Rd",
     "aka": [
       "GRANDE CHEESE COMPANY",
       "Grande Cheese Custom Ingredients Group",
       "Grande Custom Ingredients Group"
     ],
-    "city": "Fond du Lac",
-    "county": "Fond du Lac",
+    "city": "Brownsville",
+    "county": "Dodge",
     "dfw_company_id": 49,
     "editorial": {
       "photo": null,
@@ -1969,9 +2001,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-267",
     "id": "grande-cheese-company",
-    "lat": 43.599258,
-    "lng": -88.541486,
+    "lat": 43.615054,
+    "lng": -88.541606,
     "name": "Grande Cheese Company",
     "phone": "(920) 952-7403",
     "plants": [
@@ -2179,9 +2212,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-304",
     "id": "grassland-dairy-products-inc",
-    "lat": 44.736186,
-    "lng": -90.577846,
+    "lat": 44.739971,
+    "lng": -90.577653,
     "name": "Grassland Dairy Products, Inc.",
     "phone": "(715) 267-6182",
     "plants": [
@@ -2243,9 +2277,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1477",
     "id": "harmony-cheese",
-    "lat": 44.95397,
-    "lng": -89.99443,
+    "lat": 44.953971,
+    "lng": -89.994429,
     "name": "Anderson International Foods",
     "phone": "(516) 747-2210",
     "plants": [
@@ -2288,9 +2323,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1478",
     "id": "harmony-cheese-llc-athens-plant",
-    "lat": 44.810099,
-    "lng": -90.017025,
+    "lat": 44.973093,
+    "lng": -90.030199,
     "name": "Harmony Cheese",
     "phone": "(920) 351-3555",
     "plants": [
@@ -2326,9 +2362,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-635",
     "id": "henning-cheese-inc",
-    "lat": 43.964104,
-    "lng": -88.011547,
+    "lat": 43.964097,
+    "lng": -87.970001,
     "name": "Henning Cheese, Inc.",
     "phone": "(920) 894-3032",
     "plants": [
@@ -2374,9 +2411,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-283",
     "id": "highfield-farm-creamery",
-    "lat": 42.49498,
-    "lng": -88.538724,
+    "lat": 42.495016,
+    "lng": -88.538334,
     "name": "Highfield Farm Creamery",
     "phone": "(262) 275-3027",
     "plants": [
@@ -2425,9 +2463,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-529",
     "id": "hill-valley-dairy",
-    "lat": 42.602078,
-    "lng": -88.434633,
+    "lat": 42.788585,
+    "lng": -88.317342,
     "name": "Hill Valley Dairy",
     "phone": "(262) 745-8699",
     "plants": [
@@ -2472,7 +2511,7 @@
     "address": "28 Milwaukee Ave W",
     "aka": [],
     "city": "Fort Atkinson",
-    "county": null,
+    "county": "Jefferson",
     "dfw_company_id": 1306,
     "editorial": {
       "photo": null,
@@ -2480,6 +2519,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "hoard-s-dairymen-farm-creamery",
     "lat": 42.926932,
     "lng": -88.837484,
@@ -2506,9 +2546,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1472",
     "id": "hook-s-cheese-company-inc",
-    "lat": 42.86281,
-    "lng": -90.177356,
+    "lat": 42.859897,
+    "lng": -90.177218,
     "name": "Hook's Cheese Company, Inc.",
     "phone": "(608) 987-3259",
     "plants": [
@@ -2558,9 +2599,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-127",
     "id": "kingston-cheese-cooperative",
-    "lat": 43.646393,
-    "lng": -89.106076,
+    "lat": 43.646325,
+    "lng": -89.106124,
     "name": "Kingston Cheese Co-op",
     "phone": "(920) 394-3433",
     "plants": [
@@ -2606,9 +2648,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-48",
     "id": "klondike-cheese-company",
-    "lat": 42.589673,
-    "lng": -89.662811,
+    "lat": 42.654937,
+    "lng": -89.74579,
     "name": "Klondike Cheese Company",
     "phone": "(608) 325-3021",
     "plants": [
@@ -2644,7 +2687,7 @@
     "address": "N92W37326 O’Neil Road",
     "aka": [],
     "city": "Oconomowoc",
-    "county": null,
+    "county": "Waukesha",
     "dfw_company_id": 255,
     "editorial": {
       "photo": null,
@@ -2652,6 +2695,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "koepke-farms-inc",
     "lat": 43.186837,
     "lng": -88.483519,
@@ -2681,9 +2725,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-29",
     "id": "kraemer-wisconsin-cheese-ltd",
-    "lat": 43.206056,
-    "lng": -88.708445,
+    "lat": 43.205941,
+    "lng": -88.708585,
     "name": "Kraemer Wisconsin Cheese Ltd",
     "phone": "(920) 261-6363",
     "plants": [
@@ -2725,9 +2770,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-266",
     "id": "laack-brothers-cheese-company",
-    "lat": 44.289072,
-    "lng": -88.260718,
+    "lat": 44.301199,
+    "lng": -87.988742,
     "name": "Laack Brothers Cheese Company",
     "phone": "(920) 864-2815",
     "plants": [
@@ -2765,9 +2811,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-90",
     "id": "laclare-creamery-llc",
-    "lat": 44.013344,
-    "lng": -88.184288,
+    "lat": 43.921308,
+    "lng": -88.307437,
     "name": "LaClare Family Creamery",
     "phone": "(920) 670-0051 ext. 205",
     "plants": [
@@ -2817,9 +2864,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-706",
     "id": "lagrander-s-hillside-dairy-inc",
-    "lat": 44.901025,
-    "lng": -90.892072,
+    "lat": 44.901002,
+    "lng": -90.881629,
     "name": "LaGrander's Hillside Dairy, Inc.",
     "phone": "(715) 644-2275 ext. 803",
     "plants": [
@@ -2862,9 +2910,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-505",
     "id": "lake-country-dairy-inc",
-    "lat": 45.390182,
-    "lng": -92.161305,
+    "lat": 45.391584,
+    "lng": -92.161215,
     "name": "Schuman Cheese, Inc.",
     "phone": "(715) 788-6143",
     "plants": [
@@ -2908,9 +2957,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1352",
     "id": "landmark-creamery-llc",
-    "lat": 42.769373,
-    "lng": -89.425537,
+    "lat": 42.929449,
+    "lng": -89.523655,
     "name": "Landmark Creamery LLC",
     "phone": "(608) 886-8801",
     "plants": [
@@ -2942,7 +2992,7 @@
     "website": "http://www.landmarkcreamery.com/"
   },
   {
-    "address": "W4510 Meridian Ave",
+    "address": "W1929 US Highway 10",
     "aka": [
       "Granton Cheese"
     ],
@@ -2955,9 +3005,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1522",
     "id": "lynn-dairy-inc",
-    "lat": 44.582765,
-    "lng": -90.409155,
+    "lat": 44.582234,
+    "lng": -90.408618,
     "name": "Lynn Dairy, Inc.",
     "phone": "(715) 238-7129",
     "plants": [
@@ -3012,9 +3063,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-100",
     "id": "malcore-foods",
-    "lat": 44.244076,
-    "lng": -88.401762,
+    "lat": 44.244036,
+    "lng": -88.402003,
     "name": "Malcore Foods",
     "phone": "(920) 733-1556",
     "plants": [
@@ -3044,7 +3096,7 @@
     "address": "704 30th Street",
     "aka": [],
     "city": "Monroe",
-    "county": null,
+    "county": "Green",
     "dfw_company_id": 9,
     "editorial": {
       "photo": null,
@@ -3052,6 +3104,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "maple-leaf-cheese-co",
     "lat": 42.516938,
     "lng": -89.542899,
@@ -3081,6 +3134,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-128",
     "id": "marieke-gouda",
     "lat": 44.944694,
     "lng": -90.760177,
@@ -3126,9 +3180,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1457",
     "id": "meister-cheese-co-llc",
-    "lat": 43.185116,
-    "lng": -90.416029,
+    "lat": 43.185411,
+    "lng": -90.425989,
     "name": "Meister Cheese Co LLC",
     "phone": "(608) 739-3134",
     "plants": [
@@ -3186,9 +3241,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1854",
     "id": "mullins-cheese-inc",
-    "lat": 44.717459,
-    "lng": -89.685951,
+    "lat": 44.716158,
+    "lng": -89.679959,
     "name": "Mullins Cheese, Inc.",
     "phone": "(715) 693-3205 ext. 273",
     "plants": [
@@ -3259,9 +3315,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1499",
     "id": "nasonville-dairy-inc",
-    "lat": 44.599085,
-    "lng": -90.247107,
+    "lat": 44.598881,
+    "lng": -90.258207,
     "name": "Nasonville Dairy, Inc.",
     "phone": "(715) 676-2177",
     "plants": [
@@ -3313,9 +3370,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-2244",
     "id": "nordic-creamery",
-    "lat": 43.650265,
-    "lng": -90.960105,
+    "lat": 43.648737,
+    "lng": -90.960023,
     "name": "Nordic Creamery",
     "phone": "(608) 606-4121",
     "plants": [
@@ -3355,9 +3413,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-939",
     "id": "oak-grove-dairy-inc",
-    "lat": 44.719108,
-    "lng": -88.750102,
+    "lat": 44.714936,
+    "lng": -88.762285,
     "name": "Oak Grove Dairy, Inc.",
     "phone": "(715) 823-6226",
     "plants": [
@@ -3385,14 +3444,14 @@
     "website": "https://www.oakgrovedairy.com/"
   },
   {
-    "address": "203 S Main St",
+    "address": "440 Organic Dr",
     "aka": [
       "Cooperative Regions of Organic Producer Pools",
       "Organic Valley",
       "Organic Valley Chaseburg"
     ],
-    "city": "Chaseburg",
-    "county": "Vernon",
+    "city": "Cashton",
+    "county": "Monroe",
     "dfw_company_id": 16,
     "editorial": {
       "photo": null,
@@ -3400,9 +3459,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-416",
     "id": "organic-valley-chaseburg",
-    "lat": 43.581795,
-    "lng": -90.637614,
+    "lat": 43.73324,
+    "lng": -90.803094,
     "name": "CROPP Cooperative/Organic Valley",
     "phone": "(608) 625-7311",
     "plants": [
@@ -3454,6 +3514,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-272",
     "id": "ornua-ingredients-north-america",
     "lat": 44.167286,
     "lng": -88.20716,
@@ -3493,9 +3554,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1091",
     "id": "pasture-pride-cheese-llc",
-    "lat": 43.732881,
-    "lng": -90.758146,
+    "lat": 43.73619,
+    "lng": -90.803002,
     "name": "Pasture Pride Cheese, LLC",
     "phone": "(608) 654-7444",
     "plants": [
@@ -3534,6 +3596,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-719",
     "id": "pine-river-pre-pack-inc",
     "lat": 44.000284,
     "lng": -87.80102,
@@ -3573,6 +3636,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "red-barn-family-farms",
     "lat": 44.267343,
     "lng": -88.454053,
@@ -3601,9 +3665,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-276",
     "id": "revela-foods-colby-llc",
-    "lat": 44.909354,
-    "lng": -90.278749,
+    "lat": 44.912343,
+    "lng": -90.278611,
     "name": "Welcome Dairy LLC",
     "phone": "(715) 223-2874",
     "plants": [
@@ -3651,9 +3716,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-314",
     "id": "roelli-cheese-company-inc",
-    "lat": 42.579763,
-    "lng": -90.030622,
+    "lat": 42.580939,
+    "lng": -90.132678,
     "name": "Roelli Cheese Company, Inc.",
     "phone": "(608) 965-3779",
     "plants": [
@@ -3702,11 +3768,11 @@
     "website": "http://www.roellicheese.com/"
   },
   {
-    "address": "N4893 County Road C",
+    "address": "124 Main St",
     "aka": [
       "Ron's Wisconsin Cheese LLC"
     ],
-    "city": "Kewaunee",
+    "city": "Luxemburg",
     "county": "Kewaunee",
     "dfw_company_id": 3,
     "editorial": {
@@ -3715,9 +3781,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-21",
     "id": "ron-s-wisconsin-cheese",
-    "lat": 44.545016,
-    "lng": -87.70334,
+    "lat": 44.544975,
+    "lng": -87.703275,
     "name": "Ron's Wisconsin Cheese",
     "phone": "(920) 845-5330",
     "plants": [
@@ -3774,9 +3841,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1061",
     "id": "rosewood-dairy-inc",
-    "lat": 44.610285,
-    "lng": -87.438518,
+    "lat": 44.685442,
+    "lng": -87.371858,
     "name": "Rosewood Dairy, Inc.",
     "phone": "(920) 743-6626",
     "plants": [
@@ -3835,9 +3903,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-112",
     "id": "saputo-cheese-usa",
-    "lat": 43.67113,
-    "lng": -88.79522,
+    "lat": 43.671134,
+    "lng": -88.795218,
     "name": "Saputo Cheese USA",
     "phone": "(920) 346-2215",
     "plants": [
@@ -3995,13 +4064,13 @@
     "website": "https://www.saputocheeseusa.com/"
   },
   {
-    "address": "460 S 8th St",
+    "address": "1 Persnickety Pl",
     "aka": [
       "Sargento Cheese Inc.",
       "TTLF Inc."
     ],
-    "city": "Hilbert",
-    "county": "Calumet",
+    "city": "Kiel",
+    "county": "Manitowoc",
     "dfw_company_id": 100,
     "editorial": {
       "photo": null,
@@ -4009,9 +4078,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-3377",
     "id": "sargento-cheese-inc",
-    "lat": 43.925776,
-    "lng": -88.019373,
+    "lat": 43.9257,
+    "lng": -88.017127,
     "name": "Sargento Foods, Inc.",
     "phone": "(920) 893-8484",
     "plants": [
@@ -4091,7 +4161,7 @@
     "website": "http://www.sargento.com"
   },
   {
-    "address": "W4200 County Road PP",
+    "address": "2 E Main St",
     "aka": [
       "Sartori Company"
     ],
@@ -4104,9 +4174,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-239",
     "id": "sartori-company",
-    "lat": 43.745728,
-    "lng": -87.951304,
+    "lat": 43.748714,
+    "lng": -87.980933,
     "name": "Sartori Cheese Company",
     "phone": "(920) 449-7899",
     "plants": [
@@ -4196,9 +4267,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-443",
     "id": "schreiber-foods-inc",
-    "lat": 44.515048,
-    "lng": -88.011602,
+    "lat": 44.504221,
+    "lng": -87.979419,
     "name": "Schreiber Foods, Inc.",
     "phone": "(920) 455-3232",
     "plants": [
@@ -4286,9 +4358,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1805",
     "id": "scray-s-cheese-co",
-    "lat": 44.401066,
-    "lng": -88.065534,
+    "lat": 44.401024,
+    "lng": -88.064699,
     "name": "Scray Cheese Company",
     "phone": "(920) 336-8359",
     "plants": [
@@ -4330,9 +4403,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-636",
     "id": "silver-lewis-cheese-factory-cooperative",
-    "lat": 42.741454,
-    "lng": -89.545193,
+    "lat": 42.740877,
+    "lng": -89.518778,
     "name": "Silver Lewis Cheese Factory Cooperative",
     "phone": "(608) 938-4813",
     "plants": [
@@ -4377,9 +4451,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-417",
     "id": "specialty-cheese-company-inc",
-    "lat": 43.311287,
-    "lng": -88.838263,
+    "lat": 43.308303,
+    "lng": -88.841342,
     "name": "Specialty Cheese Company, Inc",
     "phone": "(920) 927-3888",
     "plants": [
@@ -4426,9 +4501,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1712",
     "id": "springside-artisan-cheese-llc",
-    "lat": 44.966475,
-    "lng": -88.159438,
+    "lat": 44.966687,
+    "lng": -88.163182,
     "name": "Springside Cheese Corporation",
     "phone": "(920) 829-6395",
     "plants": [
@@ -4475,9 +4551,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1113",
     "id": "union-star-corp",
-    "lat": 44.216823,
-    "lng": -88.78795,
+    "lat": 44.216658,
+    "lng": -88.788492,
     "name": "Union Star, Corp.",
     "phone": "(920) 836-2804",
     "plants": [
@@ -4546,9 +4623,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-405",
     "id": "uplands-cheese-company",
-    "lat": 43.058998,
-    "lng": -90.140873,
+    "lat": 43.054403,
+    "lng": -90.141642,
     "name": "Uplands Cheese Company",
     "phone": "(608) 935-5558",
     "plants": [
@@ -4590,9 +4668,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1124",
     "id": "v-v-supremo-foods-inc",
-    "lat": 42.5329,
-    "lng": -89.84768,
+    "lat": 42.532901,
+    "lng": -89.847681,
     "name": "V & V Supremo Foods, Inc.",
     "phone": "(608) 439-5211",
     "plants": [
@@ -4639,7 +4718,7 @@
     "address": "2903 3rd Street North",
     "aka": [],
     "city": "Monroe",
-    "county": null,
+    "county": "Green",
     "dfw_company_id": 213,
     "editorial": {
       "photo": null,
@@ -4647,6 +4726,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": null,
     "id": "w-w-dairy-llc",
     "lat": 42.608468,
     "lng": -89.636786,
@@ -4675,9 +4755,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-253",
     "id": "wakker-cheese-llc",
-    "lat": 44.45894,
-    "lng": -87.50342,
+    "lat": 44.459197,
+    "lng": -87.503108,
     "name": "Wakker Cheese LLC",
     "phone": "(920) 388-6500",
     "plants": [
@@ -4715,9 +4796,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-372",
     "id": "westby-cooperative-creamery",
-    "lat": 43.647468,
-    "lng": -90.861263,
+    "lat": 43.647261,
+    "lng": -90.861285,
     "name": "Westby Cooperative Creamery",
     "phone": "(608) 634-3181",
     "plants": [
@@ -4764,9 +4846,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-901",
     "id": "weyauwega-star-dairy-inc",
-    "lat": 44.322219,
-    "lng": -88.934321,
+    "lat": 44.322197,
+    "lng": -88.936252,
     "name": "Weyauwega Star Dairy, Inc.",
     "phone": "(920) 867-2870",
     "plants": [
@@ -4827,9 +4910,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-150",
     "id": "widmer-s-cheese-cellars-inc",
-    "lat": 43.517314,
-    "lng": -88.453489,
+    "lat": 43.517327,
+    "lng": -88.452601,
     "name": "Widmer's Cheese Cellars, Inc.",
     "phone": "(920) 488-2503",
     "plants": [
@@ -4871,9 +4955,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-444",
     "id": "winona-foods-inc",
-    "lat": 44.591367,
-    "lng": -88.043968,
+    "lat": 44.582971,
+    "lng": -88.059341,
     "name": "Winona Foods, Inc.",
     "phone": "(920) 662-2184",
     "plants": [
@@ -4919,9 +5004,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-11",
     "id": "wisconsin-cheese-group-llc",
-    "lat": 42.608118,
-    "lng": -89.657898,
+    "lat": 42.608135,
+    "lng": -89.657962,
     "name": "Wisconsin Cheese Group, LLC",
     "phone": "(608) 325-2012",
     "plants": [
@@ -4978,9 +5064,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-1631",
     "id": "wiskerchen-cheese-inc",
-    "lat": 44.655099,
-    "lng": -90.157951,
+    "lat": 44.65578,
+    "lng": -90.005709,
     "name": "Wiskerchen Cheese, Inc.",
     "phone": "(715) 652-2333",
     "plants": [
@@ -5028,9 +5115,10 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-174",
     "id": "yellowstone-cheese-inc",
-    "lat": 44.929215,
-    "lng": -91.183782,
+    "lat": 44.929171,
+    "lng": -91.183797,
     "name": "Yellowstone Cheese, Inc.",
     "phone": "(715) 289-3800",
     "plants": [
@@ -5074,6 +5162,7 @@
       "visit_notes": null
     },
     "founded": null,
+    "home_plant": "55-521",
     "id": "zimmerman-cheese-company-inc",
     "lat": 42.641031,
     "lng": -89.915714,

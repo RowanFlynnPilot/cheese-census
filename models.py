@@ -78,12 +78,17 @@ class Creamery(BaseModel):
     lat: float | None = None
     lng: float | None = None
     address: str
-    # The home plant's number (the plant whose address and city the record
-    # carries); null for a listing with no licensed plant or a plant without one.
+    # The business phone filed on the home plant's licence — often the
+    # company's head-office line, not the plant's door; null for a listing
+    # with no licensed plant or a plant that filed none.
     phone: str | None = Field(default=None, pattern=PHONE_SHAPE)
     website: str | None = None
     retail: Retail
     plants: list[Plant] = []
+    # The plant the pin stands on and the Contact block describes: the licensed
+    # plant nearest the listing's point (data/geocode/plants.json), else the
+    # lowest-numbered one. Null for a company with no licensed plant.
+    home_plant: str | None = None
     dfw_company_id: int | None = None
     founded: int | None = None
     status: Literal["active", "closed"] = "active"

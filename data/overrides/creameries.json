@@ -2,28 +2,7 @@
   "edelweiss-creamery": {
     "status": "closed"
   },
-  "arla-foods-production-llc-arla-foods-amba": {
-    "lat": 44.24894,
-    "lng": -88.17381
-  },
-  "associated-milk-producers-inc": {
-    "lat": 44.29548,
-    "lng": -91.23067
-  },
-  "bel-brands-usa": {
-    "lat": 44.28784,
-    "lng": -88.29739
-  },
-  "harmony-cheese": {
-    "lat": 44.95397,
-    "lng": -89.99443
-  },
-  "saputo-cheese-usa": {
-    "lat": 43.67113,
-    "lng": -88.79522
-  },
-  "v-v-supremo-foods-inc": {
-    "lat": 42.5329,
-    "lng": -89.84768
+  "hoard-s-dairymen-farm-creamery": {
+    "county": "Jefferson"
   }
 }

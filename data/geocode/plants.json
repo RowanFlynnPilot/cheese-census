@@ -1,0 +1,2330 @@
+{
+  "55-10": {
+    "lat": 44.875761,
+    "lng": -91.936497,
+    "match": "Non_Exact",
+    "matched_address": "104 RIVER RD, MENOMONIE, WI, 54751"
+  },
+  "55-100": {
+    "lat": 44.244036,
+    "lng": -88.402003,
+    "match": "Exact",
+    "matched_address": "237 E CALUMET ST, APPLETON, WI, 54915"
+  },
+  "55-1011": {
+    "lat": 44.133254,
+    "lng": -88.164018,
+    "match": "Exact",
+    "matched_address": "460 S 8TH ST, HILBERT, WI, 54129"
+  },
+  "55-1012": {
+    "lat": 45.135344,
+    "lng": -90.346194,
+    "match": "Non_Exact",
+    "matched_address": "335 WISCONSIN AVE, MEDFORD, WI, 54451"
+  },
+  "55-1013": {
+    "lat": 46.013518,
+    "lng": -91.486122,
+    "match": "Non_Exact",
+    "matched_address": "15848 2ND ST, HAYWARD, WI, 54843"
+  },
+  "55-1021": {
+    "lat": 44.40917,
+    "lng": -89.852904,
+    "match": "Exact",
+    "matched_address": "2321 ENGEL RD, WISCONSIN RAPIDS, WI, 54495"
+  },
+  "55-1023": {
+    "lat": 43.442141,
+    "lng": -87.827276,
+    "match": "Exact",
+    "matched_address": "820 LAKE DR, PORT WASHINGTON, WI, 53074"
+  },
+  "55-1037": {
+    "lat": 43.921908,
+    "lng": -88.020621,
+    "match": "Exact",
+    "matched_address": "170 RUH CT, KIEL, WI, 53042"
+  },
+  "55-1038": {
+    "lat": 44.713439,
+    "lng": -88.666946,
+    "match": "Exact",
+    "matched_address": "N3473 WISCONSIN AVE, SHAWANO, WI, 54166"
+  },
+  "55-1039": {
+    "lat": 43.282559,
+    "lng": -89.211756,
+    "match": "Exact",
+    "matched_address": "W4192 BRISTOL RD, COLUMBUS, WI, 53925"
+  },
+  "55-1050": {
+    "lat": 42.946205,
+    "lng": -89.221006,
+    "match": "Exact",
+    "matched_address": "1800 WILLIAMS DR, STOUGHTON, WI, 53589"
+  },
+  "55-1051": {
+    "lat": 42.568532,
+    "lng": -89.468253,
+    "match": "Non_Exact",
+    "matched_address": "N2469 CO RD OK, JUDA, WI, 53550"
+  },
+  "55-1052": {
+    "lat": 44.629311,
+    "lng": -90.218111,
+    "match": "Exact",
+    "matched_address": "10558 CO RD B, MARSHFIELD, WI, 54449"
+  },
+  "55-1061": {
+    "lat": 44.685442,
+    "lng": -87.371858,
+    "match": "Non_Exact",
+    "matched_address": "248 CO RD U, ALGOMA, WI, 54201"
+  },
+  "55-1062": {
+    "lat": 44.685442,
+    "lng": -87.371858,
+    "match": "Non_Exact",
+    "matched_address": "248 CO RD U, ALGOMA, WI, 54201"
+  },
+  "55-1068": {
+    "lat": 44.374625,
+    "lng": -87.854769,
+    "match": "Exact",
+    "matched_address": "5550 CO RD R, DENMARK, WI, 54208"
+  },
+  "55-107": {
+    "lat": 43.330226,
+    "lng": -90.384358,
+    "match": "Exact",
+    "matched_address": "684 S CHURCH ST, RICHLAND CENTER, WI, 53581"
+  },
+  "55-1088": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-1091": {
+    "lat": 43.73619,
+    "lng": -90.803002,
+    "match": "Exact",
+    "matched_address": "110 EAGLE DR, CASHTON, WI, 54619"
+  },
+  "55-1092": {
+    "lat": 42.732986,
+    "lng": -90.493911,
+    "match": "Exact",
+    "matched_address": "1255 GREENWOOD AVE, PLATTEVILLE, WI, 53818"
+  },
+  "55-1097": {
+    "lat": 42.917201,
+    "lng": -90.272543,
+    "match": "Exact",
+    "matched_address": "300 JACKSON ST, LINDEN, WI, 53553"
+  },
+  "55-1098": {
+    "lat": 43.616499,
+    "lng": -88.729209,
+    "match": "Non_Exact",
+    "matched_address": "504 BARNES ST, WAUPUN, WI, 53963"
+  },
+  "55-1099": {
+    "lat": 43.652022,
+    "lng": -87.828134,
+    "match": "Exact",
+    "matched_address": "W2663 CO RD OO, SHEBOYGAN FALLS, WI, 53085"
+  },
+  "55-11": {
+    "lat": 42.608135,
+    "lng": -89.657962,
+    "match": "Exact",
+    "matched_address": "105 3RD ST, MONROE, WI, 53566"
+  },
+  "55-1100": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-1103": {
+    "lat": 43.182263,
+    "lng": -89.242275,
+    "match": "Exact",
+    "matched_address": "301 BROADWAY DR, SUN PRAIRIE, WI, 53590"
+  },
+  "55-1104": {
+    "lat": 44.915598,
+    "lng": -91.854626,
+    "match": "Exact",
+    "matched_address": "3001 CO RD B, MENOMONIE, WI, 54751"
+  },
+  "55-1113": {
+    "lat": 44.216658,
+    "lng": -88.788492,
+    "match": "Exact",
+    "matched_address": "7742 CO RD II, FREMONT, WI, 54940"
+  },
+  "55-1114": {
+    "lat": 45.002293,
+    "lng": -90.394334,
+    "match": "Exact",
+    "matched_address": "W1658 CO RD A, DORCHESTER, WI, 54425"
+  },
+  "55-112": {
+    "lat": 43.671134,
+    "lng": -88.795218,
+    "match": "Exact",
+    "matched_address": "N3545 CO RD EE, WAUPUN, WI, 53963"
+  },
+  "55-1120": {
+    "lat": 44.054058,
+    "lng": -88.55137,
+    "match": "Exact",
+    "matched_address": "1110 INDUSTRIAL AVE, OSHKOSH, WI, 54901"
+  },
+  "55-1124": {
+    "lat": 42.532901,
+    "lng": -89.847681,
+    "match": "Exact",
+    "matched_address": "2923 MAYER RD, BROWNTOWN, WI, 53522"
+  },
+  "55-1133": {
+    "lat": 43.912086,
+    "lng": -87.746994,
+    "match": "Exact",
+    "matched_address": "855 HICKORY ST, CLEVELAND, WI, 53015"
+  },
+  "55-115": {
+    "lat": 42.782619,
+    "lng": -89.299096,
+    "match": "Exact",
+    "matched_address": "104 N MADISON ST, EVANSVILLE, WI, 53536"
+  },
+  "55-116": {
+    "lat": 42.606625,
+    "lng": -90.430731,
+    "match": "Exact",
+    "matched_address": "116 N MAIN ST, CUBA CITY, WI, 53807"
+  },
+  "55-117": {
+    "lat": 43.451722,
+    "lng": -88.839177,
+    "match": "Exact",
+    "matched_address": "419 S CENTER ST, BEAVER DAM, WI, 53916"
+  },
+  "55-1177": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-120": {
+    "lat": 44.812001,
+    "lng": -89.67845,
+    "match": "Exact",
+    "matched_address": "751 MAPLE RIDGE RD, MOSINEE, WI, 54455"
+  },
+  "55-1200": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-121": {
+    "lat": 42.993367,
+    "lng": -88.125883,
+    "match": "Exact",
+    "matched_address": "2770 S 171ST ST, NEW BERLIN, WI, 53151"
+  },
+  "55-1224": {
+    "lat": 43.328334,
+    "lng": -90.383298,
+    "match": "Exact",
+    "matched_address": "920 SEXTONVILLE RD, RICHLAND CENTER, WI, 53581"
+  },
+  "55-1245": {
+    "lat": 42.947081,
+    "lng": -88.779789,
+    "match": "Exact",
+    "matched_address": "N2926 WILL RD, JEFFERSON, WI, 53549"
+  },
+  "55-127": {
+    "lat": 43.646325,
+    "lng": -89.106124,
+    "match": "Exact",
+    "matched_address": "W4481 CO RD GG, CAMBRIA, WI, 53923"
+  },
+  "55-128": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-130": {
+    "lat": 44.199182,
+    "lng": -88.283548,
+    "match": "Exact",
+    "matched_address": "N8495 STATE HWY 55, MENASHA, WI, 54952"
+  },
+  "55-1300": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-1301": {
+    "lat": 42.741542,
+    "lng": -89.617255,
+    "match": "Exact",
+    "matched_address": "W5198 CO HWY C, MONTICELLO, WI, 53570"
+  },
+  "55-1313": {
+    "lat": 43.713474,
+    "lng": -90.722121,
+    "match": "Exact",
+    "matched_address": "S510 CO RD D, CASHTON, WI, 54619"
+  },
+  "55-133": {
+    "lat": 43.653889,
+    "lng": -90.337338,
+    "match": "Non_Exact",
+    "matched_address": "186 MADISON ST, HILLSBORO, WI, 54634"
+  },
+  "55-1349": {
+    "lat": 44.60502,
+    "lng": -88.916209,
+    "match": "Exact",
+    "matched_address": "N10140 STATE HWY 110, MARION, WI, 54950"
+  },
+  "55-1352": {
+    "lat": 42.929449,
+    "lng": -89.523655,
+    "match": "Exact",
+    "matched_address": "6858 PAOLI RD, BELLEVILLE, WI, 53508"
+  },
+  "55-1388": {
+    "lat": 42.742326,
+    "lng": -88.037115,
+    "match": "Exact",
+    "matched_address": "18320 OLD YORKVILLE RD, UNION GROVE, WI, 53182"
+  },
+  "55-139": {
+    "lat": 44.582232,
+    "lng": -90.408699,
+    "match": "Exact",
+    "matched_address": "W1933 US HWY 10, GRANTON, WI, 54436"
+  },
+  "55-14": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-1400": {
+    "lat": 43.143892,
+    "lng": -89.675212,
+    "match": "Exact",
+    "matched_address": "8877 TABLE BLUFF RD, CROSS PLAINS, WI, 53528"
+  },
+  "55-1410": {
+    "lat": 44.328437,
+    "lng": -88.933943,
+    "match": "Non_Exact",
+    "matched_address": "105 3RD AVE, WEYAUWEGA, WI, 54983"
+  },
+  "55-1432": {
+    "lat": 44.045014,
+    "lng": -88.979057,
+    "match": "Exact",
+    "matched_address": "W1965 STATE HWY 21, BERLIN, WI, 54923"
+  },
+  "55-145": {
+    "lat": 43.747168,
+    "lng": -88.355699,
+    "match": "Exact",
+    "matched_address": "N5677 CO RD UU, FOND DU LAC, WI, 54937"
+  },
+  "55-1457": {
+    "lat": 43.185411,
+    "lng": -90.425989,
+    "match": "Exact",
+    "matched_address": "1160 INDUSTRIAL DR, MUSCODA, WI, 53573"
+  },
+  "55-1465": {
+    "lat": 43.135223,
+    "lng": -88.599944,
+    "match": "Exact",
+    "matched_address": "W1344 INDUSTRIAL DR, IXONIA, WI, 53036"
+  },
+  "55-1472": {
+    "lat": 42.859897,
+    "lng": -90.177218,
+    "match": "Exact",
+    "matched_address": "320 COMMERCE ST, MINERAL POINT, WI, 53565"
+  },
+  "55-1475": {
+    "lat": 44.884078,
+    "lng": -88.472997,
+    "match": "Exact",
+    "matched_address": "14109 CO HWY VV, GILLETT, WI, 54124"
+  },
+  "55-1477": {
+    "lat": 44.953971,
+    "lng": -89.994429,
+    "match": "Exact",
+    "matched_address": "230266 RED CARDINAL RD, EDGAR, WI, 54426"
+  },
+  "55-1478": {
+    "lat": 44.973093,
+    "lng": -90.030199,
+    "match": "Exact",
+    "matched_address": "122480 SCHNAPPSVILLE RD, ATHENS, WI, 54411"
+  },
+  "55-149": {
+    "lat": 44.936653,
+    "lng": -91.387462,
+    "match": "Exact",
+    "matched_address": "22 S PRAIRIE ST, CHIPPEWA FLS, WI, 54729"
+  },
+  "55-1499": {
+    "lat": 44.598881,
+    "lng": -90.258207,
+    "match": "Non_Exact",
+    "matched_address": "10898 US HWY 10, MARSHFIELD, WI, 54449"
+  },
+  "55-15": {
+    "lat": 43.790802,
+    "lng": -90.062761,
+    "match": "Exact",
+    "matched_address": "1042 E STATE ST, MAUSTON, WI, 53948"
+  },
+  "55-150": {
+    "lat": 43.517327,
+    "lng": -88.452601,
+    "match": "Exact",
+    "matched_address": "214 W HENNI ST, THERESA, WI, 53091"
+  },
+  "55-1500": {
+    "lat": 43.282331,
+    "lng": -87.978701,
+    "match": "Exact",
+    "matched_address": "W55N155 MCKINLEY BLVD, CEDARBURG, WI, 53012"
+  },
+  "55-1508": {
+    "lat": 45.360082,
+    "lng": -92.033194,
+    "match": "Exact",
+    "matched_address": "1052 6TH ST, ALMENA, WI, 54805"
+  },
+  "55-151": {
+    "lat": 43.221245,
+    "lng": -88.151253,
+    "match": "Exact",
+    "matched_address": "N112W19528 MEQUON RD, GERMANTOWN, WI, 53022"
+  },
+  "55-1510": {
+    "lat": 43.279484,
+    "lng": -90.045666,
+    "match": "Exact",
+    "matched_address": "915 ALMA AVE, PLAIN, WI, 53577"
+  },
+  "55-1522": {
+    "lat": 44.582234,
+    "lng": -90.408618,
+    "match": "Exact",
+    "matched_address": "W1929 US HWY 10, GRANTON, WI, 54436"
+  },
+  "55-1526": {
+    "lat": 43.142778,
+    "lng": -88.592054,
+    "match": "Exact",
+    "matched_address": "W1194 MARIETTA AVE, IXONIA, WI, 53036"
+  },
+  "55-153": {
+    "lat": 43.660959,
+    "lng": -88.483507,
+    "match": "Exact",
+    "matched_address": "W6521 CO RD F, BROWNSVILLE, WI, 53006"
+  },
+  "55-1551": {
+    "lat": 44.627374,
+    "lng": -89.906119,
+    "match": "Exact",
+    "matched_address": "10498 MAYFLOWER RD, MILLADORE, WI, 54454"
+  },
+  "55-1554": {
+    "lat": 43.122426,
+    "lng": -89.954218,
+    "match": "Exact",
+    "matched_address": "6415 CO RD H, ARENA, WI, 53503"
+  },
+  "55-158": {
+    "lat": 43.094885,
+    "lng": -89.523624,
+    "match": "Exact",
+    "matched_address": "1845 DEMING WAY, MIDDLETON, WI, 53562"
+  },
+  "55-160": {
+    "lat": 42.683446,
+    "lng": -89.705151,
+    "match": "Non_Exact",
+    "matched_address": "N4858 CO HWY J, MONROE, WI, 53566"
+  },
+  "55-163": {
+    "lat": 44.47755,
+    "lng": -88.465231,
+    "match": "Exact",
+    "matched_address": "W5646 STATE HWY 54, BLACK CREEK, WI, 54106"
+  },
+  "55-1631": {
+    "lat": 44.65578,
+    "lng": -90.005709,
+    "match": "Exact",
+    "matched_address": "5710 CO HWY H, AUBURNDALE, WI, 54412"
+  },
+  "55-1639": {
+    "lat": 44.660682,
+    "lng": -88.180944,
+    "match": "Exact",
+    "matched_address": "4348 BROOKSIDE DR, PULASKI, WI, 54162"
+  },
+  "55-166": {
+    "lat": 43.029317,
+    "lng": -87.912635,
+    "match": "Exact",
+    "matched_address": "205 S 2ND ST, MILWAUKEE, WI, 53204"
+  },
+  "55-1700": {
+    "lat": 44.876211,
+    "lng": -92.196934,
+    "match": "Exact",
+    "matched_address": "126 STATE HWY 128, WILSON, WI, 54027"
+  },
+  "55-1710": {
+    "lat": 43.504778,
+    "lng": -90.162088,
+    "match": "Exact",
+    "matched_address": "S3797 CO RD G, LA VALLE, WI, 53941"
+  },
+  "55-1712": {
+    "lat": 44.966687,
+    "lng": -88.163182,
+    "match": "Exact",
+    "matched_address": "7989 ARNDT RD, OCONTO FALLS, WI, 54154"
+  },
+  "55-1715": {
+    "lat": 43.025328,
+    "lng": -87.911681,
+    "match": "Exact",
+    "matched_address": "138 W BRUCE ST, MILWAUKEE, WI, 53204"
+  },
+  "55-173": {
+    "lat": 43.075908,
+    "lng": -88.478603,
+    "match": "Exact",
+    "matched_address": "1730 EXECUTIVE DR, OCONOMOWOC, WI, 53066"
+  },
+  "55-174": {
+    "lat": 44.929171,
+    "lng": -91.183797,
+    "match": "Exact",
+    "matched_address": "24105 CO HWY MM, CADOTT, WI, 54727"
+  },
+  "55-1785": {
+    "lat": 43.748754,
+    "lng": -87.982592,
+    "match": "Exact",
+    "matched_address": "12 W MAIN ST, PLYMOUTH, WI, 53073"
+  },
+  "55-1801": {
+    "lat": 44.522277,
+    "lng": -88.328507,
+    "match": "Exact",
+    "matched_address": "124 E BRONSON RD, SEYMOUR, WI, 54165"
+  },
+  "55-1805": {
+    "lat": 44.401024,
+    "lng": -88.064699,
+    "match": "Exact",
+    "matched_address": "2082 OLD MARTIN RD, DE PERE, WI, 54115"
+  },
+  "55-1808": {
+    "lat": 44.958663,
+    "lng": -92.33919,
+    "match": "Exact",
+    "matched_address": "672 230TH ST, WOODVILLE, WI, 54028"
+  },
+  "55-181": {
+    "lat": 43.172678,
+    "lng": -89.798699,
+    "match": "Exact",
+    "matched_address": "428 WALL ST, MAZOMANIE, WI, 53560"
+  },
+  "55-182": {
+    "lat": 42.603472,
+    "lng": -89.661803,
+    "match": "Exact",
+    "matched_address": "112 W 8TH ST, MONROE, WI, 53566"
+  },
+  "55-184": {
+    "lat": 43.031128,
+    "lng": -88.243616,
+    "match": "Exact",
+    "matched_address": "2101 DELAFIELD ST, WAUKESHA, WI, 53188"
+  },
+  "55-1854": {
+    "lat": 44.716158,
+    "lng": -89.679959,
+    "match": "Exact",
+    "matched_address": "204000 CO RD DB, MOSINEE, WI, 54455"
+  },
+  "55-1855": {
+    "lat": 44.757237,
+    "lng": -90.12505,
+    "match": "Exact",
+    "matched_address": "115454 CO RD C, MARSHFIELD, WI, 54449"
+  },
+  "55-1886": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-1888": {
+    "lat": 44.025782,
+    "lng": -88.142912,
+    "match": "Exact",
+    "matched_address": "625 S IRISH RD, CHILTON, WI, 53014"
+  },
+  "55-1899": {
+    "lat": 45.286685,
+    "lng": -92.697606,
+    "match": "Exact",
+    "matched_address": "527 STATE HWY 35, OSCEOLA, WI, 54020"
+  },
+  "55-19": {
+    "lat": 45.207567,
+    "lng": -87.117891,
+    "match": "Exact",
+    "matched_address": "11051 STATE HWY 42, SISTER BAY, WI, 54234"
+  },
+  "55-190": {
+    "lat": 44.312938,
+    "lng": -88.246279,
+    "match": "Exact",
+    "matched_address": "3610 ELECTRIC CITY BLVD, KAUKAUNA, WI, 54130"
+  },
+  "55-192": {
+    "lat": 43.282559,
+    "lng": -89.211756,
+    "match": "Exact",
+    "matched_address": "W4192 BRISTOL RD, COLUMBUS, WI, 53925"
+  },
+  "55-195": {
+    "lat": 42.666778,
+    "lng": -90.13043,
+    "match": "Non_Exact",
+    "matched_address": "160 CHRISTENSON DR, DARLINGTON, WI, 53530"
+  },
+  "55-1950": {
+    "lat": 44.657711,
+    "lng": -90.157382,
+    "match": "Exact",
+    "matched_address": "1511 E 4TH ST, MARSHFIELD, WI, 54449"
+  },
+  "55-1955": {
+    "lat": 44.653101,
+    "lng": -91.978383,
+    "match": "Exact",
+    "matched_address": "N6765 STATE HWY 25, DURAND, WI, 54736"
+  },
+  "55-1963": {
+    "lat": 44.305678,
+    "lng": -88.544397,
+    "match": "Non_Exact",
+    "matched_address": "N1788 LILY OF THE VALLEY DR, GREENVILLE, WI, 54942"
+  },
+  "55-1980": {
+    "lat": 42.614096,
+    "lng": -89.623443,
+    "match": "Exact",
+    "matched_address": "2903 3RD ST N, MONROE, WI, 53566"
+  },
+  "55-2": {
+    "lat": 44.258574,
+    "lng": -88.433892,
+    "match": "Non_Exact",
+    "matched_address": "1815 W SPENCER ST, APPLETON, WI, 54914"
+  },
+  "55-201": {
+    "lat": 43.045894,
+    "lng": -89.806675,
+    "match": "Exact",
+    "matched_address": "3480 CO RD F, BLUE MOUNDS, WI, 53517"
+  },
+  "55-205": {
+    "lat": 45.392098,
+    "lng": -92.161374,
+    "match": "Exact",
+    "matched_address": "461 WESTERN BLVD, TURTLE LAKE, WI, 54889"
+  },
+  "55-209": {
+    "lat": 42.599107,
+    "lng": -89.623407,
+    "match": "Exact",
+    "matched_address": "2913 13TH ST, MONROE, WI, 53566"
+  },
+  "55-21": {
+    "lat": 44.544975,
+    "lng": -87.703275,
+    "match": "Exact",
+    "matched_address": "124 MAIN ST, LUXEMBURG, WI, 54217"
+  },
+  "55-210": {
+    "lat": 43.324189,
+    "lng": -88.175305,
+    "match": "Exact",
+    "matched_address": "N168W21455 MAIN ST, JACKSON, WI, 53037"
+  },
+  "55-213": {
+    "lat": 43.340035,
+    "lng": -88.456613,
+    "match": "Exact",
+    "matched_address": "W1234 ROME RD, RUBICON, WI, 53078"
+  },
+  "55-214": {
+    "lat": 45.246474,
+    "lng": -92.357074,
+    "match": "Exact",
+    "matched_address": "260 95TH ST, CLEAR LAKE, WI, 54005"
+  },
+  "55-215": {
+    "lat": 42.748811,
+    "lng": -89.59412,
+    "match": "Exact",
+    "matched_address": "114 E COATES AVE, MONTICELLO, WI, 53570"
+  },
+  "55-2175": {
+    "lat": 43.59416,
+    "lng": -87.877287,
+    "match": "Exact",
+    "matched_address": "W3653 HOITINK RD, CEDAR GROVE, WI, 53013"
+  },
+  "55-218": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-2185": {
+    "lat": 43.974108,
+    "lng": -89.831102,
+    "match": "Exact",
+    "matched_address": "1007 W LAKE ST, FRIENDSHIP, WI, 53934"
+  },
+  "55-219": {
+    "lat": 43.524881,
+    "lng": -88.231662,
+    "match": "Non_Exact",
+    "matched_address": "1626 FOND DU LAC AVE, KEWASKUM, WI, 53040"
+  },
+  "55-22": {
+    "lat": 43.234224,
+    "lng": -88.969369,
+    "match": "Exact",
+    "matched_address": "W11555 TORPY RD, WATERLOO, WI, 53594"
+  },
+  "55-2200": {
+    "lat": 43.85559,
+    "lng": -91.226137,
+    "match": "Non_Exact",
+    "matched_address": "2200 PALACE ST, LA CROSSE, WI, 54603"
+  },
+  "55-222": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-2244": {
+    "lat": 43.648737,
+    "lng": -90.960023,
+    "match": "Exact",
+    "matched_address": "S2244 LANGAARD LN, WESTBY, WI, 54667"
+  },
+  "55-226": {
+    "lat": 44.295484,
+    "lng": -91.230674,
+    "match": "Non_Exact",
+    "matched_address": "220 CENTER ST, BLAIR, WI, 54616"
+  },
+  "55-23": {
+    "lat": 43.790802,
+    "lng": -90.062761,
+    "match": "Exact",
+    "matched_address": "1042 E STATE ST, MAUSTON, WI, 53948"
+  },
+  "55-230": {
+    "lat": 43.733109,
+    "lng": -87.904548,
+    "match": "Exact",
+    "matched_address": "W4200 CO RD PP, PLYMOUTH, WI, 53073"
+  },
+  "55-235": {
+    "lat": 44.501373,
+    "lng": -87.594114,
+    "match": "Exact",
+    "matched_address": "N4893 CO RD C, KEWAUNEE, WI, 54216"
+  },
+  "55-237": {
+    "lat": 43.742178,
+    "lng": -90.272022,
+    "match": "Non_Exact",
+    "matched_address": "609 2ND MAIN ST, ELROY, WI, 53929"
+  },
+  "55-239": {
+    "lat": 43.748714,
+    "lng": -87.980933,
+    "match": "Exact",
+    "matched_address": "2 E MAIN ST, PLYMOUTH, WI, 53073"
+  },
+  "55-245": {
+    "lat": null,
+    "lng": null,
+    "match": "Tie",
+    "matched_address": null
+  },
+  "55-246": {
+    "lat": 43.358706,
+    "lng": -90.115496,
+    "match": "Exact",
+    "matched_address": "S7863 CO RD G, HILLPOINT, WI, 53937"
+  },
+  "55-25": {
+    "lat": 43.185411,
+    "lng": -90.425989,
+    "match": "Exact",
+    "matched_address": "1160 INDUSTRIAL DR, MUSCODA, WI, 53573"
+  },
+  "55-250": {
+    "lat": 43.732742,
+    "lng": -87.949516,
+    "match": "Exact",
+    "matched_address": "2602 CO RD PP, PLYMOUTH, WI, 53073"
+  },
+  "55-2526": {
+    "lat": 42.595988,
+    "lng": -87.893627,
+    "match": "Exact",
+    "matched_address": "4550 70TH AVE, KENOSHA, WI, 53144"
+  },
+  "55-253": {
+    "lat": 44.459197,
+    "lng": -87.503108,
+    "match": "Exact",
+    "matched_address": "409 MILWAUKEE ST, KEWAUNEE, WI, 54216"
+  },
+  "55-254": {
+    "lat": 44.655651,
+    "lng": -90.198735,
+    "match": "Exact",
+    "matched_address": "9706 CO HWY H, MARSHFIELD, WI, 54449"
+  },
+  "55-255": {
+    "lat": 46.030798,
+    "lng": -91.164904,
+    "match": "Non_Exact",
+    "matched_address": "11077 FULLINGTON RD, HAYWARD, WI, 54843"
+  },
+  "55-260": {
+    "lat": 42.580939,
+    "lng": -90.132678,
+    "match": "Exact",
+    "matched_address": "15982 STATE HWY 11, SHULLSBURG, WI, 53586"
+  },
+  "55-261": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-266": {
+    "lat": 44.301199,
+    "lng": -87.988742,
+    "match": "Exact",
+    "matched_address": "7050 MORRISON RD, GREENLEAF, WI, 54126"
+  },
+  "55-267": {
+    "lat": 43.615054,
+    "lng": -88.541606,
+    "match": "Exact",
+    "matched_address": "N11689 DAIRY RD, BROWNSVILLE, WI, 53006"
+  },
+  "55-268": {
+    "lat": 43.195907,
+    "lng": -89.343874,
+    "match": "Exact",
+    "matched_address": "4494 LAKE CIR, WINDSOR, WI, 53598"
+  },
+  "55-269": {
+    "lat": 44.714936,
+    "lng": -88.762285,
+    "match": "Non_Exact",
+    "matched_address": "W10198 OAK GROVE RD, CLINTONVILLE, WI, 54929"
+  },
+  "55-270": {
+    "lat": 43.495831,
+    "lng": -89.308255,
+    "match": "Non_Exact",
+    "matched_address": "181 E MONROE ST, WYOCENA, WI, 53969"
+  },
+  "55-2711": {
+    "lat": 44.133254,
+    "lng": -88.164018,
+    "match": "Exact",
+    "matched_address": "460 S 8TH ST, HILBERT, WI, 54129"
+  },
+  "55-272": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-274": {
+    "lat": 44.040145,
+    "lng": -89.509719,
+    "match": "Exact",
+    "matched_address": "271 INDUSTRIAL DR, COLOMA, WI, 54930"
+  },
+  "55-275": {
+    "lat": 44.987227,
+    "lng": -90.820727,
+    "match": "Exact",
+    "matched_address": "N15681 TIEMAN AVE, THORP, WI, 54771"
+  },
+  "55-276": {
+    "lat": 44.912343,
+    "lng": -90.278611,
+    "match": "Exact",
+    "matched_address": "225567 SILVER MAPLE LN, COLBY, WI, 54421"
+  },
+  "55-277": {
+    "lat": 45.12369,
+    "lng": -90.360238,
+    "match": "Non_Exact",
+    "matched_address": "1000 PROGESSIVE AVE, MEDFORD, WI, 54451"
+  },
+  "55-28": {
+    "lat": 46.652057,
+    "lng": -90.943366,
+    "match": "Exact",
+    "matched_address": "30455 NEVERS RD, WASHBURN, WI, 54891"
+  },
+  "55-281": {
+    "lat": 44.949179,
+    "lng": -90.568532,
+    "match": "Exact",
+    "matched_address": "324 N HARDING ST, OWEN, WI, 54460"
+  },
+  "55-283": {
+    "lat": 42.495016,
+    "lng": -88.538334,
+    "match": "Non_Exact",
+    "matched_address": "W4854 STATE LINE RD, WALWORTH, WI, 53184"
+  },
+  "55-284": {
+    "lat": 44.9536,
+    "lng": -88.046818,
+    "match": "Exact",
+    "matched_address": "317 N ROSERA ST, LENA, WI, 54139"
+  },
+  "55-29": {
+    "lat": 43.205941,
+    "lng": -88.708585,
+    "match": "Exact",
+    "matched_address": "1173 N 4TH ST, WATERTOWN, WI, 53098"
+  },
+  "55-290": {
+    "lat": 42.641982,
+    "lng": -88.159365,
+    "match": "Exact",
+    "matched_address": "1072 288TH AVE, BURLINGTON, WI, 53105"
+  },
+  "55-295": {
+    "lat": 44.926987,
+    "lng": -89.841569,
+    "match": "Exact",
+    "matched_address": "701 8TH ST, MARATHON, WI, 54448"
+  },
+  "55-296": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-297": {
+    "lat": 44.944923,
+    "lng": -89.614177,
+    "match": "Exact",
+    "matched_address": "1007 TOWNLINE RD, WAUSAU, WI, 54403"
+  },
+  "55-298": {
+    "lat": 45.772087,
+    "lng": -92.57883,
+    "match": "Exact",
+    "matched_address": "11631 STATE HWY 70, GRANTSBURG, WI, 54840"
+  },
+  "55-299": {
+    "lat": 43.739256,
+    "lng": -87.780133,
+    "match": "Exact",
+    "matched_address": "419 HIGHLAND DR, KOHLER, WI, 53044"
+  },
+  "55-3": {
+    "lat": 43.77105,
+    "lng": -88.458682,
+    "match": "Exact",
+    "matched_address": "325 TOMPKINS ST, FOND DU LAC, WI, 54935"
+  },
+  "55-300": {
+    "lat": 43.940399,
+    "lng": -90.790847,
+    "match": "Exact",
+    "matched_address": "400 CENTURY CT, SPARTA, WI, 54656"
+  },
+  "55-301": {
+    "lat": 45.04814,
+    "lng": -91.273267,
+    "match": "Non_Exact",
+    "matched_address": "14193 CO HWY S S, JIM FALLS, WI, 54748"
+  },
+  "55-304": {
+    "lat": 44.739971,
+    "lng": -90.577653,
+    "match": "Exact",
+    "matched_address": "N8790 FAIRGROUND AVE, GREENWOOD, WI, 54437"
+  },
+  "55-306": {
+    "lat": 42.679306,
+    "lng": -90.117977,
+    "match": "Exact",
+    "matched_address": "112 W ANN ST, DARLINGTON, WI, 53530"
+  },
+  "55-308": {
+    "lat": 44.675584,
+    "lng": -88.151397,
+    "match": "Exact",
+    "matched_address": "7700 N BROWN COUNTY LINE RD, PULASKI, WI, 54162"
+  },
+  "55-314": {
+    "lat": 42.580939,
+    "lng": -90.132678,
+    "match": "Exact",
+    "matched_address": "15982 STATE HWY 11, SHULLSBURG, WI, 53586"
+  },
+  "55-317": {
+    "lat": 44.021105,
+    "lng": -91.104616,
+    "match": "Exact",
+    "matched_address": "W3959 CO RD D, MINDORO, WI, 54644"
+  },
+  "55-319": {
+    "lat": 45.097857,
+    "lng": -87.635329,
+    "match": "Exact",
+    "matched_address": "1905 DUNLAP AVE, MARINETTE, WI, 54143"
+  },
+  "55-322": {
+    "lat": 44.304465,
+    "lng": -88.312961,
+    "match": "Exact",
+    "matched_address": "3805 FREEDOM RD, APPLETON, WI, 54913"
+  },
+  "55-323": {
+    "lat": 44.381704,
+    "lng": -88.311762,
+    "match": "Exact",
+    "matched_address": "N4056 VINE RD, APPLETON, WI, 54913"
+  },
+  "55-33": {
+    "lat": 45.085463,
+    "lng": -90.119822,
+    "match": "Exact",
+    "matched_address": "243749 BEAVER CREEK RD, ATHENS, WI, 54411"
+  },
+  "55-334": {
+    "lat": 44.051623,
+    "lng": -87.799962,
+    "match": "Exact",
+    "matched_address": "10115 ENGLISH LAKE RD, MANITOWOC, WI, 54220"
+  },
+  "55-3377": {
+    "lat": 43.9257,
+    "lng": -88.017127,
+    "match": "Exact",
+    "matched_address": "1 PERSNICKETY PL, KIEL, WI, 53042"
+  },
+  "55-338": {
+    "lat": 44.949014,
+    "lng": -90.573158,
+    "match": "Exact",
+    "matched_address": "607 W 3RD ST, OWEN, WI, 54460"
+  },
+  "55-340": {
+    "lat": 44.036957,
+    "lng": -88.200933,
+    "match": "Exact",
+    "matched_address": "W3240 CO RD F, CHILTON, WI, 53014"
+  },
+  "55-342": {
+    "lat": 43.310169,
+    "lng": -90.575204,
+    "match": "Non_Exact",
+    "matched_address": "26965 DIETER HOLLOW DR, BLUE RIVER, WI, 53518"
+  },
+  "55-343": {
+    "lat": 44.635913,
+    "lng": -91.952027,
+    "match": "Non_Exact",
+    "matched_address": "1220 HARDY ST, DURAND, WI, 54736"
+  },
+  "55-347": {
+    "lat": 43.742093,
+    "lng": -88.479823,
+    "match": "Exact",
+    "matched_address": "420 TROWBRIDGE DR, FOND DU LAC, WI, 54937"
+  },
+  "55-348": {
+    "lat": 42.607808,
+    "lng": -89.638566,
+    "match": "Exact",
+    "matched_address": "461 17TH AVE, MONROE, WI, 53566"
+  },
+  "55-349": {
+    "lat": 43.934687,
+    "lng": -90.822247,
+    "match": "Exact",
+    "matched_address": "915 HOESCHLER DR, SPARTA, WI, 54656"
+  },
+  "55-350": {
+    "lat": 45.16472,
+    "lng": -90.812788,
+    "match": "Exact",
+    "matched_address": "300 S RIVERSIDE DR, GILMAN, WI, 54433"
+  },
+  "55-351": {
+    "lat": 43.798185,
+    "lng": -87.772046,
+    "match": "Exact",
+    "matched_address": "4811 VENTURE DR, SHEBOYGAN, WI, 53083"
+  },
+  "55-352": {
+    "lat": 45.134327,
+    "lng": -89.157957,
+    "match": "Exact",
+    "matched_address": "201 MORSE ST, ANTIGO, WI, 54409"
+  },
+  "55-356": {
+    "lat": 44.734511,
+    "lng": -92.462833,
+    "match": "Exact",
+    "matched_address": "232 N WALLACE ST, ELLSWORTH, WI, 54011"
+  },
+  "55-358": {
+    "lat": 43.333749,
+    "lng": -90.384893,
+    "match": "Non_Exact",
+    "matched_address": "142 E HASELTINE ST, RICHLAND CENTER, WI, 53581"
+  },
+  "55-360": {
+    "lat": 43.528337,
+    "lng": -90.003767,
+    "match": "Exact",
+    "matched_address": "501 S PINE ST, REEDSBURG, WI, 53959"
+  },
+  "55-362": {
+    "lat": 44.459668,
+    "lng": -89.543337,
+    "match": "Exact",
+    "matched_address": "2534 POST RD, PLOVER, WI, 54467"
+  },
+  "55-365": {
+    "lat": 44.385386,
+    "lng": -87.860853,
+    "match": "Exact",
+    "matched_address": "5312 STEVES CHEESE RD, DENMARK, WI, 54208"
+  },
+  "55-366": {
+    "lat": 43.756444,
+    "lng": -87.726441,
+    "match": "Exact",
+    "matched_address": "1606 ERIE AVE, SHEBOYGAN, WI, 53081"
+  },
+  "55-371": {
+    "lat": 44.861155,
+    "lng": -92.621256,
+    "match": "Non_Exact",
+    "matched_address": "410 N 3RD ST, RIVER FALLS, WI, 54022"
+  },
+  "55-372": {
+    "lat": 43.647261,
+    "lng": -90.861285,
+    "match": "Non_Exact",
+    "matched_address": "615 S MAIN ST, WESTBY, WI, 54667"
+  },
+  "55-373": {
+    "lat": 44.579331,
+    "lng": -88.072429,
+    "match": "Exact",
+    "matched_address": "1375 GRUBER RD, GREEN BAY, WI, 54313"
+  },
+  "55-374": {
+    "lat": 43.35019,
+    "lng": -89.037741,
+    "match": "Non_Exact",
+    "matched_address": "2280 JAMES ST, COLUMBUS, WI, 53925"
+  },
+  "55-375": {
+    "lat": 43.2283,
+    "lng": -88.107997,
+    "match": "Exact",
+    "matched_address": "N116W15970 MAIN ST, GERMANTOWN, WI, 53022"
+  },
+  "55-376": {
+    "lat": 43.351441,
+    "lng": -88.075291,
+    "match": "Non_Exact",
+    "matched_address": "807 W PLEASANT VALLEY RD, WEST BEND, WI, 53095"
+  },
+  "55-378": {
+    "lat": 43.187505,
+    "lng": -88.977715,
+    "match": "Exact",
+    "matched_address": "410 PORTLAND RD, WATERLOO, WI, 53594"
+  },
+  "55-379": {
+    "lat": 43.546512,
+    "lng": -89.464717,
+    "match": "Exact",
+    "matched_address": "110 E ONEIDA ST, PORTAGE, WI, 53901"
+  },
+  "55-384": {
+    "lat": 42.763591,
+    "lng": -88.215971,
+    "match": "Exact",
+    "matched_address": "100 S JEFFERSON ST, WATERFORD, WI, 53185"
+  },
+  "55-387": {
+    "lat": 43.059857,
+    "lng": -88.126299,
+    "match": "Exact",
+    "matched_address": "2205 N CALHOUN RD, BROOKFIELD, WI, 53005"
+  },
+  "55-388": {
+    "lat": 42.59679,
+    "lng": -89.656687,
+    "match": "Exact",
+    "matched_address": "245 11TH ST, MONROE, WI, 53566"
+  },
+  "55-39": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-395": {
+    "lat": 43.186358,
+    "lng": -88.090979,
+    "match": "Exact",
+    "matched_address": "N92W14884 ANTHONY AVE, MENOMONEE FALLS, WI, 53051"
+  },
+  "55-396": {
+    "lat": 44.998217,
+    "lng": -91.726067,
+    "match": "Exact",
+    "matched_address": "507 PINE ST, COLFAX, WI, 54730"
+  },
+  "55-397": {
+    "lat": 43.702991,
+    "lng": -87.762542,
+    "match": "Exact",
+    "matched_address": "4036 WEEDEN CREEK RD, SHEBOYGAN, WI, 53081"
+  },
+  "55-398": {
+    "lat": 43.919865,
+    "lng": -88.041845,
+    "match": "Exact",
+    "matched_address": "927 8TH ST, KIEL, WI, 53042"
+  },
+  "55-40": {
+    "lat": 43.174839,
+    "lng": -89.254265,
+    "match": "Exact",
+    "matched_address": "109 S THOMPSON RD, SUN PRAIRIE, WI, 53590"
+  },
+  "55-405": {
+    "lat": 43.054403,
+    "lng": -90.141642,
+    "match": "Exact",
+    "matched_address": "5023 STATE HWY 23, DODGEVILLE, WI, 53533"
+  },
+  "55-410": {
+    "lat": 42.993571,
+    "lng": -87.892055,
+    "match": "Exact",
+    "matched_address": "2826 S KINNICKINNIC AVE, MILWAUKEE, WI, 53207"
+  },
+  "55-411": {
+    "lat": 44.96514,
+    "lng": -90.805713,
+    "match": "Exact",
+    "matched_address": "505 N ADAMS ST, THORP, WI, 54771"
+  },
+  "55-413": {
+    "lat": 43.194599,
+    "lng": -88.726256,
+    "match": "Exact",
+    "matched_address": "212 W MAIN ST, WATERTOWN, WI, 53094"
+  },
+  "55-416": {
+    "lat": 43.73324,
+    "lng": -90.803094,
+    "match": "Exact",
+    "matched_address": "440 ORGANIC DR, CASHTON, WI, 54619"
+  },
+  "55-417": {
+    "lat": 43.308303,
+    "lng": -88.841342,
+    "match": "Exact",
+    "matched_address": "430 N MAIN ST, REESEVILLE, WI, 53579"
+  },
+  "55-419": {
+    "lat": 43.025328,
+    "lng": -87.911681,
+    "match": "Exact",
+    "matched_address": "138 W BRUCE ST, MILWAUKEE, WI, 53204"
+  },
+  "55-420": {
+    "lat": 44.426118,
+    "lng": -87.898961,
+    "match": "Exact",
+    "matched_address": "4200 MAIN ST, GREEN BAY, WI, 54311"
+  },
+  "55-421": {
+    "lat": 44.356097,
+    "lng": -87.887377,
+    "match": "Exact",
+    "matched_address": "5911 CO RD NN, DENMARK, WI, 54208"
+  },
+  "55-425": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-4288": {
+    "lat": 43.735103,
+    "lng": -88.175575,
+    "match": "Exact",
+    "matched_address": "N5279 CO RD G, SAINT CLOUD, WI, 53079"
+  },
+  "55-429": {
+    "lat": 45.65994,
+    "lng": -92.621542,
+    "match": "Exact",
+    "matched_address": "12413 CO RD Z, GRANTSBURG, WI, 54840"
+  },
+  "55-430": {
+    "lat": 43.714188,
+    "lng": -90.722126,
+    "match": "Non_Exact",
+    "matched_address": "S502 CO RD D, CASHTON, WI, 54619"
+  },
+  "55-431": {
+    "lat": 42.585007,
+    "lng": -89.646061,
+    "match": "Exact",
+    "matched_address": "2971 11TH AVE, MONROE, WI, 53566"
+  },
+  "55-432": {
+    "lat": 45.252428,
+    "lng": -92.273972,
+    "match": "Non_Exact",
+    "matched_address": "600 1ST AVE W, CLEAR LAKE, WI, 54005"
+  },
+  "55-433": {
+    "lat": 43.089511,
+    "lng": -89.311544,
+    "match": "Exact",
+    "matched_address": "537 ATLAS AVE, MADISON, WI, 53714"
+  },
+  "55-436": {
+    "lat": 42.72758,
+    "lng": -90.451591,
+    "match": "Exact",
+    "matched_address": "1540 VISION DR, PLATTEVILLE, WI, 53818"
+  },
+  "55-437": {
+    "lat": 43.804508,
+    "lng": -91.232785,
+    "match": "Non_Exact",
+    "matched_address": "706 16TH ST S, LA CROSSE, WI, 54601"
+  },
+  "55-438": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-440": {
+    "lat": 43.250203,
+    "lng": -89.371796,
+    "match": "Exact",
+    "matched_address": "4879 CO RD V, DEFOREST, WI, 53532"
+  },
+  "55-441": {
+    "lat": 44.887629,
+    "lng": -89.50244,
+    "match": "Exact",
+    "matched_address": "9902 WESTON AVE, WESTON, WI, 54476"
+  },
+  "55-443": {
+    "lat": 44.504221,
+    "lng": -87.979419,
+    "match": "Exact",
+    "matched_address": "1695 MILLS ST, GREEN BAY, WI, 54302"
+  },
+  "55-444": {
+    "lat": 44.582971,
+    "lng": -88.059341,
+    "match": "Exact",
+    "matched_address": "1521 BROOKFIELD AVE, HOWARD, WI, 54313"
+  },
+  "55-445": {
+    "lat": 44.266069,
+    "lng": -88.445432,
+    "match": "Exact",
+    "matched_address": "2358 W PACKARD ST, APPLETON, WI, 54914"
+  },
+  "55-447": {
+    "lat": 43.81242,
+    "lng": -91.254297,
+    "match": "Exact",
+    "matched_address": "207 PEARL ST, LA CROSSE, WI, 54601"
+  },
+  "55-45": {
+    "lat": 45.334275,
+    "lng": -92.170501,
+    "match": "Non_Exact",
+    "matched_address": "240 N PRENTICE ST, CLAYTON, WI, 54004"
+  },
+  "55-453": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-454": {
+    "lat": 44.420638,
+    "lng": -88.727399,
+    "match": "Exact",
+    "matched_address": "1005 ORVILLE DR, NEW LONDON, WI, 54961"
+  },
+  "55-456": {
+    "lat": 44.312938,
+    "lng": -88.246279,
+    "match": "Exact",
+    "matched_address": "3610 ELECTRIC CITY BLVD, KAUKAUNA, WI, 54130"
+  },
+  "55-457": {
+    "lat": null,
+    "lng": null,
+    "match": "Tie",
+    "matched_address": null
+  },
+  "55-460": {
+    "lat": 44.939258,
+    "lng": -91.395757,
+    "match": "Non_Exact",
+    "matched_address": "611 N BRIDGE ST, CHIPPEWA FALLS, WI, 54729"
+  },
+  "55-463": {
+    "lat": 45.637041,
+    "lng": -91.99343,
+    "match": "Exact",
+    "matched_address": "796 29 3/4 AVE, BARRONETT, WI, 54813"
+  },
+  "55-464": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-465": {
+    "lat": 42.607745,
+    "lng": -89.638411,
+    "match": "Exact",
+    "matched_address": "466 17TH AVE, MONROE, WI, 53566"
+  },
+  "55-467": {
+    "lat": 46.729143,
+    "lng": -92.098229,
+    "match": "Exact",
+    "matched_address": "1423 N 8TH ST, SUPERIOR, WI, 54880"
+  },
+  "55-469": {
+    "lat": 44.179956,
+    "lng": -88.46505,
+    "match": "Non_Exact",
+    "matched_address": "601 S COMMERCIAL ST, NEENAH, WI, 54956"
+  },
+  "55-470": {
+    "lat": 44.30822,
+    "lng": -89.52068,
+    "match": "Exact",
+    "matched_address": "5364 GLENNVILLE RD, BANCROFT, WI, 54921"
+  },
+  "55-472": {
+    "lat": 44.075692,
+    "lng": -87.660835,
+    "match": "Exact",
+    "matched_address": "2000 S 10TH ST, MANITOWOC, WI, 54220"
+  },
+  "55-474": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-475": {
+    "lat": 43.527822,
+    "lng": -89.992107,
+    "match": "Exact",
+    "matched_address": "1120 COMMERCIAL AVE, REEDSBURG, WI, 53959"
+  },
+  "55-476": {
+    "lat": 43.065527,
+    "lng": -89.297584,
+    "match": "Exact",
+    "matched_address": "2221 DANIELS ST, MADISON, WI, 53718"
+  },
+  "55-477": {
+    "lat": 43.091082,
+    "lng": -89.351101,
+    "match": "Exact",
+    "matched_address": "514 DIVISION ST, MADISON, WI, 53704"
+  },
+  "55-48": {
+    "lat": 42.654937,
+    "lng": -89.74579,
+    "match": "Non_Exact",
+    "matched_address": "W7839 STATE HWY 81, MONROE, WI, 53566"
+  },
+  "55-481": {
+    "lat": 42.859595,
+    "lng": -89.535463,
+    "match": "Exact",
+    "matched_address": "112 W MAIN ST, BELLEVILLE, WI, 53508"
+  },
+  "55-482": {
+    "lat": 43.38751,
+    "lng": -87.871316,
+    "match": "Exact",
+    "matched_address": "125 W GRAND AVE, PORT WASHINGTON, WI, 53074"
+  },
+  "55-484": {
+    "lat": 43.008737,
+    "lng": -89.824554,
+    "match": "Exact",
+    "matched_address": "2819 CO RD F, BLUE MOUNDS, WI, 53517"
+  },
+  "55-485": {
+    "lat": 44.799635,
+    "lng": -90.664957,
+    "match": "Exact",
+    "matched_address": "W7014 CO RD MM, GREENWOOD, WI, 54437"
+  },
+  "55-4911": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-5": {
+    "lat": 42.52687,
+    "lng": -89.695513,
+    "match": "Non_Exact",
+    "matched_address": "W6805 DEPPELER RD, MONROE, WI, 53566"
+  },
+  "55-500": {
+    "lat": 45.045784,
+    "lng": -92.035559,
+    "match": "Exact",
+    "matched_address": "1115 TIFFANY ST, BOYCEVILLE, WI, 54725"
+  },
+  "55-503": {
+    "lat": 42.510334,
+    "lng": -88.97729,
+    "match": "Non_Exact",
+    "matched_address": "3355 E COLLEY RD, BELOIT, WI, 53511"
+  },
+  "55-505": {
+    "lat": 45.391584,
+    "lng": -92.161215,
+    "match": "Exact",
+    "matched_address": "458 WESTERN BLVD, TURTLE LAKE, WI, 54889"
+  },
+  "55-5059": {
+    "lat": 43.075448,
+    "lng": -89.417252,
+    "match": "Exact",
+    "matched_address": "1605 LINDEN DR, MADISON, WI, 53706"
+  },
+  "55-5060": {
+    "lat": 43.075448,
+    "lng": -89.417252,
+    "match": "Exact",
+    "matched_address": "1605 LINDEN DR, MADISON, WI, 53706"
+  },
+  "55-510": {
+    "lat": 45.174754,
+    "lng": -91.579019,
+    "match": "Exact",
+    "matched_address": "22474 52ND ST, NEW AUBURN, WI, 54757"
+  },
+  "55-519": {
+    "lat": 42.569849,
+    "lng": -89.466995,
+    "match": "Non_Exact",
+    "matched_address": "N2607 CO RD OK, JUDA, WI, 53550"
+  },
+  "55-52": {
+    "lat": 45.187972,
+    "lng": -87.12242,
+    "match": "Exact",
+    "matched_address": "10653 N BAY SHORE DR, SISTER BAY, WI, 54234"
+  },
+  "55-521": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-522": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-523": {
+    "lat": 42.746531,
+    "lng": -90.045209,
+    "match": "Non_Exact",
+    "matched_address": "17975 N CO RD F, DARLINGTON, WI, 53530"
+  },
+  "55-524": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-527": {
+    "lat": 42.587518,
+    "lng": -89.904551,
+    "match": "Exact",
+    "matched_address": "6519 LARSON RD, SOUTH WAYNE, WI, 53587"
+  },
+  "55-529": {
+    "lat": 42.788585,
+    "lng": -88.317342,
+    "match": "Exact",
+    "matched_address": "N8207 BELL SCHOOL RD, EAST TROY, WI, 53120"
+  },
+  "55-53": {
+    "lat": 43.316409,
+    "lng": -90.378183,
+    "match": "Non_Exact",
+    "matched_address": "2101 BOHMAN DR, RICHLAND CENTER, WI, 53581"
+  },
+  "55-530": {
+    "lat": 43.075383,
+    "lng": -88.769559,
+    "match": "Exact",
+    "matched_address": "312 MILWAUKEE ST, JOHNSON CREEK, WI, 53038"
+  },
+  "55-533": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-540": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-541": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-542": {
+    "lat": 44.507586,
+    "lng": -87.978039,
+    "match": "Non_Exact",
+    "matched_address": "341 N HENRY ST, GREEN BAY, WI, 54302"
+  },
+  "55-544": {
+    "lat": 44.762961,
+    "lng": -90.59821,
+    "match": "Exact",
+    "matched_address": "423 S MAIN ST, GREENWOOD, WI, 54437"
+  },
+  "55-547": {
+    "lat": 44.325962,
+    "lng": -88.933965,
+    "match": "Exact",
+    "matched_address": "508 N MILL ST, WEYAUWEGA, WI, 54983"
+  },
+  "55-56": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-566": {
+    "lat": 42.973544,
+    "lng": -87.948259,
+    "match": "Exact",
+    "matched_address": "3920 S 27TH ST, MILWAUKEE, WI, 53221"
+  },
+  "55-57": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-573": {
+    "lat": 46.054857,
+    "lng": -89.234608,
+    "match": "Non_Exact",
+    "matched_address": "4570 E CO RD K, CONOVER, WI, 54519"
+  },
+  "55-577": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-58": {
+    "lat": 44.932116,
+    "lng": -89.83432,
+    "match": "Exact",
+    "matched_address": "304 EAST ST, MARATHON, WI, 54448"
+  },
+  "55-581": {
+    "lat": 43.719386,
+    "lng": -87.761801,
+    "match": "Non_Exact",
+    "matched_address": "3481 CO RD A, SHEBOYGAN, WI, 53081"
+  },
+  "55-59": {
+    "lat": 45.45295,
+    "lng": -91.262576,
+    "match": "Exact",
+    "matched_address": "832 E ARTHUR AVE, BRUCE, WI, 54819"
+  },
+  "55-5931": {
+    "lat": 42.720688,
+    "lng": -87.954499,
+    "match": "Exact",
+    "matched_address": "1510 S SYLVANIA AVE, STURTEVANT, WI, 53177"
+  },
+  "55-598": {
+    "lat": 42.819162,
+    "lng": -89.629958,
+    "match": "Exact",
+    "matched_address": "200 INDUSTRIAL DR, NEW GLARUS, WI, 53574"
+  },
+  "55-599": {
+    "lat": 44.644725,
+    "lng": -92.525838,
+    "match": "Exact",
+    "matched_address": "W7902 290TH AVE, HAGER CITY, WI, 54014"
+  },
+  "55-60": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-600": {
+    "lat": 45.045834,
+    "lng": -89.692151,
+    "match": "Non_Exact",
+    "matched_address": "8100 CO RD K, MERRILL, WI, 54452"
+  },
+  "55-601": {
+    "lat": 43.528374,
+    "lng": -87.942019,
+    "match": "Exact",
+    "matched_address": "W3115 JAY RD, BELGIUM, WI, 53004"
+  },
+  "55-603": {
+    "lat": 45.071999,
+    "lng": -91.9868,
+    "match": "Exact",
+    "matched_address": "N10760 350TH ST, BOYCEVILLE, WI, 54725"
+  },
+  "55-604": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-605": {
+    "lat": 44.503044,
+    "lng": -91.297961,
+    "match": "Non_Exact",
+    "matched_address": "N45354 CO RD O, OSSEO, WI, 54758"
+  },
+  "55-613": {
+    "lat": 44.357498,
+    "lng": -88.28037,
+    "match": "Exact",
+    "matched_address": "W1872 CO RD UU, FREEDOM, WI, 54130"
+  },
+  "55-614": {
+    "lat": 42.580939,
+    "lng": -90.132678,
+    "match": "Exact",
+    "matched_address": "15982 STATE HWY 11, SHULLSBURG, WI, 53586"
+  },
+  "55-615": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-618": {
+    "lat": 42.800928,
+    "lng": -90.70306,
+    "match": "Exact",
+    "matched_address": "8149 STAGE RD, LANCASTER, WI, 53813"
+  },
+  "55-62": {
+    "lat": 42.735858,
+    "lng": -90.328014,
+    "match": "Exact",
+    "matched_address": "218 S PARK ST, BELMONT, WI, 53510"
+  },
+  "55-620": {
+    "lat": 42.809142,
+    "lng": -89.863662,
+    "match": "Exact",
+    "matched_address": "201 W OLSON ST, BLANCHARDVILLE, WI, 53516"
+  },
+  "55-634": {
+    "lat": 42.858067,
+    "lng": -87.95337,
+    "match": "Exact",
+    "matched_address": "2895 W OAKWOOD RD, FRANKLIN, WI, 53132"
+  },
+  "55-635": {
+    "lat": 43.964097,
+    "lng": -87.970001,
+    "match": "Non_Exact",
+    "matched_address": "20201 POINT RD, KIEL, WI, 53042"
+  },
+  "55-636": {
+    "lat": 42.740877,
+    "lng": -89.518778,
+    "match": "Exact",
+    "matched_address": "W3075 CO HWY EE, MONTICELLO, WI, 53570"
+  },
+  "55-642": {
+    "lat": 44.429487,
+    "lng": -87.684395,
+    "match": "Exact",
+    "matched_address": "N2915 CO RD AB, LUXEMBURG, WI, 54217"
+  },
+  "55-65": {
+    "lat": 43.847302,
+    "lng": -91.229251,
+    "match": "Exact",
+    "matched_address": "1626 OAK ST, LA CROSSE, WI, 54603"
+  },
+  "55-651": {
+    "lat": 44.250526,
+    "lng": -88.171544,
+    "match": "Exact",
+    "matched_address": "524 MARTIN LN, KAUKAUNA, WI, 54130"
+  },
+  "55-66": {
+    "lat": 42.570662,
+    "lng": -89.466292,
+    "match": "Non_Exact",
+    "matched_address": "N2689 CO RD OK, JUDA, WI, 53550"
+  },
+  "55-671": {
+    "lat": 43.280956,
+    "lng": -90.02413,
+    "match": "Exact",
+    "matched_address": "E5904 MILL RD, PLAIN, WI, 53577"
+  },
+  "55-69": {
+    "lat": 43.865159,
+    "lng": -91.224021,
+    "match": "Exact",
+    "matched_address": "2200 ENTERPRISE AVE, LA CROSSE, WI, 54603"
+  },
+  "55-7": {
+    "lat": 43.940276,
+    "lng": -90.805611,
+    "match": "Exact",
+    "matched_address": "427 E WISCONSIN ST, SPARTA, WI, 54656"
+  },
+  "55-702": {
+    "lat": 43.746006,
+    "lng": -88.477134,
+    "match": "Non_Exact",
+    "matched_address": "246 TROWBRIDGE DR, FOND DU LAC, WI, 54937"
+  },
+  "55-704": {
+    "lat": 43.528379,
+    "lng": -87.941814,
+    "match": "Exact",
+    "matched_address": "W3111 JAY RD, BELGIUM, WI, 53004"
+  },
+  "55-706": {
+    "lat": 44.901002,
+    "lng": -90.881629,
+    "match": "Exact",
+    "matched_address": "W11299 BROEK RD, STANLEY, WI, 54768"
+  },
+  "55-714": {
+    "lat": 42.572764,
+    "lng": -90.233752,
+    "match": "Exact",
+    "matched_address": "208 W WATER ST, SHULLSBURG, WI, 53586"
+  },
+  "55-717": {
+    "lat": 43.307738,
+    "lng": -90.195778,
+    "match": "Exact",
+    "matched_address": "27017 STATE HWY 130, HILLPOINT, WI, 53937"
+  },
+  "55-719": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-72": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-720": {
+    "lat": 43.502793,
+    "lng": -88.545454,
+    "match": "Exact",
+    "matched_address": "650 FURNACE ST, MAYVILLE, WI, 53050"
+  },
+  "55-725": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-735": {
+    "lat": 44.024084,
+    "lng": -88.1591,
+    "match": "Exact",
+    "matched_address": "131 E CHESTNUT ST, CHILTON, WI, 53014"
+  },
+  "55-739": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-742": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-749": {
+    "lat": 42.607599,
+    "lng": -89.638567,
+    "match": "Exact",
+    "matched_address": "481 17TH AVE, MONROE, WI, 53566"
+  },
+  "55-75": {
+    "lat": 43.651135,
+    "lng": -91.099941,
+    "match": "Exact",
+    "matched_address": "203 S MAIN ST, CHASEBURG, WI, 54621"
+  },
+  "55-759": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-777": {
+    "lat": 44.483368,
+    "lng": -89.9668,
+    "match": "Exact",
+    "matched_address": "6574 RYLAND AVE, VESPER, WI, 54489"
+  },
+  "55-79": {
+    "lat": 43.7095,
+    "lng": -88.194806,
+    "match": "Exact",
+    "matched_address": "W736 CO RD B, CAMPBELLSPORT, WI, 53010"
+  },
+  "55-792": {
+    "lat": 44.151373,
+    "lng": -88.482835,
+    "match": "Exact",
+    "matched_address": "590 ENTERPRISE DR, NEENAH, WI, 54956"
+  },
+  "55-796": {
+    "lat": 44.974953,
+    "lng": -92.756819,
+    "match": "Exact",
+    "matched_address": "502 2ND ST, HUDSON, WI, 54016"
+  },
+  "55-8": {
+    "lat": 44.459302,
+    "lng": -88.100399,
+    "match": "Exact",
+    "matched_address": "3399 S RIDGE RD, DE PERE, WI, 54115"
+  },
+  "55-80": {
+    "lat": 43.176267,
+    "lng": -89.794262,
+    "match": "Exact",
+    "matched_address": "30 BRODHEAD ST, MAZOMANIE, WI, 53560"
+  },
+  "55-800": {
+    "lat": 43.161669,
+    "lng": -89.907569,
+    "match": "Exact",
+    "matched_address": "300 US HWY 14, ARENA, WI, 53503"
+  },
+  "55-814": {
+    "lat": 44.464597,
+    "lng": -88.916104,
+    "match": "Exact",
+    "matched_address": "250 CENTER ST, MANAWA, WI, 54949"
+  },
+  "55-820": {
+    "lat": 42.856453,
+    "lng": -90.709587,
+    "match": "Exact",
+    "matched_address": "932 N MADISON ST, LANCASTER, WI, 53813"
+  },
+  "55-822": {
+    "lat": 43.671313,
+    "lng": -90.764365,
+    "match": "Exact",
+    "matched_address": "S1597 HANSON RD, WESTBY, WI, 54667"
+  },
+  "55-823": {
+    "lat": 45.232667,
+    "lng": -87.996375,
+    "match": "Non_Exact",
+    "matched_address": "600 N US HWY 141, CRIVITZ, WI, 54114"
+  },
+  "55-825": {
+    "lat": 42.745833,
+    "lng": -89.580856,
+    "match": "Non_Exact",
+    "matched_address": "112 PRATT RD, MONTICELLO, WI, 53570"
+  },
+  "55-826": {
+    "lat": 44.287839,
+    "lng": -88.297394,
+    "match": "Exact",
+    "matched_address": "1500 E NORTH AVE, LITTLE CHUTE, WI, 54140"
+  },
+  "55-83": {
+    "lat": 44.505052,
+    "lng": -89.515439,
+    "match": "Exact",
+    "matched_address": "3201 BUS PARK DR, STEVENS POINT, WI, 54482"
+  },
+  "55-840": {
+    "lat": 42.584734,
+    "lng": -89.651098,
+    "match": "Exact",
+    "matched_address": "704 30TH ST, MONROE, WI, 53566"
+  },
+  "55-86": {
+    "lat": 42.750488,
+    "lng": -89.580773,
+    "match": "Non_Exact",
+    "matched_address": "520 PRATT RD, MONTICELLO, WI, 53570"
+  },
+  "55-863": {
+    "lat": 44.475618,
+    "lng": -88.452306,
+    "match": "Exact",
+    "matched_address": "307 N CLARK ST, BLACK CREEK, WI, 54106"
+  },
+  "55-875": {
+    "lat": 44.509398,
+    "lng": -89.503827,
+    "match": "Non_Exact",
+    "matched_address": "5700 E M COPPS DR, STEVENS POINT, WI, 54482"
+  },
+  "55-879": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-8822": {
+    "lat": 43.867014,
+    "lng": -91.221168,
+    "match": "Exact",
+    "matched_address": "2340 ENTERPRISE AVE, LA CROSSE, WI, 54603"
+  },
+  "55-885": {
+    "lat": 42.70444,
+    "lng": -89.8515,
+    "match": "Non_Exact",
+    "matched_address": "1750 W PUDDLEDOCK RD, ARGYLE, WI, 53504"
+  },
+  "55-8975": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-8976": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-8980": {
+    "lat": 43.271193,
+    "lng": -89.734944,
+    "match": "Exact",
+    "matched_address": "807 PHILLIPS BLVD, SAUK CITY, WI, 53583"
+  },
+  "55-8983": {
+    "lat": 43.618446,
+    "lng": -88.73541,
+    "match": "Exact",
+    "matched_address": "900 S MADISON ST, WAUPUN, WI, 53963"
+  },
+  "55-8988": {
+    "lat": 44.795853,
+    "lng": -89.689248,
+    "match": "Exact",
+    "matched_address": "625 RIVER RD, MOSINEE, WI, 54455"
+  },
+  "55-8991": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-8995": {
+    "lat": 43.591692,
+    "lng": -88.43521,
+    "match": "Non_Exact",
+    "matched_address": "302 MAIN ST, LOMIRA, WI, 53048"
+  },
+  "55-8997": {
+    "lat": 44.77633,
+    "lng": -87.509684,
+    "match": "Exact",
+    "matched_address": "2189 CO RD DK, STURGEON BAY, WI, 54235"
+  },
+  "55-90": {
+    "lat": 43.921308,
+    "lng": -88.307437,
+    "match": "Exact",
+    "matched_address": "W2994 CO RD HH, MALONE, WI, 53049"
+  },
+  "55-9002": {
+    "lat": 44.945406,
+    "lng": -90.316518,
+    "match": "Exact",
+    "matched_address": "118 S 4TH ST, ABBOTSFORD, WI, 54405"
+  },
+  "55-9008": {
+    "lat": 43.387474,
+    "lng": -87.952923,
+    "match": "Non_Exact",
+    "matched_address": "400 DEKORA WOODS BLVD, SAUKVILLE, WI, 53080"
+  },
+  "55-9009": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-901": {
+    "lat": 44.322197,
+    "lng": -88.936252,
+    "match": "Exact",
+    "matched_address": "113 W WISCONSIN ST, WEYAUWEGA, WI, 54983"
+  },
+  "55-9010": {
+    "lat": 45.65994,
+    "lng": -92.621542,
+    "match": "Exact",
+    "matched_address": "12413 CO RD Z, GRANTSBURG, WI, 54840"
+  },
+  "55-9011": {
+    "lat": 43.742255,
+    "lng": -88.500795,
+    "match": "Exact",
+    "matched_address": "N5541 MIRANDA WAY, FOND DU LAC, WI, 54937"
+  },
+  "55-9013": {
+    "lat": 43.142208,
+    "lng": -90.693451,
+    "match": "Exact",
+    "matched_address": "305 1ST ST, BOSCOBEL, WI, 53805"
+  },
+  "55-9015": {
+    "lat": 42.805749,
+    "lng": -89.858109,
+    "match": "Exact",
+    "matched_address": "710 BLAKE ST, BLANCHARDVILLE, WI, 53516"
+  },
+  "55-9019": {
+    "lat": 44.627009,
+    "lng": -90.354704,
+    "match": "Exact",
+    "matched_address": "W888 CHILI RD, CHILI, WI, 54420"
+  },
+  "55-903": {
+    "lat": 44.800438,
+    "lng": -91.525543,
+    "match": "Exact",
+    "matched_address": "1160 MENOMONIE ST, EAU CLAIRE, WI, 54703"
+  },
+  "55-904": {
+    "lat": 44.644335,
+    "lng": -90.139819,
+    "match": "Exact",
+    "matched_address": "2408 S GALVIN AVE, MARSHFIELD, WI, 54449"
+  },
+  "55-905": {
+    "lat": 44.248943,
+    "lng": -88.173811,
+    "match": "Exact",
+    "matched_address": "489 HOLLAND CT, KAUKAUNA, WI, 54130"
+  },
+  "55-906": {
+    "lat": 44.508501,
+    "lng": -87.97785,
+    "match": "Non_Exact",
+    "matched_address": "430 N HENRY ST, GREEN BAY, WI, 54302"
+  },
+  "55-909": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-91": {
+    "lat": 42.97613,
+    "lng": -90.655504,
+    "match": "Exact",
+    "matched_address": "1675 LINCOLN AVE, FENNIMORE, WI, 53809"
+  },
+  "55-910": {
+    "lat": 44.361978,
+    "lng": -87.887505,
+    "match": "Exact",
+    "matched_address": "5810 CO RD NN, DENMARK, WI, 54208"
+  },
+  "55-911": {
+    "lat": 44.356569,
+    "lng": -87.887538,
+    "match": "Exact",
+    "matched_address": "5900 CO RD NN, DENMARK, WI, 54208"
+  },
+  "55-916": {
+    "lat": 42.521186,
+    "lng": -88.982791,
+    "match": "Exact",
+    "matched_address": "2924 WYETTA DR, BELOIT, WI, 53511"
+  },
+  "55-918": {
+    "lat": 43.658243,
+    "lng": -88.006839,
+    "match": "Exact",
+    "matched_address": "302 E WATER ST, CASCADE, WI, 53011"
+  },
+  "55-931": {
+    "lat": 42.917874,
+    "lng": -89.355685,
+    "match": "Exact",
+    "matched_address": "4647 STATE HWY 138, OREGON, WI, 53575"
+  },
+  "55-935": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-937": {
+    "lat": 43.689387,
+    "lng": -88.413012,
+    "match": "Exact",
+    "matched_address": "W5215 CO RD B, FOND DU LAC, WI, 54937"
+  },
+  "55-939": {
+    "lat": 44.714936,
+    "lng": -88.762285,
+    "match": "Exact",
+    "matched_address": "W10198 OAK GROVE RD, CLINTONVILLE, WI, 54929"
+  },
+  "55-95": {
+    "lat": 42.610179,
+    "lng": -89.652609,
+    "match": "Exact",
+    "matched_address": "657 2ND ST, MONROE, WI, 53566"
+  },
+  "55-97": {
+    "lat": 43.49946,
+    "lng": -88.545011,
+    "match": "Non_Exact",
+    "matched_address": "331 N MAIN ST, MAYVILLE, WI, 53050"
+  },
+  "55-98": {
+    "lat": 43.06206,
+    "lng": -87.896046,
+    "match": "Non_Exact",
+    "matched_address": "1220 E MEINECKE AVE, MILWAUKEE, WI, 53212"
+  },
+  "55-99": {
+    "lat": null,
+    "lng": null,
+    "match": "No_Match",
+    "matched_address": null
+  },
+  "55-990": {
+    "lat": 44.94494,
+    "lng": -90.396805,
+    "match": "Exact",
+    "matched_address": "N14505 SANDHILL AVE, CURTISS, WI, 54422"
+  }
+}

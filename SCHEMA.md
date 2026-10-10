@@ -44,11 +44,12 @@ One record per **distinct named product**. Marieke Gouda and Marieke Gouda Smoke
 | `id` | slug | assigned | Stable forever. `hooks-cheese`, `uplands-cheese` |
 | `name` | string | DFW → DATCP | Reader-facing name, not legal entity name |
 | `aka` | string[] | merge | Other trade names encountered across sources |
-| `city` | string | DATCP/DFW | Public-facing location |
-| `county` | string | DATCP | Drives the county map view |
-| `lat`, `lng` | float | geocoded once | Pinned via override after first geocode; **required** — the map can't render a null |
-| `address` | string | DATCP/DFW | Retail address if one exists, else plant address |
-| `phone` | string \| null | DATCP | The home plant's BusinessPhone (the plant whose address the record carries), normalised to `(715) 693-6662`, with ` ext. 210` when the directory lists an extension; null when the listing holds no plant or the plant publishes no number |
+| `city` | string | DATCP/DFW | The home plant's city; the listing's city for a company with no licensed plant |
+| `county` | string \| null | DATCP | The home plant's county. A listing with no licence takes the county every licensed plant in its city shares (null when the city is unknown to the licence file or spans counties — Appleton); overrides fill the rest |
+| `lat`, `lng` | float | `data/geocode/plants.json` / DFW | The home plant's geocode (`scripts/geocode.py`, the Census Bureau's public geocoder, committed once); the listing's own point for a company with no licensed plant, or whose home plant the geocoder could not place. **Required** — the map can't render a null |
+| `address` | string | DATCP/DFW | The home plant's street address; the listing's for a company with no plant |
+| `home_plant` | string \| null | derived | The `datcp_id` of the plant the pin stands on and the Contact block describes: the licensed plant nearest the listing's point (a listing pinned outside Wisconsin is a head office and says nothing, so the lowest-numbered plant), else the lowest-numbered plant. Null for a company with no licence |
+| `phone` | string \| null | DATCP | The BusinessPhone filed on the home plant's licence — the licensee's business line, often a head office rather than the plant's door (21 of 27 multi-plant companies file one number for every plant). Normalised to `(715) 693-6662`, with ` ext. 210` when the directory lists an extension; null when the listing holds no plant or the plant filed none |
 | `website` | string \| null | DFW/curated | |
 | `retail` | object | DFW | `{store: bool, mail_order: bool, online: bool}` — feeds trail planner |
 | `plants` | object[] | DATCP | `{datcp_id, address, city, county, phone: string \| null, operations: string[]}` — operations kept verbatim from the directory; phone normalised as above |
@@ -228,5 +229,6 @@ Featured cheese boards — the Board Builder's gallery. Readers submit by email 
 9. Sponsor entry with an unknown `placement`, a malformed or inverted date window, a non-http(s) `url`, or a duplicate `id`
 10. Featured board with an unknown or repeated cheese id, a pick count other than 3/5/7, an `image` that is not a bare filename, or a duplicate `id`
 11. Exported creamery pinned outside Wisconsin (lat/lng beyond 42.4–47.4 N, 93.0–86.2 W) — a listing's headquarters coordinates standing in for the plant; pin the first Wisconsin plant in `data/overrides/creameries.json`
+12. Exported creamery pinned more than 1 km from its home plant's geocode, or whose `home_plant` is not one of its plants — the record would describe one place and the map another. Drop the lat/lng override, or re-run `scripts/geocode.py` if the plant moved; a home plant the geocoder could not place is exempt (its pin is the listing's point)
 
 `queue/` reports are regenerated every run for the non-fatal review work: creameries with zero cataloged cheeses, awards with `creamery_id` but no `cheese_id`, cheeses still carrying provisional flavor tags from assisted tagging, and description coverage (missing / generated / human-edited).

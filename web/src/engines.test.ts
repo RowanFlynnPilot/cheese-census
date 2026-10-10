@@ -47,6 +47,7 @@ function creamery(id: string, county: string, status: "active" | "closed" = "act
     lng: -89,
     address: "",
     phone: null,
+    home_plant: null,
     website: null,
     retail: { store: false, mail_order: false, online: false },
     plants: [],

@@ -86,6 +86,16 @@ export default function CreameryDetail({
         `${creamery.address}, ${creamery.city}, WI`,
       )}`
     : null;
+  // The pin stands on the home plant and Contact describes it; a company with
+  // other licensed plants says so, so a reader near Platteville learns that
+  // Emmi Roth is there too without being sent to Monroe.
+  const otherPlantCities = [
+    ...new Set(
+      creamery.plants
+        .filter((p) => p.datcp_id !== creamery.home_plant && p.city !== creamery.city)
+        .map((p) => p.city),
+    ),
+  ];
 
   return (
     <aside
@@ -164,6 +174,11 @@ export default function CreameryDetail({
           {creamery.city}
           {creamery.county ? `, ${creamery.county} County` : ""}
         </p>
+        {otherPlantCities.length > 0 && (
+          <p className="aka">
+            The {creamery.city} plant is pinned; also licensed in {listOf(otherPlantCities)}.
+          </p>
+        )}
         {mapsHref && (
           <p>
             <a className="maps-link" href={mapsHref} target="_blank" rel="noopener noreferrer">
@@ -177,10 +192,17 @@ export default function CreameryDetail({
         )}
         {creamery.phone && (
           <p>
-            <a className="tel-link" href={telHref(creamery.phone)}>
+            {/* The licence's business line, which may answer at a head office
+                rather than at this door; the label says which it is. */}
+            <a
+              className="tel-link"
+              href={telHref(creamery.phone)}
+              title="Business phone on the plant's state licence"
+            >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.6 3.5c.5-.3 1.1-.1 1.4.4l1.9 3.3c.3.5.2 1.1-.2 1.5L8.3 10a11.6 11.6 0 0 0 5.7 5.7l1.3-1.4c.4-.4 1-.5 1.5-.2l3.3 1.9c.5.3.7.9.4 1.4l-1.2 2.3c-.3.6-1 .9-1.6.8C10.8 19.4 4.6 13.2 3.5 6.3c-.1-.6.2-1.3.8-1.6z" />
               </svg>
+              <span className="sr-only">Business phone: </span>
               {creamery.phone}
             </a>
           </p>
@@ -331,7 +353,12 @@ export default function CreameryDetail({
             </summary>
             {creamery.plants.map((plant) => (
               <div className="plant" key={plant.datcp_id}>
-                <div className="id">Licence {plant.datcp_id}</div>
+                <div className="id">
+                  Licence {plant.datcp_id}
+                  {plant.datcp_id === creamery.home_plant && creamery.plants.length > 1 && (
+                    <span className="pinned"> · pinned</span>
+                  )}
+                </div>
                 <div className="addr">
                   {plant.address}, {plant.city} · {plant.county} County
                   {plant.phone && (
@@ -382,6 +409,12 @@ export default function CreameryDetail({
       </div>
     </aside>
   );
+}
+
+/** "Platteville, Stoughton and Seymour". */
+function listOf(items: string[]): string {
+  if (items.length <= 1) return items.join("");
+  return `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
 }
 
 /** "(715) 693-6662 ext. 210" → tel:+17156936662;ext=210 (RFC 3966), so a phone

@@ -119,7 +119,7 @@
     "suggested": "creamery"
   },
   {
-    "city": "Green Bay",
+    "city": "Denmark",
     "evidence": "DFW lists it as a maker (21 cheese types: Asiago, Blue, Cheese Blends (excl. Colby-Monterey Jack), Fontina); 12 DATCP plant(s)",
     "id": "belgioioso-cheese-inc",
     "name": "BelGioioso Cheese, Inc.",
@@ -560,7 +560,7 @@
     "suggested": "commodity"
   },
   {
-    "city": "Platteville",
+    "city": "Monroe",
     "evidence": "DFW lists it as a maker (31 cheese types: Baby Swiss, Blue, Brie, Butterkase), retail store; 4 DATCP plant(s)",
     "id": "emmi-roth-usa",
     "name": "Emmi Roth USA",
@@ -630,7 +630,7 @@
     "suggested": "commodity"
   },
   {
-    "city": "Appleton",
+    "city": "Reedsburg",
     "evidence": "DFW lists it as a maker (12 cheese types: Asadero, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby-Monterey Jack); 6 DATCP plant(s)",
     "id": "foremost-farms-usa-cooperative",
     "name": "Foremost Farms USA Cooperative",
@@ -721,7 +721,7 @@
     "suggested": "commodity"
   },
   {
-    "city": "Fond du Lac",
+    "city": "Brownsville",
     "evidence": "DFW lists it as a maker (8 cheese types: Asiago, Cheese Blends (excl. Colby-Monterey Jack), Mozzarella, Parmesan); 10 DATCP plant(s)",
     "id": "grande-cheese-company",
     "name": "Grande Cheese Company",
@@ -1078,7 +1078,7 @@
     "suggested": "commodity"
   },
   {
-    "city": "Spencer",
+    "city": "Hillsboro",
     "evidence": "3 DATCP plant(s) making Cheddar, Monterey/Monterey Jack, Pasteurized Process Cheese/Cheese Food; no DFW consumer listing",
     "id": "land-o-lakes-cheese-division",
     "name": "Land O Lakes - Cheese Division",
@@ -1428,7 +1428,7 @@
     "suggested": "processor"
   },
   {
-    "city": "Chaseburg",
+    "city": "Cashton",
     "evidence": "DFW lists it as a maker (12 cheese types: Blue, Cheddar, Cheese Blends (excl. Colby-Monterey Jack), Colby), retail store; 2 DATCP plant(s)",
     "id": "organic-valley-chaseburg",
     "name": "CROPP Cooperative/Organic Valley",
@@ -1659,7 +1659,7 @@
     "suggested": "processor"
   },
   {
-    "city": "Kewaunee",
+    "city": "Luxemburg",
     "evidence": "DFW lists it as a maker (30 cheese types: Baby Swiss, Blue, Brick, Brie), retail store; 2 DATCP plant(s)",
     "id": "ron-s-wisconsin-cheese",
     "name": "Ron's Wisconsin Cheese",
@@ -1701,7 +1701,7 @@
     "suggested": "creamery"
   },
   {
-    "city": "Hilbert",
+    "city": "Kiel",
     "evidence": "DFW lists it as a maker (28 cheese types: Asadero, Asiago, Baby Swiss, Blue); 5 DATCP plant(s)",
     "id": "sargento-cheese-inc",
     "name": "Sargento Foods, Inc.",

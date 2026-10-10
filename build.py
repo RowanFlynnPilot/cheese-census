@@ -39,6 +39,9 @@ for _stream in (sys.stdout, sys.stderr):
 ROOT = Path(__file__).resolve().parent
 RAW = ROOT / "data" / "raw"
 OVERRIDES = ROOT / "data" / "overrides"
+# Every licensed plant's point, geocoded once by scripts/geocode.py (the Census
+# Bureau's public geocoder) and committed: the build reads it, never the API.
+GEOCODE = ROOT / "data" / "geocode" / "plants.json"
 BUILD = ROOT / "build"
 QUEUE = ROOT / "queue"
 
@@ -98,6 +101,33 @@ def _slugify(value: str) -> str:
 # DATCP publishes BusinessPhone as "(715) 693-6662", a few with a space for the
 # hyphen, and extensions as " x210" (two to five digits).
 _PHONE = re.compile(r"^\((\d{3})\) (\d{3})[- ](\d{4})(?: x(\d{1,5}))?$")
+
+
+def _km(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    """Great-circle distance, for "which plant is nearest this point"."""
+    from math import asin, cos, radians, sin, sqrt
+
+    d_lat = radians(lat2 - lat1)
+    d_lng = radians(lng2 - lng1)
+    h = sin(d_lat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(d_lng / 2) ** 2
+    return 2 * 6371.0 * asin(sqrt(h))
+
+
+def _plant_points() -> dict[str, tuple[float, float]]:
+    """datcp_id -> (lat, lng) for every plant the geocoder matched."""
+    if not GEOCODE.exists():
+        fatal("missing data/geocode/plants.json — run python scripts/geocode.py")
+    table = _read_json(GEOCODE)
+    return {
+        key: (entry["lat"], entry["lng"])
+        for key, entry in table.items()
+        if entry.get("lat") is not None and entry.get("lng") is not None
+    }
+
+
+def _in_wisconsin(lat: float, lng: float) -> bool:
+    # The state's extent with a small margin (validation #11 uses the same box).
+    return 42.4 <= lat <= 47.4 and -93.0 <= lng <= -86.2
 
 
 def _phone(raw: str | None, source_key: str) -> str | None:
@@ -317,30 +347,6 @@ def merge(raw: dict[str, list[dict]]) -> dict:
         if company["name"] and company["dfw"]:
             company["name"] = company["dfw"]["name"]
 
-        # city/county/address must describe the same place the pin does. Taking them
-        # from plants[0] while lat/lng came from the DFW headquarters put Grande Cheese
-        # (8 plants) in Green County with a pin 100km north in Fond du Lac. Prefer the
-        # plant in the headquarters' city; fall back to the lowest-numbered plant.
-        if company["plants"]:
-            home = company["plants"][0]
-            headquarters = next(
-                (l for l in (company["dfw"] or {}).get("locations", [])
-                 if l["kind"] == "Headquarters"),
-                None,
-            )
-            if headquarters:
-                home = next(
-                    (p for p in company["plants"]
-                     if p["city"].strip().lower() == (headquarters["city"] or "").strip().lower()),
-                    home,
-                )
-            company["city"] = home["city"]
-            company["county"] = home["county"]
-            company["address"] = home["address"]
-            # The number a reader can ring is the one at the place the pin marks;
-            # another plant's line would answer for a different building.
-            company["phone"] = home["phone"]
-
     _assign_ids(companies)
     company_id = {key: company["id"] for key, company in companies.items()}
 
@@ -422,6 +428,50 @@ def merge(raw: dict[str, list[dict]]) -> dict:
     if rehomed:
         for company in companies.values():
             company["plants"].sort(key=lambda p: int(p["datcp_id"].split("-")[1]))
+
+    # ── The home plant: the place the pin stands on ──────────────────────────
+    # city/county/address/phone must describe the same place the pin does. A
+    # listing's coordinates are wherever DFW geocoded the company — an office
+    # (Foremost Farms in Middleton), a retail store (Emmi Roth's Alp and Dell
+    # in Monroe, filed under "Fitchburg"), or the plant — and its city string
+    # does not reliably say which. So the home plant is the licensed plant
+    # nearest the listing's point, by the plants' own geocodes, and the pin
+    # snaps to that plant. A listing pinned outside Wisconsin is a head office
+    # and says nothing about which plant; a company no listing placed pins at
+    # its lowest-numbered plant. A home plant the geocoder could not place
+    # keeps the listing's point (scripts/geocode.py lists those plants).
+    # This runs after the manual crosswalk merges above, so a listing that
+    # reached its licensed company by hand (Sargento, Schuman) counts too.
+    points = _plant_points()
+    county_by_city: dict[str, set[str]] = {}
+    for record in raw["datcp"]:
+        county_by_city.setdefault(record["city"].strip().lower(), set()).add(record["county"])
+    for company in companies.values():
+        if company["plants"]:
+            located = [p for p in company["plants"] if p["datcp_id"] in points]
+            listing = company.get("coords")
+            if located and listing and _in_wisconsin(*listing):
+                home = min(
+                    located,
+                    key=lambda p: (_km(*listing, *points[p["datcp_id"]]), p["datcp_id"]),
+                )
+            elif located:
+                home = located[0]
+            else:
+                home = company["plants"][0]
+            company["home"] = home["datcp_id"]
+            if home["datcp_id"] in points:
+                company["coords"] = points[home["datcp_id"]]
+            company["city"] = home["city"]
+            company["county"] = home["county"]
+            company["address"] = home["address"]
+            company["phone"] = home["phone"]
+        elif company["county"] is None and company["city"]:
+            # A listing with no licence has no county of its own; the licence
+            # file knows the county of every other plant in its city.
+            counties = county_by_city.get(company["city"].strip().lower(), set())
+            if len(counties) == 1:
+                company["county"] = next(iter(counties))
 
     # Everything resolves against the full canonical set, DFW-only companies included.
     full = Resolver()
@@ -569,6 +619,7 @@ def merge(raw: dict[str, list[dict]]) -> dict:
                 online=False,
             ),
             plants=[Plant(**p) for p in company["plants"]],
+            home_plant=company.get("home"),
             dfw_company_id=int(company["dfw"]["source_key"]) if company["dfw"] else None,
         )
         for company in sorted(companies.values(), key=lambda c: c["id"])
@@ -785,6 +836,37 @@ def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
             f"Wisconsin plant in data/overrides/creameries.json: "
             f"{stray[:10]}{' …' if len(stray) > 10 else ''}"
         )
+
+    # Validation #12: the pin stands on the home plant. The panel's address,
+    # city, county and phone are the home plant's, so a pin more than a
+    # kilometre from that plant's geocode sends the reader to one place and
+    # describes another (Emmi Roth: a Monroe pin under a Platteville address).
+    points = _plant_points()
+    drifted = sorted(
+        f"{c.id} ({_km(c.lat, c.lng, *points[c.home_plant]):.1f} km from plant {c.home_plant})"
+        for c in ds["creameries"]
+        if c.id in exported_creameries
+        and c.home_plant is not None
+        and c.home_plant in points
+        and c.lat is not None
+        and c.lng is not None
+        and _km(c.lat, c.lng, *points[c.home_plant]) > 1.0
+    )
+    if drifted:
+        fatal(
+            f"{len(drifted)} exported creamery(ies) are pinned away from their home plant — "
+            f"the record describes one place and the map another. Drop the lat/lng "
+            f"override, or re-run scripts/geocode.py if the plant moved: "
+            f"{drifted[:10]}{' …' if len(drifted) > 10 else ''}"
+        )
+    homeless = sorted(
+        c.id for c in ds["creameries"]
+        if c.id in exported_creameries
+        and c.plants
+        and c.home_plant not in {p.datcp_id for p in c.plants}
+    )
+    if homeless:
+        fatal(f"exported creamery(ies) whose home plant is not one of their plants: {homeless}")
 
     for cheese in ds["cheeses"]:
         if cheese.creamery_id not in exported_creameries:

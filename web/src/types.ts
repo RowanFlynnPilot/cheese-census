@@ -32,11 +32,15 @@ export interface Creamery {
   lat: number | null;
   lng: number | null;
   address: string;
-  /** The home plant's number, same shape as Plant.phone. */
+  /** The business phone on the home plant's licence (often a head-office
+   *  line), same shape as Plant.phone. */
   phone: string | null;
   website: string | null;
   retail: Retail;
   plants: Plant[];
+  /** The plant the pin stands on and Contact describes (its datcp_id); null
+   *  for a company with no licensed plant. */
+  home_plant: string | null;
   dfw_company_id: number | null;
   founded: number | null;
   status: "active" | "closed";
