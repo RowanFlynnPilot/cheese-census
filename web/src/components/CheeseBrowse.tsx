@@ -8,6 +8,7 @@ import {
   type Recommendation,
 } from "../data";
 import CheeseCard from "./CheeseCard";
+import FamilyIcon from "./FamilyIcon";
 
 export const CHEESE_SORTS = ["name", "creamery", "awards", "family"] as const;
 export type CheeseSortKey = (typeof CHEESE_SORTS)[number];
@@ -151,7 +152,8 @@ export default function CheeseBrowse({
   // folded, so a short list always shows its cause and its undo. The maker
   // chip is the one a reader did not set here (it arrives from a creamery's
   // panel), so it leads.
-  const chips: { key: string; label: string; aria: string; remove: () => void }[] = [];
+  const chips: { key: string; label: string; aria: string; remove: () => void; family?: string }[] =
+    [];
   if (makerName) {
     chips.push({
       key: "maker",
@@ -166,6 +168,7 @@ export default function CheeseBrowse({
       label: familyLabel(family),
       aria: `Remove the ${familyLabel(family)} filter`,
       remove: () => onFamily(""),
+      family,
     });
   }
   if (texture) {
@@ -436,6 +439,7 @@ export default function CheeseBrowse({
                 onClick={chip.remove}
                 aria-label={chip.aria}
               >
+                {chip.family && <FamilyIcon family={chip.family} />}
                 {chip.label}
                 <span className="chip-x" aria-hidden="true">
                   ×
@@ -494,7 +498,10 @@ export default function CheeseBrowse({
           groupByFamily(slice).map((group, index) => (
             <div key={group.label}>
               <h3 className="county-head">
-                <span>{group.label}</span>
+                <span>
+                  <FamilyIcon family={group.rows[0].family} />
+                  {group.label}
+                </span>
                 <span className="era-count">{familyTotals.get(group.label)}</span>
               </h3>
               <div className="cheese-grid">{withBand(group.rows.map(renderCard), index === 0)}</div>

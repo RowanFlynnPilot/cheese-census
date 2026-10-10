@@ -13,6 +13,7 @@ import {
   labelize,
 } from "../data";
 import DraftPhoto from "./DraftPhoto";
+import FamilyIcon from "./FamilyIcon";
 import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
 import LogoMark from "./LogoMark";
@@ -230,7 +231,10 @@ export default function CheeseDetail({
         <h3>The facts</h3>
         <dl className="facts">
           <dt>Family</dt>
-          <dd>{familyLabel(cheese.family)}</dd>
+          <dd>
+            <FamilyIcon family={cheese.family} />
+            {familyLabel(cheese.family)}
+          </dd>
           <dt>Texture</dt>
           <dd>{TEXTURE_LABEL[cheese.texture] ?? cheese.texture}</dd>
           <dt>Age</dt>

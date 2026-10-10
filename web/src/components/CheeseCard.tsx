@@ -9,6 +9,7 @@ import {
   topAward,
 } from "../data";
 import DraftPhoto from "./DraftPhoto";
+import FamilyIcon from "./FamilyIcon";
 import FlavorIcon from "./FlavorIcon";
 import HeartButton from "./HeartButton";
 
@@ -85,7 +86,10 @@ function CheeseCard({
             className="card-photo"
           />
         )}
-        <span className="kicker">{familyLabel(cheese.family)}</span>
+        <span className="kicker">
+          <FamilyIcon family={cheese.family} />
+          {familyLabel(cheese.family)}
+        </span>
         <span className="cheese-name">{cheese.name}</span>
         <span className={`cheese-maker${leadMaker ? " is-lead" : ""}`}>
           {creamery?.name ?? cheese.creamery_id}

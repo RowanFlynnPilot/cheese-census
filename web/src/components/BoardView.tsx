@@ -23,6 +23,7 @@ import {
   type Nudge,
 } from "../boards";
 import DraftPhoto from "./DraftPhoto";
+import FamilyIcon from "./FamilyIcon";
 import FlavorIcon from "./FlavorIcon";
 import { hasShareSheet, shareLink } from "../share";
 
@@ -222,7 +223,10 @@ export default function BoardView({
             className="s-photo"
           />
         )}
-        <span className="kicker">{familyLabel(cheese.family)}</span>
+        <span className="kicker">
+          <FamilyIcon family={cheese.family} />
+          {familyLabel(cheese.family)}
+        </span>
         <button className="s-name" onClick={() => onOpen(cheese.id)} data-chid={cheese.id}>
           {cheese.name}
         </button>
@@ -396,7 +400,10 @@ export default function BoardView({
                     className="slot-photo"
                   />
                 )}
-                <span className="kicker">{familyLabel(cheese.family)}</span>
+                <span className="kicker">
+                  <FamilyIcon family={cheese.family} />
+                  {familyLabel(cheese.family)}
+                </span>
                 <button
                   className="slot-name"
                   onClick={() => onOpen(cheese.id)}

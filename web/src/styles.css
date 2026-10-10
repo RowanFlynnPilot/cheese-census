@@ -1610,6 +1610,42 @@ button.tag {
   opacity: 0.85;
 }
 
+/* Family glyphs ride their label — the card kicker, the family heads, the
+   facts, the filter chip — in the text's own colour. */
+.fam {
+  width: 1em;
+  height: 1em;
+  flex: none;
+  fill: currentColor;
+  vertical-align: -0.15em;
+  margin-right: 0.35rem;
+}
+
+.kicker .fam {
+  width: 1.15rem;
+  height: 1.15rem;
+  vertical-align: -0.3em;
+}
+
+.county-head .fam {
+  width: 1.05rem;
+  height: 1.05rem;
+  vertical-align: -0.25em;
+}
+
+.facts dd .fam {
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: -0.2em;
+  margin-right: 0.3rem;
+}
+
+.filter-chip .fam {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0;
+}
+
 .f-dairy {
   background: #f4efe0;
   color: #6d6146;
