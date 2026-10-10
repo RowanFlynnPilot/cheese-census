@@ -631,6 +631,15 @@ input:focus-visible {
   font-family: var(--body);
 }
 
+/* Chromium focuses an SVG path on a pointer press, and its default ring is a
+   rectangle around the county's bounding box — an orange frame across half
+   the state after a county tap. The county is not keyboard-focusable (no
+   tabindex), so this only ever drops a pointer's ring; the active county
+   shows itself by its fill. */
+.leaflet-overlay-pane path:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .leaflet-tooltip {
   background: var(--cream);
   border: 1px solid var(--rule);
