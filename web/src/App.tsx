@@ -180,6 +180,31 @@ function restoreFocus(el: HTMLElement | null, fallback: HTMLElement | null) {
   else if (r.bottom > s.bottom) scroller.scrollTop += r.bottom - s.bottom;
 }
 
+/** The locate glyph, shared by "Near me" and the phone map's own button. */
+function Crosshair() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="3.2" />
+      <path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4" />
+      <circle cx="12" cy="12" r="7.5" fill="none" />
+    </svg>
+  );
+}
+
+/** The "Did you mean" names: at most three, and only ones that are near — an
+ *  absolute floor, and no more than a notch below the best, so "hookz" offers
+ *  Hook's and not Winona Foods after it. */
+function nearestNames(
+  scored: { id: string; name: string; score: number }[],
+): { id: string; name: string }[] {
+  const sorted = [...scored].sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+  const floor = Math.max(0.45, (sorted[0]?.score ?? 0) * 0.7);
+  return sorted
+    .filter((s) => s.score >= floor)
+    .slice(0, 3)
+    .map(({ id, name }) => ({ id, name }));
+}
+
 /** Consecutive runs of one county — the input is already county-sorted. */
 function groupByCounty(rows: Creamery[]): { label: string; rows: Creamery[] }[] {
   const groups: { label: string; rows: Creamery[] }[] = [];
@@ -206,6 +231,9 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   // Phones show one pane at a time (the floating flip pill); desktop ignores this.
   const [mobilePane, setMobilePane] = useState<"list" | "map">("list");
+  // Phones fold the county, sort and checkbox controls behind one button, as
+  // the catalog does, so the first screen is creameries; desktop ignores this.
+  const [filtersOpen, setFiltersOpen] = useState(false);
   // "Near me": the reader's position, asked for on a tap and kept only for
   // this visit — never written anywhere, never in the URL (a shared link
   // cannot carry someone else's location).
@@ -213,6 +241,14 @@ export default function App() {
   const [locating, setLocating] = useState<"idle" | "asking" | "denied" | "unavailable">("idle");
 
   function locate() {
+    // Pressed while on: a toggle untoggles. The dot, the miles and the
+    // distance sort all go; the list returns to A–Z.
+    if (here) {
+      setHere(null);
+      setSort((s) => (s === "distance" ? "name" : s));
+      setLocating("idle");
+      return;
+    }
     if (!("geolocation" in navigator)) {
       setLocating("unavailable");
       return;
@@ -441,25 +477,31 @@ export default function App() {
   const filtered = useMemo(() => {
     const needle = fold(query.trim());
     const hints = new Map<string, string>();
-    const list = (data?.creameries ?? [])
+    const matches = (c: Creamery) => {
+      if (!needle) return true;
+      const direct =
+        fold(c.name).includes(needle) ||
+        fold(c.city).includes(needle) ||
+        fold(c.county ?? "").includes(needle) ||
+        c.aka.some((a) => fold(a).includes(needle));
+      if (direct) return true;
+      const operation = cheeseOperations(c).find((o) => fold(o).includes(needle));
+      if (operation) {
+        hints.set(c.id, operation);
+        return true;
+      }
+      return false;
+    };
+    const active = (data?.creameries ?? []).filter((c) => c.status === "active");
+    // What the word alone finds, so an empty list can say whether the word or
+    // the county and checkboxes are the reason.
+    const statewide = needle ? active.filter(matches).length : 0;
+    const list = active
       .filter((c) => {
-        if (c.status !== "active") return false;
         if (county && c.county !== county) return false;
         if (retailOnly && !c.retail.store) return false;
         if (awardedOnly && !awardCounts.has(c.id)) return false;
-        if (!needle) return true;
-        const direct =
-          fold(c.name).includes(needle) ||
-          fold(c.city).includes(needle) ||
-          fold(c.county ?? "").includes(needle) ||
-          c.aka.some((a) => fold(a).includes(needle));
-        if (direct) return true;
-        const operation = cheeseOperations(c).find((o) => fold(o).includes(needle));
-        if (operation) {
-          hints.set(c.id, operation);
-          return true;
-        }
-        return false;
+        return matches(c);
       })
       .sort((a, b) => {
         if (sort === "distance" && here) {
@@ -479,7 +521,7 @@ export default function App() {
         }
         return a.name.localeCompare(b.name);
       });
-    return { list, hints };
+    return { list, hints, statewide };
   }, [data, query, county, retailOnly, awardedOnly, sort, awardCounts, here]);
   const shown = filtered.list;
 
@@ -491,12 +533,9 @@ export default function App() {
     const scored: { id: string; name: string; score: number }[] = [];
     for (const creamery of activeCreameries) {
       const best = Math.max(nearness(q, fold(creamery.name)), nearness(q, fold(creamery.city)));
-      if (best >= 0.3) scored.push({ id: creamery.id, name: creamery.name, score: best });
+      scored.push({ id: creamery.id, name: creamery.name, score: best });
     }
-    return scored
-      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
-      .slice(0, 3)
-      .map(({ id, name }) => ({ id, name }));
+    return nearestNames(scored);
   }, [query, shown.length, activeCreameries]);
 
   // Search text folds once per cheese, not once per keystroke: ~1,000 records
@@ -608,13 +647,9 @@ export default function App() {
     for (const cheese of activeCheeses) {
       if (seen.has(cheese.name)) continue;
       seen.add(cheese.name);
-      const score = nearness(q, fold(cheese.name));
-      if (score >= 0.3) scored.push({ id: cheese.id, name: cheese.name, score });
+      scored.push({ id: cheese.id, name: cheese.name, score: nearness(q, fold(cheese.name)) });
     }
-    return scored
-      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
-      .slice(0, 3)
-      .map(({ id, name }) => ({ id, name }));
+    return nearestNames(scored);
   }, [deferredCheeseQuery, cheesesShown.length, activeCheeses]);
 
   // What the reader *asked for*, as one string. The grid scrolls back to the
@@ -1247,10 +1282,48 @@ export default function App() {
 
   function clearFilters() {
     setQuery("");
+    clearNarrowing();
+  }
+
+  /** Drop the county and the checkboxes and keep the word: "Show all 4". */
+  function clearNarrowing() {
     setCounty("");
     setRetailOnly(false);
     setAwardedOnly(false);
   }
+
+  // How the empty state names what hid the matches: "none in Burnett County
+  // with a retail store".
+  const narrowing = [
+    county ? `in ${county} County` : "",
+    retailOnly && awardedOnly
+      ? "with a retail store and contest awards"
+      : retailOnly
+        ? "with a retail store"
+        : awardedOnly
+          ? "with contest awards"
+          : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+  const activeFilters =
+    (county ? 1 : 0) +
+    (retailOnly ? 1 : 0) +
+    (awardedOnly ? 1 : 0) +
+    (sort !== "name" && sort !== "distance" ? 1 : 0);
+  const foldFilters = narrow && !filtersOpen;
+
+  // Once located, the list says what "nearest first" came to — the sort select
+  // changing on its own is not an announcement.
+  const nearestLine = (() => {
+    if (!here) return null;
+    const first = sort === "distance" ? shown[0] : undefined;
+    if (!first || first.lat === null || first.lng === null) {
+      return "Distances are from your location.";
+    }
+    const miles = fmtMiles(milesBetween(here, { lat: first.lat, lng: first.lng }));
+    return `Sorted nearest first: ${first.name} in ${first.city} is ${miles} away.`;
+  })();
 
   function renderRow(creamery: Creamery) {
     const wins = awardCounts.get(creamery.id) ?? 0;
@@ -1507,60 +1580,83 @@ export default function App() {
           <h2 className="sr-only">Creamery map</h2>
           <div className={`sidebar${mobilePane === "map" ? " pane-off" : ""}`}>
             <div className="filters">
-              <input
-                type="search"
-                placeholder="Search creameries — try “limburger”"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                aria-label="Search creameries by name, city, county or cheese type"
-                autoComplete="off"
-                autoCorrect="off"
-                spellCheck={false}
-                enterKeyHint="search"
-              />
-              <div className="filter-row">
-                <select
-                  value={county}
-                  onChange={(e) => setCounty(e.target.value)}
-                  aria-label="Filter by county"
+              <div className="filter-search-row">
+                <input
+                  type="search"
+                  placeholder="Search creameries — try “limburger”"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  aria-label="Search creameries by name, city, county or cheese type"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  enterKeyHint="search"
+                />
+                {/* Phones only (styles.css hides it wider): the county, sort and
+                    checkboxes unfold beneath on demand, the count says how many
+                    are set so a short list never reads as a small census. */}
+                <button
+                  type="button"
+                  className={`facets-toggle${activeFilters ? " is-active" : ""}`}
+                  aria-expanded={!foldFilters}
+                  aria-controls="map-facets"
+                  onClick={() => setFiltersOpen((o) => !o)}
                 >
-                  <option value="">All counties ({counties.length})</option>
-                  {counties.map((c) => (
-                    <option key={c} value={c}>
-                      {c} ({countyCounts.get(c)})
-                    </option>
-                  ))}
-                </select>
-                <select
-                  value={sort === "distance" && !here ? "name" : sort}
-                  onChange={(e) => setSort(e.target.value as SortKey)}
-                  aria-label="Sort creameries"
-                >
-                  {here && <option value="distance">Sort: Nearest</option>}
-                  <option value="name">Sort: A–Z</option>
-                  <option value="awards">Sort: Most awarded</option>
-                  <option value="county">Sort: County</option>
-                </select>
+                  Filters &amp; sort
+                  {activeFilters > 0 && <span className="facets-count">{activeFilters}</span>}
+                  <svg className="chev" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2.4" />
+                  </svg>
+                </button>
               </div>
-              <div className="filter-toggles">
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={retailOnly}
-                    onChange={(e) => setRetailOnly(e.target.checked)}
-                  />
-                  Retail store
-                </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={awardedOnly}
-                    onChange={(e) => setAwardedOnly(e.target.checked)}
-                  />
-                  Award winners
-                </label>
-                {/* The reader's position stays in this browser: it sorts the
-                    list and draws one dot, and is never stored or shared. */}
+              <div className="map-facets" id="map-facets" hidden={foldFilters}>
+                <div className="filter-row">
+                  <select
+                    value={county}
+                    onChange={(e) => setCounty(e.target.value)}
+                    aria-label="Filter by county"
+                  >
+                    <option value="">All counties ({counties.length})</option>
+                    {counties.map((c) => (
+                      <option key={c} value={c}>
+                        {c} ({countyCounts.get(c)})
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    value={sort === "distance" && !here ? "name" : sort}
+                    onChange={(e) => setSort(e.target.value as SortKey)}
+                    aria-label="Sort creameries"
+                  >
+                    {here && <option value="distance">Sort: Nearest</option>}
+                    <option value="name">Sort: A–Z</option>
+                    <option value="awards">Sort: Most awarded</option>
+                    <option value="county">Sort: County</option>
+                  </select>
+                </div>
+                <div className="filter-toggles">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={retailOnly}
+                      onChange={(e) => setRetailOnly(e.target.checked)}
+                    />
+                    Retail store
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={awardedOnly}
+                      onChange={(e) => setAwardedOnly(e.target.checked)}
+                    />
+                    Award winners
+                  </label>
+                </div>
+              </div>
+              {/* "Near me" is a sort, so it has its own row with what it came
+                  to. The reader's position stays in this browser: it sorts the
+                  list and draws one dot, and is never stored or shared. */}
+              <div className="locate-row">
                 <button
                   type="button"
                   className={`near-me${here ? " is-on" : ""}`}
@@ -1568,25 +1664,26 @@ export default function App() {
                   disabled={locating === "asking"}
                   aria-pressed={here !== null}
                 >
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="3.2" />
-                    <path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4" />
-                    <circle cx="12" cy="12" r="7.5" fill="none" />
-                  </svg>
+                  <Crosshair />
                   {locating === "asking" ? "Finding you…" : here ? "Nearest first" : "Near me"}
                 </button>
+                {nearestLine && (
+                  <p className="locate-note" role="status">
+                    {nearestLine}
+                  </p>
+                )}
+                {locating === "denied" && (
+                  <p className="locate-note" role="status">
+                    Location is off for this site. Turn it on in your browser, or pick a
+                    county above.
+                  </p>
+                )}
+                {locating === "unavailable" && (
+                  <p className="locate-note" role="status">
+                    Your location isn&rsquo;t available here — pick a county above instead.
+                  </p>
+                )}
               </div>
-              {locating === "denied" && (
-                <p className="locate-note" role="status">
-                  Location is off for this site. Turn it on in your browser, or pick a
-                  county above.
-                </p>
-              )}
-              {locating === "unavailable" && (
-                <p className="locate-note" role="status">
-                  Your location isn&rsquo;t available here — pick a county above instead.
-                </p>
-              )}
               {query.trim() && data && shown.length > 0 && (
                 <p className="result-strip" role="status" tabIndex={-1}>
                   <b>{shown.length}</b> {shown.length === 1 ? "matches" : "match"}{" "}
@@ -1620,7 +1717,27 @@ export default function App() {
                 : shown.map(renderRow)}
               {data && shown.length === 0 && (
                 <div className="empty">
-                  {query.trim() ? (
+                  {query.trim() && filtered.statewide > 0 ? (
+                    <>
+                      {/* The word found creameries; the county or a checkbox
+                          hid them. Blaming the word would tell the reader a
+                          real place is not in the census. */}
+                      <p className="empty-head">
+                        <b>{filtered.statewide}</b>{" "}
+                        {filtered.statewide === 1 ? "matches" : "match"} &ldquo;{query.trim()}
+                        &rdquo; statewide, none {narrowing}.
+                      </p>
+                      <p>
+                        <button type="button" className="linkish" onClick={clearNarrowing}>
+                          Show all {filtered.statewide}
+                        </button>
+                        {" · "}
+                        <button type="button" className="linkish" onClick={() => setQuery("")}>
+                          Clear the search
+                        </button>
+                      </p>
+                    </>
+                  ) : query.trim() ? (
                     <>
                       <p className="empty-head">Nothing called &ldquo;{query.trim()}&rdquo;.</p>
                       {creameryNearMisses.length > 0 && (
@@ -1699,6 +1816,20 @@ export default function App() {
                 </span>
               )}
             </div>
+            {/* Phones only: the map pane's own "Near me", under the zoom
+                buttons, so a reader looking at the map need not flip to the
+                list to ask. */}
+            <button
+              type="button"
+              className={`map-locate${here ? " is-on" : ""}`}
+              onClick={locate}
+              disabled={locating === "asking"}
+              aria-pressed={here !== null}
+              aria-label="Near me"
+              title={here ? "Nearest first — tap to turn off" : "Near me"}
+            >
+              <Crosshair />
+            </button>
             {selected && data && (
               <CreameryDetail
                 creamery={selected}

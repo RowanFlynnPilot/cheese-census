@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "web", "--", "--port", "5174", "--strictPort"],
       "port": 5174
+    },
+    {
+      "name": "cheese-census-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "preview", "--prefix", "web", "--", "--port", "4175", "--strictPort"],
+      "port": 4175
     }
   ]
 }

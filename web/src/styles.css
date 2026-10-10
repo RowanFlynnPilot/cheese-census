@@ -1088,7 +1088,10 @@ button.tag {
 .colophon button {
   border: 0;
   background: none;
-  padding: 0;
+  /* A 12 px line is a 14 px target; the padding and the matching negative
+     margin give it 30 px to hit without moving the footer's one line. */
+  padding: 0.5rem 0.15rem;
+  margin: -0.5rem -0.15rem;
   font: inherit;
   cursor: pointer;
 }
@@ -2775,12 +2778,40 @@ button.highlight {
 
 /* ── Map: near me, the result strip, the pin chooser, the licence fold ──── */
 
-/* "Near me" sits with the toggles; once located it reads as the active sort. */
+/* The search shares its row with the phone-only "Filters & sort" button. */
+.filter-search-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-search-row input {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* The county, sort and checkbox controls: a flat run of rows on desktop, a
+   fold on phones (the [hidden] attribute does the folding). */
+.map-facets {
+  display: contents;
+}
+
+.map-facets[hidden] {
+  display: none;
+}
+
+/* "Near me" is a sort, so it has a row of its own, with what it came to. */
+.locate-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.7rem;
+}
+
+/* Once located it reads as the active sort; pressed again it turns off. */
 .near-me {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  margin-left: auto;
   min-height: 2rem;
   padding: 0.25rem 0.75rem;
   border: 1px solid var(--rule-strong);
@@ -2817,6 +2848,11 @@ button.highlight {
   margin: 0;
   font-size: 0.82rem;
   color: var(--ink-soft);
+}
+
+/* The phone map's own locate button (styles.css shows it below 760px). */
+.map-locate {
+  display: none;
 }
 
 /* Miles to a creamery, once the reader has a position. */
@@ -2945,8 +2981,10 @@ button.highlight {
   color: var(--ink-soft);
 }
 
-/* "Open in Maps" beside the address. */
-.maps-link {
+/* "Open in Maps" and the phone number beside the address: the two things a
+   visitor does with a Contact block. */
+.maps-link,
+.tel-link {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -2955,10 +2993,16 @@ button.highlight {
   border-bottom: 1px solid currentColor;
 }
 
-.maps-link svg {
+.maps-link svg,
+.tel-link svg {
   width: 0.95rem;
   height: 0.95rem;
   fill: currentColor;
+}
+
+.tel-link {
+  font-family: var(--mono);
+  font-weight: 500;
 }
 
 /* The licence fold: the section heading is the summary. */
@@ -3102,9 +3146,11 @@ button.highlight {
   margin-bottom: 0;
 }
 
-/* Thumb-sized map zoom buttons on touch screens (Leaflet's are 30 px). */
+/* Thumb-sized map zoom buttons on touch screens (Leaflet's are 30 px).
+   Leaflet's own stylesheet arrives with the lazy map chunk, after this file,
+   so at equal specificity its 30 px would win: the extra class outranks it. */
 @media (pointer: coarse) {
-  .leaflet-touch .leaflet-bar a {
+  .map-wrap .leaflet-touch .leaflet-bar a {
     width: 44px;
     height: 44px;
     line-height: 44px;
@@ -3163,9 +3209,79 @@ button.highlight {
   }
 
   /* The floating flip pill hovers over the list's tail; leave the last row
-     room to scroll clear of it. */
+     room to scroll clear of it, and fade the rows passing under the pill so
+     it never sits on a name mid-word. */
   .sidebar .list {
     padding-bottom: 4.6rem;
+  }
+
+  .sidebar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4.6rem;
+    background: linear-gradient(to bottom, rgba(246, 242, 233, 0), var(--cream) 65%);
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .mode {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0 0.75rem;
+  }
+
+  /* Thumb-sized search, selects and the map's own locate button. */
+  .filters input,
+  .filters select {
+    min-height: 44px;
+  }
+
+  .map-locate {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    /* Under Leaflet's zoom control: 10 px margin + two 44 px buttons + borders. */
+    top: calc(10px + 92px + 0.6rem);
+    left: 10px;
+    z-index: 900;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--rule-strong);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--teal-dark);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+
+  .map-locate svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+  }
+
+  .map-locate.is-on {
+    background: var(--teal-dark);
+    border-color: var(--teal-dark);
+    color: var(--cream);
+  }
+
+  .map-locate:disabled {
+    cursor: progress;
+    color: var(--ink-soft);
+  }
+
+  .map-locate:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
   }
 
   .pane-off {
@@ -3197,6 +3313,7 @@ button.highlight {
     font-family: var(--body);
     font-size: 0.92rem;
     font-weight: 600;
+    min-height: 2.75rem;
     padding: 0.7rem 1.35rem;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(29, 35, 33, 0.25), 0 8px 24px rgba(29, 35, 33, 0.25);
@@ -3316,6 +3433,29 @@ button.highlight {
     min-height: 2.5rem;
   }
 
+  /* The sheet's tappable chips ("Licensed to make", the catalog names) grow
+     to the catalog's phone chip size; the licence fold's plain tags, which
+     nothing happens on, stay small. */
+  .detail button.tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.86rem;
+  }
+
+  .detail .tags {
+    gap: 0.5rem;
+  }
+
+  /* The Contact links are the visit: maps, the phone, the website. Each gets
+     a thumb's height; the text stays where it was. */
+  .detail .contact a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+
   .cheese-grid > .highlight-row {
     margin: 0.15rem 0;
   }
@@ -3409,6 +3549,13 @@ button.highlight {
   .near-me,
   .result-strip .linkish {
     min-height: 2.75rem;
+  }
+
+  /* "Clear" is five letters; the box a thumb gets is wider than the word. */
+  .result-strip .linkish {
+    min-width: 2.75rem;
+    padding: 0 0.3rem;
+    text-align: right;
   }
 
   .result-strip {

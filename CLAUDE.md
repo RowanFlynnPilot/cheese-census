@@ -354,7 +354,19 @@ critique (27/40) found a P0 — six licensed Wisconsin plants pinned at their
 listing's out-of-state headquarters — now validation #11 plus overrides; the
 same pass added the place-name layer, Near me (distance sort, nothing stored),
 the pin chooser for overlapping hit boxes, the result strip and chip-tap
-hand-off on phones, the phone legend, the maps link and the licence fold.
+hand-off on phones, the phone legend, the maps link and the licence fold. The
+map's second critique (31/40) drove adapt → harden → clarify → layout →
+polish: thumb-sized sheet chips and Contact links, the zoom-button rule that
+Leaflet's lazy-loaded stylesheet had been overriding, a pointer-aware chooser
+(a mouse opens the pin it clicked; a thumb's tap below zoom 9 zooms in before
+any chooser; Escape closes it), Near me as a true toggle with a status line
+and a phone map-pane button, an empty state that says when the filters hid
+the matches ("4 match “Marathon” statewide, none in Burnett County · Show all
+4"), and the phone's filters folded behind "Filters & sort" as the catalog's
+are. The same pass added `phone` to the schema: DATCP's BusinessPhone,
+normalised in `build.py` to "(715) 693-6662" / "… ext. 210", on every plant
+and on the creamery from its home plant (the plant whose address the record
+carries); the panel's Contact block dials it.
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",

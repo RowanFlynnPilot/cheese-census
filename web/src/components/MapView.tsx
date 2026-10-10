@@ -19,7 +19,14 @@ const MIN_VISIBLE_MAP = 140;
 
 // The pin stays a 12 px dot (18 selected); its hit box is what a thumb needs.
 const COARSE = window.matchMedia("(pointer: coarse)").matches;
-const HIT = COARSE ? 40 : 28;
+const HIT = COARSE ? 44 : 28;
+// A pointer that hovers has already read the pin's card before it clicks, so
+// only a pin drawn on top of another needs the chooser there.
+const HOVER = window.matchMedia("(hover: hover)").matches;
+const CHOOSER_RADIUS = HOVER ? 8 : HIT * 0.8;
+// Below this zoom a cluster is towns, not one address: a tap zooms in to let
+// the pins part before any chooser is offered.
+const CLUSTER_ZOOM = 9;
 // Reduced motion covers Leaflet's own zoom, fade and pan animations too.
 const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 // Inside an article (the WordPress iframe) on a phone, a one-finger swipe on
@@ -168,6 +175,16 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
         map.current?.closePopup();
         select.current(button.dataset.id);
       });
+      // Leaflet's own Escape only listens while the map container has focus,
+      // and focus moves into the chooser below — so the chooser answers Escape
+      // itself and hands focus back to the map. The key stops here: the app's
+      // Escape (close the panel) is not what it meant.
+      el.addEventListener("keydown", (ev) => {
+        if (ev.key !== "Escape") return;
+        ev.stopPropagation();
+        map.current?.closePopup();
+        map.current?.getContainer().focus({ preventScroll: true });
+      });
       el.querySelector<HTMLElement>("button[data-id]")?.focus({ preventScroll: true });
     });
     // Leaflet only watches window resizes; the container itself changes size
@@ -212,12 +229,37 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
         .on("click", () => {
           const m = map.current;
           if (!m) return;
-          const at = m.latLngToContainerPoint(marker.getLatLng());
+          // A tap opens the hover card too (touch fakes a mouseover) and nothing
+          // ever closes it; the tap has answered, so the card goes.
+          if (COARSE) marker.closeTooltip();
+          const pin = marker.getLatLng();
+          const at = m.latLngToContainerPoint(pin);
           const under = [...markers.current.entries()]
-            .filter(([, other]) => at.distanceTo(m.latLngToContainerPoint(other.getLatLng())) <= HIT * 0.8)
+            .filter(
+              ([, other]) =>
+                at.distanceTo(m.latLngToContainerPoint(other.getLatLng())) <= CHOOSER_RADIUS,
+            )
             .map(([id]) => id);
-          if (under.length > 1) openChooser(marker.getLatLng(), under);
-          else select.current(creamery.id);
+          if (under.length <= 1) {
+            select.current(creamery.id);
+            return;
+          }
+          // At the overview the Fox Valley is seven pins under one thumb but
+          // seven towns on the ground: zoom two steps onto the tap and the
+          // pins part. The chooser is for pins that still coincide.
+          const zoom = m.getZoom();
+          if (zoom < CLUSTER_ZOOM) {
+            const closer = zoom + 2;
+            const parts = under.some((id) => {
+              const other = markers.current.get(id)!.getLatLng();
+              return m.project(pin, closer).distanceTo(m.project(other, closer)) > CHOOSER_RADIUS;
+            });
+            if (parts) {
+              m.setView(pin, closer, { animate: MOTION });
+              return;
+            }
+          }
+          openChooser(pin, under);
         });
       marker.addTo(layer.current!);
       markers.current.set(creamery.id, marker);

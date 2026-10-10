@@ -77,6 +77,25 @@ creamery names (`nearness` in `App.tsx`); the panel's address carries an
 "Licence details (N plants)" — every operation it lists is already a chip
 above.
 
+A second critique (31/40) drove the follow-through. Near me is a true
+toggle (pressed again it drops the dot, the miles and the distance sort), says
+what it came to in a status line ("Sorted nearest first: Mullins Cheese, Inc.
+in Mosinee is 17 mi away."), and has a second button on the phone's map pane
+under the zoom control. The chooser is pointer-aware: a mouse that hovers has
+already read the pin's card, so it opens the pin it clicked unless another
+sits within 8px; a thumb's tap below zoom 9 zooms two steps onto the tap so
+the pins part, and the chooser is kept for pins that still coincide; Escape
+closes it and returns focus to the map (Leaflet's own Escape only listens
+while the map container has focus). The empty state says when the filters,
+not the word, hid the matches ("4 match “Marathon” statewide, none in Burnett
+County · Show all 4"), and "Did you mean" names need 0.45 or 70% of the best
+score before they are offered. Phones fold the county, sort and checkboxes
+behind "Filters & sort" as the catalog does, grow the sheet's tappable chips
+and Contact links to thumb size, and the 44px zoom-button rule now outranks
+Leaflet's 30px (Leaflet's stylesheet arrives with the lazy map chunk, after
+`styles.css`). Contact carries the home plant's phone as a `tel:` link
+(`phone` on the creamery and on each plant, normalised in `build.py`).
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry
