@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Creamery } from "../types";
+import type { Flavor } from "@protomaps/basemaps";
+import type { LabelRule } from "protomaps-leaflet";
 import wisconsin from "../wisconsin.json";
 import counties from "../counties.json";
 
@@ -45,6 +47,107 @@ const COOPERATIVE = COARSE && window.self !== window.top;
 // dismiss and Escape for free. Elsewhere it is a plain card with the same
 // shape and its own outside-click listener.
 const POPOVER = typeof HTMLElement !== "undefined" && "showPopover" in HTMLElement.prototype;
+
+// Review-only: ?basemap=protomaps or ?basemap=protomaps-quiet swaps Esri's
+// grey canvas for a Protomaps basemap in the WPR palette, read from a
+// Wisconsin PMTiles extract (public/map/wisconsin.pmtiles, not committed)
+// and rendered by protomaps-leaflet, which loads only when the flag is set.
+// The default stays Esri until a look is chosen.
+const BASEMAP = new URLSearchParams(window.location.search).get("basemap");
+const PROTOMAPS = BASEMAP === "protomaps" || BASEMAP === "protomaps-quiet";
+
+/** The light flavor recoloured into the census's own palette: cream land,
+ *  a tinted water, warm hairline roads, ink labels with cream halos. The
+ *  quiet variant fades the roads further and keeps only place names. */
+function wprFlavor(light: Flavor, quiet: boolean): Flavor {
+  const cream = "#f6f2e9";
+  const paper = "#fbf9f4";
+  const rule = quiet ? "#ebe6da" : "#e3ddd0";
+  const minor = quiet ? "#f3efe6" : "#f0ebe1";
+  const major = quiet ? "#f8f5ee" : "#ffffff";
+  const casingKeys = Object.keys(light).filter((k) => k.endsWith("_casing") || k.endsWith("_casing_early") || k.endsWith("_casing_late"));
+  const overrides: Record<string, unknown> = {
+    background: cream,
+    earth: cream,
+    park_a: "#eef0e2",
+    park_b: "#e4ead6",
+    wood_a: "#e9ecdd",
+    wood_b: "#dfe6d2",
+    scrub_a: "#eef0e2",
+    scrub_b: "#e4ead6",
+    glacier: cream,
+    sand: "#f1ebdc",
+    beach: "#f1ebdc",
+    hospital: cream,
+    industrial: "#efe9df",
+    school: cream,
+    pedestrian: "#efe9df",
+    aerodrome: "#efe9df",
+    runway: rule,
+    zoo: "#eef0e2",
+    military: "#efe9df",
+    water: "#d6e4e1",
+    pier: rule,
+    buildings: "#ece5d6",
+    other: minor,
+    minor_service: minor,
+    minor_a: minor,
+    minor_b: paper,
+    link: paper,
+    major: major,
+    highway: major,
+    railway: "#cfc8ba",
+    boundaries: "#9fb5b0",
+    bridges_other: minor,
+    bridges_minor: paper,
+    bridges_link: paper,
+    bridges_major: major,
+    bridges_highway: major,
+    tunnel_other: minor,
+    tunnel_minor: minor,
+    tunnel_link: minor,
+    tunnel_major: minor,
+    tunnel_highway: minor,
+    roads_label_minor: "#7d8683",
+    roads_label_minor_halo: cream,
+    roads_label_major: "#5b6663",
+    roads_label_major_halo: cream,
+    ocean_label: "#5b7f78",
+    subplace_label: "#5b6663",
+    subplace_label_halo: cream,
+    city_label: "#1d2321",
+    city_label_halo: cream,
+    state_label: "#9aa5a1",
+    state_label_halo: cream,
+    country_label: "#9aa5a1",
+    address_label: "#7d8683",
+    address_label_halo: cream,
+    landcover: {
+      grassland: "#eef0e2",
+      barren: "#f1ebdc",
+      urban_area: "#efe9df",
+      farmland: "#eef0e2",
+      glacier: cream,
+      scrub: "#eaeddc",
+      forest: "#e3e9d6",
+    },
+  };
+  for (const key of casingKeys) overrides[key] = rule;
+  return { ...light, ...overrides } as Flavor;
+}
+
+/** Every label symbolizer carries a Font with a `family`; set them all. */
+function withFont(rules: LabelRule[], family: string) {
+  const seen = new Set<object>();
+  const walk = (value: unknown) => {
+    if (!value || typeof value !== "object" || seen.has(value)) return;
+    seen.add(value);
+    const record = value as Record<string, unknown>;
+    if (typeof record.family === "string") record.family = family;
+    for (const inner of Object.values(record)) walk(inner);
+  };
+  for (const rule of rules) walk(rule.symbolizer);
+}
 
 interface Props {
   creameries: Creamery[];
@@ -261,18 +364,41 @@ export default function MapView({
     // zoom 16, so the map must not zoom past what exists. The matching
     // reference layer carries the place names — a map with no "Wausau" on it
     // asked readers to recall where they live.
-    const tiles = {
-      attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
-      maxZoom: 16,
-    };
-    L.tileLayer(
-      "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-      tiles,
-    ).addTo(map.current);
-    L.tileLayer(
-      "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
-      { maxZoom: 16 },
-    ).addTo(map.current);
+    if (PROTOMAPS) {
+      const quiet = BASEMAP === "protomaps-quiet";
+      const target = map.current;
+      void Promise.all([import("protomaps-leaflet"), import("@protomaps/basemaps")]).then(
+        ([pm, basemaps]) => {
+          if (map.current !== target) return;
+          const flavor = wprFlavor(basemaps.namedFlavor("light"), quiet);
+          let labels = pm.labelRules(flavor, "en");
+          if (quiet) labels = labels.filter((rule) => rule.dataLayer === "places");
+          withFont(labels, '"Public Sans", sans-serif');
+          pm.leafletLayer({
+            url: `${import.meta.env.BASE_URL}map/wisconsin.pmtiles`,
+            paintRules: pm.paintRules(flavor),
+            labelRules: labels,
+            maxDataZoom: 11,
+            backgroundColor: "#f6f2e9",
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; <a href="https://protomaps.com">Protomaps</a>',
+          }).addTo(target);
+        },
+      );
+    } else {
+      const tiles = {
+        attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
+        maxZoom: 16,
+      };
+      L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+        tiles,
+      ).addTo(map.current);
+      L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+        { maxZoom: 16 },
+      ).addTo(map.current);
+    }
     // The state's own outline under the pins, so the census reads as a map
     // *of Wisconsin* and not pins adrift on a grey canvas. U.S. Census Bureau
     // 2010 cartographic boundary file (1:5,000,000, public domain), simplified

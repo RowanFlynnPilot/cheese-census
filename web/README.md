@@ -113,6 +113,32 @@ will not part; and the secondary type and targets came up for the
 readership (pills 0.8rem, row meta 0.84rem, 36 px panel buttons, 44 px
 summaries, links and the chooser's × on phones).
 
+**The polish pass (October 2026)** worked down a list of installed skills and
+web techniques. The map draws Wisconsin's 72 counties under the pins
+(`scripts/counties.py` → `src/counties.json`, Census cartographic boundaries,
+public domain): reference lines, not a filled choropleth; hover names a county
+and its count, a tap filters the list to it and fills it. Award winners wear a
+gold ring and grow with their count (12 → 14 → 16 → 18 px). Panels and tab
+switches run as same-document view transitions behind a feature check and the
+motion preference (`transition()` in `App.tsx` resolves when the DOM is
+updated, which the focus restore waits for); the pin chooser is a native
+popover placed over its pin; the heart overshoots once through a `linear()`
+easing as a transition. Fraunces loads with its SOFT and WONK axes for the
+masthead and empty-state heads; headings balance, paragraphs wrap pretty;
+gold has one token per role (fill, text, ring, ink). Every cheese family has
+an authored filled glyph (`components/FamilyIcon.tsx`) on cards, family heads,
+the facts and the chip. `npm run test:e2e` runs the Playwright smoke test in
+`tests/` against the production preview on desktop, a Pixel 7 with touch and
+a reduced-motion desktop; the deploy workflow runs it as its third gate.
+
+A basemap review flag is in place and off by default: `?basemap=protomaps`
+or `?basemap=protomaps-quiet` renders a Protomaps PMTiles extract of
+Wisconsin (`public/map/wisconsin.pmtiles`, built with the `pmtiles` CLI from
+`build.protomaps.com`, 38 MB at zoom 0–11, gitignored until a look is chosen)
+through `protomaps-leaflet` in the WPR palette; `scripts/basemap-shots.mjs`
+captures the three looks for comparison. Choosing it means committing the
+extract (GitHub Pages serves range requests) and crediting OpenStreetMap.
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry

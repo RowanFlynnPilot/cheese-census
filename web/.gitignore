@@ -6,3 +6,6 @@ public/data/
 # Playwright's run output (traces of failures, the HTML report).
 test-results/
 playwright-report/
+# A Wisconsin basemap extract (tens of MB) for the review-only ?basemap=
+# flag; committed only once a basemap is chosen.
+public/map/*.pmtiles

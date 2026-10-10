@@ -53,6 +53,10 @@ scripts/geocode.py         plant geocoder (Census Bureau batch geocoder, public,
 data/geocode/plants.json   every DATCP plant's point (committed): build.py picks each
                            creamery's home plant as the one nearest its listing's point
                            and snaps the pin to it, so the panel describes the pinned place
+scripts/counties.py        Wisconsin's 72 county outlines (Census cartographic boundaries,
+                           public domain) → web/src/counties.json for the map's county layer
+web/tests/                 Playwright smoke test of the production build (npm run test:e2e);
+                           the deploy workflow's third gate
 data/raw/                  committed scraper output (diffable history)
   dfw_varieties.json       DFW's 55 cheese varieties + their hardness/intensity/flavor
                            groupings — a reference table for the tagging pass, not a
@@ -400,6 +404,21 @@ chips as the catalog has, a one-move cluster zoom with a "18 creameries here
 — zooming in" label (the chooser handles pins that will not part), and the
 secondary type and targets lifted for the readership (pills 0.8rem, row meta
 0.84rem, 36 px panel buttons, 44 px phone summaries and links).
+
+**The October 2026 polish list** (installed skills, web techniques): county
+lines under the pins from `scripts/counties.py` (Census boundaries, 72
+counties, hover count, tap-to-filter, no raw-count choropleth), award winners
+as graduated ringed pins, the newsroom phone in the footer (the `wpr-brand`
+check: the census is on the Follow the Money pairing, the repo's cream wins);
+view transitions for panels and tabs (feature-checked, reduced-motion aware,
+focus restore waits for the update), the chooser as a native popover, the
+heart as an overshooting transition; Fraunces' SOFT/WONK axes on the masthead,
+balanced heads, pretty paragraphs, gold by role (`--gold-text`, `--gold-ring`,
+`--gold-ink`) from OKLCH ramps recorded in `:root`; an authored glyph per
+cheese family (`web/src/components/FamilyIcon.tsx`); a Playwright smoke test
+(`web/tests`, `npm run test:e2e`) as the deploy's third gate on desktop, a
+touch phone and reduced motion; and a review-only `?basemap=protomaps` flag
+(a 38 MB Wisconsin PMTiles extract, gitignored) awaiting a choice of look.
 
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
