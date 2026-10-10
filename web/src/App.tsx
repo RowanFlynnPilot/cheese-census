@@ -8,7 +8,24 @@ import {
   useRef,
   useState,
 } from "react";
+import { flushSync } from "react-dom";
 import type { Award, Creamery, Dataset } from "./types";
+
+/** A same-document view transition for the moments that would otherwise
+ *  teleport: a panel opening or closing, a tab switch. Behind a feature check
+ *  and the reader's motion preference (styles.css names the groups and times
+ *  them); stepping ← → between creameries is rapid navigation and stays
+ *  instant, so it never goes through here. */
+const REDUCED_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)");
+function transition(update: () => void) {
+  if (typeof document.startViewTransition !== "function" || REDUCED_MOTION.matches) {
+    update();
+    return;
+  }
+  document.startViewTransition(() => {
+    flushSync(update);
+  });
+}
 import type { DraftMedia } from "./data";
 import {
   MILK_ORDER,
@@ -1057,7 +1074,7 @@ export default function App() {
 
   function closeDetail() {
     const id = selectedId;
-    setSelectedId(null);
+    transition(() => setSelectedId(null));
     if (id) {
       requestAnimationFrame(() => {
         // From a pin on a phone the row sits in the hidden list pane; the flip
@@ -1073,7 +1090,7 @@ export default function App() {
   function closeCheeseDetail() {
     const id = selectedCheeseId;
     const pane = view === "board" ? ".board-pane" : ".cheese-pane";
-    setSelectedCheeseId(null);
+    transition(() => setSelectedCheeseId(null));
     if (id) {
       // Scoped to the active pane: the catalog's hidden card carries the same
       // id and would otherwise win the query and swallow the focus.
@@ -1124,13 +1141,17 @@ export default function App() {
   }
 
   function openCheese(id: string) {
-    setView("cheeses");
-    setSelectedCheeseId(id);
+    transition(() => {
+      setView("cheeses");
+      setSelectedCheeseId(id);
+    });
   }
 
   function openCreamery(id: string) {
-    setView("map");
-    setSelectedId(id);
+    transition(() => {
+      setView("map");
+      setSelectedId(id);
+    });
   }
 
   function clearCheeseFacets() {
@@ -1368,7 +1389,7 @@ export default function App() {
         data-cid={creamery.id}
         className="creamery-row"
         aria-current={creamery.id === selectedId || undefined}
-        onClick={() => setSelectedId(creamery.id)}
+        onClick={() => transition(() => setSelectedId(creamery.id))}
       >
         <div className="name">
           {draftLogos?.get(creamery.id) && (
@@ -1544,7 +1565,7 @@ export default function App() {
             aria-current={view === "map" ? "page" : undefined}
             onClick={(e) => {
               e.preventDefault();
-              setView("map");
+              transition(() => setView("map"));
             }}
             aria-label="Creamery Map"
           >
@@ -1556,7 +1577,7 @@ export default function App() {
             aria-current={view === "cheeses" ? "page" : undefined}
             onClick={(e) => {
               e.preventDefault();
-              setView("cheeses");
+              transition(() => setView("cheeses"));
             }}
             aria-label="Cheese Catalog"
           >
@@ -1568,7 +1589,7 @@ export default function App() {
             aria-current={view === "board" ? "page" : undefined}
             onClick={(e) => {
               e.preventDefault();
-              setView("board");
+              transition(() => setView("board"));
             }}
             aria-label={`Cheese Board${board.ids.length ? `, ${board.ids.length} picks` : ""}`}
           >
@@ -1583,7 +1604,7 @@ export default function App() {
                 // would silently hide saved cheeses.
                 clearCheeseFacets();
                 setMineOnly(true);
-                setView("cheeses");
+                transition(() => setView("cheeses"));
               }}
               aria-label={`Open my ${hearts.length} saved cheese${hearts.length === 1 ? "" : "s"}`}
             >
@@ -1855,7 +1876,7 @@ export default function App() {
                 <MapView
                   creameries={shown}
                   selectedId={selectedId}
-                  onSelect={setSelectedId}
+                  onSelect={(id) => transition(() => setSelectedId(id))}
                   tooltips={mapTips}
                   here={here}
                   county={county}
@@ -1961,7 +1982,7 @@ export default function App() {
             recommendations={recommendations}
             highlights={highlights}
             selectedId={selectedCheeseId}
-            onOpen={setSelectedCheeseId}
+            onOpen={(id) => transition(() => setSelectedCheeseId(id))}
             query={cheeseQuery}
             onQuery={setCheeseQuery}
             family={family}
@@ -2018,7 +2039,7 @@ export default function App() {
             onComplete={completeMyBoard}
             onSeed={seedBoardFromHearts}
             onSwap={swapIn}
-            onOpen={setSelectedCheeseId}
+            onOpen={(id) => transition(() => setSelectedCheeseId(id))}
           />
           {view === "board" && cheeseDetailNode}
         </div>

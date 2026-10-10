@@ -31,6 +31,14 @@
   --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --shadow: 0 1px 2px rgba(29, 35, 33, 0.06), 0 4px 16px rgba(29, 35, 33, 0.06);
+  /* Motion. The built-in curves are too weak at UI durations; these are the
+     strong ease-out and ease-in-out the motion rules name. --ease-pop is a
+     single overshoot written as linear(), so a heart can bounce once inside
+     a transition (which retargets on a quick double tap) instead of a
+     keyframe animation (which restarts). */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-pop: linear(0, 0.42 20%, 1.14 48%, 0.96 72%, 1);
 }
 
 * {
@@ -2743,8 +2751,11 @@ button.highlight {
 /* ── Motion (opt-in only) ───────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: no-preference) {
-  .detail {
-    animation: detail-in 0.16s ease-out;
+  /* A browser without view transitions still gets the panel's entrance. */
+  @supports not (view-transition-name: none) {
+    .detail {
+      animation: detail-in 0.16s var(--ease-out);
+    }
   }
 
   .creamery-row,
@@ -2767,20 +2778,29 @@ button.highlight {
       color 0.12s ease;
   }
 
-  .heart.is-on svg {
-    animation: heart-pop 0.22s ease-out;
+  /* The save moment: feedback on an occasional action. A saved heart is a
+     touch larger than an empty one, and the growth overshoots once on the
+     way (--ease-pop); unsaving shrinks back with a plain ease-out. A
+     transition, not a keyframe, so a quick second tap retargets mid-bounce. */
+  .heart {
+    transition:
+      background-color 0.12s ease,
+      color 0.12s ease,
+      transform 0.12s var(--ease-out);
   }
-}
 
-@keyframes heart-pop {
-  0% {
-    transform: scale(0.75);
+  .heart svg {
+    transform: scale(0.92);
+    transition:
+      transform 0.16s var(--ease-out),
+      fill 0.12s ease,
+      stroke 0.12s ease;
   }
-  60% {
-    transform: scale(1.18);
-  }
-  100% {
-    transform: none;
+
+  .heart.is-on svg {
+    transform: scale(1);
+    transition-duration: 0.24s, 0.12s, 0.12s;
+    transition-timing-function: var(--ease-pop), ease, ease;
   }
 }
 
@@ -2792,6 +2812,77 @@ button.highlight {
   to {
     transform: none;
     opacity: 1;
+  }
+}
+
+/* ── View transitions ───────────────────────────────────────────────────── */
+
+/* The root crossfade is off: nothing should fade when a panel opens. The
+   named groups below move instead. The viewport crossfades on a tab switch;
+   the panel slides in from the side it lives on (up, on a phone) and leaves
+   the way it came. App.tsx starts the transition only for those moments and
+   only when the reader has not asked for reduced motion. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+main.viewport {
+  view-transition-name: view;
+}
+
+::view-transition-old(view),
+::view-transition-new(view) {
+  animation-duration: 0.18s;
+  animation-timing-function: var(--ease-out);
+}
+
+/* Only the visible view's panel carries the name: hidden views keep their
+   panels rendered (visibility, not display), and a name must be unique. */
+.layout:not(.view-off) .detail,
+.cheese-pane:not(.view-off) .detail,
+.board-pane:not(.view-off) .detail {
+  view-transition-name: panel;
+}
+
+::view-transition-group(panel) {
+  animation-duration: 0.22s;
+  animation-timing-function: var(--ease-out);
+}
+
+::view-transition-new(panel):only-child {
+  animation: panel-in 0.22s var(--ease-out);
+}
+
+::view-transition-old(panel):only-child {
+  animation: panel-out 0.16s var(--ease-out);
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+@keyframes panel-out {
+  to {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+@keyframes sheet-in {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+}
+
+@keyframes sheet-out {
+  to {
+    opacity: 0;
+    transform: translateY(6%);
   }
 }
 
@@ -2935,25 +3026,93 @@ button.highlight {
   flex: none;
 }
 
-/* The pin chooser: a Leaflet popup wearing the cream card, one button a row. */
-.pin-chooser .leaflet-popup-content-wrapper {
+/* The pin chooser: a native popover (top layer, light dismiss, Escape) in
+   the cream card, placed over the pin in viewport coordinates (--x, --y set
+   by MapView), one button a row. It scales out of the pin it was tapped on
+   and back the same way; the origin sits at the pin, so above the pin it
+   grows upward and below it downward. */
+.pin-chooser {
+  position: fixed;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  margin: 0;
+  width: max-content;
+  min-width: 220px;
+  max-width: min(300px, calc(100vw - 16px));
+  padding: 0.6rem 0.75rem 0.7rem;
   background: var(--cream);
   color: var(--ink);
   border: 1px solid var(--rule);
   border-radius: 6px;
   box-shadow: var(--shadow);
   font-family: var(--body);
+  transform-origin: 50% 100%;
+  transform: translate(-50%, calc(-100% - 12px));
+  z-index: 1200;
 }
 
-.pin-chooser .leaflet-popup-tip {
-  background: var(--cream);
-  border: 1px solid var(--rule);
-  border-width: 0 1px 1px 0;
+.pin-chooser[data-side="below"] {
+  transform-origin: 50% 0;
+  transform: translate(-50%, 12px);
 }
 
-.pin-chooser .leaflet-popup-content {
-  margin: 0.6rem 0.75rem 0.7rem;
-  min-width: 220px;
+.pin-chooser::backdrop {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pin-chooser:popover-open {
+    transition:
+      opacity 0.18s var(--ease-out),
+      transform 0.18s var(--ease-out),
+      display 0.18s allow-discrete,
+      overlay 0.18s allow-discrete;
+  }
+
+  @starting-style {
+    .pin-chooser:popover-open {
+      opacity: 0;
+      transform: translate(-50%, calc(-100% - 12px)) scale(0.95);
+    }
+
+    .pin-chooser[data-side="below"]:popover-open {
+      transform: translate(-50%, 12px) scale(0.95);
+    }
+  }
+
+  .pin-chooser:not(:popover-open) {
+    opacity: 0;
+    transform: translate(-50%, calc(-100% - 12px)) scale(0.95);
+    transition:
+      opacity 0.14s var(--ease-out),
+      transform 0.14s var(--ease-out),
+      display 0.14s allow-discrete,
+      overlay 0.14s allow-discrete;
+  }
+
+  .pin-chooser[data-side="below"]:not(:popover-open) {
+    transform: translate(-50%, 12px) scale(0.95);
+  }
+}
+
+/* Without a popover the same card is a plain element: [hidden] takes it
+   away, and MapView closes it on a press outside. */
+.pin-chooser[hidden] {
+  display: none;
+}
+
+.pin-chooser .pc-close {
+  position: absolute;
+  top: 0.15rem;
+  right: 0.15rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0;
+  background: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
 }
 
 .pin-chooser .pc-head {
@@ -3001,16 +3160,6 @@ button.highlight {
 .pin-chooser button:focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: -2px;
-}
-
-/* The × a thumb can hit (Leaflet's is 24 px; its stylesheet loads after this
-   one with the lazy map chunk, so the extra class outranks it). */
-.map-wrap .pin-chooser .leaflet-popup-close-button {
-  width: 2.25rem;
-  height: 2.25rem;
-  line-height: 2.25rem;
-  font-size: 1.4rem;
-  color: var(--ink-soft);
 }
 
 /* "Wisconsin": the Leaflet control under the zoom buttons that frames the
@@ -3615,6 +3764,20 @@ button.highlight {
     height: 44px;
     padding: 0 0.8rem;
     font-size: 0.86rem;
+  }
+
+  .pin-chooser .pc-close {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  /* On a phone the panel is a full-screen sheet: it rises, and leaves downward. */
+  ::view-transition-new(panel):only-child {
+    animation-name: sheet-in;
+  }
+
+  ::view-transition-old(panel):only-child {
+    animation-name: sheet-out;
   }
 
   .map-hint {

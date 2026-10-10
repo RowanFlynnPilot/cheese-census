@@ -41,8 +41,10 @@ const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 // has nothing else to scroll, so dragging is on from the start.
 const COOPERATIVE = COARSE && window.self !== window.top;
 
-const esc = (value: string) =>
-  value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+// The chooser is a native popover where the browser has one: top layer, light
+// dismiss and Escape for free. Elsewhere it is a plain card with the same
+// shape and its own outside-click listener.
+const POPOVER = typeof HTMLElement !== "undefined" && "showPopover" in HTMLElement.prototype;
 
 interface Props {
   creameries: Creamery[];
@@ -120,6 +122,8 @@ export default function MapView({
   const pendingFrame = useRef(false);
   const [hint, setHint] = useState<string | null>(null);
   const hintTimer = useRef<number | null>(null);
+  const [chooser, setChooser] = useState<{ at: L.LatLng; rows: Creamery[] } | null>(null);
+  const chooserEl = useRef<HTMLDivElement>(null);
 
   /** Move the map ourselves without counting it as the reader's hand. The
    *  flag clears when this move ends — listened for after the action, because
@@ -181,26 +185,59 @@ export default function MapView({
   }
 
   /** A tap that lands on more than one pin's hit box opens a chooser instead
-   *  of whichever pin happened to be on top — at the overview the south-east
-   *  cluster is a dozen creameries under one thumb. */
+   *  of whichever pin happened to be on top — pins that share an address
+   *  never part however far the map zooms. */
   function openChooser(at: L.LatLng, ids: string[]) {
-    if (!map.current) return;
     const rows = ids
       .map((id) => byId.current.get(id))
       .filter((c): c is Creamery => Boolean(c))
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .map(
-        (c) =>
-          `<li><button type="button" data-id="${esc(c.id)}">${esc(c.name)}<span>${esc(c.city)}${
-            c.county ? ` · ${esc(c.county)} Co.` : ""
-          }</span></button></li>`,
-      )
-      .join("");
-    L.popup({ className: "pin-chooser", offset: [0, -6], maxWidth: 300, autoPanPadding: [24, 24] })
-      .setLatLng(at)
-      .setContent(`<p class="pc-head">${ids.length} creameries here — pick one</p><ul>${rows}</ul>`)
-      .openOn(map.current);
+      .sort((a, b) => a.name.localeCompare(b.name));
+    setChooser({ at, rows });
   }
+
+  function closeChooser() {
+    const el = chooserEl.current;
+    if (POPOVER && el?.matches(":popover-open")) el.hidePopover(); // its toggle event clears the state
+    else setChooser(null);
+  }
+
+  // Place the chooser over the pin and show it. A popover lives in the top
+  // layer, so the position is in viewport coordinates; it opens above the pin
+  // and flips below when the top of the viewport is too close, and stays
+  // inside the sides. The map moving underneath closes it.
+  useEffect(() => {
+    const el = chooserEl.current;
+    const m = map.current;
+    if (!el || !m || !chooser) return;
+    const point = m.latLngToContainerPoint(chooser.at);
+    const rect = m.getContainer().getBoundingClientRect();
+    const x = rect.left + point.x;
+    const y = rect.top + point.y;
+    el.style.setProperty("--x", `${x}px`);
+    el.style.setProperty("--y", `${y}px`);
+    el.dataset.side = "above";
+    if (POPOVER) el.showPopover();
+    if (y - el.offsetHeight - 12 < 8) el.dataset.side = "below";
+    const half = el.offsetWidth / 2 + 8;
+    el.style.setProperty("--x", `${Math.min(Math.max(x, half), window.innerWidth - half)}px`);
+    el.querySelector<HTMLElement>("button[data-id]")?.focus({ preventScroll: true });
+    const onMove = () => closeChooser();
+    m.on("movestart zoomstart", onMove);
+    const onToggle = (ev: Event) => {
+      if ((ev as ToggleEvent).newState === "closed") setChooser(null);
+    };
+    el.addEventListener("toggle", onToggle);
+    // Without a popover there is no light dismiss: a press outside closes it.
+    const onOutside = (ev: PointerEvent) => {
+      if (!POPOVER && !el.contains(ev.target as Node)) setChooser(null);
+    };
+    document.addEventListener("pointerdown", onOutside, true);
+    return () => {
+      m.off("movestart zoomstart", onMove);
+      el.removeEventListener("toggle", onToggle);
+      document.removeEventListener("pointerdown", onOutside, true);
+    };
+  }, [chooser]);
 
   useEffect(() => {
     if (!host.current || map.current) return;
@@ -309,28 +346,9 @@ export default function MapView({
       },
     });
     new Reset({ position: "topleft" }).addTo(map.current);
-    // The chooser's buttons: one delegated listener, bound when a popup opens.
-    map.current.on("popupopen", (e: L.PopupEvent) => {
-      const el = e.popup.getElement();
-      if (!el) return;
-      el.addEventListener("click", (ev) => {
-        const button = (ev.target as Element).closest<HTMLElement>("button[data-id]");
-        if (!button?.dataset.id) return;
-        map.current?.closePopup();
-        select.current(button.dataset.id);
-      });
-      // Leaflet's own Escape only listens while the map container has focus,
-      // and focus moves into the chooser below — so the chooser answers Escape
-      // itself and hands focus back to the map. The key stops here: the app's
-      // Escape (close the panel) is not what it meant.
-      el.addEventListener("keydown", (ev) => {
-        if (ev.key !== "Escape") return;
-        ev.stopPropagation();
-        map.current?.closePopup();
-        map.current?.getContainer().focus({ preventScroll: true });
-      });
-      el.querySelector<HTMLElement>("button[data-id]")?.focus({ preventScroll: true });
-    });
+    // The chooser is a popover (below); the browser gives it a popover
+    // attribute only where it can honour one.
+    if (POPOVER) chooserEl.current?.setAttribute("popover", "auto");
     // Leaflet only watches window resizes; the container itself changes size
     // too (mobile pane flips, embed reflows, orientation changes). Re-measure,
     // and re-frame the overview unless the reader is looking at a pin.
@@ -351,6 +369,7 @@ export default function MapView({
   // the draft logo overlay arrives just after the dataset).
   useEffect(() => {
     if (!layer.current) return;
+    closeChooser();
     layer.current.clearLayers();
     markers.current.clear();
     byId.current = new Map(creameries.map((c) => [c.id, c]));
@@ -455,7 +474,7 @@ export default function MapView({
       }
       pendingFrame.current = false;
     } else if (map.current) {
-      map.current.closePopup();
+      closeChooser();
       const marker = markers.current.get(selectedId);
       if (marker) {
         // Selecting a creamery opens the detail panel over the right of the map, so
@@ -523,6 +542,52 @@ export default function MapView({
       <p className="map-hint map-zoom-hint" role="status">
         {hint}
       </p>
+      {/* The pin chooser. Escape stops here: the app's own Escape (close the
+          panel) is not what the key meant, and focus goes back to the map. */}
+      <div
+        ref={chooserEl}
+        className="pin-chooser"
+        hidden={!POPOVER && !chooser}
+        role="group"
+        aria-labelledby="pin-chooser-head"
+        onKeyDown={(ev) => {
+          if (ev.key !== "Escape") return;
+          ev.stopPropagation();
+          closeChooser();
+          map.current?.getContainer().focus({ preventScroll: true });
+        }}
+      >
+        {chooser && (
+          <>
+            <p className="pc-head" id="pin-chooser-head">
+              {chooser.rows.length} creameries here — pick one
+            </p>
+            <button type="button" className="pc-close" aria-label="Close" onClick={closeChooser}>
+              ×
+            </button>
+            <ul>
+              {chooser.rows.map((c) => (
+                <li key={c.id}>
+                  <button
+                    type="button"
+                    data-id={c.id}
+                    onClick={() => {
+                      closeChooser();
+                      select.current(c.id);
+                    }}
+                  >
+                    {c.name}
+                    <span>
+                      {c.city}
+                      {c.county ? ` · ${c.county} Co.` : ""}
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
     </div>
   );
 }
