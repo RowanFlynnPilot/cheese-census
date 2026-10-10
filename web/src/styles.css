@@ -21,6 +21,19 @@
      stays for decorative dividers. 3.6:1 on white, 3.2:1 on cream. */
   --rule-strong: #7f8a86;
   --gold: #bd9a5e;
+  /* Gold has three jobs and one value cannot do them all (it measures 2.4:1
+     on cream). The ramp below is the brand gold's hue (80°) stepped evenly
+     in perceived lightness (OKLCH): fills keep --gold, text uses --gold-text
+     (5.3:1 on cream), the award ring on the map uses --gold-ring (5.0:1),
+     and ink on a gold fill is --gold-ink (6.0:1).
+       gold ramp  100 #f9edd9 · 200 #f2dbb6 · 300 #e6c58f · 500 #bd9a5e ·
+                  700 #846324 · 800 #694d15
+       teal ramp  50 #eefaf8 · 100 #dbf3ee · 200 #bee8e1 · 300 #90d3c9 ·
+                  400 #47b3a5 · 500 #3a867c · 600 #0f7368 · 700 #0a6057
+     Only steps with a role become tokens; the rest wait for one. */
+  --gold-text: #7c5f28;
+  --gold-ring: #846324;
+  --gold-ink: #2a2113;
   --silver: #b6c0bd;
   /* Cream on this bronze clears 5:1; the old #b07a4e sat at 3.3. */
   --bronze: #8f5a2c;
@@ -73,6 +86,17 @@ body {
   color: var(--ink);
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Underlines from the font's own metrics, clear of descenders, a touch
+   lower than the browser's guess. */
+a,
+.linkish,
+.colophon button {
+  text-underline-offset: 0.14em;
+  text-decoration-thickness: from-font;
+  text-decoration-skip-ink: auto;
 }
 
 /* The browser's own surfaces wear the palette too (teal-dark: cream on the
@@ -218,6 +242,10 @@ input:focus-visible {
   font-size: 1.5rem;
   letter-spacing: -0.01em;
   margin: 0;
+  /* Fraunces' own character: softened terminals and the wonky alternates
+     (the leaning n and u) on the one line that is the paper's voice. */
+  font-variation-settings: "SOFT" 30, "WONK" 1;
+  text-wrap: balance;
 }
 
 .masthead .subtitle {
@@ -521,6 +549,7 @@ input:focus-visible {
 }
 
 .empty p {
+  text-wrap: pretty;
   margin: 0 0 0.5rem;
 }
 
@@ -628,6 +657,7 @@ input:focus-visible {
 }
 
 .mc-name {
+  text-wrap: balance;
   font-family: var(--display);
   font-weight: 600;
   font-size: 0.92rem;
@@ -685,7 +715,7 @@ input:focus-visible {
    18 px for 0, 1+, 5+, 15+ awards); the fill stays teal so the store donut
    and the selected gold still read. */
 .marker.has-award {
-  box-shadow: 0 0 0 2px var(--gold), 0 1px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 0 2px var(--gold-ring), 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 /* The county in force fills; hovering names a county and its count. */
@@ -773,6 +803,7 @@ input:focus-visible {
 }
 
 .detail-head h2 {
+  text-wrap: balance;
   font-family: var(--display);
   font-size: 1.3rem;
   font-weight: 600;
@@ -864,6 +895,7 @@ input:focus-visible {
 }
 
 .detail p {
+  text-wrap: pretty;
   margin: 0 0 0.5rem;
   font-size: 0.9rem;
   line-height: 1.45;
@@ -878,6 +910,7 @@ input:focus-visible {
 }
 
 .detail .summary {
+  text-wrap: pretty;
   font-family: var(--display);
   font-size: 0.98rem;
   line-height: 1.5;
@@ -968,7 +1001,7 @@ button.tag {
 
 .pill.award {
   background: var(--gold);
-  color: #2a2113;
+  color: var(--gold-ink);
   font-weight: 600;
 }
 
@@ -987,7 +1020,7 @@ button.tag {
 .pill.top20 {
   border: 1px solid var(--gold);
   background: transparent;
-  color: #7c5f28;
+  color: var(--gold-text);
   margin-left: 0.4rem;
 }
 
@@ -1169,6 +1202,7 @@ button.tag {
 }
 
 .about-card h2 {
+  text-wrap: balance;
   font-family: var(--display);
   font-size: 1.35rem;
   font-weight: 600;
@@ -1187,6 +1221,7 @@ button.tag {
 
 .about-card p,
 .about-card li {
+  text-wrap: pretty;
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0 0 0.5rem;
@@ -1706,6 +1741,7 @@ button.highlight {
 }
 
 .rail-head h2 {
+  text-wrap: balance;
   font-family: var(--display);
   font-size: 1.08rem;
   font-weight: 600;
@@ -1750,6 +1786,7 @@ button.highlight {
 }
 
 .title-row h2 {
+  text-wrap: balance;
   flex: 1;
 }
 
@@ -2963,6 +3000,7 @@ main.viewport {
 }
 
 .locate-note {
+  text-wrap: pretty;
   margin: 0;
   font-size: 0.86rem;
   color: var(--ink-soft);
@@ -3287,6 +3325,9 @@ main.viewport {
   font-family: var(--display);
   font-size: 1.1rem;
   color: var(--ink);
+  font-variation-settings: "SOFT" 60, "WONK" 1;
+  text-wrap: balance;
+  hanging-punctuation: first last;
 }
 
 .near-misses .linkish {
