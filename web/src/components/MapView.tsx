@@ -3,6 +3,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Creamery } from "../types";
 import wisconsin from "../wisconsin.json";
+import counties from "../counties.json";
 
 // Wisconsin, comfortably framed.
 const CENTER: L.LatLngTuple = [44.6, -89.8];
@@ -51,9 +52,45 @@ interface Props {
   tooltips: Map<string, string>;
   /** The reader's own position, once they asked for it; never stored. */
   here: { lat: number; lng: number } | null;
+  /** The county filter in force ("" for none); tapping a county toggles it. */
+  county: string;
+  onCounty: (name: string) => void;
+  /** Creameries per county across the whole browsable set, for the county tooltips. */
+  countyCounts: Map<string, number>;
+  /** Contest awards per creamery: award winners get a larger, ringed pin. */
+  awards: Map<string, number>;
 }
 
-export default function MapView({ creameries, selectedId, onSelect, tooltips, here }: Props) {
+/** Pin size by award count: a graduated symbol, three steps, legible at 12 px. */
+function pinSize(awards: number, selected: boolean): number {
+  if (selected) return 22;
+  if (awards >= 15) return 18;
+  if (awards >= 5) return 16;
+  if (awards >= 1) return 14;
+  return 12;
+}
+
+const COUNTY_STYLE: L.PathOptions = {
+  color: "#3a867c",
+  weight: 0.8,
+  opacity: 0.45,
+  fillColor: "#3a867c",
+  fillOpacity: 0,
+};
+const COUNTY_HOVER: L.PathOptions = { fillOpacity: 0.08 };
+const COUNTY_ACTIVE: L.PathOptions = { weight: 2, opacity: 0.95, fillOpacity: 0.12 };
+
+export default function MapView({
+  creameries,
+  selectedId,
+  onSelect,
+  tooltips,
+  here,
+  county,
+  onCounty,
+  countyCounts,
+  awards,
+}: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<L.Map | null>(null);
   const layer = useRef<L.LayerGroup | null>(null);
@@ -65,6 +102,15 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
   select.current = onSelect;
   const selection = useRef(selectedId);
   selection.current = selectedId;
+  const pickCounty = useRef(onCounty);
+  pickCounty.current = onCounty;
+  const activeCounty = useRef(county);
+  activeCounty.current = county;
+  const countyTotals = useRef(countyCounts);
+  countyTotals.current = countyCounts;
+  const awardsRef = useRef(awards);
+  awardsRef.current = awards;
+  const countyLayer = useRef<L.GeoJSON | null>(null);
   const [armed, setArmed] = useState(!COOPERATIVE);
   // The reader moved the map by hand (drag, pinch, the zoom buttons) — then a
   // refit would take a view they chose. Our own moves set `programmatic`.
@@ -96,12 +142,15 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
   }
 
   /** One source of truth for pin appearance: retail stores read as a donut,
-   *  the selected creamery as a larger gold pin. Classes live in styles.css
-   *  next to the legend that explains them. */
+   *  award winners carry a gold ring and grow with their count, the selected
+   *  creamery is the largest gold pin. Classes live in styles.css next to
+   *  the legend that explains them. */
   function icon(id: string, selected: boolean): L.DivIcon {
-    const size = selected ? 18 : 12;
+    const wins = awardsRef.current.get(id) ?? 0;
+    const size = pinSize(wins, selected);
     const classes = ["marker"];
     if (storeIds.current.has(id)) classes.push("has-store");
+    if (wins > 0) classes.push("has-award");
     if (selected) classes.push("is-selected");
     return L.divIcon({
       className: "",
@@ -199,6 +248,38 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
         opacity: 0.85,
         fillColor: "#3a867c",
         fillOpacity: 0.04,
+      },
+    }).addTo(map.current);
+    // The counties, under the pins: the list, the select and the sort are all
+    // county-first, so the map carries the same geometry. Reference lines,
+    // not a filled choropleth — the pins already carry the magnitude, and a
+    // county tinted by a raw count would only repeat them. Hover names the
+    // county and its count; a tap filters the list to it (and again clears).
+    // Same source as the state outline (Census cartographic boundaries,
+    // 2023, 1:5M, public domain, simplified by scripts/counties.py).
+    countyLayer.current = L.geoJSON(counties as GeoJSON.FeatureCollection, {
+      style: () => COUNTY_STYLE,
+      onEachFeature: (feature, shape) => {
+        const name = String(feature.properties?.name ?? "");
+        const path = shape as L.Path;
+        const label = () => {
+          const n = countyTotals.current.get(name) ?? 0;
+          return `${name} County · ${n === 0 ? "no creameries in the census" : `${n} creamer${n === 1 ? "y" : "ies"}`}`;
+        };
+        path.bindTooltip(label, { sticky: true, className: "county-tip", direction: "top", offset: [0, -8] });
+        path.on("mouseover", () => {
+          if (activeCounty.current !== name) path.setStyle(COUNTY_HOVER);
+        });
+        path.on("mouseout", () => {
+          path.setStyle(activeCounty.current === name ? COUNTY_ACTIVE : COUNTY_STYLE);
+        });
+        path.on("click", () => {
+          path.closeTooltip();
+          // A county with no creameries has nothing to filter to; the tooltip
+          // has already said so.
+          if (!countyTotals.current.get(name)) return;
+          pickCounty.current(name);
+        });
       },
     }).addTo(map.current);
     layer.current = L.layerGroup().addTo(map.current);
@@ -346,7 +427,16 @@ export default function MapView({ creameries, selectedId, onSelect, tooltips, he
     // looking at a particular creamery — remember to, for when the panel closes.
     if (!selection.current) frame();
     else pendingFrame.current = true;
-  }, [creameries, tooltips]);
+  }, [creameries, tooltips, awards]);
+
+  // The county in force reads as the one filled shape; the rest stay lines.
+  useEffect(() => {
+    countyLayer.current?.eachLayer((shape) => {
+      const path = shape as L.Path & { feature?: GeoJSON.Feature };
+      const name = String(path.feature?.properties?.name ?? "");
+      path.setStyle(name === county && county ? COUNTY_ACTIVE : COUNTY_STYLE);
+    });
+  }, [county]);
 
   // Re-style the selected pin and bring it into view.
   useEffect(() => {

@@ -1858,6 +1858,10 @@ export default function App() {
                   onSelect={setSelectedId}
                   tooltips={mapTips}
                   here={here}
+                  county={county}
+                  onCounty={(name) => setCounty(name === county ? "" : name)}
+                  countyCounts={countyCounts}
+                  awards={awardCounts}
                 />
               </Suspense>
             )}
@@ -1869,10 +1873,16 @@ export default function App() {
                 <i className="marker has-store" style={{ width: 10, height: 10 }} /> Retail
                 store
               </span>
-              <span>
-                <i className="marker is-selected" style={{ width: 10, height: 10 }} />{" "}
-                Selected
+              <span title="The more contest awards, the bigger the pin">
+                <i className="marker has-award" style={{ width: 10, height: 10 }} /> Award
+                winner
               </span>
+              {selectedId && (
+                <span>
+                  <i className="marker is-selected" style={{ width: 10, height: 10 }} />{" "}
+                  Selected
+                </span>
+              )}
               {here && (
                 <span>
                   <i className="here-dot" /> You
@@ -2015,7 +2025,7 @@ export default function App() {
       </main>
 
       <footer className="colophon" id="colophon" tabIndex={-1}>
-        <span>The Cheese Census — Wausau Pilot &amp; Review</span>
+        <span>The Cheese Census — Wausau Pilot &amp; Review · 715-301-5539</span>
         <span className="sources">
           Plant data: Wisconsin DATCP · Consumer listings: Dairy Farmers of Wisconsin ·
           Awards: Wisconsin Cheese Makers Association

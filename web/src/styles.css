@@ -673,6 +673,28 @@ input:focus-visible {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
+/* Award winners wear a gold ring and grow with their count (12 → 14 → 16 →
+   18 px for 0, 1+, 5+, 15+ awards); the fill stays teal so the store donut
+   and the selected gold still read. */
+.marker.has-award {
+  box-shadow: 0 0 0 2px var(--gold), 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* The county in force fills; hovering names a county and its count. */
+.county-tip {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 0.82rem;
+  padding: 0.2rem 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.county-tip::before {
+  display: none;
+}
+
 /* Retail stores read as a donut — a place you can walk into. */
 .marker.has-store::after {
   content: "";
