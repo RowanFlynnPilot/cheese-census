@@ -221,6 +221,21 @@ against its best word of a name (a match on a common word counts half), so
 a reader's typo like "Hooks chese" offers Hook's instead of every name with
 "Cheese" in it.
 
+The sixth critique (31/40) turned to the phone's map pane. A top-left
+column of controls had covered the overview's northwest, with Burnett
+Dairy's pin under the locate button; on phones the zoom buttons now sit
+bottom-right above the credit line, "Wisconsin" and the locate button
+bottom-left on the flip pill's baseline, and the overview is fitted clear
+of the legend with the sides kept tight, so no pin sits under a control and
+the state keeps its width. A tap on a pin with up to three neighbours under
+the thumb opens the chooser at once instead of zooming first; county
+tooltips bind only for a pointer that hovers (a touch had left "Green
+County · 9 creameries" over the pins), and a thumb on an empty county is
+told so in the map's label. Still open from that critique: the basemap's
+out-of-state labels at Wisconsin's weight (the chosen direction is to mute
+them and wash the land beyond the border), the legend's "Selected" entry
+clipped by the panel, and Contact's order of actions and caveats.
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry

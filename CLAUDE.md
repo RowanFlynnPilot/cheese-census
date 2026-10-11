@@ -458,6 +458,14 @@ as the licence's business line in sight and says hours are not in the
 census; "Did you mean" scores typed words against name words with common
 words counting half. Details in web/README.md.
 
+The sixth map critique (31/40) turned to the phone's map pane: its controls
+now sit at the bottom (zoom bottom-right, "Wisconsin" and locate
+bottom-left) so none covers a pin, the overview is fitted clear of the
+legend, a small crowd under a thumb opens the chooser at once, and county
+tooltips are hover-only. Open from it: muting the basemap outside the state
+line, the legend clipped by the panel, Contact's order. Details in
+web/README.md.
+
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 "…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That
