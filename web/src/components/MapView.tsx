@@ -235,8 +235,14 @@ export default function MapView({
   const programmatic = useRef(false);
   const [hint, setHint] = useState<string | null>(null);
   const hintTimer = useRef<number | null>(null);
-  // The zoom the reader's presses add up to while an animation is running.
+  // Leaflet ignores a zoom asked for while its zoom animation runs: our own
+  // moves wait for the animation's end (`queued`), and the zoom buttons'
+  // presses add up to a target (`pendingZoom`) that the end applies.
+  const zooming = useRef(false);
+  const queued = useRef<(() => void) | null>(null);
   const pendingZoom = useRef<number | null>(null);
+  // The pin under a hovering pointer, resolved to the nearest centre.
+  const hoveredPin = useRef<string | null>(null);
   // At the cap, the map says so and hands off to the reader's maps app.
   const [capped, setCapped] = useState(false);
   const [chooser, setChooser] = useState<{ at: L.LatLng; rows: Creamery[] } | null>(null);
@@ -247,13 +253,30 @@ export default function MapView({
    *  Leaflet stops any running animation first and that stop fires its own
    *  moveend — or after a beat, for a move that turns out to be no move. */
   function move(action: () => void) {
-    programmatic.current = true;
-    action();
-    const done = () => {
-      programmatic.current = false;
+    const m = map.current;
+    if (!m) return;
+    const run = () => {
+      programmatic.current = true;
+      action();
+      const done = () => {
+        programmatic.current = false;
+      };
+      m.once("moveend", done);
+      window.setTimeout(done, 1500);
     };
-    map.current?.once("moveend", done);
-    window.setTimeout(done, 1500);
+    if (!zooming.current) {
+      run();
+      return;
+    }
+    // Asked mid-animation Leaflet would drop it; it runs when the animation
+    // ends (or after a beat, should the end never be reported).
+    queued.current = run;
+    window.setTimeout(() => {
+      if (queued.current === run) {
+        queued.current = null;
+        run();
+      }
+    }, 1200);
   }
 
   function flash(text: string) {
@@ -298,6 +321,74 @@ export default function MapView({
       }
     });
     touched.current = false;
+  }
+
+  /** The pin a pointer means: the nearest centre among the hit boxes it is
+   *  in. Hit boxes overlap wherever pins crowd — at the overview a third of
+   *  the dots sit inside a neighbour's box — so the topmost box must not win:
+   *  pointing at Emmi Roth's dot opened Maple Leaf. The pins themselves take
+   *  no pointer events; the map resolves every hover and press here. */
+  function pinAt(point: L.Point): string | null {
+    const m = map.current;
+    if (!m) return null;
+    let best: string | null = null;
+    let nearest = HIT / 2;
+    for (const [id, marker] of markers.current) {
+      const d = point.distanceTo(m.latLngToContainerPoint(marker.getLatLng()));
+      if (d <= nearest) {
+        nearest = d;
+        best = id;
+      }
+    }
+    return best;
+  }
+
+  /** A press resolved to a pin: open it; or, at the overview where the Fox
+   *  Valley is seven pins under one thumb but seven towns on the ground, one
+   *  move to the zoom where the pressed pins part the most (within a few
+   *  steps), with a label saying why the map moved; or the chooser, for pins
+   *  that share an address and never part. */
+  function tap(id: string, point: L.Point) {
+    const m = map.current;
+    const marker = markers.current.get(id);
+    if (!m || !marker) return;
+    const pin = marker.getLatLng();
+    const under = [...markers.current.entries()]
+      .filter(
+        ([, other]) => point.distanceTo(m.latLngToContainerPoint(other.getLatLng())) <= CHOOSER_RADIUS,
+      )
+      .map(([other]) => other);
+    if (under.length <= 1) {
+      select.current(id);
+      return;
+    }
+    const base = Math.ceil(m.getZoom());
+    const crowd = (z: number) =>
+      under.filter(
+        (other) =>
+          m.project(pin, z).distanceTo(m.project(markers.current.get(other)!.getLatLng(), z)) <=
+          CHOOSER_RADIUS,
+      ).length;
+    let target = base;
+    let fewest = under.length;
+    for (let z = base + 1; z <= Math.min(base + SPLIT_STEPS, SPLIT_MAX_ZOOM); z++) {
+      const left = crowd(z);
+      if (left < fewest) {
+        fewest = left;
+        target = z;
+      }
+      if (left <= 1) break;
+    }
+    // Worth a move only when it clears the press or at least halves the
+    // crowd; splitting three pins into two is a chooser's job, not a second
+    // silent zoom.
+    if (target > base && (fewest <= 1 || fewest * 2 <= under.length)) {
+      flash(`${under.length} creameries here — zooming in`);
+      move(() => m.setView(pin, target, { animate: MOTION }));
+      touched.current = true; // the reader asked for this town
+      return;
+    }
+    openChooser(pin, under);
   }
 
   /** A tap that lands on more than one pin's hit box opens a chooser instead
@@ -455,7 +546,10 @@ export default function MapView({
         path.on("mouseout", () => {
           path.setStyle(activeCounty.current === name ? COUNTY_ACTIVE : COUNTY_STYLE);
         });
-        path.on("click", () => {
+        path.on("click", (e) => {
+          // The pins take no pointer events, so a press on one reaches the
+          // county beneath it too; the map's own click handler has it.
+          if (pinAt((e as L.LeafletMouseEvent).containerPoint)) return;
           path.closeTooltip();
           // A county with no creameries has nothing to filter to; the tooltip
           // has already said so.
@@ -476,21 +570,27 @@ export default function MapView({
     // The reader's own hand on the map, as opposed to our fits and pans: a
     // drag, a pinch, the zoom buttons. `programmatic` covers our own moves
     // until they end.
-    map.current.on("dragstart", () => {
+    const m = map.current;
+    m.on("dragstart", () => {
       touched.current = true;
     });
-    map.current.on("zoomstart", () => {
+    m.on("zoomstart", () => {
+      zooming.current = true;
       if (!programmatic.current) touched.current = true;
+      // Our own move outranks whatever the buttons had pending.
+      else pendingZoom.current = null;
     });
     // The zoom buttons, with a memory. Leaflet ignores a zoom asked for while
     // its zoom animation is running, so a burst of presses from a thumb lost
     // most of its steps (seven taps, three steps). Each press now advances a
     // pending target, and the end of one animation starts the next — the
-    // map ends up where the count of presses says.
-    const m = map.current;
+    // map ends up where the count of presses says. A press at the cap or
+    // the floor leaves nothing pending: a target equal to the zoom in hand
+    // never ends, and one left behind undid the next refit.
     const step = (delta: number) => {
       const from = pendingZoom.current ?? m.getZoom();
       const target = Math.max(m.getMinZoom(), Math.min(m.getMaxZoom(), from + delta));
+      if (target === from) return;
       pendingZoom.current = target;
       m.setZoom(target, { animate: MOTION });
     };
@@ -504,11 +604,40 @@ export default function MapView({
     }) as unknown as new (options?: L.Control.ZoomOptions) => L.Control.Zoom;
     new QueuedZoom({ position: "topleft" }).addTo(m);
     m.on("zoomend", () => {
-      const target = pendingZoom.current;
-      if (target !== null && target !== m.getZoom()) m.setZoom(target, { animate: MOTION });
-      else pendingZoom.current = null;
+      zooming.current = false;
+      const next = queued.current;
+      if (next) {
+        // A move of ours that waited out the animation goes first.
+        queued.current = null;
+        pendingZoom.current = null;
+        next();
+      } else {
+        const target = pendingZoom.current;
+        if (target !== null && target !== m.getZoom()) m.setZoom(target, { animate: MOTION });
+        else pendingZoom.current = null;
+      }
       setCapped(m.getZoom() >= MAX_ZOOM);
     });
+    // Every press and hover on the map resolves to the nearest pin (pinAt);
+    // the pins themselves are inert to the pointer.
+    m.on("click", (e: L.LeafletMouseEvent) => {
+      const id = pinAt(e.containerPoint);
+      if (id) tap(id, e.containerPoint);
+    });
+    if (HOVER) {
+      const hover = (id: string | null) => {
+        if (id === hoveredPin.current) return;
+        if (hoveredPin.current) markers.current.get(hoveredPin.current)?.closeTooltip();
+        hoveredPin.current = id;
+        if (id) {
+          countyLayer.current?.eachLayer((shape) => (shape as L.Path).closeTooltip());
+          markers.current.get(id)?.openTooltip();
+        }
+        m.getContainer().classList.toggle("over-pin", id !== null);
+      };
+      m.on("mousemove", (e: L.LeafletMouseEvent) => hover(pinAt(e.containerPoint)));
+      m.on("mouseout", () => hover(null));
+    }
     // "Wisconsin": the way back to the statewide frame, under the zoom
     // buttons — the zoom control alone offers no return once a search or a
     // cluster tap has flown the map to one town.
@@ -552,6 +681,7 @@ export default function MapView({
     closeChooser();
     layer.current.clearLayers();
     markers.current.clear();
+    hoveredPin.current = null;
     byId.current = new Map(creameries.map((c) => [c.id, c]));
     storeIds.current = new Set(
       creameries.filter((c) => c.retail.store).map((c) => c.id),
@@ -564,62 +694,16 @@ export default function MapView({
         // The list beside the map is the keyboard path to every creamery;
         // 88 focusable pins would be 88 extra Tab stops on the way to it.
         keyboard: false,
-      })
-        .bindTooltip(
-          tooltips.get(creamery.id) ?? `${creamery.name} — ${creamery.city}`,
-          { direction: "top", offset: [0, -10], opacity: 1, className: "map-card-tip" },
-        )
-        .on("click", () => {
-          const m = map.current;
-          if (!m) return;
-          // A tap opens the hover card too (touch fakes a mouseover) and nothing
-          // ever closes it; the tap has answered, so the card goes.
-          if (COARSE) marker.closeTooltip();
-          const pin = marker.getLatLng();
-          const at = m.latLngToContainerPoint(pin);
-          const under = [...markers.current.entries()]
-            .filter(
-              ([, other]) =>
-                at.distanceTo(m.latLngToContainerPoint(other.getLatLng())) <= CHOOSER_RADIUS,
-            )
-            .map(([id]) => id);
-          if (under.length <= 1) {
-            select.current(creamery.id);
-            return;
-          }
-          // At the overview the Fox Valley is seven pins under one thumb but
-          // seven towns on the ground. One move, to the zoom where the tapped
-          // pins part the most (within a few steps), with a label saying why
-          // the map moved; the chooser is for pins that share an address and
-          // never part.
-          const base = Math.ceil(m.getZoom());
-          const crowd = (z: number) =>
-            under.filter(
-              (id) =>
-                m.project(pin, z).distanceTo(m.project(markers.current.get(id)!.getLatLng(), z)) <=
-                CHOOSER_RADIUS,
-            ).length;
-          let target = base;
-          let fewest = under.length;
-          for (let z = base + 1; z <= Math.min(base + SPLIT_STEPS, SPLIT_MAX_ZOOM); z++) {
-            const left = crowd(z);
-            if (left < fewest) {
-              fewest = left;
-              target = z;
-            }
-            if (left <= 1) break;
-          }
-          // Worth a move only when it clears the tap or at least halves the
-          // crowd; splitting three pins into two is a chooser's job, not a
-          // second silent zoom.
-          if (target > base && (fewest <= 1 || fewest * 2 <= under.length)) {
-            flash(`${under.length} creameries here — zooming in`);
-            move(() => m.setView(pin, target, { animate: MOTION }));
-            touched.current = true; // the reader asked for this town
-            return;
-          }
-          openChooser(pin, under);
-        });
+        // Inert to the pointer: the map resolves hover and press to the
+        // nearest pin (pinAt), so an overlapping hit box never wins by
+        // being on top.
+        interactive: false,
+      }).bindTooltip(tooltips.get(creamery.id) ?? `${creamery.name} — ${creamery.city}`, {
+        direction: "top",
+        offset: [0, -10],
+        opacity: 1,
+        className: "map-card-tip",
+      });
       marker.addTo(layer.current!);
       markers.current.set(creamery.id, marker);
     }

@@ -107,28 +107,34 @@ test("a county tap filters the list and shows as a chip", async ({ page }, testI
   if (testInfo.project.name === "phone") {
     await page.getByRole("button", { name: "Show map" }).click();
   }
-  // Marathon County's outline, pressed at its centre (Wausau, where no pin
-  // sits). A raw press: an SVG path's actionability checks stall on a phone.
-  // Somewhere near the Mosinee pin where the press reaches Marathon County's
-  // own outline and no pin's hit box: pins pack differently at each zoom,
-  // so the test looks outward from the pin for the first such point.
+  // Marathon County's outline, pressed near the Mosinee pin. A raw press: an
+  // SVG path's actionability checks stall on a phone. The press must reach
+  // Marathon County's own outline and clear every pin's reach — the pins
+  // take no pointer events and the map resolves a press within half a hit
+  // box (22 px on touch) to the nearest pin — so the test looks outward
+  // from the pin for the first such point.
   await expect(page.locator(".leaflet-overlay-pane path.leaflet-interactive")).toHaveCount(72);
   const pin = page.locator('.leaflet-marker-icon[title="Mullins Cheese, Inc."]');
   const box = await pin.boundingBox();
   if (!box) throw new Error("the Mosinee pin has no box");
   const point = await page.evaluate(
-    ([cx, cy, index]) => {
+    ([cx, cy, index, clear]) => {
       const county = document.querySelectorAll(".leaflet-overlay-pane path.leaflet-interactive")[index];
-      for (let r = 6; r <= 80; r += 6) {
+      const pins = [...document.querySelectorAll(".leaflet-marker-icon")].map((el) => {
+        const r = el.getBoundingClientRect();
+        return [r.x + r.width / 2, r.y + r.height / 2];
+      });
+      const free = (x: number, y: number) => pins.every(([px, py]) => Math.hypot(px - x, py - y) > clear);
+      for (let r = clear; r <= 120; r += 6) {
         for (const [dx, dy] of [[1, 0], [1, -1], [0, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [-1, -1]]) {
           const x = cx + dx * r;
           const y = cy + dy * r;
-          if (document.elementFromPoint(x, y) === county) return [x, y];
+          if (free(x, y) && document.elementFromPoint(x, y) === county) return [x, y];
         }
       }
       return null;
     },
-    [box.x + box.width / 2, box.y + box.height / 2, MARATHON] as const,
+    [box.x + box.width / 2, box.y + box.height / 2, MARATHON, testInfo.project.name === "phone" ? 26 : 18] as const,
   );
   if (!point) throw new Error("no free point on Marathon County near the Mosinee pin");
   if (testInfo.project.name === "phone") await page.touchscreen.tap(point[0], point[1]);
