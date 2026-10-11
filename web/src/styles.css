@@ -3876,7 +3876,10 @@ main.viewport {
     right: 0.6rem;
     top: 0.6rem;
     bottom: auto;
-    gap: 0.55rem;
+    /* Clear of the zoom control; the pin rule wraps to a second line. */
+    max-width: calc(100% - 4.6rem);
+    flex-wrap: wrap;
+    gap: 0.2rem 0.55rem;
     padding: 0.3rem 0.55rem;
     font-size: 0.78rem;
   }

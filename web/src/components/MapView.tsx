@@ -715,7 +715,8 @@ export default function MapView({
       onPointerDown={arm}
     >
       <p className="sr-only">
-        Pins are not keyboard stops; the list beside the map has every creamery.
+        Pins are not keyboard stops; the list beside the map has every creamery. An award
+        winner&rsquo;s pin grows with its contest wins.
       </p>
       <div className="map" id="creamery-map" ref={host} />
       {!armed && (

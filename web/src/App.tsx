@@ -1919,9 +1919,10 @@ export default function App() {
                 <i className="marker has-store" style={{ width: 10, height: 10 }} /> Retail
                 store
               </span>
-              <span title="The more contest awards, the bigger the pin">
+              <span>
                 <i className="marker has-award" style={{ width: 10, height: 10 }} /> Award
                 winner
+                <span className="legend-more"> · bigger with more wins</span>
               </span>
               {selectedId && (
                 <span>
