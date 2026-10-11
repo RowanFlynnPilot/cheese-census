@@ -3324,6 +3324,15 @@ main.viewport {
   font-weight: 500;
 }
 
+/* What the number is: the licensee's business line, which may answer at a
+   head office. Visible, since a phone has no hover for a title. */
+.tel-note {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
 /* The licence fold: the section heading is the summary. */
 .licence summary {
   cursor: pointer;
@@ -3905,6 +3914,32 @@ main.viewport {
     height: 44px;
     padding: 0 0.8rem;
     font-size: 0.86rem;
+  }
+
+  /* The filters in force, over the map pane, just above the flip pill: a
+     county tapped on the map shows its chip and its × where the tap was. */
+  .map-chips {
+    position: absolute;
+    left: 0.6rem;
+    right: 0.6rem;
+    bottom: calc(4.6rem + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+    pointer-events: none;
+  }
+
+  .map-chips > * {
+    pointer-events: auto;
+  }
+
+  .map-chips .linkish {
+    min-height: 2rem;
+    padding: 0 0.6rem;
+    border-radius: 999px;
+    background: var(--cream);
   }
 
   .pin-chooser .pc-close {

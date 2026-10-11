@@ -1394,6 +1394,42 @@ export default function App() {
     return `Sorted nearest first: ${first.name} in ${first.city} is ${miles} away.`;
   })();
 
+  /** The filters in force as removable chips. Rendered in the sidebar and,
+   *  on a phone showing the map, over the map too: a county tapped on the
+   *  map narrows the list on the other pane, and the map must say so. */
+  function renderMapChips(className: string) {
+    return (
+      <div className={className} aria-label="Filters in force">
+        {mapChips.map((chip) => (
+          <button
+            type="button"
+            key={chip.key}
+            className="filter-chip"
+            onClick={chip.remove}
+            aria-label={chip.aria}
+          >
+            {chip.label}
+            <span className="chip-x" aria-hidden="true">
+              ×
+            </span>
+          </button>
+        ))}
+        {mapChips.length > 1 && (
+          <button
+            type="button"
+            className="linkish"
+            onClick={() => {
+              clearNarrowing();
+              setSort("name");
+            }}
+          >
+            Clear all
+          </button>
+        )}
+      </div>
+    );
+  }
+
   function renderRow(creamery: Creamery) {
     const wins = awardCounts.get(creamery.id) ?? 0;
     const hint = filtered.hints.get(creamery.id);
@@ -1690,36 +1726,7 @@ export default function App() {
               {/* Every filter in force as a removable chip, as the catalog
                   shows its own — visible with the phone's fold closed, so a
                   short list always shows its cause and its undo. */}
-              {mapChips.length > 0 && (
-                <div className="active-filters" aria-label="Filters in force">
-                  {mapChips.map((chip) => (
-                    <button
-                      type="button"
-                      key={chip.key}
-                      className="filter-chip"
-                      onClick={chip.remove}
-                      aria-label={chip.aria}
-                    >
-                      {chip.label}
-                      <span className="chip-x" aria-hidden="true">
-                        ×
-                      </span>
-                    </button>
-                  ))}
-                  {mapChips.length > 1 && (
-                    <button
-                      type="button"
-                      className="linkish"
-                      onClick={() => {
-                        clearNarrowing();
-                        setSort("name");
-                      }}
-                    >
-                      Clear all
-                    </button>
-                  )}
-                </div>
-              )}
+              {mapChips.length > 0 && renderMapChips("active-filters")}
               <div className="map-facets" id="map-facets" hidden={foldFilters}>
                 <div className="filter-row">
                   <select
@@ -1944,6 +1951,9 @@ export default function App() {
                 </span>
               )}
             </div>
+            {/* Phones only: the filters in force, over the map, so a county
+                tapped here shows its chip here and its undo. */}
+            {narrow && mobilePane === "map" && mapChips.length > 0 && renderMapChips("map-chips")}
             {/* Phones only: the map pane's own "Near me", under the zoom
                 buttons, so a reader looking at the map need not flip to the
                 list to ask. */}

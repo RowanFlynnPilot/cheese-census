@@ -175,6 +175,12 @@ export default function CreameryDetail({
             The {creamery.city} plant is pinned; also licensed in {listOf(otherPlantCities)}.
           </p>
         )}
+        {creamery.retail.store && (
+          <p className="aka">
+            Listed with a retail store on wisconsincheese.com. Hours aren&rsquo;t in the
+            census; call before you drive.
+          </p>
+        )}
         {mapsUrl && (
           <p>
             <a className="maps-link" href={mapsUrl} target="_blank" rel="noopener noreferrer">
@@ -190,17 +196,16 @@ export default function CreameryDetail({
           <p>
             {/* The licence's business line, which may answer at a head office
                 rather than at this door; the label says which it is. */}
-            <a
-              className="tel-link"
-              href={telHref(creamery.phone)}
-              title="Business phone on the plant's state licence"
-            >
+            <a className="tel-link" href={telHref(creamery.phone)}>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.6 3.5c.5-.3 1.1-.1 1.4.4l1.9 3.3c.3.5.2 1.1-.2 1.5L8.3 10a11.6 11.6 0 0 0 5.7 5.7l1.3-1.4c.4-.4 1-.5 1.5-.2l3.3 1.9c.5.3.7.9.4 1.4l-1.2 2.3c-.3.6-1 .9-1.6.8C10.8 19.4 4.6 13.2 3.5 6.3c-.1-.6.2-1.3.8-1.6z" />
               </svg>
               <span className="sr-only">Business phone: </span>
               {creamery.phone}
             </a>
+            {/* Visible, not a hover title: on a phone there is no hover, and
+                the number may ring a head office rather than this door. */}
+            <span className="tel-note">Business line on the state licence</span>
           </p>
         )}
         {website && (

@@ -232,6 +232,10 @@ export default function MapView({
   const awardsRef = useRef(awards);
   awardsRef.current = awards;
   const countyLayer = useRef<L.GeoJSON | null>(null);
+  // The state outline's own bounds, and the "Wisconsin" control's button
+  // (its title says when a press also clears the county).
+  const stateBounds = useRef<L.LatLngBounds | null>(null);
+  const resetButton = useRef<HTMLButtonElement | null>(null);
   const [armed, setArmed] = useState(!COOPERATIVE);
   // The map shows a frame the reader chose — a drag, a pinch, the zoom
   // buttons, a cluster tap, Near me — and a refit would take it from them.
@@ -326,6 +330,23 @@ export default function MapView({
         m.setView(CENTER, ZOOM);
       }
     });
+    touched.current = false;
+  }
+
+  /** "Wisconsin", literally: the whole state, and no county filter. The
+   *  button had framed whatever set was shown — four pins after a county
+   *  tap — under a name that promised the state, which on a phone left a
+   *  thumb's miss on a county with no way back. A county in force is
+   *  cleared (the list's refit then frames every pin); otherwise the state's
+   *  outline is fitted, whatever search or toggle is narrowing the list. */
+  function reset() {
+    const m = map.current;
+    if (!m) return;
+    if (activeCounty.current) {
+      pickCounty.current(activeCounty.current);
+      return;
+    }
+    if (stateBounds.current) move(() => m.fitBounds(stateBounds.current!, { padding: [24, 24] }));
     touched.current = false;
   }
 
@@ -519,7 +540,7 @@ export default function MapView({
     // *of Wisconsin* and not pins adrift on a grey canvas. U.S. Census Bureau
     // 2010 cartographic boundary file (1:5,000,000, public domain), simplified
     // to 0.003° and bundled as web/src/wisconsin.json — no fetch, no failure path.
-    L.geoJSON(wisconsin as GeoJSON.Feature, {
+    const outline = L.geoJSON(wisconsin as GeoJSON.Feature, {
       interactive: false,
       style: {
         color: "#3a867c",
@@ -529,6 +550,7 @@ export default function MapView({
         fillOpacity: 0.04,
       },
     }).addTo(map.current);
+    stateBounds.current = outline.getBounds();
     // The counties, under the pins: the list, the select and the sort are all
     // county-first, so the map carries the same geometry. Reference lines,
     // not a filled choropleth — the pins already carry the magnitude, and a
@@ -644,9 +666,9 @@ export default function MapView({
       m.on("mousemove", (e: L.LeafletMouseEvent) => hover(pinAt(e.containerPoint)));
       m.on("mouseout", () => hover(null));
     }
-    // "Wisconsin": the way back to the statewide frame, under the zoom
-    // buttons — the zoom control alone offers no return once a search or a
-    // cluster tap has flown the map to one town.
+    // "Wisconsin": the way back to the whole state, under the zoom buttons —
+    // the zoom control alone offers no return once a search or a cluster tap
+    // has flown the map to one town (see reset()).
     const Reset = L.Control.extend({
       onAdd: () => {
         const bar = L.DomUtil.create("div", "leaflet-bar map-reset");
@@ -656,7 +678,8 @@ export default function MapView({
         button.title = "Show all of Wisconsin";
         button.setAttribute("aria-label", "Show all of Wisconsin");
         L.DomEvent.disableClickPropagation(bar);
-        L.DomEvent.on(button, "click", frame);
+        L.DomEvent.on(button, "click", reset);
+        resetButton.current = button;
         return bar;
       },
     });
@@ -719,12 +742,16 @@ export default function MapView({
   }, [creameries, tooltips, awards]);
 
   // The county in force reads as the one filled shape; the rest stay lines.
+  // The "Wisconsin" button says that a press will clear it.
   useEffect(() => {
     countyLayer.current?.eachLayer((shape) => {
       const path = shape as L.Path & { feature?: GeoJSON.Feature };
       const name = String(path.feature?.properties?.name ?? "");
       path.setStyle(name === county && county ? COUNTY_ACTIVE : COUNTY_STYLE);
     });
+    const label = county ? `Show all of Wisconsin (clears the ${county} County filter)` : "Show all of Wisconsin";
+    resetButton.current?.setAttribute("title", label);
+    resetButton.current?.setAttribute("aria-label", label);
   }, [county]);
 
   // Re-style the selected pin and bring it into view.

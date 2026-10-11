@@ -140,8 +140,17 @@ test("a county tap filters the list and shows as a chip", async ({ page }, testI
   if (testInfo.project.name === "phone") await page.touchscreen.tap(point[0], point[1]);
   else await page.mouse.click(point[0], point[1]);
   await expect(page).toHaveURL(/county=Marathon/);
-  await expect(page.locator(".filter-chip")).toHaveText(/Marathon County/);
+  await expect(page.locator(".filter-chip").first()).toHaveText(/Marathon County/);
+  // A phone showing the map carries the chip over the map too — the list
+  // with the sidebar's chip is on the other pane.
+  if (testInfo.project.name === "phone") {
+    await expect(page.locator(".map-chips .filter-chip")).toBeVisible();
+  }
   await expect(page.locator(".leaflet-marker-pane .marker")).toHaveCount(4);
+  // "Wisconsin" means the state: it clears the county and frames every pin.
+  await page.getByRole("button", { name: /Show all of Wisconsin/ }).click();
+  await expect(page).not.toHaveURL(/county=/);
+  await expect(page.locator(".leaflet-marker-pane .marker")).toHaveCount(88);
 });
 
 test("a cluster tap zooms with a label, then the chooser picks", async ({ page }, testInfo) => {
