@@ -36,6 +36,8 @@ const CHOOSER_RADIUS = HOVER ? 8 : HIT * 0.8;
 // address and get the chooser instead.
 const SPLIT_STEPS = 4;
 const SPLIT_MAX_ZOOM = 13;
+// A crowd this small opens the chooser straight away instead of zooming.
+const CHOOSER_DIRECT = 4;
 // How long the "zooming in" label stays, in ms.
 const HINT_MS = 1600;
 // Reduced motion covers Leaflet's own zoom, fade and pan animations too.
@@ -404,6 +406,12 @@ export default function MapView({
       select.current(id);
       return;
     }
+    // A small crowd is a chooser's job: one press, four names, a pick —
+    // zooming first made it a move and two more presses.
+    if (under.length <= CHOOSER_DIRECT) {
+      openChooser(pin, under);
+      return;
+    }
     const base = Math.ceil(m.getZoom());
     const crowd = (z: number) =>
       under.filter(
@@ -582,21 +590,29 @@ export default function MapView({
           const n = countyTotals.current.get(name) ?? 0;
           return `${name} County · ${n === 0 ? "no creameries in the census" : `${n} creamer${n === 1 ? "y" : "ies"}`}`;
         };
-        path.bindTooltip(label, { sticky: true, className: "county-tip", direction: "top", offset: [0, -8] });
-        path.on("mouseover", () => {
-          if (activeCounty.current !== name) path.setStyle(COUNTY_HOVER);
-        });
-        path.on("mouseout", () => {
-          path.setStyle(activeCounty.current === name ? COUNTY_ACTIVE : COUNTY_STYLE);
-        });
+        // The name-and-count tooltip is for a pointer that hovers. A touch
+        // fakes a hover too, and the tooltip it opened sat over the pins
+        // through the zoom and the chooser that followed the tap.
+        if (HOVER) {
+          path.bindTooltip(label, { sticky: true, className: "county-tip", direction: "top", offset: [0, -8] });
+          path.on("mouseover", () => {
+            if (activeCounty.current !== name) path.setStyle(COUNTY_HOVER);
+          });
+          path.on("mouseout", () => {
+            path.setStyle(activeCounty.current === name ? COUNTY_ACTIVE : COUNTY_STYLE);
+          });
+        }
         path.on("click", (e) => {
           // The pins take no pointer events, so a press on one reaches the
           // county beneath it too; the map's own click handler has it.
           if (pinAt((e as L.LeafletMouseEvent).containerPoint)) return;
           path.closeTooltip();
-          // A county with no creameries has nothing to filter to; the tooltip
-          // has already said so.
-          if (!countyTotals.current.get(name)) return;
+          // A county with no creameries has nothing to filter to. A hovering
+          // pointer has read that in the tooltip; a thumb is told now.
+          if (!countyTotals.current.get(name)) {
+            if (!HOVER) flash(label());
+            return;
+          }
           pickCounty.current(name);
         });
       },
