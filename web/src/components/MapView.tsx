@@ -6,6 +6,7 @@ import { labelRules, leafletLayer, paintRules, ShieldSymbolizer, type LabelRule 
 import { namedFlavor, type Flavor } from "@protomaps/basemaps";
 import wisconsin from "../wisconsin.json";
 import counties from "../counties.json";
+import { mapsHref } from "../maps";
 
 // Wisconsin, comfortably framed.
 const CENTER: L.LatLngTuple = [44.6, -89.8];
@@ -234,6 +235,10 @@ export default function MapView({
   const programmatic = useRef(false);
   const [hint, setHint] = useState<string | null>(null);
   const hintTimer = useRef<number | null>(null);
+  // The zoom the reader's presses add up to while an animation is running.
+  const pendingZoom = useRef<number | null>(null);
+  // At the cap, the map says so and hands off to the reader's maps app.
+  const [capped, setCapped] = useState(false);
   const [chooser, setChooser] = useState<{ at: L.LatLng; rows: Creamery[] } | null>(null);
   const chooserEl = useRef<HTMLDivElement>(null);
 
@@ -356,6 +361,7 @@ export default function MapView({
       center: CENTER,
       zoom: ZOOM,
       maxZoom: MAX_ZOOM, // three steps past the extract's data; see DATA_ZOOM
+      zoomControl: false, // ours, below: the buttons keep count of presses
       scrollWheelZoom: false, // an embedded iframe must not hijack page scroll
       dragging: !COOPERATIVE,
       zoomAnimation: MOTION,
@@ -458,6 +464,14 @@ export default function MapView({
         });
       },
     }).addTo(map.current);
+    // Leaflet binds focus and blur listeners to each county for its tooltip,
+    // and Chromium treats an SVG element with focus listeners as a Tab stop:
+    // 72 of them, unnamed and inert (Enter does nothing), between the map
+    // and the zoom buttons. Out of the Tab order; the county select is the
+    // keyboard path, and a pointer press still focuses the shape it pressed.
+    countyLayer.current.eachLayer((shape) => {
+      (shape as L.Path).getElement()?.setAttribute("tabindex", "-1");
+    });
     layer.current = L.layerGroup().addTo(map.current);
     // The reader's own hand on the map, as opposed to our fits and pans: a
     // drag, a pinch, the zoom buttons. `programmatic` covers our own moves
@@ -467,6 +481,33 @@ export default function MapView({
     });
     map.current.on("zoomstart", () => {
       if (!programmatic.current) touched.current = true;
+    });
+    // The zoom buttons, with a memory. Leaflet ignores a zoom asked for while
+    // its zoom animation is running, so a burst of presses from a thumb lost
+    // most of its steps (seven taps, three steps). Each press now advances a
+    // pending target, and the end of one animation starts the next — the
+    // map ends up where the count of presses says.
+    const m = map.current;
+    const step = (delta: number) => {
+      const from = pendingZoom.current ?? m.getZoom();
+      const target = Math.max(m.getMinZoom(), Math.min(m.getMaxZoom(), from + delta));
+      pendingZoom.current = target;
+      m.setZoom(target, { animate: MOTION });
+    };
+    const QueuedZoom = L.Control.Zoom.extend({
+      _zoomIn(e: MouseEvent) {
+        step(e.shiftKey ? 3 : 1);
+      },
+      _zoomOut(e: MouseEvent) {
+        step(e.shiftKey ? -3 : -1);
+      },
+    }) as unknown as new (options?: L.Control.ZoomOptions) => L.Control.Zoom;
+    new QueuedZoom({ position: "topleft" }).addTo(m);
+    m.on("zoomend", () => {
+      const target = pendingZoom.current;
+      if (target !== null && target !== m.getZoom()) m.setZoom(target, { animate: MOTION });
+      else pendingZoom.current = null;
+      setCapped(m.getZoom() >= MAX_ZOOM);
     });
     // "Wisconsin": the way back to the statewide frame, under the zoom
     // buttons — the zoom control alone offers no return once a search or a
@@ -662,6 +703,10 @@ export default function MapView({
     setArmed(true);
   }
 
+  // The hand-off at the zoom cap: the selected creamery's own maps link, the
+  // same one the panel's Contact block carries.
+  const capLink = selectedId ? mapsHref(creameries.find((c) => c.id === selectedId)) : null;
+
   return (
     <div
       className="map-wrap"
@@ -672,17 +717,31 @@ export default function MapView({
       <p className="sr-only">
         Pins are not keyboard stops; the list beside the map has every creamery.
       </p>
-      <div className="map" ref={host} />
+      <div className="map" id="creamery-map" ref={host} />
       {!armed && (
         <p className="map-hint" aria-hidden="true">
           Tap the map to move it
         </p>
       )}
-      {/* Why the map just moved on its own: "13 creameries here — zooming in".
-          Always mounted (a live region announces changes, not arrivals);
-          styles.css hides it while empty. */}
+      {/* Why the map just moved on its own ("13 creameries here — zooming
+          in"), or, at the cap, that it goes no closer and where to for
+          streets. Always mounted (a live region announces changes, not
+          arrivals); styles.css hides it while empty. */}
       <p className="map-hint map-zoom-hint" role="status">
-        {hint}
+        {hint ??
+          (capped ? (
+            <>
+              As close as the census map goes
+              {capLink && (
+                <>
+                  {" · "}
+                  <a href={capLink} target="_blank" rel="noopener noreferrer">
+                    Open in Maps
+                  </a>
+                </>
+              )}
+            </>
+          ) : null)}
       </p>
       {/* The pin chooser. Escape stops here: the app's own Escape (close the
           panel) is not what the key meant, and focus goes back to the map. */}

@@ -1509,6 +1509,14 @@ export default function App() {
         <a className="skip-link" href="#main" onClick={skipTo("#main")}>
           Skip to the {view === "map" ? "creamery list" : view === "cheeses" ? "cheese catalog" : "cheese board"}
         </a>
+        {/* The map's own controls sit after the whole list in the Tab order;
+            this lands on the map itself (arrow keys pan it, + and − zoom).
+            Only while the map is on screen — a phone shows one pane. */}
+        {view === "map" && (!narrow || mobilePane === "map") && (
+          <a className="skip-link" href="#creamery-map" onClick={skipTo("#creamery-map")}>
+            Skip to the map
+          </a>
+        )}
         <a className="skip-link" href="#colophon" onClick={skipTo("#colophon")}>
           Skip to about and sources
         </a>

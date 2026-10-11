@@ -10,6 +10,7 @@ import {
   safeHref,
 } from "../data";
 import { currentShareUrl, hasShareSheet, shareLink } from "../share";
+import { mapsHref } from "../maps";
 import LogoMark from "./LogoMark";
 
 // Chips beyond this fold behind the "browse all" link to the catalog view —
@@ -79,13 +80,8 @@ export default function CreameryDetail({
   const editions = groupAwards(awards);
   const firsts = awards.filter((a) => a.placement === 1).length;
   const website = safeHref(creamery.website);
-  // The address is something to go to, not only to read: a maps search that
-  // opens the phone's maps app (or the web) with the plant's street address.
-  const mapsHref = creamery.address
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-        `${creamery.address}, ${creamery.city}, WI`,
-      )}`
-    : null;
+  // The address is something to go to, not only to read (maps.ts).
+  const mapsUrl = mapsHref(creamery);
   // The pin stands on the home plant and Contact describes it; a company with
   // other licensed plants says so, so a reader near Platteville learns that
   // Emmi Roth is there too without being sent to Monroe.
@@ -179,9 +175,9 @@ export default function CreameryDetail({
             The {creamery.city} plant is pinned; also licensed in {listOf(otherPlantCities)}.
           </p>
         )}
-        {mapsHref && (
+        {mapsUrl && (
           <p>
-            <a className="maps-link" href={mapsHref} target="_blank" rel="noopener noreferrer">
+            <a className="maps-link" href={mapsUrl} target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 2.5a6.3 6.3 0 0 0-6.3 6.3c0 4.6 5 11.2 6.3 12.7 1.3-1.5 6.3-8.1 6.3-12.7A6.3 6.3 0 0 0 12 2.5zm0 8.9a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z" />
               </svg>

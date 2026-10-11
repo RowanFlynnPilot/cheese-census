@@ -648,9 +648,9 @@ input:focus-visible {
 
 /* Chromium focuses an SVG path on a pointer press, and its default ring is a
    rectangle around the county's bounding box — an orange frame across half
-   the state after a county tap. The county is not keyboard-focusable (no
-   tabindex), so this only ever drops a pointer's ring; the active county
-   shows itself by its fill. */
+   the state after a county tap. The counties are out of the Tab order
+   (tabindex -1, set in MapView.tsx), so this only ever drops a pointer's
+   ring; the active county shows itself by its fill. */
 .leaflet-overlay-pane path:focus:not(:focus-visible) {
   outline: none;
 }
@@ -3268,9 +3268,31 @@ main.viewport {
 }
 
 /* The transient "N creameries here — zooming in" label is the tap hint's
-   twin; an empty live region takes no room. */
+   twin; an empty live region takes no room. At the zoom cap it holds a
+   sentence and a link, so it may wrap and the link must take the press. */
+.map-zoom-hint {
+  white-space: normal;
+  text-align: center;
+  max-width: min(24rem, calc(100% - 2rem));
+}
+
 .map-zoom-hint:empty {
   display: none;
+}
+
+/* With the panel open the hint centres in the strip the panel leaves
+   visible instead of under it (the panel is 420px wide on screens that
+   show both; see .detail). */
+@media (min-width: 761px) {
+  .map-pane:has(> .detail) .map-zoom-hint {
+    left: calc((100% - 420px) / 2);
+  }
+}
+
+.map-zoom-hint a {
+  color: inherit;
+  pointer-events: auto;
+  text-underline-offset: 0.15em;
 }
 
 /* "Open in Maps" and the phone number beside the address: the two things a
