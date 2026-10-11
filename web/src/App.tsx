@@ -1370,7 +1370,9 @@ export default function App() {
       remove: () => setSort("name"),
     });
   }
-  const activeFilters = mapChips.length;
+  // What the phone's fold holds — the county and the sort. The store and award
+  // toggles sit beside Near me in the open: the three things a visitor asks.
+  const foldedActive = mapChips.filter((chip) => chip.key === "county" || chip.key === "sort").length;
   const foldFilters = narrow && !filtersOpen;
 
   // Once located, the list says what "nearest first" came to — the sort select
@@ -1652,18 +1654,19 @@ export default function App() {
                   spellCheck={false}
                   enterKeyHint="search"
                 />
-                {/* Phones only (styles.css hides it wider): the county, sort and
-                    checkboxes unfold beneath on demand, the count says how many
-                    are set so a short list never reads as a small census. */}
+                {/* Phones only (styles.css hides it wider): the county and the
+                    sort unfold beneath on demand — the button names what it
+                    holds — and the count says how many are set, so a short
+                    list never reads as a small census. */}
                 <button
                   type="button"
-                  className={`facets-toggle${activeFilters ? " is-active" : ""}`}
+                  className={`facets-toggle${foldedActive ? " is-active" : ""}`}
                   aria-expanded={!foldFilters}
-                  aria-controls="map-facets"
+                  aria-controls="map-facets map-toggles"
                   onClick={() => setFiltersOpen((o) => !o)}
                 >
-                  Filters &amp; sort
-                  {activeFilters > 0 && <span className="facets-count">{activeFilters}</span>}
+                  County &amp; sort
+                  {foldedActive > 0 && <span className="facets-count">{foldedActive}</span>}
                   <svg className="chev" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2.4" />
                   </svg>
@@ -1727,27 +1730,10 @@ export default function App() {
                     <option value="county">Sort: County</option>
                   </select>
                 </div>
-                <div className="filter-toggles">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={retailOnly}
-                      onChange={(e) => setRetailOnly(e.target.checked)}
-                    />
-                    Retail store
-                  </label>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={awardedOnly}
-                      onChange={(e) => setAwardedOnly(e.target.checked)}
-                    />
-                    Award winners
-                  </label>
-                </div>
               </div>
-              {/* "Near me" is a sort, so it has its own row with what it came
-                  to. The reader's position stays in this browser: it sorts the
+              {/* "Near me" is a sort, so it sits on the sort row (styles.css
+                  lays the filters out as a grid), with what it came to beneath.
+                  The reader's position stays in this browser: it sorts the
                   list and draws one dot, and is never stored or shared. */}
               <div className="locate-row">
                 <button
@@ -1776,6 +1762,28 @@ export default function App() {
                     Your location isn&rsquo;t available here — pick a county above instead.
                   </p>
                 )}
+              </div>
+              {/* The two narrowings a visitor wants: in the open on every
+                  size, beside Near me on a phone. */}
+              <div className="map-facets" id="map-toggles">
+                <div className="filter-toggles">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={retailOnly}
+                      onChange={(e) => setRetailOnly(e.target.checked)}
+                    />
+                    Retail store
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={awardedOnly}
+                      onChange={(e) => setAwardedOnly(e.target.checked)}
+                    />
+                    Award winners
+                  </label>
+                </div>
               </div>
               {query.trim() && data && shown.length > 0 && (
                 <p className="result-strip" role="status" tabIndex={-1}>

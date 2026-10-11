@@ -13,10 +13,10 @@ async function loaded(page: Page) {
   await expect(page.locator(".creamery-row")).toHaveCount(88);
 }
 
-/** Phones fold the county, sort and checkboxes behind one button. */
+/** Phones fold the county and the sort behind one button. */
 async function unfold(page: Page, testInfo: TestInfo) {
   if (testInfo.project.name === "phone") {
-    await page.getByRole("button", { name: /Filters & sort/ }).click();
+    await page.getByRole("button", { name: /County & sort/ }).click();
   }
 }
 

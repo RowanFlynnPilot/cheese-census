@@ -19,6 +19,9 @@ const WISCONSIN = L.latLngBounds([42.3, -93.1], [47.4, -86.1]);
 // Keep in step with `.detail { width: min(420px, 100%) }` in styles.css.
 const DETAIL_WIDTH = 420;
 const MIN_VISIBLE_MAP = 140;
+// Room kept around a selected pin inside the strip the panel leaves visible:
+// a thumb's hit box plus a little, so the pin never sits on the edge.
+const PIN_MARGIN = 56;
 
 // The pin stays a 12 px dot (18 selected); its hit box is what a thumb needs.
 const COARSE = window.matchMedia("(pointer: coarse)").matches;
@@ -219,12 +222,12 @@ export default function MapView({
   awardsRef.current = awards;
   const countyLayer = useRef<L.GeoJSON | null>(null);
   const [armed, setArmed] = useState(!COOPERATIVE);
-  // The reader moved the map by hand (drag, pinch, the zoom buttons) — then a
-  // refit would take a view they chose. Our own moves set `programmatic`.
+  // The map shows a frame the reader chose — a drag, a pinch, the zoom
+  // buttons, a cluster tap, Near me — and a refit would take it from them.
+  // Our own moves (the overview, the pan that shows a selected pin) set
+  // `programmatic` instead and are ours to undo.
   const touched = useRef(false);
   const programmatic = useRef(false);
-  // The filtered set changed while a panel was open: refit when it closes.
-  const pendingFrame = useRef(false);
   const [hint, setHint] = useState<string | null>(null);
   const hintTimer = useRef<number | null>(null);
   const [chooser, setChooser] = useState<{ at: L.LatLng; rows: Creamery[] } | null>(null);
@@ -286,7 +289,6 @@ export default function MapView({
       }
     });
     touched.current = false;
-    pendingFrame.current = false;
   }
 
   /** A tap that lands on more than one pin's hit box opens a chooser instead
@@ -539,6 +541,7 @@ export default function MapView({
           if (target > base && (fewest <= 1 || fewest * 2 <= under.length)) {
             flash(`${under.length} creameries here — zooming in`);
             move(() => m.setView(pin, target, { animate: MOTION }));
+            touched.current = true; // the reader asked for this town
             return;
           }
           openChooser(pin, under);
@@ -547,9 +550,8 @@ export default function MapView({
       markers.current.set(creamery.id, marker);
     }
     // Refit as filters narrow the set, but never yank the map while the reader is
-    // looking at a particular creamery — remember to, for when the panel closes.
+    // looking at a particular creamery; the close refits if the frame is ours.
     if (!selection.current) frame();
-    else pendingFrame.current = true;
   }, [creameries, tooltips, awards]);
 
   // The county in force reads as the one filled shape; the rest stay lines.
@@ -568,34 +570,36 @@ export default function MapView({
       marker.setZIndexOffset(id === selectedId ? 1000 : 0);
     }
     if (!selectedId) {
-      // Closing the panel: if the list changed underneath it (a search cleared
-      // while a creamery was open) the map still shows the old answer, so
-      // refit — unless the reader moved the map by hand, which is theirs to
-      // keep. A centre that left the state is always re-framed.
+      // Closing the panel is the way back: a frame of our own making (the
+      // overview, the pan that showed the pin, a refit the list asked for
+      // while the panel was up) is refitted, so the reader returns to the
+      // state and not to wherever the pan left it. A frame the reader chose
+      // is theirs to keep — unless they dragged it out of the state.
       if (!map.current) return;
-      if (!WISCONSIN.contains(map.current.getCenter()) || (pendingFrame.current && !touched.current)) {
-        frame();
-      }
-      pendingFrame.current = false;
+      if (!touched.current || !WISCONSIN.contains(map.current.getCenter())) frame();
     } else if (map.current) {
       closeChooser();
       const marker = markers.current.get(selectedId);
       if (marker) {
-        // Selecting a creamery opens the detail panel over the right of the map, so
-        // a plain panTo would park the pin underneath it. Shift the centre by half
-        // the panel width to land the pin in the strip that stays visible — unless
-        // the panel covers nearly everything, as it does on a narrow screen.
+        // The panel covers the right of the map, so the pin has to land in the
+        // strip that stays visible — and only by as much as that takes. A pin
+        // already in the strip does not move the map, and a southern pin at
+        // the overview no longer pulls Illinois into the frame, as centring
+        // it in the strip did. On a narrow screen the panel covers nearly
+        // everything; the pin is simply centred, for when the sheet closes.
         const width = map.current.getSize().x;
         const panel = Math.min(DETAIL_WIDTH, width);
-        const zoom = map.current.getZoom();
-        const centre =
-          width - panel >= MIN_VISIBLE_MAP
-            ? map.current.unproject(
-                map.current.project(marker.getLatLng(), zoom).add([panel / 2, 0]),
-                zoom,
-              )
-            : marker.getLatLng();
-        move(() => map.current!.panTo(centre, { animate: MOTION }));
+        if (width - panel >= MIN_VISIBLE_MAP) {
+          move(() =>
+            map.current!.panInside(marker.getLatLng(), {
+              paddingTopLeft: [PIN_MARGIN, PIN_MARGIN],
+              paddingBottomRight: [panel + PIN_MARGIN, PIN_MARGIN],
+              animate: MOTION,
+            }),
+          );
+        } else {
+          move(() => map.current!.panTo(marker.getLatLng(), { animate: MOTION }));
+        }
       }
     }
   }, [selectedId]);
@@ -614,6 +618,7 @@ export default function MapView({
     }).addTo(map.current);
     const m = map.current;
     move(() => m.setView([here.lat, here.lng], Math.max(m.getZoom(), 9), { animate: MOTION }));
+    touched.current = true; // the reader asked to be here
   }, [here]);
 
   /** The first tap on an embedded phone map arms dragging (this tap itself

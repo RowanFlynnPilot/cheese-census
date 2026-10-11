@@ -393,12 +393,40 @@ input:focus-visible {
   background: var(--cream);
 }
 
+/* The filters are grouped by the reader's question, not by control type: the
+   search; the chips in force; the county (the big decision, a row of its
+   own); the ordering — the Sort select with "Near me", which is a sort,
+   beside it; then the two toggles a visitor wants. A grid with the wrapper
+   rows dissolved (display: contents) lets the DOM order stay the reading
+   order on every size. Phones rearrange below. */
 .filters {
   padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--rule);
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.55rem 0.5rem;
+}
+
+.filters > *,
+.filter-row select,
+.locate-note {
+  grid-column: 1 / -1;
+}
+
+.map-facets,
+.filter-row,
+.locate-row {
+  display: contents;
+}
+
+.filter-row select:last-child {
+  grid-column: 1;
+}
+
+.near-me {
+  grid-column: 2;
+  align-self: stretch;
 }
 
 .filters input,
@@ -412,19 +440,6 @@ input:focus-visible {
   color: var(--ink);
   width: 100%;
   min-width: 0;
-}
-
-.filter-row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.filter-row select:first-child {
-  flex: 1.4;
-}
-
-.filter-row select:last-child {
-  flex: 1;
 }
 
 .filter-toggles {
@@ -2989,22 +3004,11 @@ main.viewport {
   min-width: 0;
 }
 
-/* The county, sort and checkbox controls: a flat run of rows on desktop, a
-   fold on phones (the [hidden] attribute does the folding). */
-.map-facets {
-  display: contents;
-}
-
+/* The county and sort row folds on phones (the [hidden] attribute does the
+   folding; the grid wrapper above is display: contents, which [hidden]'s
+   own display: none must outrank). */
 .map-facets[hidden] {
   display: none;
-}
-
-/* "Near me" is a sort, so it has a row of its own, with what it came to. */
-.locate-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.3rem 0.7rem;
 }
 
 /* Once located it reads as the active sort; pressed again it turns off. */
@@ -3808,9 +3812,30 @@ main.viewport {
     padding: 0.18rem 0.55rem;
   }
 
+  /* The phone's first screen: the search with the fold button, the chips,
+     then one row of the visitor's asks — Near me beside the store and award
+     toggles (which wrap under each other if the phone is narrow); the county
+     and the sort unfold above them. `dense` lets the toggles, which follow
+     the Near me row's status line in the DOM, fill the space beside the pill. */
   .filters {
     padding: 0.6rem 0.75rem;
-    gap: 0.4rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-auto-flow: row dense;
+    gap: 0.4rem 0.6rem;
+  }
+
+  .filter-row select:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .near-me {
+    grid-column: 1;
+    align-self: center; /* the toggles may stack beside it; the pill stays a pill */
+  }
+
+  .filter-toggles {
+    grid-column: 2;
+    gap: 0.35rem 0.6rem;
   }
 
   /* Small screens keep the essentials; the almanac line and source roll are
