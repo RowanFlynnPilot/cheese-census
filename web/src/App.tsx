@@ -104,7 +104,8 @@ function fmtMiles(miles: number): string {
 }
 
 /** Words so common in creamery and cheese names that matching one says
- *  little: "hooks chese" is near every "… Cheese …" name on its second word. */
+ *  little: a typo like "hooks chese" is near every "… Cheese …" name on its
+ *  second word. */
 const COMMON_WORDS = new Set([
   "cheese", "cheeses", "dairy", "creamery", "farm", "farms", "foods", "company",
   "co", "inc", "llc", "cooperative", "the", "of", "and",
@@ -128,8 +129,8 @@ function dice(a: string, b: string): number {
 /** How near a typed phrase is to a name: the whole phrase against the whole
  *  name, or each typed word against its best word of the name, averaged —
  *  so "hookz" finds Hook's Cheese Company and "habanro" finds Habanero
- *  Jack, and "hooks chese" finds Hook's rather than every name with
- *  "Cheese" in it (a match on a common word counts half; taking the best
+ *  Jack, and a typo like "hooks chese" finds Hook's rather than every name
+ *  with "Cheese" in it (a match on a common word counts half; taking the best
  *  single word had every such name tie, and the alphabet break the tie).
  *  Both strings arrive folded. */
 function nearness(query: string, text: string): number {

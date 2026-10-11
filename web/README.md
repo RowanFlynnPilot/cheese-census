@@ -186,6 +186,13 @@ says so ("County & sort") while Near me and the two toggles sit in the
 open. The legend states the pin rule ("Award winner · bigger with more
 wins") instead of hiding it in a hover title.
 
+The masthead's nameplate is set like a newspaper's flag: Fraunces at
+display size (2.5rem, 1.65rem on phones) and weight 800, terminals
+softened all the way (`SOFT` 100) with the wonky alternates on, the wedge
+mark at its cap height, the tagline on its baseline, and the paper's
+thick-over-thin rule in the wedge's gold under it (on the almanac line,
+which phones drop).
+
 The fifth critique (28/40) caught two regressions from that pass and two
 older faults. A press on + at the cap had left a pending zoom equal to the
 zoom in hand, which never ended and undid the next refit ("Wisconsin", Near
@@ -211,7 +218,8 @@ chips over the map. Contact says in sight that the number is the business
 line on the state licence and, for a creamery listed with a retail store,
 that hours are not in the census. "Did you mean" scores each typed word
 against its best word of a name (a match on a common word counts half), so
-"Hooks chese" offers Hook's instead of every name with "Cheese" in it.
+a reader's typo like "Hooks chese" offers Hook's instead of every name with
+"Cheese" in it.
 
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable

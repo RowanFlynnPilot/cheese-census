@@ -229,22 +229,26 @@ input:focus-visible {
   flex-wrap: wrap;
 }
 
+/* The wedge mark rides the wordmark at its cap height. */
 .masthead .mark {
-  width: 24px;
-  height: 24px;
+  width: 2.1rem;
+  height: 2.1rem;
   align-self: center;
   flex: none;
 }
 
+/* The nameplate: Fraunces at display size and full weight, its terminals
+   softened all the way and the wonky alternates on (the leaning n and u) —
+   the one line that is the paper's own voice, set like a newspaper's flag
+   with the tagline on its baseline. */
 .masthead h1 {
   font-family: var(--display);
-  font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -0.025em;
   margin: 0;
-  /* Fraunces' own character: softened terminals and the wonky alternates
-     (the leaning n and u) on the one line that is the paper's voice. */
-  font-variation-settings: "SOFT" 30, "WONK" 1;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
   text-wrap: balance;
 }
 
@@ -270,16 +274,30 @@ input:focus-visible {
   font-size: 0.78rem;
 }
 
-/* The census, by the numbers — an almanac line inside the masthead. */
+/* The census, by the numbers — an almanac line inside the masthead, under
+   the paper's thick-over-thin rule (the newspaper double rule that sits
+   under every WPR flag), in the wedge's gold. */
 .stats-line {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem 1.15rem;
-  margin: 0.35rem 0 0.65rem;
+  margin: 0.55rem 0 0.65rem;
+  padding-top: 0.5rem;
+  border-top: 3px solid var(--gold);
   /* The row's own height while the tables load, so the tabs never jump. */
   min-height: 1.15rem;
   font-size: 0.78rem;
   color: rgba(246, 242, 233, 0.95);
+}
+
+.stats-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2px;
+  border-top: 1px solid var(--gold);
 }
 
 .stats-line b {
@@ -3804,12 +3822,12 @@ main.viewport {
   }
 
   .masthead .mark {
-    width: 18px;
-    height: 18px;
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .masthead h1 {
-    font-size: 1.2rem;
+    font-size: 1.65rem;
   }
 
   /* The one line kept below the legibility floor: it is attribution, not
