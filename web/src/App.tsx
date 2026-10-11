@@ -103,25 +103,49 @@ function fmtMiles(miles: number): string {
   return miles < 10 ? `${miles.toFixed(1)} mi` : `${Math.round(miles)} mi`;
 }
 
-/** How near a typed word is to a name: character-bigram overlap (Dice),
- *  taken against the whole name and against each of its words, so "hookz"
- *  finds Hook's Cheese Company and "habanro" finds Habanero Jack. Both
- *  strings arrive folded. */
-function nearness(query: string, text: string): number {
+/** Words so common in creamery and cheese names that matching one says
+ *  little: "hooks chese" is near every "… Cheese …" name on its second word. */
+const COMMON_WORDS = new Set([
+  "cheese", "cheeses", "dairy", "creamery", "farm", "farms", "foods", "company",
+  "co", "inc", "llc", "cooperative", "the", "of", "and",
+]);
+
+/** Character-bigram overlap (Dice) of two folded strings. */
+function dice(a: string, b: string): number {
   const grams = (s: string) => {
     const set = new Set<string>();
     const padded = ` ${s} `;
     for (let i = 0; i < padded.length - 1; i++) set.add(padded.slice(i, i + 2));
     return set;
   };
-  const qg = grams(query);
-  const dice = (candidate: string) => {
-    const ng = grams(candidate);
-    let hits = 0;
-    for (const g of qg) if (ng.has(g)) hits++;
-    return (2 * hits) / (qg.size + ng.size);
-  };
-  return Math.max(dice(text), ...text.split(/\s+/).filter(Boolean).map(dice));
+  const ag = grams(a);
+  const bg = grams(b);
+  let hits = 0;
+  for (const g of ag) if (bg.has(g)) hits++;
+  return (2 * hits) / (ag.size + bg.size);
+}
+
+/** How near a typed phrase is to a name: the whole phrase against the whole
+ *  name, or each typed word against its best word of the name, averaged —
+ *  so "hookz" finds Hook's Cheese Company and "habanro" finds Habanero
+ *  Jack, and "hooks chese" finds Hook's rather than every name with
+ *  "Cheese" in it (a match on a common word counts half; taking the best
+ *  single word had every such name tie, and the alphabet break the tie).
+ *  Both strings arrive folded. */
+function nearness(query: string, text: string): number {
+  const words = text.split(/\s+/).filter(Boolean);
+  const typed = query.split(/\s+/).filter(Boolean);
+  if (words.length === 0 || typed.length === 0) return 0;
+  let sum = 0;
+  for (const q of typed) {
+    let best = 0;
+    for (const w of words) {
+      const score = dice(q, w) * (COMMON_WORDS.has(w) ? 0.5 : 1);
+      if (score > best) best = score;
+    }
+    sum += best;
+  }
+  return Math.max(dice(query, text), sum / typed.length);
 }
 
 type ViewKey = "map" | "cheeses" | "board";
