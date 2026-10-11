@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Creamery } from "../types";
-import { labelRules, leafletLayer, paintRules, type LabelRule } from "protomaps-leaflet";
+import { labelRules, leafletLayer, paintRules, ShieldSymbolizer, type LabelRule } from "protomaps-leaflet";
 import { namedFlavor, type Flavor } from "@protomaps/basemaps";
 import wisconsin from "../wisconsin.json";
 import counties from "../counties.json";
@@ -63,13 +63,17 @@ const DATA_ZOOM = 11;
 const MAX_ZOOM = 14;
 
 /** The light flavor recoloured into the census's own palette: cream land,
- *  a tinted water, warm hairline roads, ink labels with cream halos. */
+ *  a tinted water, pencil-grey roads, ink labels with cream halos. The
+ *  roads were white at first, the light flavor's idiom — on cream that is
+ *  1.1:1 and the map read as polygons from zoom 9 up. protomaps-leaflet
+ *  paints every road kind with `major` (no casings), so one warm grey at
+ *  2.1:1 against the cream draws the whole network. */
 function wprFlavor(light: Flavor): Flavor {
   const cream = "#f6f2e9";
   const paper = "#fbf9f4";
   const rule = "#e3ddd0";
   const minor = "#f0ebe1";
-  const major = "#ffffff";
+  const major = "#b3a995";
   const casingKeys = Object.keys(light).filter((k) => k.endsWith("_casing") || k.endsWith("_casing_early") || k.endsWith("_casing_late"));
   const overrides: Record<string, unknown> = {
     background: cream,
@@ -370,6 +374,35 @@ export default function MapView({
     const flavor = wprFlavor(namedFlavor("light"));
     const labels = labelRules(flavor, "en");
     withFont(labels, '"Public Sans", sans-serif');
+    // Highway shields from zoom 8: "is it on the way?" is the question a
+    // visitor asks of a map, and a road network alone cannot say which road
+    // is which. Placed after the place names, which keep priority. A route
+    // the data lists under two numbers ("I 39;US 51") would set as one
+    // string, so those are left to the road's own name label.
+    const shields: LabelRule = {
+      dataLayer: "roads",
+      minzoom: 8,
+      symbolizer: new ShieldSymbolizer({
+        labelProps: ["ref"],
+        font: '600 11px "Public Sans", sans-serif',
+        fill: "#1d2321",
+        background: "#fbf9f4",
+        padding: 3,
+      }),
+      filter: (zoom, feature) => {
+        const ref = feature.props.ref;
+        if (typeof ref !== "string" || ref.length === 0 || ref.length > 7) return false;
+        return feature.props.kind === "highway" || (zoom >= 10 && feature.props.kind === "major_road");
+      },
+    };
+    let afterPlaces = labels.length;
+    for (let i = labels.length - 1; i >= 0; i--) {
+      if (labels[i].dataLayer === "places") {
+        afterPlaces = i + 1;
+        break;
+      }
+    }
+    labels.splice(afterPlaces, 0, shields);
     leafletLayer({
       url: `${import.meta.env.BASE_URL}map/wisconsin.pmtiles`,
       paintRules: paintRules(flavor),
