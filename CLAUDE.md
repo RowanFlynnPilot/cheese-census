@@ -432,6 +432,20 @@ asserts the host answers `Range` with 206). OpenStreetMap is credited on the
 map, in the colophon and in About. Details and the re-extract command are in
 web/README.md.
 
+The fourth map critique (30/40) led with arrival: a deep link to a southern
+creamery had framed Illinois, and closing the panel left the map there. A
+selected pin is now panned inside the visible strip only as far as that
+takes, and a close refits the overview whenever the frame was ours rather
+than the reader's. The basemap's roads went from white to pencil grey with
+route shields from zoom 8 (`protomaps-leaflet` paints every road kind with
+the flavor's `major`); the zoom cap says so and hands off to Open in Maps
+(`web/src/maps.ts`, shared with the panel); the zoom buttons keep count of
+presses; the 72 county outlines, which Chromium had made inert Tab stops,
+carry `tabindex="-1"` and a "Skip to the map" link lands on the map; the
+sidebar groups the county, then Sort with Near me, then the store and award
+toggles (phones fold only "County & sort"); and the legend states the pin
+rule. Details in web/README.md.
+
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 "…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That

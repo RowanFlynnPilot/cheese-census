@@ -91,7 +91,8 @@ while the map container has focus). The empty state says when the filters,
 not the word, hid the matches ("4 match “Marathon” statewide, none in Burnett
 County · Show all 4"), and "Did you mean" names need 0.45 or 70% of the best
 score before they are offered. Phones fold the county, sort and checkboxes
-behind "Filters & sort" as the catalog does, grow the sheet's tappable chips
+behind one button as the catalog does (since the fourth critique, below,
+"County & sort", with the two toggles in the open), grow the sheet's tappable chips
 and Contact links to thumb size, and the 44px zoom-button rule now outranks
 Leaflet's 30px (Leaflet's stylesheet arrives with the lazy map chunk, after
 `styles.css`). Contact carries the home plant's phone as a `tel:` link
@@ -159,6 +160,31 @@ pmtiles extract https://build.protomaps.com/20261009.pmtiles public/map/wisconsi
 `pmtiles show public/map/wisconsin.pmtiles` prints the bounds, zoom range and
 OpenStreetMap timestamp to check. OpenStreetMap is credited on the map's
 attribution control, in the colophon and in the About panel.
+
+The fourth critique (30/40: the data and the chrome were sound, two
+framings were not) led with arrival. A deep link to a southern creamery
+panned the pin to the centre of the strip beside the panel, which at the
+overview put Cedar Rapids and Peoria on screen with Wisconsin's edge at the
+top, and closing the panel left the map there; the pin is now panned inside
+the strip only as far as that takes, and closing refits the overview
+whenever the frame was ours rather than the reader's (a drag, a zoom, a
+cluster tap, Near me) or the reader left the state. The basemap's roads were
+white on cream (1.1:1), so zoom 9 up read as polygons; they are a pencil
+grey now (`protomaps-leaflet` paints every road kind with the flavor's
+`major`), with route shields from zoom 8, and at the cap the zoom label says
+"As close as the census map goes · Open in Maps" with the selected
+creamery's own link (`maps.ts`, shared with the panel). The zoom buttons
+keep count of presses (Leaflet drops a zoom asked for during its animation;
+seven taps had moved three steps). Leaflet's tooltip focus listeners had
+made the 72 county outlines Tab stops in Chromium, inert and ringed in
+orange; they carry `tabindex="-1"` now and a "Skip to the map" link lands
+on the map itself. The sidebar groups by the reader's question — the county
+on its own row, the Sort select with Near me beside it, then the store and
+award toggles — as a grid with the wrapper rows dissolved, so DOM and
+reading order agree; on phones the fold holds the county and the sort and
+says so ("County & sort") while Near me and the two toggles sit in the
+open. The legend states the pin rule ("Award winner · bigger with more
+wins") instead of hiding it in a hover title.
 
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
