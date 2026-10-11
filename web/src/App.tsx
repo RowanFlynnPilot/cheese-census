@@ -982,6 +982,13 @@ export default function App() {
       } else if (data.creameries.some((c) => c.id === slug)) {
         setView("map");
         setSelectedId(slug);
+        // The list shows its row too, not Agropur at the top; the panel
+        // itself takes focus.
+        requestAnimationFrame(() => {
+          document
+            .querySelector<HTMLElement>(`[data-cid="${CSS.escape(slug)}"]`)
+            ?.scrollIntoView({ block: "center" });
+        });
       }
     };
     apply(deepLink);
@@ -1908,6 +1915,7 @@ export default function App() {
                   onCounty={(name) => setCounty(name === county ? "" : name)}
                   countyCounts={countyCounts}
                   awards={awardCounts}
+                  arrival={deepLink && !deepLink.includes("--") ? deepLink : null}
                 />
               </Suspense>
             )}

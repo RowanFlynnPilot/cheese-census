@@ -174,6 +174,9 @@ interface Props {
   countyCounts: Map<string, number>;
   /** Contest awards per creamery: award winners get a larger, ringed pin. */
   awards: Map<string, number>;
+  /** The creamery the page was opened on (an article's deep link), if any:
+   *  its first selection frames the town rather than nudging the overview. */
+  arrival: string | null;
 }
 
 /** Pin size by award count: a graduated symbol, three steps, legible at 12 px. */
@@ -205,8 +208,11 @@ export default function MapView({
   onCounty,
   countyCounts,
   awards,
+  arrival: arrivedAt,
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
+  // Spent on the first selection it names; a later hash change is a plain selection.
+  const arrival = useRef(arrivedAt);
   const map = useRef<L.Map | null>(null);
   const layer = useRef<L.LayerGroup | null>(null);
   const markers = useRef<Map<string, L.Marker>>(new Map());
@@ -745,18 +751,33 @@ export default function MapView({
         // the overview no longer pulls Illinois into the frame, as centring
         // it in the strip did. On a narrow screen the panel covers nearly
         // everything; the pin is simply centred, for when the sheet closes.
-        const width = map.current.getSize().x;
+        const m = map.current;
+        const width = m.getSize().x;
         const panel = Math.min(DETAIL_WIDTH, width);
-        if (width - panel >= MIN_VISIBLE_MAP) {
+        const strip = width - panel >= MIN_VISIBLE_MAP;
+        if (arrival.current === selectedId) {
+          // Arrival by deep link: the reader came for this place, not for
+          // the state, and has seen no frame yet — so the town, at zoom 10,
+          // with the pin in the middle of the strip (the overview's minimal
+          // pan would leave it tucked in the strip's corner). Ours to undo:
+          // closing the panel refits the overview.
+          arrival.current = null;
+          const zoom = Math.max(m.getZoom(), 10);
+          const centre = strip
+            ? m.unproject(m.project(marker.getLatLng(), zoom).add([panel / 2, 0]), zoom)
+            : marker.getLatLng();
+          move(() => m.setView(centre, zoom, { animate: false }));
+          touched.current = false;
+        } else if (strip) {
           move(() =>
-            map.current!.panInside(marker.getLatLng(), {
+            m.panInside(marker.getLatLng(), {
               paddingTopLeft: [PIN_MARGIN, PIN_MARGIN],
               paddingBottomRight: [panel + PIN_MARGIN, PIN_MARGIN],
               animate: MOTION,
             }),
           );
         } else {
-          move(() => map.current!.panTo(marker.getLatLng(), { animate: MOTION }));
+          move(() => m.panTo(marker.getLatLng(), { animate: MOTION }));
         }
       }
     }
