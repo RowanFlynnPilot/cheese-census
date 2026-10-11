@@ -3593,9 +3593,10 @@ main.viewport {
     display: grid;
     place-items: center;
     position: absolute;
-    /* Under Leaflet's zoom control (10 px margin, two 44 px buttons and
-       borders) and the "Wisconsin" bar (10 px margin, 44 px and borders). */
-    top: calc(10px + 92px + 10px + 48px + 10px);
+    /* Bottom-left, above the "Wisconsin" bar (44 px and borders, on the
+       flip pill's baseline): the top-left column of controls had covered
+       the state's northwest, pins included. */
+    bottom: calc(1.1rem + 46px + 8px + env(safe-area-inset-bottom, 0px));
     left: 10px;
     z-index: 900;
     width: 44px;
@@ -3934,13 +3935,22 @@ main.viewport {
     font-size: 0.86rem;
   }
 
-  /* The filters in force, over the map pane, just above the flip pill: a
-     county tapped on the map shows its chip and its × where the tap was. */
+  /* "Wisconsin" sits bottom-left on the flip pill's baseline (MapView.tsx
+     places the control there on phones); Leaflet's own 10 px margins give
+     way to the pill's. */
+  .map-wrap .leaflet-bottom.leaflet-left .map-reset {
+    margin-left: 10px;
+    margin-bottom: calc(1.1rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* The filters in force, over the map pane, above the pill and the
+     bottom-left controls: a county tapped on the map shows its chip and
+     its × where the tap was. */
   .map-chips {
     position: absolute;
     left: 0.6rem;
     right: 0.6rem;
-    bottom: calc(4.6rem + env(safe-area-inset-bottom, 0px));
+    bottom: calc(1.1rem + 46px + 8px + 44px + 10px + env(safe-area-inset-bottom, 0px));
     z-index: 900;
     display: flex;
     flex-wrap: wrap;

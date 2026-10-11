@@ -40,6 +40,14 @@ const SPLIT_MAX_ZOOM = 13;
 const HINT_MS = 1600;
 // Reduced motion covers Leaflet's own zoom, fade and pan animations too.
 const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+// A phone shows one pane and its map controls sit at the bottom, in a
+// thumb's reach and off the state: the zoom buttons bottom-right above the
+// credit line, "Wisconsin" and the locate button bottom-left (styles.css
+// places the latter), the legend alone at the top. A top-left column of
+// controls had covered the state's northwest, with Burnett Dairy's pin
+// under the locate button; fitting the overview clear of it cost a half
+// step of zoom that the pins could not spare.
+const NARROW = window.matchMedia("(max-width: 760px)").matches;
 // Inside an article (the WordPress iframe) on a phone, a one-finger swipe on
 // the map must scroll the article, not pan the map — a full-height map pane
 // would otherwise trap the page. So the map starts un-draggable there and arms
@@ -188,6 +196,13 @@ function pinSize(awards: number, selected: boolean): number {
   return 12;
 }
 
+/** How a frame fits its bounds: even room on a desktop; on a phone, clear
+ *  of the two-line legend at the top and of the pill at the bottom, with
+ *  the sides kept tight so the state takes the width it can. */
+const FIT: L.FitBoundsOptions = NARROW
+  ? { paddingTopLeft: [12, 64], paddingBottomRight: [12, 28] }
+  : { padding: [32, 32] };
+
 const COUNTY_STYLE: L.PathOptions = {
   color: "#3a867c",
   weight: 0.8,
@@ -323,7 +338,7 @@ export default function MapView({
       .filter((p) => WISCONSIN.contains(p));
     move(() => {
       if (inState.length > 1) {
-        m.fitBounds(L.latLngBounds(inState), { padding: [32, 32], maxZoom: 11 });
+        m.fitBounds(L.latLngBounds(inState), { ...FIT, maxZoom: 11 });
       } else if (inState.length === 1) {
         m.setView(inState[0], 10);
       } else {
@@ -346,7 +361,7 @@ export default function MapView({
       pickCounty.current(activeCounty.current);
       return;
     }
-    if (stateBounds.current) move(() => m.fitBounds(stateBounds.current!, { padding: [24, 24] }));
+    if (stateBounds.current) move(() => m.fitBounds(stateBounds.current!, FIT));
     touched.current = false;
   }
 
@@ -630,7 +645,7 @@ export default function MapView({
         step(e.shiftKey ? -3 : -1);
       },
     }) as unknown as new (options?: L.Control.ZoomOptions) => L.Control.Zoom;
-    new QueuedZoom({ position: "topleft" }).addTo(m);
+    new QueuedZoom({ position: NARROW ? "bottomright" : "topleft" }).addTo(m);
     m.on("zoomend", () => {
       zooming.current = false;
       const next = queued.current;
@@ -683,7 +698,7 @@ export default function MapView({
         return bar;
       },
     });
-    new Reset({ position: "topleft" }).addTo(map.current);
+    new Reset({ position: NARROW ? "bottomleft" : "topleft" }).addTo(map.current);
     // The chooser is a popover (below); the browser gives it a popover
     // attribute only where it can honour one.
     if (POPOVER) chooserEl.current?.setAttribute("popover", "auto");
