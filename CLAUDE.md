@@ -446,6 +446,18 @@ sidebar groups the county, then Sort with Near me, then the store and award
 toggles (phones fold only "County & sort"); and the legend states the pin
 rule. Details in web/README.md.
 
+The fifth map critique (28/40) caught two regressions from that pass (a
+pending zoom left at the cap that undid the next refit; the deep-link frame
+holding only at narrow panes) and two older faults (overlapping pin hit
+boxes let the topmost box win a hover or press — the map now resolves the
+pointer to the nearest pin, and the pins are inert; "Wisconsin" framed the
+shown set — it now clears a county filter or fits the state, and a phone's
+map pane carries the filter chips). Our own map moves wait out a running
+zoom animation, which Leaflet would otherwise drop. Contact names the phone
+as the licence's business line in sight and says hours are not in the
+census; "Did you mean" scores typed words against name words with common
+words counting half. Details in web/README.md.
+
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 "…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That

@@ -10,6 +10,7 @@ target_fingerprint: "sha256:b79d678f23399bb327aceab04b289e9f07e7174077472f680449
 target_path: "C:\\Users\\rpfly\\Projects\\cheese-census\\web\\src\\components\\MapView.tsx"
 timestamp: 2026-10-11T03-13-18Z
 slug: web-src-components-mapview-tsx
+closed: true
 ---
 **Method: dual-agent** (A: design-review sub-agent, Playwright captures at desktop, Pixel 7, 375 px and a simulated embed; B: detector sub-agent, CLI scan plus headless Playwright injection. The pane's tab cap blocked a live overlay tab for both.)
 

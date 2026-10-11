@@ -186,6 +186,33 @@ says so ("County & sort") while Near me and the two toggles sit in the
 open. The legend states the pin rule ("Award winner · bigger with more
 wins") instead of hiding it in a hover title.
 
+The fifth critique (28/40) caught two regressions from that pass and two
+older faults. A press on + at the cap had left a pending zoom equal to the
+zoom in hand, which never ended and undid the next refit ("Wisconsin", Near
+me off, a filter change snapped back to zoom 14); a press at the cap or the
+floor now leaves nothing pending, a move of ours clears whatever the
+buttons had, and our own moves wait out a running zoom animation (Leaflet
+drops a `fitBounds` asked mid-animation, which had left Burnett + "Marathon"
+in an empty county). The deep-link fix had held only where the panel covers
+the map; at desktop widths the pin was tucked in the strip's corner with
+Minneapolis centred, so the first selection the page arrives on now frames
+the town at zoom 10 with the pin mid-strip and scrolls the list to its row.
+The older faults: hit boxes overlap wherever pins crowd (a third of the
+overview's dots sit inside a neighbour's 28px box) and the topmost box won
+the hover and the click — pointing at Emmi Roth's dot opened Maple Leaf —
+so the pins are inert to the pointer now and the map resolves every hover
+and press to the nearest pin centre within half a hit box (`pinAt()`), the
+chooser measuring its crowd from the pointer; and "Wisconsin" had framed
+whatever set was shown under a name that promised the state, which on a
+phone left a thumb's miss on a county with no chip in sight and no way
+back — a press now clears a county filter in force (its title says so) or
+fits the state's outline, and a phone showing the map carries the filter
+chips over the map. Contact says in sight that the number is the business
+line on the state licence and, for a creamery listed with a retail store,
+that hours are not in the census. "Did you mean" scores each typed word
+against its best word of a name (a match on a common word counts half), so
+"Hooks chese" offers Hook's instead of every name with "Cheese" in it.
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry
