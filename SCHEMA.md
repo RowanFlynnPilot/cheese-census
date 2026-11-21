@@ -96,6 +96,8 @@ Descriptions are generated, not hand-written — nobody at WPR has time to write
 - Input is the structured record, never scraped DFW prose — the copyright posture stays clean, and any description can be regenerated whenever its record changes.
 - `description_generated` stays `true` until a human touches the text. The queue reports coverage and the generated/edited split, so editing is opportunistic spot-checking, never a launch gate. Whether generated text gets a disclosure treatment on-site is an editorial presentation call the flag makes possible.
 
+The text lives in `data/descriptions/cheeses.json` and `creameries.json` (a creamery's goes to `editorial.summary`), each entry carrying the fingerprint of the facts it was written from, so a changed record is regenerated and an unchanged one is not. `build.py` places the text before overrides; a description for an id the dataset no longer has is build-fatal (`describe.py --prune` drops it).
+
 A cheese with `description: null` simply renders its structured data — missing descriptions are never build-fatal.
 
 ## `build/people.json`

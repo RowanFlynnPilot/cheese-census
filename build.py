@@ -737,6 +737,39 @@ def write_proposals(companies: dict[str, dict], proposals: list[dict]) -> None:
     )
 
 
+# ── Stage 2b: generated descriptions (scripts/describe.py's product) ─────────
+
+DESCRIPTIONS = ROOT / "data" / "descriptions"
+
+
+def apply_descriptions(ds: dict) -> dict:
+    """Fill cheese descriptions and creamery summaries from the committed
+    description tables. Offline and deterministic: describe.py wrote the text
+    once; the build only places it. Runs before overrides, so a human edit in
+    data/overrides/ always wins. An id the dataset no longer has is fatal —
+    a stale table would otherwise rot unnoticed."""
+    cheeses: dict[str, dict] = _read_json(DESCRIPTIONS / "cheeses.json")
+    index = {c.id: i for i, c in enumerate(ds["cheeses"])}
+    for cheese_id, entry in cheeses.items():
+        if cheese_id not in index:
+            fatal(f"description targets unknown cheese id '{cheese_id}' — re-run scripts/describe.py --prune")
+        i = index[cheese_id]
+        ds["cheeses"][i] = ds["cheeses"][i].model_copy(
+            update={"description": entry["text"], "description_generated": True}
+        )
+    creameries: dict[str, dict] = _read_json(DESCRIPTIONS / "creameries.json")
+    index = {c.id: i for i, c in enumerate(ds["creameries"])}
+    for creamery_id, entry in creameries.items():
+        if creamery_id not in index:
+            fatal(f"description targets unknown creamery id '{creamery_id}' — re-run scripts/describe.py --prune")
+        i = index[creamery_id]
+        current = ds["creameries"][i]
+        ds["creameries"][i] = current.model_copy(
+            update={"editorial": current.editorial.model_copy(update={"summary": entry["text"]})}
+        )
+    return ds
+
+
 # ── Stage 3: overrides (hand-edited, always win) ─────────────────────────────
 
 def apply_overrides(ds: dict) -> dict:
@@ -975,6 +1008,7 @@ def main() -> None:
 
     raw = load_raw()
     ds = merge(raw)
+    ds = apply_descriptions(ds)
     ds = apply_overrides(ds)
     ds["highlights"] = load_highlights()
     ds["sponsors"] = load_sponsors()

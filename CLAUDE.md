@@ -37,6 +37,9 @@ scrapers/                  one module per source; each emits data/raw/<name>.jso
   masters.py               Master Cheesemaker directory PDF (annual)
   contests.py              WCMA championship results via the MyEntries JSON API
 scripts/describe.py        description generation (Anthropic API) — curation tool, never in build
+data/descriptions/          describe.py's product: {id: {text, fingerprint, model}} for cheeses
+                           and creameries; build.py places the text before overrides (a
+                           human edit wins), and an id the dataset lacks is build-fatal
 scripts/images.py          product-image URL harvester (shops behind the title harvest);
                            writes queue/product_images.json — a PERMISSION queue, never
                            pipeline input; web dev overlays it as a marked draft
