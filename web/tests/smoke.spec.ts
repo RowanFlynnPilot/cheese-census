@@ -1,5 +1,6 @@
 import { expect, test, type Page, type TestInfo } from "@playwright/test";
 import counties from "../src/counties.json" with { type: "json" };
+import picks from "../../build/picks.json" with { type: "json" };
 
 // The reader's path through the map, end to end, on the production build.
 // Every test starts on the map with the data loaded, and ends by checking
@@ -184,4 +185,31 @@ test("panels open without a view transition when motion is reduced", async ({ pa
     document.getAnimations().some((a) => "animationName" in a && (a as CSSAnimation).animationName === "panel-in"),
   );
   expect(transitioned).toBe(false);
+});
+
+test("this week's three opens a cheese and seeds the board", async ({ page }) => {
+  // The slot is dated; pin the clock inside the first trio's window so the
+  // test does not expire with it.
+  const trio = picks[0];
+  test.skip(!trio, "no weekly trio in the data");
+  await page.clock.setFixedTime(new Date(`${trio.starts}T12:00:00`));
+  await page.goto("/cheese-census/?view=cheeses");
+  const card = page.locator(".cheese-pane .trio");
+  await expect(card).toBeVisible();
+  await expect(card.locator(".kicker")).toHaveText(
+    trio.source === "sponsored" ? "Sponsored" : "From the cheese desk",
+  );
+  await expect(card.locator(".trio-pick")).toHaveCount(3);
+
+  await card.locator(".trio-pick").first().click();
+  await expect(page.locator(".cheese-detail, .detail").first()).toBeVisible();
+  await page.keyboard.press("Escape");
+
+  await card.getByRole("button", { name: "Start a board with these" }).click();
+  await expect(page).toHaveURL(/view=board/);
+  for (const pick of trio.picks) {
+    await expect(page).toHaveURL(new RegExp(pick.cheese_id));
+  }
+  // Already on the board, so the builder does not offer the same three again.
+  await expect(page.locator(".board-pane .trio")).toHaveCount(0);
 });

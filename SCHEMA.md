@@ -208,6 +208,28 @@ Feature-level sponsorship, kept apart from highlights: a highlight plugs a *chee
 
 `placement` names the surface and comes from the closed `sponsor_placements` vocabulary (currently just `board`; later tentpoles — bracket, quiz — add theirs deliberately). The frontend renders whatever active entry targets a surface, always in the sponsored visual language, and renders nothing when none does. The window is inclusive `[starts, ends]` like a highlight's; an inverted window is build-fatal.
 
+## `build/picks.json`
+
+"This week's three" — three cheeses recommended by a local business (the weekly sponsored slot) or by the cheese desk. Hand-edited in `data/picks.json`, exported verbatim.
+
+```json
+{
+  "id": "example-shop-2026-12-07",
+  "source": "sponsored",
+  "name": "The business as it should read",
+  "url": "https://…",
+  "picks": [
+    { "cheese_id": "…", "note": "Their own short line, or null" },
+    { "cheese_id": "…", "note": null },
+    { "cheese_id": "…", "note": null }
+  ],
+  "starts": "2026-12-07",
+  "ends": "2026-12-13"
+}
+```
+
+`source` is `editorial` | `sponsored`. A sponsored entry is a sold week and always renders in the sponsored visual language, kicker "Sponsored", "picked by {name}". An editorial entry is the cheese desk's own three; it may run for any window and stands under the sold weeks, so the slot is never empty: on any day the live sponsored entry wins, else the editorial entry with the latest start. `note` (140 characters at most) renders in quotation marks as the picker's words. The business picks by building a three-cheese board in the Board Builder and emailing its link; an editor enters the row.
+
 ## `build/boards.json`
 
 Featured cheese boards — the Board Builder's gallery. Readers submit by email (their board's share link, a photo of the real spread, a first name and town for the credit); an editor curates entries into `data/boards.json`, so every row here has been through human hands. Exported verbatim.
@@ -232,5 +254,6 @@ Featured cheese boards — the Board Builder's gallery. Readers submit by email 
 10. Featured board with an unknown or repeated cheese id, a pick count other than 3/5/7, an `image` that is not a bare filename, or a duplicate `id`
 11. Exported creamery pinned outside Wisconsin (lat/lng beyond 42.4–47.4 N, 93.0–86.2 W) — a listing's headquarters coordinates standing in for the plant; pin the first Wisconsin plant in `data/overrides/creameries.json`
 12. Exported creamery pinned more than 1 km from its home plant's geocode, or whose `home_plant` is not one of its plants — the record would describe one place and the map another. Drop the lat/lng override, or re-run `scripts/geocode.py` if the plant moved; a home plant the geocoder could not place is exempt (its pin is the listing's point)
+13. Weekly trio that does not name exactly three different, existing, browsable cheeses; whose three all come from one maker; with a malformed or inverted date window, a non-http(s) `url` or a duplicate `id`; or two `sponsored` trios whose windows overlap (one business per week)
 
 `queue/` reports are regenerated every run for the non-fatal review work: creameries with zero cataloged cheeses, awards with `creamery_id` but no `cheese_id`, cheeses still carrying provisional flavor tags from assisted tagging, and description coverage (missing / generated / human-edited).

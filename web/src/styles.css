@@ -1778,6 +1778,132 @@ button.tag {
   color: var(--ink-soft);
 }
 
+/* ── This week's three ──────────────────────────────────────────────────── */
+/* Three cheeses picked by a local business (sponsored) or the cheese desk.
+   It inherits the highlight card's two visual languages, so a sold week can
+   never pass for the paper's own recommendation. */
+.trio {
+  flex: 1 1 100%;
+  border-radius: 4px;
+  padding: 0.7rem 0.9rem 0.8rem;
+  font-family: var(--body);
+}
+
+/* Two classes, so the Board Builder's small-caps section heads
+   (.board-inner h3) do not restyle it. */
+.trio .trio-title {
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0.15rem 0 0.5rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.trio-by {
+  font-weight: 400;
+}
+
+.trio-by a {
+  color: var(--sponsored);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.trio-picks {
+  list-style: none;
+  margin: 0 0 0.65rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.5rem;
+}
+
+.trio-picks li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.trio-pick {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 4px;
+  background: #fff;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  text-align: left;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.trio-name {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.trio-maker {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.trio-note {
+  font-size: 0.84rem;
+  line-height: 1.4;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+.trio-use {
+  border: 1px solid var(--teal-dark);
+  background: var(--teal-dark);
+  color: var(--cream);
+  border-radius: 999px;
+  min-height: 2.25rem;
+  padding: 0.3rem 0.95rem;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trio.sponsored .trio-use {
+  border-color: var(--sponsored);
+  background: var(--sponsored);
+}
+
+@media (hover: hover) {
+  .trio-pick:hover {
+    border-color: var(--teal-dark);
+  }
+
+  .trio.sponsored .trio-pick:hover {
+    border-color: var(--sponsored);
+  }
+}
+
+@media (max-width: 760px) {
+  .trio-use {
+    min-height: 2.75rem;
+  }
+}
+
+@media print {
+  .trio {
+    display: none;
+  }
+}
+
 /* ── Rails: highlights and "to try next" ────────────────────────────────── */
 
 .highlight-row {

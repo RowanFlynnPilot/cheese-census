@@ -335,6 +335,56 @@ class FeaturedBoard(BaseModel):
         return self
 
 
+class TrioPick(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    cheese_id: str
+    # The picker's own short line about this cheese, rendered as their words.
+    note: str | None = Field(default=None, max_length=140)
+
+
+class WeeklyTrio(BaseModel):
+    """"This week's three": three cheeses recommended by a local business
+    (source "sponsored", the cheap weekly ad slot) or by the cheese desk
+    (source "editorial", which stands under the sold weeks so the slot is never
+    empty). The business builds a three-cheese board in the Board Builder and
+    emails the link; an editor enters it here. Sponsored entries always render
+    in the sponsored visual language."""
+
+    model_config = ConfigDict(extra="forbid")
+    id: str
+    source: Literal["editorial", "sponsored"]
+    # The business as it should read ("Picked by …"), or "The cheese desk".
+    name: str
+    url: str | None = None
+    picks: list[TrioPick]
+    starts: str
+    ends: str
+
+    @field_validator("url")
+    @classmethod
+    def _http_url(cls, v: str | None) -> str | None:
+        if v is not None and not v.lower().startswith(("https://", "http://")):
+            raise ValueError(f"weekly trio url must be http(s), got '{v}'")
+        return v
+
+    @field_validator("starts", "ends")
+    @classmethod
+    def _iso_date(cls, v: str) -> str:
+        date.fromisoformat(v)  # raises on malformed dates
+        return v
+
+    @model_validator(mode="after")
+    def _shape(self) -> "WeeklyTrio":
+        ids = [p.cheese_id for p in self.picks]
+        if len(ids) != 3 or len(set(ids)) != 3:
+            raise ValueError(f"weekly trio '{self.id}' must name exactly three different cheeses")
+        if self.starts > self.ends:
+            raise ValueError(
+                f"weekly trio '{self.id}': window is inverted ({self.starts} > {self.ends})"
+            )
+        return self
+
+
 class CrosswalkEntry(BaseModel):
     model_config = ConfigDict(extra="forbid")
     source: Literal["datcp", "dfw", "masters", "contests"]

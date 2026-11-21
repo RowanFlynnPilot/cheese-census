@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import type { Award, Cheese, Creamery, Highlight } from "../types";
+import type { Award, Cheese, Creamery, Highlight, WeeklyTrio } from "../types";
+import TrioCard from "./TrioCard";
 import {
   MILK_LABEL,
   TEXTURE_LABEL,
@@ -46,6 +47,9 @@ interface Props {
   onToggleHeart: (id: string) => void;
   recommendations: Recommendation[];
   highlights: { highlight: Highlight; cheese: Cheese }[];
+  /** This week's three, resolved; null when no trio is live. */
+  trio: { trio: WeeklyTrio; cheeses: Cheese[] } | null;
+  onStartBoard: (ids: string[], title: string) => void;
   selectedId: string | null;
   onOpen: (id: string) => void;
   query: string;
@@ -105,6 +109,8 @@ export default function CheeseBrowse({
   onToggleHeart,
   recommendations,
   highlights,
+  trio,
+  onStartBoard,
   selectedId,
   onOpen,
   query,
@@ -278,8 +284,23 @@ export default function CheeseBrowse({
   }
 
   const band =
-    highlights.length > 0 && shown.length > 0 ? (
+    (trio || highlights.length > 0) && shown.length > 0 ? (
       <div className="highlight-row" key="highlights">
+        {trio && (
+          <TrioCard
+            trio={trio.trio}
+            cheeses={trio.cheeses}
+            creameriesById={creameriesById}
+            onOpen={onOpen}
+            onUse={() =>
+              onStartBoard(
+                trio.cheeses.map((c) => c.id),
+                "this week’s three",
+              )
+            }
+            useLabel="Start a board with these"
+          />
+        )}
         {highlights.map(({ highlight, cheese }) => (
           <button
             type="button"

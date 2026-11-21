@@ -1,5 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import type { Award, Cheese, Creamery, FeaturedBoard, Highlight, Sponsor } from "../types";
+import type {
+  Award,
+  Cheese,
+  Creamery,
+  FeaturedBoard,
+  Highlight,
+  Sponsor,
+  WeeklyTrio,
+} from "../types";
+import TrioCard from "./TrioCard";
 import {
   AGE_LABEL,
   AGE_ORDER,
@@ -49,6 +58,8 @@ interface Props {
   highlights: { highlight: Highlight; cheese: Cheese }[];
   /** The active sponsor for this surface, or null (slot absent). */
   sponsor: Sponsor | null;
+  /** This week's three, resolved; null when no trio is live. */
+  trio: { trio: WeeklyTrio; cheeses: Cheese[] } | null;
   /** The curated gallery — reader submissions and cheese-desk boards. */
   featured: FeaturedBoard[];
   /** Load a featured board as the working board (its size comes with it). */
@@ -86,6 +97,7 @@ export default function BoardView({
   swap,
   highlights,
   sponsor,
+  trio,
   featured,
   onAdopt,
   images,
@@ -528,6 +540,24 @@ export default function BoardView({
               covers.
             </p>
           </section>
+        )}
+
+        {trio && !trio.cheeses.every((c) => onBoard.has(c.id)) && (
+          <div className="board-hl-row">
+            <TrioCard
+              trio={trio.trio}
+              cheeses={trio.cheeses}
+              creameriesById={creameriesById}
+              onOpen={onOpen}
+              onUse={() =>
+                onAdopt(
+                  trio.cheeses.map((c) => c.id),
+                  "this week’s three",
+                )
+              }
+              useLabel="Use these three"
+            />
+          </div>
         )}
 
         {highlightAdds.length > 0 && !full && (

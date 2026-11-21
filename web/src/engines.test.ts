@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Award, Cheese, Creamery } from "./types";
+import type { Award, Cheese, Creamery, WeeklyTrio } from "./types";
 import {
   boardCoverage,
   boardNudges,
@@ -7,7 +7,7 @@ import {
   suggestForBoard,
   weakestPick,
 } from "./boards";
-import { awardCitation, fold, recommend } from "./data";
+import { activeTrio, awardCitation, fold, recommend } from "./data";
 
 /* The two pure engines — the similarity-driven recommender and the board's
    variety scorer — are the parts of the front end with rules worth pinning:
@@ -264,5 +264,38 @@ describe("helpers", () => {
       year: 2026,
     } as Award;
     expect(awardCitation(award)).toBe("1st · Top 20 · Lowfat Cheeses · World Championship 2026");
+  });
+});
+
+describe("this week's three", () => {
+  const trio = (partial: Partial<WeeklyTrio> & { id: string }): WeeklyTrio => ({
+    source: "editorial",
+    name: "The cheese desk",
+    url: null,
+    picks: [],
+    starts: "2026-11-01",
+    ends: "2026-12-31",
+    ...partial,
+  });
+  const desk = trio({ id: "desk" });
+  const sold = trio({ id: "sold", source: "sponsored", starts: "2026-12-07", ends: "2026-12-13" });
+
+  it("shows the cheese desk on an unsold week", () => {
+    expect(activeTrio([desk, sold], "2026-12-01")?.id).toBe("desk");
+  });
+
+  it("gives a sold week to the business, first day to last", () => {
+    expect(activeTrio([desk, sold], "2026-12-07")?.id).toBe("sold");
+    expect(activeTrio([desk, sold], "2026-12-13")?.id).toBe("sold");
+    expect(activeTrio([desk, sold], "2026-12-14")?.id).toBe("desk");
+  });
+
+  it("prefers the newer of two cheese-desk trios", () => {
+    const newer = trio({ id: "newer", starts: "2026-12-01" });
+    expect(activeTrio([desk, newer], "2026-12-02")?.id).toBe("newer");
+  });
+
+  it("shows nothing outside every window", () => {
+    expect(activeTrio([desk, sold], "2027-01-01")).toBeNull();
   });
 });

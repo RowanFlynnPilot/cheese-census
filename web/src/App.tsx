@@ -41,6 +41,7 @@ import {
   TEXTURE_ORDER,
   activeHighlights,
   activeSponsor,
+  activeTrio,
   awardsFor,
   awardsForCheese,
   cheeseOperations,
@@ -803,6 +804,15 @@ export default function App() {
     () => (data ? activeSponsor(data.sponsors, "board", today) : null),
     [data, today],
   );
+
+  // This week's three, resolved against the catalog (the build guarantees the
+  // picks exist and are browsable).
+  const weeklyTrio = useMemo(() => {
+    const trio = data ? activeTrio(data.picks, today) : null;
+    if (!trio) return null;
+    const cheeses = trio.picks.flatMap((p) => cheesesById.get(p.cheese_id) ?? []);
+    return cheeses.length === 3 ? { trio, cheeses } : null;
+  }, [data, cheesesById, today]);
 
   // The gallery, newest first. Build validation guarantees every pick exists.
   const featuredBoards = useMemo(
@@ -2074,6 +2084,11 @@ export default function App() {
             onToggleHeart={toggleHeart}
             recommendations={recommendations}
             highlights={highlights}
+            trio={weeklyTrio}
+            onStartBoard={(ids, title) => {
+              adoptBoard(ids, title);
+              transition(() => setView("board"));
+            }}
             selectedId={selectedCheeseId}
             onOpen={(id) => transition(() => setSelectedCheeseId(id))}
             query={cheeseQuery}
@@ -2118,6 +2133,7 @@ export default function App() {
             swap={boardAnalysis.swap}
             highlights={highlights}
             sponsor={boardSponsor}
+            trio={weeklyTrio}
             featured={featuredBoards}
             onAdopt={adoptBoard}
             images={draftImages}

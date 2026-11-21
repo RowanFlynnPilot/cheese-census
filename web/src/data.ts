@@ -7,6 +7,7 @@ import type {
   Highlight,
   Person,
   Sponsor,
+  WeeklyTrio,
 } from "./types";
 
 const BASE = import.meta.env.BASE_URL;
@@ -62,7 +63,7 @@ export async function loadDraftLogos(): Promise<Map<string, string>> {
 }
 
 export async function loadDataset(): Promise<Dataset> {
-  const [creameries, cheeses, people, awards, highlights, sponsors, boards] =
+  const [creameries, cheeses, people, awards, highlights, sponsors, boards, picks] =
     await Promise.all([
       table<Creamery>("creameries"),
       table<Cheese>("cheeses"),
@@ -71,8 +72,9 @@ export async function loadDataset(): Promise<Dataset> {
       table<Highlight>("highlights"),
       table<Sponsor>("sponsors"),
       table<FeaturedBoard>("boards"),
+      table<WeeklyTrio>("picks"),
     ]);
-  return { creameries, cheeses, people, awards, highlights, sponsors, boards };
+  return { creameries, cheeses, people, awards, highlights, sponsors, boards, picks };
 }
 
 /** Plant.operations concatenates DATCP's three licence columns. The first two are
@@ -365,6 +367,21 @@ export function activeSponsor(
   const live = sponsors
     .filter((s) => s.placement === placement && s.starts <= today && today <= s.ends)
     .sort((a, b) => b.starts.localeCompare(a.starts) || a.id.localeCompare(b.id));
+  return live[0] ?? null;
+}
+
+/** This week's three: a sold week always wins over the cheese desk's standing
+ *  trio; within a source the latest start wins. The build guarantees sold
+ *  weeks never overlap and every pick exists. */
+export function activeTrio(picks: WeeklyTrio[], today: string): WeeklyTrio | null {
+  const live = picks
+    .filter((t) => t.starts <= today && today <= t.ends)
+    .sort(
+      (a, b) =>
+        Number(b.source === "sponsored") - Number(a.source === "sponsored") ||
+        b.starts.localeCompare(a.starts) ||
+        a.id.localeCompare(b.id),
+    );
   return live[0] ?? null;
 }
 

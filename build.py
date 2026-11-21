@@ -27,6 +27,7 @@ from models import (
     Plant,
     Retail,
     Sponsor,
+    WeeklyTrio,
 )
 from similarity import attach_similar
 
@@ -821,6 +822,10 @@ def load_boards() -> list[FeaturedBoard]:
     return [FeaturedBoard(**b) for b in _read_json(ROOT / "data" / "boards.json")]
 
 
+def load_picks() -> list[WeeklyTrio]:
+    return [WeeklyTrio(**t) for t in _read_json(ROOT / "data" / "picks.json")]
+
+
 # ── Stage 4: validation (all fatal) ──────────────────────────────────────────
 
 def _no_duplicates(table: str, ids: list[str]) -> None:
@@ -830,7 +835,7 @@ def _no_duplicates(table: str, ids: list[str]) -> None:
 
 
 def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
-    for table in ("creameries", "cheeses", "people", "awards", "sponsors", "boards"):
+    for table in ("creameries", "cheeses", "people", "awards", "sponsors", "boards", "picks"):
         _no_duplicates(table, [record.id for record in ds[table]])
 
     exported_creameries = {
@@ -923,6 +928,28 @@ def validate(ds: dict, raw: dict, classifications: dict[str, str]) -> None:
         unknown = [c for c in board.cheese_ids if c not in cheese_ids]
         if unknown:
             fatal(f"featured board '{board.id}' references unknown cheese(s) {unknown}")
+    cheese_maker = {c.id: c.creamery_id for c in ds["cheeses"]}
+    browsable = {c.id for c in ds["creameries"] if c.id in exported_creameries and c.status == "active"}
+    for trio in ds["picks"]:
+        ids = [p.cheese_id for p in trio.picks]
+        unknown = [c for c in ids if c not in cheese_ids]
+        if unknown:
+            fatal(f"weekly trio '{trio.id}' references unknown cheese(s) {unknown}")
+        hidden = [c for c in ids if cheese_maker[c] not in browsable]
+        if hidden:
+            fatal(f"weekly trio '{trio.id}' picks cheese(s) readers cannot browse: {hidden}")
+        if len({cheese_maker[c] for c in ids}) < 2:
+            fatal(
+                f"weekly trio '{trio.id}' picks three cheeses from one maker — a trio is a "
+                f"recommendation, not a product listing; at least one must come from another"
+            )
+    sold = sorted((t for t in ds["picks"] if t.source == "sponsored"), key=lambda t: (t.starts, t.id))
+    for earlier, later in zip(sold, sold[1:]):
+        if later.starts <= earlier.ends:
+            fatal(
+                f"weekly trios '{earlier.id}' and '{later.id}' are both sold for "
+                f"{later.starts} — one business per week"
+            )
 
     resolved = {(e.source, e.source_key) for e in ds["crosswalk"]}
     for entry in ds["crosswalk"]:
@@ -999,6 +1026,7 @@ def export(ds: dict, classifications: dict[str, str]) -> dict[str, int]:
     )
     _write_table("sponsors", ds["sponsors"])
     _write_table("boards", ds["boards"])
+    _write_table("picks", ds["picks"])
     return {name: len(records) for name, records in exported.items()}
 
 
@@ -1013,6 +1041,7 @@ def main() -> None:
     ds["highlights"] = load_highlights()
     ds["sponsors"] = load_sponsors()
     ds["boards"] = load_boards()
+    ds["picks"] = load_picks()
     classifications = load_classifications(ds)
     validate(ds, raw, classifications)
     attach_similar(ds["cheeses"])
@@ -1022,7 +1051,7 @@ def main() -> None:
         "OK: "
         + ", ".join(f"{count} {name}" for name, count in counts.items())
         + f", {len(ds['highlights'])} highlights, {len(ds['sponsors'])} sponsors, "
-        + f"{len(ds['boards'])} featured boards -> build/"
+        + f"{len(ds['boards'])} featured boards, {len(ds['picks'])} weekly trios -> build/"
     )
 
 

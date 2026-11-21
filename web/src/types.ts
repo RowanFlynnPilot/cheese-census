@@ -141,6 +141,18 @@ export interface FeaturedBoard {
   added: string;
 }
 
+/** "This week's three": a local business's three recommended cheeses (the
+ *  weekly sponsored slot) or the cheese desk's (an unsold week). */
+export interface WeeklyTrio {
+  id: string;
+  source: "editorial" | "sponsored";
+  name: string;
+  url: string | null;
+  picks: { cheese_id: string; note: string | null }[];
+  starts: string;
+  ends: string;
+}
+
 export interface Dataset {
   creameries: Creamery[];
   cheeses: Cheese[];
@@ -149,4 +161,5 @@ export interface Dataset {
   highlights: Highlight[];
   sponsors: Sponsor[];
   boards: FeaturedBoard[];
+  picks: WeeklyTrio[];
 }

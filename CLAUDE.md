@@ -86,6 +86,13 @@ data/boards.json           featured cheese boards (hand-edited, curated from rea
                            hosted photo (web/public/boards/, submitter-granted);
                            exported to build/boards.json, rendered as the builder's
                            gallery — nothing reaches it unreviewed
+data/picks.json            "This week's three" (hand-edited): three cheeses picked by a
+                           local business (source "sponsored", the cheap weekly ad
+                           slot — they build a 3-board and email the link) or by the
+                           cheese desk (source "editorial", which stands under the
+                           sold weeks); date-windowed, validated, exported to
+                           build/picks.json; rendered in the catalog band and the
+                           Board Builder, a sold week always in the sponsored style
 queue/report.json          generated review reports (non-fatal work: coverage, unmatched awards)
 queue/proposed_*.json      merge()'s review proposals — classifications and fuzzy
                            crosswalk candidates; written every run, before the build's
@@ -142,6 +149,10 @@ manual dispatch only until all scrapers are implemented.
     one place and the map another. Drop the lat/lng override, or re-run
     `scripts/geocode.py` if the plant moved; a home plant the geocoder could
     not place is exempt (its pin stays the listing's point)
+13. Weekly trio without exactly three different, existing, browsable cheeses,
+    or with all three from one maker (a trio is a recommendation, not a product
+    listing); a malformed or inverted window, a non-http(s) `url`, a duplicate
+    `id`; or two `sponsored` trios sold for the same day
 
 ## Conventions
 

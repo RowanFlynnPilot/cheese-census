@@ -1,0 +1,24 @@
+[
+  {
+    "ends": "2026-12-31",
+    "id": "cheese-desk-holiday-2026",
+    "name": "The cheese desk",
+    "picks": [
+      {
+        "cheese_id": "marieke-gouda--marieke-gouda-truffle",
+        "note": null
+      },
+      {
+        "cheese_id": "lake-country-dairy-inc--cello-extra-aged-asiago",
+        "note": null
+      },
+      {
+        "cheese_id": "arena-cheese--toasted-onion-jack",
+        "note": null
+      }
+    ],
+    "source": "editorial",
+    "starts": "2026-11-16",
+    "url": null
+  }
+]

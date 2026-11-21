@@ -353,6 +353,16 @@ fails) and a print stylesheet that prints the list and nothing else.
 language (absent when none is live) and its credit rides the printed sheet; the
 current entry is WPR's own house ad.
 
+**This week's three** (`build/picks.json`) is the weekly slot a local business
+can buy: three cheeses they recommend, with an optional line of their own under
+each. `TrioCard` renders it in the catalog's band ("Start a board with these"
+adopts the three and opens the builder) and in the Board Builder ("Use these
+three", hidden once all three are on the board). A sold week wears the sponsored
+style and the kicker "Sponsored"; an unsold week shows the cheese desk's three
+in the editorial style. `activeTrio()` in `data.ts` decides which is live. The
+business picks in the builder itself and emails the share link; the row goes
+into `data/picks.json` by hand. Nothing counts clicks yet.
+
 **Featured boards** (`build/boards.json`) close the loop: readers email the
 newsroom (`editor@wausaupilotandreview.com` — the paper's published submission
 address) their board's share link plus a photo of the real spread; an editor
