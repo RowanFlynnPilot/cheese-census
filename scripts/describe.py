@@ -40,7 +40,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "build"
 OUT = ROOT / "data" / "descriptions"
-MODEL = "claude-opus-5-5"
+MODEL = "claude-haiku-5-5"
+PRICE_IN, PRICE_OUT = 0.10, 0.50  # dollars per million tokens, before the batch discount
 MAX_CHARS = 320
 
 CONTESTS = {"uscc": "U.S. Championship Cheese Contest", "wccc": "World Championship Cheese Contest"}
@@ -242,7 +243,7 @@ def main() -> None:
         chars = len(SYSTEM) * len(todo) + sum(len(user_message(f)) for f in todo.values())
         tokens_in = chars / 3.5
         tokens_out = len(todo) * 250  # the text plus the model's brief reasoning
-        cost = (tokens_in * 4 + tokens_out * 20) / 1e6 / 2  # batch pricing is half
+        cost = (tokens_in * PRICE_IN + tokens_out * PRICE_OUT) / 1e6 / 2  # batch pricing is half
         print(f"Estimate: about {tokens_in / 1e6:.2f}M input and {tokens_out / 1e6:.2f}M output tokens on {MODEL},")
         print(f"roughly ${cost:.2f} at batch prices. A rough figure, not a quote.")
         for key in sorted(todo, key=lambda k: hashlib.sha256(k.encode()).hexdigest())[:3]:
