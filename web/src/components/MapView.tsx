@@ -187,6 +187,9 @@ interface Props {
   /** The creamery the page was opened on (an article's deep link), if any:
    *  its first selection frames the town rather than nudging the overview. */
   arrival: string | null;
+  /** The corners of every browsable creamery's pin, filters aside: the one
+   *  home frame, which the overview and the "Wisconsin" button share. */
+  extent: [[number, number], [number, number]] | null;
 }
 
 /** Pin size by award count: a graduated symbol, three steps, legible at 12 px. */
@@ -226,7 +229,10 @@ export default function MapView({
   countyCounts,
   awards,
   arrival: arrivedAt,
+  extent,
 }: Props) {
+  const home = useRef(extent);
+  home.current = extent;
   const host = useRef<HTMLDivElement>(null);
   // Spent on the first selection it names; a later hash change is a plain selection.
   const arrival = useRef(arrivedAt);
@@ -354,8 +360,11 @@ export default function MapView({
    *  button had framed whatever set was shown — four pins after a county
    *  tap — under a name that promised the state, which on a phone left a
    *  thumb's miss on a county with no way back. A county in force is
-   *  cleared (the list's refit then frames every pin); otherwise the state's
-   *  outline is fitted, whatever search or toggle is narrowing the list. */
+   *  cleared (the list's refit then frames every pin); otherwise the home
+   *  frame is fitted — every browsable pin, whatever search or toggle is
+   *  narrowing the list — which is the frame the reader started on. (It had
+   *  fitted the state's outline, a half step smaller than the overview: two
+   *  homes under one word.) */
   function reset() {
     const m = map.current;
     if (!m) return;
@@ -363,7 +372,8 @@ export default function MapView({
       pickCounty.current(activeCounty.current);
       return;
     }
-    if (stateBounds.current) move(() => m.fitBounds(stateBounds.current!, FIT));
+    const bounds = home.current ? L.latLngBounds(home.current) : stateBounds.current;
+    if (bounds) move(() => m.fitBounds(bounds, { ...FIT, maxZoom: 11 }));
     touched.current = false;
   }
 
@@ -563,6 +573,25 @@ export default function MapView({
     // *of Wisconsin* and not pins adrift on a grey canvas. U.S. Census Bureau
     // 2010 cartographic boundary file (1:5,000,000, public domain), simplified
     // to 0.003° and bundled as web/src/wisconsin.json — no fetch, no failure path.
+    // Beyond the state line the land is washed toward the deeper cream, and
+    // the neighbours' towns and roads with it: Minneapolis and Chicago stay
+    // for orientation, as ground, and Wisconsin is the figure. One polygon
+    // with the state cut out of it, over the tiles and under everything else.
+    const rings = (wisconsin as unknown as { geometry: { coordinates: number[][][][] } }).geometry.coordinates.map(
+      (polygon) => polygon[0].map(([lng, lat]) => [lat, lng] as L.LatLngTuple),
+    );
+    L.polygon(
+      [
+        [
+          [60, -130],
+          [60, -50],
+          [20, -50],
+          [20, -130],
+        ],
+        ...rings,
+      ],
+      { interactive: false, stroke: false, fillColor: "#ece5d6", fillOpacity: 0.62 },
+    ).addTo(map.current);
     const outline = L.geoJSON(wisconsin as GeoJSON.Feature, {
       interactive: false,
       style: {
@@ -646,12 +675,21 @@ export default function MapView({
     // map ends up where the count of presses says. A press at the cap or
     // the floor leaves nothing pending: a target equal to the zoom in hand
     // never ends, and one left behind undid the next refit.
+    // With a creamery selected and in view the zoom holds its pin still:
+    // Leaflet zooms about the map's centre, which sits under the open panel,
+    // so two presses of + slid the pin the reader was looking at off screen.
+    const zoomTo = (target: number) => {
+      const id = selection.current;
+      const pin = id ? markers.current.get(id)?.getLatLng() : undefined;
+      if (pin && m.getBounds().contains(pin)) m.setZoomAround(pin, target, { animate: MOTION });
+      else m.setZoom(target, { animate: MOTION });
+    };
     const step = (delta: number) => {
       const from = pendingZoom.current ?? m.getZoom();
       const target = Math.max(m.getMinZoom(), Math.min(m.getMaxZoom(), from + delta));
       if (target === from) return;
       pendingZoom.current = target;
-      m.setZoom(target, { animate: MOTION });
+      zoomTo(target);
     };
     const QueuedZoom = L.Control.Zoom.extend({
       _zoomIn(e: MouseEvent) {
@@ -672,7 +710,7 @@ export default function MapView({
         next();
       } else {
         const target = pendingZoom.current;
-        if (target !== null && target !== m.getZoom()) m.setZoom(target, { animate: MOTION });
+        if (target !== null && target !== m.getZoom()) zoomTo(target);
         else pendingZoom.current = null;
       }
       setCapped(m.getZoom() >= MAX_ZOOM);
@@ -817,15 +855,16 @@ export default function MapView({
           // Arrival by deep link: the reader came for this place, not for
           // the state, and has seen no frame yet — so the town, at zoom 10,
           // with the pin in the middle of the strip (the overview's minimal
-          // pan would leave it tucked in the strip's corner). Ours to undo:
-          // closing the panel refits the overview.
+          // pan would leave it tucked in the strip's corner). The frame is
+          // the reader's: closing the panel keeps the town, and "Wisconsin"
+          // is the way out.
           arrival.current = null;
           const zoom = Math.max(m.getZoom(), 10);
           const centre = strip
             ? m.unproject(m.project(marker.getLatLng(), zoom).add([panel / 2, 0]), zoom)
             : marker.getLatLng();
           move(() => m.setView(centre, zoom, { animate: false }));
-          touched.current = false;
+          touched.current = true;
         } else if (strip) {
           move(() =>
             m.panInside(marker.getLatLng(), {
@@ -835,7 +874,12 @@ export default function MapView({
             }),
           );
         } else {
-          move(() => m.panTo(marker.getLatLng(), { animate: MOTION }));
+          // A phone's sheet covers the map, so nothing is seen moving: frame
+          // the town now, and "Back to the map" (or "See on the map") lands
+          // on where the creamery is rather than on 88 pins.
+          const zoom = Math.max(m.getZoom(), 10);
+          move(() => m.setView(marker.getLatLng(), zoom, { animate: false }));
+          touched.current = true;
         }
       }
     }

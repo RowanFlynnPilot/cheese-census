@@ -236,6 +236,21 @@ out-of-state labels at Wisconsin's weight (the chosen direction is to mute
 them and wash the land beyond the border), the legend's "Selected" entry
 clipped by the panel, and Contact's order of actions and caveats.
 
+The seventh critique (31/40) found two paths failing where a reader leans
+in. With a panel open the zoom buttons zoomed about the map's centre, which
+sits under the panel, so the selected pin left the strip in two presses;
+they now hold a selected pin still (`setZoomAround`). A phone's deep link
+opened the sheet over the list, so the town frame was never seen: an
+arrival now opens the map pane, a phone selection frames the town at zoom
+10 behind the sheet, and closing an arrival keeps the town on both sizes
+("Wisconsin" is the way out); from the list, Contact offers "See on the
+census map". "Wisconsin" and the overview share one home frame, the
+corners of every browsable pin (`extent`). Beyond the state line one
+polygon with the state cut out washes the land, towns and roads toward
+the deeper cream, so the neighbours are ground and Wisconsin the figure.
+The phone's search placeholder is "Try “limburger”", which fits. Open:
+Contact's order and the legend's "Selected" entry under the panel.
+
 **Cheese Catalog** — the product-level reader layer over `build/cheeses.json`:
 a card grid filterable by family, texture and milk (with counts), searchable
 across names, makers, families, flavor tags and add-ins (indirect matches carry

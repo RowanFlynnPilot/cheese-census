@@ -441,6 +441,18 @@ export default function App() {
     [data],
   );
 
+  // The map's home frame: the corners of every browsable pin, filters aside.
+  const homeExtent = useMemo((): [[number, number], [number, number]] | null => {
+    const points = activeCreameries.filter((c) => c.lat !== null && c.lng !== null);
+    if (points.length === 0) return null;
+    const lats = points.map((c) => c.lat as number);
+    const lngs = points.map((c) => c.lng as number);
+    return [
+      [Math.min(...lats), Math.min(...lngs)],
+      [Math.max(...lats), Math.max(...lngs)],
+    ];
+  }, [activeCreameries]);
+
   const counties = useMemo(
     () =>
       [
@@ -1007,6 +1019,9 @@ export default function App() {
       } else if (data.creameries.some((c) => c.id === slug)) {
         setView("map");
         setSelectedId(slug);
+        // An article's reader asked "where is this?": on a phone the sheet
+        // opens over the map, so closing it lands on the town.
+        if (slug === deepLink) setMobilePane("map");
         // The list shows its row too, not Agropur at the top; the panel
         // itself takes focus.
         requestAnimationFrame(() => {
@@ -1721,7 +1736,7 @@ export default function App() {
               <div className="filter-search-row">
                 <input
                   type="search"
-                  placeholder="Search creameries — try “limburger”"
+                  placeholder={narrow ? "Try “limburger”" : "Search creameries — try “limburger”"}
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   aria-label="Search creameries by name, city, county or cheese type"
@@ -1948,6 +1963,7 @@ export default function App() {
                   countyCounts={countyCounts}
                   awards={awardCounts}
                   arrival={deepLink && !deepLink.includes("--") ? deepLink : null}
+                  extent={homeExtent}
                 />
               </Suspense>
             )}
@@ -2006,6 +2022,14 @@ export default function App() {
                 onPrev={() => step(-1)}
                 onNext={() => step(1)}
                 onFilterCheese={filterByCheese}
+                onSeeOnMap={
+                  narrow && mobilePane === "list"
+                    ? () => {
+                        setMobilePane("map");
+                        closeDetail();
+                      }
+                    : undefined
+                }
                 onOpenCheese={openCheese}
                 onBrowseCheeses={() => browseMaker(selected.id)}
               />

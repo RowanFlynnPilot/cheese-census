@@ -466,6 +466,12 @@ tooltips are hover-only. Open from it: muting the basemap outside the state
 line, the legend clipped by the panel, Contact's order. Details in
 web/README.md.
 
+The seventh map critique (31/40): the zoom buttons hold a selected pin
+still, a phone's deep link opens the map pane and closing an arrival keeps
+the town, "Wisconsin" and the overview share one home frame, the land
+beyond the state line is washed back, and the phone placeholder fits. Open:
+Contact's order, the legend under the panel. Details in web/README.md.
+
 Catalog names got one more cleaning rule while building this: `clean_title` now
 strips *leading* and bare *trailing* sizes ("15.5 oz Chipotle Colby Cheese",
 "…Cheddar 1lb.") — Ellsworth's and LaGrander's shop titles carried them. That

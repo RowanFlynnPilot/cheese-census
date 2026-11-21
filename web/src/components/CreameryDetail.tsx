@@ -34,6 +34,8 @@ interface Props {
   onPrev: () => void;
   onNext: () => void;
   onFilterCheese: (operation: string) => void;
+  /** Phones, from the list: close the sheet onto the map at this creamery. */
+  onSeeOnMap?: () => void;
   onOpenCheese: (id: string) => void;
   onBrowseCheeses: () => void;
 }
@@ -50,6 +52,7 @@ export default function CreameryDetail({
   onPrev,
   onNext,
   onFilterCheese,
+  onSeeOnMap,
   onOpenCheese,
   onBrowseCheeses,
 }: Props) {
@@ -190,6 +193,13 @@ export default function CreameryDetail({
               Open in Maps
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
+          </p>
+        )}
+        {onSeeOnMap && (
+          <p>
+            <button type="button" className="linkish" onClick={onSeeOnMap}>
+              See on the census map
+            </button>
           </p>
         )}
         {creamery.phone && (
