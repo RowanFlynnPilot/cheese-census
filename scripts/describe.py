@@ -6,10 +6,13 @@ script wrote into data/descriptions/{cheeses,creameries}.json.
 
 Behavior
     - Reads the built tables (build/*.json), so run `python build.py` first.
-    - Selects every cheese and exported creamery whose description is missing
+    - Selects every named cheese and exported creamery whose description is missing
       or whose record changed since its text was written (a fingerprint of
       the facts the text was built from is stored beside it). A human edit —
       an override with description_generated false — is never touched.
+    - Skips plain type variants (a cheese named exactly for its DFW type:
+      "Colby", "Aged Provolone"). Their facts are the same at every maker,
+      so the text would be one sentence repeated; the labels already say it.
     - Builds each request from the record's OWN structured fields only:
       family, milk, texture, age band, flavor tags, add-ins, matched awards,
       creamery context. Never from scraped prose.
@@ -43,9 +46,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "build"
 OUT = ROOT / "data" / "descriptions"
-MODEL = "claude-haiku-5-5"
-COMPARE_WITH = "claude-opus-5-5"
-PRICE_IN, PRICE_OUT = 0.10, 0.50  # dollars per million tokens, before the batch discount
+MODEL = "claude-opus-5-5"
+COMPARE_WITH = "claude-haiku-5-5"
+PRICE_IN, PRICE_OUT = 4.00, 20.00  # dollars per million tokens, before the batch discount
 MAX_CHARS = 320
 
 CONTESTS = {"uscc": "U.S. Championship Cheese Contest", "wccc": "World Championship Cheese Contest"}
@@ -74,6 +77,10 @@ to eat and what sets it apart from its neighbors, the way the paper would in \
 a sentence of a food story: plain, dry, specific, warm without selling. One or \
 two sentences, at most 40 words.
 
+Texture and mouthfeel come from the record's own words only. Do not add \
+how it cuts, spreads, crumbles, melts or crunches, and do not swap a word \
+for a stronger one ("semi-soft" is not "soft").
+
 Use only the facts in the record. Do not add history, founding dates, people, \
 pairings, serving ideas, production methods or tasting claims that are not in \
 it, and do not guess. Never attribute the flavor to anyone ("tasters say", \
@@ -92,7 +99,8 @@ give the place, the contest and the year. Otherwise say nothing about awards.
 No superlatives and no marketing words (finest, artisan, world-class, \
 delicious, perfect, must-try). No exclamation marks. Do not address the reader \
 as "you". Vary how sentences open; do not start with the name followed by \
-"is". Do not mention the census, the record, or that the text was generated.
+"is". The town is beside the text already: name it only now and then, never \
+as a habit ("this Gouda from Thorp"). Do not mention the census, the record, or that the text was generated.
 
 Reply with the description alone: plain text on one line, no quotation marks, \
 no label."""
@@ -174,12 +182,19 @@ def outstanding() -> tuple[dict[str, dict], dict[str, dict], dict[str, dict]]:
     done_cheeses = read(OUT / "cheeses.json")
     done_creameries = read(OUT / "creameries.json")
     by_id = {c["id"]: c for c in creameries}
+    type_names = {
+        link["name"].casefold()
+        for company in read(ROOT / "data" / "raw" / "dfw.json")
+        for link in company["cheese_types"]
+    }
     todo: dict[str, dict] = {}
     for cheese in cheeses:
         if cheese["description"] and not cheese["description_generated"]:
             continue  # a human wrote it
         if by_id.get(cheese["creamery_id"], {}).get("status") != "active":
             continue  # a closed creamery's cheese is out of browse; no present-tense text for it
+        if cheese["name"].casefold() in type_names:
+            continue  # a plain type variant: the same facts at every maker
         facts = cheese_facts(cheese, by_id.get(cheese["creamery_id"]), [a for a in awards if a["cheese_id"] == cheese["id"]])
         if done_cheeses.get(cheese["id"], {}).get("fingerprint") != fingerprint(facts):
             todo[cheese["id"]] = facts
