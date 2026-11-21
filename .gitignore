@@ -5,3 +5,6 @@ __pycache__/
 .cache/
 .claude/settings.local.json
 queue/describe_compare.md
+
+# Sales collateral: prices and prospect material stay off the public repo
+sales/
