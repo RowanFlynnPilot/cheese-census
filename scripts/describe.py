@@ -11,7 +11,7 @@ Behavior
       the facts the text was built from is stored beside it). A human edit —
       an override with description_generated false — is never touched.
     - Skips plain type variants (a cheese named exactly for its DFW type:
-      "Colby", "Aged Provolone"). Their facts are the same at every maker,
+      "Colby", "Provolone"). Their facts are the same at every maker,
       so the text would be one sentence repeated; the labels already say it.
     - Builds each request from the record's OWN structured fields only:
       family, milk, texture, age band, flavor tags, add-ins, matched awards,
@@ -89,8 +89,8 @@ not support rather than hedging.
 
 Write names exactly as the record gives them. The record omits what is \
 unremarkable (cow's milk, no rind), so do not mention milk or rind unless the \
-record does. Do not use trade terms such as "pasta filata", "cheese family" \
-or "age band".
+record does. Do not use trade terms such as "pasta filata", "paste", \
+"wheels", "cheese family" or "age band".
 
 Awards: each one names the entry that won it. Mention an award only if that \
 entry is this same product, not a flavored or packaged relative, and then \
@@ -98,7 +98,9 @@ give the place, the contest and the year. Otherwise say nothing about awards.
 
 No superlatives and no marketing words (finest, artisan, world-class, \
 delicious, perfect, must-try). No exclamation marks. Do not address the reader \
-as "you". Vary how sentences open; do not start with the name followed by \
+as "you". Hundreds of these sit side by side, so avoid stock constructions: \
+not "runs through", "threaded with", "lending a ... lift" or "sets it apart \
+from" as the way to say an ingredient is there. Vary how sentences open; do not start with the name followed by \
 "is". The town is beside the text already: name it only now and then, never \
 as a habit ("this Gouda from Thorp"). Do not mention the census, the record, or that the text was generated.
 
