@@ -4,3 +4,4 @@ __pycache__/
 .env
 .cache/
 .claude/settings.local.json
+queue/describe_compare.md
